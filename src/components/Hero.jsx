@@ -21,12 +21,12 @@ export default function Hero() {
         {/* Contenu textuel positionné comme dans l'image */}
         <div className="absolute left-4 right-4 md:left-16 top-1/4 md:top-1/3 transform -translate-y-1/2 max-w-4xl">
           <h1
-            className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl text-black font-bold leading-tight mb-2 md:mb-4 animate-slide-in-left"
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl text-black font-bold leading-tight mb-2 md:mb-4 animate-slide-in-right"
             style={{ fontFamily: '"Poppins", sans-serif' }}
           >
             {t("hero.title")}
           </h1>
-          <h2 className="text-lg sm:text-xl md:text-4xl font-semibold text-white/90 mb-4 md:mb-8 animate-slide-in-right">
+          <h2 className="text-lg sm:text-xl md:text-4xl font-semibold text-white/90 mb-4 md:mb-8 animate-slide-in-left">
             {t("hero.subtitle")}
           </h2>
           <p className="text-sm sm:text-base md:text-2xl text-white/90 mb-4 md:mb-8 font-medium animate-fade-in-up">

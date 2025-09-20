@@ -32,12 +32,6 @@
     "arrival": "Arrival address",
     "comments": "Additional information..."
   },
-  "about": {
-    "title": "About Us",
-    "ourMission": "Our Mission",
-    "missionDescription": "We are committed to providing superior taxi service in the Nice and Côte d'Azur region. Your comfort and safety are our absolute priorities.",
-    "contactInfo": "Contact Information"
-  },
   "navbar": {
     "brand": "Taxi",
     "brandSuffix": "Nice-06",
@@ -246,5 +240,33 @@
     },
     "switchToVan": "View Van rates",
     "switchToGLC": "View GLC rates"
+  },
+  "seoContent": {
+    "title": "Taxi Nice French Riviera - Premium 24/7 Transport Service",
+    "intro": "Discover our professional taxi service in Nice and throughout the French Riviera. With over 15 years of experience, we offer superior quality transport solutions for all your travels in the region.",
+    "section1": {
+      "title": "Our Transport Expertise on the French Riviera",
+      "content": "Since 2008, our taxi company in Nice has established itself as an essential player in private transport in the Alpes-Maritimes. We know perfectly the roads, traffic and best routes to save you time. Our fleet of high-end Mercedes vehicles ensures your comfort and safety on every journey. Whether for a Nice Côte d'Azur airport transfer, a business trip or a tourist outing, we adapt our service to your specific needs."
+    },
+    "section2": {
+      "title": "Personalized Transport Services",
+      "content": "We offer a complete range of transport services adapted to all your needs. Our airport transfers are particularly appreciated for their punctuality and reliability. We also carry out business transport with WiFi-equipped vehicles and suited drivers. For your special events, we put luxury vehicles at your disposal with possible decoration. Our tourist circuits allow you to discover the most beautiful sites of the French Riviera in complete tranquility."
+    },
+    "section3": {
+      "title": "Premium Vehicle Fleet",
+      "content": "Our fleet consists exclusively of recent and perfectly maintained Mercedes vehicles. We offer Mercedes GLC for comfortable trips up to 4 passengers, as well as premium vans for larger groups. All our vehicles are equipped with air conditioning, free WiFi and leather seats. Our professional drivers, holders of VTC licenses, are trained to the highest service standards and know the region perfectly."
+    },
+    "section4": {
+      "title": "Transparent and Competitive Rates",
+      "content": "We offer fixed and transparent rates for all our services. Our prices include taxes and are clearly displayed on our website. We accept cash, bank card or wire transfer payments. For companies, we offer preferential conditions with monthly billing. Our rates are competitive compared to other transport services in the region, while offering superior service."
+    },
+    "section5": {
+      "title": "Simple and Fast Booking",
+      "content": "Booking your taxi has never been so simple. Our online booking system allows you to choose your vehicle, your schedule and your destination in a few clicks. We confirm your reservation immediately and send you a reminder SMS the day before. Our customer service is available 24/7 to answer all your questions. In case of emergency, we can organize transport in less than 30 minutes in most cases."
+    },
+    "conclusion": {
+      "title": "Why Choose Our Taxi Service?",
+      "content": "Choosing our taxi service in Nice means opting for quality, reliability and professionalism. With more than 1000 satisfied customers each month and an average rating of 4.9/5, we are proud of our reputation. Our local drivers know all the shortcuts and best routes to avoid traffic jams. We are committed to offering you an exceptional transport experience, whether for a 5-minute trip or a journey of several hours. Contact us now to book your next transport on the French Riviera."
+    }
   }
 }

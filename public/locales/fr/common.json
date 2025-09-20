@@ -32,12 +32,6 @@
     "arrival": "Adresse d'arrivée",
     "comments": "Informations supplémentaires..."
   },
-  "about": {
-    "title": "À propos de nous",
-    "ourMission": "Notre mission",
-    "missionDescription": "Nous nous engageons à offrir un service de taxi de qualité supérieure dans la région de Nice et de la Côte d'Azur. Votre confort et votre sécurité sont nos priorités absolues.",
-    "contactInfo": "Informations de contact"
-  },
   "navbar": {
     "brand": "Taxi",
     "brandSuffix": "Nice-06",
@@ -246,5 +240,33 @@
     },
     "switchToVan": "Voir tarifs Van",
     "switchToGLC": "Voir tarifs GLC"
+  },
+  "seoContent": {
+    "title": "Taxi Nice Côte d'Azur - Service de Transport Premium 7j/7",
+    "intro": "Découvrez notre service de taxi professionnel à Nice et sur toute la Côte d'Azur. Avec plus de 15 ans d'expérience, nous offrons des solutions de transport de qualité supérieure pour tous vos déplacements dans la région.",
+    "section1": {
+      "title": "Notre Expertise en Transport sur la Côte d'Azur",
+      "content": "Depuis 2008, notre entreprise de taxi à Nice s'est imposée comme un acteur incontournable du transport privé dans les Alpes-Maritimes. Nous connaissons parfaitement les routes, les trafics et les meilleurs itinéraires pour vous faire gagner du temps. Notre flotte de véhicules Mercedes haut de gamme assure votre confort et votre sécurité lors de chaque trajet. Que ce soit pour un transfert aéroport Nice Côte d'Azur, un déplacement professionnel ou une sortie touristique, nous adaptons notre service à vos besoins spécifiques."
+    },
+    "section2": {
+      "title": "Services de Transport Personnalisés",
+      "content": "Nous proposons une gamme complète de services de transport adaptés à tous vos besoins. Nos transferts aéroport sont particulièrement appréciés pour leur ponctualité et leur fiabilité. Nous effectuons également des transports d'affaires avec des véhicules équipés de WiFi et des chauffeurs en costume. Pour vos événements spéciaux, nous mettons à votre disposition des véhicules de luxe avec décoration possible. Nos circuits touristiques vous permettent de découvrir les plus beaux sites de la Côte d'Azur en toute tranquillité."
+    },
+    "section3": {
+      "title": "Flotte de Véhicules Premium",
+      "content": "Notre flotte se compose exclusivement de véhicules Mercedes récents et parfaitement entretenus. Nous proposons des Mercedes GLC pour les trajets confortables jusqu'à 4 passagers, ainsi que des vans premium pour les groupes plus importants. Tous nos véhicules sont équipés de la climatisation, du WiFi gratuit et de sièges en cuir. Nos chauffeurs professionnels, titulaires de licences VTC, sont formés aux standards de service les plus élevés et connaissent parfaitement la région."
+    },
+    "section4": {
+      "title": "Tarifs Transparents et Compétitifs",
+      "content": "Nous proposons des tarifs fixes et transparents pour tous nos services. Nos prix incluent les taxes et sont clairement affichés sur notre site. Nous acceptons les paiements en espèces, par carte bancaire ou par virement. Pour les entreprises, nous proposons des conditions préférentielles avec facturation mensuelle. Nos tarifs sont compétitifs par rapport aux autres services de transport de la région, tout en offrant un niveau de service supérieur."
+    },
+    "section5": {
+      "title": "Réservation Simple et Rapide",
+      "content": "Réserver votre taxi n'a jamais été aussi simple. Notre système de réservation en ligne vous permet de choisir votre véhicule, votre horaire et votre destination en quelques clics. Nous confirmons votre réservation immédiatement et vous envoyons un SMS de rappel la veille. Notre service client est disponible 24h/24 pour répondre à toutes vos questions. En cas d'urgence, nous pouvons organiser un transport en moins de 30 minutes dans la plupart des cas."
+    },
+    "conclusion": {
+      "title": "Pourquoi Choisir Notre Service de Taxi ?",
+      "content": "Choisir notre service de taxi à Nice, c'est opter pour la qualité, la fiabilité et le professionnalisme. Avec plus de 1000 clients satisfaits chaque mois et une note moyenne de 4.9/5, nous sommes fiers de notre réputation. Nos chauffeurs locaux connaissent tous les raccourcis et les meilleures routes pour éviter les embouteillages. Nous nous engageons à vous offrir une expérience de transport exceptionnelle, que ce soit pour un trajet de 5 minutes ou un voyage de plusieurs heures. Contactez-nous dès maintenant pour réserver votre prochain transport sur la Côte d'Azur."
+    }
   }
 }

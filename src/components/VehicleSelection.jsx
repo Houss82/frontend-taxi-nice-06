@@ -1,9 +1,38 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
+import { useEffect, useRef, useState } from "react";
 
 export default function VehicleSelection() {
   const { t } = useLanguage();
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   const vehicles = [
     {
@@ -19,7 +48,7 @@ export default function VehicleSelection() {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" ref={sectionRef}>
       <div className="container mx-auto px-4">
         {/* Titre */}
         <div className="text-center mb-12">
@@ -30,8 +59,20 @@ export default function VehicleSelection() {
 
         {/* Affichage des véhicules côte à côte */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {vehicles.map((vehicle) => (
-            <div key={vehicle.id} className="group cursor-pointer">
+          {vehicles.map((vehicle, index) => (
+            <div
+              key={vehicle.id}
+              className={`group cursor-pointer ${
+                isVisible
+                  ? vehicle.id === "glc"
+                    ? "animate-slide-in-left"
+                    : "animate-slide-in-right"
+                  : "opacity-0"
+              }`}
+              style={{
+                animationDelay: isVisible ? `${index * 0.3}s` : "0s",
+              }}
+            >
               {/* Image du véhicule */}
               <div className="relative h-80 mb-6 overflow-hidden">
                 <img
