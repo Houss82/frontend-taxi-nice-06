@@ -1,0 +1,250 @@
+{
+  "title": "Taxi Nice Côte d'Azur",
+  "subtitle": "Réservez votre transport en quelques clics",
+  "reservation": {
+    "title": "Nouvelle Réservation",
+    "personalInfo": "Informations personnelles",
+    "name": "Nom complet",
+    "phone": "Téléphone",
+    "email": "Email",
+    "dateTime": "Date et heure",
+    "date": "Date",
+    "time": "Heure",
+    "addresses": "Adresses",
+    "departure": "Adresse de départ",
+    "arrival": "Adresse d'arrivée",
+    "transportType": "Type de transport",
+    "comments": "Commentaires",
+    "submit": "Créer la réservation",
+    "submitting": "Création en cours...",
+    "success": "Réservation créée avec succès !",
+    "error": "Erreur lors de la création de la réservation"
+  },
+  "transportTypes": {
+    "ald_exonerated": "ALD exonérante",
+    "ald_non_exonerated": "ALD non exonérante"
+  },
+  "placeholders": {
+    "name": "Votre nom complet",
+    "phone": "Numéro de téléphone",
+    "email": "votre@email.com",
+    "departure": "Adresse de départ",
+    "arrival": "Adresse d'arrivée",
+    "comments": "Informations supplémentaires..."
+  },
+  "about": {
+    "title": "À propos de nous",
+    "ourMission": "Notre mission",
+    "missionDescription": "Nous nous engageons à offrir un service de taxi de qualité supérieure dans la région de Nice et de la Côte d'Azur. Votre confort et votre sécurité sont nos priorités absolues.",
+    "contactInfo": "Informations de contact"
+  },
+  "navbar": {
+    "brand": "Taxi",
+    "brandSuffix": "Nice-06",
+    "home": "ACCUEIL",
+    "services": "SERVICES",
+    "reservation": "RÉSERVATION",
+    "prices": "Tarifs",
+    "contact": "Contact",
+    "bookNow": "RÉSERVER",
+    "bookNowFull": "RÉSERVER MAINTENANT"
+  },
+  "hero": {
+    "imageAlt": "Mercedes GLC Taxi Nice",
+    "title": "TAXI NICE CÔTE D'AZUR",
+    "subtitle": "TRANSFERTS & RÉSERVATIONS",
+    "description": "Votre chauffeur privé disponible 24/7",
+    "bookTaxi": "Réserver un Taxi",
+    "getQuote": "Obtenir un devis"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Une gamme complète de services de transport adaptés à tous vos besoins",
+    "airport": {
+      "title": "Transfert Aéroport",
+      "description": "Service de navette vers l'aéroport de Nice Côte d'Azur. Ponctualité garantie.",
+      "features": {
+        "flightTracking": "Suivi de vol",
+        "personalized": "Accueil personnalisé",
+        "premiumVehicles": "Véhicules premium"
+      }
+    },
+    "business": {
+      "title": "Transport d'Affaires",
+      "description": "Solutions de transport pour vos rendez-vous professionnels et événements.",
+      "features": {
+        "invoicing": "Facturation entreprise",
+        "drivers": "Chauffeurs en costume",
+        "wifi": "WiFi à bord"
+      }
+    },
+    "tourism": {
+      "title": "Visites Touristiques",
+      "description": "Découvrez la Côte d'Azur avec nos circuits personnalisés.",
+      "features": {
+        "guides": "Guides locaux",
+        "custom": "Circuits sur mesure",
+        "photos": "Arrêts photos"
+      }
+    },
+    "events": {
+      "title": "Événements Spéciaux",
+      "description": "Transport pour mariages, soirées et occasions spéciales.",
+      "features": {
+        "luxury": "Véhicules de luxe",
+        "decoration": "Décoration possible",
+        "vip": "Service VIP"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Avantages",
+    "professionalDrivers": "Chauffeurs professionnels",
+    "mercedesVehicles": "Véhicules haut de gamme Mercedes",
+    "simpleBooking": "Réservation simple & rapide",
+    "fixedRates": "Tarifs fixes et transparents",
+    "testimonial": {
+      "text": "Super service ! Chauffeur ponctuel, voiture impeccable. Je recommande.",
+      "author": "Claire, Paris"
+    }
+  },
+  "quickBooking": {
+    "title": "Réservation rapide",
+    "subtitle": "Réservez votre taxi en quelques clics",
+    "whyChoose": "Pourquoi nous choisir ?",
+    "features": {
+      "service247": "Service 24/7",
+      "payment": "Paiement à bord ou en ligne",
+      "confirmation": "Confirmation immédiate"
+    },
+    "form": {
+      "name": "Nom complet",
+      "phone": "Téléphone",
+      "departure": "Adresse de départ",
+      "destination": "Adresse d'arrivée",
+      "submit": "Réserver maintenant",
+      "success": "Demande envoyée avec succès !"
+    }
+  },
+  "footer": {
+    "brand": "Taxi Nice-06.com",
+    "description": "Votre partenaire de confiance pour tous vos déplacements sur la Côte d'Azur depuis 2008.",
+    "contact": "Contact",
+    "phone": "+33 6 00 00 00 00",
+    "email": "contact@taxinice-06.com",
+    "location": "Nice, Côte d'Azur",
+    "schedule": "Horaires",
+    "hours": "24h/24 - 7j/7",
+    "continuousService": "Service continu",
+    "quickReservation": "Réservation Rapide",
+    "needTaxiNow": "Besoin d'un taxi maintenant ?",
+    "callNow": "Appeler maintenant",
+    "copyright": "Tous droits réservés.",
+    "bookButton": "Réserver"
+  },
+  "about": {
+    "title": "Pourquoi choisir",
+    "brandHighlight": "Taxi Nice",
+    "description": "Depuis plus de 15 ans, nous offrons un service de transport de qualité sur la Côte d'Azur. Notre équipe de chauffeurs professionnels vous garantit confort, sécurité et ponctualité.",
+    "imageAlt": "Chauffeur professionnel à Nice",
+    "experience": "Années d'expérience",
+    "features": {
+      "safety": {
+        "title": "Sécurité",
+        "description": "Véhicules assurés"
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Service premium"
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "Service client"
+      },
+      "speed": {
+        "title": "Rapidité",
+        "description": "Réservation instant"
+      }
+    }
+  },
+  "vehicleSelection": {
+    "title": "Choisissez votre véhicule",
+    "subtitle": "Sélectionnez le véhicule qui correspond le mieux à vos besoins",
+    "glc": {
+      "name": "Mercedes GLC",
+      "description": "Véhicule premium pour un transport de luxe et confortable",
+      "capacity": "4 passagers",
+      "features": {
+        "comfort": "Confort exceptionnel",
+        "luxury": "Équipements de luxe",
+        "reliability": "Fiabilité Mercedes"
+      }
+    },
+    "van": {
+      "name": "Van Premium",
+      "description": "Espace généreux pour les groupes et les bagages",
+      "capacity": "8 passagers",
+      "features": {
+        "space": "Espace généreux",
+        "group": "Idéal pour les groupes",
+        "luggage": "Grand coffre"
+      }
+    },
+    "select": "Sélectionner",
+    "seePrices": "Cliquez pour voir les tarifs",
+    "note": "Les véhicules peuvent varier selon la disponibilité"
+  },
+  "pricing": {
+    "title": "Tarifs indicatifs 2025 TTC",
+    "subtitle": "Tarifs sans suppléments",
+    "backToHome": "Retour à l'accueil",
+    "destinations": "Destinations",
+    "destination": "DESTINATIONS",
+    "day": "Jour",
+    "night": "Nuit",
+    "fixedRate": "Tarif forfaitaire",
+    "supplements": "Suppléments",
+    "supplementsNote": "inclus 4 € de réservation - tarifs forfaitaires",
+    "perKm": "Tarifs au kilomètre",
+    "dayRate": "Tarif C Jour",
+    "nightRate": "Tarif D Nuit",
+    "rateA": "Tarif A",
+    "rateB": "Tarif B",
+    "destinationsList": {
+      "antibes": "Antibes (Cap)",
+      "auron": "Auron - Isola - Valberg",
+      "beaulieu": "Beaulieu sur Mer",
+      "cannes": "Cannes",
+      "frejus": "Fréjus - Saint Raphaël",
+      "grasse": "Grasse",
+      "juan": "Juan-les-Pins",
+      "menton": "Menton",
+      "monaco": "Monaco",
+      "mougins": "Mougins",
+      "niceOuest": "Nice Ouest",
+      "niceCentre": "Nice Centre",
+      "niceEst": "Nice Est - Nord - Port",
+      "opio": "Opio (Club Med)",
+      "sanremo": "Sanremo",
+      "sophia": "Sophia Antipolis",
+      "capFerrat": "Saint Jean Cap Ferrat",
+      "saintPaul": "Saint Paul - Vence",
+      "saintTropez": "Saint Tropez",
+      "valbonne": "Valbonne",
+      "villefranche": "Villefranche-sur-Mer"
+    },
+    "supplementsList": {
+      "minimum": "Course minimum",
+      "luggage": "Colis moyen valise",
+      "fifthPerson": "Maj. 5ème personne",
+      "snow": "Maj. neige - verglas",
+      "highway": "Autoroute et taxe"
+    },
+    "perKmList": {
+      "emptyReturn": "Course avec retour à vide",
+      "loadedReturn": "Course avec retour en charge"
+    },
+    "switchToVan": "Voir tarifs Van",
+    "switchToGLC": "Voir tarifs GLC"
+  }
+}

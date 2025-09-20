@@ -1,0 +1,61 @@
+"use client";
+
+import Footer from "@/components/Footer.jsx";
+import Navbar from "@/components/Navbar.jsx";
+import PricingTable from "@/components/PricingTable.jsx";
+import { useLanguage } from "@/contexts/LanguageContext.jsx";
+import { ArrowLeft, Car, Truck } from "lucide-react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+
+export default function TarifsPage() {
+  const { t } = useLanguage();
+  const searchParams = useSearchParams();
+  const vehicleType = searchParams.get("vehicle") || "glc";
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Contenu principal */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="max-w-5xl mx-auto">
+          {/* Boutons de navigation */}
+          <div className="flex justify-between items-center mb-6">
+            <Link
+              href="/"
+              className="inline-flex items-center space-x-2 bg-gray-100 border border-blue-500 hover:bg-gray-200 text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg font-medium transition-colors duration-200"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span>{t("pricing.backToHome")}</span>
+            </Link>
+
+            {/* Bouton pour basculer entre véhicules */}
+            <Link
+              href={`/tarifs?vehicle=${vehicleType === "glc" ? "van" : "glc"}`}
+              className="inline-flex items-center space-x-2 bg-primary hover:bg-primaryDark text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200"
+            >
+              {vehicleType === "glc" ? (
+                <>
+                  <Truck className="w-5 h-5" />
+                  <span>{t("pricing.switchToVan")}</span>
+                </>
+              ) : (
+                <>
+                  <Car className="w-5 h-5" />
+                  <span>{t("pricing.switchToGLC")}</span>
+                </>
+              )}
+            </Link>
+          </div>
+
+          <PricingTable vehicleType={vehicleType} />
+        </div>
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+}

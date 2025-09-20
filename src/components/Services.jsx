@@ -1,0 +1,123 @@
+"use client";
+
+import { useLanguage } from "@/contexts/LanguageContext.jsx";
+import { Building2, Clock, MapPin, Plane, Star, Users } from "lucide-react";
+
+export default function Services() {
+  const { t } = useLanguage();
+  const services = [
+    {
+      icon: Plane,
+      title: t("services.airport.title"),
+      description: t("services.airport.description"),
+      features: [
+        t("services.airport.features.flightTracking"),
+        t("services.airport.features.personalized"),
+        t("services.airport.features.premiumVehicles"),
+      ],
+    },
+    {
+      icon: Building2,
+      title: t("services.business.title"),
+      description: t("services.business.description"),
+      features: [
+        t("services.business.features.invoicing"),
+        t("services.business.features.drivers"),
+        t("services.business.features.wifi"),
+      ],
+    },
+    {
+      icon: MapPin,
+      title: t("services.tourism.title"),
+      description: t("services.tourism.description"),
+      features: [
+        t("services.tourism.features.guides"),
+        t("services.tourism.features.custom"),
+        t("services.tourism.features.photos"),
+      ],
+    },
+    {
+      icon: Users,
+      title: t("services.events.title"),
+      description: t("services.events.description"),
+      features: [
+        t("services.events.features.luxury"),
+        t("services.events.features.decoration"),
+        t("services.events.features.vip"),
+      ],
+    },
+  ];
+
+  return (
+    <section id="services" className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">
+            {t("services.title")}
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            {t("services.subtitle")}
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white border border-gray-200 rounded-xl shadow-sm group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="p-6 text-center">
+                <div className="w-24 h-24 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                  <service.icon className="w-14 h-14 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-black">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-center mb-4">
+                  {service.description}
+                </p>
+                <ul className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li
+                      key={featureIndex}
+                      className="flex items-center space-x-2 text-sm"
+                    >
+                      <Star className="w-4 h-4 text-primary fill-current" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-8">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Clock className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-2xl mb-2">24/7</h3>
+              <p className="text-gray-600">Service disponible jour et nuit</p>
+            </div>
+            <div>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Star className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-2xl mb-2">4.9/5</h3>
+              <p className="text-gray-600">Note moyenne de nos clients</p>
+            </div>
+            <div>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Users className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-2xl mb-2">1000+</h3>
+              <p className="text-gray-600">Clients satisfaits chaque mois</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

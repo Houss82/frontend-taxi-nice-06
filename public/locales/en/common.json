@@ -1,0 +1,250 @@
+{
+  "title": "Taxi Nice Côte d'Azur",
+  "subtitle": "Book your transport in just a few clicks",
+  "reservation": {
+    "title": "New Reservation",
+    "personalInfo": "Personal Information",
+    "name": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "dateTime": "Date and Time",
+    "date": "Date",
+    "time": "Time",
+    "addresses": "Addresses",
+    "departure": "Departure Address",
+    "arrival": "Arrival Address",
+    "transportType": "Transport Type",
+    "comments": "Comments",
+    "submit": "Create Reservation",
+    "submitting": "Creating...",
+    "success": "Reservation created successfully!",
+    "error": "Error creating reservation"
+  },
+  "transportTypes": {
+    "ald_exonerated": "ALD Exonerated",
+    "ald_non_exonerated": "ALD Non-Exonerated"
+  },
+  "placeholders": {
+    "name": "Your full name",
+    "phone": "Phone number",
+    "email": "your@email.com",
+    "departure": "Departure address",
+    "arrival": "Arrival address",
+    "comments": "Additional information..."
+  },
+  "about": {
+    "title": "About Us",
+    "ourMission": "Our Mission",
+    "missionDescription": "We are committed to providing superior taxi service in the Nice and Côte d'Azur region. Your comfort and safety are our absolute priorities.",
+    "contactInfo": "Contact Information"
+  },
+  "navbar": {
+    "brand": "Taxi",
+    "brandSuffix": "Nice-06",
+    "home": "HOME",
+    "services": "SERVICES",
+    "reservation": "RESERVATION",
+    "prices": "Prices",
+    "contact": "Contact",
+    "bookNow": "BOOK",
+    "bookNowFull": "BOOK NOW"
+  },
+  "hero": {
+    "imageAlt": "Mercedes GLC Taxi Nice",
+    "title": "TAXI NICE CÔTE D'AZUR",
+    "subtitle": "TRANSFERS & RESERVATIONS",
+    "description": "Your private driver available 24/7",
+    "bookTaxi": "Book a Taxi",
+    "getQuote": "Get a Quote"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "A complete range of transport services adapted to all your needs",
+    "airport": {
+      "title": "Airport Transfer",
+      "description": "Shuttle service to Nice Côte d'Azur airport. Punctuality guaranteed.",
+      "features": {
+        "flightTracking": "Flight tracking",
+        "personalized": "Personalized welcome",
+        "premiumVehicles": "Premium vehicles"
+      }
+    },
+    "business": {
+      "title": "Business Transport",
+      "description": "Transport solutions for your professional appointments and events.",
+      "features": {
+        "invoicing": "Business invoicing",
+        "drivers": "Dressed drivers",
+        "wifi": "WiFi on board"
+      }
+    },
+    "tourism": {
+      "title": "Tourist Visits",
+      "description": "Discover the French Riviera with our personalized tours.",
+      "features": {
+        "guides": "Local guides",
+        "custom": "Custom tours",
+        "photos": "Photo stops"
+      }
+    },
+    "events": {
+      "title": "Special Events",
+      "description": "Transport for weddings, parties and special occasions.",
+      "features": {
+        "luxury": "Luxury vehicles",
+        "decoration": "Possible decoration",
+        "vip": "VIP service"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Benefits",
+    "professionalDrivers": "Professional drivers",
+    "mercedesVehicles": "High-end Mercedes vehicles",
+    "simpleBooking": "Simple & fast booking",
+    "fixedRates": "Fixed and transparent rates",
+    "testimonial": {
+      "text": "Great service! Punctual driver, impeccable car. I recommend.",
+      "author": "Claire, Paris"
+    }
+  },
+  "quickBooking": {
+    "title": "Quick Booking",
+    "subtitle": "Book your taxi in just a few clicks",
+    "whyChoose": "Why choose us?",
+    "features": {
+      "service247": "24/7 Service",
+      "payment": "Payment on board or online",
+      "confirmation": "Immediate confirmation"
+    },
+    "form": {
+      "name": "Full name",
+      "phone": "Phone",
+      "departure": "Departure address",
+      "destination": "Arrival address",
+      "submit": "Book now",
+      "success": "Request sent successfully!"
+    }
+  },
+  "footer": {
+    "brand": "Taxi Nice-06.com",
+    "description": "Your trusted partner for all your travel on the French Riviera since 2008.",
+    "contact": "Contact",
+    "phone": "+33 6 00 00 00 00",
+    "email": "contact@taxinice-06.com",
+    "location": "Nice, French Riviera",
+    "schedule": "Hours",
+    "hours": "24/7",
+    "continuousService": "Continuous service",
+    "quickReservation": "Quick Reservation",
+    "needTaxiNow": "Need a taxi now?",
+    "callNow": "Call now",
+    "copyright": "All rights reserved.",
+    "bookButton": "Book"
+  },
+  "about": {
+    "title": "Why choose",
+    "brandHighlight": "Taxi Nice",
+    "description": "For over 15 years, we have been providing quality transport services on the French Riviera. Our team of professional drivers guarantees you comfort, safety and punctuality.",
+    "imageAlt": "Professional taxi driver in Nice",
+    "experience": "Years of experience",
+    "features": {
+      "safety": {
+        "title": "Safety",
+        "description": "Insured vehicles"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Premium service"
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "Customer service"
+      },
+      "speed": {
+        "title": "Speed",
+        "description": "Instant booking"
+      }
+    }
+  },
+  "vehicleSelection": {
+    "title": "Choose your vehicle",
+    "subtitle": "Select the vehicle that best suits your needs",
+    "glc": {
+      "name": "Mercedes GLC",
+      "description": "Premium vehicle for luxury and comfortable transport",
+      "capacity": "4 passengers",
+      "features": {
+        "comfort": "Exceptional comfort",
+        "luxury": "Luxury equipment",
+        "reliability": "Mercedes reliability"
+      }
+    },
+    "van": {
+      "name": "Premium Van",
+      "description": "Generous space for groups and luggage",
+      "capacity": "8 passengers",
+      "features": {
+        "space": "Generous space",
+        "group": "Perfect for groups",
+        "luggage": "Large trunk"
+      }
+    },
+    "select": "Select",
+    "seePrices": "Click to see prices",
+    "note": "Vehicles may vary according to availability"
+  },
+  "pricing": {
+    "title": "Indicative prices 2025 all taxes included",
+    "subtitle": "Prices without supplements",
+    "backToHome": "Back to home",
+    "destinations": "Destinations",
+    "destination": "DESTINATIONS",
+    "day": "Day",
+    "night": "Night",
+    "fixedRate": "Fixed rate",
+    "supplements": "Supplements",
+    "supplementsNote": "includes 4 € reservation fee - fixed rates",
+    "perKm": "Per kilometer rates",
+    "dayRate": "Day Rate C",
+    "nightRate": "Night Rate D",
+    "rateA": "Rate A",
+    "rateB": "Rate B",
+    "destinationsList": {
+      "antibes": "Antibes (Cap)",
+      "auron": "Auron - Isola - Valberg",
+      "beaulieu": "Beaulieu sur Mer",
+      "cannes": "Cannes",
+      "frejus": "Fréjus - Saint Raphaël",
+      "grasse": "Grasse",
+      "juan": "Juan-les-Pins",
+      "menton": "Menton",
+      "monaco": "Monaco",
+      "mougins": "Mougins",
+      "niceOuest": "Nice West",
+      "niceCentre": "Nice Center",
+      "niceEst": "Nice East - North - Port",
+      "opio": "Opio (Club Med)",
+      "sanremo": "Sanremo",
+      "sophia": "Sophia Antipolis",
+      "capFerrat": "Saint Jean Cap Ferrat",
+      "saintPaul": "Saint Paul - Vence",
+      "saintTropez": "Saint Tropez",
+      "valbonne": "Valbonne",
+      "villefranche": "Villefranche-sur-Mer"
+    },
+    "supplementsList": {
+      "minimum": "Minimum fare",
+      "luggage": "Medium package/suitcase",
+      "fifthPerson": "5th person surcharge",
+      "snow": "Snow - black ice surcharge",
+      "highway": "Highway and tax"
+    },
+    "perKmList": {
+      "emptyReturn": "Trip with empty return",
+      "loadedReturn": "Trip with loaded return"
+    },
+    "switchToVan": "View Van rates",
+    "switchToGLC": "View GLC rates"
+  }
+}
