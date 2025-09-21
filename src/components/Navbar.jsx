@@ -18,10 +18,7 @@ export default function Navbar() {
           </span>
         </a>
         <nav className="hidden md:flex gap-8">
-          <a
-            href="#accueil"
-            className="text-black hover:text-primary font-medium"
-          >
+          <a href="/" className="text-black hover:text-primary font-medium">
             {t("navbar.home")}
           </a>
           <a
@@ -31,7 +28,7 @@ export default function Navbar() {
             {t("navbar.services")}
           </a>
           <a
-            href="#reservation"
+            href="/reservation"
             className="text-black hover:text-primary font-medium"
           >
             {t("navbar.reservation")}
@@ -40,7 +37,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <LanguageToggle />
           <a
-            href="#reservation"
+            href="/reservation"
             className="bg-primary text-white px-6 py-2 rounded font-medium hover:bg-primaryDark transition-colors"
           >
             <span className="md:hidden">{t("navbar.bookNow")}</span>

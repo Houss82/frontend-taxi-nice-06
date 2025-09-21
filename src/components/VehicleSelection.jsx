@@ -62,15 +62,17 @@ export default function VehicleSelection() {
           {vehicles.map((vehicle, index) => (
             <div
               key={vehicle.id}
-              className={`group cursor-pointer ${
+              className={`group cursor-pointer transform transition-all duration-1000 ease-out ${
                 isVisible
                   ? vehicle.id === "glc"
-                    ? "animate-slide-in-left"
-                    : "animate-slide-in-right"
-                  : "opacity-0"
+                    ? "translate-x-0 opacity-100"
+                    : "translate-x-0 opacity-100"
+                  : vehicle.id === "glc"
+                  ? "-translate-x-full opacity-0"
+                  : "translate-x-full opacity-0"
               }`}
               style={{
-                animationDelay: isVisible ? `${index * 0.3}s` : "0s",
+                transitionDelay: isVisible ? `${index * 0.2}s` : "0s",
               }}
             >
               {/* Image du véhicule */}

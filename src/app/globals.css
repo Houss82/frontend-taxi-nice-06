@@ -293,6 +293,15 @@ body {
   @apply bg-white text-ink antialiased;
 }
 
+/* Animations de rotation 3D pour les cartes services */
+.rotate-y-0 {
+  transform: rotateY(0deg);
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
 .container {
   @apply max-w-6xl mx-auto px-4;
 }

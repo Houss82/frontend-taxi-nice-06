@@ -90,33 +90,25 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => {
-            // Définir les animations de jeu de cartes pour chaque service
-            const animations = [
-              "animate-deal-card",
-              "animate-fan-cards",
-              "animate-shuffle-in",
-              "animate-stack-cards",
-            ];
-            const delays = ["0s", "0.3s", "0.6s", "0.9s"];
-
             return (
               <div
                 key={index}
                 data-animate
                 data-index={`service-${index}`}
-                className={`bg-white border border-gray-200 rounded-xl shadow-sm group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:animate-wiggle ${
+                className={`bg-white border border-gray-200 rounded-xl shadow-sm group hover:shadow-lg transition-all duration-1000 ease-out hover:-translate-y-2 ${
                   visibleElements.has(`service-${index}`)
-                    ? animations[index]
-                    : "opacity-0"
+                    ? "opacity-100 rotate-y-0"
+                    : "opacity-0 rotate-y-180"
                 }`}
                 style={{
-                  animationDelay: visibleElements.has(`service-${index}`)
-                    ? delays[index]
+                  transitionDelay: visibleElements.has(`service-${index}`)
+                    ? `${index * 0.2}s`
                     : "0s",
+                  transformStyle: "preserve-3d",
                 }}
               >
                 <div className="p-6 text-center">
-                  <div className="w-24 h-24 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors group-hover:animate-pulse-glow">
+                  <div className="w-24 h-24 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                     <service.icon className="w-14 h-14 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-black">

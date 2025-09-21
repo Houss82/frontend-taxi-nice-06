@@ -108,16 +108,45 @@
     "whyChoose": "Pourquoi nous choisir ?",
     "features": {
       "service247": "Service 24/7",
+      "service247Desc": "Disponible 24h/24 et 7j/7",
       "payment": "Paiement à bord ou en ligne",
-      "confirmation": "Confirmation immédiate"
+      "paymentDesc": "Paiement sécurisé en ligne ou à bord",
+      "confirmation": "Confirmation immédiate",
+      "confirmationDesc": "Confirmation immédiate par SMS"
+    },
+    "vehicleSelection": {
+      "title": "Choisissez votre véhicule",
+      "glc": {
+        "name": "Mercedes GLC",
+        "capacity": "Jusqu'à 4 passagers",
+        "type": "Premium"
+      },
+      "van": {
+        "name": "Van Premium",
+        "capacity": "Jusqu'à 8 passagers",
+        "type": "Groupe"
+      }
     },
     "form": {
       "name": "Nom complet",
+      "namePlaceholder": "Votre nom complet",
       "phone": "Téléphone",
+      "phonePlaceholder": "06 12 34 56 78",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
       "departure": "Adresse de départ",
+      "departurePlaceholder": "Ex: 1 Promenade des Anglais, Nice",
       "destination": "Adresse d'arrivée",
+      "destinationPlaceholder": "Ex: Aéroport Nice Côte d'Azur",
+      "date": "Date",
+      "time": "Heure",
       "submit": "Réserver maintenant",
-      "success": "Demande envoyée avec succès !"
+      "submitting": "Envoi en cours...",
+      "success": "Demande envoyée !",
+      "successMessage": "Votre demande de réservation rapide a été envoyée avec succès. Nous vous contacterons sous peu pour confirmer les détails.",
+      "newRequest": "Nouvelle demande",
+      "detailedForm": "Besoin d'un formulaire plus détaillé ?",
+      "clickHere": "Cliquez ici"
     }
   },
   "footer": {
