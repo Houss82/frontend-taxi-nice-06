@@ -38,12 +38,27 @@ export default function SeoContent() {
 
   return (
     <section className="relative py-20 bg-gray-50 overflow-hidden">
-      {/* Image de fond fixe */}
+      {/* Image de fond fixe pour desktop */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-80"
+        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-80 hidden md:block"
         style={{
           backgroundImage: "url('/bg-content-seo.jpeg')",
           backgroundAttachment: "fixed",
+        }}
+      />
+
+      {/* Image de fond fixe pour mobile - hauteur écran */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-80 md:hidden"
+        style={{
+          backgroundImage: "url('/bg-content-seo.jpeg')",
+          backgroundAttachment: "fixed",
+          height: "100vh",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: -1,
         }}
       />
 
