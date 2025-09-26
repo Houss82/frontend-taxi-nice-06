@@ -3,6 +3,7 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
+import { reservationApi } from "@/lib/api.jsx";
 import {
   Calendar,
   Clock,
@@ -44,35 +45,20 @@ export default function ReservationPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:3003/users", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      await reservationApi.create(formData);
+      setIsSubmitted(true);
+      setFormData({
+        nom: "",
+        indicatifPays: "+33",
+        telephone: "",
+        email: "",
+        date: "",
+        heure: "",
+        adresseDepart: "",
+        adresseArrivee: "",
+        typeTransport: "ALD exonérante",
+        commentaires: "",
       });
-
-      if (response.ok) {
-        setIsSubmitted(true);
-        setFormData({
-          nom: "",
-          indicatifPays: "+33",
-          telephone: "",
-          email: "",
-          date: "",
-          heure: "",
-          adresseDepart: "",
-          adresseArrivee: "",
-          typeTransport: "ALD exonérante",
-          commentaires: "",
-        });
-      } else {
-        const errorData = await response.json().catch(() => ({}));
-        const errorMessage =
-          errorData.message ||
-          `Erreur ${response.status}: ${response.statusText}`;
-        throw new Error(errorMessage);
-      }
     } catch (error) {
       console.error("Erreur:", error);
       const errorMessage =

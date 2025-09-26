@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
+import { reservationApi } from "@/lib/api.jsx";
 import {
   Car,
   CheckCircle,
@@ -42,40 +43,26 @@ export default function QuickBooking() {
     setIsSubmitted(false);
 
     try {
-      const response = await fetch("http://localhost:3003/users", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          indicatifPays: "+33",
-          typeTransport: "ALD exonérante",
-          commentaires: `Demande rapide - Véhicule: ${
-            formData.typeVehicule === "glc" ? "Mercedes GLC" : "Van Premium"
-          }`,
-        }),
+      await reservationApi.create({
+        ...formData,
+        indicatifPays: "+33",
+        typeTransport: "ALD exonérante",
+        commentaires: `Demande rapide - Véhicule: ${
+          formData.typeVehicule === "glc" ? "Mercedes GLC" : "Van Premium"
+        }`,
       });
 
-      if (response.ok) {
-        setIsSubmitted(true);
-        setFormData({
-          nom: "",
-          telephone: "",
-          email: "",
-          adresseDepart: "",
-          adresseArrivee: "",
-          date: "",
-          heure: "",
-          typeVehicule: "glc",
-        });
-      } else {
-        const errorData = await response.json().catch(() => ({}));
-        const errorMessage =
-          errorData.message ||
-          `Erreur ${response.status}: ${response.statusText}`;
-        throw new Error(errorMessage);
-      }
+      setIsSubmitted(true);
+      setFormData({
+        nom: "",
+        telephone: "",
+        email: "",
+        adresseDepart: "",
+        adresseArrivee: "",
+        date: "",
+        heure: "",
+        typeVehicule: "glc",
+      });
     } catch (error) {
       console.error("Erreur:", error);
       const errorMessage =

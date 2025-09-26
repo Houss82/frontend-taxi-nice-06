@@ -1,7 +1,15 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import {
+  Award,
+  Car,
+  CheckCircle,
+  ChevronDown,
+  ChevronUp,
+  DollarSign,
+  Shield,
+} from "lucide-react";
 import { useState } from "react";
 
 export default function SeoContent() {
@@ -70,7 +78,7 @@ export default function SeoContent() {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-2xl flex items-center justify-center mr-4">
-                  <span className="text-white text-2xl font-bold">1</span>
+                  <Award className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">
                   {t("seoContent.section1.title")}
@@ -101,7 +109,7 @@ export default function SeoContent() {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-2xl flex items-center justify-center mr-4">
-                  <span className="text-white text-2xl font-bold">2</span>
+                  <Car className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">
                   {t("seoContent.section2.title")}
@@ -132,7 +140,7 @@ export default function SeoContent() {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-2xl flex items-center justify-center mr-4">
-                  <span className="text-white text-2xl font-bold">3</span>
+                  <Shield className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">
                   {t("seoContent.section3.title")}
@@ -163,7 +171,7 @@ export default function SeoContent() {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-2xl flex items-center justify-center mr-4">
-                  <span className="text-white text-2xl font-bold">4</span>
+                  <DollarSign className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">
                   {t("seoContent.section4.title")}
@@ -193,7 +201,7 @@ export default function SeoContent() {
           <div className="lg:col-span-2 bg-gradient-to-br from-primary to-primaryDark rounded-3xl p-8 text-white shadow-2xl">
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
-                <span className="text-white text-2xl">✓</span>
+                <CheckCircle className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold">
                 {t("seoContent.conclusion.title")}

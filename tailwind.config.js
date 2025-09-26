@@ -9,6 +9,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
       colors: {
         primary: "#1E66F5", // bleu principal (Riviera)
         primaryDark: "#1552C8", // hover
