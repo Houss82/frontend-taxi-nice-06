@@ -7,8 +7,9 @@ import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { ArrowLeft, Car, Truck } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function TarifsPage() {
+function TarifsContent() {
   const { t } = useLanguage();
   const searchParams = useSearchParams();
   const vehicleType = searchParams.get("vehicle") || "glc";
@@ -57,5 +58,22 @@ export default function TarifsPage() {
       {/* Footer */}
       <Footer />
     </div>
+  );
+}
+
+export default function TarifsPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+            <p className="text-gray-600">Chargement des tarifs...</p>
+          </div>
+        </div>
+      }
+    >
+      <TarifsContent />
+    </Suspense>
   );
 }
