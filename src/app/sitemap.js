@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://taxi-nice-cote-dazur.vercel.app"; // Remplacez par votre URL de production
+  const baseUrl = "https://taxi-nice-06.com";
 
   return [
     {

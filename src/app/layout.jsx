@@ -40,7 +40,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://taxi-nice-cote-dazur.vercel.app"),
+  metadataBase: new URL("https://taxi-nice-06.com"),
   alternates: {
     canonical: "/",
     languages: {
@@ -51,7 +51,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://taxi-nice-cote-dazur.vercel.app",
+    url: "https://taxi-nice-06.com",
     title: "Taxi Nice Côte d'Azur – Transferts & Réservations 24/7",
     description:
       "Chauffeur privé 24/7 à Nice et Côte d'Azur. Transferts Aéroport Nice, Hôtels, VSL, Excursions. Mercedes GLC et Van Premium.",
