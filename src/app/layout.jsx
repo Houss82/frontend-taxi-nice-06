@@ -1,4 +1,5 @@
 import StructuredData from "@/components/StructuredData.jsx";
+import WhatsAppButton from "@/components/WhatsAppButton.jsx";
 import { LanguageProvider } from "@/contexts/LanguageContext.jsx";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -103,6 +104,7 @@ export default function RootLayout({ children }) {
       >
         <StructuredData />
         <LanguageProvider>{children}</LanguageProvider>
+        <WhatsAppButton />
       </body>
     </html>
   );

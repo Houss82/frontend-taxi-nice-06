@@ -21,7 +21,7 @@ export default function Hero() {
         {/* Contenu textuel positionné comme dans l'image */}
         <div className="absolute left-4 right-4 md:left-16 top-1/4 md:top-1/3 transform -translate-y-1/2 max-w-4xl">
           <h1
-            className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl text-black font-bold leading-tight mb-2 md:mb-4 animate-slide-in-right"
+            className="text-3xl sm:text-3xl md:text-5xl lg:text-7xl text-black font-bold leading-tight mb-2 md:mb-4 animate-slide-in-right"
             style={{ fontFamily: '"Poppins", sans-serif' }}
           >
             {t("hero.title")}

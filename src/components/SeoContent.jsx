@@ -50,7 +50,7 @@ export default function SeoContent() {
       <div className="relative z-10 container mx-auto px-4">
         {/* Titre principal */}
         <div className="text-center mb-16">
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20">
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
               {t("seoContent.title")}
             </h2>
@@ -60,9 +60,9 @@ export default function SeoContent() {
 
         {/* Introduction */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-gradient-to-r from-primary to-primaryDark rounded-3xl p-8 text-white shadow-xl">
+          <div className="bg-gradient-to-r from-primary to-primaryDark rounded-xl p-8 text-white shadow-xl">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
                 <span className="text-2xl">🚗</span>
               </div>
               <h3 className="text-2xl font-bold">Introduction</h3>
@@ -74,10 +74,10 @@ export default function SeoContent() {
         {/* Grille de cartes */}
         <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {/* Section 1 */}
-          <div className="bg-white rounded-3xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-2xl flex items-center justify-center mr-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4">
                   <Award className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">
@@ -105,10 +105,10 @@ export default function SeoContent() {
           </div>
 
           {/* Section 2 */}
-          <div className="bg-white rounded-3xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-2xl flex items-center justify-center mr-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4">
                   <Car className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">
@@ -136,10 +136,10 @@ export default function SeoContent() {
           </div>
 
           {/* Section 3 */}
-          <div className="bg-white rounded-3xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-2xl flex items-center justify-center mr-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">
@@ -167,10 +167,10 @@ export default function SeoContent() {
           </div>
 
           {/* Section 4 */}
-          <div className="bg-white rounded-3xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-2xl flex items-center justify-center mr-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4">
                   <DollarSign className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">
@@ -198,9 +198,9 @@ export default function SeoContent() {
           </div>
 
           {/* Conclusion - carte spéciale qui prend toute la largeur */}
-          <div className="lg:col-span-2 bg-gradient-to-br from-primary to-primaryDark rounded-3xl p-8 text-white shadow-2xl">
+          <div className="lg:col-span-2 bg-gradient-to-br from-primary to-primaryDark rounded-xl p-8 text-white shadow-2xl">
             <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
+              <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mr-4">
                 <CheckCircle className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold">

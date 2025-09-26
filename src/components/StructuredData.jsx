@@ -6,8 +6,8 @@ export default function StructuredData() {
     description:
       "Chauffeur privé 24/7 à Nice et Côte d'Azur. Transferts Aéroport Nice, Hôtels, VSL, Excursions. Mercedes GLC et Van Premium.",
     url: "https://taxi-nice-06.com",
-    telephone: "+33-6-XX-XX-XX-XX", // Remplacez par votre vrai numéro
-    email: "contact@taxi-nice-cote-dazur.com", // Remplacez par votre vrai email
+    telephone: "+33 6 51 68 36 87",
+    email: "taxiniceca@gmail.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Nice, Côte d'Azur",
