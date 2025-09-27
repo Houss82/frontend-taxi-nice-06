@@ -1,5 +1,6 @@
 "use client";
 
+import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
@@ -292,10 +293,10 @@ export default function ReservationPage() {
         </div>
 
         {/* Section basse - Formulaire */}
-        <div className="flex-1 bg-gray-50 flex items-center justify-center p-8">
+        <div className="flex-1 bg-gray-50 flex items-center justify-center p-4 md:p-8">
           <div className="w-full max-w-4xl">
             {/* Formulaire */}
-            <div className="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
+            <div className="bg-white rounded-2xl md:rounded-3xl shadow-xl border border-gray-200 p-4 md:p-8">
               {isSubmitted ? (
                 <div className="text-center py-12">
                   <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -328,11 +329,11 @@ export default function ReservationPage() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-8">
+                <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
                   {/* Informations personnelles */}
-                  <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-6">
-                    <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
-                      <User className="w-6 h-6 mr-3" />
+                  <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl md:rounded-2xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                      <User className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
                       {t("reservation.personalInfo")}
                     </h3>
 
@@ -415,7 +416,7 @@ export default function ReservationPage() {
                   </div>
 
                   {/* Date et heure */}
-                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6">
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
                       <Calendar className="w-6 h-6 mr-3" />
                       {t("reservation.dateTime")}
@@ -459,7 +460,7 @@ export default function ReservationPage() {
                   </div>
 
                   {/* Adresses */}
-                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6">
+                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
                       <MapPin className="w-6 h-6 mr-3" />
                       {t("reservation.addresses")}
@@ -470,42 +471,32 @@ export default function ReservationPage() {
                         <label className="text-gray-700 font-semibold">
                           {t("reservation.departure")} *
                         </label>
-                        <div className="relative">
-                          <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                          <input
-                            type="text"
-                            name="adresseDepart"
-                            value={formData.adresseDepart}
-                            onChange={handleChange}
-                            placeholder={t("placeholders.departure")}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                            required
-                          />
-                        </div>
+                        <AddressAutocomplete
+                          name="adresseDepart"
+                          value={formData.adresseDepart}
+                          onChange={handleChange}
+                          placeholder={t("placeholders.departure")}
+                          className=""
+                        />
                       </div>
 
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
                           {t("reservation.arrival")} *
                         </label>
-                        <div className="relative">
-                          <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                          <input
-                            type="text"
-                            name="adresseArrivee"
-                            value={formData.adresseArrivee}
-                            onChange={handleChange}
-                            placeholder={t("placeholders.arrival")}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                            required
-                          />
-                        </div>
+                        <AddressAutocomplete
+                          name="adresseArrivee"
+                          value={formData.adresseArrivee}
+                          onChange={handleChange}
+                          placeholder={t("placeholders.arrival")}
+                          className=""
+                        />
                       </div>
                     </div>
                   </div>
 
                   {/* Type de transport */}
-                  <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-2xl p-6">
+                  <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
                       <User className="w-6 h-6 mr-3" />
                       {t("reservation.transportType")} *
@@ -552,7 +543,7 @@ export default function ReservationPage() {
                   </div>
 
                   {/* Commentaires */}
-                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-6">
+                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
                       <MessageSquare className="w-6 h-6 mr-3" />
                       {t("reservation.comments")}

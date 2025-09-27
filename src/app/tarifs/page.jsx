@@ -20,37 +20,37 @@ function TarifsContent() {
       <Navbar />
 
       {/* Contenu principal */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="max-w-5xl mx-auto">
-          {/* Boutons de navigation */}
-          <div className="flex justify-between items-center mb-6">
-            <Link
-              href="/"
-              className="inline-flex items-center space-x-2 bg-gray-100 border border-blue-500 hover:bg-gray-200 text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg font-medium transition-colors duration-200"
-            >
-              <ArrowLeft className="w-5 h-5" />
-              <span>{t("pricing.backToHome")}</span>
-            </Link>
+      <div className="py-8">
+        {/* Boutons de navigation */}
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6 max-w-5xl mx-auto px-4">
+          <Link
+            href="/"
+            className="inline-flex items-center space-x-2 bg-gray-100 border border-blue-500 hover:bg-gray-200 text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg font-medium transition-colors duration-200 w-full sm:w-auto justify-center"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            <span>{t("pricing.backToHome")}</span>
+          </Link>
 
-            {/* Bouton pour basculer entre véhicules */}
-            <Link
-              href={`/tarifs?vehicle=${vehicleType === "glc" ? "van" : "glc"}`}
-              className="inline-flex items-center space-x-2 bg-primary hover:bg-primaryDark text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200"
-            >
-              {vehicleType === "glc" ? (
-                <>
-                  <Truck className="w-5 h-5" />
-                  <span>{t("pricing.switchToVan")}</span>
-                </>
-              ) : (
-                <>
-                  <Car className="w-5 h-5" />
-                  <span>{t("pricing.switchToGLC")}</span>
-                </>
-              )}
-            </Link>
-          </div>
+          {/* Bouton pour basculer entre véhicules */}
+          <Link
+            href={`/tarifs?vehicle=${vehicleType === "glc" ? "van" : "glc"}`}
+            className="inline-flex items-center space-x-2 bg-primary hover:bg-primaryDark text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 w-full sm:w-auto justify-center"
+          >
+            {vehicleType === "glc" ? (
+              <>
+                <Truck className="w-5 h-5" />
+                <span>{t("pricing.switchToVan")}</span>
+              </>
+            ) : (
+              <>
+                <Car className="w-5 h-5" />
+                <span>{t("pricing.switchToGLC")}</span>
+              </>
+            )}
+          </Link>
+        </div>
 
+        <div className="max-w-6xl mx-auto w-full">
           <PricingTable vehicleType={vehicleType} />
         </div>
       </div>

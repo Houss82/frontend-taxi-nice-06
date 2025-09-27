@@ -37,7 +37,7 @@ export default function SeoContent() {
   };
 
   return (
-    <section className="relative py-20 bg-gray-50 overflow-hidden">
+    <section className="relative py-20 bg-transparent overflow-hidden">
       {/* Image de fond fixe pour desktop */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-80 hidden md:block"
@@ -47,168 +47,242 @@ export default function SeoContent() {
         }}
       />
 
-      {/* Image de fond fixe pour mobile - hauteur écran */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-80 md:hidden"
-        style={{
-          backgroundImage: "url('/bg-content-seo.jpeg')",
-          backgroundAttachment: "fixed",
-          height: "100vh",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          right: 0,
-          zIndex: -1,
-        }}
-      />
+      {/* Fond moderne avec formes géométriques pour mobile */}
+      <div className="absolute inset-0 md:hidden overflow-hidden">
+        {/* Formes géométriques en arrière-plan */}
+        <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/20 rounded-full blur-xl"></div>
+        <div className="absolute top-1/4 -left-16 w-32 h-32 bg-primaryDark/30 rounded-full blur-lg"></div>
+        <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-primary/25 rounded-full blur-md"></div>
+        <div className="absolute bottom-1/4 -left-8 w-36 h-36 bg-primaryDark/20 rounded-full blur-xl"></div>
+        <div className="absolute bottom-10 right-10 w-20 h-20 bg-primary/30 rounded-full blur-lg"></div>
 
-      <div className="relative z-10 container mx-auto px-4">
+        {/* Formes ovales */}
+        <div className="absolute top-1/3 left-1/4 w-48 h-24 bg-gradient-to-r from-primary/15 to-primaryDark/20 rounded-full blur-lg transform -rotate-12"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-32 h-16 bg-gradient-to-r from-primaryDark/20 to-primary/15 rounded-full blur-md transform rotate-45"></div>
+
+        {/* Segments rectangulaires */}
+        <div className="absolute top-1/2 left-0 w-16 h-1 bg-gradient-to-r from-transparent to-primary/40 blur-sm"></div>
+        <div className="absolute top-3/4 right-0 w-20 h-1 bg-gradient-to-l from-transparent to-primaryDark/40 blur-sm"></div>
+        <div className="absolute top-1/4 left-1/2 w-12 h-1 bg-gradient-to-r from-primary/30 to-transparent blur-sm transform rotate-45"></div>
+
+        {/* Motifs géométriques */}
+
+        <div className="absolute top-20 left-1/3 w-1 h-1 bg-primaryDark/60 rounded-full"></div>
+        <div className="absolute top-32 right-1/3 w-1.5 h-1.5 bg-primary/40 rounded-full"></div>
+        <div className="absolute bottom-20 left-1/4 w-2 h-2 bg-primaryDark/50 rounded-full"></div>
+        <div className="absolute bottom-32 right-1/4 w-1 h-1 bg-primary/60 rounded-full"></div>
+      </div>
+
+      <div className="relative z-20 container mx-auto px-4 bg-transparent">
         {/* Titre principal */}
         <div className="text-center mb-16">
           <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
               {t("seoContent.title")}
             </h2>
+
             <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
           </div>
         </div>
 
         {/* Introduction */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-gradient-to-r from-primary to-primaryDark rounded-xl p-8 text-white shadow-xl">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
-                <span className="text-2xl">🚗</span>
+          <div className="bg-gradient-to-r from-primary to-primaryDark rounded-xl p-8 text-white shadow-xl flex flex-col items-center justify-center">
+            <div className="flex items-center justify-center space-x-2 bg-black p-2 pr-4 w-72 h-24 rounded-lg mb-5">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-2xl">TN</span>
               </div>
-              <h3 className="text-2xl font-bold">Introduction</h3>
+              <span className="text-white font-bold text-2xl md:text-4xl">
+                TAXI
+              </span>
+              <span className="text-blue-500 font-bold text-2xl md:text-4xl">
+                NICE
+              </span>
             </div>
+
             <p className="text-xl leading-relaxed">{t("seoContent.intro")}</p>
           </div>
         </div>
 
         {/* Grille de cartes */}
-        <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto px-4">
           {/* Section 1 */}
-          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4">
+          <div className="bg-white/80 md:bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            {/* Image de fond pour la section */}
+            <div className="relative h-48 bg-gradient-to-br from-primary/20 to-primaryDark/30 md:bg-gradient-to-br md:from-primary/20 md:to-primaryDark/30 overflow-hidden">
+              {/* Image de fond pour mobile */}
+              <div
+                className="absolute inset-0 bg-cover bg-center md:hidden"
+                style={{ backgroundImage: "url('/expertise.jpg')" }}
+              ></div>
+              <div className="absolute inset-0 bg-black/10 md:bg-black/20"></div>
+              <div className="absolute inset-0 flex items-center justify-center"></div>
+              {/* Motif décoratif */}
+            </div>
+
+            <div className="p-8">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4 mb-4">
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">
+                <h3 className="text-xl text-center font-bold text-gray-800">
                   {t("seoContent.section1.title")}
                 </h3>
               </div>
-              <button
-                onClick={() => toggleCard("section1")}
-                className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
-              >
+              <div className="text-lg leading-relaxed text-gray-600 mb-4">
                 {isExpanded("section1") ? (
-                  <ChevronUp className="w-5 h-5 text-primary" />
+                  <p>{t("seoContent.section1.content")}</p>
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-primary" />
+                  <p>{truncateText(t("seoContent.section1.content"))}</p>
                 )}
-              </button>
-            </div>
-            <div className="text-lg leading-relaxed text-gray-600">
-              {isExpanded("section1") ? (
-                <p>{t("seoContent.section1.content")}</p>
-              ) : (
-                <p>{truncateText(t("seoContent.section1.content"))}</p>
-              )}
+              </div>
+              <div className="flex justify-center">
+                <button
+                  onClick={() => toggleCard("section1")}
+                  className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
+                >
+                  {isExpanded("section1") ? (
+                    <ChevronUp className="w-5 h-5 text-primary" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-primary" />
+                  )}
+                </button>
+              </div>
             </div>
           </div>
 
           {/* Section 2 */}
-          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4">
+          <div className="bg-white/80 md:bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            {/* Image de fond pour la section */}
+            <div className="relative h-48 bg-gradient-to-br from-blue-500/20 to-cyan-500/30 md:bg-gradient-to-br md:from-blue-500/20 md:to-cyan-500/30 overflow-hidden">
+              {/* Image de fond pour mobile */}
+              <div
+                className="absolute inset-0 bg-cover bg-center md:hidden"
+                style={{ backgroundImage: "url('/perso.jpeg')" }}
+              ></div>
+              <div className="absolute inset-0 bg-black/10 md:bg-black/20"></div>
+              <div className="absolute inset-0 flex items-center justify-center"></div>
+              {/* Motif décoratif */}
+            </div>
+
+            <div className="p-8">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4 mb-4">
                   <Car className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">
+                <h3 className="text-xl text-center font-bold text-gray-800">
                   {t("seoContent.section2.title")}
                 </h3>
               </div>
-              <button
-                onClick={() => toggleCard("section2")}
-                className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
-              >
+              <div className="text-lg leading-relaxed text-gray-600 mb-4">
                 {isExpanded("section2") ? (
-                  <ChevronUp className="w-5 h-5 text-primary" />
+                  <p>{t("seoContent.section2.content")}</p>
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-primary" />
+                  <p>{truncateText(t("seoContent.section2.content"))}</p>
                 )}
-              </button>
-            </div>
-            <div className="text-lg leading-relaxed text-gray-600">
-              {isExpanded("section2") ? (
-                <p>{t("seoContent.section2.content")}</p>
-              ) : (
-                <p>{truncateText(t("seoContent.section2.content"))}</p>
-              )}
+              </div>
+              <div className="flex justify-center">
+                <button
+                  onClick={() => toggleCard("section2")}
+                  className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
+                >
+                  {isExpanded("section2") ? (
+                    <ChevronUp className="w-5 h-5 text-primary" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-primary" />
+                  )}
+                </button>
+              </div>
             </div>
           </div>
 
           {/* Section 3 */}
-          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4">
+          <div className="bg-white/80 md:bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            {/* Image de fond pour la section */}
+            <div className="relative h-48 bg-gradient-to-br from-green-500/20 to-emerald-500/30 md:bg-gradient-to-br md:from-green-500/20 md:to-emerald-500/30 overflow-hidden">
+              {/* Image de fond pour mobile */}
+              <div
+                className="absolute inset-0 bg-cover bg-center md:hidden"
+                style={{ backgroundImage: "url('/premium.jpeg')" }}
+              ></div>
+              <div className="absolute inset-0 bg-black/10 md:bg-black/20"></div>
+              <div className="absolute inset-0 flex items-center justify-center"></div>
+              {/* Motif décoratif */}
+            </div>
+
+            <div className="p-8">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4 mb-4">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">
+                <h3 className="text-xl text-center font-bold text-gray-800">
                   {t("seoContent.section3.title")}
                 </h3>
               </div>
-              <button
-                onClick={() => toggleCard("section3")}
-                className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
-              >
+              <div className="text-lg leading-relaxed text-gray-600 mb-4">
                 {isExpanded("section3") ? (
-                  <ChevronUp className="w-5 h-5 text-primary" />
+                  <p>{t("seoContent.section3.content")}</p>
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-primary" />
+                  <p>{truncateText(t("seoContent.section3.content"))}</p>
                 )}
-              </button>
-            </div>
-            <div className="text-lg leading-relaxed text-gray-600">
-              {isExpanded("section3") ? (
-                <p>{t("seoContent.section3.content")}</p>
-              ) : (
-                <p>{truncateText(t("seoContent.section3.content"))}</p>
-              )}
+              </div>
+              <div className="flex justify-center">
+                <button
+                  onClick={() => toggleCard("section3")}
+                  className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
+                >
+                  {isExpanded("section3") ? (
+                    <ChevronUp className="w-5 h-5 text-primary" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-primary" />
+                  )}
+                </button>
+              </div>
             </div>
           </div>
 
           {/* Section 4 */}
-          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4">
+          <div className="bg-white/80 md:bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            {/* Image de fond pour la section */}
+            <div className="relative h-48 bg-gradient-to-br from-yellow-500/20 to-orange-500/30 md:bg-gradient-to-br md:from-yellow-500/20 md:to-orange-500/30 overflow-hidden">
+              {/* Image de fond pour mobile */}
+              <div
+                className="absolute inset-0 bg-cover bg-center md:hidden"
+                style={{ backgroundImage: "url('/stratégie prix.webp')" }}
+              ></div>
+              <div className="absolute inset-0 bg-black/10 md:bg-black/20"></div>
+              <div className="absolute inset-0 flex items-center justify-center"></div>
+              {/* Motif décoratif */}
+            </div>
+
+            <div className="p-8">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primaryDark rounded-xl flex items-center justify-center mr-4 mb-4">
                   <DollarSign className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">
+                <h3 className="text-xl text-center  font-bold text-gray-800">
                   {t("seoContent.section4.title")}
                 </h3>
               </div>
-              <button
-                onClick={() => toggleCard("section4")}
-                className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
-              >
+              <div className="text-lg leading-relaxed text-gray-600 mb-4">
                 {isExpanded("section4") ? (
-                  <ChevronUp className="w-5 h-5 text-primary" />
+                  <p>{t("seoContent.section4.content")}</p>
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-primary" />
+                  <p>{truncateText(t("seoContent.section4.content"))}</p>
                 )}
-              </button>
-            </div>
-            <div className="text-lg leading-relaxed text-gray-600">
-              {isExpanded("section4") ? (
-                <p>{t("seoContent.section4.content")}</p>
-              ) : (
-                <p>{truncateText(t("seoContent.section4.content"))}</p>
-              )}
+              </div>
+              <div className="flex justify-center">
+                <button
+                  onClick={() => toggleCard("section4")}
+                  className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
+                >
+                  {isExpanded("section4") ? (
+                    <ChevronUp className="w-5 h-5 text-primary" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-primary" />
+                  )}
+                </button>
+              </div>
             </div>
           </div>
 

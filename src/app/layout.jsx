@@ -1,3 +1,4 @@
+import AnimatedButtons from "@/components/AnimatedButtons.jsx";
 import StructuredData from "@/components/StructuredData.jsx";
 import WhatsAppButton from "@/components/WhatsAppButton.jsx";
 import { LanguageProvider } from "@/contexts/LanguageContext.jsx";
@@ -99,11 +100,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
         suppressHydrationWarning={true}
       >
         <StructuredData />
         <LanguageProvider>{children}</LanguageProvider>
+        <AnimatedButtons />
         <WhatsAppButton />
       </body>
     </html>

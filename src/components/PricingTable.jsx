@@ -201,7 +201,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
       : basePrices;
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+    <div className="w-full bg-white shadow-lg overflow-hidden">
       {/* En-tête */}
       <div className="bg-primary text-white p-6">
         <div className="flex items-center justify-center space-x-4 mb-2">

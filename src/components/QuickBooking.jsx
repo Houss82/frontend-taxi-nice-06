@@ -1,5 +1,6 @@
 "use client";
 
+import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { reservationApi } from "@/lib/api.jsx";
 import {
@@ -8,7 +9,6 @@ import {
   Clock,
   Loader2,
   Mail,
-  MapPin,
   Phone,
   User,
 } from "lucide-react";
@@ -294,40 +294,28 @@ export default function QuickBooking() {
                     <label className="text-gray-700 font-semibold text-sm">
                       {t("quickBooking.form.departure")} *
                     </label>
-                    <div className="relative">
-                      <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                      <input
-                        type="text"
-                        name="adresseDepart"
-                        value={formData.adresseDepart}
-                        onChange={handleChange}
-                        placeholder={t(
-                          "quickBooking.form.departurePlaceholder"
-                        )}
-                        required
-                        className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                      />
-                    </div>
+                    <AddressAutocomplete
+                      name="adresseDepart"
+                      value={formData.adresseDepart}
+                      onChange={handleChange}
+                      placeholder={t("quickBooking.form.departurePlaceholder")}
+                      className=""
+                    />
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-gray-700 font-semibold text-sm">
                       {t("quickBooking.form.destination")} *
                     </label>
-                    <div className="relative">
-                      <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                      <input
-                        type="text"
-                        name="adresseArrivee"
-                        value={formData.adresseArrivee}
-                        onChange={handleChange}
-                        placeholder={t(
-                          "quickBooking.form.destinationPlaceholder"
-                        )}
-                        required
-                        className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                      />
-                    </div>
+                    <AddressAutocomplete
+                      name="adresseArrivee"
+                      value={formData.adresseArrivee}
+                      onChange={handleChange}
+                      placeholder={t(
+                        "quickBooking.form.destinationPlaceholder"
+                      )}
+                      className=""
+                    />
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-4">
