@@ -210,7 +210,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
             alt={vehicleType === "glc" ? "Mercedes GLC" : "Van Premium"}
             className="w-24 h-16 object-contain"
           />
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-xl font-bold">
             {t("pricing.title")} {vehicleType === "glc" ? "GLC" : "VAN"}
           </h2>
         </div>
@@ -223,21 +223,21 @@ export default function PricingTable({ vehicleType = "glc" }) {
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-gradient-to-r from-primary to-primaryDark">
-                <th className="p-4 text-left font-bold text-white">
+                <th className="p-3 text-left font-bold text-white text-sm">
                   <div className="flex items-center space-x-2">
-                    <MapPin className="w-5 h-5" />
+                    <MapPin className="w-4 h-4" />
                     <span>{t("pricing.destination")}</span>
                   </div>
                 </th>
-                <th className="p-4 text-center font-bold text-white">
+                <th className="p-3 text-center font-bold text-white text-sm">
                   <div className="flex items-center justify-center space-x-2">
-                    <Clock className="w-5 h-5" />
+                    <Clock className="w-4 h-4" />
                     <span>{t("pricing.day")} (9h - 18h)</span>
                   </div>
                 </th>
-                <th className="p-4 text-center font-bold text-white">
+                <th className="p-3 text-center font-bold text-white text-sm">
                   <div className="flex items-center justify-center space-x-2">
-                    <Clock className="w-5 h-5" />
+                    <Clock className="w-4 h-4" />
                     <span>{t("pricing.night")} (18h - 9h)</span>
                   </div>
                 </th>
@@ -251,7 +251,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
                     index % 2 === 0 ? "bg-white" : "bg-gray-50/50"
                   }`}
                 >
-                  <td className="p-4 text-gray-800 font-medium border-b border-gray-100">
+                  <td className="p-2 md:p-3 text-gray-800 font-medium border-b border-gray-100 text-sm">
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
                       <span>{dest.name}</span>
@@ -262,22 +262,22 @@ export default function PricingTable({ vehicleType = "glc" }) {
                       )}
                     </div>
                   </td>
-                  <td className="p-4 text-center border-b border-gray-100">
+                  <td className="p-2 md:p-3 text-center border-b border-gray-100">
                     <div className="flex items-center justify-center space-x-1">
-                      <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                        <Euro className="w-4 h-4 text-green-600" />
+                      <div className="w-5 h-5 md:w-6 md:h-6 bg-green-100 rounded-full flex items-center justify-center">
+                        <Euro className="w-2.5 h-2.5 md:w-3 md:h-3 text-green-600" />
                       </div>
-                      <span className="font-bold text-green-600 text-lg">
+                      <span className="font-bold text-green-600 text-sm md:text-base">
                         {dest.day}
                       </span>
                     </div>
                   </td>
-                  <td className="p-4 text-center border-b border-gray-100">
+                  <td className="p-2 md:p-3 text-center border-b border-gray-100">
                     <div className="flex items-center justify-center space-x-1">
-                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                        <Euro className="w-4 h-4 text-blue-600" />
+                      <div className="w-5 h-5 md:w-6 md:h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                        <Euro className="w-2.5 h-2.5 md:w-3 md:h-3 text-blue-600" />
                       </div>
-                      <span className="font-bold text-blue-600 text-lg">
+                      <span className="font-bold text-blue-600 text-sm md:text-base">
                         {dest.night || "-"}
                       </span>
                     </div>

@@ -29,7 +29,8 @@ export default function ReservationPage() {
     heure: "",
     adresseDepart: "",
     adresseArrivee: "",
-    typeTransport: "ALD exonérante",
+    nombreBagages: "1",
+    nombrePassagers: "1",
     commentaires: "",
   });
 
@@ -57,7 +58,8 @@ export default function ReservationPage() {
         heure: "",
         adresseDepart: "",
         adresseArrivee: "",
-        typeTransport: "ALD exonérante",
+        nombreBagages: "1",
+        nombrePassagers: "1",
         commentaires: "",
       });
     } catch (error) {
@@ -329,7 +331,10 @@ export default function ReservationPage() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-6 md:space-y-8"
+                >
                   {/* Informations personnelles */}
                   <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
@@ -337,7 +342,7 @@ export default function ReservationPage() {
                       {t("reservation.personalInfo")}
                     </h3>
 
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                       {/* Nom complet */}
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
@@ -417,12 +422,12 @@ export default function ReservationPage() {
 
                   {/* Date et heure */}
                   <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
-                      <Calendar className="w-6 h-6 mr-3" />
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                      <Calendar className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
                       {t("reservation.dateTime")}
                     </h3>
 
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
                           {t("reservation.date")} *
@@ -461,12 +466,12 @@ export default function ReservationPage() {
 
                   {/* Adresses */}
                   <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
-                      <MapPin className="w-6 h-6 mr-3" />
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                      <MapPin className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
                       {t("reservation.addresses")}
                     </h3>
 
-                    <div className="space-y-6">
+                    <div className="space-y-4 md:space-y-6">
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
                           {t("reservation.departure")} *
@@ -495,57 +500,75 @@ export default function ReservationPage() {
                     </div>
                   </div>
 
-                  {/* Type de transport */}
+                  {/* Nombre de bagages et passagers */}
                   <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
-                      <User className="w-6 h-6 mr-3" />
-                      {t("reservation.transportType")} *
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                      <User className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
+                      {t("reservation.tripDetails")}
                     </h3>
 
-                    <div className="space-y-4">
-                      <div className="flex items-center space-x-3">
-                        <input
-                          type="radio"
-                          id="ald_exonerated"
-                          name="typeTransport"
-                          value="ALD exonérante"
-                          checked={formData.typeTransport === "ALD exonérante"}
-                          onChange={handleChange}
-                          className="w-5 h-5 text-primary focus:ring-primary"
-                        />
-                        <label
-                          htmlFor="ald_exonerated"
-                          className="text-gray-700 font-medium"
-                        >
-                          {t("transportTypes.ald_exonerated")}
+                    <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+                      {/* Nombre de bagages */}
+                      <div className="space-y-2">
+                        <label className="text-gray-700 font-semibold">
+                          {t("reservation.luggageCount")} *
                         </label>
+                        <div className="relative">
+                          <select
+                            name="nombreBagages"
+                            value={formData.nombreBagages}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none appearance-none"
+                            required
+                          >
+                            <option value="0">0 bagage</option>
+                            <option value="1">1 bagage</option>
+                            <option value="2">2 bagages</option>
+                            <option value="3">3 bagages</option>
+                            <option value="4">4 bagages</option>
+                            <option value="5">5 bagages</option>
+                            <option value="6">6 bagages</option>
+                            <option value="7">7 bagages</option>
+                            <option value="8">8 bagages</option>
+                            <option value="9">9 bagages</option>
+                            <option value="10">10+ bagages</option>
+                          </select>
+                        </div>
                       </div>
-                      <div className="flex items-center space-x-3">
-                        <input
-                          type="radio"
-                          id="ald_non_exonerated"
-                          name="typeTransport"
-                          value="ALD non exonérante"
-                          checked={
-                            formData.typeTransport === "ALD non exonérante"
-                          }
-                          onChange={handleChange}
-                          className="w-5 h-5 text-primary focus:ring-primary"
-                        />
-                        <label
-                          htmlFor="ald_non_exonerated"
-                          className="text-gray-700 font-medium"
-                        >
-                          {t("transportTypes.ald_non_exonerated")}
+
+                      {/* Nombre de passagers */}
+                      <div className="space-y-2">
+                        <label className="text-gray-700 font-semibold">
+                          {t("reservation.passengerCount")} *
                         </label>
+                        <div className="relative">
+                          <select
+                            name="nombrePassagers"
+                            value={formData.nombrePassagers}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none appearance-none"
+                            required
+                          >
+                            <option value="1">1 passager</option>
+                            <option value="2">2 passagers</option>
+                            <option value="3">3 passagers</option>
+                            <option value="4">4 passagers</option>
+                            <option value="5">5 passagers</option>
+                            <option value="6">6 passagers</option>
+                            <option value="7">7 passagers</option>
+                            <option value="8">8 passagers</option>
+                            <option value="9">9 passagers</option>
+                            <option value="10">10+ passagers</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   {/* Commentaires */}
                   <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
-                      <MessageSquare className="w-6 h-6 mr-3" />
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                      <MessageSquare className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
                       {t("reservation.comments")}
                     </h3>
 

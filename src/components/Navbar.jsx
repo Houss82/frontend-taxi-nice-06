@@ -2,13 +2,29 @@
 
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import LanguageToggle from "./LanguageToggle.jsx";
 
 export default function Navbar() {
   const { t, language } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const servicesRef = useRef(null);
+
+  // Fermer le menu services quand on clique à l'extérieur
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
+        setIsServicesOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 md:sticky">
@@ -31,17 +47,73 @@ export default function Navbar() {
           <a href="/" className="text-black hover:text-primary font-medium">
             {t("navbar.home")}
           </a>
-          <a
-            href="#services"
-            className="text-black hover:text-primary font-medium"
-          >
-            {t("navbar.services")}
-          </a>
+
+          {/* Services Dropdown */}
+          <div className="relative" ref={servicesRef}>
+            <button
+              onClick={() => setIsServicesOpen(!isServicesOpen)}
+              className="text-black hover:text-primary font-medium flex items-center gap-1"
+            >
+              {t("navbar.services")}
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${
+                  isServicesOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+
+            <AnimatePresence>
+              {isServicesOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2"
+                >
+                  <a
+                    href="/services/transfert-aeroport"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    Transfert Aéroport
+                  </a>
+                  <a
+                    href="/services/excursions"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    Excursions
+                  </a>
+                  <a
+                    href="/services"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    Tous les services
+                  </a>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
           <a
             href="/reservation"
             className="text-black hover:text-primary font-medium"
           >
             {t("navbar.reservation")}
+          </a>
+          <a
+            href="/tarifs"
+            className="text-black hover:text-primary font-medium"
+          >
+            {language === "fr" ? "TARIFS" : "PRICING"}
+          </a>
+          <a
+            href="/contact"
+            className="text-black hover:text-primary font-medium"
+          >
+            {language === "fr" ? "CONTACT" : "CONTACT"}
           </a>
         </nav>
         <div className="flex items-center gap-2">
@@ -95,15 +167,39 @@ export default function Navbar() {
               >
                 {t("navbar.home")}
               </motion.a>
-              <motion.a
-                href="#services"
-                className="block text-black hover:text-primary font-medium py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
-              >
-                {t("navbar.services")}
-              </motion.a>
+              {/* Services avec sous-menu mobile */}
+              <div className="space-y-2">
+                <div className="text-gray-600 font-semibold py-2 text-sm uppercase tracking-wide">
+                  {t("navbar.services")}
+                </div>
+                <motion.a
+                  href="/services/transfert-aeroport"
+                  className="block text-gray-700 hover:text-primary font-medium py-2 pl-4 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  Transfert Aéroport
+                </motion.a>
+                <motion.a
+                  href="/services/excursions"
+                  className="block text-gray-700 hover:text-primary font-medium py-2 pl-4 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  Excursions
+                </motion.a>
+                <motion.a
+                  href="/services"
+                  className="block text-gray-700 hover:text-primary font-medium py-2 pl-4 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  Tous les services
+                </motion.a>
+              </div>
               <motion.a
                 href="/reservation"
                 className="block text-black hover:text-primary font-medium py-2 transition-colors"
@@ -123,7 +219,7 @@ export default function Navbar() {
                 {language === "fr" ? "NOS TARIFS" : "OUR PRICING"}
               </motion.a>
               <motion.a
-                href="#contact"
+                href="/contact"
                 className="block text-black hover:text-primary font-medium py-2 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
                 whileHover={{ x: 5 }}

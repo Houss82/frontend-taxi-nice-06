@@ -67,4 +67,3 @@ Si vous rencontrez des problèmes :
 2. Vérifiez que l'API Places est activée
 3. Vérifiez les restrictions de domaine
 4. Consultez la console du navigateur pour les erreurs
-

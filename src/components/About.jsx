@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
+import { motion } from "framer-motion";
 import { Award, Heart, Shield, Zap } from "lucide-react";
 
 export default function About() {
@@ -34,41 +35,105 @@ export default function About() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div>
-              <h2 className="text-3xl lg:text-4xl  font-bold mb-4">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <motion.h2
+                className="text-3xl lg:text-4xl font-bold mb-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              >
                 {t("about.title")}{" "}
-                <span className="text-primary">
+                <motion.span
+                  className="text-primary"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+                >
                   {t("about.brandHighlight")}
-                </span>{" "}
+                </motion.span>{" "}
                 ?
-              </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              </motion.h2>
+              <motion.p
+                className="text-xl text-gray-600 leading-relaxed"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              >
                 {t("about.description")}
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <motion.div
+              className="grid grid-cols-2 gap-4"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+            >
               {features.map((feature, index) => (
-                <div
+                <motion.div
                   key={index}
                   className="bg-white border-l-4 border-l-primary rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.5 + index * 0.1,
+                    ease: "easeOut",
+                  }}
+                  whileHover={{
+                    y: -5,
+                    scale: 1.02,
+                    transition: { duration: 0.2 },
+                  }}
                 >
                   <div className="p-4">
                     <div className="flex items-center space-x-3">
-                      <feature.icon className="w-8 h-8 text-primary" />
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{
+                          duration: 0.4,
+                          delay: 0.6 + index * 0.1,
+                          ease: "easeOut",
+                        }}
+                      >
+                        <feature.icon className="w-8 h-8 text-primary" />
+                      </motion.div>
                       <div>
-                        <h3 className="font-bold text-black">
+                        <motion.h3
+                          className="font-bold text-black"
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{
+                            duration: 0.4,
+                            delay: 0.7 + index * 0.1,
+                            ease: "easeOut",
+                          }}
+                        >
                           {feature.title}
-                        </h3>
-                        <p className="text-sm text-gray-600">
+                        </motion.h3>
+                        <motion.p
+                          className="text-sm text-gray-600"
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{
+                            duration: 0.4,
+                            delay: 0.8 + index * 0.1,
+                            ease: "easeOut",
+                          }}
+                        >
                           {feature.description}
-                        </p>
+                        </motion.p>
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
 
           <div className="relative">

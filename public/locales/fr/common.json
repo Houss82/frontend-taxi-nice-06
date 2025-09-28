@@ -14,6 +14,9 @@
     "departure": "Adresse de départ",
     "arrival": "Adresse d'arrivée",
     "transportType": "Type de transport",
+    "tripDetails": "Détails du voyage",
+    "luggageCount": "Nombre de bagages",
+    "passengerCount": "Nombre de passagers",
     "comments": "Commentaires",
     "submit": "Créer la réservation",
     "submitting": "Création en cours...",
@@ -269,6 +272,74 @@
     },
     "switchToVan": "Voir tarifs Van",
     "switchToGLC": "Voir tarifs GLC"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Service Client 24h/24",
+    "description": "Besoin d'un transport ? Une question ? Nous sommes là pour vous aider. Contactez-nous par téléphone, email ou via notre formulaire.",
+    "coordinates": "Nos Coordonnées",
+    "coordinatesDesc": "Plusieurs façons de nous contacter selon vos préférences",
+    "phone": {
+      "title": "Téléphone",
+      "value": "06 51 68 36 87",
+      "description": "Appelez-nous 24h/24"
+    },
+    "email": {
+      "title": "Email",
+      "value": "taxiniceca@gmail.com",
+      "description": "Réponse sous 2h"
+    },
+    "location": {
+      "title": "Zone d'intervention",
+      "value": "Nice & Côte d'Azur",
+      "description": "Toute la région"
+    },
+    "hours": {
+      "title": "Disponibilité",
+      "value": "24h/24 - 7j/7",
+      "description": "Service permanent"
+    },
+    "map": {
+      "title": "Notre Zone d'Intervention",
+      "description": "Nous couvrons toute la région Provence-Alpes-Côte d'Azur. Cliquez sur les marqueurs pour plus d'informations.",
+      "zone": "Zone PACA Complète",
+      "zoneDesc": "Nice, Cannes, Monaco, Marseille, Aix-en-Provence, Toulon, Avignon...",
+      "available": "Disponible 24h/24",
+      "availableDesc": "Service permanent dans toute la région, même la nuit et les weekends.",
+      "booking": "Réservation Instantanée",
+      "bookingDesc": "Appelez-nous et nous venons vous chercher où que vous soyez en PACA."
+    },
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "description": "Remplissez le formulaire ci-dessous et nous vous répondrons rapidement",
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "subject": "Service souhaité",
+      "subjectPlaceholder": "Sélectionnez un service",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre demande en détail...",
+      "date": "Date souhaitée",
+      "time": "Heure souhaitée",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi en cours...",
+      "success": "Message Envoyé !",
+      "successMessage": "Merci pour votre message. Nous vous répondrons dans les plus brefs délais.",
+      "newMessage": "Envoyer un autre message",
+      "subjects": [
+        "Réservation de taxi",
+        "Demande de devis",
+        "Question générale",
+        "Réclamation",
+        "Partenariat",
+        "Autre"
+      ]
+    },
+    "cta": {
+      "title": "Besoin d'un Transport ?",
+      "description": "Appelez-nous maintenant pour réserver votre transport",
+      "emailButton": "Envoyer un email"
+    }
   },
   "seoContent": {
     "title": "Taxi Nice Côte d'Azur - Service de Transport Premium 7j/7",

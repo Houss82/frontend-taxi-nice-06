@@ -70,4 +70,3 @@ Si vous rencontrez des problèmes :
 ### 🎉 Résultat
 
 Votre formulaire de réservation utilise maintenant l'API officielle française pour l'autocomplétion d'adresses, entièrement gratuite et parfaitement adaptée à votre service de taxi sur la Côte d'Azur !
-
