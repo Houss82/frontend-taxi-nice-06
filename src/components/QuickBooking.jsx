@@ -2,7 +2,7 @@
 
 import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
-import { reservationApi } from "@/lib/api.jsx";
+import { formspreeService } from "@/lib/formspree.jsx";
 import {
   Car,
   CheckCircle,
@@ -43,7 +43,7 @@ export default function QuickBooking() {
     setIsSubmitted(false);
 
     try {
-      await reservationApi.create({
+      await formspreeService.sendQuickBooking({
         ...formData,
         indicatifPays: "+33",
         typeTransport: "ALD exonérante",
@@ -66,7 +66,7 @@ export default function QuickBooking() {
     } catch (error) {
       console.error("Erreur:", error);
       const errorMessage =
-        error.message || "Erreur lors de la création de la réservation";
+        error.message || "Erreur lors de l'envoi de la réservation";
       alert(`Erreur: ${errorMessage}`);
     } finally {
       setIsSubmitting(false);

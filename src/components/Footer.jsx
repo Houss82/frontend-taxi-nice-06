@@ -72,10 +72,35 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-12 pt-8 text-center">
-          <p className="text-white/80">
-            © {new Date().getFullYear()} {t("footer.copyright")}
-          </p>
+        <div className="border-t border-white/20 mt-12 pt-8">
+          {/* Liens légaux */}
+          <div className="flex flex-wrap justify-center gap-6 mb-6">
+            <a
+              href="/mentions-legales"
+              className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
+            >
+              {t("footer.legalNotice")}
+            </a>
+            <a
+              href="/politique-confidentialite"
+              className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
+            >
+              {t("footer.privacyPolicy")}
+            </a>
+            <a
+              href="/cgv"
+              className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
+            >
+              {t("footer.terms")}
+            </a>
+          </div>
+
+          {/* Copyright */}
+          <div className="text-center">
+            <p className="text-white/80">
+              © {new Date().getFullYear()} {t("footer.copyright")}
+            </p>
+          </div>
         </div>
       </div>
     </footer>

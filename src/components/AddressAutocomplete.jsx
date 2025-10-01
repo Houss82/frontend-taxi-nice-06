@@ -75,6 +75,9 @@ export default function AddressAutocomplete({
     } catch (error) {
       console.error("❌ Erreur lors de la recherche d'adresses:", error);
 
+      // Ne pas afficher l'erreur à l'utilisateur, utiliser le fallback silencieusement
+      console.log("🔄 [${name}] Utilisation du mode hors ligne");
+
       // Fallback vers des adresses locales en cas d'erreur
       const mockAddresses = [
         "Aéroport Nice Côte d'Azur, 06200 Nice",

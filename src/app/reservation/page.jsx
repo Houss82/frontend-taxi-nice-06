@@ -4,7 +4,7 @@ import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
-import { reservationApi } from "@/lib/api.jsx";
+import { formspreeService } from "@/lib/formspree.jsx";
 import {
   Calendar,
   Clock,
@@ -29,8 +29,8 @@ export default function ReservationPage() {
     heure: "",
     adresseDepart: "",
     adresseArrivee: "",
-    nombreBagages: "1",
-    nombrePassagers: "1",
+    nombreBagages: "2",
+    nombrePassagers: "3",
     commentaires: "",
   });
 
@@ -47,7 +47,7 @@ export default function ReservationPage() {
     setIsSubmitting(true);
 
     try {
-      await reservationApi.create(formData);
+      await formspreeService.sendReservation(formData);
       setIsSubmitted(true);
       setFormData({
         nom: "",
@@ -58,14 +58,14 @@ export default function ReservationPage() {
         heure: "",
         adresseDepart: "",
         adresseArrivee: "",
-        nombreBagages: "1",
-        nombrePassagers: "1",
+        nombreBagages: "2",
+        nombrePassagers: "3",
         commentaires: "",
       });
     } catch (error) {
       console.error("Erreur:", error);
       const errorMessage =
-        error.message || "Erreur lors de la création de la réservation";
+        error.message || "Erreur lors de l'envoi de la réservation";
       alert(`Erreur: ${errorMessage}`);
     } finally {
       setIsSubmitting(false);
@@ -471,7 +471,7 @@ export default function ReservationPage() {
                       {t("reservation.addresses")}
                     </h3>
 
-                    <div className="space-y-4 md:space-y-6">
+                    <div className="space-y-6">
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
                           {t("reservation.departure")} *
@@ -500,7 +500,7 @@ export default function ReservationPage() {
                     </div>
                   </div>
 
-                  {/* Nombre de bagages et passagers */}
+                  {/* Détails du voyage */}
                   <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
                       <User className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
@@ -514,11 +514,12 @@ export default function ReservationPage() {
                           {t("reservation.luggageCount")} *
                         </label>
                         <div className="relative">
+                          <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                           <select
                             name="nombreBagages"
                             value={formData.nombreBagages}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none appearance-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           >
                             <option value="0">0 bagage</option>
@@ -526,12 +527,7 @@ export default function ReservationPage() {
                             <option value="2">2 bagages</option>
                             <option value="3">3 bagages</option>
                             <option value="4">4 bagages</option>
-                            <option value="5">5 bagages</option>
-                            <option value="6">6 bagages</option>
-                            <option value="7">7 bagages</option>
-                            <option value="8">8 bagages</option>
-                            <option value="9">9 bagages</option>
-                            <option value="10">10+ bagages</option>
+                            <option value="5">5+ bagages</option>
                           </select>
                         </div>
                       </div>
@@ -542,11 +538,12 @@ export default function ReservationPage() {
                           {t("reservation.passengerCount")} *
                         </label>
                         <div className="relative">
+                          <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                           <select
                             name="nombrePassagers"
                             value={formData.nombrePassagers}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none appearance-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           >
                             <option value="1">1 passager</option>
@@ -556,9 +553,7 @@ export default function ReservationPage() {
                             <option value="5">5 passagers</option>
                             <option value="6">6 passagers</option>
                             <option value="7">7 passagers</option>
-                            <option value="8">8 passagers</option>
-                            <option value="9">9 passagers</option>
-                            <option value="10">10+ passagers</option>
+                            <option value="8">8+ passagers</option>
                           </select>
                         </div>
                       </div>
@@ -567,8 +562,8 @@ export default function ReservationPage() {
 
                   {/* Commentaires */}
                   <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
-                      <MessageSquare className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
+                    <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
+                      <MessageSquare className="w-6 h-6 mr-3" />
                       {t("reservation.comments")}
                     </h3>
 

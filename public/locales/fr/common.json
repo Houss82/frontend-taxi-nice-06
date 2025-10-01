@@ -166,7 +166,10 @@
     "needTaxiNow": "Besoin d'un taxi maintenant ?",
     "callNow": "Appeler maintenant",
     "copyright": "Tous droits réservés.",
-    "bookButton": "Réserver"
+    "bookButton": "Réserver",
+    "legalNotice": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "terms": "CGV"
   },
   "about": {
     "title": "Pourquoi choisir",

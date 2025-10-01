@@ -5,6 +5,7 @@ import GoogleMap from "@/components/GoogleMap.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
+import { formspreeService } from "@/lib/formspree.jsx";
 import { motion } from "framer-motion";
 import {
   Calendar,
@@ -49,11 +50,25 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Ici vous pouvez ajouter la logique d'envoi du formulaire
-    console.log("Formulaire soumis:", formData);
-    setIsSubmitted(true);
+    try {
+      await formspreeService.sendContact(formData);
+      setIsSubmitted(true);
+      setFormData({
+        nom: "",
+        email: "",
+        telephone: "",
+        service: "",
+        message: "",
+        date: "",
+        heure: "",
+      });
+    } catch (error) {
+      console.error("Erreur:", error);
+      const errorMessage = error.message || "Erreur lors de l'envoi du message";
+      alert(`Erreur: ${errorMessage}`);
+    }
   };
 
   const contactInfo = [
