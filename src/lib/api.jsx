@@ -1,4 +1,5 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3003";
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL || "https://backend-taxi-nice-06.vercel.app";
 
 // Fonction utilitaire pour gérer les réponses fetch
 const handleResponse = async (response) => {
