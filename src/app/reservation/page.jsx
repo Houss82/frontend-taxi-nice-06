@@ -4,6 +4,7 @@ import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
+import { reservationApi } from "@/lib/api.jsx";
 import { formspreeService } from "@/lib/formspree.jsx";
 import {
   Calendar,
@@ -29,8 +30,8 @@ export default function ReservationPage() {
     heure: "",
     adresseDepart: "",
     adresseArrivee: "",
-    nombreBagages: "2",
-    nombrePassagers: "3",
+    nombreBagages: "",
+    nombrePassagers: "",
     commentaires: "",
   });
 
@@ -46,8 +47,20 @@ export default function ReservationPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Validation côté client
+    if (!formData.nombreBagages || !formData.nombrePassagers) {
+      alert("Veuillez sélectionner le nombre de bagages et de passagers");
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
+      // Envoyer à la base de données (API backend)
+      await reservationApi.create(formData);
+
+      // Envoyer l'email via Formspree
       await formspreeService.sendReservation(formData);
+
       setIsSubmitted(true);
       setFormData({
         nom: "",
@@ -58,8 +71,8 @@ export default function ReservationPage() {
         heure: "",
         adresseDepart: "",
         adresseArrivee: "",
-        nombreBagages: "2",
-        nombrePassagers: "3",
+        nombreBagages: "",
+        nombrePassagers: "",
         commentaires: "",
       });
     } catch (error) {
@@ -522,6 +535,9 @@ export default function ReservationPage() {
                             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           >
+                            <option value="">
+                              Sélectionner le nombre de bagages
+                            </option>
                             <option value="0">0 bagage</option>
                             <option value="1">1 bagage</option>
                             <option value="2">2 bagages</option>
@@ -546,6 +562,9 @@ export default function ReservationPage() {
                             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           >
+                            <option value="">
+                              Sélectionner le nombre de passagers
+                            </option>
                             <option value="1">1 passager</option>
                             <option value="2">2 passagers</option>
                             <option value="3">3 passagers</option>
