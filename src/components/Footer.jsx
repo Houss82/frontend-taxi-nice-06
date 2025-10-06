@@ -64,7 +64,7 @@ export default function Footer() {
             </h4>
             <p className="text-white/80">{t("footer.needTaxiNow")}</p>
             <a
-              href="#reservation"
+              href="tel:+33651683687"
               className="btn bg-white text-primary hover:bg-white/90 w-full flex items-center justify-center gap-2"
             >
               {t("footer.callNow")}

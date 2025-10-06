@@ -535,9 +535,7 @@ export default function ReservationPage() {
                             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           >
-                            <option value="">
-                              Sélectionner le nombre de bagages
-                            </option>
+                            <option value="">{t("placeholders.select")}</option>
                             <option value="0">0 bagage</option>
                             <option value="1">1 bagage</option>
                             <option value="2">2 bagages</option>
@@ -562,9 +560,7 @@ export default function ReservationPage() {
                             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           >
-                            <option value="">
-                              Sélectionner le nombre de passagers
-                            </option>
+                            <option value="">{t("placeholders.select")}</option>
                             <option value="1">1 passager</option>
                             <option value="2">2 passagers</option>
                             <option value="3">3 passagers</option>
@@ -588,7 +584,7 @@ export default function ReservationPage() {
 
                     <div className="space-y-2">
                       <label className="text-gray-700 font-semibold">
-                        Informations supplémentaires
+                        {t("reservation.additionalInfo")}
                       </label>
                       <textarea
                         name="commentaires"

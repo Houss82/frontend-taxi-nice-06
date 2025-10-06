@@ -18,6 +18,7 @@
     "luggageCount": "Number of bags",
     "passengerCount": "Number of passengers",
     "comments": "Comments",
+    "additionalInfo": "Additional Information",
     "submit": "Create Reservation",
     "submitting": "Creating...",
     "success": "Reservation created successfully!",
@@ -33,7 +34,8 @@
     "email": "your@email.com",
     "departure": "Departure address",
     "arrival": "Arrival address",
-    "comments": "Additional information..."
+    "comments": "Additional information...",
+    "select": "Select"
   },
   "navbar": {
     "brand": "Taxi",
