@@ -92,6 +92,7 @@ export default function ContactPage() {
       value: t("contact.location.value"),
       description: t("contact.location.description"),
       color: "from-purple-500 to-purple-700",
+      link: "https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8",
     },
     {
       icon: Clock,
@@ -176,29 +177,51 @@ export default function ContactPage() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {contactInfo.map((info, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                whileHover={{ y: -10 }}
-                className="text-center p-6 rounded-2xl hover:shadow-lg transition-all duration-300"
-              >
-                <div
-                  className={`w-16 h-16 bg-gradient-to-r ${info.color} rounded-full flex items-center justify-center mx-auto mb-6`}
+            {contactInfo.map((info, index) => {
+              const CardContent = (
+                <>
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-r ${info.color} rounded-full flex items-center justify-center mx-auto mb-6`}
+                  >
+                    <info.icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    {info.title}
+                  </h3>
+                  <p className="text-2xl font-bold text-gray-800 mb-2">
+                    {info.value}
+                  </p>
+                  <p className="text-gray-600">{info.description}</p>
+                </>
+              );
+
+              return info.link ? (
+                <motion.a
+                  key={index}
+                  href={info.link}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  whileHover={{ y: -10 }}
+                  className="text-center p-6 rounded-2xl hover:shadow-lg transition-all duration-300 cursor-pointer block"
                 >
-                  <info.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {info.title}
-                </h3>
-                <p className="text-2xl font-bold text-gray-800 mb-2">
-                  {info.value}
-                </p>
-                <p className="text-gray-600">{info.description}</p>
-              </motion.div>
-            ))}
+                  {CardContent}
+                </motion.a>
+              ) : (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  whileHover={{ y: -10 }}
+                  className="text-center p-6 rounded-2xl hover:shadow-lg transition-all duration-300"
+                >
+                  {CardContent}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -420,6 +443,17 @@ export default function ContactPage() {
             className="bg-white rounded-2xl shadow-lg p-6"
           >
             <GoogleMap />
+            <div className="mt-4 text-center">
+              <a
+                href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primaryDark transition-colors duration-300 font-semibold"
+              >
+                <MapPin className="w-5 h-5" />
+                Voir notre fiche Google Business
+              </a>
+            </div>
           </motion.div>
 
           <motion.div

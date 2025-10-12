@@ -4,6 +4,72 @@ import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { Building2, Clock, MapPin, Plane, Star, Users } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
+// Composant pour animer les chiffres
+function AnimatedCounter({ end, duration = 2000, decimals = 0, suffix = "" }) {
+  const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const counterRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+
+            const startTime = performance.now();
+            const startValue = 0;
+            const endValue = parseFloat(end);
+
+            const animate = (currentTime) => {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+
+              // Fonction d'easing pour une animation plus naturelle
+              const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+              const currentValue =
+                startValue + (endValue - startValue) * easeOutQuart;
+
+              setCount(currentValue);
+
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                setCount(endValue);
+              }
+            };
+
+            requestAnimationFrame(animate);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => {
+      if (counterRef.current) {
+        observer.unobserve(counterRef.current);
+      }
+    };
+  }, [end, duration, hasAnimated]);
+
+  const displayValue =
+    decimals > 0
+      ? count.toFixed(decimals)
+      : Math.floor(count).toLocaleString("fr-FR");
+
+  return (
+    <span ref={counterRef} className="inline-block">
+      {displayValue}
+      {suffix}
+    </span>
+  );
+}
+
 export default function Services() {
   const { t } = useLanguage();
   const [visibleElements, setVisibleElements] = useState(new Set());
@@ -140,21 +206,29 @@ export default function Services() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 hover:animate-pulse-glow transition-all duration-300">
                 <Clock className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-bold text-2xl mb-2">24/7</h3>
+              <h3 className="font-bold text-2xl mb-2">
+                <AnimatedCounter end={24} duration={1500} />
+                <span className="text-primary">/7</span>
+              </h3>
               <p className="text-gray-600">Service disponible jour et nuit</p>
             </div>
             <div>
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 hover:animate-pulse-glow transition-all duration-300">
                 <Star className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-bold text-2xl mb-2">4.9/5</h3>
+              <h3 className="font-bold text-2xl mb-2">
+                <AnimatedCounter end={4.9} decimals={1} duration={2000} />
+                <span className="text-primary">/5</span>
+              </h3>
               <p className="text-gray-600">Note moyenne de nos clients</p>
             </div>
             <div>
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 hover:animate-pulse-glow transition-all duration-300">
                 <Users className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-bold text-2xl mb-2">1000+</h3>
+              <h3 className="font-bold text-2xl mb-2">
+                <AnimatedCounter end={1000} duration={2500} suffix="+" />
+              </h3>
               <p className="text-gray-600">Clients satisfaits chaque mois</p>
             </div>
           </div>

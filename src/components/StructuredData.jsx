@@ -120,6 +120,7 @@ export default function StructuredData() {
         ],
       },
       sameAs: [
+        "https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8",
         "https://www.facebook.com/taxi-nice-cote-dazur",
         "https://www.instagram.com/taxi_nice_cote_dazur",
         "https://www.linkedin.com/company/taxi-nice-cote-dazur",

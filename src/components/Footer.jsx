@@ -36,10 +36,15 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-white/90" />
                 <span>{t("footer.email")}</span>
               </div>
-              <div className="flex items-center space-x-3">
+              <a
+                href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="flex items-center space-x-3 hover:text-white/70 transition-colors"
+              >
                 <MapPin className="w-4 h-4 text-white/90" />
                 <span>{t("footer.location")}</span>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -92,6 +97,15 @@ export default function Footer() {
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
               {t("footer.terms")}
+            </a>
+            <a
+              href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-white/80 hover:text-white transition-colors duration-200 text-sm flex items-center gap-1"
+            >
+              <MapPin className="w-3 h-3" />
+              Google Business
             </a>
           </div>
 

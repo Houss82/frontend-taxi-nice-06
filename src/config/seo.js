@@ -163,8 +163,9 @@ export const seoConfig = {
     },
   },
 
-  // Configuration des réseaux sociaux
+  // Configuration des réseaux sociaux et Google Business
   social: {
+    googleBusiness: "https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8",
     facebook: "https://www.facebook.com/taxi-nice-cote-dazur",
     instagram: "https://www.instagram.com/taxi_nice_cote_dazur",
     linkedin: "https://www.linkedin.com/company/taxi-nice-cote-dazur",
