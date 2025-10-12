@@ -5,6 +5,7 @@ excerpt: "Résumé de l'article en 150-160 caractères. Ce texte apparaîtra dan
 image: "/nom-de-votre-image.jpg" # Image dans le dossier /public
 category: "Guides Pratiques" # Options: Guides Pratiques, Conseils, Actualités, Tourisme
 author: "Taxi Nice Côte d'Azur"
+language: "fr" # IMPORTANT: "fr" pour français, "en" pour anglais
 keywords: ["mot-clé 1", "mot-clé 2", "mot-clé 3", "mot-clé 4"]
 ---
 
@@ -96,6 +97,7 @@ _Article mis à jour le [DATE]_
    - `excerpt` : 150-160 caractères pour Google
    - `image` : Nom du fichier dans /public
    - `category` : Choisir parmi les catégories existantes
+   - `language` : **IMPORTANT** - "fr" pour français, "en" pour anglais
    - `keywords` : 4-6 mots-clés pertinents
 
 3. **Structure de l'article** :

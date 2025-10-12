@@ -5,6 +5,7 @@ excerpt: "Découvrez tous nos conseils pour un transfert réussi depuis l'aérop
 image: "/aéro-arrivé.jpeg"
 category: "Guides Pratiques"
 author: "Taxi Nice Côte d'Azur"
+language: "fr"
 keywords:
   [
     "transfert aéroport nice",

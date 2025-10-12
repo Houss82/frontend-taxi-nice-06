@@ -3,13 +3,15 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { motion } from "framer-motion";
-import { Calendar, Clock, Tag, User } from "lucide-react";
+import { Calendar, Clock, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function BlogPage() {
+  const { t, language } = useLanguage();
   const [posts, setPosts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("Tous");
   const [loading, setLoading] = useState(true);
@@ -23,29 +25,55 @@ export default function BlogPage() {
   ];
 
   useEffect(() => {
+    // S'assurer que language est défini avant de charger
+    if (!language) return;
+
+    // Activer le chargement lors du changement de langue
+    setLoading(true);
+
     // Récupérer les articles depuis l'API
     fetch("/api/blog")
       .then((res) => res.json())
       .then((data) => {
-        setPosts(data.posts || []);
+        // Filtrer les articles selon la langue actuelle
+        const allPosts = data.posts || [];
+
+        const filteredByLanguage = allPosts.filter(
+          (post) => post.language === language
+        );
+
+        setPosts(filteredByLanguage);
         setLoading(false);
       })
       .catch((error) => {
-        console.error("Erreur:", error);
+        console.error("❌ Erreur:", error);
         setLoading(false);
       });
-  }, []);
+  }, [language]);
 
-  const categories = ["Tous", ...new Set(posts.map((post) => post.category))];
+  // Initialiser la catégorie sélectionnée avec la traduction
+  useEffect(() => {
+    if (language) {
+      setSelectedCategory(t("blog.allCategories"));
+    }
+  }, [language, t]);
+
+  const categories = [
+    t("blog.allCategories"),
+    ...new Set(posts.map((post) => post.category)),
+  ];
 
   const filteredPosts =
-    selectedCategory === "Tous"
+    selectedCategory === t("blog.allCategories") ||
+    selectedCategory === "Tous" ||
+    selectedCategory === "All"
       ? posts
       : posts.filter((post) => post.category === selectedCategory);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString("fr-FR", {
+    const locale = language === "en" ? "en-US" : "fr-FR";
+    return date.toLocaleDateString(locale, {
       day: "numeric",
       month: "long",
       year: "numeric",
@@ -82,12 +110,9 @@ export default function BlogPage() {
             className="text-white max-w-4xl"
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-4">
-              Blog & Actualités
+              {t("blog.title")}
             </h1>
-            <p className="text-xl md:text-2xl">
-              Conseils, astuces et actualités sur le transport premium à Nice et
-              Côte d'Azur
-            </p>
+            <p className="text-xl md:text-2xl">{t("blog.subtitle")}</p>
           </motion.div>
         </div>
       </section>
@@ -119,16 +144,12 @@ export default function BlogPage() {
           {loading ? (
             <div className="text-center py-20">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-              <p className="mt-4 text-gray-600">Chargement des articles...</p>
+              <p className="mt-4 text-gray-600">{t("blog.loading")}</p>
             </div>
           ) : filteredPosts.length === 0 ? (
             <div className="text-center py-20">
-              <p className="text-xl text-gray-600">
-                Aucun article disponible pour le moment.
-              </p>
-              <p className="text-gray-500 mt-2">
-                Revenez bientôt pour découvrir nos actualités !
-              </p>
+              <p className="text-xl text-gray-600">{t("blog.noArticles")}</p>
+              <p className="text-gray-500 mt-2">{t("blog.comeBack")}</p>
             </div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -164,7 +185,7 @@ export default function BlogPage() {
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
-                        <span>5 min</span>
+                        <span>5 {t("blog.readingTime")}</span>
                       </div>
                     </div>
 
@@ -187,7 +208,7 @@ export default function BlogPage() {
                         href={`/blog/${post.slug}`}
                         className="text-primary font-semibold hover:underline"
                       >
-                        Lire plus →
+                        {t("blog.readMore")} →
                       </Link>
                     </div>
                   </div>
@@ -202,4 +223,3 @@ export default function BlogPage() {
     </div>
   );
 }
-

@@ -5,6 +5,7 @@ excerpt: "Découvrez les plus belles destinations de la Côte d'Azur : Monaco, C
 image: "/monaco.jpg"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
+language: "fr"
 keywords:
   [
     "excursion côte d'azur",

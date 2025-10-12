@@ -312,7 +312,8 @@
       "available": "Disponible 24h/24",
       "availableDesc": "Service permanent dans toute la région, même la nuit et les weekends.",
       "booking": "Réservation Instantanée",
-      "bookingDesc": "Appelez-nous et nous venons vous chercher où que vous soyez en PACA."
+      "bookingDesc": "Appelez-nous et nous venons vous chercher où que vous soyez en PACA.",
+      "googleBusiness": "Voir notre fiche Google Business"
     },
     "form": {
       "title": "Envoyez-nous un Message",
@@ -345,6 +346,16 @@
       "description": "Appelez-nous maintenant pour réserver votre transport",
       "emailButton": "Envoyer un email"
     }
+  },
+  "blog": {
+    "title": "Blog & Actualités",
+    "subtitle": "Conseils, astuces et actualités sur le transport premium à Nice et Côte d'Azur",
+    "allCategories": "Tous",
+    "loading": "Chargement des articles...",
+    "noArticles": "Aucun article disponible pour le moment.",
+    "comeBack": "Revenez bientôt pour découvrir nos actualités !",
+    "readMore": "Lire plus",
+    "readingTime": "min"
   },
   "partners": {
     "title": "Nos Partenaires",

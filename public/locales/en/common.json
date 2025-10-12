@@ -278,6 +278,85 @@
     "switchToVan": "View Van rates",
     "switchToGLC": "View GLC rates"
   },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "24/7 Customer Service",
+    "description": "Need transportation? A question? We're here to help. Contact us by phone, email or through our form.",
+    "coordinates": "Our Coordinates",
+    "coordinatesDesc": "Several ways to contact us according to your preferences",
+    "phone": {
+      "title": "Phone",
+      "value": "06 51 68 36 87",
+      "description": "Call us 24/7"
+    },
+    "email": {
+      "title": "Email",
+      "value": "taxiniceca@gmail.com",
+      "description": "Response within 2h"
+    },
+    "location": {
+      "title": "Service Area",
+      "value": "Nice & French Riviera",
+      "description": "Entire region"
+    },
+    "hours": {
+      "title": "Availability",
+      "value": "24/7 - Every day",
+      "description": "Permanent service"
+    },
+    "map": {
+      "title": "Our Service Area",
+      "description": "We cover the entire Provence-Alpes-Côte d'Azur region. Click on markers for more information.",
+      "zone": "Complete PACA Area",
+      "zoneDesc": "Nice, Cannes, Monaco, Marseille, Aix-en-Provence, Toulon, Avignon...",
+      "available": "Available 24/7",
+      "availableDesc": "Permanent service throughout the region, even at night and on weekends.",
+      "booking": "Instant Booking",
+      "bookingDesc": "Call us and we'll pick you up wherever you are in PACA.",
+      "googleBusiness": "View our Google Business"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "description": "Fill out the form below and we'll respond quickly",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Desired service",
+      "subjectPlaceholder": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Describe your request in detail...",
+      "date": "Desired date",
+      "time": "Desired time",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "success": "Message Sent!",
+      "successMessage": "Thank you for your message. We will respond as soon as possible.",
+      "newMessage": "Send another message",
+      "subjects": [
+        "Taxi booking",
+        "Quote request",
+        "General question",
+        "Complaint",
+        "Partnership",
+        "Other"
+      ]
+    },
+    "cta": {
+      "title": "Need Transportation?",
+      "description": "Call us now to book your transport",
+      "emailButton": "Send an email"
+    }
+  },
+  "blog": {
+    "title": "Blog & News",
+    "subtitle": "Tips, advice and news about premium transport in Nice and French Riviera",
+    "allCategories": "All",
+    "loading": "Loading articles...",
+    "noArticles": "No articles available at the moment.",
+    "comeBack": "Come back soon to discover our news!",
+    "readMore": "Read more",
+    "readingTime": "min"
+  },
   "seoContent": {
     "title": "Taxi Nice French Riviera - Premium 24/7 Transport Service",
     "intro": "Discover our professional taxi service in Nice and throughout the French Riviera. With over 15 years of experience, we offer superior quality transport solutions for all your travels in the region.",

@@ -5,6 +5,7 @@ excerpt: "Tous nos conseils pour sélectionner le meilleur service de chauffeur 
 image: "/imageGLC.png"
 category: "Conseils"
 author: "Taxi Nice Côte d'Azur"
+language: "fr"
 keywords:
   [
     "chauffeur privé nice",

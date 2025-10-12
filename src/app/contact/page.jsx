@@ -451,7 +451,7 @@ export default function ContactPage() {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primaryDark transition-colors duration-300 font-semibold"
               >
                 <MapPin className="w-5 h-5" />
-                Voir notre fiche Google Business
+                {t("contact.map.googleBusiness")}
               </a>
             </div>
           </motion.div>
