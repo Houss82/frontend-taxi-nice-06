@@ -4,6 +4,95 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Styles pour les articles de blog (Markdown) */
+.prose {
+  @apply text-gray-800 leading-relaxed;
+}
+
+.prose h1 {
+  @apply text-4xl font-bold text-gray-900 mt-8 mb-4;
+}
+
+.prose h2 {
+  @apply text-3xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b-2 border-primary/20;
+}
+
+.prose h3 {
+  @apply text-2xl font-semibold text-gray-800 mt-6 mb-3;
+}
+
+.prose h4 {
+  @apply text-xl font-semibold text-gray-800 mt-4 mb-2;
+}
+
+.prose p {
+  @apply mb-4 text-lg leading-relaxed;
+}
+
+.prose strong {
+  @apply font-bold text-gray-900;
+}
+
+.prose em {
+  @apply italic;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-4 space-y-2;
+}
+
+.prose ol {
+  @apply list-decimal list-inside mb-4 space-y-2;
+}
+
+.prose li {
+  @apply text-lg ml-4;
+}
+
+.prose a {
+  @apply text-primary hover:text-primaryDark underline transition-colors;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary pl-4 italic text-gray-700 my-4;
+}
+
+.prose code {
+  @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono text-gray-800;
+}
+
+.prose pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0;
+}
+
+.prose table {
+  @apply w-full border-collapse mb-6;
+}
+
+.prose th {
+  @apply bg-primary text-white font-semibold p-3 text-left;
+}
+
+.prose td {
+  @apply border border-gray-300 p-3;
+}
+
+.prose tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.prose img {
+  @apply rounded-lg shadow-lg my-6;
+}
+
+.prose hr {
+  @apply my-8 border-t-2 border-gray-200;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

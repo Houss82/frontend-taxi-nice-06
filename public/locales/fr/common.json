@@ -346,6 +346,113 @@
       "emailButton": "Envoyer un email"
     }
   },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Un réseau de professionnels de confiance pour vous offrir la meilleure expérience sur la Côte d'Azur",
+    "intro": {
+      "title": "Notre Réseau de Partenaires",
+      "description": "Nous collaborons avec des entreprises de confiance dans toute la région pour vous offrir une expérience complète et de qualité. Nos partenaires partagent nos valeurs de professionnalisme et de service client."
+    },
+    "categories": {
+      "all": "Tous",
+      "transport": "Transport",
+      "tourism": "Tourisme"
+    },
+    "premium": {
+      "title": "Partenaires Premium",
+      "subtitle": "Nos partenaires stratégiques dans le secteur du transport",
+      "badge": "Premium"
+    },
+    "other": {
+      "title": "Nos Partenaires",
+      "subtitle": "Réseau étendu de professionnels de qualité"
+    },
+    "visit": "Visiter le site",
+    "becomePartner": {
+      "title": "Devenir Partenaire",
+      "subtitle": "Rejoignez notre réseau de partenaires de confiance",
+      "description": "Vous êtes une entreprise de qualité dans la région ? Contactez-nous pour discuter d'un partenariat mutuellement bénéfique.",
+      "contact": "Nous Contacter"
+    },
+    "stats": {
+      "partners": {
+        "title": "Partenaires",
+        "description": "Réseau établi et fiable"
+      },
+      "quality": {
+        "title": "Qualité Premium",
+        "description": "Sélection rigoureuse"
+      },
+      "local": {
+        "title": "Locaux & Engagés",
+        "description": "Ancrés sur la Côte d'Azur"
+      }
+    },
+    "cta": {
+      "title": "Devenez partenaire",
+      "description": "Vous êtes un professionnel du tourisme, de l'hôtellerie ou de l'événementiel sur la Côte d'Azur ? Rejoignez notre réseau de partenaires et développons ensemble nos activités.",
+      "button": "Nous contacter"
+    },
+    "seo": {
+      "title": "Pourquoi choisir nos partenaires ?",
+      "description": "Tous nos partenaires sont soigneusement sélectionnés pour leur qualité de service, leur professionnalisme et leur engagement envers l'excellence. Que vous recherchiez un hôtel de luxe, un restaurant gastronomique, ou une agence de voyage locale, nos partenaires vous garantissent une expérience exceptionnelle sur la Côte d'Azur.",
+      "criteria": {
+        "title": "Nos critères de sélection",
+        "quality": {
+          "title": "Qualité certifiée",
+          "description": "Établissements reconnus et appréciés"
+        },
+        "location": {
+          "title": "Localisation stratégique",
+          "description": "Présence à Nice et Côte d'Azur"
+        },
+        "services": {
+          "title": "Services premium",
+          "description": "Engagement vers l'excellence"
+        },
+        "values": {
+          "title": "Valeurs partagées",
+          "description": "Satisfaction client prioritaire"
+        }
+      },
+      "advantages": {
+        "title": "Avantages de notre réseau",
+        "description": "En faisant appel à nos partenaires, vous bénéficiez souvent de conditions préférentielles et d'un service coordonné. Notre réseau facilite l'organisation de votre séjour ou événement sur la Côte d'Azur."
+      }
+    },
+    "list": {
+      "taxiConventionnePaca": {
+        "name": "Taxi Conventionné PACA",
+        "category": "Transport",
+        "description": "Spécialiste transport médical conventionné CPAM. Couverture complète Fréjus, Saint-Raphaël, Draguignan et est du Var. Service sanitaire fiable et professionnel."
+      },
+      "taxiConventionneAntibes": {
+        "name": "Taxi Conventionné Antibes",
+        "category": "Transport",
+        "description": "Transport médical VSL agréé CPAM à Antibes. Service conventionné couvrant Antibes, Juan-les-Pins, La Fontonne et Cap d'Antibes. Transport sanitaire professionnel."
+      },
+      "taxisConventionnesVar": {
+        "name": "Taxis Conventionnés Var",
+        "category": "Transport",
+        "description": "VSL agréé CPAM transport médical 24h/24. Spécialiste conventionné Fréjus, Saint-Raphaël, Roquebrune-sur-Argens, Draguignan. Service tiers payant intégral."
+      },
+      "taxiNiceAirport": {
+        "name": "Taxi Nice Airport",
+        "category": "Transport",
+        "description": "Service VTC spécialisé transferts aéroport Nice. Chauffeurs anglophones, Mercedes premium, tarifs fixes dès 40€. Suivi de vol et meet & greet inclus."
+      },
+      "aeroportNice": {
+        "name": "Aéroport Nice Côte d'Azur",
+        "category": "Transport",
+        "description": "3ème aéroport de France, porte d'entrée de la Côte d'Azur"
+      },
+      "officeTourismeNice": {
+        "name": "Office de Tourisme Nice",
+        "category": "Tourisme",
+        "description": "Promotion et information touristique de la ville de Nice"
+      }
+    }
+  },
   "seoContent": {
     "title": "Taxi Nice Côte d'Azur - Service de Transport Premium 7j/7",
     "intro": "Découvrez notre service de taxi professionnel à Nice et sur toute la Côte d'Azur. Avec plus de 15 ans d'expérience, nous offrons des solutions de transport de qualité supérieure pour tous vos déplacements dans la région.",

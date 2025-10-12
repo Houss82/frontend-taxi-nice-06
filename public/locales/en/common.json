@@ -305,5 +305,112 @@
       "title": "Why Choose Our Taxi Service?",
       "content": "Choosing our taxi service in Nice means opting for quality, reliability and professionalism. With more than 1000 satisfied customers each month and an average rating of 4.9/5, we are proud of our reputation. Our local drivers know all the shortcuts and best routes to avoid traffic jams. We are committed to offering you an exceptional transport experience, whether for a 5-minute trip or a journey of several hours. Contact us now to book your next transport on the French Riviera."
     }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "A network of trusted professionals to offer you the best experience on the French Riviera",
+    "intro": {
+      "title": "Our Partner Network",
+      "description": "We collaborate with trusted businesses throughout the region to provide you with a complete and quality experience. Our partners share our values of professionalism and customer service."
+    },
+    "categories": {
+      "all": "All",
+      "transport": "Transport",
+      "tourism": "Tourism"
+    },
+    "premium": {
+      "title": "Premium Partners",
+      "subtitle": "Our strategic partners in the transport sector",
+      "badge": "Premium"
+    },
+    "other": {
+      "title": "Our Partners",
+      "subtitle": "Extended network of quality professionals"
+    },
+    "visit": "Visit Website",
+    "becomePartner": {
+      "title": "Become a Partner",
+      "subtitle": "Join our network of trusted partners",
+      "description": "Are you a quality business in the region? Contact us to discuss a mutually beneficial partnership.",
+      "contact": "Contact Us"
+    },
+    "stats": {
+      "partners": {
+        "title": "Partners",
+        "description": "Established and reliable network"
+      },
+      "quality": {
+        "title": "Premium Quality",
+        "description": "Rigorous selection"
+      },
+      "local": {
+        "title": "Local & Committed",
+        "description": "Anchored on the French Riviera"
+      }
+    },
+    "cta": {
+      "title": "Become a partner",
+      "description": "Are you a tourism, hospitality or event professional on the French Riviera? Join our partner network and let's develop our activities together.",
+      "button": "Contact us"
+    },
+    "seo": {
+      "title": "Why choose our partners?",
+      "description": "All our partners are carefully selected for their service quality, professionalism and commitment to excellence. Whether you're looking for a luxury hotel, a gourmet restaurant, or a local travel agency, our partners guarantee you an exceptional experience on the French Riviera.",
+      "criteria": {
+        "title": "Our selection criteria",
+        "quality": {
+          "title": "Certified quality",
+          "description": "Recognized and appreciated establishments"
+        },
+        "location": {
+          "title": "Strategic location",
+          "description": "Presence in Nice and French Riviera"
+        },
+        "services": {
+          "title": "Premium services",
+          "description": "Commitment to excellence"
+        },
+        "values": {
+          "title": "Shared values",
+          "description": "Customer satisfaction priority"
+        }
+      },
+      "advantages": {
+        "title": "Benefits of our network",
+        "description": "By calling on our partners, you often benefit from preferential conditions and coordinated service. Our network facilitates the organization of your stay or event on the French Riviera."
+      }
+    },
+    "list": {
+      "taxiConventionnePaca": {
+        "name": "Taxi Conventionné PACA",
+        "category": "Transport",
+        "description": "Medical transport specialist approved by CPAM. Complete coverage of Fréjus, Saint-Raphaël, Draguignan and eastern Var. Reliable and professional health transport service."
+      },
+      "taxiConventionneAntibes": {
+        "name": "Taxi Conventionné Antibes",
+        "category": "Transport",
+        "description": "VSL medical transport approved by CPAM in Antibes. Approved service covering Antibes, Juan-les-Pins, La Fontonne and Cap d'Antibes. Professional health transport."
+      },
+      "taxisConventionnesVar": {
+        "name": "Taxis Conventionnés Var",
+        "category": "Transport",
+        "description": "CPAM approved VSL medical transport 24/7. Approved specialist in Fréjus, Saint-Raphaël, Roquebrune-sur-Argens, Draguignan. Full third-party payment service."
+      },
+      "taxiNiceAirport": {
+        "name": "Taxi Nice Airport",
+        "category": "Transport",
+        "description": "VTC service specialized in Nice airport transfers. English-speaking drivers, premium Mercedes, fixed rates from €40. Flight tracking and meet & greet included."
+      },
+      "aeroportNice": {
+        "name": "Nice Côte d'Azur Airport",
+        "category": "Transport",
+        "description": "3rd largest airport in France, gateway to the French Riviera"
+      },
+      "officeTourismeNice": {
+        "name": "Nice Tourist Office",
+        "category": "Tourism",
+        "description": "Tourism promotion and information for the city of Nice"
+      }
+    }
   }
 }

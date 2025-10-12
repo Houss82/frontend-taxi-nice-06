@@ -2,7 +2,20 @@
 
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown, Menu, X } from "lucide-react";
+import {
+  BookOpen,
+  Calendar,
+  Car,
+  ChevronDown,
+  Euro,
+  Home,
+  MapPin,
+  Menu,
+  Phone,
+  Plane,
+  Users,
+  X,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import LanguageToggle from "./LanguageToggle.jsx";
 
@@ -10,6 +23,7 @@ export default function Navbar() {
   const { t, language } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const servicesRef = useRef(null);
 
   // Fermer le menu services quand on clique à l'extérieur
@@ -109,6 +123,15 @@ export default function Navbar() {
           >
             {language === "fr" ? "TARIFS" : "PRICING"}
           </a>
+          <a href="/blog" className="text-black hover:text-primary font-medium">
+            {language === "fr" ? "BLOG" : "BLOG"}
+          </a>
+          <a
+            href="/partenaires"
+            className="text-black hover:text-primary font-medium"
+          >
+            {language === "fr" ? "PARTENAIRES" : "PARTNERS"}
+          </a>
           <a
             href="/contact"
             className="text-black hover:text-primary font-medium"
@@ -125,110 +148,274 @@ export default function Navbar() {
           >
             {t("navbar.bookNowFull")}
           </a>
-          {/* Menu Burger - Mobile uniquement */}
+          {/* Menu Burger - Mobile amélioré */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden flex flex-col items-center p-2 rounded-lg transition-colors"
+            className="md:hidden relative flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-300 z-[60]"
             aria-label="Menu"
           >
-            {isMenuOpen ? (
-              <X className="w-6 h-6 text-gray-700" />
-            ) : (
-              <Menu className="w-6 h-6 text-gray-700" />
-            )}
-            <span className="text-xs text-gray-600 mt-1">Menu</span>
+            <motion.div
+              animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              className="relative w-6 h-6"
+            >
+              <Menu className="w-6 h-6 text-primary" />
+            </motion.div>
+            <motion.span
+              className="text-xs text-gray-600 mt-1 font-medium"
+              animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
+              transition={{ duration: 0.2 }}
+            >
+              Menu
+            </motion.span>
           </button>
         </div>
       </div>
 
-      {/* Menu mobile avec animation */}
+      {/* Menu mobile avec animation améliorée */}
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden bg-white border-t border-gray-200 shadow-lg overflow-hidden"
-          >
-            <motion.nav
-              initial={{ y: -20 }}
-              animate={{ y: 0 }}
-              exit={{ y: -20 }}
-              transition={{ duration: 0.3, delay: 0.1 }}
-              className="px-4 py-4 space-y-3"
+          <>
+            {/* Overlay avec effet de flou */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="md:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+              onClick={() => setIsMenuOpen(false)}
+            />
+
+            {/* Menu principal */}
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className="md:hidden fixed top-16 left-0 right-0 bottom-0 z-50 bg-gradient-to-br from-white to-gray-50 border-t border-gray-200 shadow-2xl flex flex-col"
             >
-              <motion.a
-                href="/"
-                className="block text-black hover:text-primary font-medium py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
+              <motion.nav
+                initial={{ y: -20 }}
+                animate={{ y: 0 }}
+                exit={{ y: -20 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                className="flex-1 overflow-y-auto px-6 py-6 space-y-1"
               >
-                {t("navbar.home")}
-              </motion.a>
-              {/* Services avec sous-menu mobile */}
-              <div className="space-y-2">
-                <div className="text-gray-600 font-semibold py-2 text-sm uppercase tracking-wide">
-                  {t("navbar.services")}
+                {/* Logo et titre en haut avec bouton fermer */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.3, delay: 0.2 }}
+                  className="flex items-center justify-between mb-8 pb-6 border-b border-gray-200"
+                >
+                  <div className="flex items-center space-x-3">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                      <span className="text-white font-bold text-lg">TN</span>
+                    </div>
+                    <div className="text-center">
+                      <h2 className="text-xl font-bold text-gray-900">
+                        TAXI NICE
+                      </h2>
+                      <p className="text-sm text-gray-600">Côte d'Azur</p>
+                    </div>
+                  </div>
+
+                  {/* Bouton fermer dans le menu */}
+                  <motion.button
+                    onClick={() => setIsMenuOpen(false)}
+                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+                    aria-label="Fermer le menu"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <X className="w-5 h-5 text-gray-600" />
+                  </motion.button>
+                </motion.div>
+
+                {/* Menu items avec icônes */}
+                <div className="space-y-2">
+                  <motion.a
+                    href="/"
+                    className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
+                    onClick={() => setIsMenuOpen(false)}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.3 }}
+                    whileHover={{ scale: 1.02, x: 5 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Home className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                    <span>{t("navbar.home")}</span>
+                  </motion.a>
+
+                  {/* Services avec sous-menu pliable */}
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.4 }}
+                    className="space-y-2"
+                  >
+                    <motion.button
+                      onClick={() =>
+                        setIsMobileServicesOpen(!isMobileServicesOpen)
+                      }
+                      className="flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 text-gray-800 font-medium hover:from-green-100 hover:to-emerald-100 transition-all duration-300"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <div className="flex items-center space-x-4">
+                        <Car className="w-5 h-5 text-primary" />
+                        <span>{t("navbar.services")}</span>
+                      </div>
+                      <motion.div
+                        animate={{ rotate: isMobileServicesOpen ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <ChevronDown className="w-5 h-5 text-primary" />
+                      </motion.div>
+                    </motion.button>
+
+                    <AnimatePresence>
+                      {isMobileServicesOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3, ease: "easeInOut" }}
+                          className="ml-6 space-y-1 border-l-2 border-gray-200 pl-4 overflow-hidden"
+                        >
+                          <motion.a
+                            href="/services/transfert-aeroport"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Plane className="w-4 h-4" />
+                            <span className="text-sm">Transfert Aéroport</span>
+                          </motion.a>
+                          <motion.a
+                            href="/services/excursions"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <MapPin className="w-4 h-4" />
+                            <span className="text-sm">Excursions</span>
+                          </motion.a>
+                          <motion.a
+                            href="/services"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Car className="w-4 h-4" />
+                            <span className="text-sm">Tous les services</span>
+                          </motion.a>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
+
+                  <motion.a
+                    href="/reservation"
+                    className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-orange-50 to-red-50 hover:from-orange-100 hover:to-red-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
+                    onClick={() => setIsMenuOpen(false)}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.5 }}
+                    whileHover={{ scale: 1.02, x: 5 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Calendar className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                    <span>{t("navbar.reservation")}</span>
+                  </motion.a>
+
+                  <motion.a
+                    href="/tarifs"
+                    className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-yellow-50 to-orange-50 hover:from-yellow-100 hover:to-orange-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
+                    onClick={() => setIsMenuOpen(false)}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.6 }}
+                    whileHover={{ scale: 1.02, x: 5 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Euro className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                    <span>
+                      {language === "fr" ? "NOS TARIFS" : "OUR PRICING"}
+                    </span>
+                  </motion.a>
+
+                  <motion.a
+                    href="/blog"
+                    className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
+                    onClick={() => setIsMenuOpen(false)}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.7 }}
+                    whileHover={{ scale: 1.02, x: 5 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <BookOpen className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                    <span>{language === "fr" ? "BLOG" : "BLOG"}</span>
+                  </motion.a>
+
+                  <motion.a
+                    href="/partenaires"
+                    className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-teal-50 to-cyan-50 hover:from-teal-100 hover:to-cyan-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
+                    onClick={() => setIsMenuOpen(false)}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.8 }}
+                    whileHover={{ scale: 1.02, x: 5 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Users className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                    <span>
+                      {language === "fr" ? "PARTENAIRES" : "PARTNERS"}
+                    </span>
+                  </motion.a>
+
+                  <motion.a
+                    href="/contact"
+                    className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-gray-50 to-slate-50 hover:from-gray-100 hover:to-slate-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
+                    onClick={() => setIsMenuOpen(false)}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.9 }}
+                    whileHover={{ scale: 1.02, x: 5 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Phone className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                    <span>{language === "fr" ? "CONTACT" : "CONTACT"}</span>
+                  </motion.a>
                 </div>
-                <motion.a
-                  href="/services/transfert-aeroport"
-                  className="block text-gray-700 hover:text-primary font-medium py-2 pl-4 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  Transfert Aéroport
-                </motion.a>
-                <motion.a
-                  href="/services/excursions"
-                  className="block text-gray-700 hover:text-primary font-medium py-2 pl-4 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  Excursions
-                </motion.a>
-                <motion.a
-                  href="/services"
-                  className="block text-gray-700 hover:text-primary font-medium py-2 pl-4 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  Tous les services
-                </motion.a>
-              </div>
-              <motion.a
-                href="/reservation"
-                className="block text-black hover:text-primary font-medium py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
+              </motion.nav>
+
+              {/* Bouton Réserver fixe en bas */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.3, delay: 1.0 }}
+                className="px-6 py-4 border-t border-gray-200 bg-white"
               >
-                {t("navbar.reservation")}
-              </motion.a>
-              <motion.a
-                href="/tarifs"
-                className="block text-black hover:text-primary font-medium py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
-              >
-                {language === "fr" ? "NOS TARIFS" : "OUR PRICING"}
-              </motion.a>
-              <motion.a
-                href="/contact"
-                className="block text-black hover:text-primary font-medium py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
-              >
-                {language === "fr" ? "CONTACT" : "CONTACT"}
-              </motion.a>
-            </motion.nav>
-          </motion.div>
+                <motion.a
+                  href="/reservation"
+                  className="block w-full bg-gradient-to-r from-primary to-blue-600 text-white text-center py-4 px-6 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={() => setIsMenuOpen(false)}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  🚗 {t("navbar.bookNowFull")}
+                </motion.a>
+              </motion.div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>

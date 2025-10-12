@@ -64,6 +64,20 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    // Page blog
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    // Page partenaires
+    {
+      url: `${baseUrl}/partenaires`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     // Page à propos
     {
       url: `${baseUrl}/a-propos`,
