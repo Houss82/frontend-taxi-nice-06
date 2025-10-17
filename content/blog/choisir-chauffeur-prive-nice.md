@@ -45,7 +45,7 @@ Un chauffeur privé professionnel propose des véhicules :
 - 🧳 **Spacieux** : coffre adapté aux bagages
 
 **Notre flotte :**  
-Mercedes GLC et Van Mercedes haut de gamme, renouvelés tous les 2 ans.
+**[Mercedes GLC](/services)** et **[Van Premium](/services)** Mercedes haut de gamme, renouvelés tous les 2 ans.
 
 ### 3. Expérience du chauffeur
 
@@ -86,6 +86,8 @@ Un bon service affiche :
 - 📋 **Devis détaillé** par écrit
 - 🚫 **Aucun frais caché** (péages, parking inclus)
 - 💳 **Modes de paiement** clairs
+
+> 💡 **[Consultez nos tarifs transparents](/tarifs)** - Prix fixes sans surprise pour toutes destinations
 
 ## Services additionnels à privilégier
 
@@ -278,14 +280,37 @@ Nous suivons votre vol en temps réel, aucun frais supplémentaire.
 **Acceptez-vous les animaux ?**  
 Oui, sur demande lors de la réservation.
 
-## Réservez en toute confiance
+## 🚗 Réservez votre chauffeur privé en toute confiance
 
-Chez **Taxi Nice Côte d'Azur**, nous mettons tout en œuvre pour vous offrir la meilleure expérience possible.
+Chez **Taxi Nice Côte d'Azur**, nous mettons tout en œuvre pour vous offrir la meilleure expérience possible. Rejoignez nos 1000+ clients satisfaits chaque mois !
 
-**Réservation facile :**  
-📞 **06 51 68 36 87**  
+### 🎯 Nos services premium
+
+- **[Transfert Aéroport](/services/transfert-aeroport)** - Service 24/7 avec suivi de vol
+- **[Excursions Côte d'Azur](/services/excursions)** - Circuits personnalisés avec guide
+- **[VSL Transport Médical](/services/vsl)** - Véhicules adaptés handicapés
+- **[Transport Groupe](/services)** - Vans jusqu'à 8 passagers
+
+### 📋 Options de réservation
+
+- **[Réservation en ligne rapide](/reservation)** - Formulaire sécurisé en 2 minutes
+- **[Consultez nos tarifs](/tarifs)** - Prix transparents pour toutes destinations
+- **[Contactez-nous](/contact)** - Service client professionnel 24h/24
+
+### 📞 Contact direct
+
+📞 **06 51 68 36 87** (24h/24)  
 ✉️ **taxiniceca@gmail.com**  
-🌐 **Formulaire en ligne** disponible 24/7
+🌐 **[taxi-nice-06.com](https://taxi-nice-06.com)**
+
+### ✅ Nos garanties
+
+- 💰 **Tarif fixe** sans surprise
+- ⏰ **Ponctualité garantie** ou remboursement
+- 🔒 **Paiement sécurisé** CB, espèces, virement
+- 📄 **Facture automatique** pour professionnels
+
+> **💡 Conseil** : Réservez 24h à l'avance pour garantir votre véhicule préféré et bénéficier de nos meilleurs tarifs !
 
 ---
 

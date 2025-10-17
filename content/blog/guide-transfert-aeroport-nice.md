@@ -33,7 +33,7 @@ Après un vol, la dernière chose dont vous avez envie est de chercher un moyen 
 
 ### Tarif transparent
 
-Contrairement aux taxis classiques avec compteur, vous connaissez le prix exact à l'avance. **Aucune mauvaise surprise** !
+Contrairement aux taxis classiques avec compteur, vous connaissez le prix exact à l'avance. **Aucune mauvaise surprise** ! Consultez nos [tarifs détaillés](/tarifs) pour connaître le prix exact de votre trajet.
 
 ## Les différentes options de transfert
 
@@ -62,7 +62,7 @@ _Tarifs indicatifs, variables selon le trafic et l'heure_
 
 ### 1. Réservez à l'avance
 
-Réservez votre transfert **au moins 24h à l'avance** pour garantir la disponibilité, surtout en haute saison (juin-septembre).
+Réservez votre transfert **au moins 24h à l'avance** pour garantir la disponibilité, surtout en haute saison (juin-septembre). Utilisez notre [formulaire de réservation rapide](/reservation) pour une réservation en quelques clics.
 
 ### 2. Communiquez votre numéro de vol
 
@@ -72,8 +72,8 @@ En nous donnant votre numéro de vol, nous suivons votre avion en temps réel. *
 
 Indiquez le nombre de bagages lors de la réservation :
 
-- **Mercedes GLC** : jusqu'à 3 passagers + 3 valises
-- **Van Premium** : jusqu'à 7 passagers + 7 valises
+- **[Mercedes GLC](/services)** : jusqu'à 3 passagers + 3 valises
+- **[Van Premium](/services)** : jusqu'à 7 passagers + 7 valises
 
 ### 4. Ayez le numéro de votre chauffeur
 
@@ -117,12 +117,23 @@ Oui, nous acceptons CB, espèces et virement.
 **Proposez-vous des sièges bébé ?**
 Oui, sur demande lors de la réservation (gratuit).
 
-## Réservez dès maintenant
+## 🚗 Réservez votre transfert dès maintenant
 
-Ne laissez rien au hasard pour votre arrivée à Nice. **Réservez votre transfert** dès maintenant et profitez d'un service premium au meilleur prix.
+Ne laissez rien au hasard pour votre arrivée à Nice. Profitez d'un service premium au meilleur prix avec nos véhicules Mercedes haut de gamme.
 
-📞 **06 51 68 36 87**  
-✉️ **taxiniceca@gmail.com**
+### 📋 Options de réservation
+
+- **[Réservation en ligne rapide](/reservation)** - Formulaire simple en 2 minutes
+- **[Consultez nos tarifs](/tarifs)** - Prix transparents sans surprise
+- **[Contactez-nous](/contact)** - Service client 24h/24
+
+### 📞 Contact direct
+
+📞 **06 51 68 36 87** (24h/24)  
+✉️ **taxiniceca@gmail.com**  
+🌐 **[taxi-nice-06.com](https://taxi-nice-06.com)**
+
+> **💡 Conseil** : Réservez au moins 24h à l'avance pour garantir votre véhicule préféré, surtout en haute saison !
 
 ---
 

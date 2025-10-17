@@ -104,5 +104,42 @@ export default function sitemap() {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    // Articles de blog - SEO prioritaire
+    {
+      url: `${baseUrl}/blog/guide-transfert-aeroport-nice`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/choisir-chauffeur-prive-nice`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/excursions-cote-azur`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/choosing-private-driver-nice`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/french-riviera-tours`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/nice-airport-transfer-guide`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 }

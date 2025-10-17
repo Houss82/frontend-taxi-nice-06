@@ -37,6 +37,8 @@ Monaco est le symbole du luxe et du glamour méditerranéen. Cette principauté 
 **Notre formule :**  
 Demi-journée (4h) : 200€ | Journée complète (8h) : 350€
 
+> 💡 **[Consultez nos tarifs détaillés](/tarifs)** pour tous les circuits et destinations
+
 ### Meilleur moment pour visiter
 
 Le matin tôt (9h-11h) pour éviter la foule, ou en fin d'après-midi pour profiter du coucher de soleil sur le port.
@@ -155,7 +157,7 @@ Demi-journée : 220€
 
 ### Confort premium
 
-- 🚗 Mercedes GLC ou Van climatisé
+- 🚗 **[Mercedes GLC](/services)** ou **[Van Premium](/services)** climatisé
 - 💧 Eau fraîche offerte
 - 📶 WiFi gratuit à bord
 - 📸 Votre chauffeur peut prendre vos photos !
@@ -182,15 +184,29 @@ Mai-juin et septembre-octobre (moins de monde, météo idéale)
 **Timing idéal :**  
 Départs à 9h pour éviter le trafic et la chaleur
 
-## Réservez votre excursion
+## 🚗 Réservez votre excursion dès maintenant
 
 Créez votre excursion sur mesure avec nos chauffeurs expérimentés. Ils connaissent tous les secrets de la Côte d'Azur !
 
-**Réservation :**  
-📞 **06 51 68 36 87**  
-✉️ **taxiniceca@gmail.com**
+### 🎯 Nos circuits populaires
 
-Réservation en ligne disponible 24/7 sur notre site.
+- **[Circuit "Perles de la Riviera"](/services/excursions)** - Nice → Èze → Monaco (350€)
+- **[Circuit "Villages & Art"](/services/excursions)** - Saint-Paul → Vence → Grasse (380€)
+- **[Circuit "Glamour Côtier"](/services/excursions)** - Antibes → Cannes (220€)
+
+### 📋 Options de réservation
+
+- **[Réservation en ligne](/reservation)** - Formulaire rapide et sécurisé
+- **[Consultez tous nos tarifs](/tarifs)** - Prix transparents pour toutes destinations
+- **[Contactez-nous](/contact)** - Service client 24h/24
+
+### 📞 Contact direct
+
+📞 **06 51 68 36 87** (24h/24)  
+✉️ **taxiniceca@gmail.com**  
+🌐 **[taxi-nice-06.com](https://taxi-nice-06.com)**
+
+> **💡 Conseil** : Réservez 48h à l'avance pour les circuits personnalisés et bénéficiez de conseils d'itinéraires exclusifs !
 
 ---
 
