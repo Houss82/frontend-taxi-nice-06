@@ -4,10 +4,14 @@ import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   BookOpen,
+  Briefcase,
   Calendar,
   Car,
   ChevronDown,
+  Compass,
+  Crown,
   Euro,
+  Heart,
   Home,
   MapPin,
   Menu,
@@ -90,56 +94,84 @@ export default function Navbar() {
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    ✈️ Transferts Aéroport
+                    <div className="flex items-center space-x-3">
+                      <Plane className="w-4 h-4 text-blue-500" />
+                      <span>{t("navbar.servicesMenu.airportTransfers")}</span>
+                    </div>
                   </a>
                   <a
                     href="/services/arrivees-destinations"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    🎯 Arrivées & Destinations
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="w-4 h-4 text-green-500" />
+                      <span>
+                        {t("navbar.servicesMenu.arrivalsDestinations")}
+                      </span>
+                    </div>
                   </a>
                   <a
                     href="/services/van-premium"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    🚐 Van Premium (8 pers.)
+                    <div className="flex items-center space-x-3">
+                      <Users className="w-4 h-4 text-purple-500" />
+                      <span>{t("navbar.servicesMenu.vanPremium")}</span>
+                    </div>
                   </a>
                   <a
                     href="/services/flotte-recente"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    🚗 Flotte Récente
+                    <div className="flex items-center space-x-3">
+                      <Car className="w-4 h-4 text-indigo-500" />
+                      <span>{t("navbar.servicesMenu.recentFleet")}</span>
+                    </div>
                   </a>
                   <a
                     href="/services/excursions-decouvertes"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    🗺️ Excursions & Découvertes
+                    <div className="flex items-center space-x-3">
+                      <Compass className="w-4 h-4 text-orange-500" />
+                      <span>
+                        {t("navbar.servicesMenu.excursionsDiscoveries")}
+                      </span>
+                    </div>
                   </a>
                   <a
                     href="/services/evenements-mariages"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    💍 Événements & Mariages
+                    <div className="flex items-center space-x-3">
+                      <Crown className="w-4 h-4 text-pink-500" />
+                      <span>{t("navbar.servicesMenu.eventsWeddings")}</span>
+                    </div>
                   </a>
                   <a
                     href="/services/transferts-evenements"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    🎪 Transferts Événements
+                    <div className="flex items-center space-x-3">
+                      <Briefcase className="w-4 h-4 text-cyan-500" />
+                      <span>{t("navbar.servicesMenu.eventTransfers")}</span>
+                    </div>
                   </a>
                   <a
                     href="/services/vsl"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    🏥 VSL Transport Médical
+                    <div className="flex items-center space-x-3">
+                      <Heart className="w-4 h-4 text-red-500" />
+                      <span>{t("navbar.servicesMenu.vslMedical")}</span>
+                    </div>
                   </a>
                   <div className="border-t border-gray-200 my-2"></div>
                   <a
@@ -147,7 +179,7 @@ export default function Navbar() {
                     className="block px-4 py-2 text-blue-600 hover:bg-blue-50 font-semibold transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    📋 Tous les services
+                    📋 {t("navbar.servicesMenu.allServices")}
                   </a>
                 </motion.div>
               )}
@@ -164,22 +196,22 @@ export default function Navbar() {
             href="/tarifs"
             className="text-black hover:text-primary font-medium"
           >
-            {language === "fr" ? "TARIFS" : "PRICING"}
+            {t("navbar.prices")}
           </a>
           <a href="/blog" className="text-black hover:text-primary font-medium">
-            {language === "fr" ? "BLOG" : "BLOG"}
+            {t("navbar.blog")}
           </a>
           <a
             href="/partenaires"
             className="text-black hover:text-primary font-medium"
           >
-            {language === "fr" ? "PARTENAIRES" : "PARTNERS"}
+            {t("navbar.partners")}
           </a>
           <a
             href="/contact"
             className="text-black hover:text-primary font-medium"
           >
-            {language === "fr" ? "CONTACT" : "CONTACT"}
+            {t("navbar.contact")}
           </a>
         </nav>
         <div className="flex items-center gap-2">
@@ -335,8 +367,10 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Plane className="w-4 h-4" />
-                            <span className="text-sm">Transferts Aéroport</span>
+                            <Plane className="w-4 h-4 text-blue-500" />
+                            <span className="text-sm">
+                              {t("navbar.servicesMenu.airportTransfers")}
+                            </span>
                           </motion.a>
                           <motion.a
                             href="/services/arrivees-destinations"
@@ -345,9 +379,9 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <MapPin className="w-4 h-4" />
+                            <MapPin className="w-4 h-4 text-green-500" />
                             <span className="text-sm">
-                              Arrivées & Destinations
+                              {t("navbar.servicesMenu.arrivalsDestinations")}
                             </span>
                           </motion.a>
                           <motion.a
@@ -357,9 +391,9 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Users className="w-4 h-4" />
+                            <Users className="w-4 h-4 text-purple-500" />
                             <span className="text-sm">
-                              Van Premium (8 pers.)
+                              {t("navbar.servicesMenu.vanPremium")}
                             </span>
                           </motion.a>
                           <motion.a
@@ -369,8 +403,10 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Car className="w-4 h-4" />
-                            <span className="text-sm">Flotte Récente</span>
+                            <Car className="w-4 h-4 text-indigo-500" />
+                            <span className="text-sm">
+                              {t("navbar.servicesMenu.recentFleet")}
+                            </span>
                           </motion.a>
                           <motion.a
                             href="/services/excursions-decouvertes"
@@ -379,9 +415,9 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <MapPin className="w-4 h-4" />
+                            <Compass className="w-4 h-4 text-orange-500" />
                             <span className="text-sm">
-                              Excursions & Découvertes
+                              {t("navbar.servicesMenu.excursionsDiscoveries")}
                             </span>
                           </motion.a>
                           <motion.a
@@ -391,9 +427,9 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Calendar className="w-4 h-4" />
+                            <Crown className="w-4 h-4 text-pink-500" />
                             <span className="text-sm">
-                              Événements & Mariages
+                              {t("navbar.servicesMenu.eventsWeddings")}
                             </span>
                           </motion.a>
                           <motion.a
@@ -403,9 +439,9 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Calendar className="w-4 h-4" />
+                            <Briefcase className="w-4 h-4 text-cyan-500" />
                             <span className="text-sm">
-                              Transferts Événements
+                              {t("navbar.servicesMenu.eventTransfers")}
                             </span>
                           </motion.a>
                           <motion.a
@@ -415,9 +451,9 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Phone className="w-4 h-4" />
+                            <Heart className="w-4 h-4 text-red-500" />
                             <span className="text-sm">
-                              VSL Transport Médical
+                              {t("navbar.servicesMenu.vslMedical")}
                             </span>
                           </motion.a>
                           <div className="border-t border-gray-200 my-2"></div>
@@ -428,8 +464,10 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Car className="w-4 h-4" />
-                            <span className="text-sm">Tous les services</span>
+                            <Car className="w-4 h-4 text-indigo-500" />
+                            <span className="text-sm">
+                              {t("navbar.servicesMenu.allServices")}
+                            </span>
                           </motion.a>
                         </motion.div>
                       )}
@@ -461,9 +499,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Euro className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>
-                      {language === "fr" ? "NOS TARIFS" : "OUR PRICING"}
-                    </span>
+                    <span>{t("navbar.prices")}</span>
                   </motion.a>
 
                   <motion.a
@@ -477,7 +513,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <BookOpen className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>{language === "fr" ? "BLOG" : "BLOG"}</span>
+                    <span>{t("navbar.blog")}</span>
                   </motion.a>
 
                   <motion.a
@@ -491,9 +527,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Users className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>
-                      {language === "fr" ? "PARTENAIRES" : "PARTNERS"}
-                    </span>
+                    <span>{t("navbar.partners")}</span>
                   </motion.a>
 
                   <motion.a
@@ -507,7 +541,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Phone className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>{language === "fr" ? "CONTACT" : "CONTACT"}</span>
+                    <span>{t("navbar.contact")}</span>
                   </motion.a>
                 </div>
               </motion.nav>

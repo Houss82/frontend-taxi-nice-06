@@ -43,10 +43,23 @@
     "home": "ACCUEIL",
     "services": "SERVICES",
     "reservation": "RÉSERVATION",
-    "prices": "Tarifs",
-    "contact": "Contact",
+    "prices": "TARIFS",
+    "blog": "BLOG",
+    "partners": "PARTENAIRES",
+    "contact": "CONTACT",
     "bookNow": "RÉSERVER",
-    "bookNowFull": "RÉSERVER MAINTENANT"
+    "bookNowFull": "RÉSERVER MAINTENANT",
+    "servicesMenu": {
+      "airportTransfers": "Transferts Aéroport",
+      "arrivalsDestinations": "Arrivées & Destinations",
+      "vanPremium": "Van Premium (8 pers.)",
+      "recentFleet": "Flotte Récente",
+      "excursionsDiscoveries": "Excursions & Découvertes",
+      "eventsWeddings": "Événements & Mariages",
+      "eventTransfers": "Transferts Événements",
+      "vslMedical": "VSL Transport Médical",
+      "allServices": "Tous les services"
+    }
   },
   "hero": {
     "imageAlt": "Mercedes GLC Taxi Nice",
@@ -60,13 +73,159 @@
     "title": "Nos Services",
     "subtitle": "Une gamme complète de services de transport adaptés à tous vos besoins",
     "airport": {
-      "title": "Transfert Aéroport",
-      "description": "Service de navette vers l'aéroport de Nice Côte d'Azur. Ponctualité garantie.",
+      "title": "Transferts Aéroport Nice",
+      "subtitle": "Service fiable vers l'aéroport de Nice et toutes destinations",
+      "description": "Service professionnel avec accueil nominatif et suivi de vol en temps réel.",
+      "allDistances": "Toutes Distances",
       "features": {
-        "flightTracking": "Suivi de vol",
-        "personalized": "Accueil personnalisé",
-        "premiumVehicles": "Véhicules premium"
+        "allDistances": {
+          "title": "Toutes distances",
+          "description": "Vers Nice, Cannes, Monaco, Saint-Tropez et toute la région"
+        },
+        "flightTracking": {
+          "title": "Suivi vol",
+          "description": "Surveillance en temps réel de votre vol"
+        },
+        "personalWelcome": {
+          "title": "Accueil nominatif",
+          "description": "Panneau avec votre nom dans le hall d'arrivée"
+        },
+        "punctuality": {
+          "title": "Ponctualité",
+          "description": "Arrivée à l'heure, même en cas de retard de vol"
+        },
+        "service247": {
+          "title": "Service 24/7",
+          "description": "Disponible tous les jours, toute l'année"
+        },
+        "guaranteedSafety": {
+          "title": "Sécurité garantie",
+          "description": "Véhicules assurés et chauffeurs professionnels"
+        }
+      },
+      "cta": {
+        "bookNow": "Réserver maintenant",
+        "learnMore": "En savoir plus",
+        "bookToDestination": "Réserver vers",
+        "viewPrices": "Voir les tarifs",
+        "contactUs": "Nous contacter"
+      },
+      "howItWorks": {
+        "title": "Comment ça marche ?",
+        "subtitle": "Un processus simple et fiable pour votre tranquillité",
+        "steps": {
+          "reservation": {
+            "title": "1. Réservation",
+            "description": "Réservez en ligne ou par téléphone"
+          },
+          "flightTracking": {
+            "title": "2. Suivi de vol",
+            "description": "Nous surveillons votre vol et adaptons l'heure d'arrivée"
+          },
+          "welcome": {
+            "title": "3. Accueil",
+            "description": "Panneau nominatif dans le hall d'arrivée"
+          }
+        }
+      },
+      "ctaSection": {
+        "title": "Prêt pour votre transfert ?",
+        "description": "Service fiable et ponctuel pour tous vos déplacements aéroport",
+        "button": "Réserver maintenant"
       }
+    },
+    "arrivals": {
+      "title": "Arrivées & Destinations",
+      "subtitle": "Service Personnalisé",
+      "description": "Accueil personnalisé à votre arrivée avec panneau nominatif et service haut de gamme. Disponible 24h/24 pour toutes vos destinations sur Nice et la Côte d'Azur.",
+      "cta": {
+        "bookWelcome": "Réserver un accueil",
+        "viewPrices": "Voir les tarifs",
+        "bookNow": "Réserver maintenant",
+        "contactUs": "Nous contacter",
+        "bookService": "Réserver"
+      },
+      "features": {
+        "title": "Service d'Accueil Premium",
+        "subtitle": "Un accueil personnalisé et attentionné pour tous vos déplacements",
+        "personalizedWelcome": {
+          "title": "Accueil nominatif",
+          "description": "Panneau personnalisé avec votre nom"
+        },
+        "personalizedService": {
+          "title": "Service personnalisé",
+          "description": "Accueil chaleureux et attentionné"
+        },
+        "luxuryComfort": {
+          "title": "Luxe et confort",
+          "description": "Véhicules Mercedes haut de gamme"
+        },
+        "availability24h": {
+          "title": "Disponibilité 24h",
+          "description": "Service permanent toute l'année"
+        },
+        "professionalDriver": {
+          "title": "Chauffeur professionnel",
+          "description": "Uniforme impeccable et savoir-être"
+        },
+        "allDestinations": {
+          "title": "Toutes destinations",
+          "description": "Nice, Cannes, Monaco, Saint-Tropez"
+        }
+      },
+      "services": {
+        "title": "Types d'Accueil",
+        "subtitle": "Des services adaptés à tous vos points d'arrivée",
+        "trainStation": {
+          "name": "Accueil Gare SNCF",
+          "location": "Nice-Ville, Antibes, Cannes",
+          "description": "Prise en charge à la sortie de votre train",
+          "price": "À partir de 25€"
+        },
+        "port": {
+          "name": "Accueil Port",
+          "location": "Nice, Cannes, Monaco",
+          "description": "Service pour croisières et bateaux",
+          "price": "À partir de 40€"
+        },
+        "hotel": {
+          "name": "Accueil Hôtel",
+          "location": "Toute la Côte d'Azur",
+          "description": "Transfert depuis votre hébergement",
+          "price": "À partir de 30€"
+        },
+        "event": {
+          "name": "Accueil Événement",
+          "location": "Salles, châteaux, villas",
+          "description": "Service VIP pour vos réceptions",
+          "price": "À partir de 50€"
+        }
+      },
+      "process": {
+        "title": "Comment réserver votre accueil ?",
+        "subtitle": "Un processus simple et personnalisé",
+        "steps": {
+          "contact": {
+            "title": "1. Contact",
+            "description": "Appelez-nous avec vos détails d'arrivée"
+          },
+          "personalization": {
+            "title": "2. Personnalisation",
+            "description": "Nous préparons votre panneau nominatif"
+          },
+          "welcome": {
+            "title": "3. Accueil",
+            "description": "Notre chauffeur vous attend avec votre panneau"
+          }
+        }
+      },
+      "ctaSection": {
+        "title": "Réservez votre accueil personnalisé",
+        "description": "Service VIP disponible 24h/24 pour toutes vos arrivées",
+        "button": "Réserver maintenant",
+        "contact": "Nous contacter"
+      },
+      "vipBadge": "VIP Accueil"
     },
     "business": {
       "title": "Transport d'Affaires",
@@ -93,6 +252,52 @@
         "luxury": "Véhicules de luxe",
         "decoration": "Décoration possible",
         "vip": "Service VIP"
+      }
+    },
+    "carousel": {
+      "vanPremium": {
+        "title": "Véhicule Premium jusqu'à 8 personnes",
+        "description": "Transport de groupe confortable et spacieux pour vos déplacements familiaux ou professionnels",
+        "features": {
+          "passengers": "Jusqu'à 8 passagers",
+          "comfort": "Confort optimal",
+          "climate": "Climatisation",
+          "luggage": "Espace bagages"
+        }
+      },
+      "transfertsEvenements": {
+        "title": "Transferts Congrès & Événements",
+        "description": "Service professionnel pour MIPIM, Festival de Cannes, Lions, et tous vos événements d'entreprise",
+        "features": {
+          "service": "Service événementiel",
+          "uniform": "Chauffeur en uniforme",
+          "punctuality": "Ponctualité garantie",
+          "prestige": "Prestige"
+        }
+      },
+      "flotteRecente": {
+        "title": "Flotte Récente & Adaptée",
+        "description": "Véhicules modernes, confortables et parfaitement entretenus pour tous vos besoins de transport",
+        "features": {
+          "recent": "Flotte récente",
+          "maintenance": "Entretien régulier",
+          "comfort": "Confort moderne",
+          "safety": "Sécurité"
+        }
+      },
+      "evenementsMariages": {
+        "title": "Événements & Mariages",
+        "description": "Transport de prestige pour vos moments spéciaux : mariages, anniversaires, cérémonies",
+        "features": {
+          "prestige": "Transport prestige",
+          "events": "Mariages & événements",
+          "personalized": "Service personnalisé",
+          "memories": "Mémoires inoubliables"
+        }
+      },
+      "buttons": {
+        "learnMore": "En savoir plus",
+        "book": "Réserver"
       }
     }
   },
@@ -490,6 +695,554 @@
     "conclusion": {
       "title": "Pourquoi Choisir Notre Service de Taxi ?",
       "content": "Choisir notre service Taxi Nice, c'est opter pour la qualité, la fiabilité et le professionnalisme. Avec plus de 1000 clients satisfaits chaque mois et une note moyenne de 4.9/5, nous sommes fiers de notre réputation. Nos chauffeurs locaux connaissent tous les raccourcis et les meilleures routes pour éviter les embouteillages. Nous nous engageons à vous offrir une expérience de transport exceptionnelle, que ce soit pour un trajet de 5 minutes ou un voyage de plusieurs heures. Contactez-nous dès maintenant pour réserver votre prochain transport Taxi Nice sur la Côte d'Azur."
+    }
+  },
+  "vanPremium": {
+    "title": "Van Premium",
+    "subtitle": "Jusqu'à 8 Passagers",
+    "description": "Transport de groupe confortable et spacieux pour vos déplacements familiaux ou professionnels. Notre Van Premium Mercedes vous garantit confort et sécurité.",
+    "cta": {
+      "bookNow": "Réserver maintenant",
+      "viewPrices": "Voir les tarifs",
+      "book": "Réserver"
+    },
+    "features": {
+      "title": "Caractéristiques du Van Premium",
+      "subtitle": "Confort, sécurité et technologie au service de votre transport de groupe",
+      "upTo8Passengers": {
+        "title": "Jusqu'à 8 passagers",
+        "description": "Transport confortable pour groupes et familles"
+      },
+      "mercedesRecent": {
+        "title": "Mercedes récent",
+        "description": "Flotte moderne et parfaitement entretenue"
+      },
+      "airConditioning": {
+        "title": "Climatisation",
+        "description": "Confort optimal en toutes saisons"
+      },
+      "freeWifi": {
+        "title": "WiFi gratuit",
+        "description": "Connexion internet à bord"
+      },
+      "guaranteedSafety": {
+        "title": "Sécurité garantie",
+        "description": "Assurance complète et chauffeur expérimenté"
+      },
+      "available247": {
+        "title": "Disponible 24/7",
+        "description": "Service permanent toute l'année"
+      }
+    },
+    "useCases": {
+      "title": "Cas d'Usage du Van Premium",
+      "subtitle": "Idéal pour tous vos déplacements en groupe sur Nice et la Côte d'Azur",
+      "airportTransfers": {
+        "title": "Transferts Aéroport",
+        "description": "Arrivée et départ en groupe depuis l'aéroport de Nice",
+        "price": "À partir de 60€"
+      },
+      "rivieraExcursions": {
+        "title": "Excursions Côte d'Azur",
+        "description": "Monaco, Cannes, Saint-Tropez avec guide chauffeur",
+        "price": "À partir de 200€/jour"
+      },
+      "eventsWeddings": {
+        "title": "Événements & Mariages",
+        "description": "Transport de prestige pour vos moments spéciaux",
+        "price": "À partir de 150€"
+      },
+      "corporateOutings": {
+        "title": "Sorties d'Entreprise",
+        "description": "Séminaires, team building, événements professionnels",
+        "price": "À partir de 180€/jour"
+      }
+    },
+    "ctaSection": {
+      "title": "Prêt à réserver votre Van Premium ?",
+      "description": "Contactez-nous pour un devis personnalisé ou réservez directement en ligne",
+      "bookNow": "Réserver maintenant",
+      "contactUs": "Nous contacter"
+    },
+    "badge": {
+      "maxPassengers": "Passagers max"
+    }
+  },
+  "fleetRecent": {
+    "title": "Flotte Récente",
+    "subtitle": "& Adaptée",
+    "description": "Véhicules modernes, confortables et parfaitement entretenus pour tous vos besoins de transport. Notre flotte Mercedes récente vous garantit confort et sécurité.",
+    "heroSubtitle": "Découvrez notre flotte de véhicules Mercedes récents et parfaitement entretenus",
+    "heroFeatures": {
+      "title": "Pourquoi choisir notre flotte ?",
+      "item1": "Véhicules de moins de 3 ans",
+      "item2": "Entretien Mercedes-Benz officiel",
+      "item3": "Confort et sécurité garantis",
+      "item4": "Technologie de pointe"
+    },
+    "cta": {
+      "bookNow": "Réserver maintenant",
+      "viewPrices": "Voir les tarifs",
+      "book": "Réserver"
+    },
+    "features": {
+      "title": "Garanties de Qualité",
+      "subtitle": "Nos engagements pour votre confort et votre sécurité",
+      "recentFleet": {
+        "title": "Flotte récente",
+        "description": "Véhicules Mercedes de moins de 3 ans"
+      },
+      "regularMaintenance": {
+        "title": "Entretien régulier",
+        "description": "Maintenance préventive et contrôles techniques"
+      },
+      "modernComfort": {
+        "title": "Confort moderne",
+        "description": "Climatisation, sièges en cuir, espace généreux"
+      },
+      "safety": {
+        "title": "Sécurité",
+        "description": "Assurance complète et équipements de sécurité"
+      },
+      "technology": {
+        "title": "Technologie",
+        "description": "WiFi gratuit, chargeurs USB, GPS"
+      },
+      "premiumQuality": {
+        "title": "Qualité premium",
+        "description": "Standards Mercedes-Benz pour votre confort"
+      }
+    },
+    "vehicles": {
+      "title": "Notre Flotte Mercedes",
+      "subtitle": "Des véhicules premium pour tous vos besoins de transport",
+      "mercedesGLC": {
+        "name": "Mercedes GLC",
+        "capacity": "4 passagers",
+        "description": "SUV premium avec confort exceptionnel",
+        "features": {
+          "0": "Sièges en cuir",
+          "1": "Climatisation",
+          "2": "WiFi gratuit",
+          "3": "Coffre spacieux"
+        }
+      },
+      "vanPremium": {
+        "name": "Van Premium",
+        "capacity": "8 passagers",
+        "description": "Transport de groupe avec espace généreux",
+        "features": {
+          "0": "Espace pour bagages",
+          "1": "Climatisation",
+          "2": "Accès facilité",
+          "3": "Confort optimal"
+        }
+      }
+    },
+    "maintenance": {
+      "title": "Entretien & Maintenance",
+      "subtitle": "Nos véhicules sont maintenus selon les plus hauts standards Mercedes-Benz",
+      "technicalChecks": {
+        "title": "Contrôles techniques",
+        "frequency": "Tous les 6 mois",
+        "description": "Vérification complète de tous les équipements"
+      },
+      "preventiveMaintenance": {
+        "title": "Maintenance préventive",
+        "frequency": "Selon constructeur",
+        "description": "Entretien régulier chez Mercedes-Benz"
+      },
+      "professionalCleaning": {
+        "title": "Nettoyage professionnel",
+        "frequency": "Après chaque course",
+        "description": "Intérieur et extérieur impeccablement nettoyés"
+      },
+      "qualityControl": {
+        "title": "Contrôle qualité",
+        "frequency": "Quotidien",
+        "description": "Vérification des équipements et du confort"
+      }
+    },
+    "ctaSection": {
+      "title": "Découvrez notre flotte premium",
+      "description": "Réservez dès maintenant et profitez de véhicules Mercedes récents et parfaitement entretenus",
+      "bookNow": "Réserver maintenant",
+      "contactUs": "Nous contacter"
+    },
+    "badge": {
+      "maxYears": "Ans max"
+    }
+  },
+  "excursions": {
+    "title": "Excursions & Découvertes",
+    "subtitle": "Côte d'Azur",
+    "description": "Explorez la Côte d'Azur avec nos excursions personnalisées : Monaco, Cannes, Saint-Tropez. Itinéraires sur mesure avec guide local et arrêts photos.",
+    "cta": {
+      "bookExcursion": "Réserver une excursion",
+      "viewPrices": "Voir les tarifs",
+      "bookDestination": "Réserver excursion"
+    },
+    "features": {
+      "title": "Nos Services d'Excursion",
+      "subtitle": "Une expérience unique pour découvrir les plus beaux sites de la Côte d'Azur",
+      "personalizedRoutes": {
+        "title": "Itinéraires personnalisés",
+        "description": "Circuits adaptés à vos envies et disponibilités"
+      },
+      "localGuide": {
+        "title": "Guide local",
+        "description": "Chauffeur connaissant tous les secrets de la région"
+      },
+      "photoStops": {
+        "title": "Arrêts photos",
+        "description": "Pauses pour immortaliser vos plus beaux souvenirs"
+      },
+      "discovery": {
+        "title": "Découverte",
+        "description": "Sites incontournables et lieux cachés"
+      },
+      "flexibility": {
+        "title": "Flexibilité",
+        "description": "Horaires et durées adaptés à vos souhaits"
+      },
+      "uniqueExperience": {
+        "title": "Expérience unique",
+        "description": "Découverte authentique de la Côte d'Azur"
+      }
+    },
+    "destinations": {
+      "title": "Destinations Incontournables",
+      "subtitle": "Les plus beaux sites de la Côte d'Azur à découvrir avec votre guide chauffeur",
+      "monaco": {
+        "name": "Monaco",
+        "duration": "4-6h",
+        "price": "À partir de 200€",
+        "highlights": {
+          "0": "Palais Princier",
+          "1": "Casino Monte-Carlo",
+          "2": "Port Hercule",
+          "3": "Musée Océanographique"
+        }
+      },
+      "cannes": {
+        "name": "Cannes",
+        "duration": "3-5h",
+        "price": "À partir de 180€",
+        "highlights": {
+          "0": "La Croisette",
+          "1": "Palais des Festivals",
+          "2": "Le Suquet",
+          "3": "Îles de Lérins"
+        }
+      },
+      "saintTropez": {
+        "name": "Saint-Tropez",
+        "duration": "6-8h",
+        "price": "À partir de 350€",
+        "highlights": {
+          "0": "Vieux Port",
+          "1": "Citadelle",
+          "2": "Plage de Pampelonne",
+          "3": "Village de Ramatuelle"
+        }
+      },
+      "ezeTurbie": {
+        "name": "Èze & La Turbie",
+        "duration": "3-4h",
+        "price": "À partir de 150€",
+        "highlights": {
+          "0": "Village médiéval d'Èze",
+          "1": "Jardin Exotique",
+          "2": "Trophée des Alpes"
+        }
+      }
+    },
+    "ctaSection": {
+      "title": "Créez votre excursion sur mesure",
+      "description": "Contactez-nous pour organiser votre découverte personnalisée de la Côte d'Azur",
+      "bookExcursion": "Réserver une excursion",
+      "contactUs": "Nous contacter"
+    },
+    "badge": {
+      "personalized": "Personnalisé"
+    }
+  },
+  "events": {
+    "title": "Événements & Mariages",
+    "subtitle": "Service Prestige",
+    "description": "Transport de prestige pour vos moments spéciaux : mariages, anniversaires, cérémonies. Véhicules décorés et service VIP pour des souvenirs inoubliables.",
+    "cta": {
+      "bookNow": "Réserver maintenant",
+      "viewPrices": "Voir les tarifs",
+      "bookFormula": "Réserver cette formule"
+    },
+    "features": {
+      "title": "Services Spéciaux pour vos Moments Inoubliables",
+      "subtitle": "Chaque détail compte pour faire de votre événement un moment parfait",
+      "weddings": {
+        "title": "Mariages",
+        "description": "Transport de prestige pour votre jour J"
+      },
+      "birthdays": {
+        "title": "Anniversaires",
+        "description": "Célébrations mémorables en VIP"
+      },
+      "vipService": {
+        "title": "Service VIP",
+        "description": "Chauffeur en uniforme et véhicule décoré"
+      },
+      "photoMemories": {
+        "title": "Photos souvenirs",
+        "description": "Votre chauffeur peut vous prendre en photo"
+      },
+      "vehicleDecoration": {
+        "title": "Décoration véhicule",
+        "description": "Personnalisation selon vos souhaits"
+      },
+      "vipGroups": {
+        "title": "Groupes VIP",
+        "description": "Transport pour témoins et invités"
+      }
+    },
+    "services": {
+      "title": "Nos Formules Événementielles",
+      "subtitle": "Des services sur mesure pour chaque type de célébration",
+      "classicWedding": {
+        "name": "Mariage Classique",
+        "description": "Transport marié et mariée, témoins, famille",
+        "price": "À partir de 200€",
+        "features": {
+          "0": "Véhicule décoré",
+          "1": "Chauffeur en uniforme",
+          "2": "Photos incluses"
+        }
+      },
+      "vipBirthday": {
+        "name": "Anniversaire VIP",
+        "description": "Célébration spéciale avec style",
+        "price": "À partir de 150€",
+        "features": {
+          "0": "Décoration sur mesure",
+          "1": "Musique personnalisée",
+          "2": "Service premium"
+        }
+      },
+      "religiousCeremony": {
+        "name": "Cérémonie Religieuse",
+        "description": "Transport pour cérémonies et réceptions",
+        "price": "À partir de 180€",
+        "features": {
+          "0": "Ponctualité absolue",
+          "1": "Discrétion garantie",
+          "2": "Confort optimal"
+        }
+      },
+      "corporateEvent": {
+        "name": "Événement d'Entreprise",
+        "description": "Réceptions, galas, soirées d'entreprise",
+        "price": "À partir de 120€",
+        "features": {
+          "0": "Facturation entreprise",
+          "1": "Service professionnel",
+          "2": "Disponibilité 24/7"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Témoignages de nos Clients",
+      "quote": "Un service exceptionnel pour notre mariage ! Le chauffeur était en uniforme, la voiture magnifiquement décorée, et il a même pris des photos de nous. Un moment parfait qui restera gravé dans nos mémoires.",
+      "author": "- Sophie & Marc, Mariage à Nice"
+    },
+    "ctaSection": {
+      "title": "Organisez votre événement parfait",
+      "description": "Contactez-nous pour un devis personnalisé et des conseils d'organisation",
+      "bookNow": "Réserver maintenant",
+      "contactUs": "Nous contacter"
+    },
+    "badge": {
+      "vipService": "Service"
+    }
+  },
+  "transfersEvents": {
+    "title": "Transferts",
+    "subtitle": "Congrès & Événements",
+    "description": "Service professionnel pour MIPIM, Festival de Cannes, Lions, et tous vos événements d'entreprise. Chauffeurs en uniforme et ponctualité garantie.",
+    "cta": {
+      "bookNow": "Réserver maintenant",
+      "viewPrices": "Voir les tarifs",
+      "bookForEvent": "Réserver pour",
+      "requestQuote": "Demander un devis",
+      "contactUs": "Nous contacter"
+    },
+    "features": {
+      "title": "Service Événementiel Premium",
+      "subtitle": "Excellence et professionnalisme pour tous vos événements d'entreprise",
+      "eventService": {
+        "title": "Service événementiel",
+        "description": "Spécialisé dans les événements d'entreprise et culturels"
+      },
+      "uniformDriver": {
+        "title": "Chauffeur en uniforme",
+        "description": "Présentation impeccable et professionnelle"
+      },
+      "punctuality": {
+        "title": "Ponctualité garantie",
+        "description": "Respect strict des horaires d'événements"
+      },
+      "prestige": {
+        "title": "Prestige",
+        "description": "Service haut de gamme pour vos invités VIP"
+      },
+      "corporateBilling": {
+        "title": "Facturation entreprise",
+        "description": "Devis détaillé et facturation professionnelle"
+      },
+      "regionalCoverage": {
+        "title": "Couverture régionale",
+        "description": "Nice, Cannes, Monaco, toute la Côte d'Azur"
+      }
+    },
+    "events": {
+      "title": "Événements Majeurs de la Côte d'Azur",
+      "subtitle": "Nous sommes votre partenaire transport pour tous les grands événements de la région",
+      "mipim": {
+        "name": "MIPIM",
+        "location": "Cannes",
+        "period": "Mars",
+        "description": "Salon international de l'immobilier d'entreprise"
+      },
+      "cannesFestival": {
+        "name": "Festival de Cannes",
+        "location": "Cannes",
+        "period": "Mai",
+        "description": "Festival international du cinéma"
+      },
+      "lionsInternational": {
+        "name": "Lions International",
+        "location": "Cannes",
+        "period": "Juin",
+        "description": "Festival international de la créativité"
+      },
+      "monacoYachtShow": {
+        "name": "Monaco Yacht Show",
+        "location": "Monaco",
+        "period": "Septembre",
+        "description": "Salon international du yachting"
+      }
+    },
+    "ctaSection": {
+      "title": "Organisez votre transport événementiel",
+      "description": "Devis personnalisé pour vos événements d'entreprise et congrès",
+      "requestQuote": "Demander un devis",
+      "contactUs": "Nous contacter"
+    },
+    "badge": {
+      "service247": "Service"
+    }
+  },
+  "vsl": {
+    "title": "VSL Nice",
+    "subtitle": "Véhicule Sanitaire Léger",
+    "description": "Transport médicalisé professionnel pour personnes à mobilité réduite. Service adapté, sécurisé et humain pour tous vos déplacements médicaux.",
+    "cta": {
+      "bookVSL": "Réserver un VSL",
+      "learnMore": "En savoir plus",
+      "callNow": "06 51 68 36 87",
+      "requestQuote": "Demander un devis"
+    },
+    "features": {
+      "title": "Un Service Adapté et Humain",
+      "subtitle": "Transport médicalisé professionnel avec un accompagnement personnalisé",
+      "medicalTransport": {
+        "title": "Transport Médicalisé",
+        "description": "Véhicules sanitaires légers adaptés au transport de personnes à mobilité réduite"
+      },
+      "trainedDrivers": {
+        "title": "Chauffeurs Formés",
+        "description": "Personnel qualifié et formé aux techniques de manutention et de sécurité"
+      },
+      "accompaniment": {
+        "title": "Accompagnement",
+        "description": "Aide au déplacement et assistance personnalisée selon vos besoins"
+      },
+      "availability247": {
+        "title": "Disponibilité 24h/24",
+        "description": "Service disponible tous les jours de l'année pour vos rendez-vous médicaux"
+      }
+    },
+    "services": {
+      "title": "Nos Services VSL",
+      "subtitle": "Une gamme complète de services de transport médicalisé adaptés à vos besoins",
+      "medicalAppointments": {
+        "title": "Rendez-vous Médicaux",
+        "description": "Transport vers hôpitaux, cliniques, cabinets médicaux",
+        "features": {
+          "0": "Ponctualité garantie",
+          "1": "Aide au déplacement",
+          "2": "Attente sur place"
+        }
+      },
+      "convalescence": {
+        "title": "Sorties de Convalescence",
+        "description": "Transport de retour après hospitalisation",
+        "features": {
+          "0": "Confort optimal",
+          "1": "Sécurité renforcée",
+          "2": "Accompagnement"
+        }
+      },
+      "personalTrips": {
+        "title": "Déplacements Personnels",
+        "description": "Sorties, courses, visites familiales",
+        "features": {
+          "0": "Flexibilité horaire",
+          "1": "Service personnalisé",
+          "2": "Disponibilité"
+        }
+      },
+      "specialEvents": {
+        "title": "Événements Spéciaux",
+        "description": "Mariages, cérémonies, fêtes familiales",
+        "features": {
+          "0": "Véhicule adapté",
+          "1": "Décoration possible",
+          "2": "Service de prestige"
+        }
+      }
+    },
+    "process": {
+      "title": "Comment Réserver un VSL ?",
+      "subtitle": "Un processus simple et sécurisé pour votre transport médicalisé",
+      "step1": {
+        "title": "Appel Téléphonique",
+        "description": "Contactez-nous au 06 51 68 36 87 pour discuter de vos besoins"
+      },
+      "step2": {
+        "title": "Évaluation",
+        "description": "Nous évaluons vos besoins spécifiques et adaptons notre service"
+      },
+      "step3": {
+        "title": "Réservation",
+        "description": "Confirmation de votre réservation avec tous les détails"
+      },
+      "step4": {
+        "title": "Transport",
+        "description": "Prise en charge et transport sécurisé vers votre destination"
+      }
+    },
+    "requirements": {
+      "title": "Documents Requis",
+      "subtitle": "Pour bénéficier de notre service VSL, merci de vous munir des documents suivants",
+      "items": {
+        "0": "Carte d'invalidité ou justificatif médical",
+        "1": "Réservation 24h à l'avance (urgences exceptées)",
+        "2": "Informations sur l'état de santé du passager",
+        "3": "Coordonnées de contact d'urgence"
+      }
+    },
+    "ctaSection": {
+      "title": "Besoin d'un VSL ?",
+      "description": "Contactez-nous pour réserver votre transport médicalisé adapté"
     }
   }
 }

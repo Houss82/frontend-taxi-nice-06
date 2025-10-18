@@ -1,6 +1,9 @@
+"use client";
+
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   CheckCircle,
   Clock,
@@ -13,95 +16,105 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-export const metadata = {
-  title:
-    "Arrivées & Destinations Nice | Accueil Personnalisé & Service Haut de Gamme | Taxi Nice-06",
-  description:
-    "Accueil personnalisé à votre arrivée avec panneau nominatif et service haut de gamme. Disponible 24h/24 pour toutes vos destinations sur Nice et Côte d'Azur.",
-  keywords: [
-    "arrivée taxi nice",
-    "accueil gare nice",
-    "destination nice",
-    "service personnalisé nice",
-    "accueil nominatif nice",
-    "service luxe nice",
-  ],
-};
-
 export default function ArriveesDestinationsPage() {
+  const { t, isHydrated } = useLanguage();
+
+  // Attendre que les traductions soient chargées
+  if (!isHydrated) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600">Chargement...</p>
+        </div>
+      </div>
+    );
+  }
+
   const features = [
     {
       icon: Star,
-      title: "Accueil nominatif",
-      description: "Panneau personnalisé avec votre nom",
+      title: t("services.arrivals.features.personalizedWelcome.title"),
+      description: t(
+        "services.arrivals.features.personalizedWelcome.description"
+      ),
     },
     {
       icon: Heart,
-      title: "Service personnalisé",
-      description: "Accueil chaleureux et attentionné",
+      title: t("services.arrivals.features.personalizedService.title"),
+      description: t(
+        "services.arrivals.features.personalizedService.description"
+      ),
     },
     {
       icon: Shield,
-      title: "Luxe et confort",
-      description: "Véhicules Mercedes haut de gamme",
+      title: t("services.arrivals.features.luxuryComfort.title"),
+      description: t("services.arrivals.features.luxuryComfort.description"),
     },
     {
       icon: Clock,
-      title: "Disponibilité 24h",
-      description: "Service permanent toute l'année",
+      title: t("services.arrivals.features.availability24h.title"),
+      description: t("services.arrivals.features.availability24h.description"),
     },
     {
       icon: Users,
-      title: "Chauffeur professionnel",
-      description: "Uniforme impeccable et savoir-être",
+      title: t("services.arrivals.features.professionalDriver.title"),
+      description: t(
+        "services.arrivals.features.professionalDriver.description"
+      ),
     },
     {
       icon: MapPin,
-      title: "Toutes destinations",
-      description: "Nice, Cannes, Monaco, Saint-Tropez",
+      title: t("services.arrivals.features.allDestinations.title"),
+      description: t("services.arrivals.features.allDestinations.description"),
     },
   ];
 
   const services = [
     {
-      name: "Accueil Gare SNCF",
-      location: "Nice-Ville, Antibes, Cannes",
-      description: "Prise en charge à la sortie de votre train",
-      price: "À partir de 25€",
+      name: t("services.arrivals.services.trainStation.name"),
+      location: t("services.arrivals.services.trainStation.location"),
+      description: t("services.arrivals.services.trainStation.description"),
+      price: t("services.arrivals.services.trainStation.price"),
     },
     {
-      name: "Accueil Port",
-      location: "Nice, Cannes, Monaco",
-      description: "Service pour croisières et bateaux",
-      price: "À partir de 40€",
+      name: t("services.arrivals.services.port.name"),
+      location: t("services.arrivals.services.port.location"),
+      description: t("services.arrivals.services.port.description"),
+      price: t("services.arrivals.services.port.price"),
     },
     {
-      name: "Accueil Hôtel",
-      location: "Toute la Côte d'Azur",
-      description: "Transfert depuis votre hébergement",
-      price: "À partir de 30€",
+      name: t("services.arrivals.services.hotel.name"),
+      location: t("services.arrivals.services.hotel.location"),
+      description: t("services.arrivals.services.hotel.description"),
+      price: t("services.arrivals.services.hotel.price"),
     },
     {
-      name: "Accueil Événement",
-      location: "Salles, châteaux, villas",
-      description: "Service VIP pour vos réceptions",
-      price: "À partir de 50€",
+      name: t("services.arrivals.services.event.name"),
+      location: t("services.arrivals.services.event.location"),
+      description: t("services.arrivals.services.event.description"),
+      price: t("services.arrivals.services.event.price"),
+    },
+  ];
+
+  const breadcrumbItems = [
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    {
+      name: t("services.arrivals.title"),
+      href: "/services/arrivees-destinations",
+      title: t("services.arrivals.title"),
     },
   ];
 
   return (
     <>
       <Navbar />
-      <SEOBreadcrumb
-        items={[
-          { name: "Accueil", href: "/" },
-          { name: "Services", href: "/services" },
-          {
-            name: "Arrivées & Destinations",
-            href: "/services/arrivees-destinations",
-          },
-        ]}
-      />
+      <div className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <SEOBreadcrumb items={breadcrumbItems} />
+        </div>
+      </div>
 
       <main>
         {/* Hero Section */}
@@ -110,28 +123,26 @@ export default function ArriveesDestinationsPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  Arrivées & Destinations
+                  {t("services.arrivals.title")}
                   <span className="block text-blue-600">
-                    Service Personnalisé
+                    {t("services.arrivals.subtitle")}
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Accueil personnalisé à votre arrivée avec panneau nominatif et
-                  service haut de gamme. Disponible 24h/24 pour toutes vos
-                  destinations sur Nice et la Côte d'Azur.
+                  {t("services.arrivals.description")}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
                     className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300 text-center no-underline"
                   >
-                    Réserver un accueil
+                    {t("services.arrivals.cta.bookWelcome")}
                   </a>
                   <a
                     href="/tarifs"
                     className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300 text-center no-underline"
                   >
-                    Voir les tarifs
+                    {t("services.arrivals.cta.viewPrices")}
                   </a>
                 </div>
               </div>
@@ -148,7 +159,9 @@ export default function ArriveesDestinationsPage() {
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">
                     <div className="text-2xl font-bold">VIP</div>
-                    <div className="text-sm">Accueil</div>
+                    <div className="text-sm">
+                      {t("services.arrivals.vipBadge")}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -161,11 +174,10 @@ export default function ArriveesDestinationsPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Service d'Accueil Premium
+                {t("services.arrivals.features.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Un accueil personnalisé et attentionné pour tous vos
-                déplacements
+                {t("services.arrivals.features.subtitle")}
               </p>
             </div>
 
@@ -193,10 +205,10 @@ export default function ArriveesDestinationsPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Types d'Accueil
+                {t("services.arrivals.services.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Des services adaptés à tous vos points d'arrivée
+                {t("services.arrivals.services.subtitle")}
               </p>
             </div>
 
@@ -223,7 +235,7 @@ export default function ArriveesDestinationsPage() {
                     href="/reservation"
                     className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300"
                   >
-                    Réserver {service.name} →
+                    {t("services.arrivals.cta.bookService")} {service.name} →
                   </a>
                 </div>
               ))}
@@ -236,10 +248,10 @@ export default function ArriveesDestinationsPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Comment réserver votre accueil ?
+                {t("services.arrivals.process.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Un processus simple et personnalisé
+                {t("services.arrivals.process.subtitle")}
               </p>
             </div>
 
@@ -249,10 +261,10 @@ export default function ArriveesDestinationsPage() {
                   <Phone className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  1. Contact
+                  {t("services.arrivals.process.steps.contact.title")}
                 </h3>
                 <p className="text-gray-600">
-                  Appelez-nous avec vos détails d'arrivée
+                  {t("services.arrivals.process.steps.contact.description")}
                 </p>
               </div>
 
@@ -261,10 +273,12 @@ export default function ArriveesDestinationsPage() {
                   <Star className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  2. Personnalisation
+                  {t("services.arrivals.process.steps.personalization.title")}
                 </h3>
                 <p className="text-gray-600">
-                  Nous préparons votre panneau nominatif
+                  {t(
+                    "services.arrivals.process.steps.personalization.description"
+                  )}
                 </p>
               </div>
 
@@ -273,10 +287,10 @@ export default function ArriveesDestinationsPage() {
                   <CheckCircle className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  3. Accueil
+                  {t("services.arrivals.process.steps.welcome.title")}
                 </h3>
                 <p className="text-gray-600">
-                  Notre chauffeur vous attend avec votre panneau
+                  {t("services.arrivals.process.steps.welcome.description")}
                 </p>
               </div>
             </div>
@@ -288,23 +302,23 @@ export default function ArriveesDestinationsPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Réservez votre accueil personnalisé
+                {t("services.arrivals.ctaSection.title")}
               </h2>
               <p className="text-xl text-blue-100 mb-8">
-                Service VIP disponible 24h/24 pour toutes vos arrivées
+                {t("services.arrivals.ctaSection.description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reservation"
                   className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
                 >
-                  Réserver maintenant
+                  {t("services.arrivals.ctaSection.button")}
                 </a>
                 <a
                   href="/contact"
                   className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300 no-underline"
                 >
-                  Nous contacter
+                  {t("services.arrivals.ctaSection.contact")}
                 </a>
               </div>
               <div className="mt-8 text-blue-100">

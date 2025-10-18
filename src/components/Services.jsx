@@ -71,11 +71,13 @@ function AnimatedCounter({ end, duration = 2000, decimals = 0, suffix = "" }) {
 }
 
 export default function Services() {
-  const { t } = useLanguage();
+  const { t, isHydrated } = useLanguage();
   const [visibleElements, setVisibleElements] = useState(new Set());
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    if (!isHydrated) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -98,16 +100,48 @@ export default function Services() {
     return () => {
       elements?.forEach((element) => observer.unobserve(element));
     };
-  }, []);
+  }, [isHydrated]);
+
+  // Attendre que les traductions soient chargées
+  if (!isHydrated) {
+    return (
+      <section id="services" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">
+              Nos Services
+            </h2>
+            <p className="text-gray-600 mb-8">
+              Une gamme complète de services de transport
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[1, 2, 3, 4].map((i) => (
+              <div key={i} className="bg-gray-100 rounded-lg p-6 animate-pulse">
+                <div className="h-4 bg-gray-300 rounded mb-2"></div>
+                <div className="h-3 bg-gray-300 rounded mb-4"></div>
+                <div className="space-y-2">
+                  <div className="h-3 bg-gray-300 rounded"></div>
+                  <div className="h-3 bg-gray-300 rounded"></div>
+                  <div className="h-3 bg-gray-300 rounded"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   const services = [
     {
       icon: Plane,
       title: t("services.airport.title"),
       description: t("services.airport.description"),
       features: [
-        t("services.airport.features.flightTracking"),
-        t("services.airport.features.personalized"),
-        t("services.airport.features.premiumVehicles"),
+        t("services.airport.features.flightTracking.title"),
+        t("services.airport.features.personalWelcome.title"),
+        t("services.airport.features.punctuality.title"),
       ],
     },
     {
@@ -161,7 +195,7 @@ export default function Services() {
                 key={index}
                 data-animate
                 data-index={`service-${index}`}
-                className={`bg-white border border-gray-200 rounded-xl shadow-sm group hover:shadow-lg transition-all duration-1000 ease-out hover:-translate-y-2 ${
+                className={`bg-white border border-gray-200 rounded-xl shadow-sm group hover:shadow-lg transition-all duration-1000 ease-out hover:-translate-y-2 h-full flex flex-col ${
                   visibleElements.has(`service-${index}`)
                     ? "opacity-100 rotate-y-0"
                     : "opacity-0 rotate-y-180"
@@ -173,14 +207,14 @@ export default function Services() {
                   transformStyle: "preserve-3d",
                 }}
               >
-                <div className="p-6 text-center">
+                <div className="p-6 text-center flex flex-col h-full">
                   <div className="w-24 h-24 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                     <service.icon className="w-14 h-14 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-black">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 text-center mb-4">
+                  <p className="text-gray-600 text-center mb-4 flex-grow">
                     {service.description}
                   </p>
                   <ul className="space-y-2">

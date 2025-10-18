@@ -1,150 +1,141 @@
+"use client";
+
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { Award, Briefcase, Clock, MapPin, Star, Users } from "lucide-react";
 import Image from "next/image";
 
-export const metadata = {
-  title:
-    "Transferts Congrès & Événements Nice | MIPIM, Festival Cannes | Taxi Nice-06",
-  description:
-    "Service professionnel pour MIPIM, Festival de Cannes, Lions et tous vos événements d'entreprise. Chauffeur en uniforme, ponctualité garantie.",
-  keywords: [
-    "transferts congrès nice",
-    "mipim taxi",
-    "festival cannes transport",
-    "événements entreprise nice",
-    "chauffeur uniforme nice",
-    "transport professionnel côte d'azur",
-  ],
-};
-
 export default function TransfertsEvenementsPage() {
+  const { t, isHydrated } = useLanguage();
+
+  // Attendre que les traductions soient chargées
+  if (!isHydrated) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600">Chargement...</p>
+        </div>
+      </div>
+    );
+  }
+
   const features = [
     {
       icon: Users,
-      title: "Service événementiel",
-      description: "Spécialisé dans les événements d'entreprise et culturels",
+      title: t("transfersEvents.features.eventService.title"),
+      description: t("transfersEvents.features.eventService.description"),
     },
     {
       icon: Award,
-      title: "Chauffeur en uniforme",
-      description: "Présentation impeccable et professionnelle",
+      title: t("transfersEvents.features.uniformDriver.title"),
+      description: t("transfersEvents.features.uniformDriver.description"),
     },
     {
       icon: Clock,
-      title: "Ponctualité garantie",
-      description: "Respect strict des horaires d'événements",
+      title: t("transfersEvents.features.punctuality.title"),
+      description: t("transfersEvents.features.punctuality.description"),
     },
     {
       icon: Star,
-      title: "Prestige",
-      description: "Service haut de gamme pour vos invités VIP",
+      title: t("transfersEvents.features.prestige.title"),
+      description: t("transfersEvents.features.prestige.description"),
     },
     {
       icon: Briefcase,
-      title: "Facturation entreprise",
-      description: "Devis détaillé et facturation professionnelle",
+      title: t("transfersEvents.features.corporateBilling.title"),
+      description: t("transfersEvents.features.corporateBilling.description"),
     },
     {
       icon: MapPin,
-      title: "Couverture régionale",
-      description: "Nice, Cannes, Monaco, toute la Côte d'Azur",
+      title: t("transfersEvents.features.regionalCoverage.title"),
+      description: t("transfersEvents.features.regionalCoverage.description"),
     },
   ];
 
   const events = [
     {
-      name: "MIPIM",
-      location: "Cannes",
-      period: "Mars",
-      description: "Salon international de l'immobilier d'entreprise",
-      image: "/majéstic.jpeg",
+      name: t("transfersEvents.events.mipim.name"),
+      location: t("transfersEvents.events.mipim.location"),
+      period: t("transfersEvents.events.mipim.period"),
+      description: t("transfersEvents.events.mipim.description"),
+      image: "/mipim.jpg",
     },
     {
-      name: "Festival de Cannes",
-      location: "Cannes",
-      period: "Mai",
-      description: "Festival international du cinéma",
-      image: "/majéstic.jpeg",
+      name: t("transfersEvents.events.cannesFestival.name"),
+      location: t("transfersEvents.events.cannesFestival.location"),
+      period: t("transfersEvents.events.cannesFestival.period"),
+      description: t("transfersEvents.events.cannesFestival.description"),
+      image: "/festivale.jpg",
     },
     {
-      name: "Lions International",
-      location: "Cannes",
-      period: "Juin",
-      description: "Festival international de la créativité",
-      image: "/majéstic.jpeg",
+      name: t("transfersEvents.events.lionsInternational.name"),
+      location: t("transfersEvents.events.lionsInternational.location"),
+      period: t("transfersEvents.events.lionsInternational.period"),
+      description: t("transfersEvents.events.lionsInternational.description"),
+      image: "/lions.jpg",
     },
     {
-      name: "Monaco Yacht Show",
-      location: "Monaco",
-      period: "Septembre",
-      description: "Salon international du yachting",
-      image: "/majéstic.jpeg",
+      name: t("transfersEvents.events.monacoYachtShow.name"),
+      location: t("transfersEvents.events.monacoYachtShow.location"),
+      period: t("transfersEvents.events.monacoYachtShow.period"),
+      description: t("transfersEvents.events.monacoYachtShow.description"),
+      image: "/monaco-yacht-show.jpg",
+    },
+  ];
+
+  const breadcrumbItems = [
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    {
+      name: t("transfersEvents.title") + " " + t("transfersEvents.subtitle"),
+      href: "/services/transferts-evenements",
     },
   ];
 
   return (
     <>
       <Navbar />
-      <SEOBreadcrumb
-        items={[
-          { name: "Accueil", href: "/" },
-          { name: "Services", href: "/services" },
-          {
-            name: "Transferts Événements",
-            href: "/services/transferts-evenements",
-          },
-        ]}
-      />
+      <div className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <SEOBreadcrumb items={breadcrumbItems} />
+        </div>
+      </div>
 
       <main>
         {/* Hero Section */}
         <section className="relative py-20 bg-gradient-to-br from-cyan-50 to-blue-100">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-              >
+              <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  Transferts
+                  {t("transfersEvents.title")}
                   <span className="block text-cyan-600">
-                    Congrès & Événements
+                    {t("transfersEvents.subtitle")}
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Service professionnel pour MIPIM, Festival de Cannes, Lions,
-                  et tous vos événements d'entreprise. Chauffeurs en uniforme et
-                  ponctualité garantie.
+                  {t("transfersEvents.description")}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
                     className="px-8 py-4 bg-cyan-600 text-white rounded-xl font-semibold hover:bg-cyan-700 transition-colors duration-300 text-center no-underline"
                   >
-                    Réserver maintenant
+                    {t("transfersEvents.cta.bookNow")}
                   </a>
                   <a
                     href="/tarifs"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
                     className="px-8 py-4 border-2 border-cyan-600 text-cyan-600 rounded-xl font-semibold hover:bg-cyan-600 hover:text-white transition-colors duration-300 text-center no-underline"
                   >
-                    Voir les tarifs
+                    {t("transfersEvents.cta.viewPrices")}
                   </a>
                 </div>
               </div>
 
-              <div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative"
-              >
+              <div className="relative">
                 <Image
                   src="/majéstic.jpeg"
                   alt="Service transfert événements professionnel"
@@ -156,7 +147,9 @@ export default function TransfertsEvenementsPage() {
                 <div className="absolute -bottom-6 -right-6 bg-cyan-600 text-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">
                     <div className="text-2xl font-bold">24/7</div>
-                    <div className="text-sm">Service</div>
+                    <div className="text-sm">
+                      {t("transfersEvents.badge.service247")}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -169,11 +162,10 @@ export default function TransfertsEvenementsPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Service Événementiel Premium
+                {t("transfersEvents.features.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Excellence et professionnalisme pour tous vos événements
-                d'entreprise
+                {t("transfersEvents.features.subtitle")}
               </p>
             </div>
 
@@ -201,11 +193,10 @@ export default function TransfertsEvenementsPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Événements Majeurs de la Côte d'Azur
+                {t("transfersEvents.events.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Nous sommes votre partenaire transport pour tous les grands
-                événements de la région
+                {t("transfersEvents.events.subtitle")}
               </p>
             </div>
 
@@ -215,7 +206,7 @@ export default function TransfertsEvenementsPage() {
                   key={index}
                   className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="relative h-48">
+                  <div className="relative h-64">
                     <Image
                       src={event.image}
                       alt={event.name}
@@ -241,7 +232,7 @@ export default function TransfertsEvenementsPage() {
                       href="/reservation"
                       className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 transition-colors duration-300"
                     >
-                      Réserver pour {event.name} →
+                      {t("transfersEvents.cta.bookForEvent")} {event.name} →
                     </a>
                   </div>
                 </div>
@@ -255,23 +246,23 @@ export default function TransfertsEvenementsPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Organisez votre transport événementiel
+                {t("transfersEvents.ctaSection.title")}
               </h2>
               <p className="text-xl text-cyan-100 mb-8">
-                Devis personnalisé pour vos événements d'entreprise et congrès
+                {t("transfersEvents.ctaSection.description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reservation"
                   className="px-8 py-4 bg-white text-cyan-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
                 >
-                  Demander un devis
+                  {t("transfersEvents.ctaSection.requestQuote")}
                 </a>
                 <a
                   href="/contact"
                   className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-cyan-600 transition-colors duration-300 no-underline"
                 >
-                  Nous contacter
+                  {t("transfersEvents.ctaSection.contactUs")}
                 </a>
               </div>
               <div className="mt-8 text-cyan-100">

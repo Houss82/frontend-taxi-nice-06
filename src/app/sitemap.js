@@ -2,144 +2,72 @@ export default function sitemap() {
   const baseUrl = "https://taxi-nice-06.com";
   const currentDate = new Date();
 
-  return [
-    // Page d'accueil
-    {
-      url: baseUrl,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 1.0,
-    },
-    // Page de réservation
-    {
-      url: `${baseUrl}/reservation`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    // Page des tarifs
-    {
-      url: `${baseUrl}/tarifs`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    // Tarifs Mercedes GLC
-    {
-      url: `${baseUrl}/tarifs?vehicle=glc`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    // Tarifs Van Premium
-    {
-      url: `${baseUrl}/tarifs?vehicle=van`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    // Pages de services (à créer)
-    {
-      url: `${baseUrl}/services/transfert-aeroport`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/services/vsl`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/services/excursions`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    // Page de contact
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    // Page blog
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    // Page partenaires
-    {
-      url: `${baseUrl}/partenaires`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    // Page à propos
-    {
-      url: `${baseUrl}/a-propos`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    // Pages légales
-    {
-      url: `${baseUrl}/mentions-legales`,
-      lastModified: currentDate,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/politique-confidentialite`,
-      lastModified: currentDate,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/cgv`,
-      lastModified: currentDate,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    // Articles de blog - SEO prioritaire
-    {
-      url: `${baseUrl}/blog/guide-transfert-aeroport-nice`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/choisir-chauffeur-prive-nice`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/excursions-cote-azur`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/choosing-private-driver-nice`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/french-riviera-tours`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/nice-airport-transfer-guide`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
+  // Pages principales
+  const staticPages = [
+    "",
+    "/reservation",
+    "/tarifs",
+    "/tarifs?vehicle=glc",
+    "/tarifs?vehicle=van",
+    "/services",
+    // Toutes les pages de services
+    "/services/transferts-aeroport",
+    "/services/arrivees-destinations",
+    "/services/van-premium",
+    "/services/flotte-recente",
+    "/services/excursions-decouvertes",
+    "/services/evenements-mariages",
+    "/services/transferts-evenements",
+    "/services/vsl",
+    "/services/excursions",
+    "/contact",
+    "/blog",
+    "/partenaires",
+    "/a-propos",
+    "/mentions-legales",
+    "/politique-confidentialite",
+    "/cgv",
+    // Articles de blog
+    "/blog/guide-transfert-aeroport-nice",
+    "/blog/choisir-chauffeur-prive-nice",
+    "/blog/excursions-cote-azur",
+    "/blog/choosing-private-driver-nice",
+    "/blog/french-riviera-tours",
+    "/blog/nice-airport-transfer-guide",
   ];
+
+  // Générer les URLs pour chaque langue
+  const urls = [];
+
+  staticPages.forEach((page) => {
+    // Version française (par défaut) - URL principale
+    urls.push({
+      url: `${baseUrl}${page}`,
+      lastModified: currentDate,
+      changeFrequency: page === "" ? "weekly" : "monthly",
+      priority: page === "" ? 1.0 : 0.8,
+      alternates: {
+        languages: {
+          "fr-FR": `${baseUrl}${page}`,
+          "en-US": `${baseUrl}${page}?lang=en`,
+        },
+      },
+    });
+
+    // Version anglaise (avec paramètre) - URL alternative
+    urls.push({
+      url: `${baseUrl}${page}?lang=en`,
+      lastModified: currentDate,
+      changeFrequency: page === "" ? "weekly" : "monthly",
+      priority: page === "" ? 0.9 : 0.7, // Priorité légèrement inférieure
+      alternates: {
+        languages: {
+          "fr-FR": `${baseUrl}${page}`,
+          "en-US": `${baseUrl}${page}?lang=en`,
+        },
+      },
+    });
+  });
+
+  return urls;
 }

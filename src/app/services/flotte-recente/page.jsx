@@ -1,6 +1,9 @@
+"use client";
+
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   Award,
   Car,
@@ -13,115 +16,122 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-export const metadata = {
-  title:
-    "Flotte Récente & Adaptée Nice | Véhicules Modernes Mercedes | Taxi Nice-06",
-  description:
-    "Véhicules modernes, confortables et parfaitement entretenus pour tous vos besoins de transport. Flotte Mercedes récente avec confort et sécurité garantis.",
-  keywords: [
-    "flotte taxi nice",
-    "véhicules récents nice",
-    "confort transport nice",
-    "taxi officiel nice",
-    "mercedes taxi nice",
-    "véhicules modernes côte d'azur",
-  ],
-};
-
 export default function FlotteRecentePage() {
+  const { t, isHydrated } = useLanguage();
+
+  // Attendre que les traductions soient chargées
+  if (!isHydrated) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600">Chargement...</p>
+        </div>
+      </div>
+    );
+  }
+
   const features = [
     {
       icon: Car,
-      title: "Flotte récente",
-      description: "Véhicules Mercedes de moins de 3 ans",
+      title: t("fleetRecent.features.recentFleet.title"),
+      description: t("fleetRecent.features.recentFleet.description"),
     },
     {
       icon: Wrench,
-      title: "Entretien régulier",
-      description: "Maintenance préventive et contrôles techniques",
+      title: t("fleetRecent.features.regularMaintenance.title"),
+      description: t("fleetRecent.features.regularMaintenance.description"),
     },
     {
       icon: Thermometer,
-      title: "Confort moderne",
-      description: "Climatisation, sièges en cuir, espace généreux",
+      title: t("fleetRecent.features.modernComfort.title"),
+      description: t("fleetRecent.features.modernComfort.description"),
     },
     {
       icon: Shield,
-      title: "Sécurité",
-      description: "Assurance complète et équipements de sécurité",
+      title: t("fleetRecent.features.safety.title"),
+      description: t("fleetRecent.features.safety.description"),
     },
     {
       icon: Wifi,
-      title: "Technologie",
-      description: "WiFi gratuit, chargeurs USB, GPS",
+      title: t("fleetRecent.features.technology.title"),
+      description: t("fleetRecent.features.technology.description"),
     },
     {
       icon: Award,
-      title: "Qualité premium",
-      description: "Standards Mercedes-Benz pour votre confort",
+      title: t("fleetRecent.features.premiumQuality.title"),
+      description: t("fleetRecent.features.premiumQuality.description"),
     },
   ];
 
   const vehicles = [
     {
-      name: "Mercedes GLC",
-      capacity: "4 passagers",
+      name: t("fleetRecent.vehicles.mercedesGLC.name"),
+      capacity: t("fleetRecent.vehicles.mercedesGLC.capacity"),
       image: "/imageGLC.png",
-      description: "SUV premium avec confort exceptionnel",
+      description: t("fleetRecent.vehicles.mercedesGLC.description"),
       features: [
-        "Sièges en cuir",
-        "Climatisation",
-        "WiFi gratuit",
-        "Coffre spacieux",
+        t("fleetRecent.vehicles.mercedesGLC.features.0"),
+        t("fleetRecent.vehicles.mercedesGLC.features.1"),
+        t("fleetRecent.vehicles.mercedesGLC.features.2"),
+        t("fleetRecent.vehicles.mercedesGLC.features.3"),
       ],
     },
     {
-      name: "Van Premium",
-      capacity: "8 passagers",
+      name: t("fleetRecent.vehicles.vanPremium.name"),
+      capacity: t("fleetRecent.vehicles.vanPremium.capacity"),
       image: "/image-van.png",
-      description: "Transport de groupe avec espace généreux",
+      description: t("fleetRecent.vehicles.vanPremium.description"),
       features: [
-        "Espace pour bagages",
-        "Climatisation",
-        "Accès facilité",
-        "Confort optimal",
+        t("fleetRecent.vehicles.vanPremium.features.0"),
+        t("fleetRecent.vehicles.vanPremium.features.1"),
+        t("fleetRecent.vehicles.vanPremium.features.2"),
+        t("fleetRecent.vehicles.vanPremium.features.3"),
       ],
     },
   ];
 
   const maintenance = [
     {
-      title: "Contrôles techniques",
-      frequency: "Tous les 6 mois",
-      description: "Vérification complète de tous les équipements",
+      title: t("fleetRecent.maintenance.technicalChecks.title"),
+      frequency: t("fleetRecent.maintenance.technicalChecks.frequency"),
+      description: t("fleetRecent.maintenance.technicalChecks.description"),
     },
     {
-      title: "Maintenance préventive",
-      frequency: "Selon constructeur",
-      description: "Entretien régulier chez Mercedes-Benz",
+      title: t("fleetRecent.maintenance.preventiveMaintenance.title"),
+      frequency: t("fleetRecent.maintenance.preventiveMaintenance.frequency"),
+      description: t(
+        "fleetRecent.maintenance.preventiveMaintenance.description"
+      ),
     },
     {
-      title: "Nettoyage professionnel",
-      frequency: "Après chaque course",
-      description: "Intérieur et extérieur impeccablement nettoyés",
+      title: t("fleetRecent.maintenance.professionalCleaning.title"),
+      frequency: t("fleetRecent.maintenance.professionalCleaning.frequency"),
+      description: t(
+        "fleetRecent.maintenance.professionalCleaning.description"
+      ),
     },
     {
-      title: "Contrôle qualité",
-      frequency: "Quotidien",
-      description: "Vérification des équipements et du confort",
+      title: t("fleetRecent.maintenance.qualityControl.title"),
+      frequency: t("fleetRecent.maintenance.qualityControl.frequency"),
+      description: t("fleetRecent.maintenance.qualityControl.description"),
     },
+  ];
+
+  const breadcrumbItems = [
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: t("fleetRecent.title"), href: "/services/flotte-recente" },
   ];
 
   return (
     <>
       <Navbar />
-      <SEOBreadcrumb
-        items={[
-          { name: "Accueil", href: "/" },
-          { name: "Services", href: "/services" },
-          { name: "Flotte Récente", href: "/services/flotte-recente" },
-        ]}
-      />
+      <div className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <SEOBreadcrumb items={breadcrumbItems} />
+        </div>
+      </div>
 
       <main>
         {/* Hero Section */}
@@ -130,26 +140,60 @@ export default function FlotteRecentePage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  Flotte Récente
-                  <span className="block text-blue-600">& Adaptée</span>
+                  {t("fleetRecent.title")}
+                  <span className="block text-blue-600">
+                    {t("fleetRecent.subtitle")}
+                  </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Véhicules modernes, confortables et parfaitement entretenus
-                  pour tous vos besoins de transport. Notre flotte Mercedes
-                  récente vous garantit confort et sécurité.
+                  {t("fleetRecent.description")}
                 </p>
+
+                {/* Section pourquoi choisir notre flotte */}
+                <div className="mb-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    {t("fleetRecent.heroFeatures.title")}
+                  </h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                      <span className="text-gray-700 text-sm">
+                        {t("fleetRecent.heroFeatures.item1")}
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                      <span className="text-gray-700 text-sm">
+                        {t("fleetRecent.heroFeatures.item2")}
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                      <span className="text-gray-700 text-sm">
+                        {t("fleetRecent.heroFeatures.item3")}
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                      <span className="text-gray-700 text-sm">
+                        {t("fleetRecent.heroFeatures.item4")}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
                     className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300 text-center no-underline"
                   >
-                    Réserver maintenant
+                    {t("fleetRecent.cta.bookNow")}
                   </a>
                   <a
                     href="/tarifs"
                     className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300 text-center no-underline"
                   >
-                    Voir les tarifs
+                    {t("fleetRecent.cta.viewPrices")}
                   </a>
                 </div>
               </div>
@@ -166,7 +210,9 @@ export default function FlotteRecentePage() {
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">
                     <div className="text-2xl font-bold">3</div>
-                    <div className="text-sm">Ans max</div>
+                    <div className="text-sm">
+                      {t("fleetRecent.badge.maxYears")}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -179,10 +225,10 @@ export default function FlotteRecentePage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Garanties de Qualité
+                {t("fleetRecent.features.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Nos engagements pour votre confort et votre sécurité
+                {t("fleetRecent.features.subtitle")}
               </p>
             </div>
 
@@ -210,10 +256,10 @@ export default function FlotteRecentePage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Notre Flotte Mercedes
+                {t("fleetRecent.vehicles.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Des véhicules premium pour tous vos besoins de transport
+                {t("fleetRecent.vehicles.subtitle")}
               </p>
             </div>
 
@@ -254,7 +300,7 @@ export default function FlotteRecentePage() {
                       href="/reservation"
                       className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300"
                     >
-                      Réserver {vehicle.name} →
+                      {t("fleetRecent.cta.book")} {vehicle.name} →
                     </a>
                   </div>
                 </div>
@@ -268,11 +314,10 @@ export default function FlotteRecentePage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Entretien & Maintenance
+                {t("fleetRecent.maintenance.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Nos véhicules sont maintenus selon les plus hauts standards
-                Mercedes-Benz
+                {t("fleetRecent.maintenance.subtitle")}
               </p>
             </div>
 
@@ -300,24 +345,23 @@ export default function FlotteRecentePage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Découvrez notre flotte premium
+                {t("fleetRecent.ctaSection.title")}
               </h2>
               <p className="text-xl text-blue-100 mb-8">
-                Réservez dès maintenant et profitez de véhicules Mercedes
-                récents et parfaitement entretenus
+                {t("fleetRecent.ctaSection.description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reservation"
                   className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
                 >
-                  Réserver maintenant
+                  {t("fleetRecent.ctaSection.bookNow")}
                 </a>
                 <a
                   href="/contact"
                   className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300 no-underline"
                 >
-                  Nous contacter
+                  {t("fleetRecent.ctaSection.contactUs")}
                 </a>
               </div>
               <div className="mt-8 text-blue-100">

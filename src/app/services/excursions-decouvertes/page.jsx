@@ -1,6 +1,9 @@
+"use client";
+
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   Camera,
   CheckCircle,
@@ -12,164 +15,151 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-export const metadata = {
-  title:
-    "Excursions & Découvertes Côte d'Azur | Monaco, Cannes, Saint-Tropez | Taxi Nice-06",
-  description:
-    "Explorez la Côte d'Azur avec nos excursions personnalisées : Monaco, Cannes, Saint-Tropez. Itinéraires sur mesure avec guide local et arrêts photos.",
-  keywords: [
-    "excursions nice",
-    "monaco taxi",
-    "cannes excursion",
-    "côte d'azur tourisme",
-    "excursion saint tropez",
-    "guide local nice",
-  ],
-};
-
 export default function ExcursionsDecouvertesPage() {
+  const { t, isHydrated } = useLanguage();
+
+  // Attendre que les traductions soient chargées
+  if (!isHydrated) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600">Chargement...</p>
+        </div>
+      </div>
+    );
+  }
+
   const features = [
     {
       icon: MapPin,
-      title: "Itinéraires personnalisés",
-      description: "Circuits adaptés à vos envies et disponibilités",
+      title: t("excursions.features.personalizedRoutes.title"),
+      description: t("excursions.features.personalizedRoutes.description"),
     },
     {
       icon: Users,
-      title: "Guide local",
-      description: "Chauffeur connaissant tous les secrets de la région",
+      title: t("excursions.features.localGuide.title"),
+      description: t("excursions.features.localGuide.description"),
     },
     {
       icon: Camera,
-      title: "Arrêts photos",
-      description: "Pauses pour immortaliser vos plus beaux souvenirs",
+      title: t("excursions.features.photoStops.title"),
+      description: t("excursions.features.photoStops.description"),
     },
     {
       icon: Compass,
-      title: "Découverte",
-      description: "Sites incontournables et lieux cachés",
+      title: t("excursions.features.discovery.title"),
+      description: t("excursions.features.discovery.description"),
     },
     {
       icon: Clock,
-      title: "Flexibilité",
-      description: "Horaires et durées adaptés à vos souhaits",
+      title: t("excursions.features.flexibility.title"),
+      description: t("excursions.features.flexibility.description"),
     },
     {
       icon: Star,
-      title: "Expérience unique",
-      description: "Découverte authentique de la Côte d'Azur",
+      title: t("excursions.features.uniqueExperience.title"),
+      description: t("excursions.features.uniqueExperience.description"),
     },
   ];
 
   const destinations = [
     {
-      name: "Monaco",
-      duration: "4-6h",
-      price: "À partir de 200€",
+      name: t("excursions.destinations.monaco.name"),
+      duration: t("excursions.destinations.monaco.duration"),
+      price: t("excursions.destinations.monaco.price"),
       image: "/monaco.jpg",
       highlights: [
-        "Palais Princier",
-        "Casino Monte-Carlo",
-        "Port Hercule",
-        "Musée Océanographique",
+        t("excursions.destinations.monaco.highlights.0"),
+        t("excursions.destinations.monaco.highlights.1"),
+        t("excursions.destinations.monaco.highlights.2"),
+        t("excursions.destinations.monaco.highlights.3"),
       ],
     },
     {
-      name: "Cannes",
-      duration: "3-5h",
-      price: "À partir de 180€",
-      image: "/majéstic.jpeg",
+      name: t("excursions.destinations.cannes.name"),
+      duration: t("excursions.destinations.cannes.duration"),
+      price: t("excursions.destinations.cannes.price"),
+      image: "/cannes.webp",
       highlights: [
-        "La Croisette",
-        "Palais des Festivals",
-        "Le Suquet",
-        "Îles de Lérins",
+        t("excursions.destinations.cannes.highlights.0"),
+        t("excursions.destinations.cannes.highlights.1"),
+        t("excursions.destinations.cannes.highlights.2"),
+        t("excursions.destinations.cannes.highlights.3"),
       ],
     },
     {
-      name: "Saint-Tropez",
-      duration: "6-8h",
-      price: "À partir de 350€",
-      image: "/foret-glc.jpeg",
+      name: t("excursions.destinations.saintTropez.name"),
+      duration: t("excursions.destinations.saintTropez.duration"),
+      price: t("excursions.destinations.saintTropez.price"),
+      image: "/saint-tropez.jpg",
       highlights: [
-        "Vieux Port",
-        "Citadelle",
-        "Plage de Pampelonne",
-        "Village de Ramatuelle",
+        t("excursions.destinations.saintTropez.highlights.0"),
+        t("excursions.destinations.saintTropez.highlights.1"),
+        t("excursions.destinations.saintTropez.highlights.2"),
+        t("excursions.destinations.saintTropez.highlights.3"),
       ],
     },
     {
-      name: "Èze & La Turbie",
-      duration: "3-4h",
-      price: "À partir de 150€",
-      image: "/foret-glc.jpeg",
+      name: t("excursions.destinations.ezeTurbie.name"),
+      duration: t("excursions.destinations.ezeTurbie.duration"),
+      price: t("excursions.destinations.ezeTurbie.price"),
+      image: "/eze.jpg",
       highlights: [
-        "Village médiéval d'Èze",
-        "Jardin Exotique",
-        "Trophée des Alpes",
+        t("excursions.destinations.ezeTurbie.highlights.0"),
+        t("excursions.destinations.ezeTurbie.highlights.1"),
+        t("excursions.destinations.ezeTurbie.highlights.2"),
       ],
     },
+  ];
+
+  const breadcrumbItems = [
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: t("excursions.title"), href: "/services/excursions-decouvertes" },
   ];
 
   return (
     <>
       <Navbar />
-      <SEOBreadcrumb
-        items={[
-          { name: "Accueil", href: "/" },
-          { name: "Services", href: "/services" },
-          {
-            name: "Excursions & Découvertes",
-            href: "/services/excursions-decouvertes",
-          },
-        ]}
-      />
+      <div className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <SEOBreadcrumb items={breadcrumbItems} />
+        </div>
+      </div>
 
       <main>
         {/* Hero Section */}
         <section className="relative py-20 bg-gradient-to-br from-blue-50 to-green-100">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-              >
+              <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  Excursions & Découvertes
-                  <span className="block text-blue-600">Côte d'Azur</span>
+                  {t("excursions.title")}
+                  <span className="block text-blue-600">
+                    {t("excursions.subtitle")}
+                  </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Explorez la Côte d'Azur avec nos excursions personnalisées :
-                  Monaco, Cannes, Saint-Tropez. Itinéraires sur mesure avec
-                  guide local et arrêts photos.
+                  {t("excursions.description")}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
                     className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300 text-center no-underline"
                   >
-                    Réserver une excursion
+                    {t("excursions.cta.bookExcursion")}
                   </a>
                   <a
                     href="/tarifs"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
                     className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300 text-center no-underline"
                   >
-                    Voir les tarifs
+                    {t("excursions.cta.viewPrices")}
                   </a>
                 </div>
               </div>
 
-              <div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative"
-              >
+              <div className="relative">
                 <Image
                   src="/foret-glc.jpeg"
                   alt="Excursions Côte d'Azur personnalisées"
@@ -181,7 +171,9 @@ export default function ExcursionsDecouvertesPage() {
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">
                     <div className="text-2xl font-bold">100%</div>
-                    <div className="text-sm">Personnalisé</div>
+                    <div className="text-sm">
+                      {t("excursions.badge.personalized")}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -194,11 +186,10 @@ export default function ExcursionsDecouvertesPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Nos Services d'Excursion
+                {t("excursions.features.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Une expérience unique pour découvrir les plus beaux sites de la
-                Côte d'Azur
+                {t("excursions.features.subtitle")}
               </p>
             </div>
 
@@ -226,11 +217,10 @@ export default function ExcursionsDecouvertesPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Destinations Incontournables
+                {t("excursions.destinations.title")}
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Les plus beaux sites de la Côte d'Azur à découvrir avec votre
-                guide chauffeur
+                {t("excursions.destinations.subtitle")}
               </p>
             </div>
 
@@ -276,7 +266,7 @@ export default function ExcursionsDecouvertesPage() {
                       href="/reservation"
                       className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300"
                     >
-                      Réserver excursion {destination.name} →
+                      {t("excursions.cta.bookDestination")} {destination.name} →
                     </a>
                   </div>
                 </div>
@@ -290,24 +280,23 @@ export default function ExcursionsDecouvertesPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Créez votre excursion sur mesure
+                {t("excursions.ctaSection.title")}
               </h2>
               <p className="text-xl text-blue-100 mb-8">
-                Contactez-nous pour organiser votre découverte personnalisée de
-                la Côte d'Azur
+                {t("excursions.ctaSection.description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reservation"
                   className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
                 >
-                  Réserver une excursion
+                  {t("excursions.ctaSection.bookExcursion")}
                 </a>
                 <a
                   href="/contact"
                   className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300 no-underline"
                 >
-                  Nous contacter
+                  {t("excursions.ctaSection.contactUs")}
                 </a>
               </div>
               <div className="mt-8 text-blue-100">

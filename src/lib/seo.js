@@ -1,7 +1,7 @@
 import { loadTranslations } from "./translations.js";
 
 /**
- * Génère les métadonnées SEO optimisées avec les traductions
+ * Génère les métadonnées SEO optimisées avec les traductions et support multilingue
  */
 export async function generateSEOMetadata(locale = "fr") {
   const translations = await loadTranslations(locale);
@@ -65,8 +65,8 @@ export async function generateSEOMetadata(locale = "fr") {
     alternates: {
       canonical: "/",
       languages: {
-        "fr-FR": "/",
-        "en-US": "/en",
+        "fr-FR": "/?lang=fr",
+        "en-US": "/?lang=en",
       },
     },
     openGraph: {
