@@ -1,7 +1,7 @@
 import AnimatedButtons from "@/components/AnimatedButtons.jsx";
 import StructuredData from "@/components/StructuredData.jsx";
 import WhatsAppButton from "@/components/WhatsAppButton.jsx";
-import { LanguageProvider } from "@/contexts/LanguageContext.jsx";
+import LanguageProviderWrapper from "@/contexts/LanguageProviderWrapper.jsx";
 import { generateSEOMetadata } from "@/lib/seo.js";
 import { loadTranslations } from "@/lib/translations.js";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -54,9 +54,9 @@ export default async function RootLayout({ children }) {
         suppressHydrationWarning={true}
       >
         <StructuredData />
-        <LanguageProvider initialTranslations={initialTranslations}>
+        <LanguageProviderWrapper initialTranslations={initialTranslations}>
           {children}
-        </LanguageProvider>
+        </LanguageProviderWrapper>
         <AnimatedButtons />
         <WhatsAppButton />
       </body>
