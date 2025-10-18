@@ -83,28 +83,71 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2"
+                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg py-2"
                 >
                   <a
-                    href="/services/transfert-aeroport"
+                    href="/services/transferts-aeroport"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    Transfert Aéroport
+                    ✈️ Transferts Aéroport
                   </a>
                   <a
-                    href="/services/excursions"
+                    href="/services/arrivees-destinations"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    Excursions
+                    🎯 Arrivées & Destinations
                   </a>
+                  <a
+                    href="/services/van-premium"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    🚐 Van Premium (8 pers.)
+                  </a>
+                  <a
+                    href="/services/flotte-recente"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    🚗 Flotte Récente
+                  </a>
+                  <a
+                    href="/services/excursions-decouvertes"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    🗺️ Excursions & Découvertes
+                  </a>
+                  <a
+                    href="/services/evenements-mariages"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    💍 Événements & Mariages
+                  </a>
+                  <a
+                    href="/services/transferts-evenements"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    🎪 Transferts Événements
+                  </a>
+                  <a
+                    href="/services/vsl"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    🏥 VSL Transport Médical
+                  </a>
+                  <div className="border-t border-gray-200 my-2"></div>
                   <a
                     href="/services"
-                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-blue-600 hover:bg-blue-50 font-semibold transition-colors"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    Tous les services
+                    📋 Tous les services
                   </a>
                 </motion.div>
               )}
@@ -286,28 +329,101 @@ export default function Navbar() {
                           className="ml-6 space-y-1 border-l-2 border-gray-200 pl-4 overflow-hidden"
                         >
                           <motion.a
-                            href="/services/transfert-aeroport"
+                            href="/services/transferts-aeroport"
                             className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
                             onClick={() => setIsMenuOpen(false)}
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
                             <Plane className="w-4 h-4" />
-                            <span className="text-sm">Transfert Aéroport</span>
+                            <span className="text-sm">Transferts Aéroport</span>
                           </motion.a>
                           <motion.a
-                            href="/services/excursions"
+                            href="/services/arrivees-destinations"
                             className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
                             onClick={() => setIsMenuOpen(false)}
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
                             <MapPin className="w-4 h-4" />
-                            <span className="text-sm">Excursions</span>
+                            <span className="text-sm">
+                              Arrivées & Destinations
+                            </span>
                           </motion.a>
                           <motion.a
-                            href="/services"
+                            href="/services/van-premium"
                             className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Users className="w-4 h-4" />
+                            <span className="text-sm">
+                              Van Premium (8 pers.)
+                            </span>
+                          </motion.a>
+                          <motion.a
+                            href="/services/flotte-recente"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Car className="w-4 h-4" />
+                            <span className="text-sm">Flotte Récente</span>
+                          </motion.a>
+                          <motion.a
+                            href="/services/excursions-decouvertes"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <MapPin className="w-4 h-4" />
+                            <span className="text-sm">
+                              Excursions & Découvertes
+                            </span>
+                          </motion.a>
+                          <motion.a
+                            href="/services/evenements-mariages"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Calendar className="w-4 h-4" />
+                            <span className="text-sm">
+                              Événements & Mariages
+                            </span>
+                          </motion.a>
+                          <motion.a
+                            href="/services/transferts-evenements"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Calendar className="w-4 h-4" />
+                            <span className="text-sm">
+                              Transferts Événements
+                            </span>
+                          </motion.a>
+                          <motion.a
+                            href="/services/vsl"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Phone className="w-4 h-4" />
+                            <span className="text-sm">
+                              VSL Transport Médical
+                            </span>
+                          </motion.a>
+                          <div className="border-t border-gray-200 my-2"></div>
+                          <motion.a
+                            href="/services"
+                            className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-blue-600 font-semibold transition-all duration-200"
                             onClick={() => setIsMenuOpen(false)}
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}

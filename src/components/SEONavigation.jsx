@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -91,7 +93,7 @@ export function SEOBreadcrumb({ items = [] }) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.url,
+      item: item.href,
     })),
   };
 
@@ -123,7 +125,7 @@ export function SEOBreadcrumb({ items = [] }) {
               </span>
             ) : (
               <Link
-                href={item.url}
+                href={item.href}
                 className="hover:text-primary transition-colors"
                 title={item.title}
               >

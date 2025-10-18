@@ -21,12 +21,9 @@ export default function ExcursionsPage() {
   const { t } = useLanguage();
 
   const breadcrumbItems = [
-    { name: "Services", url: "/services", title: "Nos services de transport" },
-    {
-      name: "Excursions",
-      url: "/services/excursions",
-      title: "Excursions Côte d'Azur",
-    },
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Excursions", href: "/services/excursions" },
   ];
 
   const features = [

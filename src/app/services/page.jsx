@@ -43,6 +43,7 @@ export default function ServicesPage() {
       ],
       icon: Users,
       color: "from-blue-500 to-blue-700",
+      detailUrl: "/services/van-premium",
     },
     {
       id: 2,
@@ -64,6 +65,7 @@ export default function ServicesPage() {
       ],
       icon: Star,
       color: "from-cyan-500 to-cyan-700",
+      detailUrl: "/services/transferts-evenements",
     },
     {
       id: 3,
@@ -85,6 +87,7 @@ export default function ServicesPage() {
       ],
       icon: Clock,
       color: "from-blue-500 to-blue-700",
+      detailUrl: "/services/flotte-recente",
     },
     {
       id: 4,
@@ -106,6 +109,7 @@ export default function ServicesPage() {
       ],
       icon: Star,
       color: "from-cyan-500 to-cyan-700",
+      detailUrl: "/services/evenements-mariages",
     },
     {
       id: 5,
@@ -127,6 +131,7 @@ export default function ServicesPage() {
       ],
       icon: MapPin,
       color: "from-blue-500 to-blue-700",
+      detailUrl: "/services/excursions-decouvertes",
     },
     {
       id: 6,
@@ -148,6 +153,7 @@ export default function ServicesPage() {
       ],
       icon: MapPin,
       color: "from-cyan-500 to-cyan-700",
+      detailUrl: "/services/transferts-aeroport",
     },
     {
       id: 7,
@@ -169,6 +175,7 @@ export default function ServicesPage() {
       ],
       icon: Star,
       color: "from-blue-500 to-blue-700",
+      detailUrl: "/services/arrivees-destinations",
     },
   ];
 
@@ -199,7 +206,8 @@ export default function ServicesPage() {
   };
 
   const breadcrumbItems = [
-    { name: "Services", url: "/services", title: "Nos services de transport" },
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
   ];
 
   return (
@@ -331,20 +339,24 @@ export default function ServicesPage() {
 
                         {/* CTA Buttons - Mobile */}
                         <div className="space-y-3">
-                          <motion.button
+                          <motion.a
+                            href="/reservation"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className={`block w-full px-6 py-3 bg-gradient-to-r ${services[currentSlide].color} text-white rounded-xl font-semibold text-center text-sm`}
+                            className={`block w-full px-6 py-3 bg-gradient-to-r ${services[currentSlide].color} text-white rounded-xl font-semibold text-center text-sm no-underline`}
                           >
                             Réserver maintenant
-                          </motion.button>
-                          <motion.button
+                          </motion.a>
+                          <motion.a
+                            href={
+                              services[currentSlide].detailUrl || "/services"
+                            }
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className="block w-full px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-xl font-semibold text-center text-sm"
+                            className="block w-full px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-xl font-semibold text-center text-sm no-underline"
                           >
                             En savoir plus
-                          </motion.button>
+                          </motion.a>
                         </div>
                       </div>
                     </div>
@@ -489,20 +501,24 @@ export default function ServicesPage() {
 
                           {/* CTA Buttons */}
                           <div className="flex flex-col sm:flex-row gap-4">
-                            <motion.button
+                            <motion.a
+                              href="/reservation"
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
-                              className={`px-8 py-4 bg-gradient-to-r ${services[currentSlide].color} text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300`}
+                              className={`px-8 py-4 bg-gradient-to-r ${services[currentSlide].color} text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300 no-underline text-center`}
                             >
                               Réserver maintenant
-                            </motion.button>
-                            <motion.button
+                            </motion.a>
+                            <motion.a
+                              href={
+                                services[currentSlide].detailUrl || "/services"
+                              }
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
-                              className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-xl font-semibold hover:border-gray-400 transition-all duration-300"
+                              className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-xl font-semibold hover:border-gray-400 transition-all duration-300 no-underline text-center"
                             >
                               En savoir plus
-                            </motion.button>
+                            </motion.a>
                           </div>
                         </motion.div>
                       </div>
@@ -665,8 +681,9 @@ export default function ServicesPage() {
                   >
                     {service.description}
                   </motion.p>
-                  <motion.button
-                    className={`w-full py-3 bg-gradient-to-r ${service.color} text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 relative overflow-hidden`}
+                  <motion.a
+                    href={service.detailUrl}
+                    className={`w-full py-3 bg-gradient-to-r ${service.color} text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 relative overflow-hidden block text-center no-underline`}
                     whileHover={{
                       scale: 1.02,
                       boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
@@ -684,7 +701,7 @@ export default function ServicesPage() {
                       initial={{ x: "-100%" }}
                       whileHover={{ x: "100%" }}
                     />
-                  </motion.button>
+                  </motion.a>
                 </motion.div>
               </motion.div>
             ))}

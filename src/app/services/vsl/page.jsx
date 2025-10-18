@@ -20,12 +20,9 @@ export default function VSLPage() {
   const { t } = useLanguage();
 
   const breadcrumbItems = [
-    { name: "Services", url: "/services", title: "Nos services de transport" },
-    {
-      name: "VSL",
-      url: "/services/vsl",
-      title: "VSL Nice - Transport médicalisé",
-    },
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "VSL", href: "/services/vsl" },
   ];
 
   const features = [

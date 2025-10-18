@@ -20,12 +20,9 @@ export default function TransfertAeroportPage() {
   const { t } = useLanguage();
 
   const breadcrumbItems = [
-    { name: "Services", url: "/services", title: "Nos services de transport" },
-    {
-      name: "Transfert Aéroport",
-      url: "/services/transfert-aeroport",
-      title: "Transfert Aéroport Nice",
-    },
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Transfert Aéroport", href: "/services/transfert-aeroport" },
   ];
 
   const features = [

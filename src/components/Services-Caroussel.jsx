@@ -26,7 +26,7 @@ export default function ServicesCarousel() {
         "Climatisation",
         "Espace bagages",
       ],
-      link: "/services",
+      link: "/services/van-premium",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ export default function ServicesCarousel() {
         "Ponctualité garantie",
         "Prestige",
       ],
-      link: "/services",
+      link: "/services/transferts-evenements",
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ export default function ServicesCarousel() {
         "Confort moderne",
         "Sécurité",
       ],
-      link: "/services",
+      link: "/services/flotte-recente",
     },
     {
       id: 4,
@@ -74,7 +74,7 @@ export default function ServicesCarousel() {
         "Service personnalisé",
         "Mémoires inoubliables",
       ],
-      link: "/services",
+      link: "/services/evenements-mariages",
     },
   ];
 
@@ -183,7 +183,7 @@ export default function ServicesCarousel() {
                       {/* CTA Buttons - Mobile */}
                       <div className="space-y-3">
                         <motion.a
-                          href={services[currentSlide].link}
+                          href="/reservation"
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
                           className={`block w-full px-6 py-3 bg-gradient-to-r ${services[currentSlide].color} text-white rounded-xl font-semibold text-center text-sm`}
@@ -349,7 +349,7 @@ export default function ServicesCarousel() {
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4">
                           <motion.a
-                            href={services[currentSlide].link}
+                            href="/reservation"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className={`px-8 py-4 bg-gradient-to-r ${services[currentSlide].color} text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300 text-center`}
