@@ -132,3 +132,4 @@ try {
   console.log("Exécutez: npm install sharp --save-dev");
   console.log("Puis relancez: node scripts/optimize-images.js");
 }
+

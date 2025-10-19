@@ -47,3 +47,4 @@ export function useLazyLoad(resourceUrl, delay = 1000) {
     return () => clearTimeout(timeoutId);
   }, [resourceUrl, delay]);
 }
+

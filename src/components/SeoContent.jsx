@@ -182,13 +182,13 @@ export default function SeoContent() {
             }}
           >
             {/* Image de fond pour la section */}
-            <div className="relative h-48 bg-gradient-to-br from-primary/20 to-primaryDark/30 md:bg-gradient-to-br md:from-primary/20 md:to-primaryDark/30 overflow-hidden">
-              {/* Image de fond pour mobile */}
+            <div className="relative h-48 md:h-72 overflow-hidden">
+              {/* Image de fond pour mobile et desktop */}
               <div
-                className="absolute inset-0 bg-cover bg-center md:hidden"
+                className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/expertise.jpg')" }}
               ></div>
-              <div className="absolute inset-0 bg-black/10 md:bg-black/20"></div>
+              <div className="absolute inset-0 bg-black/20"></div>
               <div className="absolute inset-0 flex items-center justify-center"></div>
               {/* Motif décoratif */}
             </div>
@@ -264,13 +264,13 @@ export default function SeoContent() {
             }}
           >
             {/* Image de fond pour la section */}
-            <div className="relative h-48 bg-gradient-to-br from-blue-500/20 to-cyan-500/30 md:bg-gradient-to-br md:from-blue-500/20 md:to-cyan-500/30 overflow-hidden">
-              {/* Image de fond pour mobile */}
+            <div className="relative h-48 md:h-72 overflow-hidden">
+              {/* Image de fond pour mobile et desktop */}
               <div
-                className="absolute inset-0 bg-cover bg-center md:hidden"
+                className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/perso.jpeg')" }}
               ></div>
-              <div className="absolute inset-0 bg-black/10 md:bg-black/20"></div>
+              <div className="absolute inset-0 bg-black/20"></div>
               <div className="absolute inset-0 flex items-center justify-center"></div>
               {/* Motif décoratif */}
             </div>
@@ -319,13 +319,13 @@ export default function SeoContent() {
             }}
           >
             {/* Image de fond pour la section */}
-            <div className="relative h-48 bg-gradient-to-br from-green-500/20 to-emerald-500/30 md:bg-gradient-to-br md:from-green-500/20 md:to-emerald-500/30 overflow-hidden">
-              {/* Image de fond pour mobile */}
+            <div className="relative h-48 md:h-72 overflow-hidden">
+              {/* Image de fond pour mobile et desktop */}
               <div
-                className="absolute inset-0 bg-cover bg-center md:hidden"
+                className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/premium.jpeg')" }}
               ></div>
-              <div className="absolute inset-0 bg-black/10 md:bg-black/20"></div>
+              <div className="absolute inset-0 bg-black/20"></div>
               <div className="absolute inset-0 flex items-center justify-center"></div>
               {/* Motif décoratif */}
             </div>
@@ -374,13 +374,13 @@ export default function SeoContent() {
             }}
           >
             {/* Image de fond pour la section */}
-            <div className="relative h-48 bg-gradient-to-br from-yellow-500/20 to-orange-500/30 md:bg-gradient-to-br md:from-yellow-500/20 md:to-orange-500/30 overflow-hidden">
-              {/* Image de fond pour mobile */}
+            <div className="relative h-48 md:h-72 overflow-hidden">
+              {/* Image de fond pour mobile et desktop */}
               <div
-                className="absolute inset-0 bg-cover bg-center md:hidden"
+                className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/stratégie prix.webp')" }}
               ></div>
-              <div className="absolute inset-0 bg-black/10 md:bg-black/20"></div>
+              <div className="absolute inset-0 bg-black/20"></div>
               <div className="absolute inset-0 flex items-center justify-center"></div>
               {/* Motif décoratif */}
             </div>

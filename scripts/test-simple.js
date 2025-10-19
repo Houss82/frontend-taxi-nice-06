@@ -41,3 +41,4 @@ console.log("3. Verifier que hero.title n apparait plus");
 console.log("4. Voir le code source (Ctrl+U)");
 
 
+

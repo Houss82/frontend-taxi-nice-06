@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <section className="hero-section">
-      <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] min-h-[400px] sm:min-h-[500px] md:min-h-[650px] overflow-hidden">
+      <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] min-h-[400px] sm:min-h-[500px] md:min-h-[650px] overflow-hidden sm:-mt-16">
         {/* Image principale optimisée pour LCP */}
         <HeroImage
           src="/bgimage10.png"
@@ -21,19 +21,10 @@ export default function Hero() {
 
         {/* Contenu textuel optimisé avec CSS critique */}
         <div className="hero-content">
-          <h1 className="hero-title">
-            {t("hero.title")}
-          </h1>
-          <h2 className="hero-subtitle">
-            {t("hero.subtitle")}
-          </h2>
-          <p className="hero-description">
-            {t("hero.description")}
-          </p>
-          <a
-            href="#reservation"
-            className="hero-button"
-          >
+          <h1 className="hero-title">{t("hero.title")}</h1>
+          <h2 className="hero-subtitle">{t("hero.subtitle")}</h2>
+          <p className="hero-description">{t("hero.description")}</p>
+          <a href="#reservation" className="hero-button">
             {t("hero.bookTaxi")}
           </a>
         </div>

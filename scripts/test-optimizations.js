@@ -92,3 +92,4 @@ if (isOptimized) {
   console.log("\n⚠️  Optimisations incomplètes");
   console.log("🔧 Vérifiez les composants manquants");
 }
+

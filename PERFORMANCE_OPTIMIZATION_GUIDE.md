@@ -140,3 +140,4 @@ import { ContentImage } from "@/components/OptimizedImage.jsx";
 - **Surveillez** les métriques en production
 - **Optimisez** les nouvelles images ajoutées
 - **Vérifiez** que les conversions Google Ads fonctionnent
+
