@@ -10,6 +10,7 @@
     "optimize-images": "node scripts/optimize-images.js",
     "install-sharp": "npm install sharp --save-dev",
     "test-optimizations": "node scripts/test-optimizations.js",
+    "deploy": "node scripts/deploy.js",
     "build-prod": "npm run build && npm run start",
     "performance-check": "npm run build && npm run start & sleep 5 && curl -s 'http://localhost:3000' > /dev/null && echo 'Site accessible' || echo 'Site non accessible'"
   },
