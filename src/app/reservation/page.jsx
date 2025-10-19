@@ -61,6 +61,19 @@ export default function ReservationPage() {
       // Envoyer l'email via Formspree
       await formspreeService.sendReservation(formData);
 
+      // Déclencher la conversion Google Ads
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-17599375066/_iwvCN665q8bENrNhMhB",
+          value: 1.0,
+          currency: "EUR",
+          transaction_id: `reservation_${Date.now()}_${Math.random()
+            .toString(36)
+            .substr(2, 9)}`,
+        });
+        console.log("Conversion Google Ads déclenchée pour la réservation");
+      }
+
       setIsSubmitted(true);
       setFormData({
         nom: "",
