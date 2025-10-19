@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "optimize-images": "node scripts/optimize-images.js",
-    "optimize-hero": "node scripts/optimize-hero-image.js",
     "install-sharp": "npm install sharp --save-dev",
     "test-optimizations": "node scripts/test-optimizations.js",
     "deploy": "node scripts/deploy.js",
