@@ -1,4 +1,6 @@
 import AnimatedButtons from "@/components/AnimatedButtons.jsx";
+import CriticalCSS from "@/components/CriticalCSS.jsx";
+import LazyScripts from "@/components/LazyScripts.jsx";
 import StructuredData from "@/components/StructuredData.jsx";
 import WhatsAppButton from "@/components/WhatsAppButton.jsx";
 import LanguageProviderWrapper from "@/contexts/LanguageProviderWrapper.jsx";
@@ -29,23 +31,34 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
-        {/* Google Analytics / Google Ads - Chargement différé */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17599375066"
-        />
+        {/* Google Analytics / Google Ads - Chargement ultra-différé */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
+              // Initialiser dataLayer immédiatement
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17599375066');
               
-              // Différer le chargement de gtag jusqu'à ce que la page soit interactive
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', function() {
-                  // gtag est déjà chargé de manière asynchrone
+              // Charger Google Tag Manager de manière ultra-différée
+              function loadGTM() {
+                const script = document.createElement('script');
+                script.async = true;
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17599375066';
+                document.head.appendChild(script);
+                
+                // Configurer gtag après chargement
+                script.onload = function() {
+                  gtag('js', new Date());
+                  gtag('config', 'AW-17599375066');
+                };
+              }
+              
+              // Charger GTM après que la page soit complètement chargée
+              if (document.readyState === 'complete') {
+                setTimeout(loadGTM, 1000);
+              } else {
+                window.addEventListener('load', function() {
+                  setTimeout(loadGTM, 1000);
                 });
               }
             `,
@@ -58,21 +71,44 @@ export default async function RootLayout({ children }) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        
+        {/* Précharger les polices les plus critiques */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
+        
+        {/* Charger les polices de manière non-bloquante */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+          media="print"
+          onLoad="this.media='all'"
+        />
+        
+        {/* Fallback pour les navigateurs sans JavaScript */}
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
+        </noscript>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
         suppressHydrationWarning={true}
       >
+        <CriticalCSS />
         <StructuredData />
         <LanguageProviderWrapper initialTranslations={initialTranslations}>
           {children}
         </LanguageProviderWrapper>
         <AnimatedButtons />
         <WhatsAppButton />
+        <LazyScripts />
       </body>
     </html>
   );
