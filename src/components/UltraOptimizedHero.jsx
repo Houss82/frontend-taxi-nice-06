@@ -1,17 +1,26 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 /**
  * Composant Hero ultra-optimisé pour maximiser les performances LCP
  * Utilise des techniques avancées pour réduire le Load Delay
  */
-export default function Hero() {
+export default function UltraOptimizedHero() {
   const { t } = useLanguage();
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [useWebP, setUseWebP] = useState(false);
 
-  // Précharger l'image critique immédiatement
+  // Détecter le support WebP
+  useEffect(() => {
+    const canvas = document.createElement('canvas');
+    canvas.width = 1;
+    canvas.height = 1;
+    setUseWebP(canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0);
+  }, []);
+
+  // Précharger l'image critique
   useEffect(() => {
     const preloadImage = () => {
       const img = new Image();
@@ -28,22 +37,22 @@ export default function Hero() {
       <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] min-h-[400px] sm:min-h-[500px] md:min-h-[650px] overflow-hidden">
         {/* Image ultra-optimisée avec préchargement */}
         <div className="hero-image-container">
-          {!imageLoaded && <div className="hero-image-skeleton" />}
+          {!imageLoaded && (
+            <div className="hero-image-skeleton" />
+          )}
           <img
             src="/bgimage10.png"
             alt="Mercedes GLC Taxi Nice"
-            className={`hero-image ${
-              imageLoaded ? "opacity-100" : "opacity-0"
-            }`}
+            className={`hero-image ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
             style={{
-              position: "absolute",
+              position: 'absolute',
               top: 0,
               left: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "center 5%",
-              transition: "opacity 0.3s ease",
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center 5%',
+              transition: 'opacity 0.3s ease'
             }}
             loading="eager"
             fetchPriority="high"
@@ -56,10 +65,19 @@ export default function Hero() {
 
         {/* Contenu textuel optimisé */}
         <div className="hero-content">
-          <h1 className="hero-title">{t("hero.title")}</h1>
-          <h2 className="hero-subtitle">{t("hero.subtitle")}</h2>
-          <p className="hero-description">{t("hero.description")}</p>
-          <a href="#reservation" className="hero-button">
+          <h1 className="hero-title">
+            {t("hero.title")}
+          </h1>
+          <h2 className="hero-subtitle">
+            {t("hero.subtitle")}
+          </h2>
+          <p className="hero-description">
+            {t("hero.description")}
+          </p>
+          <a
+            href="#reservation"
+            className="hero-button"
+          >
             {t("hero.bookTaxi")}
           </a>
         </div>
@@ -73,7 +91,7 @@ export default function Hero() {
           width: 100%;
           height: 100%;
         }
-
+        
         .hero-image-skeleton {
           position: absolute;
           top: 0;
@@ -83,17 +101,12 @@ export default function Hero() {
           background: linear-gradient(135deg, #1e66f5 0%, #1552c8 100%);
           animation: pulse 2s infinite;
         }
-
+        
         @keyframes pulse {
-          0%,
-          100% {
-            opacity: 0.8;
-          }
-          50% {
-            opacity: 1;
-          }
+          0%, 100% { opacity: 0.8; }
+          50% { opacity: 1; }
         }
-
+        
         .hero-image {
           will-change: transform;
           backface-visibility: hidden;

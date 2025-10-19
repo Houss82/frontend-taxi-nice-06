@@ -71,6 +71,15 @@ export default async function RootLayout({ children }) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+
+        {/* Précharger l'image critique LCP */}
+        <link
+          rel="preload"
+          href="/bgimage10.png"
+          as="image"
+          type="image/png"
+          fetchPriority="high"
+        />
         
         {/* Précharger les polices les plus critiques */}
         <link
@@ -80,7 +89,7 @@ export default async function RootLayout({ children }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        
+
         {/* Charger les polices de manière non-bloquante */}
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
@@ -88,7 +97,7 @@ export default async function RootLayout({ children }) {
           media="print"
           onLoad="this.media='all'"
         />
-        
+
         {/* Fallback pour les navigateurs sans JavaScript */}
         <noscript>
           <link

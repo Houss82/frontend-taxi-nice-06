@@ -12,7 +12,7 @@ export default function LazyScripts() {
     const loadNonCriticalScripts = () => {
       // Scripts d'analytics et tracking (déjà gérés par GTM)
       // Ici on peut ajouter d'autres scripts non critiques si nécessaire
-      
+
       console.log("Scripts non critiques chargés");
     };
 
@@ -32,13 +32,13 @@ export function useLazyLoad(resourceUrl, delay = 1000) {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       // Charger la ressource de manière asynchrone
-      if (typeof window !== 'undefined') {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
+      if (typeof window !== "undefined") {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
         link.href = resourceUrl;
-        link.media = 'print';
+        link.media = "print";
         link.onload = () => {
-          link.media = 'all';
+          link.media = "all";
         };
         document.head.appendChild(link);
       }
