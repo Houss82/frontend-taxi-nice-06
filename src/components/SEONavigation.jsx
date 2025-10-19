@@ -86,6 +86,15 @@ export default function SEONavigation() {
 export function SEOBreadcrumb({ items = [] }) {
   if (items.length === 0) return null;
 
+  // Fonction pour convertir les URLs relatives en URLs absolues
+  const makeAbsoluteUrl = (href) => {
+    if (href.startsWith("http")) {
+      return href; // Déjà absolue
+    }
+    // Ajouter le domaine complet pour les URLs relatives
+    return `https://taxi-nice-06.com${href}`;
+  };
+
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -93,7 +102,7 @@ export function SEOBreadcrumb({ items = [] }) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.href,
+      item: makeAbsoluteUrl(item.href),
     })),
   };
 

@@ -93,3 +93,6 @@ if (isOptimized) {
   console.log("🔧 Vérifiez les composants manquants");
 }
 
+
+
+
