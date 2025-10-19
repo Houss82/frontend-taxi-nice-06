@@ -1,5 +1,6 @@
 "use client";
 
+import { ContentImage } from "@/components/OptimizedImage.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   Car,
@@ -205,9 +206,11 @@ export default function PricingTable({ vehicleType = "glc" }) {
       {/* En-tête */}
       <div className="bg-primary text-white p-6">
         <div className="flex items-center justify-center space-x-4 mb-2">
-          <img
+          <ContentImage
             src={vehicleType === "glc" ? "/imageGLC.png" : "/image-van.png"}
             alt={vehicleType === "glc" ? "Mercedes GLC" : "Van Premium"}
+            width={96}
+            height={64}
             className="w-24 h-16 object-contain"
           />
           <h2 className="text-xl font-bold">

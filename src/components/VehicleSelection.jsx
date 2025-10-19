@@ -1,5 +1,6 @@
 "use client";
 
+import { ContentImage } from "@/components/OptimizedImage.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { useEffect, useRef, useState } from "react";
 
@@ -75,11 +76,13 @@ export default function VehicleSelection() {
                 transitionDelay: isVisible ? `${index * 0.2}s` : "0s",
               }}
             >
-              {/* Image du véhicule */}
+              {/* Image du véhicule optimisée */}
               <div className="relative h-80 mb-6 overflow-hidden">
-                <img
+                <ContentImage
                   src={vehicle.image}
                   alt={vehicle.name}
+                  width={400}
+                  height={320}
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 ease-out"
                 />
               </div>

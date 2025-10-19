@@ -1,5 +1,6 @@
 "use client";
 
+import { ContentImage } from "@/components/OptimizedImage.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { motion } from "framer-motion";
 import { Award, Heart, Shield, Zap } from "lucide-react";
@@ -138,9 +139,11 @@ export default function About() {
 
           <div className="relative">
             <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl overflow-hidden">
-              <img
+              <ContentImage
                 src="/expérience2.jpeg"
                 alt="Chauffeur professionnel à Nice"
+                width={600}
+                height={450}
                 className="w-full h-full object-cover"
               />
             </div>

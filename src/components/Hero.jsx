@@ -1,5 +1,6 @@
 "use client";
 
+import { HeroImage } from "@/components/OptimizedImage.jsx";
 import { useLanguage } from "@/contexts/LanguageContext.jsx";
 
 export default function Hero() {
@@ -8,11 +9,11 @@ export default function Hero() {
   return (
     <section className="relative w-full">
       <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] min-h-[400px] sm:min-h-[500px] md:min-h-[650px] overflow-hidden">
-        {/* Image principale fixe comme dans l'image */}
-        <img
+        {/* Image principale optimisée pour LCP */}
+        <HeroImage
           src="/bgimage10.png"
           alt="Mercedes GLC Taxi Nice"
-          className="absolute inset-0 w-full h-full object-cover object-[center_5%] md:object-[center_25%] lg:object-[center_50%] animate-pulse-scale"
+          className="object-[center_5%] md:object-[center_25%] lg:object-[center_50%] animate-pulse-scale"
         />
 
         {/* Dégradé pour lisibilité */}

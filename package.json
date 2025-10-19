@@ -1,36 +1,28 @@
 {
-  "name": "frontend",
+  "name": "taxi-nice-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "optimize-images": "node scripts/optimize-images.js",
+    "install-sharp": "npm install sharp --save-dev",
+    "test-optimizations": "node scripts/test-optimizations.js",
+    "build-prod": "npm run build && npm run start",
+    "performance-check": "npm run build && npm run start & sleep 5 && curl -s 'http://localhost:3000' > /dev/null && echo 'Site accessible' || echo 'Site non accessible'"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.8",
-    "date-fns": "^4.1.0",
-    "framer-motion": "^12.23.16",
-    "gray-matter": "^4.0.3",
-    "i18next": "^25.5.2",
-    "lottie-react": "^2.4.1",
-    "lucide-react": "^0.544.0",
-    "next": "15.5.3",
-    "next-i18next": "^15.4.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-i18next": "^15.7.3",
-    "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "next": "15.0.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.400.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9",
-    "eslint-config-next": "15.5.3",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.0.0"
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "sharp": "^0.33.0"
   }
 }
