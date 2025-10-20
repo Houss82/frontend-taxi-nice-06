@@ -92,46 +92,44 @@ export default function BlogPage() {
         </div>
       </div>
 
-      <ClientOnly
-        fallback={
-          <div className="min-h-screen bg-gray-50">
-            {/* Hero Section Skeleton */}
-            <section className="relative h-[40vh] overflow-hidden bg-gray-200">
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-300/90 to-gray-400/90"></div>
-              <div className="container mx-auto px-4 h-full flex items-center relative z-10">
-                <div className="text-white max-w-4xl">
-                  <div className="h-16 bg-gray-300 rounded mb-4 animate-pulse"></div>
-                  <div className="h-8 bg-gray-300 rounded animate-pulse"></div>
-                </div>
+      {loading ? (
+        <div className="min-h-screen bg-gray-50">
+          {/* Hero Section Skeleton */}
+          <section className="relative h-[40vh] overflow-hidden bg-gray-200">
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-300/90 to-gray-400/90"></div>
+            <div className="container mx-auto px-4 h-full flex items-center relative z-10">
+              <div className="text-white max-w-4xl">
+                <div className="h-16 bg-gray-300 rounded mb-4 animate-pulse"></div>
+                <div className="h-8 bg-gray-300 rounded animate-pulse"></div>
               </div>
-            </section>
+            </div>
+          </section>
 
-            {/* Articles Skeleton */}
-            <section className="py-16">
-              <div className="max-w-7xl mx-auto px-4">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {[1, 2, 3, 4, 5, 6].map((i) => (
-                    <div
-                      key={i}
-                      className="bg-white rounded-2xl shadow-lg overflow-hidden"
-                    >
-                      <div className="h-48 bg-gray-200 animate-pulse"></div>
-                      <div className="p-6">
-                        <div className="h-4 bg-gray-200 rounded mb-2 animate-pulse"></div>
-                        <div className="h-6 bg-gray-200 rounded mb-3 animate-pulse"></div>
-                        <div className="h-3 bg-gray-200 rounded mb-2 animate-pulse"></div>
-                        <div className="h-3 bg-gray-200 rounded mb-2 animate-pulse"></div>
-                        <div className="h-3 bg-gray-200 rounded mb-4 animate-pulse"></div>
-                        <div className="h-8 bg-gray-200 rounded animate-pulse"></div>
-                      </div>
+          {/* Articles Skeleton */}
+          <section className="py-16">
+            <div className="max-w-7xl mx-auto px-4">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <div
+                    key={i}
+                    className="bg-white rounded-2xl shadow-lg overflow-hidden"
+                  >
+                    <div className="h-48 bg-gray-200 animate-pulse"></div>
+                    <div className="p-6">
+                      <div className="h-4 bg-gray-200 rounded mb-2 animate-pulse"></div>
+                      <div className="h-6 bg-gray-200 rounded mb-3 animate-pulse"></div>
+                      <div className="h-3 bg-gray-200 rounded mb-2 animate-pulse"></div>
+                      <div className="h-3 bg-gray-200 rounded mb-2 animate-pulse"></div>
+                      <div className="h-3 bg-gray-200 rounded mb-4 animate-pulse"></div>
+                      <div className="h-8 bg-gray-200 rounded animate-pulse"></div>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
-            </section>
-          </div>
-        }
-      >
+            </div>
+          </section>
+        </div>
+      ) : (
         {/* Hero Section */}
         <section className="relative h-[40vh] overflow-hidden">
           <Image
@@ -261,7 +259,7 @@ export default function BlogPage() {
         </section>
 
         <Footer />
-      </ClientOnly>
+      )}
     </div>
   );
 }

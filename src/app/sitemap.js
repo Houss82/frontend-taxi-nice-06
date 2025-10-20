@@ -1,6 +1,11 @@
+import { getAllPostSlugs } from "@/lib/blog";
+
 export default function sitemap() {
   const baseUrl = "https://taxi-nice-06.com";
   const currentDate = new Date();
+
+  // Récupérer tous les slugs d'articles de blog
+  const blogSlugs = getAllPostSlugs().map((post) => `/blog/${post.slug}`);
 
   // Pages principales
   const staticPages = [
@@ -27,13 +32,8 @@ export default function sitemap() {
     "/mentions-legales",
     "/politique-confidentialite",
     "/cgv",
-    // Articles de blog
-    "/blog/guide-transfert-aeroport-nice",
-    "/blog/choisir-chauffeur-prive-nice",
-    "/blog/excursions-cote-azur",
-    "/blog/choosing-private-driver-nice",
-    "/blog/french-riviera-tours",
-    "/blog/nice-airport-transfer-guide",
+    // Articles de blog (dynamiques)
+    ...blogSlugs,
   ];
 
   // Générer les URLs pour chaque langue
