@@ -130,8 +130,9 @@ export default function BlogPage() {
           </section>
         </div>
       ) : (
-        {/* Hero Section */}
-        <section className="relative h-[40vh] overflow-hidden">
+        <>
+          {/* Hero Section */}
+          <section className="relative h-[40vh] overflow-hidden">
           <Image
             src="/bg-image.png"
             alt="Blog Taxi Nice Côte d'Azur"
@@ -259,6 +260,7 @@ export default function BlogPage() {
         </section>
 
         <Footer />
+        </>
       )}
     </div>
   );

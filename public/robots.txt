@@ -5,8 +5,6 @@ Disallow: /_next/
 Disallow: /admin/
 Disallow: /private/
 
-# Sitemap
 Sitemap: https://taxi-nice-06.com/sitemap.xml
 
-# Crawl delay
 Crawl-delay: 1
