@@ -66,3 +66,4 @@ export const metadata = {
     google: "votre-code-verification-google",
   },
 };
+

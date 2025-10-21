@@ -71,4 +71,4 @@ export default function sitemap() {
 
   return urls;
 }
-/*salut*/
+/*salut les amis*/
