@@ -48,13 +48,11 @@ Notre service couvre les deux terminaux. Précisez simplement votre terminal lor
 
 ### Destinations populaires depuis l'aéroport
 
-| Destination       | Durée moyenne | À partir de |
-| ----------------- | ------------- | ----------- |
-| Nice Centre-Ville | 15-20 min     | 35€         |
-| Monaco            | 30-35 min     | 90€         |
-| Cannes            | 30-40 min     | 85€         |
-| Antibes           | 25-30 min     | 70€         |
-| Menton            | 45-50 min     | 120€        |
+- **Nice Centre-Ville** : 15-20 min - À partir de 35€
+- **Monaco** : 30-35 min - À partir de 90€
+- **Cannes** : 30-40 min - À partir de 85€
+- **Antibes** : 25-30 min - À partir de 70€
+- **Menton** : 45-50 min - À partir de 120€
 
 _Tarifs indicatifs, variables selon le trafic et l'heure_
 

@@ -43,9 +43,9 @@ Perfect for **1 to 4 passengers** with standard luggage. Leather seats, air cond
 
 **Indicative rates**:
 
-- Airport ➜ Nice center: from €40
-- Airport ➜ Cannes: from €70
-- Airport ➜ Monaco: from €90
+- **Airport ➜ Nice center** : from €40
+- **Airport ➜ Cannes** : from €70
+- **Airport ➜ Monaco** : from €90
 
 ### Mercedes Van (8 passengers)
 
@@ -53,9 +53,9 @@ Ideal for **families or groups** up to 8 people. Spacious luggage compartment, m
 
 **Indicative rates**:
 
-- Airport ➜ Nice center: from €70
-- Airport ➜ Cannes: from €110
-- Airport ➜ Monaco: from €130
+- **Airport ➜ Nice center** : from €70
+- **Airport ➜ Cannes** : from €110
+- **Airport ➜ Monaco** : from €130
 
 ## Booking your transfer
 

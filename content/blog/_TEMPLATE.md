@@ -37,12 +37,14 @@ Détails supplémentaires avec :
 2. Deuxième élément
 3. Troisième élément
 
-## Section 2 : Tableau de données (H2)
+## Section 2 : Liste de données (H2)
 
-| Colonne 1 | Colonne 2 | Colonne 3 |
-| --------- | --------- | --------- |
-| Donnée 1  | Donnée 2  | Donnée 3  |
-| Donnée 4  | Donnée 5  | Donnée 6  |
+- **Donnée 1** : Description de la donnée 1
+- **Donnée 2** : Description de la donnée 2
+- **Donnée 3** : Description de la donnée 3
+- **Donnée 4** : Description de la donnée 4
+- **Donnée 5** : Description de la donnée 5
+- **Donnée 6** : Description de la donnée 6
 
 ## Section 3 : Conseils pratiques (H2)
 

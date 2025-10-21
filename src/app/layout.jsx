@@ -1,12 +1,22 @@
 import AnimatedButtons from "@/components/AnimatedButtons.jsx";
-import CriticalCSS from "@/components/CriticalCSS.jsx";
 import LazyScripts from "@/components/LazyScripts.jsx";
 import StructuredData from "@/components/StructuredData.jsx";
 import WhatsAppButton from "@/components/WhatsAppButton.jsx";
 import LanguageProviderWrapper from "@/contexts/LanguageProviderWrapper.jsx";
 import { generateSEOMetadata } from "@/lib/seo.js";
 import { loadTranslations } from "@/lib/translations.js";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 // Les métadonnées sont maintenant générées dynamiquement avec les traductions
 export async function generateMetadata() {
@@ -20,11 +30,6 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-
         {/* Google Analytics / Google Ads - Chargement ultra-différé */}
         <script
           dangerouslySetInnerHTML={{
@@ -77,40 +82,22 @@ export default async function RootLayout({ children }) {
 
         {/* Charger les polices de manière non-bloquante */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
           rel="stylesheet"
-          media="print"
-        />
-
-        {/* Script pour activer les polices après chargement */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              document.addEventListener('DOMContentLoaded', function() {
-                const fontLink = document.querySelector('link[href*="fonts.googleapis.com"]');
-                if (fontLink) {
-                  fontLink.addEventListener('load', function() {
-                    this.media = 'all';
-                  });
-                }
-              });
-            `,
-          }}
         />
 
         {/* Fallback pour les navigateurs sans JavaScript */}
         <noscript>
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
         </noscript>
       </head>
       <body
-        className="antialiased overflow-x-hidden"
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
         suppressHydrationWarning={true}
       >
-        <CriticalCSS />
         <StructuredData />
         <LanguageProviderWrapper initialTranslations={initialTranslations}>
           {children}

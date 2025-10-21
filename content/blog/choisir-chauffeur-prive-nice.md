@@ -61,13 +61,11 @@ Les compétences d'un bon chauffeur :
 
 ### Prix moyens à Nice (2025)
 
-| Service                 | Prix indicatif |
-| ----------------------- | -------------- |
-| Aéroport → Centre Nice  | 35-50€         |
-| Nice → Monaco           | 80-100€        |
-| Nice → Cannes           | 75-95€         |
-| Mise à disposition (1h) | 50-70€         |
-| Journée complète (8h)   | 350-450€       |
+- **Aéroport → Centre Nice** : 35-50€
+- **Nice → Monaco** : 80-100€
+- **Nice → Cannes** : 75-95€
+- **Mise à disposition (1h)** : 50-70€
+- **Journée complète (8h)** : 350-450€
 
 ### Méfiez-vous des prix trop bas
 
