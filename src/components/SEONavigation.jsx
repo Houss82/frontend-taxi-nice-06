@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -86,15 +84,6 @@ export default function SEONavigation() {
 export function SEOBreadcrumb({ items = [] }) {
   if (items.length === 0) return null;
 
-  // Fonction pour convertir les URLs relatives en URLs absolues
-  const makeAbsoluteUrl = (href) => {
-    if (href.startsWith("http")) {
-      return href; // Déjà absolue
-    }
-    // Ajouter le domaine complet pour les URLs relatives
-    return `https://taxi-nice-06.com${href}`;
-  };
-
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -102,7 +91,7 @@ export function SEOBreadcrumb({ items = [] }) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: makeAbsoluteUrl(item.href),
+      item: item.url,
     })),
   };
 
@@ -118,16 +107,23 @@ export function SEOBreadcrumb({ items = [] }) {
         aria-label="Fil d'Ariane"
         className="flex items-center space-x-2 text-sm text-gray-600 mb-4"
       >
+        <Link
+          href="/"
+          className="hover:text-primary transition-colors"
+          title="Retour à l'accueil"
+        >
+          Accueil
+        </Link>
         {items.map((item, index) => (
           <div key={index} className="flex items-center space-x-2">
-            {index > 0 && <span className="text-gray-400">/</span>}
+            <span className="text-gray-400">/</span>
             {index === items.length - 1 ? (
               <span className="text-gray-900 font-medium" aria-current="page">
                 {item.name}
               </span>
             ) : (
               <Link
-                href={item.href}
+                href={item.url}
                 className="hover:text-primary transition-colors"
                 title={item.title}
               >
