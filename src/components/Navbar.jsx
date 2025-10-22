@@ -49,19 +49,19 @@ export default function Navbar() {
       <div className="h-16 flex items-center justify-between px-4 md:px-6">
         <a
           href="/"
-          className="flex items-center space-x-2 bg-black p-2 sm:pr-4 rounded-lg"
+          className="flex items-center space-x-2 bg-black p-2 sm:pr-3 lg:pr-4 rounded-lg"
         >
           <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">TN</span>
           </div>
-          <span className="hidden md:block text-white font-bold text-lg">
+          <span className="hidden lg:block text-white font-bold text-lg">
             TAXI
           </span>
-          <span className="hidden md:block text-blue-500 font-bold text-lg">
+          <span className="hidden lg:block text-blue-500 font-bold text-lg">
             NICE
           </span>
         </a>
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden lg:flex gap-6 xl:gap-8">
           <a href="/" className="text-black hover:text-primary font-medium">
             {t("navbar.home")}
           </a>
@@ -219,14 +219,14 @@ export default function Navbar() {
           {/* Bouton Réserver - Desktop uniquement */}
           <a
             href="/reservation"
-            className="hidden md:block bg-primary text-white px-6 py-2 rounded font-medium hover:bg-primaryDark transition-colors"
+            className="hidden lg:block bg-primary text-white px-4 xl:px-6 py-2 rounded font-medium hover:bg-primaryDark transition-colors text-sm xl:text-base"
           >
             {t("navbar.bookNowFull")}
           </a>
-          {/* Menu Burger - Mobile amélioré */}
+          {/* Menu Burger - Mobile et Tablette */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden relative flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-300 z-[60]"
+            className="lg:hidden relative flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-300 z-[60]"
             aria-label="Menu"
           >
             <motion.div
@@ -257,7 +257,7 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+              className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
               onClick={() => setIsMenuOpen(false)}
             />
 
@@ -267,7 +267,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="md:hidden fixed top-16 left-0 right-0 bottom-0 z-50 bg-gradient-to-br from-white to-gray-50 border-t border-gray-200 shadow-2xl flex flex-col"
+              className="lg:hidden fixed top-16 left-0 right-0 bottom-0 z-50 bg-gradient-to-br from-white to-gray-50 border-t border-gray-200 shadow-2xl flex flex-col"
             >
               <motion.nav
                 initial={{ y: -20 }}

@@ -1,4 +1,5 @@
 import AnimatedButtons from "@/components/AnimatedButtons.jsx";
+import CriticalCSS from "@/components/CriticalCSS.jsx";
 import LazyScripts from "@/components/LazyScripts.jsx";
 import StructuredData from "@/components/StructuredData.jsx";
 import WhatsAppButton from "@/components/WhatsAppButton.jsx";
@@ -98,6 +99,7 @@ export default async function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
         suppressHydrationWarning={true}
       >
+        <CriticalCSS />
         <StructuredData />
         <LanguageProviderWrapper initialTranslations={initialTranslations}>
           {children}
