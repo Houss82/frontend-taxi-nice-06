@@ -206,8 +206,8 @@ export default function ServicesPage() {
   };
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
   ];
 
   return (

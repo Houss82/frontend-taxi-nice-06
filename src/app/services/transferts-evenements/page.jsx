@@ -87,11 +87,11 @@ export default function TransfertsEvenementsPage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
     {
       name: t("transfersEvents.title") + " " + t("transfersEvents.subtitle"),
-      href: "/services/transferts-evenements",
+      url: "/services/transferts-evenements",
     },
   ];
 

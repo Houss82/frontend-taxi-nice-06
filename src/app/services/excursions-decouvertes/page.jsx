@@ -114,9 +114,9 @@ export default function ExcursionsDecouvertesPage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: t("excursions.title"), href: "/services/excursions-decouvertes" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
+    { name: t("excursions.title"), url: "/services/excursions-decouvertes" },
   ];
 
   return (

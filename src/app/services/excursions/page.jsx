@@ -21,9 +21,9 @@ export default function ExcursionsPage() {
   const { t } = useLanguage();
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "Excursions", href: "/services/excursions" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
+    { name: "Excursions", url: "/services/excursions" },
   ];
 
   const features = [

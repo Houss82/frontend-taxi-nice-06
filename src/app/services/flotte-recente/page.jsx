@@ -119,9 +119,9 @@ export default function FlotteRecentePage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: t("fleetRecent.title"), href: "/services/flotte-recente" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
+    { name: t("fleetRecent.title"), url: "/services/flotte-recente" },
   ];
 
   return (

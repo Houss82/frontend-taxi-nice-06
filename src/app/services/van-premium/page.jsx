@@ -79,9 +79,9 @@ export default function VanPremiumPage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: t("vanPremium.title"), href: "/services/van-premium" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
+    { name: t("vanPremium.title"), url: "/services/van-premium" },
   ];
 
   return (

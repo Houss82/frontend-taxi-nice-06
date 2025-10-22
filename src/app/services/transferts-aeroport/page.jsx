@@ -108,11 +108,11 @@ export default function TransfertsAeroportPage() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <SEOBreadcrumb
             items={[
-              { name: "Accueil", href: "/" },
-              { name: "Services", href: "/services" },
+              { name: "Accueil", url: "/" },
+              { name: "Services", url: "/services" },
               {
                 name: "Transferts Aéroport",
-                href: "/services/transferts-aeroport",
+                url: "/services/transferts-aeroport",
               },
             ]}
           />

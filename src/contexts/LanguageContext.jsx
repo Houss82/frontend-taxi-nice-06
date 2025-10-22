@@ -8,7 +8,14 @@ const LanguageContext = createContext();
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
   if (!context) {
-    throw new Error("useLanguage must be used within a LanguageProvider");
+    // Retourner un contexte par défaut au lieu de lever une erreur
+    // pour éviter les erreurs d'hydratation
+    return {
+      language: "fr",
+      toggleLanguage: () => {},
+      t: (key) => key,
+      isHydrated: false,
+    };
   }
   return context;
 };
@@ -17,22 +24,43 @@ export const LanguageProvider = ({ children, initialTranslations = {} }) => {
   const [isHydrated, setIsHydrated] = useState(false);
   const [language, setLanguage] = useState("fr"); // Toujours 'fr' par défaut côté serveur
   const [translations, setTranslations] = useState(initialTranslations);
-  const searchParams = useSearchParams();
+
+  // Gérer les erreurs avec useSearchParams
+  let searchParams = null;
+  try {
+    searchParams = useSearchParams();
+  } catch (error) {
+    console.warn("Erreur avec useSearchParams:", error);
+  }
 
   // Marquer comme hydraté côté client et détecter la langue
   useEffect(() => {
     setIsHydrated(true);
 
     // Détecter la langue depuis l'URL en priorité
-    const urlLang = searchParams.get("lang");
+    let urlLang = null;
+    if (searchParams) {
+      try {
+        urlLang = searchParams.get("lang");
+      } catch (error) {
+        console.warn(
+          "Erreur lors de la récupération du paramètre lang:",
+          error
+        );
+      }
+    }
 
     if (urlLang && ["fr", "en"].includes(urlLang)) {
       setLanguage(urlLang);
     } else {
       // Sinon, utiliser localStorage
-      const storedLang = localStorage.getItem("preferred-language");
-      if (storedLang && ["fr", "en"].includes(storedLang)) {
-        setLanguage(storedLang);
+      try {
+        const storedLang = localStorage.getItem("preferred-language");
+        if (storedLang && ["fr", "en"].includes(storedLang)) {
+          setLanguage(storedLang);
+        }
+      } catch (error) {
+        console.warn("Erreur lors de l'accès à localStorage:", error);
       }
     }
   }, [searchParams]);
@@ -40,7 +68,11 @@ export const LanguageProvider = ({ children, initialTranslations = {} }) => {
   // Sauvegarder la langue dans localStorage à chaque changement
   useEffect(() => {
     if (isHydrated) {
-      localStorage.setItem("preferred-language", language);
+      try {
+        localStorage.setItem("preferred-language", language);
+      } catch (error) {
+        console.warn("Erreur lors de la sauvegarde dans localStorage:", error);
+      }
     }
   }, [language, isHydrated]);
 

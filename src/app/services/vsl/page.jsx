@@ -36,9 +36,9 @@ export default function VSLPage() {
   }
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "VSL", href: "/services/vsl" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
+    { name: "VSL", url: "/services/vsl" },
   ];
 
   const features = [

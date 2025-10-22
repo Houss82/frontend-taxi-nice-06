@@ -98,11 +98,11 @@ export default function ArriveesDestinationsPage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
     {
       name: t("services.arrivals.title"),
-      href: "/services/arrivees-destinations",
+      url: "/services/arrivees-destinations",
       title: t("services.arrivals.title"),
     },
   ];

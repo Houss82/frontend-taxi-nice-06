@@ -91,7 +91,7 @@ export function SEOBreadcrumb({ items = [] }) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.url,
+      item: item.url || item.href,
     })),
   };
 
@@ -123,7 +123,7 @@ export function SEOBreadcrumb({ items = [] }) {
               </span>
             ) : (
               <Link
-                href={item.url}
+                href={item.url || item.href}
                 className="hover:text-primary transition-colors"
                 title={item.title}
               >

@@ -107,9 +107,9 @@ export default function EvenementsMariagesPage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: t("events.title"), href: "/services/evenements-mariages" },
+    { name: "Accueil", url: "/" },
+    { name: "Services", url: "/services" },
+    { name: t("events.title"), url: "/services/evenements-mariages" },
   ];
 
   return (
