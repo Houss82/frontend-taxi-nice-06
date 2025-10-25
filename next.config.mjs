@@ -25,14 +25,6 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
-
-  // Optimisation de la taille
-  swcMinify: true,
-
-  // Optimisation des chunks
-  experimental: {
-    optimizeCss: true,
-  },
   async headers() {
     return [
       {
