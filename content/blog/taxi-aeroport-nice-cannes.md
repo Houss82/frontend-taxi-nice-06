@@ -2,7 +2,7 @@
 title: "Taxi Aéroport de Nice vers Cannes – Votre Transfert Premium"
 date: "2025-10-21"
 excerpt: "Besoin d'un transfert entre l'aéroport de Nice et Cannes ? Découvrez notre service de taxi haut de gamme alliant confort, ponctualité et sérénité."
-image: "/taxi-aeroport-nice-cannes.jpg"
+image: "/départ-glc-1 copie.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"

@@ -327,6 +327,9 @@ export default function ReservationPage() {
         {/* Section basse - Formulaire */}
         <div className="flex-1 bg-gray-50 flex items-center justify-center p-4 md:p-8">
           <div className="w-full max-w-4xl">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Formulaire de Réservation
+            </h2>
             {/* Formulaire */}
             <div className="bg-white rounded-2xl md:rounded-3xl shadow-xl border border-gray-200 p-4 md:p-8">
               {isSubmitted ? (

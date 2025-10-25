@@ -146,6 +146,9 @@ export default function BlogPage() {
           {/* Filtres par catégorie */}
           <section className="py-8 bg-white border-b">
             <div className="max-w-7xl mx-auto px-4">
+              <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">
+                Articles & Guides Pratiques
+              </h2>
               <div className="flex flex-wrap gap-3 justify-center">
                 {categories.map((category) => (
                   <button

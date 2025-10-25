@@ -48,7 +48,12 @@ function TarifsContent() {
           </Link>
         </div>
 
-        <div className="max-w-6xl mx-auto w-full">
+        <div className="max-w-6xl mx-auto w-full px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            {vehicleType === "glc"
+              ? "Nos Tarifs Mercedes GLC Premium"
+              : "Nos Tarifs Van Premium 8 Places"}
+          </h2>
           <PricingTable vehicleType={vehicleType} />
         </div>
       </div>
