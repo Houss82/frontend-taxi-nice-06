@@ -118,14 +118,14 @@ export default function BlogPage() {
           {/* Hero Section */}
           <section className="relative h-[40vh] overflow-hidden">
             <Image
-              src="/bg-image.png"
+              src="/news copie 2.jpg"
               alt="Blog Taxi Nice Côte d'Azur"
               fill
               className="object-cover"
               priority={true}
               quality={100}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primaryDark/90"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-primaryDark/90"></div>
             <div className="container mx-auto px-4 h-full flex items-center relative z-10">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}

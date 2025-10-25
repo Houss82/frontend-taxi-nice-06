@@ -111,14 +111,14 @@ export default function PartenairesPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] overflow-hidden">
         <Image
-          src="/bg-image.png"
+          src="/partenaires copie 2.jpg"
           alt="Nos Partenaires - Taxi Nice Côte d'Azur"
           fill
           className="object-cover"
           priority={true}
           quality={100}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primaryDark/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-primaryDark/90"></div>
         <div className="container mx-auto px-4 h-full flex items-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -207,9 +207,24 @@ export default function PartenairesPage() {
           {/* Partenaires Premium */}
           {filteredPartners.some((p) => p.featured) && (
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-                Partenaires Premium
-              </h2>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-center mb-12"
+              >
+                <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                    Partenaires Premium
+                  </span>
+                </h2>
+                <div className="flex justify-center items-center gap-3">
+                  <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="h-px w-16 bg-gradient-to-l from-transparent to-blue-500"></div>
+                </div>
+              </motion.div>
+
               <div className="grid md:grid-cols-2 gap-8">
                 {filteredPartners
                   .filter((p) => p.featured)
@@ -219,47 +234,59 @@ export default function PartenairesPage() {
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1, duration: 0.6 }}
-                      className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-primary/20"
+                      className="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-primary/20 hover:-translate-y-2"
                     >
-                      <div className="relative h-64">
+                      {/* Image avec overlay gradient */}
+                      <div className="relative h-64 overflow-hidden">
                         <Image
                           src={partner.image}
-                          alt={partner.name}
+                          alt={`Logo ${partner.name} - ${partner.description}`}
                           fill
-                          className="object-cover"
+                          className="object-contain p-6 group-hover:scale-105 transition-transform duration-500"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                        {/* Badge Premium */}
                         <div className="absolute top-4 right-4">
-                          <span className="px-4 py-2 bg-primary text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                          <span className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-semibold flex items-center gap-2 shadow-lg">
                             <Sparkles className="w-4 h-4" />
                             Premium
                           </span>
                         </div>
                       </div>
+
                       <div className="p-8">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                            <partner.icon className="w-6 h-6 text-primary" />
+                        {/* En-tête avec icône */}
+                        <div className="flex items-start gap-4 mb-4">
+                          <div className="w-14 h-14 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <partner.icon className="w-7 h-7 text-primary" />
                           </div>
-                          <div>
-                            <h3 className="text-2xl font-bold text-gray-900">
+                          <div className="flex-1">
+                            <h3 className="text-2xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">
                               {partner.name}
                             </h3>
-                            <p className="text-sm text-gray-500">
+                            <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold">
+                              <span className="w-1.5 h-1.5 bg-blue-600 rounded-full"></span>
                               {partner.category}
-                            </p>
+                            </span>
                           </div>
                         </div>
+
+                        {/* Description */}
                         <p className="text-gray-600 mb-6 leading-relaxed">
                           {partner.description}
                         </p>
+
+                        {/* CTA Button */}
                         <a
                           href={partner.website}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primaryDark transition-colors"
+                          title={`Visiter le site de ${partner.name} - ${partner.description}`}
+                          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg group/btn"
                         >
-                          <ExternalLink className="w-5 h-5" />
-                          Visiter le site
+                          <ExternalLink className="w-5 h-5 group-hover/btn:rotate-45 transition-transform duration-300" />
+                          Découvrir nos services
                         </a>
                       </div>
                     </motion.div>
@@ -271,10 +298,25 @@ export default function PartenairesPage() {
           {/* Autres partenaires */}
           {filteredPartners.some((p) => !p.featured) && (
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-                Nos Partenaires
-              </h2>
-              <div className="grid md:grid-cols-3 gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-center mb-12"
+              >
+                <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                    Nos Partenaires
+                  </span>
+                </h2>
+                <div className="flex justify-center items-center gap-3">
+                  <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="h-px w-16 bg-gradient-to-l from-transparent to-blue-500"></div>
+                </div>
+              </motion.div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredPartners
                   .filter((p) => !p.featured)
                   .map((partner, index) => (
@@ -283,37 +325,52 @@ export default function PartenairesPage() {
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1, duration: 0.6 }}
-                      className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                      className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
                     >
-                      <div className="relative h-48">
+                      {/* Image */}
+                      <div className="relative h-48 overflow-hidden bg-gray-50">
                         <Image
                           src={partner.image}
-                          alt={partner.name}
+                          alt={`Logo ${partner.name} - ${partner.description}`}
                           fill
-                          className="object-cover"
+                          className="object-contain p-4 group-hover:scale-110 transition-transform duration-500"
                         />
                       </div>
+
                       <div className="p-6">
+                        {/* Catégorie avec icône */}
                         <div className="flex items-center gap-2 mb-3">
-                          <partner.icon className="w-5 h-5 text-primary" />
-                          <span className="text-xs text-primary font-semibold uppercase">
+                          <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
+                            <partner.icon className="w-4 h-4 text-primary" />
+                          </div>
+                          <span className="text-xs text-primary font-semibold uppercase tracking-wide">
                             {partner.category}
                           </span>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">
+
+                        {/* Titre */}
+                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                           {partner.name}
                         </h3>
-                        <p className="text-gray-600 mb-4 text-sm line-clamp-2">
+
+                        {/* Description */}
+                        <p className="text-gray-600 mb-4 text-sm line-clamp-3 leading-relaxed">
                           {partner.description}
                         </p>
+
+                        {/* Lien */}
                         <a
                           href={partner.website}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primaryDark transition-colors text-sm"
+                          title={`Visiter le site de ${partner.name} - ${partner.description}`}
+                          className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primaryDark transition-colors text-sm group/link"
                         >
-                          <ExternalLink className="w-4 h-4" />
-                          Visiter le site
+                          Découvrir nos services
+                          <ExternalLink
+                            className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300"
+                            aria-hidden="true"
+                          />
                         </a>
                       </div>
                     </motion.div>
