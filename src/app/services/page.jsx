@@ -250,7 +250,7 @@ export default function ServicesPage() {
             <div className="w-24 h-1 bg-cyan-400 mx-auto rounded-full mb-8"></div>
             <p className="text-xl md:text-2xl leading-relaxed">
               Découvrez notre gamme complète de services de transport haut de
-              gamme pour tous vos besoins à Nice et en Côte d'Azur
+              gamme pour tous vos besoins à Nice et sur la Côte d'Azur
             </p>
           </motion.div>
         </div>
