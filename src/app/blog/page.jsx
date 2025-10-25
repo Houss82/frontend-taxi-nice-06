@@ -3,7 +3,6 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { motion } from "framer-motion";
 import { Calendar, Clock, User } from "lucide-react";
 import Image from "next/image";
@@ -11,7 +10,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function BlogPage() {
-  const { t, language, isHydrated } = useLanguage();
   const [posts, setPosts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("Tous");
   const [loading, setLoading] = useState(true);
@@ -25,21 +23,17 @@ export default function BlogPage() {
   ];
 
   useEffect(() => {
-    // Ne charger que côté client après hydratation
-    if (!isHydrated || !language) return;
-
-    // Activer le chargement lors du changement de langue
+    // Activer le chargement
     setLoading(true);
 
     // Récupérer les articles depuis l'API
     fetch("/api/blog")
       .then((res) => res.json())
       .then((data) => {
-        // Filtrer les articles selon la langue actuelle
+        // Filtrer les articles en français uniquement
         const allPosts = data.posts || [];
-
         const filteredByLanguage = allPosts.filter(
-          (post) => post.language === language
+          (post) => post.language === "fr"
         );
 
         setPosts(filteredByLanguage);
@@ -49,33 +43,22 @@ export default function BlogPage() {
         console.error("❌ Erreur:", error);
         setLoading(false);
       });
-  }, [language, isHydrated]);
+  }, []);
 
-  // Initialiser la catégorie sélectionnée avec la traduction
-  useEffect(() => {
-    if (isHydrated && language && t) {
-      const allCategoriesText = t("blog.allCategories") || "Tous";
-      setSelectedCategory(allCategoriesText);
-    }
-  }, [language, t, isHydrated]);
-
-  const allCategoriesText = t("blog.allCategories") || "Tous";
+  const allCategoriesText = "Tous";
   const categories = [
     allCategoriesText,
     ...new Set(posts.map((post) => post.category)),
   ];
 
   const filteredPosts =
-    selectedCategory === allCategoriesText ||
-    selectedCategory === "Tous" ||
-    selectedCategory === "All"
+    selectedCategory === "Tous"
       ? posts
       : posts.filter((post) => post.category === selectedCategory);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    const locale = language === "en" ? "en-US" : "fr-FR";
-    return date.toLocaleDateString(locale, {
+    return date.toLocaleDateString("fr-FR", {
       day: "numeric",
       month: "long",
       year: "numeric",
@@ -150,10 +133,12 @@ export default function BlogPage() {
                 transition={{ duration: 0.8 }}
                 className="text-white max-w-4xl"
               >
-                 <h1 className="text-5xl md:text-6xl font-bold mb-4">
-                   {t("blog.title") || "Blog & Actualités"}
-                 </h1>
-                 <p className="text-xl md:text-2xl">{t("blog.subtitle") || "Conseils et actualités"}</p>
+                <h1 className="text-5xl md:text-6xl font-bold mb-4">
+                  Blog & Actualités
+                </h1>
+                <p className="text-xl md:text-2xl">
+                  Conseils et actualités sur le transport sur la Côte d'Azur
+                </p>
               </motion.div>
             </div>
           </section>
@@ -182,18 +167,22 @@ export default function BlogPage() {
           {/* Liste des articles */}
           <section className="py-16">
             <div className="max-w-7xl mx-auto px-4">
-               {loading ? (
-                 <div className="text-center py-20">
-                   <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-                   <p className="mt-4 text-gray-600">{t("blog.loading") || "Chargement des articles..."}</p>
-                 </div>
-               ) : filteredPosts.length === 0 ? (
-                 <div className="text-center py-20">
-                   <p className="text-xl text-gray-600">
-                     {t("blog.noArticles") || "Aucun article disponible pour le moment."}
-                   </p>
-                   <p className="text-gray-500 mt-2">{t("blog.comeBack") || "Revenez bientôt pour découvrir nos actualités !"}</p>
-                 </div>
+              {loading ? (
+                <div className="text-center py-20">
+                  <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+                  <p className="mt-4 text-gray-600">
+                    Chargement des articles...
+                  </p>
+                </div>
+              ) : filteredPosts.length === 0 ? (
+                <div className="text-center py-20">
+                  <p className="text-xl text-gray-600">
+                    Aucun article disponible pour le moment.
+                  </p>
+                  <p className="text-gray-500 mt-2">
+                    Revenez bientôt pour découvrir nos actualités !
+                  </p>
+                </div>
               ) : (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {filteredPosts.map((post, index) => (
@@ -226,10 +215,10 @@ export default function BlogPage() {
                             <Calendar className="w-4 h-4" />
                             <span>{formatDate(post.date)}</span>
                           </div>
-                           <div className="flex items-center gap-1">
-                             <Clock className="w-4 h-4" />
-                             <span>5 {t("blog.readingTime") || "min"}</span>
-                           </div>
+                          <div className="flex items-center gap-1">
+                            <Clock className="w-4 h-4" />
+                            <span>5 min</span>
+                          </div>
                         </div>
 
                         <Link href={`/blog/${post.slug}`}>
@@ -247,12 +236,12 @@ export default function BlogPage() {
                             <User className="w-4 h-4" />
                             <span>{post.author}</span>
                           </div>
-                           <Link
-                             href={`/blog/${post.slug}`}
-                             className="text-primary font-semibold hover:underline"
-                           >
-                             {t("blog.readMore") || "Lire plus"} →
-                           </Link>
+                          <Link
+                            href={`/blog/${post.slug}`}
+                            className="text-primary font-semibold hover:underline"
+                          >
+                            Lire plus →
+                          </Link>
                         </div>
                       </div>
                     </motion.article>

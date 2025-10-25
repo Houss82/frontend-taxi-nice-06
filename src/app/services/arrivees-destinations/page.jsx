@@ -3,7 +3,6 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   CheckCircle,
   Clock,
@@ -17,83 +16,71 @@ import {
 import Image from "next/image";
 
 export default function ArriveesDestinationsPage() {
-  const { t, isHydrated } = useLanguage();
-
-  // Attendre que les traductions soient chargées
-  if (!isHydrated) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-gray-600">Chargement...</p>
-        </div>
-      </div>
-    );
-  }
-
   const features = [
     {
       icon: Star,
-      title: t("services.arrivals.features.personalizedWelcome.title"),
-      description: t(
-        "services.arrivals.features.personalizedWelcome.description"
-      ),
+      title: "Accueil personnalisé",
+      description:
+        "Votre nom affiché sur un panneau de bienvenue pour une arrivée mémorable",
     },
     {
       icon: Heart,
-      title: t("services.arrivals.features.personalizedService.title"),
-      description: t(
-        "services.arrivals.features.personalizedService.description"
-      ),
+      title: "Service sur mesure",
+      description: "Un service adapté à vos besoins et à vos préférences",
     },
     {
       icon: Shield,
-      title: t("services.arrivals.features.luxuryComfort.title"),
-      description: t("services.arrivals.features.luxuryComfort.description"),
+      title: "Confort et luxe",
+      description:
+        "Véhicules Mercedes haut de gamme avec tout le confort moderne",
     },
     {
       icon: Clock,
-      title: t("services.arrivals.features.availability24h.title"),
-      description: t("services.arrivals.features.availability24h.description"),
+      title: "Disponibilité 24/7",
+      description:
+        "Service disponible jour et nuit pour vous accueillir à tout moment",
     },
     {
       icon: Users,
-      title: t("services.arrivals.features.professionalDriver.title"),
-      description: t(
-        "services.arrivals.features.professionalDriver.description"
-      ),
+      title: "Chauffeur professionnel",
+      description:
+        "Chauffeur expérimenté, ponctuel et au service de votre confort",
     },
     {
       icon: MapPin,
-      title: t("services.arrivals.features.allDestinations.title"),
-      description: t("services.arrivals.features.allDestinations.description"),
+      title: "Toutes destinations",
+      description: "Service sur toute la Côte d'Azur et alentours",
     },
   ];
 
   const services = [
     {
-      name: t("services.arrivals.services.trainStation.name"),
-      location: t("services.arrivals.services.trainStation.location"),
-      description: t("services.arrivals.services.trainStation.description"),
-      price: t("services.arrivals.services.trainStation.price"),
+      name: "Gare SNCF",
+      location: "Nice-Ville, Cannes, Monaco",
+      description:
+        "Accueil à votre arrivée en train avec prise en charge de vos bagages",
+      price: "À partir de 36 €",
     },
     {
-      name: t("services.arrivals.services.port.name"),
-      location: t("services.arrivals.services.port.location"),
-      description: t("services.arrivals.services.port.description"),
-      price: t("services.arrivals.services.port.price"),
+      name: "Port de Croisière",
+      location: "Nice, Cannes, Monaco",
+      description:
+        "Service VIP pour vos arrivées de croisière sur la Côte d'Azur",
+      price: "À partir de 55 €",
     },
     {
-      name: t("services.arrivals.services.hotel.name"),
-      location: t("services.arrivals.services.hotel.location"),
-      description: t("services.arrivals.services.hotel.description"),
-      price: t("services.arrivals.services.hotel.price"),
+      name: "Hôtels & Résidences",
+      location: "Toute la Côte d'Azur",
+      description:
+        "Accueil personnalisé à la descente de votre hôtel ou résidence",
+      price: "Selon distance",
     },
     {
-      name: t("services.arrivals.services.event.name"),
-      location: t("services.arrivals.services.event.location"),
-      description: t("services.arrivals.services.event.description"),
-      price: t("services.arrivals.services.event.price"),
+      name: "Événements",
+      location: "Nice, Cannes, Monaco",
+      description:
+        "Service d'accueil pour vos événements (mariages, réceptions, séminaires)",
+      price: "Devis sur mesure",
     },
   ];
 
@@ -101,9 +88,9 @@ export default function ArriveesDestinationsPage() {
     { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
     {
-      name: t("services.arrivals.title"),
+      name: "Arrivées & Destinations",
       url: "/services/arrivees-destinations",
-      title: t("services.arrivals.title"),
+      title: "Arrivées & Destinations",
     },
   ];
 
@@ -123,26 +110,28 @@ export default function ArriveesDestinationsPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  {t("services.arrivals.title")}
+                  Arrivées & Destinations
                   <span className="block text-blue-600">
-                    {t("services.arrivals.subtitle")}
+                    Accueil Personnalisé VIP
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  {t("services.arrivals.description")}
+                  Faites-vous accueillir en toute élégance à votre arrivée sur
+                  la Côte d'Azur. Service VIP avec panneau nominatif et prise en
+                  charge complète de vos bagages.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
                     className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300 text-center no-underline"
                   >
-                    {t("services.arrivals.cta.bookWelcome")}
+                    Réserver un accueil VIP
                   </a>
                   <a
                     href="/tarifs"
                     className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300 text-center no-underline"
                   >
-                    {t("services.arrivals.cta.viewPrices")}
+                    Voir les tarifs
                   </a>
                 </div>
               </div>
@@ -159,9 +148,7 @@ export default function ArriveesDestinationsPage() {
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">
                     <div className="text-2xl font-bold">VIP</div>
-                    <div className="text-sm">
-                      {t("services.arrivals.vipBadge")}
-                    </div>
+                    <div className="text-sm">Service Premium</div>
                   </div>
                 </div>
               </div>
@@ -174,10 +161,10 @@ export default function ArriveesDestinationsPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t("services.arrivals.features.title")}
+                Nos Avantages
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                {t("services.arrivals.features.subtitle")}
+                Un service premium qui marque votre arrivée sur la Côte d'Azur
               </p>
             </div>
 
@@ -185,9 +172,9 @@ export default function ArriveesDestinationsPage() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-md">
                     <feature.icon className="w-6 h-6 text-blue-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -205,10 +192,10 @@ export default function ArriveesDestinationsPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t("services.arrivals.services.title")}
+                Nos Services
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                {t("services.arrivals.services.subtitle")}
+                Accueil personnalisé pour toutes vos arrivées sur la Côte d'Azur
               </p>
             </div>
 
@@ -216,7 +203,7 @@ export default function ArriveesDestinationsPage() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gradient-to-br from-white to-blue-50 rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold text-gray-900">
@@ -235,7 +222,7 @@ export default function ArriveesDestinationsPage() {
                     href="/reservation"
                     className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300"
                   >
-                    {t("services.arrivals.cta.bookService")} {service.name} →
+                    Réserver {service.name} →
                   </a>
                 </div>
               ))}
@@ -248,10 +235,10 @@ export default function ArriveesDestinationsPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t("services.arrivals.process.title")}
+                Comment ça fonctionne ?
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                {t("services.arrivals.process.subtitle")}
+                Un processus simple en 3 étapes pour un accueil parfait
               </p>
             </div>
 
@@ -261,10 +248,10 @@ export default function ArriveesDestinationsPage() {
                   <Phone className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {t("services.arrivals.process.steps.contact.title")}
+                  1. Contact
                 </h3>
                 <p className="text-gray-600">
-                  {t("services.arrivals.process.steps.contact.description")}
+                  Contactez-nous pour réserver votre accueil personnalisé
                 </p>
               </div>
 
@@ -273,12 +260,10 @@ export default function ArriveesDestinationsPage() {
                   <Star className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {t("services.arrivals.process.steps.personalization.title")}
+                  2. Personnalisation
                 </h3>
                 <p className="text-gray-600">
-                  {t(
-                    "services.arrivals.process.steps.personalization.description"
-                  )}
+                  Préparez votre panneau nominatif et vos préférences
                 </p>
               </div>
 
@@ -287,10 +272,10 @@ export default function ArriveesDestinationsPage() {
                   <CheckCircle className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {t("services.arrivals.process.steps.welcome.title")}
+                  3. Accueil VIP
                 </h3>
                 <p className="text-gray-600">
-                  {t("services.arrivals.process.steps.welcome.description")}
+                  Profitez d'un accueil chaleureux à votre arrivée
                 </p>
               </div>
             </div>
@@ -302,23 +287,24 @@ export default function ArriveesDestinationsPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                {t("services.arrivals.ctaSection.title")}
+                Prêt pour un accueil VIP ?
               </h2>
               <p className="text-xl text-blue-100 mb-8">
-                {t("services.arrivals.ctaSection.description")}
+                Réservez dès maintenant votre service d'accueil personnalisé et
+                faites de votre arrivée un moment inoubliable
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reservation"
                   className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
                 >
-                  {t("services.arrivals.ctaSection.button")}
+                  Réserver maintenant
                 </a>
                 <a
                   href="/contact"
                   className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300 no-underline"
                 >
-                  {t("services.arrivals.ctaSection.contact")}
+                  Nous contacter
                 </a>
               </div>
               <div className="mt-8 text-blue-100">

@@ -2,7 +2,6 @@
 
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { motion } from "framer-motion";
 import {
   Clock,
@@ -15,8 +14,6 @@ import {
 } from "lucide-react";
 
 export default function CGVPage() {
-  const { t } = useLanguage();
-
   const breadcrumbItems = [
     {
       name: "CGV",

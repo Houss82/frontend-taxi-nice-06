@@ -1,6 +1,5 @@
 "use client";
 
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { Building2, Clock, MapPin, Plane, Star, Users } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
@@ -71,13 +70,10 @@ function AnimatedCounter({ end, duration = 2000, decimals = 0, suffix = "" }) {
 }
 
 export default function Services() {
-  const { t, isHydrated } = useLanguage();
   const [visibleElements, setVisibleElements] = useState(new Set());
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    if (!isHydrated) return;
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -100,91 +96,85 @@ export default function Services() {
     return () => {
       elements?.forEach((element) => observer.unobserve(element));
     };
-  }, [isHydrated]);
+  }, []);
 
-  // Attendre que les traductions soient chargées
-  if (!isHydrated) {
-    return (
-      <section id="services" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">
-              Nos Services
-            </h2>
-            <p className="text-gray-600 mb-8">
-              Une gamme complète de services de transport
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="bg-gray-100 rounded-lg p-6 animate-pulse">
-                <div className="h-4 bg-gray-300 rounded mb-2"></div>
-                <div className="h-3 bg-gray-300 rounded mb-4"></div>
-                <div className="space-y-2">
-                  <div className="h-3 bg-gray-300 rounded"></div>
-                  <div className="h-3 bg-gray-300 rounded"></div>
-                  <div className="h-3 bg-gray-300 rounded"></div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    );
-  }
-
+  // Services en français
   const services = [
     {
       icon: Plane,
-      title: t("services.airport.title"),
-      description: t("services.airport.description"),
+      title: "Transferts Aéroport",
+      description:
+        "Service de transfert professionnel vers et depuis l'aéroport Nice Côte d'Azur avec suivi des vols en temps réel.",
       features: [
-        t("services.airport.features.flightTracking.title"),
-        t("services.airport.features.personalWelcome.title"),
-        t("services.airport.features.punctuality.title"),
+        "Suivi des vols en temps réel",
+        "Accueil personnalisé",
+        "Ponctualité garantie",
       ],
     },
     {
       icon: Building2,
-      title: t("services.business.title"),
-      description: t("services.business.description"),
+      title: "Transport d'Affaires",
+      description:
+        "Solutions de transport professionnel pour vos déplacements d'affaires avec facturation simplifiée.",
       features: [
-        t("services.business.features.invoicing"),
-        t("services.business.features.drivers"),
-        t("services.business.features.wifi"),
+        "Facturation simplifiée",
+        "Chauffeurs en costume",
+        "WiFi à bord",
       ],
     },
     {
       icon: MapPin,
-      title: t("services.tourism.title"),
-      description: t("services.tourism.description"),
+      title: "Excursions Touristiques",
+      description:
+        "Découvrez les plus beaux sites de la Côte d'Azur avec nos chauffeurs-guides expérimentés.",
       features: [
-        t("services.tourism.features.guides"),
-        t("services.tourism.features.custom"),
-        t("services.tourism.features.photos"),
+        "Chauffeurs-guides",
+        "Itinéraires sur mesure",
+        "Arrêts photos",
       ],
     },
     {
       icon: Users,
-      title: t("services.events.title"),
-      description: t("services.events.description"),
-      features: [
-        t("services.events.features.luxury"),
-        t("services.events.features.decoration"),
-        t("services.events.features.vip"),
-      ],
+      title: "Événements & Mariages",
+      description:
+        "Véhicules de luxe pour vos événements spéciaux avec décoration et service VIP disponible.",
+      features: ["Véhicules de luxe", "Décoration sur mesure", "Service VIP"],
     },
   ];
 
   return (
     <section id="services" className="py-16 bg-white" ref={sectionRef}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">
-            {t("services.title")}
+        <div className="text-center mb-16 relative">
+          {/* Badge au-dessus */}
+          <div className="inline-block mb-4">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-semibold border border-blue-200 shadow-sm">
+              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              Solutions Premium
+            </span>
+          </div>
+
+          {/* Titre principal */}
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 bg-clip-text text-transparent">
+              Nos Services
+            </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t("services.subtitle")}
+
+          {/* Ligne décorative */}
+          <div className="flex justify-center items-center gap-3 mb-6">
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
+            <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-blue-500"></div>
+          </div>
+
+          {/* Description */}
+          <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Une gamme complète de{" "}
+            <span className="font-semibold text-gray-800">
+              services de transport
+            </span>{" "}
+            pour tous vos besoins sur la Côte d'Azur
           </p>
         </div>
 
@@ -195,7 +185,7 @@ export default function Services() {
                 key={index}
                 data-animate
                 data-index={`service-${index}`}
-                className={`bg-white border border-gray-200 rounded-xl shadow-sm group hover:shadow-lg transition-all duration-1000 ease-out hover:-translate-y-2 h-full flex flex-col ${
+                className={`bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md group hover:shadow-xl transition-all duration-1000 ease-out hover:-translate-y-2 h-full flex flex-col ${
                   visibleElements.has(`service-${index}`)
                     ? "opacity-100 rotate-y-0"
                     : "opacity-0 rotate-y-180"
@@ -254,7 +244,7 @@ export default function Services() {
                 <AnimatedCounter end={4.9} decimals={1} duration={2000} />
                 <span className="text-primary">/5</span>
               </h3>
-              <p className="text-gray-600">Note moyenne de nos clients</p>
+              <p className="text-gray-600">Satisfaction client</p>
             </div>
             <div>
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 hover:animate-pulse-glow transition-all duration-300">
@@ -263,7 +253,7 @@ export default function Services() {
               <h3 className="font-bold text-2xl mb-2">
                 <AnimatedCounter end={1000} duration={2500} suffix="+" />
               </h3>
-              <p className="text-gray-600">Clients satisfaits chaque mois</p>
+              <p className="text-gray-600">Clients satisfaits par mois</p>
             </div>
           </div>
         </div>

@@ -219,6 +219,66 @@ export default function StructuredData() {
         },
       ],
     },
+    // Breadcrumb pour la navigation
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Accueil",
+          item: "https://taxi-nice-06.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://taxi-nice-06.com/services",
+        },
+      ],
+    },
+    // Données structurées TaxiService pour le référencement local
+    {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "@id": "https://taxi-nice-06.com/#taxiservice",
+      name: "Taxi Nice Côte d'Azur",
+      description: "Service de taxi premium 24/7 à Nice et sur la Côte d'Azur",
+      provider: {
+        "@id": "https://taxi-nice-06.com/#organization",
+      },
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Nice",
+        },
+        {
+          "@type": "City",
+          name: "Cannes",
+        },
+        {
+          "@type": "City",
+          name: "Monaco",
+        },
+        {
+          "@type": "City",
+          name: "Antibes",
+        },
+      ],
+      availableChannel: [
+        {
+          "@type": "ServiceChannel",
+          serviceUrl: "https://taxi-nice-06.com/reservation",
+          serviceType: "OnlineReservation",
+        },
+        {
+          "@type": "ServiceChannel",
+          telephone: "+33 6 51 68 36 87",
+          serviceType: "Phone",
+        },
+      ],
+    },
   ];
 
   return (

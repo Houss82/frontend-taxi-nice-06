@@ -3,7 +3,6 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   CheckCircle,
   Clock,
@@ -16,49 +15,38 @@ import {
 import Image from "next/image";
 
 export default function TransfertsAeroportPage() {
-  const { t, isHydrated } = useLanguage();
-
-  // Attendre que les traductions soient chargées
-  if (!isHydrated) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-gray-600">Chargement...</p>
-        </div>
-      </div>
-    );
-  }
   const features = [
     {
       icon: Plane,
-      title: t("services.airport.features.allDistances.title"),
-      description: t("services.airport.features.allDistances.description"),
+      title: "Toutes Distances",
+      description:
+        "De Nice Centre à Saint-Tropez, nous couvrons toute la Côte d'Azur",
     },
     {
       icon: Clock,
-      title: t("services.airport.features.flightTracking.title"),
-      description: t("services.airport.features.flightTracking.description"),
+      title: "Suivi de Vol",
+      description:
+        "Nous adaptons nos horaires en fonction des retards de votre vol",
     },
     {
       icon: MapPin,
-      title: t("services.airport.features.personalWelcome.title"),
-      description: t("services.airport.features.personalWelcome.description"),
+      title: "Accueil Personnalisé",
+      description: "Votre nom sur un panneau de bienvenue à votre arrivée",
     },
     {
       icon: CheckCircle,
-      title: t("services.airport.features.punctuality.title"),
-      description: t("services.airport.features.punctuality.description"),
+      title: "Ponctualité Garantie",
+      description: "Chauffeur professionnel au rendez-vous à l'heure",
     },
     {
       icon: Users,
-      title: t("services.airport.features.service247.title"),
-      description: t("services.airport.features.service247.description"),
+      title: "Service 24/7",
+      description: "Disponible jour et nuit, 7j/7 pour tous vos vols",
     },
     {
       icon: Shield,
-      title: t("services.airport.features.guaranteedSafety.title"),
-      description: t("services.airport.features.guaranteedSafety.description"),
+      title: "Sécurité Garantie",
+      description: "Véhicules récents et assurances complètes",
     },
   ];
 
@@ -126,26 +114,28 @@ export default function TransfertsAeroportPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  {t("services.airport.title")}
+                  Transferts Aéroport
                   <span className="block text-cyan-600">
-                    {t("services.airport.allDistances")}
+                    Nice & Côte d'Azur
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  {t("services.airport.description")}
+                  Service de transfert professionnel depuis et vers l'aéroport
+                  Nice Côte d'Azur. Chauffeur avec panneau nominatif, suivi de
+                  vol et service 24/7.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
                     className="px-8 py-4 bg-cyan-600 text-white rounded-xl font-semibold hover:bg-cyan-700 transition-colors duration-300 text-center no-underline"
                   >
-                    {t("services.airport.cta.bookNow")}
+                    Réserver maintenant
                   </a>
                   <a
                     href="/tarifs"
                     className="px-8 py-4 border-2 border-cyan-600 text-cyan-600 rounded-xl font-semibold hover:bg-cyan-600 hover:text-white transition-colors duration-300 text-center no-underline"
                   >
-                    {t("services.airport.cta.viewPrices")}
+                    Voir les tarifs
                   </a>
                 </div>
               </div>
@@ -186,9 +176,9 @@ export default function TransfertsAeroportPage() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-6 shadow-lg border border-cyan-100 hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-md">
                     <feature.icon className="w-6 h-6 text-cyan-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -217,7 +207,7 @@ export default function TransfertsAeroportPage() {
               {destinations.map((destination, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gradient-to-br from-white to-cyan-50 rounded-xl p-6 shadow-lg border border-cyan-100 hover:shadow-xl transition-shadow duration-300"
                 >
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     {destination.name}
@@ -239,8 +229,7 @@ export default function TransfertsAeroportPage() {
                     href="/reservation"
                     className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 transition-colors duration-300"
                   >
-                    {t("services.airport.cta.bookToDestination")}{" "}
-                    {destination.name} →
+                    Réserver {destination.name} →
                   </a>
                 </div>
               ))}
@@ -253,51 +242,49 @@ export default function TransfertsAeroportPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t("services.airport.howItWorks.title")}
+                Comment ça fonctionne ?
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                {t("services.airport.howItWorks.subtitle")}
+                Un processus simple et efficace pour vos transferts aéroport
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                   <Phone className="w-8 h-8 text-cyan-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {t("services.airport.howItWorks.steps.reservation.title")}
+                  Réservation
                 </h3>
                 <p className="text-gray-600">
-                  {t(
-                    "services.airport.howItWorks.steps.reservation.description"
-                  )}
+                  Réservez en ligne ou par téléphone en quelques minutes
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                   <Plane className="w-8 h-8 text-cyan-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {t("services.airport.howItWorks.steps.flightTracking.title")}
+                  Suivi de Vol
                 </h3>
                 <p className="text-gray-600">
-                  {t(
-                    "services.airport.howItWorks.steps.flightTracking.description"
-                  )}
+                  Nous suivons votre vol et adaptons nos horaires en cas de
+                  retard
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                   <CheckCircle className="w-8 h-8 text-cyan-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {t("services.airport.howItWorks.steps.welcome.title")}
+                  Accueil et Transfert
                 </h3>
                 <p className="text-gray-600">
-                  {t("services.airport.howItWorks.steps.welcome.description")}
+                  Accueil avec panneau nominatif et transfert vers votre
+                  destination
                 </p>
               </div>
             </div>
@@ -309,23 +296,24 @@ export default function TransfertsAeroportPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                {t("services.airport.ctaSection.title")}
+                Prêt pour votre transfert ?
               </h2>
               <p className="text-xl text-cyan-100 mb-8">
-                {t("services.airport.ctaSection.description")}
+                Réservez dès maintenant votre transfert aéroport et voyagez
+                l'esprit tranquille
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reservation"
                   className="px-8 py-4 bg-white text-cyan-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
                 >
-                  {t("services.airport.ctaSection.button")}
+                  Réserver maintenant
                 </a>
                 <a
                   href="/contact"
                   className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-cyan-600 transition-colors duration-300 no-underline"
                 >
-                  {t("services.airport.cta.contactUs")}
+                  Nous contacter
                 </a>
               </div>
               <div className="mt-8 text-cyan-100">

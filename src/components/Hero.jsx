@@ -1,12 +1,9 @@
 "use client";
 
 import { HeroImage } from "@/components/OptimizedImage.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const { t } = useLanguage();
-
   return (
     <section className="hero-section">
       <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] min-h-[400px] sm:min-h-[500px] md:min-h-[650px] overflow-hidden sm:-mt-16">
@@ -28,7 +25,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            {t("hero.title")}
+            TAXI NICE CÔTE D'AZUR
           </motion.h1>
 
           <motion.h2
@@ -37,7 +34,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            {t("hero.subtitle")}
+            TRANSFERTS & RÉSERVATIONS
           </motion.h2>
 
           <motion.p
@@ -46,7 +43,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           >
-            {t("hero.description")}
+            Service de taxi officiel à Nice et sur toute la côte d'azur
           </motion.p>
 
           <motion.a
@@ -62,7 +59,7 @@ export default function Hero() {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            {t("hero.bookTaxi")}
+            Réserver un Taxi
           </motion.a>
         </div>
       </div>

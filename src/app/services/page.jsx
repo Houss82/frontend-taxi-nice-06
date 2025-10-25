@@ -1,8 +1,8 @@
 "use client";
 
+import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ChevronLeft,
@@ -18,7 +18,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function ServicesPage() {
-  const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
@@ -745,6 +744,7 @@ export default function ServicesPage() {
           </motion.div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

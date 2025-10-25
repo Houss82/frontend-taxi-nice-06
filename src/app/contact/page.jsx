@@ -4,7 +4,6 @@ import Footer from "@/components/Footer.jsx";
 import GoogleMap from "@/components/GoogleMap.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { formspreeService } from "@/lib/formspree.jsx";
 import { motion } from "framer-motion";
 import {
@@ -22,7 +21,28 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function ContactPage() {
-  const { t } = useLanguage();
+  // Données en français
+  const contactTitle = "Contactez-Nous";
+  const contactSubtitle = "Une équipe à votre écoute 24h/24";
+  const contactDescription =
+    "Notre équipe est disponible pour répondre à toutes vos questions et vous aider à organiser votre transport sur la Côte d'Azur.";
+  const coordinatesTitle = "Nos Coordonnées";
+  const coordinatesDesc =
+    "Plusieurs moyens de nous contacter, choisissez celui qui vous convient le mieux.";
+  const formTitle = "Envoyez-Nous un Message";
+  const formDescription =
+    "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.";
+  const formSuccess = "Message Envoyé !";
+  const formSuccessMessage =
+    "Nous avons bien reçu votre message et vous répondrons dans les plus brefs délais.";
+  const formNewMessage = "Nouveau message";
+  const mapTitle = "Où Nous Trouver";
+  const mapDescription =
+    "Découvrez notre localisation sur la Côte d'Azur et obtenez des indications pour nous rejoindre.";
+  const ctaTitle = "Besoin d'un Transport Immédiat ?";
+  const ctaDescription =
+    "Contactez-nous maintenant pour réserver votre taxi et profitez d'un service professionnel.";
+  const ctaEmailButton = "Envoyer un Email";
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     nom: "",
@@ -74,45 +94,43 @@ export default function ContactPage() {
   const contactInfo = [
     {
       icon: Phone,
-      title: t("contact.phone.title"),
-      value: t("contact.phone.value"),
-      description: t("contact.phone.description"),
+      title: "Téléphone",
+      value: "06 51 68 36 87",
+      description: "Appelez-nous maintenant",
       color: "from-blue-500 to-blue-700",
     },
     {
       icon: Mail,
-      title: t("contact.email.title"),
-      value: t("contact.email.value"),
-      description: t("contact.email.description"),
+      title: "Email",
+      value: "contact@taxi-nice.com",
+      description: "Envoyez-nous un email",
       color: "from-green-500 to-green-700",
     },
     {
       icon: MapPin,
-      title: t("contact.location.title"),
-      value: t("contact.location.value"),
-      description: t("contact.location.description"),
+      title: "Adresse",
+      value: "Nice, Côte d'Azur",
+      description: "Service sur toute la région",
       color: "from-purple-500 to-purple-700",
       link: "https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8",
     },
     {
       icon: Clock,
-      title: t("contact.hours.title"),
-      value: t("contact.hours.value"),
-      description: t("contact.hours.description"),
+      title: "Horaires",
+      value: "24/7",
+      description: "Disponible jour et nuit",
       color: "from-orange-500 to-orange-700",
     },
   ];
 
-  const services = Array.isArray(t("contact.form.subjects"))
-    ? t("contact.form.subjects")
-    : [
-        "Réservation de taxi",
-        "Demande de devis",
-        "Question générale",
-        "Réclamation",
-        "Partenariat",
-        "Autre",
-      ];
+  const services = [
+    "Réservation de taxi",
+    "Demande de devis",
+    "Question générale",
+    "Réclamation",
+    "Partenariat",
+    "Autre",
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -146,14 +164,14 @@ export default function ContactPage() {
             className="text-white max-w-4xl"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              {t("contact.title")}
+              {contactTitle}
               <span className="block text-3xl md:text-4xl font-light mt-2">
-                {t("contact.subtitle")}
+                {contactSubtitle}
               </span>
             </h1>
             <div className="w-24 h-1 bg-white rounded-full mb-8"></div>
             <p className="text-xl md:text-2xl leading-relaxed">
-              {t("contact.description")}
+              {contactDescription}
             </p>
           </motion.div>
         </div>
@@ -169,10 +187,10 @@ export default function ContactPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {t("contact.coordinates")}
+              {coordinatesTitle}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t("contact.coordinatesDesc")}
+              {coordinatesDesc}
             </p>
           </motion.div>
 
@@ -236,10 +254,10 @@ export default function ContactPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {t("contact.form.title")}
+              {formTitle}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t("contact.form.description")}
+              {formDescription}
             </p>
           </motion.div>
 
@@ -253,16 +271,14 @@ export default function ContactPage() {
                 <CheckCircle className="w-10 h-10 text-green-600" />
               </div>
               <h3 className="text-3xl font-bold text-green-600 mb-4">
-                {t("contact.form.success")}
+                {formSuccess}
               </h3>
-              <p className="text-lg text-gray-600 mb-6">
-                {t("contact.form.successMessage")}
-              </p>
+              <p className="text-lg text-gray-600 mb-6">{formSuccessMessage}</p>
               <button
                 onClick={() => setIsSubmitted(false)}
                 className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primaryDark transition-colors"
               >
-                {t("contact.form.newMessage")}
+                {formNewMessage}
               </button>
             </motion.div>
           ) : (
@@ -276,7 +292,7 @@ export default function ContactPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">
-                      {t("contact.form.name")} *
+                      Nom *
                     </label>
                     <div className="relative">
                       <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -287,14 +303,14 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                        placeholder={t("placeholders.name")}
+                        placeholder="Votre nom"
                       />
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">
-                      {t("contact.form.email")} *
+                      Email *
                     </label>
                     <div className="relative">
                       <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -305,7 +321,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                        placeholder={t("placeholders.email")}
+                        placeholder="votre.email@exemple.com"
                       />
                     </div>
                   </div>
@@ -314,7 +330,7 @@ export default function ContactPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">
-                      {t("contact.form.phone")} *
+                      Téléphone *
                     </label>
                     <div className="relative">
                       <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -325,14 +341,14 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                        placeholder={t("placeholders.phone")}
+                        placeholder="06 12 34 56 78"
                       />
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">
-                      {t("contact.form.subject")}
+                      Sujet
                     </label>
                     <select
                       name="service"
@@ -340,9 +356,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                     >
-                      <option value="">
-                        {t("contact.form.subjectPlaceholder")}
-                      </option>
+                      <option value="">Sélectionnez un sujet</option>
                       {services.map((service, index) => (
                         <option key={index} value={service}>
                           {service}
@@ -355,7 +369,7 @@ export default function ContactPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">
-                      {t("contact.form.date")}
+                      Date
                     </label>
                     <div className="relative">
                       <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -371,7 +385,7 @@ export default function ContactPage() {
 
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">
-                      {t("contact.form.time")}
+                      Heure
                     </label>
                     <div className="relative">
                       <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -388,7 +402,7 @@ export default function ContactPage() {
 
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
-                    {t("contact.form.message")} *
+                    Message *
                   </label>
                   <div className="relative">
                     <MessageSquare className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
@@ -399,7 +413,7 @@ export default function ContactPage() {
                       required
                       rows={6}
                       className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none"
-                      placeholder={t("contact.form.messagePlaceholder")}
+                      placeholder="Votre message..."
                     />
                   </div>
                 </div>
@@ -411,7 +425,7 @@ export default function ContactPage() {
                   className="w-full py-4 bg-gradient-to-r from-primary to-primaryDark text-white rounded-xl font-bold text-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center"
                 >
                   <Send className="w-5 h-5 mr-2" />
-                  {t("contact.form.submit")}
+                  Envoyer le message
                 </motion.button>
               </form>
             </motion.div>
@@ -429,10 +443,10 @@ export default function ContactPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {t("contact.map.title")}
+              {mapTitle}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t("contact.map.description")}
+              {mapDescription}
             </p>
           </motion.div>
 
@@ -451,7 +465,7 @@ export default function ContactPage() {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primaryDark transition-colors duration-300 font-semibold"
               >
                 <MapPin className="w-5 h-5" />
-                {t("contact.map.googleBusiness")}
+                Voir sur Google Maps
               </a>
             </div>
           </motion.div>
@@ -467,27 +481,33 @@ export default function ContactPage() {
                 <MapPin className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                {t("contact.map.zone")}
+                Zone d'Intervention
               </h3>
-              <p className="text-gray-600">{t("contact.map.zoneDesc")}</p>
+              <p className="text-gray-600">
+                Nice, Cannes, Monaco et toute la Côte d'Azur
+              </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                {t("contact.map.available")}
+                Disponibilité
               </h3>
-              <p className="text-gray-600">{t("contact.map.availableDesc")}</p>
+              <p className="text-gray-600">
+                Service disponible 24 heures sur 24 et 7 jours sur 7
+              </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-8 h-8 text-purple-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                {t("contact.map.booking")}
+                Réservation
               </h3>
-              <p className="text-gray-600">{t("contact.map.bookingDesc")}</p>
+              <p className="text-gray-600">
+                Réservation en ligne ou par téléphone
+              </p>
             </div>
           </motion.div>
         </div>
@@ -502,11 +522,9 @@ export default function ContactPage() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              {t("contact.cta.title")}
+              {ctaTitle}
             </h2>
-            <p className="text-xl text-white/90 mb-8">
-              {t("contact.cta.description")}
-            </p>
+            <p className="text-xl text-white/90 mb-8">{ctaDescription}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -522,7 +540,7 @@ export default function ContactPage() {
                 className="px-8 py-4 border-2 border-white text-white rounded-xl font-bold hover:bg-white hover:text-primary transition-all duration-300 flex items-center justify-center"
               >
                 <Mail className="w-5 h-5 mr-2" />
-                {t("contact.cta.emailButton")}
+                {ctaEmailButton}
               </motion.button>
             </div>
           </motion.div>

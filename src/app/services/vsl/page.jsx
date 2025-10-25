@@ -3,7 +3,6 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   ArrowRight,
   Calendar,
@@ -21,20 +20,6 @@ import {
 import Image from "next/image";
 
 export default function VSLPage() {
-  const { t, isHydrated } = useLanguage();
-
-  // Attendre que les traductions soient chargées
-  if (!isHydrated) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-gray-600">Chargement...</p>
-        </div>
-      </div>
-    );
-  }
-
   const breadcrumbItems = [
     { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
@@ -44,75 +29,79 @@ export default function VSLPage() {
   const features = [
     {
       icon: Heart,
-      title: t("vsl.features.medicalTransport.title"),
-      description: t("vsl.features.medicalTransport.description"),
+      title: "Transport Médicalisé",
+      description: "Véhicules sanitaires agréés pour le transport médicalisé",
       color: "from-pink-500 to-pink-600",
     },
     {
       icon: Shield,
-      title: t("vsl.features.trainedDrivers.title"),
-      description: t("vsl.features.trainedDrivers.description"),
+      title: "Chauffeurs Formés",
+      description:
+        "Chauffeurs spécialement formés à la manipulation des personnes à mobilité réduite",
       color: "from-blue-500 to-blue-600",
     },
     {
       icon: Users,
-      title: t("vsl.features.accompaniment.title"),
-      description: t("vsl.features.accompaniment.description"),
+      title: "Accompagnement",
+      description:
+        "Possibilité d'être accompagné d'un proche ou d'une aide-soignante",
       color: "from-green-500 to-green-600",
     },
     {
       icon: Clock,
-      title: t("vsl.features.availability247.title"),
-      description: t("vsl.features.availability247.description"),
+      title: "Disponibilité 24/7",
+      description: "Service disponible en urgence 24h/24 et 7j/7",
       color: "from-purple-500 to-purple-600",
     },
   ];
 
   const services = [
     {
-      title: t("vsl.services.medicalAppointments.title"),
-      description: t("vsl.services.medicalAppointments.description"),
+      title: "Rendez-vous Médicaux",
+      description: "Transport pour consultations, examens et soins médicaux",
       icon: Stethoscope,
       features: [
-        t("vsl.services.medicalAppointments.features.0"),
-        t("vsl.services.medicalAppointments.features.1"),
-        t("vsl.services.medicalAppointments.features.2"),
+        "Ponctualité garantie pour vos rendez-vous",
+        "Transport sécurisé et confortable",
+        "Véhicules équipés pour fauteuils roulants",
       ],
       color: "bg-blue-50 border-blue-200",
       iconColor: "text-blue-600",
     },
     {
-      title: t("vsl.services.convalescence.title"),
-      description: t("vsl.services.convalescence.description"),
+      title: "Convalescence",
+      description:
+        "Transport après hospitalisation ou intervention chirurgicale",
       icon: Car,
       features: [
-        t("vsl.services.convalescence.features.0"),
-        t("vsl.services.convalescence.features.1"),
-        t("vsl.services.convalescence.features.2"),
+        "Transfert sécurisé depuis l'hôpital",
+        "Prise en charge à domicile",
+        "Véhicules adaptés pour le confort",
       ],
       color: "bg-green-50 border-green-200",
       iconColor: "text-green-600",
     },
     {
-      title: t("vsl.services.personalTrips.title"),
-      description: t("vsl.services.personalTrips.description"),
+      title: "Déplacements Personnels",
+      description: "Transport pour vos sorties et déplacements du quotidien",
       icon: Users,
       features: [
-        t("vsl.services.personalTrips.features.0"),
-        t("vsl.services.personalTrips.features.1"),
-        t("vsl.services.personalTrips.features.2"),
+        "Sorties loisirs et culturelles",
+        "Visites familiales",
+        "Courses et démarches administratives",
       ],
       color: "bg-purple-50 border-purple-200",
       iconColor: "text-purple-600",
     },
     {
-      title: t("vsl.services.specialEvents.title"),
-      description: t("vsl.services.specialEvents.description"),
+      title: "Événements Spéciaux",
+      description:
+        "Transport pour mariages, cérémonies et événements familiaux",
       icon: Calendar,
       features: [
-        t("vsl.services.specialEvents.features.0"),
-        t("vsl.services.specialEvents.features.1"),
-        t("vsl.services.specialEvents.features.2"),
+        "Transport adapté aux personnes à mobilité réduite",
+        "Prise en charge de A à Z",
+        "Service personnalisé et discret",
       ],
       color: "bg-pink-50 border-pink-200",
       iconColor: "text-pink-600",
@@ -122,35 +111,35 @@ export default function VSLPage() {
   const processSteps = [
     {
       step: "01",
-      title: t("vsl.process.step1.title"),
-      description: t("vsl.process.step1.description"),
+      title: "Réservation",
+      description: "Appelez-nous pour réserver votre transport VSL",
       icon: Phone,
     },
     {
       step: "02",
-      title: t("vsl.process.step2.title"),
-      description: t("vsl.process.step2.description"),
+      title: "Validation",
+      description: "Nous validons votre demande et préparons votre dossier",
       icon: FileText,
     },
     {
       step: "03",
-      title: t("vsl.process.step3.title"),
-      description: t("vsl.process.step3.description"),
+      title: "Confirmation",
+      description: "Vous recevez une confirmation avec les détails du trajet",
       icon: CheckCircle,
     },
     {
       step: "04",
-      title: t("vsl.process.step4.title"),
-      description: t("vsl.process.step4.description"),
+      title: "Transport",
+      description: "Notre chauffeur vous prend en charge à l'heure prévue",
       icon: Car,
     },
   ];
 
   const requirements = [
-    t("vsl.requirements.items.0"),
-    t("vsl.requirements.items.1"),
-    t("vsl.requirements.items.2"),
-    t("vsl.requirements.items.3"),
+    "Prescription médicale si transport conventionné",
+    "Carte d'identité ou pièce d'identité",
+    "Renseignements médicaux si nécessaire",
+    "Respect des horaires de rendez-vous",
   ];
 
   return (
@@ -187,10 +176,10 @@ export default function VSLPage() {
                 </div>
                 <div>
                   <h1 className="text-6xl lg:text-8xl font-bold text-white mb-2">
-                    {t("vsl.title")}
+                    VSL
                   </h1>
                   <p className="text-2xl lg:text-3xl text-pink-300 font-light">
-                    {t("vsl.subtitle")}
+                    Transport Médicalisé
                   </p>
                 </div>
               </div>
@@ -198,7 +187,9 @@ export default function VSLPage() {
               <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 rounded-full mb-8"></div>
 
               <p className="text-xl lg:text-2xl text-white/90 leading-relaxed mb-10 max-w-3xl">
-                {t("vsl.description")}
+                Service de transport médicalisé pour personnes à mobilité
+                réduite. Véhicules sanitaires agréés et chauffeurs formés pour
+                votre confort et sécurité.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6">
@@ -207,13 +198,13 @@ export default function VSLPage() {
                   className="px-10 py-5 bg-pink-500 hover:bg-pink-600 text-white rounded-2xl font-bold text-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl"
                 >
                   <Phone className="w-6 h-6 mr-3" />
-                  {t("vsl.cta.bookVSL")}
+                  Réserver un VSL
                 </a>
                 <a
                   href="#services"
                   className="px-10 py-5 border-2 border-white text-white rounded-2xl font-bold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center"
                 >
-                  {t("vsl.cta.learnMore")}
+                  En savoir plus
                   <ArrowRight className="w-6 h-6 ml-3" />
                 </a>
               </div>
@@ -227,10 +218,11 @@ export default function VSLPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
-              {t("vsl.features.title")}
+              Nos Garanties
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              {t("vsl.features.subtitle")}
+              Un service de transport médicalisé de qualité, adapté à vos
+              besoins
             </p>
           </div>
 
@@ -265,10 +257,10 @@ export default function VSLPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
-              {t("vsl.services.title")}
+              Nos Services
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              {t("vsl.services.subtitle")}
+              Transport médicalisé adapté à tous vos besoins
             </p>
           </div>
 
@@ -318,10 +310,10 @@ export default function VSLPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
-              {t("vsl.process.title")}
+              Comment ça fonctionne ?
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              {t("vsl.process.subtitle")}
+              Un processus simple en 4 étapes pour vos transports médicaux
             </p>
           </div>
 
@@ -354,10 +346,10 @@ export default function VSLPage() {
           <div className="bg-white rounded-3xl p-12 shadow-2xl">
             <div className="text-center mb-12">
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                {t("vsl.requirements.title")}
+                Documents Requis
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                {t("vsl.requirements.subtitle")}
+                Les documents nécessaires pour bénéficier du transport VSL
               </p>
             </div>
 
@@ -384,10 +376,10 @@ export default function VSLPage() {
       <section className="py-24 bg-gradient-to-r from-pink-500 via-pink-600 to-purple-600">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-5xl lg:text-6xl font-bold text-white mb-8">
-            {t("vsl.ctaSection.title")}
+            Besoin d'un Transport VSL ?
           </h2>
           <p className="text-xl lg:text-2xl text-white/90 mb-12 leading-relaxed">
-            {t("vsl.ctaSection.description")}
+            Contactez-nous pour réserver votre transport médicalisé
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -396,14 +388,14 @@ export default function VSLPage() {
               className="px-12 py-6 bg-white text-pink-600 rounded-2xl font-bold text-xl hover:bg-gray-100 hover:shadow-xl transition-all duration-300 flex items-center justify-center"
             >
               <Phone className="w-6 h-6 mr-3" />
-              {t("vsl.cta.callNow")}
+              Appeler maintenant
             </a>
             <a
               href="mailto:taxiniceca@gmail.com"
               className="px-12 py-6 border-2 border-white text-white rounded-2xl font-bold text-xl hover:bg-white hover:text-pink-600 transition-all duration-300 flex items-center justify-center"
             >
               <Mail className="w-6 h-6 mr-3" />
-              {t("vsl.cta.requestQuote")}
+              Demander un devis
             </a>
           </div>
 

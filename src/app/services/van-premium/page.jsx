@@ -3,85 +3,71 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { Car, Clock, Shield, Thermometer, Users, Wifi } from "lucide-react";
 import Image from "next/image";
 
 export default function VanPremiumPage() {
-  const { t, isHydrated } = useLanguage();
-
-  // Attendre que les traductions soient chargées
-  if (!isHydrated) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-gray-600">Chargement...</p>
-        </div>
-      </div>
-    );
-  }
-
   const features = [
     {
       icon: Users,
-      title: t("vanPremium.features.upTo8Passengers.title"),
-      description: t("vanPremium.features.upTo8Passengers.description"),
+      title: "Jusqu'à 8 Passagers",
+      description: "Véhicule spacieux idéal pour les familles et les groupes",
     },
     {
       icon: Car,
-      title: t("vanPremium.features.mercedesRecent.title"),
-      description: t("vanPremium.features.mercedesRecent.description"),
+      title: "Mercedes Récent",
+      description: "Van Mercedes haut de gamme de moins de 3 ans",
     },
     {
       icon: Thermometer,
-      title: t("vanPremium.features.airConditioning.title"),
-      description: t("vanPremium.features.airConditioning.description"),
+      title: "Climatisation",
+      description: "Climatisation multi-zones pour le confort de tous",
     },
     {
       icon: Wifi,
-      title: t("vanPremium.features.freeWifi.title"),
-      description: t("vanPremium.features.freeWifi.description"),
+      title: "WiFi Gratuit",
+      description: "Connexion WiFi disponible pour vos trajets",
     },
     {
       icon: Shield,
-      title: t("vanPremium.features.guaranteedSafety.title"),
-      description: t("vanPremium.features.guaranteedSafety.description"),
+      title: "Sécurité Garantie",
+      description:
+        "Véhicule moderne équipé des dernières technologies de sécurité",
     },
     {
       icon: Clock,
-      title: t("vanPremium.features.available247.title"),
-      description: t("vanPremium.features.available247.description"),
+      title: "Disponible 24/7",
+      description: "Service disponible jour et nuit, 7j/7",
     },
   ];
 
   const useCases = [
     {
-      title: t("vanPremium.useCases.airportTransfers.title"),
-      description: t("vanPremium.useCases.airportTransfers.description"),
-      price: t("vanPremium.useCases.airportTransfers.price"),
+      title: "Transferts Aéroport",
+      description: "Transport de groupe vers l'aéroport Nice Côte d'Azur",
+      price: "À partir de 100€",
     },
     {
-      title: t("vanPremium.useCases.rivieraExcursions.title"),
-      description: t("vanPremium.useCases.rivieraExcursions.description"),
-      price: t("vanPremium.useCases.rivieraExcursions.price"),
+      title: "Excursions Côte d'Azur",
+      description: "Découverte de Monaco, Cannes, Saint-Tropez en groupe",
+      price: "À partir de 150€",
     },
     {
-      title: t("vanPremium.useCases.eventsWeddings.title"),
-      description: t("vanPremium.useCases.eventsWeddings.description"),
-      price: t("vanPremium.useCases.eventsWeddings.price"),
+      title: "Événements & Mariages",
+      description: "Transport VIP pour vos événements spéciaux",
+      price: "À partir de 180€",
     },
     {
-      title: t("vanPremium.useCases.corporateOutings.title"),
-      description: t("vanPremium.useCases.corporateOutings.description"),
-      price: t("vanPremium.useCases.corporateOutings.price"),
+      title: "Sorties d'Entreprise",
+      description: "Transport professionnel pour vos équipes",
+      price: "Sur devis",
     },
   ];
 
   const breadcrumbItems = [
     { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
-    { name: t("vanPremium.title"), url: "/services/van-premium" },
+    { name: "Van Premium", url: "/services/van-premium" },
   ];
 
   return (
@@ -100,26 +86,26 @@ export default function VanPremiumPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  {t("vanPremium.title")}
-                  <span className="block text-blue-600">
-                    {t("vanPremium.subtitle")}
-                  </span>
+                  Van Premium
+                  <span className="block text-blue-600">Mercedes-Benz</span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  {t("vanPremium.description")}
+                  Van Mercedes haut de gamme pouvant accueillir jusqu'à 8
+                  passagers. Idéal pour les groupes, familles nombreuses et
+                  événements. Confort et espace pour tous vos trajets.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
                     className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300 text-center no-underline"
                   >
-                    {t("vanPremium.cta.bookNow")}
+                    Réserver maintenant
                   </a>
                   <a
                     href="/tarifs"
                     className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300 text-center no-underline"
                   >
-                    {t("vanPremium.cta.viewPrices")}
+                    Voir les tarifs
                   </a>
                 </div>
               </div>
@@ -136,9 +122,7 @@ export default function VanPremiumPage() {
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">
                     <div className="text-2xl font-bold">8</div>
-                    <div className="text-sm">
-                      {t("vanPremium.badge.maxPassengers")}
-                    </div>
+                    <div className="text-sm">Passagers</div>
                   </div>
                 </div>
               </div>
@@ -151,10 +135,10 @@ export default function VanPremiumPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t("vanPremium.features.title")}
+                Caractéristiques
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                {t("vanPremium.features.subtitle")}
+                Un véhicule premium au service de vos besoins de transport
               </p>
             </div>
 
@@ -162,9 +146,9 @@ export default function VanPremiumPage() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-md">
                     <feature.icon className="w-6 h-6 text-blue-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -182,10 +166,10 @@ export default function VanPremiumPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t("vanPremium.useCases.title")}
+                Cas d'Utilisation
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                {t("vanPremium.useCases.subtitle")}
+                Idéal pour tous vos besoins de transport en groupe
               </p>
             </div>
 
@@ -193,7 +177,7 @@ export default function VanPremiumPage() {
               {useCases.map((useCase, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gradient-to-br from-white to-blue-50 rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold text-gray-900">
@@ -208,7 +192,7 @@ export default function VanPremiumPage() {
                     href="/reservation"
                     className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300"
                   >
-                    {t("vanPremium.cta.book")} →
+                    Réserver →
                   </a>
                 </div>
               ))}
@@ -221,23 +205,24 @@ export default function VanPremiumPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                {t("vanPremium.ctaSection.title")}
+                Voyagez en Groupe
               </h2>
               <p className="text-xl text-blue-100 mb-8">
-                {t("vanPremium.ctaSection.description")}
+                Réservez votre van premium et profitez d'un transport
+                confortable pour 8 personnes
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reservation"
                   className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
                 >
-                  {t("vanPremium.ctaSection.bookNow")}
+                  Réserver maintenant
                 </a>
                 <a
                   href="/contact"
                   className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300 no-underline"
                 >
-                  {t("vanPremium.ctaSection.contactUs")}
+                  Nous contacter
                 </a>
               </div>
               <div className="mt-8 text-blue-100">

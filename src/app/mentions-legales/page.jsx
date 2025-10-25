@@ -2,13 +2,10 @@
 
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { motion } from "framer-motion";
 import { FileText, Mail, MapPin, Phone, Shield } from "lucide-react";
 
 export default function MentionsLegalesPage() {
-  const { t } = useLanguage();
-
   const breadcrumbItems = [
     {
       name: "Mentions Légales",

@@ -3,8 +3,6 @@
 import Navbar from "@/components/Navbar.jsx";
 import SEOImage from "@/components/SEOImage.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
-import { motion } from "framer-motion";
 import {
   ArrowRight,
   Camera,
@@ -18,8 +16,6 @@ import {
 import Image from "next/image";
 
 export default function ExcursionsPage() {
-  const { t } = useLanguage();
-
   const breadcrumbItems = [
     { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
@@ -187,12 +183,7 @@ export default function ExcursionsPage() {
         />
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-4 h-full flex items-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-white max-w-4xl"
-          >
+          <div className="text-white max-w-4xl">
             <div className="flex items-center mb-6">
               <MapPin className="w-12 h-12 mr-4 text-blue-500" />
               <h1 className="text-5xl md:text-7xl font-bold">
@@ -209,53 +200,42 @@ export default function ExcursionsPage() {
               excursions sur mesure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl font-bold text-lg transition-all duration-300 flex items-center justify-center"
+              <a
+                href="/reservation"
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl font-bold text-lg transition-all duration-300 flex items-center justify-center hover:shadow-lg"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Réserver une excursion
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              </a>
+              <a
+                href="#destinations"
                 className="px-8 py-4 border-2 border-white text-white rounded-xl font-bold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center"
               >
                 Voir les destinations
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </motion.button>
+              </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Pourquoi Choisir Nos Excursions ?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Des excursions personnalisées avec un service haut de gamme
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                whileHover={{ y: -10 }}
-                className="text-center p-6 rounded-2xl hover:shadow-lg transition-all duration-300"
+                className="text-center p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl border border-blue-100 hover:shadow-lg transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6">
                   {(() => {
@@ -267,21 +247,16 @@ export default function ExcursionsPage() {
                   {feature.title}
                 </h3>
                 <p className="text-gray-600">{feature.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Destinations Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="destinations" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Nos Destinations
             </h2>
@@ -289,17 +264,13 @@ export default function ExcursionsPage() {
               Découvrez les plus beaux sites de la Côte d'Azur avec nos
               excursions sur mesure
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {destinations.map((destination, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                whileHover={{ y: -10 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
+                className="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-lg overflow-hidden border border-blue-100 hover:shadow-2xl transition-all duration-300"
               >
                 <div className="relative h-48 overflow-hidden">
                   <SEOImage
@@ -344,11 +315,14 @@ export default function ExcursionsPage() {
                       )}
                     </div>
                   </div>
-                  <button className="w-full py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+                  <a
+                    href="/reservation"
+                    className="block w-full py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-center"
+                  >
                     Réserver cette excursion
-                  </button>
+                  </a>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -357,29 +331,20 @@ export default function ExcursionsPage() {
       {/* Packages Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Nos Formules
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Choisissez la formule qui correspond le mieux à vos envies
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {packages.map((pkg, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                whileHover={{ y: -10 }}
-                className={`rounded-2xl p-8 ${
+                className={`rounded-2xl p-8 border border-blue-100 ${
                   index === 1
                     ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-2xl scale-105"
                     : "bg-white shadow-lg"
@@ -464,8 +429,9 @@ export default function ExcursionsPage() {
                   </div>
                 </div>
 
-                <button
-                  className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 ${
+                <a
+                  href="/reservation"
+                  className={`block w-full py-3 rounded-lg font-semibold transition-all duration-300 text-center ${
                     index === 1
                       ? "bg-white text-blue-600 hover:bg-gray-100"
                       : "bg-gradient-to-r from-blue-500 to-blue-700 text-white hover:shadow-lg"
@@ -474,8 +440,8 @@ export default function ExcursionsPage() {
                   {index === 1
                     ? "Formule recommandée"
                     : "Choisir cette formule"}
-                </button>
-              </motion.div>
+                </a>
+              </div>
             ))}
           </div>
         </div>
@@ -484,11 +450,7 @@ export default function ExcursionsPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-black to-gray-800">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Prêt pour l'Aventure ?
             </h2>
@@ -496,24 +458,22 @@ export default function ExcursionsPage() {
               Réservez dès maintenant votre excursion sur mesure en Côte d'Azur
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <a
+                href="tel:0651683687"
                 className="px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:shadow-lg transition-all duration-300 flex items-center justify-center"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 06 51 68 36 87
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              </a>
+              <a
+                href="/contact"
                 className="px-8 py-4 border-2 border-white text-white rounded-xl font-bold hover:bg-white hover:text-blue-600 transition-all duration-300 flex items-center justify-center"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Demander un devis
-              </motion.button>
+              </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

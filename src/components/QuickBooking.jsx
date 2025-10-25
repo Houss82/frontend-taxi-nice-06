@@ -1,7 +1,6 @@
 "use client";
 
 import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { formspreeService } from "@/lib/formspree.jsx";
 import {
   Car,
@@ -15,7 +14,6 @@ import {
 import { useState } from "react";
 
 export default function QuickBooking() {
-  const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -96,10 +94,10 @@ export default function QuickBooking() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">
-            {t("quickBooking.title")}
+            Réservation rapide
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t("quickBooking.subtitle")}
+            Réservez votre taxi en quelques clics
           </p>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
         </div>
@@ -110,7 +108,7 @@ export default function QuickBooking() {
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
               <h3 className="text-2xl font-bold mb-6 text-black flex items-center">
                 <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                {t("quickBooking.whyChoose")}
+                Pourquoi nous choisir ?
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-center space-x-4 p-4 bg-primary/5 rounded-xl">
@@ -119,10 +117,10 @@ export default function QuickBooking() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">
-                      {t("quickBooking.features.service247")}
+                      Service 24/7
                     </h4>
                     <p className="text-sm text-gray-600">
-                      {t("quickBooking.features.service247Desc")}
+                      Disponible 24h/24 et 7j/7
                     </p>
                   </div>
                 </li>
@@ -132,10 +130,10 @@ export default function QuickBooking() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">
-                      {t("quickBooking.features.payment")}
+                      Paiement à bord ou en ligne
                     </h4>
                     <p className="text-sm text-gray-600">
-                      {t("quickBooking.features.paymentDesc")}
+                      Paiement sécurisé en ligne ou à bord
                     </p>
                   </div>
                 </li>
@@ -145,10 +143,10 @@ export default function QuickBooking() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">
-                      {t("quickBooking.features.confirmation")}
+                      Confirmation immédiate
                     </h4>
                     <p className="text-sm text-gray-600">
-                      {t("quickBooking.features.confirmationDesc")}
+                      Confirmation immédiate par SMS
                     </p>
                   </div>
                 </li>
@@ -159,7 +157,7 @@ export default function QuickBooking() {
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
               <h3 className="text-xl font-bold mb-6 text-black flex items-center">
                 <Car className="w-5 h-5 text-primary mr-3" />
-                {t("quickBooking.vehicleSelection.title")}
+                Choisissez votre véhicule
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <label
@@ -181,14 +179,10 @@ export default function QuickBooking() {
                     <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Car className="w-8 h-8 text-primary" />
                     </div>
-                    <h4 className="font-bold text-gray-800">
-                      {t("quickBooking.vehicleSelection.glc.name")}
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      {t("quickBooking.vehicleSelection.glc.capacity")}
-                    </p>
+                    <h4 className="font-bold text-gray-800">Mercedes GLC</h4>
+                    <p className="text-sm text-gray-600">Jusqu'à 4 passagers</p>
                     <p className="text-xs text-primary font-semibold mt-1">
-                      {t("quickBooking.vehicleSelection.glc.type")}
+                      Premium
                     </p>
                   </div>
                 </label>
@@ -212,14 +206,10 @@ export default function QuickBooking() {
                     <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Car className="w-8 h-8 text-primary" />
                     </div>
-                    <h4 className="font-bold text-gray-800">
-                      {t("quickBooking.vehicleSelection.van.name")}
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      {t("quickBooking.vehicleSelection.van.capacity")}
-                    </p>
+                    <h4 className="font-bold text-gray-800">Van Premium</h4>
+                    <p className="text-sm text-gray-600">Jusqu'à 8 passagers</p>
                     <p className="text-xs text-primary font-semibold mt-1">
-                      {t("quickBooking.vehicleSelection.van.type")}
+                      Groupe
                     </p>
                   </div>
                 </label>
@@ -235,16 +225,17 @@ export default function QuickBooking() {
                   <CheckCircle className="w-10 h-10 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-green-600 mb-4">
-                  {t("quickBooking.form.success")}
+                  Demande envoyée !
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  {t("quickBooking.form.successMessage")}
+                  Votre demande de réservation rapide a été envoyée avec succès.
+                  Nous vous contacterons sous peu pour confirmer les détails.
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
                   className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primaryDark transition-colors"
                 >
-                  {t("quickBooking.form.newRequest")}
+                  Nouvelle demande
                 </button>
               </div>
             ) : (
@@ -252,7 +243,7 @@ export default function QuickBooking() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                   <div className="space-y-2">
                     <label className="text-gray-700 font-semibold text-sm">
-                      {t("quickBooking.form.name")} *
+                      Nom complet *
                     </label>
                     <div className="relative">
                       <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -261,7 +252,7 @@ export default function QuickBooking() {
                         name="nom"
                         value={formData.nom}
                         onChange={handleChange}
-                        placeholder={t("quickBooking.form.namePlaceholder")}
+                        placeholder="Votre nom complet"
                         required
                         className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       />
@@ -270,7 +261,7 @@ export default function QuickBooking() {
 
                   <div className="space-y-2">
                     <label className="text-gray-700 font-semibold text-sm">
-                      {t("quickBooking.form.phone")} *
+                      Téléphone *
                     </label>
                     <div className="relative">
                       <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -279,7 +270,7 @@ export default function QuickBooking() {
                         name="telephone"
                         value={formData.telephone}
                         onChange={handleChange}
-                        placeholder={t("quickBooking.form.phonePlaceholder")}
+                        placeholder="06 12 34 56 78"
                         required
                         className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       />
@@ -288,7 +279,7 @@ export default function QuickBooking() {
 
                   <div className="space-y-2 md:col-span-2 lg:col-span-1">
                     <label className="text-gray-700 font-semibold text-sm">
-                      {t("quickBooking.form.email")}
+                      Email
                     </label>
                     <div className="relative">
                       <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -297,7 +288,7 @@ export default function QuickBooking() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder={t("quickBooking.form.emailPlaceholder")}
+                        placeholder="votre@email.com"
                         className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       />
                     </div>
@@ -307,28 +298,26 @@ export default function QuickBooking() {
                 <div className="space-y-4">
                   <div className="space-y-2">
                     <label className="text-gray-700 font-semibold text-sm">
-                      {t("quickBooking.form.departure")} *
+                      Adresse de départ *
                     </label>
                     <AddressAutocomplete
                       name="adresseDepart"
                       value={formData.adresseDepart}
                       onChange={handleChange}
-                      placeholder={t("quickBooking.form.departurePlaceholder")}
+                      placeholder="Ex: 1 Promenade des Anglais, Nice"
                       className=""
                     />
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-gray-700 font-semibold text-sm">
-                      {t("quickBooking.form.destination")} *
+                      Adresse d'arrivée *
                     </label>
                     <AddressAutocomplete
                       name="adresseArrivee"
                       value={formData.adresseArrivee}
                       onChange={handleChange}
-                      placeholder={t(
-                        "quickBooking.form.destinationPlaceholder"
-                      )}
+                      placeholder="Ex: Aéroport Nice Côte d'Azur"
                       className=""
                     />
                   </div>
@@ -336,7 +325,7 @@ export default function QuickBooking() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label className="text-gray-700 font-semibold text-sm">
-                        {t("quickBooking.form.date")}
+                        Date
                       </label>
                       <div className="relative">
                         <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -352,7 +341,7 @@ export default function QuickBooking() {
 
                     <div className="space-y-2">
                       <label className="text-gray-700 font-semibold text-sm">
-                        {t("quickBooking.form.time")}
+                        Heure
                       </label>
                       <div className="relative">
                         <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -380,24 +369,24 @@ export default function QuickBooking() {
                   {isSubmitting ? (
                     <>
                       <Loader2 className="w-5 h-5 animate-spin" />
-                      <span>{t("quickBooking.form.submitting")}</span>
+                      <span>Envoi en cours...</span>
                     </>
                   ) : (
                     <>
                       <CheckCircle className="w-5 h-5" />
-                      <span>{t("quickBooking.form.submit")}</span>
+                      <span>Réserver maintenant</span>
                     </>
                   )}
                 </button>
 
                 <div className="text-center">
                   <p className="text-sm text-gray-500">
-                    {t("quickBooking.form.detailedForm")}{" "}
+                    Besoin d'un formulaire plus détaillé ?{" "}
                     <a
                       href="/reservation"
                       className="text-primary hover:underline"
                     >
-                      {t("quickBooking.form.clickHere")}
+                      Cliquez ici
                     </a>
                   </p>
                 </div>

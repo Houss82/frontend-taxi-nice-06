@@ -3,9 +3,7 @@ import CriticalCSS from "@/components/CriticalCSS.jsx";
 import LazyScripts from "@/components/LazyScripts.jsx";
 import StructuredData from "@/components/StructuredData.jsx";
 import WhatsAppButton from "@/components/WhatsAppButton.jsx";
-import LanguageProviderWrapper from "@/contexts/LanguageProviderWrapper.jsx";
 import { generateSEOMetadata } from "@/lib/seo.js";
-import { loadTranslations } from "@/lib/translations.js";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -25,9 +23,6 @@ export async function generateMetadata() {
 }
 
 export default async function RootLayout({ children }) {
-  // Précharger les traductions françaises côté serveur
-  const initialTranslations = await loadTranslations("fr");
-
   return (
     <html lang="fr">
       <head>
@@ -94,6 +89,10 @@ export default async function RootLayout({ children }) {
             rel="stylesheet"
           />
         </noscript>
+
+        {/* Logo pour les résultats de recherche Google (Site Icon) */}
+        <link rel="icon" type="image/png" sizes="512x512" href="/logo1.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
@@ -101,9 +100,7 @@ export default async function RootLayout({ children }) {
       >
         <CriticalCSS />
         <StructuredData />
-        <LanguageProviderWrapper initialTranslations={initialTranslations}>
-          {children}
-        </LanguageProviderWrapper>
+        {children}
         <AnimatedButtons />
         <WhatsAppButton />
         <LazyScripts />

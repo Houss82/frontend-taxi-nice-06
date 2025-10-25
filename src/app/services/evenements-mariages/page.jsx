@@ -3,7 +3,6 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   Camera,
   CheckCircle,
@@ -16,92 +15,83 @@ import {
 import Image from "next/image";
 
 export default function EvenementsMariagesPage() {
-  const { t, isHydrated } = useLanguage();
-
-  // Attendre que les traductions soient chargées
-  if (!isHydrated) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-gray-600">Chargement...</p>
-        </div>
-      </div>
-    );
-  }
-
   const features = [
     {
       icon: Heart,
-      title: t("events.features.weddings.title"),
-      description: t("events.features.weddings.description"),
+      title: "Mariages",
+      description:
+        "Transport élégant pour votre plus beau jour avec décoration sur mesure",
     },
     {
       icon: Gift,
-      title: t("events.features.birthdays.title"),
-      description: t("events.features.birthdays.description"),
+      title: "Anniversaires",
+      description:
+        "Fêtez vos anniversaires en VIP avec un service haut de gamme",
     },
     {
       icon: Crown,
-      title: t("events.features.vipService.title"),
-      description: t("events.features.vipService.description"),
+      title: "Service VIP",
+      description: "Chauffeur en costume, champagne et fleurs à l'intérieur",
     },
     {
       icon: Camera,
-      title: t("events.features.photoMemories.title"),
-      description: t("events.features.photoMemories.description"),
+      title: "Souvenirs photo",
+      description: "Photos souvenirs professionnelles de votre événement",
     },
     {
       icon: Sparkles,
-      title: t("events.features.vehicleDecoration.title"),
-      description: t("events.features.vehicleDecoration.description"),
+      title: "Décoration véhicule",
+      description:
+        "Décoration personnalisée selon votre thème (fleurs, rubans, etc.)",
     },
     {
       icon: Users,
-      title: t("events.features.vipGroups.title"),
-      description: t("events.features.vipGroups.description"),
+      title: "Groupes VIP",
+      description:
+        "Transport pour groupes jusqu'à 8 personnes en toute élégance",
     },
   ];
 
   const services = [
     {
-      name: t("events.services.classicWedding.name"),
-      description: t("events.services.classicWedding.description"),
-      price: t("events.services.classicWedding.price"),
+      name: "Mariage Classique",
+      description:
+        "Package complet pour votre mariage avec voiture déco et chauffeur en costume",
+      price: "À partir de 280 €",
       features: [
-        t("events.services.classicWedding.features.0"),
-        t("events.services.classicWedding.features.1"),
-        t("events.services.classicWedding.features.2"),
+        "Décoration fleurs & rubans",
+        "Chauffeur en costume",
+        "Photos souvenirs",
       ],
     },
     {
-      name: t("events.services.vipBirthday.name"),
-      description: t("events.services.vipBirthday.description"),
-      price: t("events.services.vipBirthday.price"),
+      name: "Anniversaire VIP",
+      description: "Célébrez votre anniversaire dans un style exclusif",
+      price: "À partir de 150 €",
       features: [
-        t("events.services.vipBirthday.features.0"),
-        t("events.services.vipBirthday.features.1"),
-        t("events.services.vipBirthday.features.2"),
+        "Décoration personnalisée",
+        "Champagne offert",
+        "Service VIP complet",
       ],
     },
     {
-      name: t("events.services.religiousCeremony.name"),
-      description: t("events.services.religiousCeremony.description"),
-      price: t("events.services.religiousCeremony.price"),
+      name: "Cérémonie Religieuse",
+      description: "Transport solennel pour vos cérémonies religieuses",
+      price: "À partir de 180 €",
       features: [
-        t("events.services.religiousCeremony.features.0"),
-        t("events.services.religiousCeremony.features.1"),
-        t("events.services.religiousCeremony.features.2"),
+        "Véhicule élégant",
+        "Chauffeur professionnel",
+        "Service discret",
       ],
     },
     {
-      name: t("events.services.corporateEvent.name"),
-      description: t("events.services.corporateEvent.description"),
-      price: t("events.services.corporateEvent.price"),
+      name: "Événement d'Entreprise",
+      description: "Transport de prestige pour vos événements professionnels",
+      price: "Sur devis",
       features: [
-        t("events.services.corporateEvent.features.0"),
-        t("events.services.corporateEvent.features.1"),
-        t("events.services.corporateEvent.features.2"),
+        "Flotte disponible",
+        "Service ponctuel",
+        "Facturation entreprise",
       ],
     },
   ];
@@ -109,7 +99,7 @@ export default function EvenementsMariagesPage() {
   const breadcrumbItems = [
     { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
-    { name: t("events.title"), url: "/services/evenements-mariages" },
+    { name: "Événements & Mariages", url: "/services/evenements-mariages" },
   ];
 
   return (
@@ -128,26 +118,28 @@ export default function EvenementsMariagesPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  {t("events.title")}
+                  Événements & Mariages
                   <span className="block text-pink-600">
-                    {t("events.subtitle")}
+                    Transport de Prestige
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  {t("events.description")}
+                  Marquez vos moments importants avec notre service de transport
+                  VIP. Décoration sur mesure, chauffeur en costume, et tout le
+                  luxe pour faire de votre événement un moment inoubliable.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
                     className="px-8 py-4 bg-pink-600 text-white rounded-xl font-semibold hover:bg-pink-700 transition-colors duration-300 text-center no-underline"
                   >
-                    {t("events.cta.bookNow")}
+                    Réserver maintenant
                   </a>
                   <a
                     href="/tarifs"
                     className="px-8 py-4 border-2 border-pink-600 text-pink-600 rounded-xl font-semibold hover:bg-pink-600 hover:text-white transition-colors duration-300 text-center no-underline"
                   >
-                    {t("events.cta.viewPrices")}
+                    Voir les tarifs
                   </a>
                 </div>
               </div>
@@ -164,9 +156,7 @@ export default function EvenementsMariagesPage() {
                 <div className="absolute -bottom-6 -right-6 bg-pink-600 text-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">
                     <div className="text-2xl font-bold">VIP</div>
-                    <div className="text-sm">
-                      {t("events.badge.vipService")}
-                    </div>
+                    <div className="text-sm">Service Prestige</div>
                   </div>
                 </div>
               </div>
@@ -179,10 +169,10 @@ export default function EvenementsMariagesPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t("events.features.title")}
+                Nos Services
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                {t("events.features.subtitle")}
+                Un service premium pour tous vos événements spéciaux
               </p>
             </div>
 
@@ -190,9 +180,9 @@ export default function EvenementsMariagesPage() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6 shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-md">
                     <feature.icon className="w-6 h-6 text-pink-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -210,10 +200,10 @@ export default function EvenementsMariagesPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t("events.services.title")}
+                Nos Formules
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                {t("events.services.subtitle")}
+                Choisissez la formule adaptée à votre événement
               </p>
             </div>
 
@@ -221,7 +211,7 @@ export default function EvenementsMariagesPage() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gradient-to-br from-white to-pink-50 rounded-xl p-6 shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold text-gray-900">
@@ -244,7 +234,7 @@ export default function EvenementsMariagesPage() {
                     href="/reservation"
                     className="inline-flex items-center text-pink-600 font-semibold hover:text-pink-700 transition-colors duration-300"
                   >
-                    {t("events.cta.bookFormula")} →
+                    Réserver cette formule →
                   </a>
                 </div>
               ))}
@@ -257,9 +247,9 @@ export default function EvenementsMariagesPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                {t("events.testimonials.title")}
+                Témoignages
               </h2>
-              <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 border border-pink-100">
                 <div className="flex justify-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Sparkles
@@ -269,10 +259,13 @@ export default function EvenementsMariagesPage() {
                   ))}
                 </div>
                 <blockquote className="text-lg text-gray-700 italic mb-6">
-                  "{t("events.testimonials.quote")}"
+                  "Un service exceptionnel pour notre mariage ! La décoration du
+                  véhicule était magnifique et le chauffeur très professionnel.
+                  Nous recommandons vivement ce service pour tous vos événements
+                  spéciaux."
                 </blockquote>
                 <div className="text-gray-600 font-semibold">
-                  {t("events.testimonials.author")}
+                  Marie & Pierre - Nice
                 </div>
               </div>
             </div>
@@ -284,23 +277,24 @@ export default function EvenementsMariagesPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                {t("events.ctaSection.title")}
+                Prêt pour votre événement ?
               </h2>
               <p className="text-xl text-pink-100 mb-8">
-                {t("events.ctaSection.description")}
+                Réservez dès maintenant votre transport de prestige et offrez à
+                vos invités une expérience inoubliable
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reservation"
                   className="px-8 py-4 bg-white text-pink-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
                 >
-                  {t("events.ctaSection.bookNow")}
+                  Réserver maintenant
                 </a>
                 <a
                   href="/contact"
                   className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-pink-600 transition-colors duration-300 no-underline"
                 >
-                  {t("events.ctaSection.contactUs")}
+                  Nous contacter
                 </a>
               </div>
               <div className="mt-8 text-pink-100">

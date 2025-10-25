@@ -1,7 +1,6 @@
 "use client";
 
 import { ContentImage } from "@/components/OptimizedImage.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import {
   Car,
   Clock,
@@ -14,156 +13,192 @@ import {
 } from "lucide-react";
 
 export default function PricingTable({ vehicleType = "glc" }) {
-  const { t } = useLanguage();
+  // Noms des destinations en français
+  const destinationNames = {
+    antibes: "Antibes",
+    auron: "Auron",
+    beaulieu: "Beaulieu-sur-Mer",
+    cannes: "Cannes",
+    frejus: "Fréjus",
+    grasse: "Grasse",
+    juan: "Juan-les-Pins",
+    menton: "Menton",
+    monaco: "Monaco",
+    mougins: "Mougins",
+    niceOuest: "Nice-Ouest",
+    niceCentre: "Nice-Centre",
+    niceEst: "Nice-Est",
+    opio: "Opio",
+    sanremo: "San Remo",
+    sophia: "Sophia Antipolis",
+    capFerrat: "Cap Ferrat",
+    saintPaul: "Saint-Paul-de-Vence",
+    saintTropez: "Saint-Tropez",
+    valbonne: "Valbonne",
+    villefranche: "Villefranche-sur-Mer",
+  };
 
-  // Tarifs de base pour GLC (exactement comme l'image)
+  const supplementNames = {
+    minimum: "Tarif minimum",
+    luggage: "Bagage dans le coffre",
+    fifthPerson: "5ème personne",
+    snow: "Péages neige",
+    highway: "Autoroute",
+  };
+
+  const perKmNames = {
+    emptyReturn: "Retour à vide",
+    loadedReturn: "Retour chargé",
+  };
+
+  // Tarifs de base pour GLC
   const basePrices = {
     destinations: [
       {
-        name: t("pricing.destinationsList.antibes"),
+        name: destinationNames.antibes,
         day: "76 €",
         night: "",
         fixed: true,
       },
       {
-        name: t("pricing.destinationsList.auron"),
+        name: destinationNames.auron,
         day: "230 - 250 €",
         night: "290 - 310 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.beaulieu"),
+        name: destinationNames.beaulieu,
         day: "55 - 60 €",
         night: "65 - 90 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.cannes"),
+        name: destinationNames.cannes,
         day: "89 €",
         night: "",
         fixed: true,
       },
       {
-        name: t("pricing.destinationsList.frejus"),
+        name: destinationNames.frejus,
         day: "180 - 200 €",
         night: "200 - 220 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.grasse"),
+        name: destinationNames.grasse,
         day: "92 - 100 €",
         night: "120 - 130 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.juan"),
+        name: destinationNames.juan,
         day: "60 - 70 €",
         night: "70 - 80 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.menton"),
+        name: destinationNames.menton,
         day: "100 - 110 €",
         night: "120 - 140 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.monaco"),
+        name: destinationNames.monaco,
         day: "99 €",
         night: "",
         fixed: true,
       },
       {
-        name: t("pricing.destinationsList.mougins"),
+        name: destinationNames.mougins,
         day: "75 - 82 €",
         night: "90 - 95 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.niceOuest"),
+        name: destinationNames.niceOuest,
         day: "12 - 18 €",
         night: "17 - 25 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.niceCentre"),
+        name: destinationNames.niceCentre,
         day: "36 €",
         night: "",
         fixed: true,
       },
       {
-        name: t("pricing.destinationsList.niceEst"),
+        name: destinationNames.niceEst,
         day: "40 - 44 €",
         night: "45 - 51 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.opio"),
+        name: destinationNames.opio,
         day: "75 - 82 €",
         night: "90 - 95 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.sanremo"),
+        name: destinationNames.sanremo,
         day: "190 - 210 €",
         night: "220 - 230 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.sophia"),
+        name: destinationNames.sophia,
         day: "60 - 65 €",
         night: "70 - 80 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.capFerrat"),
+        name: destinationNames.capFerrat,
         day: "60 - 65 €",
         night: "70 - 78 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.saintPaul"),
+        name: destinationNames.saintPaul,
         day: "55 - 60 €",
         night: "65 - 70 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.saintTropez"),
+        name: destinationNames.saintTropez,
         day: "280 - 310 €",
         night: "340 - 360 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.valbonne"),
+        name: destinationNames.valbonne,
         day: "75 - 80 €",
         night: "85 - 90 €",
         fixed: false,
       },
       {
-        name: t("pricing.destinationsList.villefranche"),
+        name: destinationNames.villefranche,
         day: "55 - 60 €",
         night: "65 - 90 €",
         fixed: false,
       },
     ],
     supplements: [
-      { name: t("pricing.supplementsList.minimum"), price: "8,00 €" },
-      { name: t("pricing.supplementsList.luggage"), price: "2,00 €" },
-      { name: t("pricing.supplementsList.fifthPerson"), price: "4,00 €" },
-      { name: t("pricing.supplementsList.snow"), price: "10%" },
+      { name: supplementNames.minimum, price: "8,00 €" },
+      { name: supplementNames.luggage, price: "2,00 €" },
+      { name: supplementNames.fifthPerson, price: "4,00 €" },
+      { name: supplementNames.snow, price: "10%" },
       {
-        name: t("pricing.supplementsList.highway"),
+        name: supplementNames.highway,
         price: "Uniquement avec le client",
       },
     ],
     perKm: [
       {
-        type: t("pricing.perKmList.emptyReturn"),
+        type: perKmNames.emptyReturn,
         day: "2,58 €/km",
         night: "3,30 €/km",
       },
       {
-        type: t("pricing.perKmList.loadedReturn"),
+        type: perKmNames.loadedReturn,
         rateA: "1,29 €/km",
         rateB: "1,65 €/km",
       },
@@ -214,10 +249,13 @@ export default function PricingTable({ vehicleType = "glc" }) {
             className="w-24 h-16 object-contain"
           />
           <h2 className="text-xl font-bold">
-            {t("pricing.title")} {vehicleType === "glc" ? "GLC" : "VAN"}
+            Tarifs {vehicleType === "glc" ? "GLC" : "VAN"}
           </h2>
         </div>
-        <p className="text-center text-white/90">{t("pricing.subtitle")}</p>
+        <p className="text-center text-white/90">
+          Tarifs transparents et compétitifs pour tous vos déplacements sur la
+          Côte d'Azur
+        </p>
       </div>
 
       {/* Table des destinations */}
@@ -229,19 +267,19 @@ export default function PricingTable({ vehicleType = "glc" }) {
                 <th className="p-3 text-left font-bold text-white text-sm">
                   <div className="flex items-center space-x-2">
                     <MapPin className="w-4 h-4" />
-                    <span>{t("pricing.destination")}</span>
+                    <span>Destination</span>
                   </div>
                 </th>
                 <th className="p-3 text-center font-bold text-white text-sm">
                   <div className="flex items-center justify-center space-x-2">
                     <Clock className="w-4 h-4" />
-                    <span>{t("pricing.day")} (9h - 18h)</span>
+                    <span>Jour (9h - 18h)</span>
                   </div>
                 </th>
                 <th className="p-3 text-center font-bold text-white text-sm">
                   <div className="flex items-center justify-center space-x-2">
                     <Clock className="w-4 h-4" />
-                    <span>{t("pricing.night")} (18h - 9h)</span>
+                    <span>Nuit (18h - 9h)</span>
                   </div>
                 </th>
               </tr>
@@ -292,8 +330,8 @@ export default function PricingTable({ vehicleType = "glc" }) {
         </div>
         <div className="mt-4 p-3 bg-gradient-to-r from-primary/5 to-primary/10 rounded-lg border border-primary/20">
           <p className="text-sm text-gray-700 font-medium">
-            <span className="text-primary font-bold">*</span>{" "}
-            {t("pricing.fixedRate")}
+            <span className="text-primary font-bold">*</span> Tarif fixe - Prix
+            garanti
           </p>
         </div>
       </div>
@@ -304,14 +342,13 @@ export default function PricingTable({ vehicleType = "glc" }) {
           <div className="p-2 bg-primary/10 rounded-lg">
             <Package className="w-6 h-6 text-primary" />
           </div>
-          <h3 className="text-xl font-bold text-black">
-            {t("pricing.supplements")}
-          </h3>
+          <h3 className="text-xl font-bold text-black">Suppléments</h3>
         </div>
         <div className="mb-6 p-4 bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl border border-primary/20">
           <p className="text-sm text-gray-700 font-medium">
-            <span className="text-primary font-bold">*</span>{" "}
-            {t("pricing.supplementsNote")}
+            <span className="text-primary font-bold">*</span> Les suppléments
+            s'ajoutent au tarif de base et sont appliqués selon les besoins de
+            votre trajet
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-4">
@@ -352,7 +389,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
           <div className="p-2 bg-primary/10 rounded-lg">
             <Route className="w-6 h-6 text-primary" />
           </div>
-          <h3 className="text-xl font-bold text-black">{t("pricing.perKm")}</h3>
+          <h3 className="text-xl font-bold text-black">Tarifs au kilomètre</h3>
         </div>
         <div className="space-y-6">
           {prices.perKm.map((rate, index) => (
@@ -379,7 +416,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
                             <Clock className="w-4 h-4 text-green-600" />
                           </div>
                           <span className="text-sm text-green-700 font-semibold">
-                            {t("pricing.dayRate")}
+                            Tarif jour
                           </span>
                         </div>
                         <div className="font-bold text-green-600 text-xl flex items-center justify-center space-x-1">
@@ -397,7 +434,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
                             <Clock className="w-4 h-4 text-blue-600" />
                           </div>
                           <span className="text-sm text-blue-700 font-semibold">
-                            {t("pricing.nightRate")}
+                            Tarif nuit
                           </span>
                         </div>
                         <div className="font-bold text-blue-600 text-xl flex items-center justify-center space-x-1">
@@ -415,7 +452,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
                             <Route className="w-4 h-4 text-purple-600" />
                           </div>
                           <span className="text-sm text-purple-700 font-semibold">
-                            {t("pricing.rateA")}
+                            Tarif A
                           </span>
                         </div>
                         <div className="font-bold text-purple-600 text-xl flex items-center justify-center space-x-1">
@@ -433,7 +470,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
                             <Route className="w-4 h-4 text-orange-600" />
                           </div>
                           <span className="text-sm text-orange-700 font-semibold">
-                            {t("pricing.rateB")}
+                            Tarif B
                           </span>
                         </div>
                         <div className="font-bold text-orange-600 text-xl flex items-center justify-center space-x-1">

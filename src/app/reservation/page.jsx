@@ -3,7 +3,6 @@
 import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { reservationApi } from "@/lib/api.jsx";
 import { formspreeService } from "@/lib/formspree.jsx";
 import {
@@ -18,7 +17,6 @@ import {
 import { useState } from "react";
 
 export default function ReservationPage() {
-  const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -308,7 +306,7 @@ export default function ReservationPage() {
           <div className="relative z-10 h-full flex flex-col justify-center items-center p-8 text-white">
             <div className="text-center max-w-4xl">
               <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold mb-6">
-                {t("reservation.title")}
+                Réservation de Taxi
               </h1>
               <div className="w-24 h-1 bg-white mx-auto rounded-full mb-8"></div>
               <p className="text-lg lg:text-2xl leading-relaxed max-w-3xl mx-auto">
@@ -365,14 +363,14 @@ export default function ReservationPage() {
                   <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
                       <User className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
-                      {t("reservation.personalInfo")}
+                      Informations personnelles
                     </h3>
 
                     <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                       {/* Nom complet */}
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.name")} *
+                          Nom complet *
                         </label>
                         <div className="relative">
                           <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -381,7 +379,7 @@ export default function ReservationPage() {
                             name="nom"
                             value={formData.nom}
                             onChange={handleChange}
-                            placeholder={t("placeholders.name")}
+                            placeholder="Votre nom complet"
                             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           />
@@ -391,7 +389,7 @@ export default function ReservationPage() {
                       {/* Email */}
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.email")}
+                          Email
                         </label>
                         <div className="relative">
                           <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -400,7 +398,7 @@ export default function ReservationPage() {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder={t("placeholders.email")}
+                            placeholder="votre.email@exemple.com"
                             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                           />
                         </div>
@@ -409,7 +407,7 @@ export default function ReservationPage() {
                       {/* Téléphone avec indicatif */}
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.phone")} *
+                          Téléphone *
                         </label>
                         <div className="flex gap-2">
                           <div className="relative w-32">
@@ -436,7 +434,7 @@ export default function ReservationPage() {
                               name="telephone"
                               value={formData.telephone}
                               onChange={handleChange}
-                              placeholder={t("placeholders.phone")}
+                              placeholder="06 12 34 56 78"
                               className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                               required
                             />
@@ -450,13 +448,13 @@ export default function ReservationPage() {
                   <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
                       <Calendar className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
-                      {t("reservation.dateTime")}
+                      Date et heure
                     </h3>
 
                     <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.date")} *
+                          Date *
                         </label>
                         <div className="relative">
                           <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -473,7 +471,7 @@ export default function ReservationPage() {
 
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.time")} *
+                          Heure *
                         </label>
                         <div className="relative">
                           <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -494,32 +492,32 @@ export default function ReservationPage() {
                   <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
                       <MapPin className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
-                      {t("reservation.addresses")}
+                      Adresses
                     </h3>
 
                     <div className="space-y-6">
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.departure")} *
+                          Adresse de départ *
                         </label>
                         <AddressAutocomplete
                           name="adresseDepart"
                           value={formData.adresseDepart}
                           onChange={handleChange}
-                          placeholder={t("placeholders.departure")}
+                          placeholder="Adresse de départ"
                           className=""
                         />
                       </div>
 
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.arrival")} *
+                          Adresse d'arrivée *
                         </label>
                         <AddressAutocomplete
                           name="adresseArrivee"
                           value={formData.adresseArrivee}
                           onChange={handleChange}
-                          placeholder={t("placeholders.arrival")}
+                          placeholder="Adresse d'arrivée"
                           className=""
                         />
                       </div>
@@ -530,14 +528,14 @@ export default function ReservationPage() {
                   <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
                       <User className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
-                      {t("reservation.tripDetails")}
+                      Détails du voyage
                     </h3>
 
                     <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                       {/* Nombre de bagages */}
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.luggageCount")} *
+                          Nombre de bagages *
                         </label>
                         <div className="relative">
                           <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -548,7 +546,7 @@ export default function ReservationPage() {
                             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           >
-                            <option value="">{t("placeholders.select")}</option>
+                            <option value="">Sélectionner</option>
                             <option value="0">0 bagage</option>
                             <option value="1">1 bagage</option>
                             <option value="2">2 bagages</option>
@@ -562,7 +560,7 @@ export default function ReservationPage() {
                       {/* Nombre de passagers */}
                       <div className="space-y-2">
                         <label className="text-gray-700 font-semibold">
-                          {t("reservation.passengerCount")} *
+                          Nombre de passagers *
                         </label>
                         <div className="relative">
                           <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -573,7 +571,7 @@ export default function ReservationPage() {
                             className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                             required
                           >
-                            <option value="">{t("placeholders.select")}</option>
+                            <option value="">Sélectionner</option>
                             <option value="1">1 passager</option>
                             <option value="2">2 passagers</option>
                             <option value="3">3 passagers</option>
@@ -592,18 +590,18 @@ export default function ReservationPage() {
                   <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl md:rounded-2xl p-4 md:p-6">
                     <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
                       <MessageSquare className="w-6 h-6 mr-3" />
-                      {t("reservation.comments")}
+                      Commentaires
                     </h3>
 
                     <div className="space-y-2">
                       <label className="text-gray-700 font-semibold">
-                        {t("reservation.additionalInfo")}
+                        Informations supplémentaires
                       </label>
                       <textarea
                         name="commentaires"
                         value={formData.commentaires}
                         onChange={handleChange}
-                        placeholder={t("placeholders.comments")}
+                        placeholder="Indiquez toute information supplémentaire (préférences, besoins spéciaux, etc.)"
                         rows={4}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none"
                       />
@@ -622,8 +620,8 @@ export default function ReservationPage() {
                       } text-white shadow-lg`}
                     >
                       {isSubmitting
-                        ? t("reservation.submitting")
-                        : t("reservation.submit")}
+                        ? "Envoi en cours..."
+                        : "Réserver maintenant"}
                     </button>
                   </div>
                 </form>

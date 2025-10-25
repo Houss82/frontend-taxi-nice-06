@@ -3,14 +3,12 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import PricingTable from "@/components/PricingTable.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { ArrowLeft, Car, Truck } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
 function TarifsContent() {
-  const { t } = useLanguage();
   const searchParams = useSearchParams();
   const vehicleType = searchParams.get("vehicle") || "glc";
 
@@ -28,7 +26,7 @@ function TarifsContent() {
             className="inline-flex items-center space-x-2 bg-gray-100 border border-blue-500 hover:bg-gray-200 text-gray-700 hover:text-gray-900 px-4 py-2 rounded-lg font-medium transition-colors duration-200 w-full sm:w-auto justify-center"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span>{t("pricing.backToHome")}</span>
+            <span>Retour à l'accueil</span>
           </Link>
 
           {/* Bouton pour basculer entre véhicules */}
@@ -39,12 +37,12 @@ function TarifsContent() {
             {vehicleType === "glc" ? (
               <>
                 <Truck className="w-5 h-5" />
-                <span>{t("pricing.switchToVan")}</span>
+                <span>Voir Van Premium</span>
               </>
             ) : (
               <>
                 <Car className="w-5 h-5" />
-                <span>{t("pricing.switchToGLC")}</span>
+                <span>Voir Mercedes GLC</span>
               </>
             )}
           </Link>

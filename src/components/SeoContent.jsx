@@ -1,6 +1,5 @@
 "use client";
 
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { motion } from "framer-motion";
 import {
   Award,
@@ -14,7 +13,39 @@ import {
 import { useState } from "react";
 
 export default function SeoContent() {
-  const { t } = useLanguage();
+  // Contenu SEO en français
+  const seoTitle = "Taxi Nice Côte d'Azur - Service de Transport Premium 7j/7";
+  const seoIntro =
+    "Découvrez notre service de Taxi Nice professionnel à Nice et sur toute la Côte d'Azur. Avec plus de 15 ans d'expérience, nous offrons des solutions de transport de qualité supérieure pour tous vos déplacements dans la région.";
+
+  const sections = {
+    section1: {
+      title: "Notre Expertise en Transport sur la Côte d'Azur",
+      content:
+        "Depuis 2008, notre entreprise Taxi Nice s'est imposée comme un acteur incontournable du transport privé dans les Alpes-Maritimes. Nous connaissons parfaitement les routes, les trafics et les meilleurs itinéraires pour vous faire gagner du temps. Notre flotte de véhicules Mercedes haut de gamme assure votre confort et votre sécurité lors de chaque trajet. Que ce soit pour un transfert aéroport Nice Côte d'Azur, un déplacement professionnel ou une sortie touristique, nous adaptons notre service Taxi Nice à vos besoins spécifiques.",
+    },
+    section2: {
+      title: "Services de Transport Personnalisés",
+      content:
+        "Nous proposons une gamme complète de services de transport adaptés à tous vos besoins. Nos transferts aéroport sont particulièrement appréciés pour leur ponctualité et leur fiabilité. Nous effectuons également des transports d'affaires avec des véhicules équipés de WiFi et des chauffeurs en costume. Pour vos événements spéciaux, nous mettons à votre disposition des véhicules de luxe avec décoration possible. Nos circuits touristiques vous permettent de découvrir les plus beaux sites de la Côte d'Azur en toute tranquillité.",
+    },
+    section3: {
+      title: "Flotte de Véhicules Premium",
+      content:
+        "Notre flotte se compose exclusivement de véhicules Mercedes récents et parfaitement entretenus. Nous proposons des Mercedes GLC pour les trajets confortables jusqu'à 4 passagers, ainsi que des vans premium pour les groupes plus importants. Tous nos véhicules sont équipés de la climatisation, du WiFi gratuit et de sièges en cuir. Nos chauffeurs professionnels, titulaires de licences VTC, sont formés aux standards de service les plus élevés et connaissent parfaitement la région.",
+    },
+    section4: {
+      title: "Tarifs Transparents et Compétitifs",
+      content:
+        "Nous proposons des tarifs fixes et transparents pour tous nos services. Nos prix incluent les taxes et sont clairement affichés sur notre site. Nous acceptons les paiements en espèces, par carte bancaire ou par virement. Pour les entreprises, nous proposons des conditions préférentielles avec facturation mensuelle. Nos tarifs sont compétitifs par rapport aux autres services de transport de la région, tout en offrant un niveau de service supérieur.",
+    },
+  };
+
+  const conclusion = {
+    title: "Pourquoi Choisir Notre Service de Taxi ?",
+    content:
+      "Choisir notre service Taxi Nice, c'est opter pour la qualité, la fiabilité et le professionnalisme. Avec plus de 1000 clients satisfaits chaque mois et une note moyenne de 4.9/5, nous sommes fiers de notre réputation. Nos chauffeurs locaux connaissent tous les raccourcis et les meilleures routes pour éviter les embouteillages. Nous nous engageons à vous offrir une expérience de transport exceptionnelle, que ce soit pour un trajet de 5 minutes ou un voyage de plusieurs heures. Contactez-nous dès maintenant pour réserver votre prochain transport Taxi Nice sur la Côte d'Azur.",
+  };
   const [expandedCards, setExpandedCards] = useState(new Set());
 
   const toggleCard = (cardId) => {
@@ -94,7 +125,7 @@ export default function SeoContent() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             >
-              {t("seoContent.title")}
+              {seoTitle}
             </motion.h2>
 
             <motion.div
@@ -157,7 +188,7 @@ export default function SeoContent() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
             >
-              {t("seoContent.intro")}
+              {seoIntro}
             </motion.p>
           </motion.div>
         </motion.div>
@@ -214,7 +245,7 @@ export default function SeoContent() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.7, ease: "easeOut" }}
                 >
-                  {t("seoContent.section1.title")}
+                  {sections.section1.title}
                 </motion.h3>
               </motion.div>
               <motion.div
@@ -224,9 +255,9 @@ export default function SeoContent() {
                 transition={{ duration: 0.4, delay: 0.8, ease: "easeOut" }}
               >
                 {isExpanded("section1") ? (
-                  <p>{t("seoContent.section1.content")}</p>
+                  <p>{sections.section1.content}</p>
                 ) : (
-                  <p>{truncateText(t("seoContent.section1.content"))}</p>
+                  <p>{truncateText(sections.section1.content)}</p>
                 )}
               </motion.div>
               <motion.div
@@ -281,14 +312,14 @@ export default function SeoContent() {
                   <Car className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl text-center font-bold text-gray-800">
-                  {t("seoContent.section2.title")}
+                  {sections.section2.title}
                 </h3>
               </div>
               <div className="text-lg leading-relaxed text-gray-600 mb-4">
                 {isExpanded("section2") ? (
-                  <p>{t("seoContent.section2.content")}</p>
+                  <p>{sections.section2.content}</p>
                 ) : (
-                  <p>{truncateText(t("seoContent.section2.content"))}</p>
+                  <p>{truncateText(sections.section2.content)}</p>
                 )}
               </div>
               <div className="flex justify-center">
@@ -336,14 +367,14 @@ export default function SeoContent() {
                   <Shield className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl text-center font-bold text-gray-800">
-                  {t("seoContent.section3.title")}
+                  {sections.section3.title}
                 </h3>
               </div>
               <div className="text-lg leading-relaxed text-gray-600 mb-4">
                 {isExpanded("section3") ? (
-                  <p>{t("seoContent.section3.content")}</p>
+                  <p>{sections.section3.content}</p>
                 ) : (
-                  <p>{truncateText(t("seoContent.section3.content"))}</p>
+                  <p>{truncateText(sections.section3.content)}</p>
                 )}
               </div>
               <div className="flex justify-center">
@@ -391,14 +422,14 @@ export default function SeoContent() {
                   <DollarSign className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl text-center  font-bold text-gray-800">
-                  {t("seoContent.section4.title")}
+                  {sections.section4.title}
                 </h3>
               </div>
               <div className="text-lg leading-relaxed text-gray-600 mb-4">
                 {isExpanded("section4") ? (
-                  <p>{t("seoContent.section4.content")}</p>
+                  <p>{sections.section4.content}</p>
                 ) : (
-                  <p>{truncateText(t("seoContent.section4.content"))}</p>
+                  <p>{truncateText(sections.section4.content)}</p>
                 )}
               </div>
               <div className="flex justify-center">
@@ -448,7 +479,7 @@ export default function SeoContent() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 1.1, ease: "easeOut" }}
               >
-                {t("seoContent.conclusion.title")}
+                {conclusion.title}
               </motion.h3>
             </motion.div>
             <motion.p
@@ -457,7 +488,7 @@ export default function SeoContent() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2, ease: "easeOut" }}
             >
-              {t("seoContent.conclusion.content")}
+              {conclusion.content}
             </motion.p>
           </motion.div>
         </motion.div>

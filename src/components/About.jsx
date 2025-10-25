@@ -1,33 +1,30 @@
 "use client";
 
 import { ContentImage } from "@/components/OptimizedImage.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { motion } from "framer-motion";
 import { Award, Heart, Shield, Zap } from "lucide-react";
 
 export default function About() {
-  const { t } = useLanguage();
-
   const features = [
     {
       icon: Shield,
-      title: t("about.features.safety.title"),
-      description: t("about.features.safety.description"),
+      title: "Sécurité",
+      description: "Véhicules assurés",
     },
     {
       icon: Award,
-      title: t("about.features.quality.title"),
-      description: t("about.features.quality.description"),
+      title: "Qualité",
+      description: "Service premium",
     },
     {
       icon: Heart,
-      title: t("about.features.passion.title"),
-      description: t("about.features.passion.description"),
+      title: "Passion",
+      description: "Service client",
     },
     {
       icon: Zap,
-      title: t("about.features.speed.title"),
-      description: t("about.features.speed.description"),
+      title: "Rapidité",
+      description: "Réservation instant",
     },
   ];
 
@@ -47,14 +44,14 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               >
-                {t("about.title")}{" "}
+                Pourquoi choisir{" "}
                 <motion.span
                   className="text-primary"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
                 >
-                  {t("about.brandHighlight")}
+                  Taxi Nice
                 </motion.span>{" "}
                 ?
               </motion.h2>
@@ -64,7 +61,9 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               >
-                {t("about.description")}
+                Depuis plus de 15 ans, nous offrons un service de transport de
+                qualité sur la Côte d'Azur. Notre équipe de chauffeurs
+                professionnels vous garantit confort, sécurité et ponctualité.
               </motion.p>
             </motion.div>
 
@@ -150,7 +149,7 @@ export default function About() {
             <div className="absolute -top-6 -right-6 bg-primary text-white rounded-xl p-4 shadow-lg">
               <div className="text-center">
                 <div className="text-2xl font-bold">15+</div>
-                <div className="text-sm">{t("about.experience")}</div>
+                <div className="text-sm">Années d'expérience</div>
               </div>
             </div>
           </div>

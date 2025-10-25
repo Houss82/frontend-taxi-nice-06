@@ -1,6 +1,5 @@
 "use client";
 
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   BookOpen,
@@ -21,10 +20,8 @@ import {
   X,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import LanguageToggle from "./LanguageToggle.jsx";
 
 export default function Navbar() {
-  const { t, language } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
@@ -63,7 +60,7 @@ export default function Navbar() {
         </a>
         <nav className="hidden lg:flex gap-6 xl:gap-8">
           <a href="/" className="text-black hover:text-primary font-medium">
-            {t("navbar.home")}
+            ACCUEIL
           </a>
 
           {/* Services Dropdown */}
@@ -72,7 +69,7 @@ export default function Navbar() {
               onClick={() => setIsServicesOpen(!isServicesOpen)}
               className="text-black hover:text-primary font-medium flex items-center gap-1"
             >
-              {t("navbar.services")}
+              SERVICES
               <ChevronDown
                 className={`w-4 h-4 transition-transform ${
                   isServicesOpen ? "rotate-180" : ""
@@ -96,7 +93,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <Plane className="w-4 h-4 text-blue-500" />
-                      <span>{t("navbar.servicesMenu.airportTransfers")}</span>
+                      <span>Transferts Aéroport</span>
                     </div>
                   </a>
                   <a
@@ -106,9 +103,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <MapPin className="w-4 h-4 text-green-500" />
-                      <span>
-                        {t("navbar.servicesMenu.arrivalsDestinations")}
-                      </span>
+                      <span>Arrivées & Destinations</span>
                     </div>
                   </a>
                   <a
@@ -118,7 +113,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <Users className="w-4 h-4 text-purple-500" />
-                      <span>{t("navbar.servicesMenu.vanPremium")}</span>
+                      <span>Van Premium (8 pers.)</span>
                     </div>
                   </a>
                   <a
@@ -128,7 +123,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <Car className="w-4 h-4 text-indigo-500" />
-                      <span>{t("navbar.servicesMenu.recentFleet")}</span>
+                      <span>Flotte Récente</span>
                     </div>
                   </a>
                   <a
@@ -138,9 +133,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <Compass className="w-4 h-4 text-orange-500" />
-                      <span>
-                        {t("navbar.servicesMenu.excursionsDiscoveries")}
-                      </span>
+                      <span>Excursions & Découvertes</span>
                     </div>
                   </a>
                   <a
@@ -150,7 +143,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <Crown className="w-4 h-4 text-pink-500" />
-                      <span>{t("navbar.servicesMenu.eventsWeddings")}</span>
+                      <span>Événements & Mariages</span>
                     </div>
                   </a>
                   <a
@@ -159,8 +152,8 @@ export default function Navbar() {
                     onClick={() => setIsServicesOpen(false)}
                   >
                     <div className="flex items-center space-x-3">
-                      <Briefcase className="w-4 h-4 text-cyan-500" />
-                      <span>{t("navbar.servicesMenu.eventTransfers")}</span>
+                      <Briefcase className="w-4 h-4 text-amber-500" />
+                      <span>Transferts Événements</span>
                     </div>
                   </a>
                   <a
@@ -170,16 +163,17 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <Heart className="w-4 h-4 text-red-500" />
-                      <span>{t("navbar.servicesMenu.vslMedical")}</span>
+                      <span>VSL Transport Médical</span>
                     </div>
                   </a>
-                  <div className="border-t border-gray-200 my-2"></div>
                   <a
                     href="/services"
-                    className="block px-4 py-2 text-blue-600 hover:bg-blue-50 font-semibold transition-colors"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors border-t border-gray-200 mt-2"
                     onClick={() => setIsServicesOpen(false)}
                   >
-                    📋 {t("navbar.servicesMenu.allServices")}
+                    <div className="flex items-center space-x-3">
+                      <span>Tous les services</span>
+                    </div>
                   </a>
                 </motion.div>
               )}
@@ -190,61 +184,52 @@ export default function Navbar() {
             href="/reservation"
             className="text-black hover:text-primary font-medium"
           >
-            {t("navbar.reservation")}
+            RÉSERVATION
           </a>
           <a
             href="/tarifs"
             className="text-black hover:text-primary font-medium"
           >
-            {t("navbar.prices")}
+            TARIFS
           </a>
           <a href="/blog" className="text-black hover:text-primary font-medium">
-            {t("navbar.blog")}
+            BLOG
           </a>
           <a
             href="/partenaires"
             className="text-black hover:text-primary font-medium"
           >
-            {t("navbar.partners")}
+            PARTENAIRES
           </a>
           <a
             href="/contact"
             className="text-black hover:text-primary font-medium"
           >
-            {t("navbar.contact")}
+            CONTACT
           </a>
         </nav>
-        <div className="flex items-center gap-2">
-          <LanguageToggle />
-          {/* Bouton Réserver - Desktop uniquement */}
+
+        {/* Desktop CTA Button */}
+        <div className="hidden lg:flex items-center gap-4">
           <a
             href="/reservation"
-            className="hidden lg:block bg-primary text-white px-4 xl:px-6 py-2 rounded font-medium hover:bg-primaryDark transition-colors text-sm xl:text-base"
+            className="btn bg-primary text-white hover:bg-primary/90 hidden xl:inline-flex"
           >
-            {t("navbar.bookNowFull")}
+            RÉSERVER
           </a>
-          {/* Menu Burger - Mobile et Tablette */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden relative flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-300 z-[60]"
-            aria-label="Menu"
-          >
-            <motion.div
-              animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-              transition={{ duration: 0.3 }}
-              className="relative w-6 h-6"
-            >
-              <Menu className="w-6 h-6 text-primary" />
-            </motion.div>
-            <motion.span
-              className="text-xs text-gray-600 mt-1 font-medium"
-              animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-              transition={{ duration: 0.2 }}
-            >
-              Menu
-            </motion.span>
-          </button>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="lg:hidden p-2"
+        >
+          {isMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
+        </button>
       </div>
 
       {/* Menu mobile avec animation améliorée */}
@@ -321,7 +306,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Home className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>{t("navbar.home")}</span>
+                    <span>ACCUEIL</span>
                   </motion.a>
 
                   {/* Services avec sous-menu pliable */}
@@ -341,7 +326,7 @@ export default function Navbar() {
                     >
                       <div className="flex items-center space-x-4">
                         <Car className="w-5 h-5 text-primary" />
-                        <span>{t("navbar.services")}</span>
+                        <span>SERVICES</span>
                       </div>
                       <motion.div
                         animate={{ rotate: isMobileServicesOpen ? 180 : 0 }}
@@ -368,9 +353,7 @@ export default function Navbar() {
                             transition={{ duration: 0.2 }}
                           >
                             <Plane className="w-4 h-4 text-blue-500" />
-                            <span className="text-sm">
-                              {t("navbar.servicesMenu.airportTransfers")}
-                            </span>
+                            <span className="text-sm">Transferts Aéroport</span>
                           </motion.a>
                           <motion.a
                             href="/services/arrivees-destinations"
@@ -381,7 +364,7 @@ export default function Navbar() {
                           >
                             <MapPin className="w-4 h-4 text-green-500" />
                             <span className="text-sm">
-                              {t("navbar.servicesMenu.arrivalsDestinations")}
+                              Arrivées & Destinations
                             </span>
                           </motion.a>
                           <motion.a
@@ -393,7 +376,7 @@ export default function Navbar() {
                           >
                             <Users className="w-4 h-4 text-purple-500" />
                             <span className="text-sm">
-                              {t("navbar.servicesMenu.vanPremium")}
+                              Van Premium (8 pers.)
                             </span>
                           </motion.a>
                           <motion.a
@@ -404,9 +387,7 @@ export default function Navbar() {
                             transition={{ duration: 0.2 }}
                           >
                             <Car className="w-4 h-4 text-indigo-500" />
-                            <span className="text-sm">
-                              {t("navbar.servicesMenu.recentFleet")}
-                            </span>
+                            <span className="text-sm">Flotte Récente</span>
                           </motion.a>
                           <motion.a
                             href="/services/excursions-decouvertes"
@@ -417,7 +398,7 @@ export default function Navbar() {
                           >
                             <Compass className="w-4 h-4 text-orange-500" />
                             <span className="text-sm">
-                              {t("navbar.servicesMenu.excursionsDiscoveries")}
+                              Excursions & Découvertes
                             </span>
                           </motion.a>
                           <motion.a
@@ -429,7 +410,7 @@ export default function Navbar() {
                           >
                             <Crown className="w-4 h-4 text-pink-500" />
                             <span className="text-sm">
-                              {t("navbar.servicesMenu.eventsWeddings")}
+                              Événements & Mariages
                             </span>
                           </motion.a>
                           <motion.a
@@ -439,9 +420,9 @@ export default function Navbar() {
                             whileHover={{ x: 5 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Briefcase className="w-4 h-4 text-cyan-500" />
+                            <Briefcase className="w-4 h-4 text-amber-500" />
                             <span className="text-sm">
-                              {t("navbar.servicesMenu.eventTransfers")}
+                              Transferts Événements
                             </span>
                           </motion.a>
                           <motion.a
@@ -453,7 +434,7 @@ export default function Navbar() {
                           >
                             <Heart className="w-4 h-4 text-red-500" />
                             <span className="text-sm">
-                              {t("navbar.servicesMenu.vslMedical")}
+                              VSL Transport Médical
                             </span>
                           </motion.a>
                           <div className="border-t border-gray-200 my-2"></div>
@@ -465,9 +446,7 @@ export default function Navbar() {
                             transition={{ duration: 0.2 }}
                           >
                             <Car className="w-4 h-4 text-indigo-500" />
-                            <span className="text-sm">
-                              {t("navbar.servicesMenu.allServices")}
-                            </span>
+                            <span className="text-sm">Tous les services</span>
                           </motion.a>
                         </motion.div>
                       )}
@@ -485,7 +464,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Calendar className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>{t("navbar.reservation")}</span>
+                    <span>RÉSERVATION</span>
                   </motion.a>
 
                   <motion.a
@@ -499,7 +478,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Euro className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>{t("navbar.prices")}</span>
+                    <span>TARIFS</span>
                   </motion.a>
 
                   <motion.a
@@ -513,7 +492,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <BookOpen className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>{t("navbar.blog")}</span>
+                    <span>BLOG</span>
                   </motion.a>
 
                   <motion.a
@@ -527,7 +506,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Users className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>{t("navbar.partners")}</span>
+                    <span>PARTENAIRES</span>
                   </motion.a>
 
                   <motion.a
@@ -541,7 +520,7 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Phone className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>{t("navbar.contact")}</span>
+                    <span>CONTACT</span>
                   </motion.a>
                 </div>
               </motion.nav>
@@ -561,7 +540,7 @@ export default function Navbar() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  🚗 {t("navbar.bookNowFull")}
+                  🚗 RÉSERVER
                 </motion.a>
               </motion.div>
             </motion.div>

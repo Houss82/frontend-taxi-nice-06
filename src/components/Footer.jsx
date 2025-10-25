@@ -1,11 +1,8 @@
 "use client";
 
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
-  const { t } = useLanguage();
-
   return (
     <footer id="contact" className="bg-primary text-white">
       <div className="container mx-auto px-4 py-16">
@@ -16,25 +13,26 @@ export default function Footer() {
                 <span className="text-white font-bold text-xl">T</span>
               </div>
               <div>
-                <h3 className="font-bold text-xl">{t("footer.brand")}</h3>
+                <h3 className="font-bold text-xl">Taxi Nice-06.com</h3>
                 <p className="text-white/80">Côte d'Azur</p>
               </div>
             </div>
             <p className="text-white/80 leading-relaxed">
-              {t("footer.description")}
+              Votre partenaire de confiance pour tous vos déplacements sur la
+              Côte d'Azur depuis 2008.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h4 className="font-bold text-lg">{t("footer.contact")}</h4>
+            <h4 className="font-bold text-lg">Contact</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-white/90" />
-                <span>{t("footer.phone")}</span>
+                <span>+33 6 51 68 36 87</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-white/90" />
-                <span>{t("footer.email")}</span>
+                <span>taxiniceca@gmail.com</span>
               </div>
               <a
                 href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
@@ -43,36 +41,32 @@ export default function Footer() {
                 className="flex items-center space-x-3 hover:text-white/70 transition-colors"
               >
                 <MapPin className="w-4 h-4 text-white/90" />
-                <span>{t("footer.location")}</span>
+                <span>Nice, Côte d'Azur</span>
               </a>
             </div>
           </div>
 
           <div className="space-y-4">
-            <h4 className="font-bold text-lg">{t("footer.schedule")}</h4>
+            <h4 className="font-bold text-lg">Horaires</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Clock className="w-4 h-4 text-white/90" />
                 <div>
-                  <p>{t("footer.hours")}</p>
-                  <p className="text-sm text-white/80">
-                    {t("footer.continuousService")}
-                  </p>
+                  <p>24h/24 - 7j/7</p>
+                  <p className="text-sm text-white/80">Service continu</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="space-y-4">
-            <h4 className="font-bold text-lg">
-              {t("footer.quickReservation")}
-            </h4>
-            <p className="text-white/80">{t("footer.needTaxiNow")}</p>
+            <h4 className="font-bold text-lg">Réservation Rapide</h4>
+            <p className="text-white/80">Besoin d'un taxi maintenant ?</p>
             <a
               href="tel:+33651683687"
               className="btn bg-white text-primary hover:bg-white/90 w-full flex items-center justify-center gap-2"
             >
-              {t("footer.callNow")}
+              Appeler maintenant
             </a>
           </div>
         </div>
@@ -96,19 +90,19 @@ export default function Footer() {
               href="/mentions-legales"
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
-              {t("footer.legalNotice")}
+              Mentions légales
             </a>
             <a
               href="/politique-confidentialite"
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
-              {t("footer.privacyPolicy")}
+              Politique de confidentialité
             </a>
             <a
               href="/cgv"
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
-              {t("footer.terms")}
+              CGV
             </a>
             <a
               href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
@@ -124,7 +118,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="text-center">
             <p className="text-white/80">
-              © {new Date().getFullYear()} {t("footer.copyright")}
+              © {new Date().getFullYear()} Tous droits réservés.
             </p>
           </div>
         </div>

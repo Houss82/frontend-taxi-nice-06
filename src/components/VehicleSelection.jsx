@@ -1,11 +1,9 @@
 "use client";
 
 import { ContentImage } from "@/components/OptimizedImage.jsx";
-import { useLanguage } from "@/contexts/LanguageContext.jsx";
 import { useEffect, useRef, useState } from "react";
 
 export default function VehicleSelection() {
-  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -38,12 +36,12 @@ export default function VehicleSelection() {
   const vehicles = [
     {
       id: "glc",
-      name: t("vehicleSelection.glc.name"),
+      name: "Mercedes GLC",
       image: "/imageGLC.png",
     },
     {
       id: "van",
-      name: t("vehicleSelection.van.name"),
+      name: "Van Premium",
       image: "/image-van.png",
     },
   ];
@@ -54,7 +52,7 @@ export default function VehicleSelection() {
         {/* Titre */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">
-            {t("vehicleSelection.title")}
+            Choisissez votre véhicule
           </h2>
         </div>
 
@@ -98,7 +96,7 @@ export default function VehicleSelection() {
                   href={`/tarifs?vehicle=${vehicle.id}`}
                   className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primaryDark transition-colors duration-300 group-hover:scale-105 transform"
                 >
-                  {t("vehicleSelection.seePrices")}
+                  Cliquez pour voir les tarifs
                 </a>
               </div>
             </div>
