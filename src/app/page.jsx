@@ -69,20 +69,20 @@ export default async function Page() {
               </span>
             </h1>
 
-            <h2
+            <p
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mb-8 max-w-3xl text-white/95 leading-relaxed animate-slide-up"
               style={{ animationDelay: "0.2s" }}
             >
               Transferts aéroport Nice, gares, VSL et excursions à Nice et sur
               la Côte d'Azur
-            </h2>
+            </p>
 
-            <h3
+            <p
               className="text-lg sm:text-xl md:text-2xl mb-10 max-w-2xl text-white/90 font-light animate-slide-up"
               style={{ animationDelay: "0.4s" }}
             >
               Service de taxi officiel à Nice et sur toute la côte d'azur
-            </h3>
+            </p>
 
             {/* Boutons d'action modernes */}
             <div
@@ -216,9 +216,9 @@ export default async function Page() {
 
                 {/* Description principale */}
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h2 className="text-2xl font-bold text-gray-900">
                     Pourquoi nous choisir ?
-                  </h3>
+                  </h2>
 
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">

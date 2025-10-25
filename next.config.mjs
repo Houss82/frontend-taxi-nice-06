@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
+  // Compilation optimisée
+  compiler: {
+    removeConsole:
+      process.env.NODE_ENV === "production"
+        ? {
+            exclude: ["error", "warn"],
+          }
+        : false,
+  },
+
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -10,9 +21,18 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     unoptimized: false,
   },
+
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
+
+  // Optimisation de la taille
+  swcMinify: true,
+
+  // Optimisation des chunks
+  experimental: {
+    optimizeCss: true,
+  },
   async headers() {
     return [
       {
