@@ -99,8 +99,15 @@ export default function QuickBooking() {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">
-            Réservation rapide
+          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+              Réservation rapide
+            </span>
+            <div className="flex justify-center items-center gap-3 mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-500"></div>
+              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-500"></div>
+            </div>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Réservez votre taxi en quelques clics

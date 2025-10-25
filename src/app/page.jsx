@@ -156,8 +156,8 @@ export default async function Page() {
 
               {/* Titre avec effet visuel */}
               <div className="relative inline-block mt-24 sm:mt-8">
-                <h2 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
-                  <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 bg-clip-text text-transparent">
+                <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
                     Transport Privé
                   </span>
                   <br />
@@ -395,6 +395,306 @@ export default async function Page() {
         {/* Section Réservation avec ancre */}
         <section id="reservation">
           <QuickBooking />
+        </section>
+
+        {/* Section FAQ - Contenu SEO */}
+        <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-16">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6 shadow-sm">
+                <svg
+                  className="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Foire aux Questions
+              </div>
+
+              <h3 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                  Questions Fréquentes
+                </span>
+              </h3>
+
+              <div className="flex justify-center items-center gap-3 mb-6">
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-500"></div>
+                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-500"></div>
+              </div>
+
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Tout ce que vous devez savoir sur nos services de taxi à Nice
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Colonne gauche */}
+              <div className="space-y-6">
+                <div className="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-bl-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                  <div className="relative">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <svg
+                          className="w-6 h-6 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          />
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Comment réserver un taxi à l'aéroport de Nice ?
+                      </h4>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed">
+                      Vous pouvez réserver votre{" "}
+                      <strong>transfert aéroport Nice</strong> en ligne sur
+                      notre site, par téléphone ou via notre formulaire de
+                      réservation. Il suffit de nous indiquer votre numéro de
+                      vol, la date et l'heure d'arrivée. Nous vous confirmons
+                      immédiatement et vous envoyons un SMS de confirmation avec
+                      le nom du chauffeur.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-100 to-blue-100 rounded-bl-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                  <div className="relative">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-600 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <svg
+                          className="w-6 h-6 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Quels sont vos tarifs pour un transfert aéroport ?
+                      </h4>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed">
+                      Nos tarifs pour les{" "}
+                      <strong>transferts aéroport Nice</strong> sont
+                      transparents et fixes. Le prix dépend de votre destination
+                      (Nice centre, Cannes, Monaco, etc.) et du type de véhicule
+                      choisi (Mercedes GLC ou Van Premium). Consultez notre{" "}
+                      <a
+                        href="/tarifs"
+                        className="text-blue-600 hover:text-blue-800 underline font-medium"
+                      >
+                        page tarifs
+                      </a>{" "}
+                      pour connaître les prix détaillés.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-100 to-pink-100 rounded-bl-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                  <div className="relative">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <svg
+                          className="w-6 h-6 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                          />
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Proposez-vous un service VSL à Nice ?
+                      </h4>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed">
+                      Oui, nous proposons un{" "}
+                      <strong>
+                        <a
+                          href="/services/vsl"
+                          className="text-blue-600 hover:text-blue-800 underline font-medium"
+                        >
+                          service VSL (Véhicule Sanitaire Léger)
+                        </a>
+                      </strong>{" "}
+                      à Nice et sur toute la Côte d'Azur. Nos véhicules sont
+                      agréés par l'ARS et nos chauffeurs sont formés pour
+                      transporter des patients en toute sécurité. Le service est
+                      disponible 24h/24 et 7j/7.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Colonne droite */}
+              <div className="space-y-6">
+                <div className="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-indigo-100 to-blue-100 rounded-bl-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                  <div className="relative">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <svg
+                          className="w-6 h-6 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
+                          />
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Quels types de véhicules sont disponibles ?
+                      </h4>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed">
+                      Notre flotte comprend des <strong>Mercedes GLC</strong>{" "}
+                      pour 4 passagers maximum et des{" "}
+                      <strong>Vans Premium</strong> pour jusqu'à 8 passagers.
+                      Tous nos véhicules sont récents, climatisés et
+                      confortables. Nous proposons également des équipements
+                      spéciaux comme des sièges bébé sur demande.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-bl-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                  <div className="relative">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-600 to-yellow-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <svg
+                          className="w-6 h-6 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Proposez-vous des excursions sur la Côte d'Azur ?
+                      </h4>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed">
+                      Absolument ! Nous organisons des{" "}
+                      <strong>excursions touristiques</strong> sur toute la Côte
+                      d'Azur : Monaco, Cannes, Antibes, Saint-Tropez, les
+                      villages perchés. Notre chauffeur vous emmène découvrir
+                      les plus beaux endroits de la région à votre rythme.
+                      N'hésitez pas à nous contacter pour personnaliser votre
+                      circuit.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-bl-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                  <div className="relative">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-teal-600 to-cyan-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <svg
+                          className="w-6 h-6 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                          />
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">
+                        Comment puis-je vous contacter ?
+                      </h4>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed">
+                      Vous pouvez nous contacter par téléphone 24h/24 et 7j/7,
+                      via notre{" "}
+                      <a
+                        href="/contact"
+                        className="text-blue-600 hover:text-blue-800 underline font-medium"
+                      >
+                        formulaire de contact
+                      </a>{" "}
+                      ou directement par WhatsApp. Notre équipe est disponible
+                      en français et en anglais pour répondre à toutes vos
+                      questions et prendre votre réservation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Call to Action */}
+            <div className="mt-12 text-center">
+              <a
+                href="/reservation"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold text-lg rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              >
+                Réserver votre taxi maintenant
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />

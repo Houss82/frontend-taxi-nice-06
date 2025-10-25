@@ -155,8 +155,8 @@ export default function Services() {
           </div>
 
           {/* Titre principal */}
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
               Nos Services
             </span>
           </h2>
