@@ -25,6 +25,8 @@ export default function QuickBooking() {
     date: "",
     heure: "",
     typeVehicule: "glc",
+    numeroVol: "",
+    siegeEnfant: false,
   });
 
   const handleChange = (e) => {
@@ -47,6 +49,8 @@ export default function QuickBooking() {
         typeTransport: "ALD exonérante",
         commentaires: `Demande rapide - Véhicule: ${
           formData.typeVehicule === "glc" ? "Mercedes GLC" : "Van Premium"
+        }${formData.numeroVol ? ` - Vol: ${formData.numeroVol}` : ""}${
+          formData.siegeEnfant ? " - Siège enfant requis" : ""
         }`,
       });
 
@@ -75,6 +79,8 @@ export default function QuickBooking() {
         date: "",
         heure: "",
         typeVehicule: "glc",
+        numeroVol: "",
+        siegeEnfant: false,
       });
     } catch (error) {
       console.error("Erreur:", error);
@@ -328,13 +334,13 @@ export default function QuickBooking() {
                         Date
                       </label>
                       <div className="relative">
-                        <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                        <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
                         <input
                           type="date"
                           name="date"
                           value={formData.date}
                           onChange={handleChange}
-                          className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                          className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none cursor-pointer"
                         />
                       </div>
                     </div>
@@ -344,15 +350,121 @@ export default function QuickBooking() {
                         Heure
                       </label>
                       <div className="relative">
-                        <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                        <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
                         <input
                           type="time"
                           name="heure"
                           value={formData.heure}
                           onChange={handleChange}
-                          className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                          className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none cursor-pointer"
                         />
                       </div>
+                    </div>
+                  </div>
+
+                  {/* Numéro de vol */}
+                  <div className="space-y-2">
+                    <label className="text-gray-700 font-semibold text-sm">
+                      Numéro de vol (optionnel)
+                    </label>
+                    <input
+                      type="text"
+                      name="numeroVol"
+                      value={formData.numeroVol}
+                      onChange={handleChange}
+                      placeholder="Ex: AF1234"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                    />
+                    <p className="text-xs text-gray-500">
+                      Précisez votre numéro de vol pour un suivi en temps réel
+                    </p>
+                  </div>
+
+                  {/* Siège enfant */}
+                  <div className="space-y-2">
+                    <label className="flex items-center space-x-3 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        name="siegeEnfant"
+                        checked={formData.siegeEnfant}
+                        onChange={(e) =>
+                          setFormData((prev) => ({
+                            ...prev,
+                            siegeEnfant: e.target.checked,
+                          }))
+                        }
+                        className="w-5 h-5 text-primary border-gray-300 rounded focus:ring-2 focus:ring-primary"
+                      />
+                      <span className="text-gray-700 font-semibold text-sm">
+                        Siège enfant (réhausseur)
+                      </span>
+                    </label>
+                    <p className="text-xs text-gray-500 ml-8">
+                      Disponible gratuitement sur demande
+                    </p>
+                  </div>
+
+                  {/* Choix du véhicule dans le formulaire */}
+                  <div className="space-y-3">
+                    <label className="text-gray-700 font-semibold text-sm">
+                      Type de véhicule *
+                    </label>
+                    <div className="grid grid-cols-2 gap-3">
+                      <label
+                        className={`relative cursor-pointer rounded-xl border-2 p-4 transition-all ${
+                          formData.typeVehicule === "glc"
+                            ? "border-primary bg-primary/10"
+                            : "border-gray-200 hover:border-gray-300"
+                        }`}
+                      >
+                        <input
+                          type="radio"
+                          name="typeVehicule"
+                          value="glc"
+                          checked={formData.typeVehicule === "glc"}
+                          onChange={handleChange}
+                          className="sr-only"
+                        />
+                        <div className="text-center">
+                          <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <Car className="w-6 h-6 text-primary" />
+                          </div>
+                          <h4 className="font-bold text-gray-800 text-sm">
+                            Mercedes GLC
+                          </h4>
+                          <p className="text-xs text-gray-600">
+                            Jusqu'à 4 passagers
+                          </p>
+                        </div>
+                      </label>
+
+                      <label
+                        className={`relative cursor-pointer rounded-xl border-2 p-4 transition-all ${
+                          formData.typeVehicule === "van"
+                            ? "border-primary bg-primary/10"
+                            : "border-gray-200 hover:border-gray-300"
+                        }`}
+                      >
+                        <input
+                          type="radio"
+                          name="typeVehicule"
+                          value="van"
+                          checked={formData.typeVehicule === "van"}
+                          onChange={handleChange}
+                          className="sr-only"
+                        />
+                        <div className="text-center">
+                          <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <Car className="w-6 h-6 text-primary" />
+                          </div>
+                          <h4 className="font-bold text-gray-800 text-sm">
+                            Van Premium
+                          </h4>
+                          <p className="text-xs text-gray-600">
+                            Jusqu'à 8 passagers
+                          </p>
+                        </div>
+                      </label>
                     </div>
                   </div>
                 </div>

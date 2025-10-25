@@ -538,7 +538,6 @@ img {
 .card {
   @apply rounded-xl2 border border-slate-200 bg-white shadow-soft;
 }
-
 /* Animations personnalisées pour la section Hero */
 @keyframes fade-in {
   from {
@@ -570,3 +569,4 @@ img {
   animation: slide-up 0.8s ease-out forwards;
   opacity: 0;
 }
+

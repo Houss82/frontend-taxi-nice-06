@@ -31,6 +31,8 @@ export const formspreeService = {
     formData.append("adresse_arrivee", data.adresseArrivee || "");
     formData.append("nombre_bagages", data.nombreBagages || "");
     formData.append("nombre_passagers", data.nombrePassagers || "");
+    formData.append("numero_vol", data.numeroVol || "");
+    formData.append("siege_enfant", data.siegeEnfant ? "Oui" : "Non");
     formData.append("commentaires", data.commentaires || "");
     formData.append("type_vehicule", data.typeVehicule || "");
 
@@ -99,6 +101,8 @@ export const formspreeService = {
     formData.append("adresse_arrivee", data.adresseArrivee || "");
     formData.append("date", data.date || "");
     formData.append("heure", data.heure || "");
+    formData.append("numero_vol", data.numeroVol || "");
+    formData.append("siege_enfant", data.siegeEnfant ? "Oui" : "Non");
     formData.append("type_vehicule", data.typeVehicule || "");
     formData.append("type_demande", "Réservation rapide");
 
