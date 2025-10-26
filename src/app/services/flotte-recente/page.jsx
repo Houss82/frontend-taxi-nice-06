@@ -102,7 +102,6 @@ export default function FlotteRecentePage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
     { name: "Flotte Récente", url: "/services/flotte-recente" },
   ];
@@ -110,7 +109,7 @@ export default function FlotteRecentePage() {
   return (
     <>
       <Navbar />
-      <div className="bg-white border-b">
+      <div className="bg-white border-b mt-20 sm:mt-0">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <SEOBreadcrumb items={breadcrumbItems} />
         </div>
@@ -118,11 +117,11 @@ export default function FlotteRecentePage() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <section className="relative sm:py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 pt-10 sm:py-0">
                   Flotte Récente
                   <span className="block text-blue-600">& Entretenue</span>
                 </h1>
@@ -187,7 +186,7 @@ export default function FlotteRecentePage() {
                   alt="Flotte moderne et entretenue"
                   width={600}
                   height={400}
-                  className="rounded-2xl shadow-2xl"
+                  className="rounded-2xl shadow-2xl max-h-[300px] lg:max-h-[450px] object-cover"
                   priority
                 />
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">

@@ -77,7 +77,6 @@ export default function TransfertsEvenementsPage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
     { name: "Transferts Événements", url: "/services/transferts-evenements" },
   ];
@@ -85,7 +84,7 @@ export default function TransfertsEvenementsPage() {
   return (
     <>
       <Navbar />
-      <div className="bg-white border-b">
+      <div className="bg-white border-b mt-20 sm:mt-0">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <SEOBreadcrumb items={breadcrumbItems} />
         </div>
@@ -93,11 +92,11 @@ export default function TransfertsEvenementsPage() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-cyan-50 to-blue-100">
+        <section className="relative sm:py-20 bg-gradient-to-br from-cyan-50 to-blue-100">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 pt-10 sm:py-0">
                   Transferts Événements
                   <span className="block text-cyan-600">Professionnels</span>
                 </h1>

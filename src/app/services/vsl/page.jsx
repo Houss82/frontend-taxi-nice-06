@@ -21,7 +21,6 @@ import Image from "next/image";
 
 export default function VSLPage() {
   const breadcrumbItems = [
-    { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
     { name: "VSL", url: "/services/vsl" },
   ];

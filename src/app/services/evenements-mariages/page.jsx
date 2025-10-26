@@ -97,7 +97,6 @@ export default function EvenementsMariagesPage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
     { name: "Événements & Mariages", url: "/services/evenements-mariages" },
   ];
@@ -105,7 +104,7 @@ export default function EvenementsMariagesPage() {
   return (
     <>
       <Navbar />
-      <div className="bg-white border-b">
+      <div className="bg-white border-b mt-20 sm:mt-0">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <SEOBreadcrumb items={breadcrumbItems} />
         </div>
@@ -113,11 +112,11 @@ export default function EvenementsMariagesPage() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-pink-50 to-purple-100">
+        <section className="relative sm:py-20 bg-gradient-to-br from-pink-50 to-purple-100">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 pt-10 sm:py-0">
                   Événements & Mariages
                   <span className="block text-pink-600">
                     Transport de Prestige

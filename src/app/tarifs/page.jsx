@@ -13,7 +13,7 @@ function TarifsContent() {
   const vehicleType = searchParams.get("vehicle") || "glc";
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 mt-20 sm:mt-0">
       {/* Navbar */}
       <Navbar />
 

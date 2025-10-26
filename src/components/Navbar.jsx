@@ -213,7 +213,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-4">
           <a
             href="/reservation"
-            className="btn bg-primary text-white hover:bg-primary/90 hidden xl:inline-flex"
+            className="px-4 py-2 bg-primary text-white hover:bg-primary/90 rounded-lg font-semibold transition-colors duration-300 inline-flex items-center gap-2"
           >
             RÉSERVER
           </a>

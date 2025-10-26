@@ -19,7 +19,7 @@ export default async function Page() {
       <Navbar />
       <main>
         {/* Hero Section - Rendu côté serveur avec H1 visible */}
-        <section className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] min-h-[500px] sm:min-h-[600px] md:min-h-[750px] overflow-hidden">
+        <section className="relative w-full min-h-[600px] sm:min-h-[650px] md:h-[80vh] md:min-h-[750px] overflow-hidden">
           {/* Image de fond avec effet parallaxe */}
           <div className="absolute inset-0">
             <Image
@@ -47,7 +47,7 @@ export default async function Page() {
           </div>
 
           {/* Contenu textuel - Design moderne */}
-          <div className="relative h-full flex flex-col items-center justify-start px-4 text-center pt-24 sm:pt-16 ">
+          <div className="relative min-h-full flex flex-col items-center justify-center px-4 text-center py-20 sm:py-16">
             {/* Badge Premium */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-4 animate-fade-in">
               <svg
@@ -86,7 +86,7 @@ export default async function Page() {
 
             {/* Boutons d'action modernes */}
             <div
-              className="flex flex-col sm:flex-row gap-4 items-center animate-slide-up"
+              className="flex flex-col sm:flex-row gap-4 items-center animate-slide-up max-w-md sm:max-w-none mx-auto"
               style={{ animationDelay: "0.6s" }}
             >
               <a

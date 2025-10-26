@@ -98,7 +98,7 @@ export default function PartenairesPage() {
       : partners.filter((p) => p.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 mt-20 sm:mt-0">
       <Navbar />
 
       {/* Breadcrumb */}

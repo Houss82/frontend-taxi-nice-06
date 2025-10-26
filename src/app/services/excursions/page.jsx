@@ -17,7 +17,6 @@ import Image from "next/image";
 
 export default function ExcursionsPage() {
   const breadcrumbItems = [
-    { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
     { name: "Excursions", url: "/services/excursions" },
   ];

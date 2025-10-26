@@ -34,7 +34,7 @@ export default function AnimatedButtons() {
           <div className="flex justify-between gap-4 max-w-md mx-auto">
             <Link
               href="/reservation"
-              className="bg-blue-500 hover:bg-blue-600 text-black font-bold px-4 py-3 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm flex-1"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold px-4 py-3 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm flex-1"
               aria-label="Réserver un taxi"
             >
               <motion.span

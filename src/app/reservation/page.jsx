@@ -291,7 +291,7 @@ export default function ReservationPage() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-10 sm:mt-0">
       {/* Navbar */}
       <Navbar />
 
@@ -462,37 +462,33 @@ export default function ReservationPage() {
 
                     <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                       <div className="space-y-2">
-                        <label className="text-gray-700 font-semibold">
+                        <label className="text-gray-700 font-semibold flex items-center gap-2">
+                          <Calendar className="w-4 h-4 text-primary" />
                           Date *
                         </label>
-                        <div className="relative">
-                          <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
-                          <input
-                            type="date"
-                            name="date"
-                            value={formData.date}
-                            onChange={handleChange}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none cursor-pointer"
-                            required
-                          />
-                        </div>
+                        <input
+                          type="date"
+                          name="date"
+                          value={formData.date}
+                          onChange={handleChange}
+                          className="w-11/12 px-4 py-3 text-center border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                          required
+                        />
                       </div>
 
                       <div className="space-y-2">
-                        <label className="text-gray-700 font-semibold">
+                        <label className="text-gray-700 font-semibold flex items-center gap-2">
+                          <Clock className="w-4 h-4 text-primary" />
                           Heure *
                         </label>
-                        <div className="relative">
-                          <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
-                          <input
-                            type="time"
-                            name="heure"
-                            value={formData.heure}
-                            onChange={handleChange}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none cursor-pointer"
-                            required
-                          />
-                        </div>
+                        <input
+                          type="time"
+                          name="heure"
+                          value={formData.heure}
+                          onChange={handleChange}
+                          className="w-11/12 px-4 py-3 text-center border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                          required
+                        />
                       </div>
                     </div>
                   </div>

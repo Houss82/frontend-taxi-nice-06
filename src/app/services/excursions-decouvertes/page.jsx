@@ -100,7 +100,6 @@ export default function ExcursionsDecouvertesPage() {
   ];
 
   const breadcrumbItems = [
-    { name: "Accueil", url: "/" },
     { name: "Services", url: "/services" },
     { name: "Excursions Découvertes", url: "/services/excursions-decouvertes" },
   ];
@@ -108,7 +107,7 @@ export default function ExcursionsDecouvertesPage() {
   return (
     <>
       <Navbar />
-      <div className="bg-white border-b">
+      <div className="bg-white border-b mt-20 sm:mt-0">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <SEOBreadcrumb items={breadcrumbItems} />
         </div>
@@ -116,11 +115,11 @@ export default function ExcursionsDecouvertesPage() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-blue-50 to-green-100">
+        <section className="relative sm:py-20 bg-gradient-to-br from-blue-50 to-green-100">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 pt-10 sm:py-0">
                   Excursions Découvertes
                   <span className="block text-blue-600">Côte d'Azur</span>
                 </h1>

@@ -204,10 +204,7 @@ export default function ServicesPage() {
     setIsAutoPlaying(false);
   };
 
-  const breadcrumbItems = [
-    { name: "Accueil", url: "/" },
-    { name: "Services", url: "/services" },
-  ];
+  const breadcrumbItems = [{ name: "Services", url: "/services" }];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -215,14 +212,14 @@ export default function ServicesPage() {
       <Navbar />
 
       {/* Breadcrumb */}
-      <div className="bg-white border-b">
+      <div className="bg-white border-b mt-20 sm:mt-0">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <SEOBreadcrumb items={breadcrumbItems} />
         </div>
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] overflow-hidden">
+      <section className="relative h-[50vh] sm:h-[70vh] overflow-hidden">
         <Image
           src="/services.jpeg"
           alt="Services Taxi Nice Côte d'Azur"
@@ -238,16 +235,16 @@ export default function ServicesPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center text-white max-w-4xl"
+            className="text-center text-white max-w-4xl pt-10 sm:pt-0"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <h1 className="text-4xl md:text-7xl font-bold mb-6  sm:py-0">
               Nos Services
               <span className="block text-3xl md:text-4xl font-light mt-2">
                 Transport Premium à Nice
               </span>
             </h1>
             <div className="w-24 h-1 bg-cyan-400 mx-auto rounded-full mb-8"></div>
-            <p className="text-xl md:text-2xl leading-relaxed">
+            <p className="text-lg md:text-2xl leading-relaxed">
               Découvrez notre gamme complète de services de transport haut de
               gamme pour tous vos besoins à Nice et sur la Côte d'Azur
             </p>
@@ -342,7 +339,7 @@ export default function ServicesPage() {
                             href="/reservation"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className={`block w-full px-6 py-3 bg-gradient-to-r ${services[currentSlide].color} text-white rounded-xl font-semibold text-center text-sm no-underline`}
+                            className={`block w-full px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r ${services[currentSlide].color} text-white rounded-xl font-semibold text-center text-sm no-underline`}
                           >
                             Réserver maintenant
                           </motion.a>
@@ -352,7 +349,7 @@ export default function ServicesPage() {
                             }
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className="block w-full px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-xl font-semibold text-center text-sm no-underline"
+                            className="block w-full px-4 py-2 sm:px-6 sm:py-3 border-2 border-gray-300 text-gray-700 rounded-xl font-semibold text-center text-sm no-underline"
                           >
                             En savoir plus
                           </motion.a>
