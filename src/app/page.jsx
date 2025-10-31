@@ -48,7 +48,7 @@ export default async function Page() {
           </div>
 
           {/* Contenu */}
-          <div className="relative min-h-full flex flex-col items-center justify-center px-4 text-center py-20 sm:py-16">
+          <div className="relative min-h-full flex flex-col items-center justify-center px-4 text-center py-20 sm:py-16 md:py-8">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-4 animate-fade-in">
               <svg
@@ -64,10 +64,10 @@ export default async function Page() {
             </div>
 
             {/* H1 SEO plus clair */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 drop-shadow-2xl text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-100 animate-slide-up">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 drop-shadow-2xl text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-100 animate-slide-up">
               Taxi à Nice
-              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mt-2">
-                Aéroport & conventionnés CPAM
+              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mt-2 bg-opacity-50 rounded-lg p-2">
+                Transferts aéroport & conventionnés
               </span>
             </h1>
 
@@ -158,7 +158,7 @@ export default async function Page() {
               </div>
 
               <div className="relative inline-block mt-24 sm:mt-8">
-                <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                <h2 className="text-4xl md:text-xl font-black text-gray-900 mb-6">
                   <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
                     Taxi à Nice & Transports Privés
                   </span>

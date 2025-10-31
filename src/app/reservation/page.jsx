@@ -462,11 +462,12 @@ export default function ReservationPage() {
 
                     <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                       <div className="space-y-2">
-                        <label className="text-gray-700 font-semibold flex items-center gap-2">
+                        <label htmlFor="date" className="text-gray-700 font-semibold flex items-center gap-2">
                           <Calendar className="w-4 h-4 text-primary" />
                           Date *
                         </label>
                         <input
+                          id="date"
                           type="date"
                           name="date"
                           value={formData.date}
@@ -477,11 +478,12 @@ export default function ReservationPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <label className="text-gray-700 font-semibold flex items-center gap-2">
+                        <label htmlFor="heure" className="text-gray-700 font-semibold flex items-center gap-2">
                           <Clock className="w-4 h-4 text-primary" />
                           Heure *
                         </label>
                         <input
+                          id="heure"
                           type="time"
                           name="heure"
                           value={formData.heure}

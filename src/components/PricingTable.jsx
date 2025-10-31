@@ -297,7 +297,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
                       <span>{dest.name}</span>
                       {dest.fixed && (
-                        <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-semibold">
+                        <span className="bg-primary/10 text-primary px-2 py-1 rounded-full text-sm font-semibold">
                           *
                         </span>
                       )}

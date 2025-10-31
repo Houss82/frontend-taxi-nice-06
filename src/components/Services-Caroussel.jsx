@@ -255,8 +255,9 @@ export default function ServicesCarousel() {
                   className={`w-2 h-2 rounded-full ${
                     isAutoPlaying ? "bg-green-500" : "bg-red-500"
                   }`}
+                  aria-hidden="true"
                 ></div>
-                <span className="text-xs text-gray-600">
+                <span className="text-sm text-gray-700">
                   {isAutoPlaying ? "Auto" : "Manuel"}
                 </span>
               </button>
@@ -404,18 +405,22 @@ export default function ServicesCarousel() {
             </button>
 
             {/* Dots Indicator - Desktop */}
-            <div className="flex justify-center mt-8 space-x-2">
+            <div className="flex justify-center mt-8 gap-3">
               {services.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`w-12 h-12 rounded-full transition-all duration-300 flex items-center justify-center ${
                     index === currentSlide
                       ? "bg-blue-500 scale-125"
                       : "bg-blue-500/50 hover:bg-blue-500/70"
                   }`}
                   aria-label={`Aller au slide ${index + 1}`}
-                />
+                >
+                  <span className={`w-3 h-3 rounded-full ${
+                    index === currentSlide ? "bg-white" : "bg-white/60"
+                  }`} aria-hidden="true" />
+                </button>
               ))}
             </div>
           </div>

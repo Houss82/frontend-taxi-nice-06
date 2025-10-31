@@ -194,7 +194,7 @@ export default function QuickBooking() {
                     </div>
                     <h4 className="font-bold text-gray-800">Mercedes GLC</h4>
                     <p className="text-sm text-gray-600">Jusqu'à 4 passagers</p>
-                    <p className="text-xs text-primary font-semibold mt-1">
+                    <p className="text-sm text-primary font-semibold mt-1">
                       Premium
                     </p>
                   </div>
@@ -221,7 +221,7 @@ export default function QuickBooking() {
                     </div>
                     <h4 className="font-bold text-gray-800">Van Premium</h4>
                     <p className="text-sm text-gray-600">Jusqu'à 8 passagers</p>
-                    <p className="text-xs text-primary font-semibold mt-1">
+                    <p className="text-sm text-primary font-semibold mt-1">
                       Groupe
                     </p>
                   </div>
@@ -382,7 +382,7 @@ export default function QuickBooking() {
                       placeholder="Ex: AF1234"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                     />
-                    <p className="text-xs text-gray-500">
+                    <p className="text-sm text-gray-600">
                       Précisez votre numéro de vol pour un suivi en temps réel
                     </p>
                   </div>
@@ -406,7 +406,7 @@ export default function QuickBooking() {
                         Siège enfant (réhausseur)
                       </span>
                     </label>
-                    <p className="text-xs text-gray-500 ml-8">
+                    <p className="text-sm text-gray-600 ml-8">
                       Disponible gratuitement sur demande
                     </p>
                   </div>
@@ -439,7 +439,7 @@ export default function QuickBooking() {
                           <h4 className="font-bold text-gray-800 text-sm">
                             Mercedes GLC
                           </h4>
-                          <p className="text-xs text-gray-600">
+                          <p className="text-sm text-gray-600">
                             Jusqu'à 4 passagers
                           </p>
                         </div>
@@ -467,7 +467,7 @@ export default function QuickBooking() {
                           <h4 className="font-bold text-gray-800 text-sm">
                             Van Premium
                           </h4>
-                          <p className="text-xs text-gray-600">
+                          <p className="text-sm text-gray-600">
                             Jusqu'à 8 passagers
                           </p>
                         </div>

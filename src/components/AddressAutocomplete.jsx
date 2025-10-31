@@ -190,9 +190,10 @@ export default function AddressAutocomplete({
   return (
     <div className="relative">
       <div className="relative">
-        <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+        <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" aria-hidden="true" />
         <input
           ref={inputRef}
+          id={componentId}
           type="text"
           name={name}
           value={value}
@@ -202,6 +203,7 @@ export default function AddressAutocomplete({
           placeholder={placeholder}
           className={`w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none ${className}`}
           autoComplete="off"
+          aria-label={placeholder || `Adresse ${name}`}
         />
         {isLoading && (
           <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
@@ -233,7 +235,7 @@ export default function AddressAutocomplete({
                     {displayText}
                   </div>
                   {context && (
-                    <div className="text-xs text-gray-500 truncate mt-1">
+                    <div className="text-sm text-gray-600 truncate mt-1">
                       {context}
                     </div>
                   )}

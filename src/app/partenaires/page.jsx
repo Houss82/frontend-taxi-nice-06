@@ -265,8 +265,8 @@ export default function PartenairesPage() {
                             <h3 className="text-2xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">
                               {partner.name}
                             </h3>
-                            <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold">
-                              <span className="w-1.5 h-1.5 bg-blue-600 rounded-full"></span>
+                            <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-semibold">
+                              <span className="w-1.5 h-1.5 bg-blue-600 rounded-full" aria-hidden="true"></span>
                               {partner.category}
                             </span>
                           </div>
@@ -343,7 +343,7 @@ export default function PartenairesPage() {
                           <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
                             <partner.icon className="w-4 h-4 text-primary" />
                           </div>
-                          <span className="text-xs text-primary font-semibold uppercase tracking-wide">
+                          <span className="text-sm text-primary font-semibold uppercase tracking-wide">
                             {partner.category}
                           </span>
                         </div>

@@ -272,6 +272,12 @@ export default function SeoContent() {
                   className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
+                  aria-label={
+                    isExpanded("section1")
+                      ? "Réduire Notre Expertise en Transport"
+                      : "Développer Notre Expertise en Transport"
+                  }
+                  aria-expanded={isExpanded("section1")}
                 >
                   {isExpanded("section1") ? (
                     <ChevronUp className="w-5 h-5 text-primary" />
@@ -327,6 +333,12 @@ export default function SeoContent() {
                 <button
                   onClick={() => toggleCard("section2")}
                   className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
+                  aria-label={
+                    isExpanded("section2")
+                      ? "Réduire Services de Transport Personnalisés"
+                      : "Développer Services de Transport Personnalisés"
+                  }
+                  aria-expanded={isExpanded("section2")}
                 >
                   {isExpanded("section2") ? (
                     <ChevronUp className="w-5 h-5 text-primary" />
@@ -386,6 +398,12 @@ export default function SeoContent() {
                 <button
                   onClick={() => toggleCard("section3")}
                   className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
+                  aria-label={
+                    isExpanded("section3")
+                      ? "Réduire Flotte de Véhicules Premium"
+                      : "Développer Flotte de Véhicules Premium"
+                  }
+                  aria-expanded={isExpanded("section3")}
                 >
                   {isExpanded("section3") ? (
                     <ChevronUp className="w-5 h-5 text-primary" />
@@ -441,6 +459,12 @@ export default function SeoContent() {
                 <button
                   onClick={() => toggleCard("section4")}
                   className="flex items-center justify-center w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-full transition-colors duration-200"
+                  aria-label={
+                    isExpanded("section4")
+                      ? "Réduire Tarifs Transparents et Compétitifs"
+                      : "Développer Tarifs Transparents et Compétitifs"
+                  }
+                  aria-expanded={isExpanded("section4")}
                 >
                   {isExpanded("section4") ? (
                     <ChevronUp className="w-5 h-5 text-primary" />
