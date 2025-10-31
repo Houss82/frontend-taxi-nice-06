@@ -104,36 +104,36 @@ export function SEOBreadcrumb({ items = [], hideVisual = false }) {
         }}
       />
       {!hideVisual && (
-        <nav
-          aria-label="Fil d'Ariane"
-          className="flex items-center space-x-2 text-sm text-gray-600 mb-4"
+      <nav
+        aria-label="Fil d'Ariane"
+        className="flex items-center space-x-2 text-sm text-gray-600 mb-4"
+      >
+        <Link
+          href="/"
+          className="hover:text-primary transition-colors"
+          title="Retour à l'accueil"
         >
-          <Link
-            href="/"
-            className="hover:text-primary transition-colors"
-            title="Retour à l'accueil"
-          >
-            Accueil
-          </Link>
-          {items.map((item, index) => (
-            <div key={index} className="flex items-center space-x-2">
-              <span className="text-gray-400">/</span>
-              {index === items.length - 1 ? (
-                <span className="text-gray-900 font-medium" aria-current="page">
-                  {item.name}
-                </span>
-              ) : (
-                <Link
-                  href={item.url || item.href}
-                  className="hover:text-primary transition-colors"
-                  title={item.title}
-                >
-                  {item.name}
-                </Link>
-              )}
-            </div>
-          ))}
-        </nav>
+          Accueil
+        </Link>
+        {items.map((item, index) => (
+          <div key={index} className="flex items-center space-x-2">
+            <span className="text-gray-400">/</span>
+            {index === items.length - 1 ? (
+              <span className="text-gray-900 font-medium" aria-current="page">
+                {item.name}
+              </span>
+            ) : (
+              <Link
+                href={item.url || item.href}
+                className="hover:text-primary transition-colors"
+                title={item.title}
+              >
+                {item.name}
+              </Link>
+            )}
+          </div>
+        ))}
+      </nav>
       )}
     </>
   );
