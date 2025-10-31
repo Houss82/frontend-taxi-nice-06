@@ -16,7 +16,7 @@ export default function StructuredData() {
       image: "https://taxi-nice-06.com/bg-image.png",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Nice, Côte d'Azur",
+        streetAddress: "10 rue Blacas",
         addressLocality: "Nice",
         addressRegion: "Provence-Alpes-Côte d'Azur",
         postalCode: "06000",
@@ -24,8 +24,8 @@ export default function StructuredData() {
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: "43.7102",
-        longitude: "7.2620",
+        latitude: "43.70082",
+        longitude: "7.27022",
       },
       openingHours: "Mo-Su 00:00-23:59",
       priceRange: "€€",
@@ -35,8 +35,8 @@ export default function StructuredData() {
         "@type": "GeoCircle",
         geoMidpoint: {
           "@type": "GeoCoordinates",
-          latitude: "43.7102",
-          longitude: "7.2620",
+          latitude: "43.70082",
+          longitude: "7.27022",
         },
         geoRadius: "50000",
       },
