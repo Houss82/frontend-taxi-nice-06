@@ -125,7 +125,7 @@ export default function ServicesCarousel() {
                         fill
                         className="object-cover"
                         priority={currentSlide < 2}
-                        quality={100}
+                        quality={85}
                         sizes="100vw"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -286,7 +286,7 @@ export default function ServicesCarousel() {
                         fill
                         className="object-cover"
                         priority={currentSlide < 2}
-                        quality={100}
+                        quality={85}
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>

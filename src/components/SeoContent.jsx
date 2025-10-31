@@ -10,6 +10,7 @@ import {
   DollarSign,
   Shield,
 } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function SeoContent() {
@@ -352,10 +353,14 @@ export default function SeoContent() {
             {/* Image de fond pour la section */}
             <div className="relative h-48 md:h-72 overflow-hidden">
               {/* Image de fond pour mobile et desktop */}
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/premium.jpeg')" }}
-              ></div>
+              <Image
+                src="/premium.jpeg"
+                alt="Service Premium Taxi Nice"
+                fill
+                quality={80}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
               <div className="absolute inset-0 bg-black/20"></div>
               <div className="absolute inset-0 flex items-center justify-center"></div>
               {/* Motif décoratif */}

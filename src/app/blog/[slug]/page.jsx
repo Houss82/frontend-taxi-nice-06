@@ -174,7 +174,7 @@ export default function BlogPostPage() {
               fill
               className="object-cover"
               priority={true}
-              quality={100}
+              quality={85}
             />
           </motion.div>
 

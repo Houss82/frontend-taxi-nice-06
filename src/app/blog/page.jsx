@@ -123,7 +123,7 @@ export default function BlogPage() {
               fill
               className="object-cover"
               priority={true}
-              quality={100}
+              quality={85}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-primaryDark/90"></div>
             <div className="container mx-auto px-4 h-full flex items-center relative z-10">

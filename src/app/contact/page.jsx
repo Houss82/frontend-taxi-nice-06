@@ -152,7 +152,7 @@ export default function ContactPage() {
           fill
           className="object-cover"
           priority={true}
-          quality={100}
+          quality={85}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/60"></div>

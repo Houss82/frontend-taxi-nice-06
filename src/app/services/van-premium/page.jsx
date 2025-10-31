@@ -117,6 +117,7 @@ export default function VanPremiumPage() {
                   height={400}
                   className="rounded-2xl shadow-2xl"
                   priority
+                  quality={85}
                 />
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">

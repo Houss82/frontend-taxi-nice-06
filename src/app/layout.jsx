@@ -59,37 +59,6 @@ export default async function RootLayout({ children }) {
             `,
           }}
         />
-        {/* Précharger les polices critiques */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-
-        {/* Précharger les polices les plus critiques */}
-        <link
-          rel="preload"
-          href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-
-        {/* Charger les polices de manière non-bloquante */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-
-        {/* Fallback pour les navigateurs sans JavaScript */}
-        <noscript>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-          />
-        </noscript>
-
         {/* Logo pour les résultats de recherche Google (Site Icon) */}
         <link rel="icon" type="image/png" sizes="512x512" href="/logo1.png" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />

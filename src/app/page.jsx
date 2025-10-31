@@ -27,8 +27,9 @@ export default async function Page() {
               alt="Taxi Mercedes GLC à Nice pour transferts aéroport et gares"
               fill
               priority
-              quality={90}
+              quality={85}
               sizes="100vw"
+              fetchPriority="high"
               className="object-cover scale-110 hover:scale-105 transition-transform duration-[20s]"
             />
           </div>
@@ -66,7 +67,7 @@ export default async function Page() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 drop-shadow-2xl text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-100 animate-slide-up">
               Taxi à Nice
               <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mt-2">
-                Transferts Aéroport & Conventionnés
+                Aéroport & conventionnés CPAM
               </span>
             </h1>
 
