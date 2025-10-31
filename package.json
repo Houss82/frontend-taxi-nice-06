@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run generate-sitemap && next build",
+    "build": "next build",
+    "postbuild": "node scripts/postbuild-sitemap.js",
     "start": "next start",
     "lint": "next lint",
     "optimize-images": "node scripts/optimize-images.js",
@@ -12,8 +13,7 @@
     "test-optimizations": "node scripts/test-optimizations.js",
     "deploy": "node scripts/deploy.js",
     "build-prod": "npm run build && npm run start",
-    "performance-check": "npm run build && npm run start & sleep 5 && curl -s 'http://localhost:3000' > /dev/null && echo 'Site accessible' || echo 'Site non accessible'",
-    "generate-sitemap": "node scripts/generate-sitemap.js"
+    "performance-check": "npm run build && npm run start & sleep 5 && curl -s 'http://localhost:3000' > /dev/null && echo 'Site accessible' || echo 'Site non accessible'"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.14",

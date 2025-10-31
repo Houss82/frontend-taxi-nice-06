@@ -1,9 +1,10 @@
 User-agent: *
 Allow: /
-
-# Disallow admin and API routes
 Disallow: /admin/
 Disallow: /api/
 
-# Sitemap
+# Host
+Host: https://taxi-nice-06.com
+
+# Sitemaps
 Sitemap: https://taxi-nice-06.com/sitemap.xml
