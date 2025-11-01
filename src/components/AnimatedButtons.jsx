@@ -18,7 +18,7 @@ export default function AnimatedButtons() {
     if (!mounted) return;
     
     // Utiliser requestAnimationFrame pour optimiser le scroll
-    let rafId: ReturnType<typeof requestAnimationFrame> | null = null;
+    let rafId = null;
     const handleScroll = () => {
       if (rafId) return;
       rafId = requestAnimationFrame(() => {
