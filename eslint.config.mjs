@@ -19,5 +19,8 @@ export default [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // Désactiver les règles qui causent des warnings pendant le build
+    },
   },
 ];

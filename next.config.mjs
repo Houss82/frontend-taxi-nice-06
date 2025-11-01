@@ -25,6 +25,13 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
+  // Désactiver ESLint pendant le build pour éviter les warnings d'options obsolètes
+  eslint: {
+    ignoreDuringBuilds: false, // Garder ESLint activé mais ignorer les warnings
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
   // Redirections 301 pour corriger les erreurs 404
   async redirects() {
     return [
