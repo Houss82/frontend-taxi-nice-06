@@ -45,6 +45,8 @@ const nextConfig = {
         destination: "/",
         permanent: true, // Redirection 301 vers l'accueil (gère aussi /a-propos?lang=en)
       },
+      // Note: Les redirections www→non-www et HTTP→HTTPS sont gérées automatiquement par Vercel
+      // via les Settings du projet (Domains)
     ];
   },
   async headers() {
