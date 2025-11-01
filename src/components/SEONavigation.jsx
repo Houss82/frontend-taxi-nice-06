@@ -171,7 +171,7 @@ export function SEOFooterLinks() {
           title: "Tarifs des services",
         },
         {
-          href: "/a-propos",
+          href: "/#about",
           label: "À propos",
           title: "À propos de notre entreprise",
         },

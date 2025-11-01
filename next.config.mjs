@@ -25,6 +25,21 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
+  // Redirections 301 pour corriger les erreurs 404
+  async redirects() {
+    return [
+      {
+        source: "/en",
+        destination: "/",
+        permanent: true, // Redirection 301 - version anglaise non implémentée
+      },
+      {
+        source: "/a-propos",
+        destination: "/",
+        permanent: true, // Redirection 301 vers l'accueil (gère aussi /a-propos?lang=en)
+      },
+    ];
+  },
   async headers() {
     return [
       {

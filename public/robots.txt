@@ -2,6 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /_next/
+Disallow: /*.ico$
 
 # Host
 Host: https://taxi-nice-06.com

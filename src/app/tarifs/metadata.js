@@ -39,6 +39,3 @@ export const metadata = {
   },
 };
 
-export default function TarifsLayout({ children }) {
-  return children;
-}

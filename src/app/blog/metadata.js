@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Blog | Taxi Nice Côte d'Azur - Conseils et Actualités",
+  title: "Blog Taxi Nice | Conseils & Actualités Transport | Taxi Nice-06",
   description:
-    "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur. Guides pratiques, actualités et informations sur nos services de taxi premium.",
+    "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur. Guides pratiques, actualités et informations sur nos services de taxi premium. Articles sur transferts aéroport, VSL et excursions.",
   keywords: [
     "blog taxi nice",
     "conseils transport nice",
@@ -10,13 +10,16 @@ export const metadata = {
     "transport côte d'azur",
     "vtc nice",
     "taxi aéroport nice",
+    "blog transport nice",
+    "conseils taxi",
   ],
   openGraph: {
-    title: "Blog | Taxi Nice Côte d'Azur",
+    title: "Blog Taxi Nice | Conseils & Actualités | Taxi Nice-06",
     description:
       "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur. Guides pratiques, actualités et informations sur nos services de taxi premium.",
     url: "https://taxi-nice-06.com/blog",
     type: "website",
+    siteName: "Taxi Nice Côte d'Azur",
     images: [
       {
         url: "https://taxi-nice-06.com/bg-image.png",
@@ -28,16 +31,16 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog | Taxi Nice Côte d'Azur",
+    title: "Blog Taxi Nice | Conseils & Actualités | Taxi Nice-06",
     description:
-      "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur.",
+      "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur. Guides pratiques et actualités.",
     images: ["https://taxi-nice-06.com/bg-image.png"],
   },
   alternates: {
     canonical: "https://taxi-nice-06.com/blog",
     languages: {
-      fr: "https://taxi-nice-06.com/blog",
-      en: "https://taxi-nice-06.com/blog",
+      "fr-FR": "https://taxi-nice-06.com/blog",
+      "en-US": "https://taxi-nice-06.com/blog",
     },
   },
   robots: {

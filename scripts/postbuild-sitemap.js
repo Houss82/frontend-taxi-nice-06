@@ -88,6 +88,8 @@ const robotsContent = `User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /_next/
+Disallow: /*.ico$
 
 # Host
 Host: ${baseUrl}
