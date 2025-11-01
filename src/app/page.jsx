@@ -27,10 +27,11 @@ export default async function Page() {
               alt="Taxi Mercedes GLC à Nice pour transferts aéroport et gares"
               fill
               priority
-              quality={85}
+              quality={75}
               sizes="100vw"
               fetchPriority="high"
-              className="object-cover scale-110 hover:scale-105 transition-transform duration-[20s]"
+              className="object-cover"
+              loading="eager"
             />
           </div>
 
@@ -38,13 +39,10 @@ export default async function Page() {
           <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/25 to-black/35" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-          {/* Effets décoratifs */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
-            <div
-              className="absolute bottom-40 right-20 w-40 h-40 bg-purple-500 rounded-full blur-3xl animate-pulse"
-              style={{ animationDelay: "1s" }}
-            ></div>
+          {/* Effets décoratifs - Désactivés sur mobile pour améliorer les performances */}
+          <div className="absolute inset-0 opacity-30 hidden md:block">
+            <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-40 right-20 w-40 h-40 bg-purple-500 rounded-full blur-3xl"></div>
           </div>
 
           {/* Contenu */}

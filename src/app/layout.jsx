@@ -48,14 +48,27 @@ export default async function RootLayout({ children }) {
                 };
               }
               
-              // Charger GTM après que la page soit complètement chargée
+              // Charger GTM après que la page soit complètement chargée et interactive
               if (document.readyState === 'complete') {
-                setTimeout(loadGTM, 1000);
+                setTimeout(loadGTM, 3000); // Délai augmenté à 3s pour améliorer les performances
               } else {
                 window.addEventListener('load', function() {
-                  setTimeout(loadGTM, 1000);
+                  setTimeout(loadGTM, 3000);
                 });
               }
+              
+              // Prioriser l'interactivité - charger GTM seulement si l'utilisateur scroll
+              let userInteracted = false;
+              const handleUserInteraction = function() {
+                if (!userInteracted) {
+                  userInteracted = true;
+                  setTimeout(loadGTM, 1000);
+                  window.removeEventListener('scroll', handleUserInteraction);
+                  window.removeEventListener('click', handleUserInteraction);
+                }
+              };
+              window.addEventListener('scroll', handleUserInteraction, { once: true, passive: true });
+              window.addEventListener('click', handleUserInteraction, { once: true });
             `,
           }}
         />
@@ -72,6 +85,7 @@ export default async function RootLayout({ children }) {
         <CriticalCSS />
         <StructuredData />
         {children}
+        {/* Composants chargés de manière différée pour améliorer les performances */}
         <AnimatedButtons />
         <WhatsAppButton />
         <LazyScripts />

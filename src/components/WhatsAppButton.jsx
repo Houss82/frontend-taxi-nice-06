@@ -1,6 +1,9 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 export default function WhatsAppButton() {
+  const [mounted, setMounted] = useState(false);
   const phoneNumber = "33651683687"; // Votre numéro sans le +33
   const message =
     "Bonjour, je souhaite réserver un taxi. Pouvez-vous m'aider ?";
@@ -9,8 +12,14 @@ export default function WhatsAppButton() {
     message
   )}`;
 
-  // Debug: vérifier que le composant se charge
-  console.log("WhatsAppButton loaded");
+  // Charger le bouton après que la page soit interactive pour améliorer les performances
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null; // Ne pas rendre avant que le client soit prêt
+  }
 
   return (
     <a

@@ -7,18 +7,40 @@ import { useEffect, useState } from "react";
 
 export default function AnimatedButtons() {
   const [showButtons, setShowButtons] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
+  // Charger le composant après que la page soit interactive
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      setShowButtons(scrollPosition > windowHeight * 0.1);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    setMounted(true);
   }, []);
 
+  useEffect(() => {
+    if (!mounted) return;
+    
+    // Utiliser requestAnimationFrame pour optimiser le scroll
+    let rafId: ReturnType<typeof requestAnimationFrame> | null = null;
+    const handleScroll = () => {
+      if (rafId) return;
+      rafId = requestAnimationFrame(() => {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        setShowButtons(scrollPosition > windowHeight * 0.1);
+        rafId = null;
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafId) cancelAnimationFrame(rafId);
+    };
+  }, [mounted]);
+
+  if (!mounted) {
+    return null; // Ne pas rendre avant que le client soit prêt
+  }
+
+  // Ne pas afficher sur mobile pour améliorer les performances
   return (
     <AnimatePresence>
       {showButtons && (
@@ -27,7 +49,7 @@ export default function AnimatedButtons() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="fixed top-[64px] left-0 right-0 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 p-4 shadow-lg md:hidden z-40"
+          className="fixed top-[64px] left-0 right-0 bg-white/95 backdrop-blur-sm supports-[backdrop-filter]:bg-white/60 p-4 shadow-lg md:hidden z-40"
           role="navigation"
           aria-label="Actions rapides"
         >
