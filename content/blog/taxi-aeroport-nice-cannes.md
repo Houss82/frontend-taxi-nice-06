@@ -18,7 +18,7 @@ keywords:
 
 ## 🚖 Taxi Aéroport de Nice – Cannes : le trajet le plus demandé sur la Côte d'Azur
 
-Chaque jour, des centaines de voyageurs choisissent notre service de **taxi premium entre l'aéroport de Nice et Cannes**. Que vous veniez pour affaires, un festival, ou un séjour détente, nous vous garantissons un transfert sans stress, dans un confort absolu.
+Chaque jour, des centaines de voyageurs choisissent notre [service de taxi premium](https://taxi-nice-06.com) entre l'aéroport de Nice et Cannes. Que vous veniez pour affaires, un festival, ou un séjour détente, nous vous garantissons un transfert sans stress, dans un confort absolu.
 
 ---
 
@@ -67,7 +67,7 @@ Nous couvrons **toutes les zones de Cannes** : La Croisette, Le Suquet, Port Can
 - **Véhicules haut de gamme** : ✅ Mercedes Classe E / V | ⚠️ Qualité variable
 - **Chauffeur professionnel agréé** : ✅ Oui | ❌ Pas toujours
 
-Avec nous, **pas de surprise**, le tarif est connu à l'avance et votre confort est garanti.
+Avec nous, **pas de surprise**, le tarif est connu à l'avance et votre confort est garanti. Pour en savoir plus sur [notre service de taxi à Nice](https://taxi-nice-06.com) et découvrir tous nos prestations, visitez notre site web.
 
 ---
 
@@ -87,15 +87,17 @@ Le prix moyen est de **110€ à 130€**, selon le véhicule choisi et le nombr
 Oui ✅, nous suivons votre vol et ajustons l'heure d'arrivée sans frais supplémentaires.
 
 **3. Peut-on réserver à l'avance ?**  
-Oui, via notre site ou par téléphone. Vous recevrez une confirmation immédiate 📲.
+Oui, via notre [site de réservation](https://taxi-nice-06.com/reservation) ou par téléphone. Vous recevrez une confirmation immédiate 📲.
 
 ---
 
 ## 📞 Réservez votre taxi dès maintenant
 
 Offrez-vous un transfert sans stress avec **Taxi Nice Côte d'Azur**.  
-👉 [Réservez votre taxi en ligne dès maintenant](https://taxi-nice-06.com)  
-ou contactez-nous au **06 51 68 36 87**.
+👉 [Réservez votre taxi en ligne dès maintenant](https://taxi-nice-06.com/reservation)  
+ou [contactez-nous via notre site](https://taxi-nice-06.com/contact) au **06 51 68 36 87**.
+
+Pour découvrir tous nos services (transferts aéroport, VSL, excursions), consultez [notre page d'accueil](https://taxi-nice-06.com).
 
 **Confort, élégance et ponctualité — votre voyage commence dès l'aéroport.**
 
