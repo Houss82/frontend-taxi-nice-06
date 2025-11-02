@@ -32,9 +32,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  // Redirections 301 pour corriger les erreurs 404
+  // Redirections 301 pour corriger les erreurs 404 et unifier les versions
   async redirects() {
     return [
+      // Anciennes redirections
       {
         source: "/en",
         destination: "/",
@@ -45,8 +46,18 @@ const nextConfig = {
         destination: "/",
         permanent: true, // Redirection 301 vers l'accueil (gère aussi /a-propos?lang=en)
       },
-      // Note: Les redirections www→non-www et HTTP→HTTPS sont gérées automatiquement par Vercel
-      // via les Settings du projet (Domains)
+      // ✅ Redirection www → non-www (unifie les versions du site)
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.taxi-nice-06.com",
+          },
+        ],
+        destination: "https://taxi-nice-06.com/:path*",
+        permanent: true, // Redirection 301 permanente
+      },
     ];
   },
   async headers() {
