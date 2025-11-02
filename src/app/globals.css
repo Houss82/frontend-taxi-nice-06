@@ -568,3 +568,28 @@ img {
   opacity: 0;
 }
 
+/* H1 avec contour blanc et dégradé bleu/violet */
+.h1-with-stroke {
+  position: relative;
+}
+
+.h1-with-stroke::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  color: white;
+  -webkit-text-stroke: 3px white;
+  filter: blur(1px);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.h1-with-stroke .h1-gradient {
+  position: relative;
+  background: linear-gradient(to right, rgb(59 130 246), rgb(37 99 235), rgb(147 51 234));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+

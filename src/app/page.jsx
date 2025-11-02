@@ -13,7 +13,7 @@ import Image from "next/image";
  * Tout le contenu (H1/H2, textes, image) est rendu côté serveur
  * pour être visible dans le HTML initial pour les crawlers
  */
-export default async function Page() {
+export default function Page() {
   return (
     <>
       <Navbar />
@@ -61,11 +61,13 @@ export default async function Page() {
               </span>
             </div>
 
-            {/* H1 SEO plus clair */}
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 drop-shadow-2xl text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-100 animate-slide-up">
-              Taxi à Nice
-              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mt-2 bg-opacity-50 rounded-lg p-2">
-                Transferts aéroport & conventionnés
+            {/* H1 SEO optimisé - Structure sur 2 lignes avec dégradé et contour blanc */}
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 drop-shadow-2xl">
+              <span className="block h1-with-stroke" data-text="Taxi Nice">
+                <span className="h1-gradient">Taxi Nice</span>
+              </span>
+              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-100">
+                Transferts Aéroport & VSL Conventionnés
               </span>
             </h1>
 
@@ -157,7 +159,7 @@ export default async function Page() {
 
               <div className="relative inline-block mt-24 sm:mt-8">
                 <h2 className="text-4xl md:text-xl font-black text-gray-900 mb-6">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
                     Taxi à Nice & Transports Privés
                   </span>
                 </h2>

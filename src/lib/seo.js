@@ -71,10 +71,6 @@ export async function generateSEOMetadata(locale = "fr") {
       },
     },
 
-    verification: {
-      google: "VOTRE_CODE_DE_VERIFICATION_GOOGLE_ICI",
-    },
-
     icons: {
       icon: [
         { url: "/favicon.ico" },
