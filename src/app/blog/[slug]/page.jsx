@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, Share2, Tag, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -134,7 +135,7 @@ export default function BlogPostPage() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="article-title">
               {post.title}
             </h1>
 
@@ -202,6 +203,45 @@ export default function BlogPostPage() {
                 ))}
               </div>
             </div>
+          )}
+
+          {/* Schema JSON-LD Article */}
+          {post && (
+            <Script
+              id="article-schema"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BlogPosting",
+                  headline: post.title,
+                  image: `https://taxi-nice-06.com${post.image}`,
+                  datePublished: post.date,
+                  dateModified: post.date,
+                  author: {
+                    "@type": "Organization",
+                    name: post.author || "Taxi Nice Côte d'Azur",
+                  },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Taxi Nice Côte d'Azur",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://taxi-nice-06.com/logo1.png",
+                    },
+                  },
+                  description: post.excerpt,
+                  articleSection: post.category,
+                  keywords: Array.isArray(post.keywords)
+                    ? post.keywords.join(", ")
+                    : post.keywords || "",
+                  mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id": `https://taxi-nice-06.com/blog/${post.slug}`,
+                  },
+                }),
+              }}
+            />
           )}
 
           {/* CTA */}

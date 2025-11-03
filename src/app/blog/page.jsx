@@ -188,7 +188,9 @@ export default function BlogPage() {
                 </div>
               ) : (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {filteredPosts.map((post, index) => (
+                  {filteredPosts
+                    .filter((post) => post && post.slug)
+                    .map((post, index) => (
                     <motion.article
                       key={post.slug}
                       initial={{ opacity: 0, y: 30 }}
@@ -196,7 +198,7 @@ export default function BlogPage() {
                       transition={{ delay: index * 0.1, duration: 0.6 }}
                       className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
                     >
-                      <Link href={`/blog/${post.slug}`}>
+                      <Link href={`/blog/${post.slug}`} prefetch={true}>
                         <div className="relative h-64 overflow-hidden">
                           <Image
                             src={post.image}
@@ -224,7 +226,7 @@ export default function BlogPage() {
                           </div>
                         </div>
 
-                        <Link href={`/blog/${post.slug}`}>
+                        <Link href={`/blog/${post.slug}`} prefetch={true}>
                           <h2 className="text-2xl font-bold mb-3 text-gray-900 hover:text-primary transition-colors line-clamp-2">
                             {post.title}
                           </h2>
@@ -241,6 +243,7 @@ export default function BlogPage() {
                           </div>
                           <Link
                             href={`/blog/${post.slug}`}
+                            prefetch={true}
                             className="text-primary font-semibold hover:underline"
                           >
                             Lire plus →

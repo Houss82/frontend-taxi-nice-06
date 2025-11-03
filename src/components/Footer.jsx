@@ -1,6 +1,7 @@
 "use client";
 
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -74,36 +75,36 @@ export default function Footer() {
         <div className="border-t border-white/20 mt-12 pt-8">
           {/* Liens légaux */}
           <div className="flex flex-wrap justify-center gap-6 mb-6">
-            <a
+            <Link
               href="/blog"
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
               Blog
-            </a>
-            <a
+            </Link>
+            <Link
               href="/partenaires"
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
               Partenaires
-            </a>
-            <a
+            </Link>
+            <Link
               href="/mentions-legales"
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
               Mentions légales
-            </a>
-            <a
+            </Link>
+            <Link
               href="/politique-confidentialite"
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
               Politique de confidentialité
-            </a>
-            <a
+            </Link>
+            <Link
               href="/cgv"
               className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
             >
               CGV
-            </a>
+            </Link>
             <a
               href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
               target="_blank"
