@@ -1,10 +1,10 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { remark } from "remark";
-import remarkRehype from "remark-rehype";
 import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
+import { remark } from "remark";
+import remarkRehype from "remark-rehype";
 
 const postsDirectory = path.join(process.cwd(), "content/blog");
 
@@ -12,6 +12,7 @@ const postsDirectory = path.join(process.cwd(), "content/blog");
 export function getAllPosts() {
   // Vérifier si le dossier existe
   if (!fs.existsSync(postsDirectory)) {
+    console.warn(`⚠️ Dossier blog introuvable: ${postsDirectory}`);
     return [];
   }
 
@@ -50,7 +51,23 @@ export function getAllPosts() {
 export async function getPostBySlug(slug) {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
 
+  // Logs de débogage (seulement en développement)
+  if (process.env.NODE_ENV === "development") {
+    console.log(`📄 Recherche article: ${slug}`);
+    console.log(`📂 Chemin recherché: ${fullPath}`);
+    console.log(`📁 Dossier blog: ${postsDirectory}`);
+    console.log(`✅ Dossier existe: ${fs.existsSync(postsDirectory)}`);
+  }
+
   if (!fs.existsSync(fullPath)) {
+    if (process.env.NODE_ENV === "development") {
+      console.error(`❌ Fichier introuvable: ${fullPath}`);
+      // Lister les fichiers disponibles pour aider au débogage
+      if (fs.existsSync(postsDirectory)) {
+        const availableFiles = fs.readdirSync(postsDirectory);
+        console.log(`📋 Fichiers disponibles:`, availableFiles);
+      }
+    }
     return null;
   }
 
@@ -82,17 +99,27 @@ export async function getPostBySlug(slug) {
 // Récupérer tous les slugs (pour la génération statique)
 export function getAllPostSlugs() {
   if (!fs.existsSync(postsDirectory)) {
+    console.warn(`⚠️ Dossier blog introuvable: ${postsDirectory}`);
     return [];
   }
 
   const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames
+  const slugs = fileNames
     .filter((fileName) => fileName.endsWith(".md") && !fileName.startsWith("_"))
     .map((fileName) => {
       return {
         slug: fileName.replace(/\.md$/, ""),
       };
     });
+
+  if (process.env.NODE_ENV === "development") {
+    console.log(
+      `📝 Slugs générés:`,
+      slugs.map((s) => s.slug)
+    );
+  }
+
+  return slugs;
 }
 
 // Récupérer les articles par catégorie

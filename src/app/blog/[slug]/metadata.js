@@ -8,60 +8,58 @@ export async function generateMetadata({ params }) {
     return {
       title: "Article non trouvé | Taxi Nice Côte d'Azur",
       description: "L'article que vous recherchez n'existe pas.",
+      robots: {
+        index: false,
+        follow: false,
+      },
+      alternates: {
+        canonical: "https://taxi-nice-06.com/blog",
+      },
     };
   }
 
   // Définir l'URL canonique
   const canonicalUrl = `https://taxi-nice-06.com/blog/${post.slug}`;
-  const alternateLanguage = post.language === "fr" ? "en" : "fr";
-
-  // Trouver l'article correspondant dans l'autre langue
-  const alternateSlugs = {
-    "choisir-chauffeur-prive-nice": "choosing-private-driver-nice",
-    "choosing-private-driver-nice": "choisir-chauffeur-prive-nice",
-    "guide-transfert-aeroport-nice": "nice-airport-transfer-guide",
-    "nice-airport-transfer-guide": "guide-transfert-aeroport-nice",
-    "excursions-cote-azur": "french-riviera-tours",
-    "french-riviera-tours": "excursions-cote-azur",
-  };
-
-  const alternateSlug = alternateSlugs[post.slug];
-  const alternateUrl = alternateSlug
-    ? `https://taxi-nice-06.com/blog/${alternateSlug}`
-    : null;
+  const imageUrl = post.image.startsWith("http")
+    ? post.image
+    : `https://taxi-nice-06.com${post.image}`;
 
   return {
     title: `${post.title} | Taxi Nice Côte d'Azur`,
-    description: post.excerpt,
-    keywords: post.keywords || [],
-    authors: [{ name: post.author }],
+    description: post.excerpt || `Découvrez ${post.title.toLowerCase()}.`,
+    keywords: Array.isArray(post.keywords)
+      ? post.keywords.join(", ")
+      : post.keywords || "",
+    authors: [{ name: post.author || "Taxi Nice Côte d'Azur" }],
     openGraph: {
+      type: "article",
+      url: canonicalUrl,
       title: post.title,
       description: post.excerpt,
-      url: canonicalUrl,
-      type: "article",
-      publishedTime: post.date,
-      authors: [post.author],
+      siteName: "Taxi Nice Côte d'Azur",
       images: [
         {
-          url: `https://taxi-nice-06.com${post.image}`,
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: post.title,
         },
       ],
+      locale: "fr_FR",
+      publishedTime: post.date,
+      authors: [post.author || "Taxi Nice Côte d'Azur"],
+      section: post.category,
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [`https://taxi-nice-06.com${post.image}`],
+      images: [imageUrl],
     },
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        [post.language]: canonicalUrl,
-        ...(alternateUrl && { [alternateLanguage]: alternateUrl }),
+        "fr-FR": canonicalUrl,
       },
     },
     robots: {
