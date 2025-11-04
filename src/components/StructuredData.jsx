@@ -24,8 +24,8 @@ export default function StructuredData() {
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: "43.70082",
-        longitude: "7.27022",
+        latitude: 43.70082,
+        longitude: 7.27022,
       },
       openingHours: "Mo-Su 00:00-23:59",
       priceRange: "€€",
@@ -35,10 +35,10 @@ export default function StructuredData() {
         "@type": "GeoCircle",
         geoMidpoint: {
           "@type": "GeoCoordinates",
-          latitude: "43.70082",
-          longitude: "7.27022",
+          latitude: 43.70082,
+          longitude: 7.27022,
         },
-        geoRadius: "50000",
+        geoRadius: 50000,
       },
       areaServed: [
         {
@@ -127,10 +127,10 @@ export default function StructuredData() {
       ],
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "4.8",
-        reviewCount: "127",
-        bestRating: "5",
-        worstRating: "1",
+        ratingValue: 5,
+        reviewCount: 21,
+        bestRating: 5,
+        worstRating: 1,
       },
       review: [
         {
@@ -141,8 +141,8 @@ export default function StructuredData() {
           },
           reviewRating: {
             "@type": "Rating",
-            ratingValue: "5",
-            bestRating: "5",
+            ratingValue: 5,
+            bestRating: 5,
           },
           reviewBody:
             "Service excellent, chauffeur très professionnel et ponctuel. Je recommande vivement !",
@@ -155,8 +155,8 @@ export default function StructuredData() {
           },
           reviewRating: {
             "@type": "Rating",
-            ratingValue: "5",
-            bestRating: "5",
+            ratingValue: 5,
+            bestRating: 5,
           },
           reviewBody:
             "Très bon service pour les transferts aéroport. Véhicules impeccables.",

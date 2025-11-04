@@ -137,7 +137,6 @@ export function generateServiceMetadata(serviceKey, locale = "fr") {
       canonical: `/services/${serviceKey}`,
       languages: {
         "fr-FR": `/services/${serviceKey}`,
-        "en-US": `/services/${serviceKey}?lang=en`,
       },
     },
   };
@@ -191,18 +190,18 @@ export function generateServiceStructuredData(serviceKey, locale = "fr") {
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: "43.7102",
-        longitude: "7.2620",
+        latitude: 43.7102,
+        longitude: 7.2620,
       },
       openingHours: "Mo-Su 00:00-23:59",
       serviceArea: {
         "@type": "GeoCircle",
         geoMidpoint: {
           "@type": "GeoCoordinates",
-          latitude: "43.7102",
-          longitude: "7.2620",
+          latitude: 43.7102,
+          longitude: 7.2620,
         },
-        geoRadius: "50000",
+        geoRadius: 50000,
       },
     },
     serviceType: data.serviceType,

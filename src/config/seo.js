@@ -5,7 +5,7 @@ export const seoConfig = {
   siteName: "Taxi Nice Côte d'Azur",
   siteUrl: "https://taxi-nice-06.com",
   defaultLanguage: "fr-FR",
-  alternateLanguages: ["en-US"],
+  alternateLanguages: [],
 
   // Informations de contact
   contact: {
@@ -223,10 +223,10 @@ export const seoConfig = {
       paymentAccepted: ["Cash", "Credit Card", "Bank Transfer"],
       currenciesAccepted: "EUR",
       aggregateRating: {
-        ratingValue: "4.8",
-        reviewCount: "127",
-        bestRating: "5",
-        worstRating: "1",
+        ratingValue: 5,
+        reviewCount: 21,
+        bestRating: 5,
+        worstRating: 1,
       },
     },
   },
@@ -309,7 +309,6 @@ export function generateMetadata(page, customData = {}) {
       canonical: `${seoConfig.siteUrl}${page === "home" ? "" : `/${page}`}`,
       languages: {
         "fr-FR": "/",
-        "en-US": "/en",
       },
     },
   };

@@ -34,18 +34,42 @@ export default async function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               
+              // Protection contre le double chargement
+              let gtmLoaded = false;
+              let gtmLoading = false;
+              
               // Charger Google Tag Manager de manière ultra-différée
               function loadGTM() {
+                // Éviter le double chargement
+                if (gtmLoaded || gtmLoading) {
+                  return;
+                }
+                
+                // Vérifier si le script n'est pas déjà présent
+                if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+                  gtmLoaded = true;
+                  return;
+                }
+                
+                gtmLoading = true;
+                
                 const script = document.createElement('script');
                 script.async = true;
                 script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17599375066';
-                document.head.appendChild(script);
                 
                 // Configurer gtag après chargement
                 script.onload = function() {
+                  gtmLoaded = true;
+                  gtmLoading = false;
                   gtag('js', new Date());
                   gtag('config', 'AW-17599375066');
                 };
+                
+                script.onerror = function() {
+                  gtmLoading = false;
+                };
+                
+                document.head.appendChild(script);
               }
               
               // Charger GTM après que la page soit complètement chargée et interactive

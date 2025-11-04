@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 // Composant pour animer les chiffres
 function AnimatedCounter({ end, duration = 2000, decimals = 0, suffix = "" }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(end); // Démarre avec la valeur finale pour éviter les 0
   const [hasAnimated, setHasAnimated] = useState(false);
   const counterRef = useRef(null);
 
@@ -15,11 +15,19 @@ function AnimatedCounter({ end, duration = 2000, decimals = 0, suffix = "" }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-
+            
+            // Animation optionnelle : on peut animer depuis une valeur plus basse
+            // mais on garde la valeur finale visible dès le début
             const startTime = performance.now();
-            const startValue = 0;
+            const startValue = end * 0.7; // Commence à 70% de la valeur finale pour une animation subtile
             const endValue = parseFloat(end);
+            
+            // Mettre à jour immédiatement avec la valeur finale pour éviter les 0
+            setCount(endValue);
 
+            // Animation optionnelle (désactivée par défaut pour afficher les valeurs directement)
+            // Décommenter si vous voulez une animation subtile
+            /*
             const animate = (currentTime) => {
               const elapsed = currentTime - startTime;
               const progress = Math.min(elapsed / duration, 1);
@@ -39,10 +47,11 @@ function AnimatedCounter({ end, duration = 2000, decimals = 0, suffix = "" }) {
             };
 
             requestAnimationFrame(animate);
+            */
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 } // Se déclenche plus tôt pour afficher les valeurs rapidement
     );
 
     if (counterRef.current) {

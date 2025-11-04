@@ -40,7 +40,6 @@ export const metadata = {
     canonical: "https://taxi-nice-06.com/blog",
     languages: {
       "fr-FR": "https://taxi-nice-06.com/blog",
-      "en-US": "https://taxi-nice-06.com/blog",
     },
   },
   robots: {

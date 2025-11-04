@@ -28,7 +28,6 @@ export async function generateSEOMetadata(locale = "fr") {
       languages: {
         "x-default": "/",
         "fr-FR": "/",
-        "en-US": "/en",
       },
     },
 
