@@ -1,24 +1,36 @@
 import Link from "next/link";
 import Script from "next/script";
 
-/**
- * Composant Breadcrumb SEO compatible Server Component
- * À utiliser dans les pages Server Components
- * 
- * @param {Array} items - Tableau d'items { name, url, title }
- * @param {Boolean} hideVisual - Masquer le rendu visuel (garder seulement le JSON-LD)
- */
+// Composant Server Component pour le breadcrumb SEO
+// Ne dépend pas de usePathname() et peut être utilisé dans les Server Components
 export default function SEOBreadcrumb({ items = [], hideVisual = false }) {
   if (items.length === 0) return null;
+
+  // Fonction pour convertir une URL relative en URL absolue
+  const toAbsoluteUrl = (url) => {
+    if (!url) return "https://taxi-nice-06.com";
+    // Si déjà absolue, retourner telle quelle
+    if (url.startsWith("http://") || url.startsWith("https://")) {
+      return url;
+    }
+    // Sinon, convertir en absolue
+    return `https://taxi-nice-06.com${url.startsWith("/") ? url : `/${url}`}`;
+  };
+
+  // Ajouter "Accueil" en premier si pas présent
+  const allItems =
+    items[0]?.name === "Accueil"
+      ? items
+      : [{ name: "Accueil", url: "/" }, ...items];
 
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
+    itemListElement: allItems.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `https://taxi-nice-06.com${item.url || item.href || "/"}`,
+      item: toAbsoluteUrl(item.url || item.href),
     })),
   };
 
@@ -47,7 +59,10 @@ export default function SEOBreadcrumb({ items = [], hideVisual = false }) {
             <div key={index} className="flex items-center space-x-2">
               <span className="text-gray-400">/</span>
               {index === items.length - 1 ? (
-                <span className="text-gray-900 font-medium" aria-current="page">
+                <span
+                  className="text-gray-900 font-medium"
+                  aria-current="page"
+                >
                   {item.name}
                 </span>
               ) : (
@@ -66,3 +81,4 @@ export default function SEOBreadcrumb({ items = [], hideVisual = false }) {
     </>
   );
 }
+

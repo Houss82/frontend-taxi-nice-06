@@ -2,7 +2,7 @@
 
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
-import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import { motion } from "framer-motion";
 import { Calendar, Clock, User } from "lucide-react";
 import Image from "next/image";

@@ -3,7 +3,7 @@
 import Footer from "@/components/Footer.jsx";
 import GoogleMap from "@/components/GoogleMap.jsx";
 import Navbar from "@/components/Navbar.jsx";
-import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import { formspreeService } from "@/lib/formspree.jsx";
 import { motion } from "framer-motion";
 import {

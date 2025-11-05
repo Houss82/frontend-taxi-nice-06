@@ -58,6 +58,13 @@ const nextConfig = {
         destination: "https://taxi-nice-06.com/:path*",
         permanent: true, // Redirection 301 permanente
       },
+      // ✅ Redirection trailing slash → sans trailing slash (sauf pour la racine)
+      // Évite les doublons /services/ vs /services
+      {
+        source: "/:path+/",
+        destination: "/:path+",
+        permanent: true,
+      },
     ];
   },
   async headers() {

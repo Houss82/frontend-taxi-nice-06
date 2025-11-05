@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar.jsx";
-import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import { motion } from "framer-motion";
 import { FileText, Mail, MapPin, Phone, Shield } from "lucide-react";
 

@@ -134,9 +134,9 @@ export function generateServiceMetadata(serviceKey, locale = "fr") {
       images: [`/services/${serviceKey}-og.jpg`],
     },
     alternates: {
-      canonical: `/services/${serviceKey}`,
+      canonical: `https://taxi-nice-06.com/services/${serviceKey}`,
       languages: {
-        "fr-FR": `/services/${serviceKey}`,
+        "fr-FR": `https://taxi-nice-06.com/services/${serviceKey}`,
       },
     },
   };

@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar.jsx";
 import SEOImage from "@/components/SEOImage.jsx";
-import { SEOBreadcrumb } from "@/components/SEONavigation.jsx";
+import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import {
   ArrowRight,
   Camera,
