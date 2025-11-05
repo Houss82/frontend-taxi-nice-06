@@ -212,3 +212,4 @@ Pour les pages "avec redirection", c'est **normal** qu'elles ne soient pas index
 **Date de création :** 2025-01-XX  
 **Statut :** ✅ Guide prêt, en attente de déploiement
 
+

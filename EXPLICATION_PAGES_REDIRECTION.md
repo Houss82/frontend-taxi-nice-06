@@ -139,3 +139,4 @@ Dans **2-4 semaines**, vérifier :
 **Date de création :** 2025-01-XX  
 **Statut :** ✅ Redirections configurées, comportement normal attendu
 
+

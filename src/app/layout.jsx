@@ -96,9 +96,6 @@ export default async function RootLayout({ children }) {
             `,
           }}
         />
-        {/* Logo pour les résultats de recherche Google (Site Icon) */}
-        <link rel="icon" type="image/png" sizes="512x512" href="/logo1.png" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}

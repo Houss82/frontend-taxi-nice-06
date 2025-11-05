@@ -72,11 +72,15 @@ export async function generateSEOMetadata(locale = "fr") {
 
     icons: {
       icon: [
-        { url: "/favicon.ico" },
         { url: "/logo1.png", sizes: "512x512", type: "image/png" },
+        { url: "/favicon.ico", sizes: "any" },
       ],
-      apple: [{ url: "/logo1.png", sizes: "180x180", type: "image/png" }],
-      shortcut: [{ url: "/logo1.png" }],
+      apple: [
+        { url: "/logo1.png", sizes: "180x180", type: "image/png" },
+      ],
+      shortcut: [
+        { url: "/logo1.png", type: "image/png" },
+      ],
     },
   };
 }
