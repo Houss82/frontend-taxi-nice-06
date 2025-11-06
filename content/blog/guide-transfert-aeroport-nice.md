@@ -2,7 +2,7 @@
 title: "Guide Complet du Transfert depuis l'Aéroport de Nice Côte d'Azur"
 date: "2025-10-28"
 excerpt: "Découvrez tous nos conseils pour un transfert réussi depuis l'aéroport de Nice. Prix, durées, options et astuces pour voyager sereinement."
-image: "/gare-jour copie.jpeg"
+image: "/aéroport-Nice-arrivées-T2.jpeg"
 category: "Guides Pratiques"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
