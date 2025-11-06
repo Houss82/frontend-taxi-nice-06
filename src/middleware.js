@@ -5,7 +5,7 @@ export function middleware(request) {
   const url = request.nextUrl.clone();
 
   // ✅ Redirection HTTP → HTTPS (si ce n'est pas déjà géré par l'hébergeur)
-  if (url.protocol === "http:") {
+  if (url.protocol === "http:" && url.hostname !== "localhost") {
     url.protocol = "https:";
     return NextResponse.redirect(url, 301);
   }

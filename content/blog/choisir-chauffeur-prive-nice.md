@@ -25,9 +25,9 @@ Le marché du **transport privé à Nice** s'est considérablement développé c
   <span class="badge info">💰 Prix fixe garanti</span>
 </div>
 
-## Les critères essentiels pour choisir un chauffeur privé
+# Les critères essentiels pour choisir un chauffeur privé
 
-### 1. Licence et assurances
+## 1. Licence et assurances
 
 <div class="content-box">
 <strong>Point crucial :</strong> Vérifiez toujours que votre chauffeur possède :
@@ -42,7 +42,7 @@ Le marché du **transport privé à Nice** s'est considérablement développé c
 <strong>⚠️ Attention aux arnaques :</strong> certains particuliers proposent des services illégaux sur les réseaux sociaux. Vérifiez toujours les licences et assurances avant de réserver.
 </div>
 
-### 2. Qualité des véhicules
+## 2. Qualité des véhicules
 
 Un chauffeur privé professionnel propose des véhicules :
 
@@ -58,7 +58,7 @@ Un chauffeur privé professionnel propose des véhicules :
 **[Mercedes GLC](/services)** et **[Van Premium](/services)** Mercedes haut de gamme, renouvelés tous les 2 ans.
 </div>
 
-### 3. Expérience du chauffeur
+## 3. Expérience du chauffeur
 
 Les compétences d'un bon chauffeur :
 
@@ -70,7 +70,7 @@ Les compétences d'un bon chauffeur :
 
 ## Tarification : comprendre les prix
 
-### Prix moyens à Nice (2025)
+## Prix moyens à Nice (2025)
 
 <div class="section-box">
 <strong>💰 Tarifs indicatifs pour chauffeur privé à Nice :</strong>
@@ -82,7 +82,7 @@ Les compétences d'un bon chauffeur :
 - **Journée complète (8h)** : 350-450€
 </div>
 
-### Méfiez-vous des prix trop bas
+## Méfiez-vous des prix trop bas
 
 <div class="callout warn">
 <strong>⚠️ Prix anormalement bas = risques :</strong>
@@ -93,7 +93,7 @@ Les compétences d'un bon chauffeur :
 - ⚠️ Frais cachés ajoutés à l'arrivée
 </div>
 
-### Transparence tarifaire
+## Transparence tarifaire
 
 Un bon service affiche :
 
@@ -108,7 +108,7 @@ Un bon service affiche :
 
 ## Services additionnels à privilégier
 
-### Les "plus" qui font la différence
+## Les "plus" qui font la différence
 
 <div class="grid-cards">
 <div class="card">
@@ -136,7 +136,7 @@ Un bon service affiche :
 
 ## Les pièges à éviter
 
-### ❌ Les arnaques courantes
+## ❌ Les arnaques courantes
 
 <div class="content-box">
 <strong>1. Les "taxis" non officiels à l'aéroport</strong>
@@ -160,7 +160,7 @@ Un bon service affiche :
 - Frais d'attente abusifs
 </div>
 
-### ✅ Comment se protéger ?
+## ✅ Comment se protéger ?
 
 <div class="info-list">
 <strong>Avant la réservation :</strong>
@@ -229,7 +229,7 @@ Un bon service affiche :
 
 ## Notre engagement qualité
 
-### Pourquoi choisir Taxi Nice Côte d'Azur ?
+## Pourquoi choisir Taxi Nice Côte d'Azur ?
 
 <div class="highlight-box">
 <strong>🏆 Excellence du service :</strong>
@@ -256,21 +256,21 @@ Un bon service affiche :
 
 ## Cas d'usage spécifiques
 
-### Pour les professionnels
+## Pour les professionnels
 
 - 📊 **Facturation entreprise** : facture détaillée
 - 🤝 **Contrat annuel** : tarifs préférentiels
 - 🔄 **Trajets récurrents** : même chauffeur
 - 💼 **Confidentialité** : discrétion absolue
 
-### Pour les touristes
+## Pour les touristes
 
 - 🗺️ **Conseils locaux** : restaurants, visites
 - 📸 **Photos souvenirs** : votre chauffeur vous prend en photo
 - 🎒 **Circuits personnalisés** : hors sentiers battus
 - 🗣️ **Guides en plusieurs langues**
 
-### Pour les événements
+## Pour les événements
 
 - 💒 **Mariages** : décoration du véhicule
 - 🎉 **Anniversaires** : service VIP
@@ -322,26 +322,26 @@ Oui, sur demande lors de la réservation. Nous accueillons les animaux de compag
 
 Chez **Taxi Nice Côte d'Azur**, nous mettons tout en œuvre pour vous offrir la meilleure expérience possible. Rejoignez nos 1000+ clients satisfaits chaque mois !
 
-### 🎯 Nos services premium
+## 🎯 Nos services premium
 
 - **[Transfert Aéroport](/services/transferts-aeroport)** - Service 24/7 avec suivi de vol
 - **[Excursions Côte d'Azur](/services/excursions-decouvertes)** - Circuits personnalisés avec guide
 - **[VSL Transport Médical](/services/vsl)** - Véhicules adaptés handicapés
 - **[Transport Groupe](/services)** - Vans jusqu'à 8 passagers
 
-### 📋 Options de réservation
+## 📋 Options de réservation
 
 - **[Réservation en ligne rapide](/reservation)** - Formulaire sécurisé en 2 minutes
 - **[Consultez nos tarifs](/tarifs)** - Prix transparents pour toutes destinations
 - **[Contactez-nous](/contact)** - Service client professionnel 24h/24
 
-### 📞 Contact direct
+## 📞 Contact direct
 
 📞 **06 51 68 36 87** (24h/24)  
 ✉️ **taxiniceca@gmail.com**  
 🌐 **[taxi-nice-06.com](https://taxi-nice-06.com)**
 
-### ✅ Nos garanties
+## ✅ Nos garanties
 
 - 💰 **Tarif fixe** sans surprise
 - ⏰ **Ponctualité garantie** ou remboursement

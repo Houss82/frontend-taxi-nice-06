@@ -25,9 +25,9 @@ La **Côte d'Azur** est l'une des destinations les plus prisées au monde. Entre
   <span class="badge info">💰 Prix tout compris</span>
 </div>
 
-## 1. Monaco : Le Rocher et Monte-Carlo
+# 1. Monaco : Le Rocher et Monte-Carlo
 
-### Une principauté de rêve
+## Une principauté de rêve
 
 Monaco est le symbole du luxe et du glamour méditerranéen. Cette principauté de 2 km² regorge de trésors :
 
@@ -48,13 +48,13 @@ Demi-journée (4h) : 200€ | Journée complète (8h) : 350€
 <strong>💡 Conseil :</strong> **[Consultez nos tarifs détaillés](/tarifs)** pour tous les circuits et destinations
 </div>
 
-### Meilleur moment pour visiter
+## Meilleur moment pour visiter
 
 Le matin tôt (9h-11h) pour éviter la foule, ou en fin d'après-midi pour profiter du coucher de soleil sur le port.
 
 ## 2. Cannes : La Croisette et les Îles de Lérins
 
-### Glamour et détente
+## Glamour et détente
 
 Célèbre pour son **Festival du Film**, Cannes offre bien plus que des tapis rouges :
 
@@ -73,7 +73,7 @@ Célèbre pour son **Festival du Film**, Cannes offre bien plus que des tapis ro
 
 ## 3. Èze : Village médiéval perché
 
-### Entre ciel et mer
+## Entre ciel et mer
 
 Èze est un des **plus beaux villages de France**, perché à 427m d'altitude :
 
@@ -96,7 +96,7 @@ Le meilleur spot pour photos Instagram : le **Jardin Exotique au coucher du sole
 
 ## 4. Saint-Paul-de-Vence : Art et Histoire
 
-### Village d'artistes
+## Village d'artistes
 
 Saint-Paul-de-Vence est un joyau médiéval qui a inspiré de nombreux artistes :
 
@@ -119,7 +119,7 @@ Réservez une table au **Café de la Place** pour déjeuner en terrasse sous les
 
 ## 5. Antibes et Juan-les-Pins : Entre culture et plage
 
-### Dualité parfaite
+## Dualité parfaite
 
 Antibes marie patrimoine historique et vie balnéaire :
 
@@ -137,7 +137,7 @@ Antibes marie patrimoine historique et vie balnéaire :
 
 ## Nos formules "Découverte"
 
-### Circuit "Perles de la Riviera"
+## Circuit "Perles de la Riviera"
 
 <div class="highlight-box">
 <strong>💎 Circuit "Perles de la Riviera"</strong>
@@ -151,7 +151,7 @@ Journée complète : 350€
 - Retour vers 18h
 </div>
 
-### Circuit "Villages & Art"
+## Circuit "Villages & Art"
 
 <div class="section-box">
 <strong>🎨 Circuit "Villages & Art"</strong>
@@ -164,7 +164,7 @@ Journée complète : 380€
 - Dégustation locale
 </div>
 
-### Circuit "Glamour Côtier"
+## Circuit "Glamour Côtier"
 
 <div class="content-box">
 <strong>✨ Circuit "Glamour Côtier"</strong>
@@ -179,7 +179,7 @@ Demi-journée : 220€
 
 ## Avantages de notre service
 
-### Flexibilité totale
+## Flexibilité totale
 
 <div class="grid-cards">
 <div class="card">
@@ -200,14 +200,14 @@ Guides et conseils inclus. Votre chauffeur connaît tous les secrets de la Côte
 </div>
 </div>
 
-### Confort premium
+## Confort premium
 
 - 🚗 **[Mercedes GLC](/services/flotte-recente)** ou **[Van Premium](/services/van-premium)** climatisé
 - 💧 Eau fraîche offerte
 - 📶 WiFi gratuit à bord
 - 📸 Votre chauffeur peut prendre vos photos !
 
-### Prix tout compris
+## Prix tout compris
 
 <div class="info-list">
 <strong>✅ Inclus dans tous nos circuits :</strong>
@@ -240,19 +240,19 @@ Départs à 9h pour éviter le trafic et la chaleur
 
 Créez votre excursion sur mesure avec nos chauffeurs expérimentés. Ils connaissent tous les secrets de la Côte d'Azur !
 
-### 🎯 Nos circuits populaires
+## 🎯 Nos circuits populaires
 
 - **[Circuit "Perles de la Riviera"](/services/excursions-decouvertes)** - Nice → Èze → Monaco (350€)
 - **[Circuit "Villages & Art"](/services/excursions-decouvertes)** - Saint-Paul → Vence → Grasse (380€)
 - **[Circuit "Glamour Côtier"](/services/excursions-decouvertes)** - Antibes → Cannes (220€)
 
-### 📋 Options de réservation
+## 📋 Options de réservation
 
 - **[Réservation en ligne](/reservation)** - Formulaire rapide et sécurisé
 - **[Consultez tous nos tarifs](/tarifs)** - Prix transparents pour toutes destinations
 - **[Contactez-nous](/contact)** - Service client 24h/24
 
-### 📞 Contact direct
+## 📞 Contact direct
 
 📞 **06 51 68 36 87** (24h/24)  
 ✉️ **taxiniceca@gmail.com**  
