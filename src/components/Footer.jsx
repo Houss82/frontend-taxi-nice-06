@@ -114,6 +114,15 @@ export default function Footer() {
               <MapPin className="w-3 h-3" />
               Google Business
             </a>
+            <a
+              href="https://hoodspot.fr/taxi/taxi-nice-aeroport-et-conventionne-81921875100033/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
+              title="Taxi Nice 06 sur Hoodspot"
+            >
+              Taxi Nice 06 sur Hoodspot
+            </a>
           </div>
 
           {/* Copyright */}
