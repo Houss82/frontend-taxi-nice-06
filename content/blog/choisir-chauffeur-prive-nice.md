@@ -9,7 +9,7 @@ language: "fr"
 keywords:
   [
     "chauffeur privé nice",
-    "vtc nice",
+    "transport nice",
     "transport premium",
     "taxi nice",
     "chauffeur professionnel",

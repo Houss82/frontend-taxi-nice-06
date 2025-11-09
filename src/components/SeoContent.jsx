@@ -33,7 +33,7 @@ export default function SeoContent() {
     section3: {
       title: "Flotte de Véhicules Premium",
       content:
-        "Notre flotte se compose exclusivement de véhicules Mercedes récents et parfaitement entretenus. Nous proposons des Mercedes GLC pour les trajets confortables jusqu'à 4 passagers, ainsi que des vans premium pour les groupes plus importants. Tous nos véhicules sont équipés de la climatisation, du WiFi gratuit et de sièges en cuir. Nos chauffeurs professionnels, titulaires de licences VTC, sont formés aux standards de service les plus élevés et connaissent parfaitement la région.",
+        "Notre flotte se compose exclusivement de véhicules Mercedes récents et parfaitement entretenus. Nous proposons des Mercedes GLC pour les trajets confortables jusqu'à 4 passagers, ainsi que des vans premium pour les groupes plus importants. Tous nos véhicules sont équipés de la climatisation, du WiFi gratuit et de sièges en cuir. Nos chauffeurs professionnels, titulaires de licences Taxi, sont formés aux standards de service les plus élevés et connaissent parfaitement la région.",
     },
     section4: {
       title: "Tarifs Transparents et Compétitifs",

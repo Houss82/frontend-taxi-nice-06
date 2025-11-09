@@ -15,7 +15,7 @@ export const sectorData = {
       "Nous disposons d'une autorisation spéciale de pick-up sur l'ensemble du territoire monégasque : gare, port, hôtels, résidences privées. Votre chauffeur peut vous récupérer ou vous déposer où vous le souhaitez, sans contrainte d'accès.",
     ],
     secondaryIntro: [
-      "Nous proposons également un service VTC conventionné pour vos rendez-vous médicaux au Centre Hospitalier Princesse Grace ou vers les cliniques privées de la Principauté.",
+      "Nous proposons également un service Taxi conventionné pour vos rendez-vous médicaux au Centre Hospitalier Princesse Grace ou vers les cliniques privées de la Principauté.",
       "Pour les résidents comme pour les visiteurs, nous prenons en charge les demandes sur mesure : tours panoramiques, mises à disposition à l'heure ou transferts longue distance vers l'Italie ou Saint-Tropez.",
     ],
     servicesTitle: "Services de transport à Monaco",
