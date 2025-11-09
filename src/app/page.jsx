@@ -7,6 +7,7 @@ import ServicesCarousel from "@/components/Services-Caroussel.jsx";
 import Services from "@/components/Services.jsx";
 import VehicleSelection from "@/components/VehicleSelection.jsx";
 import Image from "next/image";
+import Link from "next/link";
 
 /**
  * Page d'accueil - Server Component pour SEO optimal
@@ -14,6 +15,48 @@ import Image from "next/image";
  * pour être visible dans le HTML initial pour les crawlers
  */
 export default function Page() {
+  const citySectors = [
+    {
+      slug: "monaco",
+      name: "Taxi Nice vers Monaco",
+      tagline: "Transferts Monaco ↔ Nice 24h/24",
+      description:
+        "Accueil port Hercule, héliport et hôtels 5★ avec chauffeur bilingue.",
+      image: "/st-jean-cap-ferrat4.jpeg",
+      alt: "Taxi premium entre Nice et Monaco",
+      gradient: "from-blue-500 via-cyan-400 to-blue-600",
+      overlay: "from-blue-900/80 via-blue-700/20 to-transparent",
+      badgeClass: "bg-blue-500/25 border-blue-200 text-blue-50",
+      linkColor: "text-blue-600 hover:text-blue-800",
+    },
+    {
+      slug: "cannes",
+      name: "Taxi Nice vers Cannes",
+      tagline: "Festival & congrès depuis Nice",
+      description:
+        "Transferts Palais des Festivals, Croisette et hôtels de prestige.",
+      image: "/cannes1-GLC.jpeg",
+      alt: "Mercedes GLC pour transferts Nice vers Cannes",
+      gradient: "from-pink-500 via-orange-400 to-rose-500",
+      overlay: "from-rose-900/80 via-orange-700/20 to-transparent",
+      badgeClass: "bg-rose-500/25 border-rose-200 text-rose-50",
+      linkColor: "text-rose-600 hover:text-rose-800",
+    },
+    {
+      slug: "antibes",
+      name: "Taxi Nice vers Antibes",
+      tagline: "Port Vauban & Sophia Antipolis",
+      description:
+        "Dessertes Juan-les-Pins, technopole et trajets médicaux conventionnés.",
+      image: "/taxi-antibes-secteur.jpeg",
+      alt: "Van premium à Antibes",
+      gradient: "from-emerald-500 via-teal-400 to-emerald-600",
+      overlay: "from-emerald-900/80 via-teal-700/20 to-transparent",
+      badgeClass: "bg-emerald-500/25 border-emerald-200 text-emerald-50",
+      linkColor: "text-emerald-600 hover:text-emerald-800",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -320,6 +363,107 @@ export default function Page() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Secteurs desservis */}
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-xl font-black text-gray-900 mb-6">
+                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
+                  Nos secteurs desservis
+                </span>
+              </h2>
+              <h3 className="text-3xl md:text-4xl font-black text-gray-900 mt-2">
+                Taxi privé Nice ↔ Côte d&apos;Azur
+              </h3>
+              <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+                Nos pages dédiées détaillent nos trajets Nice ↔ Monaco, Cannes
+                et Antibes : tarifs estimatifs, zones couvertes, établissements
+                desservis, FAQ et ressources locales pour planifier vos
+                déplacements.
+              </p>
+              <Link
+                href="/secteurs"
+                className="inline-flex items-center gap-2 px-5 py-3 mt-6 rounded-xl border border-blue-600 text-blue-600 font-semibold hover:bg-blue-600 hover:text-white transition-colors"
+              >
+                Tous nos secteurs
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 5l7 7-7 7M5 12h14"
+                  />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-3">
+              {citySectors.map((city) => (
+                <article
+                  key={city.slug}
+                  className="group relative overflow-hidden rounded-3xl border border-gray-100 shadow-lg hover:shadow-2xl transition-shadow bg-white"
+                >
+                  <div
+                    className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${city.gradient}`}
+                  />
+                  <div className="relative h-56">
+                    <Image
+                      src={city.image}
+                      alt={city.alt}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      priority={city.slug === "monaco"}
+                      quality={80}
+                    />
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-t ${city.overlay}`}
+                    />
+                    <div className="absolute bottom-5 left-5 right-5">
+                      <span
+                        className={`inline-flex items-center px-3 py-1 text-xs font-semibold uppercase tracking-wide rounded-full border backdrop-blur ${city.badgeClass}`}
+                      >
+                        {city.tagline}
+                      </span>
+                      <h3 className="mt-3 text-2xl font-bold text-white drop-shadow-lg">
+                        {city.name}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div className="p-6 space-y-4">
+                    <p className="text-gray-600">{city.description}</p>
+                    <Link
+                      href={`/secteurs/${city.slug}`}
+                      className={`inline-flex items-center gap-2 font-semibold transition-colors ${city.linkColor}`}
+                    >
+                      Découvrir la page
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </Link>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>

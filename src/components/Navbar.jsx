@@ -25,14 +25,24 @@ import { useEffect, useRef, useState } from "react";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isSectorsOpen, setIsSectorsOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileSectorsOpen, setIsMobileSectorsOpen] = useState(false);
   const servicesRef = useRef(null);
+  const sectorsRef = useRef(null);
 
   // Fermer le menu services quand on clique à l'extérieur
   useEffect(() => {
     function handleClickOutside(event) {
-      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
+      if (
+        servicesRef.current &&
+        !servicesRef.current.contains(event.target)
+      ) {
         setIsServicesOpen(false);
+      }
+
+      if (sectorsRef.current && !sectorsRef.current.contains(event.target)) {
+        setIsSectorsOpen(false);
       }
     }
 
@@ -41,6 +51,13 @@ export default function Navbar() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  useEffect(() => {
+    if (!isMenuOpen) {
+      setIsMobileServicesOpen(false);
+      setIsMobileSectorsOpen(false);
+    }
+  }, [isMenuOpen]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 md:sticky">
@@ -67,7 +84,10 @@ export default function Navbar() {
           {/* Services Dropdown */}
           <div className="relative" ref={servicesRef}>
             <button
-              onClick={() => setIsServicesOpen(!isServicesOpen)}
+              onClick={() => {
+                setIsServicesOpen(!isServicesOpen);
+                setIsSectorsOpen(false);
+              }}
               className="text-black hover:text-primary font-medium flex items-center gap-1"
             >
               SERVICES
@@ -174,6 +194,76 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <span>Tous les services</span>
+                    </div>
+                  </Link>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* Secteurs Dropdown */}
+          <div className="relative" ref={sectorsRef}>
+            <button
+              onClick={() => {
+                setIsSectorsOpen(!isSectorsOpen);
+                setIsServicesOpen(false);
+              }}
+              className="text-black hover:text-primary font-medium flex items-center gap-1"
+            >
+              NOS SECTEURS
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${
+                  isSectorsOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+
+            <AnimatePresence>
+              {isSectorsOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg py-2"
+                >
+                  <Link
+                    href="/secteurs/monaco"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Crown className="w-4 h-4 text-purple-600" />
+                      <span>Taxi Monaco</span>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/secteurs/cannes"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Compass className="w-4 h-4 text-orange-500" />
+                      <span>Taxi Cannes</span>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/secteurs/antibes"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="w-4 h-4 text-green-600" />
+                      <span>Taxi Antibes</span>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/secteurs"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors border-t border-gray-200 mt-2"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <span>Tous nos secteurs</span>
                     </div>
                   </Link>
                 </motion.div>
@@ -543,6 +633,86 @@ export default function Navbar() {
                   </motion.div>
                 </div>
               </motion.nav>
+
+              {/* Secteurs */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: 0.55 }}
+                className="space-y-2"
+              >
+                <motion.button
+                  onClick={() => setIsMobileSectorsOpen(!isMobileSectorsOpen)}
+                  className="flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 text-gray-800 font-medium hover:from-blue-100 hover:to-indigo-100 transition-all duration-300"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <div className="flex items-center space-x-4">
+                    <Compass className="w-5 h-5 text-primary" />
+                    <span>NOS SECTEURS</span>
+                  </div>
+                  <motion.div
+                    animate={{ rotate: isMobileSectorsOpen ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <ChevronDown className="w-5 h-5 text-primary" />
+                  </motion.div>
+                </motion.button>
+
+                <AnimatePresence>
+                  {isMobileSectorsOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="ml-6 space-y-1 border-l-2 border-gray-200 pl-4 overflow-hidden"
+                    >
+                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                        <Link
+                          href="/secteurs/monaco"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <Crown className="w-4 h-4 text-purple-600" />
+                          <span className="text-sm">Taxi Monaco</span>
+                        </Link>
+                      </motion.div>
+                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                        <Link
+                          href="/secteurs/cannes"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <Compass className="w-4 h-4 text-orange-500" />
+                          <span className="text-sm">Taxi Cannes</span>
+                        </Link>
+                      </motion.div>
+                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                        <Link
+                          href="/secteurs/antibes"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <MapPin className="w-4 h-4 text-green-600" />
+                          <span className="text-sm">Taxi Antibes</span>
+                        </Link>
+                      </motion.div>
+                      <div className="border-t border-gray-200 my-2"></div>
+                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                        <Link
+                          href="/secteurs"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-blue-600 font-semibold transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <Compass className="w-4 h-4 text-primary" />
+                          <span className="text-sm">Tous nos secteurs</span>
+                        </Link>
+                      </motion.div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
 
               {/* Bouton Réserver fixe en bas */}
               <motion.div
