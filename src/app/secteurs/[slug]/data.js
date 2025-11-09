@@ -492,8 +492,7 @@ export const sectorData = {
       highlight: "Antibes & Juan-les-Pins",
       subtitle:
         "Transferts aéroport, Sophia Antipolis et déplacements médicaux",
-      image: "/taxi-antibes.png",
-      image: "/taxi-antibes.png",
+      image: "/taxi-antibes-secteur.jpeg",
       imageAlt: "Taxi premium à Antibes",
     },
     introduction: [
