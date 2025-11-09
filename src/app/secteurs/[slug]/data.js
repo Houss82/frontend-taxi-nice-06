@@ -12,6 +12,7 @@ export const sectorData = {
     introduction: [
       "Taxi Nice 06 assure vos déplacements à Monaco avec une équipe de chauffeurs expérimentés habitués aux contraintes du Rocher. Nous réalisons vos trajets aussi bien depuis ou vers l'aéroport Nice Côte d'Azur que depuis la ville de Nice elle-même, sans rupture de service, pour garantir ponctualité, discrétion et confort.",
       "Nos véhicules récents (berlines premium, vans jusqu'à 7 passagers) sont adaptés aux transferts business, aux départs depuis Nice centre, aux événements du Grimaldi Forum, aux dépôts à l'Hôtel de Paris ou aux navettes pour le Casino de Monte-Carlo. Un coordinateur dédié peut être mis à votre disposition pour gérer vos trajets durant le Grand Prix ou les congrès.",
+      "Nous disposons d'une autorisation spéciale de pick-up sur l'ensemble du territoire monégasque : gare, port, hôtels, résidences privées. Votre chauffeur peut vous récupérer ou vous déposer où vous le souhaitez, sans contrainte d'accès.",
     ],
     secondaryIntro: [
       "Nous proposons également un service VTC conventionné pour vos rendez-vous médicaux au Centre Hospitalier Princesse Grace ou vers les cliniques privées de la Principauté.",
