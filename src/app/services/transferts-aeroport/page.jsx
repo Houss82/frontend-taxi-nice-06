@@ -1,20 +1,27 @@
-"use client";
-
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import {
+  BadgeCheck,
   CheckCircle,
   Clock,
+  HelpCircle,
   MapPin,
   Phone,
   Plane,
   Shield,
+  ShieldCheck,
   Users,
 } from "lucide-react";
 import Image from "next/image";
 
 export default function TransfertsAeroportPage() {
+  const trustBadges = [
+    { icon: BadgeCheck, label: "Chauffeurs agréés VTC & Taxi" },
+    { icon: Clock, label: "Suivi de vol temps réel" },
+    { icon: Shield, label: "Paiement sécurisé & facture" },
+  ];
+
   const features = [
     {
       icon: Plane,
@@ -48,6 +55,33 @@ export default function TransfertsAeroportPage() {
       title: "Sécurité Garantie",
       description: "Véhicules récents et assurances complètes",
     },
+  ];
+
+  const serviceHighlights = [
+    {
+      icon: ShieldCheck,
+      title: "Prise en charge VIP",
+      description:
+        "Accueil personnalisé avec assistance bagages aux terminaux 1 & 2.",
+    },
+    {
+      icon: Users,
+      title: "Confort sur-mesure",
+      description:
+        "Berlines & vans premium, sièges enfant et rehausseurs sur demande.",
+    },
+    {
+      icon: BadgeCheck,
+      title: "Tarifs garantis",
+      description:
+        "Prix fixe confirmé avant départ, aucun frais surprise ni supplément.",
+    },
+  ];
+
+  const serviceMetrics = [
+    { value: "24/7", label: "Disponibilité continue" },
+    { value: "15 min", label: "Prise en charge moyenne" },
+    { value: "4.9/5", label: "Satisfaction client" },
   ];
 
   const destinations = [
@@ -107,22 +141,53 @@ export default function TransfertsAeroportPage() {
       </div>
 
       <main>
-        {/* Hero Section */}
+        {/* HERO */}
         <section className="relative sm:py-20 bg-gradient-to-br from-cyan-50 to-blue-100">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 pt-10 sm:py-0">
-                  Transferts Aéroport
+                  Transfert Aéroport Nice
                   <span className="block text-cyan-600">
-                    Nice & Côte d'Azur
+                    Chauffeur Privé & Taxi 24/7
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Service de transfert professionnel depuis et vers l'aéroport
-                  Nice Côte d'Azur. Chauffeur avec panneau nominatif, suivi de
-                  vol et service 24/7.
+                  Service premium depuis et vers l'aéroport Nice Côte d'Azur
+                  (T1/T2). Accueil nominatif, suivi de vol en temps réel, tarifs
+                  fixes et transparents, disponibilité 24/7.
                 </p>
+                <ul className="grid sm:grid-cols-2 gap-3 text-gray-700 mb-8">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600" />
+                    Transferts Nice ⇄ Monaco, Cannes, Antibes
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600" />
+                    Bagages inclus · Siège enfant sur demande
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600" />
+                    Véhicules récents, assurés, climatisés
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600" />
+                    Facture & paiement sécurisé
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-3 mb-8">
+                  {trustBadges.map((badge, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-2 bg-white/80 border border-cyan-100 rounded-full px-4 py-2 shadow-sm"
+                    >
+                      <badge.icon className="w-4 h-4 text-cyan-600" />
+                      <span className="text-sm font-medium text-gray-700">
+                        {badge.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="/reservation"
@@ -159,7 +224,93 @@ export default function TransfertsAeroportPage() {
           </div>
         </section>
 
-        {/* Features Section */}
+        {/* SECTION SEO enrichie */}
+        <section className="py-16 bg-white border-b">
+          <div className="max-w-6xl mx-auto px-4 space-y-12">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Votre transfert aéroport Nice Côte d'Azur simplifié
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Que vous arriviez au <strong>Terminal 1</strong> ou au{" "}
+                <strong>Terminal 2</strong>, votre chauffeur suit votre vol et
+                vous accueille à la sortie avec un panneau nominatif. Nous
+                desservons hôtels, centres-villes, gares, ports et toutes les
+                communes de la Côte d'Azur :{" "}
+                <em>Monaco, Cannes, Antibes, Menton, Saint-Tropez…</em>
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Nos <strong>tarifs sont fixes et confirmés avant départ</strong>
+                . Véhicules récents, propres, climatisés ; sièges bébé et
+                rehausseurs sur demande. Idéal pour voyages d'affaires, familles
+                et groupes.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Situé à seulement 7 km du centre-ville,{" "}
+                <a
+                  href="https://www.nice.aeroport.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
+                >
+                  l'aéroport Nice Côte d'Azur
+                </a>{" "}
+                est la deuxième plateforme aéroportuaire de France. Nos
+                chauffeurs maîtrisent parfaitement ses terminaux, parkings et
+                zones d'accueil pour vous garantir un embarquement ou une
+                arrivée sans stress.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Besoin de préparer chaque étape ? Consultez{" "}
+                <a
+                  href="https://taxi-nice-06.com/blog/guide-transfert-aeroport-nice"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
+                >
+                  notre guide complet du transfert depuis l'aéroport de Nice
+                </a>{" "}
+                pour découvrir tous nos conseils pratiques.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-cyan-600 to-blue-600 text-white rounded-2xl p-8 shadow-xl border border-cyan-500/40">
+              <h3 className="text-xl font-semibold mb-6">
+                Pourquoi choisir Taxi Nice 06 ?
+              </h3>
+              <div className="space-y-4 mb-6">
+                {serviceHighlights.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex gap-3 items-start bg-white/10 rounded-xl px-4 py-3"
+                  >
+                    <item.icon className="w-5 h-5 text-white mt-1" />
+                    <div>
+                      <p className="font-semibold">{item.title}</p>
+                      <p className="text-sm text-white/80 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="grid grid-cols-3 gap-3">
+                {serviceMetrics.map((metric, index) => (
+                  <div
+                    key={index}
+                    className="bg-white text-cyan-700 rounded-xl px-3 py-4 text-center shadow-lg"
+                  >
+                    <div className="text-2xl font-bold">{metric.value}</div>
+                    <div className="text-xs font-medium uppercase tracking-wide">
+                      {metric.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
@@ -190,7 +341,7 @@ export default function TransfertsAeroportPage() {
           </div>
         </section>
 
-        {/* Destinations Section */}
+        {/* Destinations */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
@@ -236,7 +387,7 @@ export default function TransfertsAeroportPage() {
           </div>
         </section>
 
-        {/* Process Section */}
+        {/* Process (conservé) */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
@@ -290,38 +441,191 @@ export default function TransfertsAeroportPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-cyan-600">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Prêt pour votre transfert ?
-              </h2>
-              <p className="text-xl text-cyan-100 mb-8">
-                Réservez dès maintenant votre transfert aéroport et voyagez
-                l'esprit tranquille
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="/reservation"
-                  className="px-8 py-4 bg-white text-cyan-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
-                >
-                  Réserver maintenant
-                </a>
-                <a
-                  href="/contact"
-                  className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-cyan-600 transition-colors duration-300 no-underline"
-                >
-                  Nous contacter
-                </a>
+        {/* FAQ SEO */}
+        <section className="py-16 bg-white border-t">
+          <div className="max-w-5xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              FAQ – Transfert Aéroport Nice
+            </h2>
+            <div className="space-y-5">
+              <div className="bg-white border border-cyan-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="flex items-start gap-3">
+                  <HelpCircle className="w-6 h-6 text-cyan-600 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Quels sont les tarifs pour un transfert aéroport ?
+                    </h3>
+                    <p className="text-gray-700">
+                      Nice Centre (36€), Cannes (90€), Monaco (99€), Antibes
+                      (70€)… Prix fixes connus à l'avance.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="mt-8 text-cyan-100">
-                📞 <strong>06 51 68 36 87</strong> | ✉️ taxiniceca@gmail.com
+              <div className="bg-white border border-cyan-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="flex items-start gap-3">
+                  <HelpCircle className="w-6 h-6 text-cyan-600 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Suivez-vous les vols en cas de retard ?
+                    </h3>
+                    <p className="text-gray-700">
+                      Oui. Nous ajustons l'heure de prise en charge selon le
+                      statut de votre vol.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white border border-cyan-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="flex items-start gap-3">
+                  <HelpCircle className="w-6 h-6 text-cyan-600 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Où retrouver mon chauffeur à l'aéroport de Nice ?
+                    </h3>
+                    <p className="text-gray-700">
+                      À la sortie du terminal, avec un panneau nominatif.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white border border-cyan-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="flex items-start gap-3">
+                  <HelpCircle className="w-6 h-6 text-cyan-600 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Proposez-vous des sièges enfant ?
+                    </h3>
+                    <p className="text-gray-700">
+                      Oui, siège bébé et rehausseur disponibles gratuitement sur
+                      demande.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        {/* CTA */}
+        <section className="py-16 bg-cyan-600">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+              Prêt pour votre transfert ?
+            </h2>
+            <p className="text-xl text-cyan-100 mb-8">
+              Réservez dès maintenant votre transfert aéroport et voyagez
+              l'esprit tranquille
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/reservation"
+                className="px-8 py-4 bg-white text-cyan-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 no-underline"
+              >
+                Réserver maintenant
+              </a>
+              <a
+                href="/contact"
+                className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-cyan-600 transition-colors duration-300 no-underline"
+              >
+                Nous contacter
+              </a>
+            </div>
+            <div className="mt-8 text-cyan-100">
+              📞 <strong>06 51 68 36 87</strong> | ✉️ taxiniceca@gmail.com
+            </div>
+          </div>
+        </section>
       </main>
+
+      {/* JSON-LD LocalBusiness + FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Taxi Nice 06",
+            url: "https://taxi-nice-06.com",
+            telephone: "+33651683687",
+            areaServed: [
+              "Nice",
+              "Aéroport Nice Côte d'Azur",
+              "Cannes",
+              "Monaco",
+              "Antibes",
+              "Menton",
+            ],
+            priceRange: "€€",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Nice",
+              addressRegion: "PACA",
+              addressCountry: "FR",
+            },
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ],
+                opens: "00:00",
+                closes: "23:59",
+              },
+            ],
+            serviceType: "Transfert aéroport",
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Quels sont les tarifs pour un transfert aéroport ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Nice Centre (36€), Cannes (90€), Monaco (99€), Antibes (70€). Prix fixes confirmés à l'avance.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Suivez-vous les vols en cas de retard ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, nous suivons votre vol en temps réel et ajustons l'heure de prise en charge.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Où retrouver mon chauffeur à l'aéroport de Nice ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "À la sortie du terminal (T1/T2) avec panneau nominatif.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Proposez-vous des sièges enfant ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, siège bébé et rehausseur disponibles gratuitement sur demande.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
       <Footer />
     </div>
