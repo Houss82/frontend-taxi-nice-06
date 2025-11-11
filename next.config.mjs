@@ -65,6 +65,22 @@ const nextConfig = {
         destination: "/:path+",
         permanent: true,
       },
+      // ✅ Redirections anciens slugs anglais vers les articles FR
+      {
+        source: "/blog/nice-airport-transfer-guide",
+        destination: "/blog/guide-transfert-aeroport-nice",
+        permanent: true,
+      },
+      {
+        source: "/blog/choosing-private-driver-nice",
+        destination: "/blog/choisir-chauffeur-prive-nice",
+        permanent: true,
+      },
+      {
+        source: "/blog/french-riviera-tours",
+        destination: "/blog/excursions-cote-azur",
+        permanent: true,
+      },
     ];
   },
   async headers() {
