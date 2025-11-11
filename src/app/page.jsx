@@ -6,6 +6,8 @@ import SeoContent from "@/components/SeoContent.jsx";
 import ServicesCarousel from "@/components/Services-Caroussel.jsx";
 import Services from "@/components/Services.jsx";
 import VehicleSelection from "@/components/VehicleSelection.jsx";
+import { getAllPosts } from "@/lib/blog";
+import { Calendar } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,6 +17,14 @@ import Link from "next/link";
  * pour être visible dans le HTML initial pour les crawlers
  */
 export default function Page() {
+  const recentPosts = getAllPosts().slice(0, 3);
+  const formatDate = (dateString) =>
+    new Date(dateString).toLocaleDateString("fr-FR", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+
   const citySectors = [
     {
       slug: "monaco",
@@ -464,6 +474,112 @@ export default function Page() {
                   </div>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Derniers articles */}
+        <section className="py-20 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
+                <h2 className="text-4xl font-black text-gray-900">
+                  Guides & actualités récentes
+                </h2>
+                <p className="text-gray-600 mt-3 max-w-xl">
+                  Conseils transfert, bonnes pratiques aéroport et infos VSL
+                  rédigés par notre équipe Taxi Nice 06 pour préparer vos
+                  déplacements.
+                </p>
+              </div>
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors"
+              >
+                Tous les articles
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.8}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mt-12">
+              {recentPosts.length === 0 ? (
+                <div className="md:col-span-3 bg-white rounded-3xl border border-dashed border-gray-200 p-10 text-center text-gray-500">
+                  Aucun article publié pour le moment. Revenez bientôt pour nos
+                  prochains guides.
+                </div>
+              ) : (
+                recentPosts.map((post) => (
+                  <article
+                    key={post.slug}
+                    className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 flex flex-col"
+                  >
+                    <div className="relative h-52 overflow-hidden">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover transition-transform duration-500 hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                      {post.category && (
+                        <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-xs font-semibold uppercase tracking-wide text-primary">
+                          {post.category}
+                        </span>
+                      )}
+                    </div>
+                    <div className="p-6 flex flex-col flex-1">
+                      <span className="flex items-center gap-2 text-sm text-gray-500">
+                        <Calendar className="w-4 h-4" />
+                        {formatDate(post.date)}
+                      </span>
+                      <h3 className="mt-3 text-2xl font-bold text-gray-900 leading-tight">
+                        <Link
+                          href={`/blog/${post.slug}`}
+                          className="hover:text-primary transition-colors"
+                        >
+                          {post.title}
+                        </Link>
+                      </h3>
+                      <p className="mt-3 text-gray-600 line-clamp-3">
+                        {post.excerpt}
+                      </p>
+                      <div className="mt-6">
+                        <Link
+                          href={`/blog/${post.slug}`}
+                          className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
+                        >
+                          Lire l&apos;article
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={1.8}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  </article>
+                ))
+              )}
             </div>
           </div>
         </section>

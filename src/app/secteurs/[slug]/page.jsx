@@ -3,10 +3,11 @@ import Footer from "@/components/Footer.jsx";
 import HospitalsList from "@/components/HospitalsList.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
-import { sectorData, sectorSlugs } from "./data";
+import { getAllPosts } from "@/lib/blog";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { sectorData, sectorSlugs } from "./data";
 
 export async function generateStaticParams() {
   return sectorSlugs.map((slug) => ({ slug }));
@@ -75,6 +76,26 @@ export default async function SecteurPage({ params }) {
     notFound();
   }
 
+  const allPosts = getAllPosts();
+  const keyword = data.cityName.toLowerCase();
+  const relatedPosts = allPosts
+    .filter((post) => {
+      const slugMatch = post.slug?.toLowerCase().includes(data.slug);
+      const titleMatch = post.title?.toLowerCase().includes(keyword);
+      const excerptMatch = post.excerpt?.toLowerCase().includes(keyword);
+      return slugMatch || titleMatch || excerptMatch;
+    })
+    .slice(0, 3);
+  const fallbackPosts =
+    relatedPosts.length > 0 ? relatedPosts : allPosts.slice(0, 3);
+
+  const formatDate = (dateString) =>
+    new Date(dateString).toLocaleDateString("fr-FR", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+
   const breadcrumbItems = [
     { name: "Secteurs", url: "/secteurs", title: "Secteurs desservis" },
     {
@@ -125,14 +146,19 @@ export default async function SecteurPage({ params }) {
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 {data.hero.title}
-                <span className="block text-primary">{data.hero.highlight}</span>
+                <span className="block text-primary">
+                  {data.hero.highlight}
+                </span>
               </h1>
               <h2 className="text-2xl text-primary/80 font-semibold mb-6">
                 {data.hero.subtitle}
               </h2>
 
               {data.introduction.map((paragraph, index) => (
-                <p key={index} className="text-lg text-gray-700 leading-relaxed mb-4">
+                <p
+                  key={index}
+                  className="text-lg text-gray-700 leading-relaxed mb-4"
+                >
                   {paragraph}
                 </p>
               ))}
@@ -162,7 +188,9 @@ export default async function SecteurPage({ params }) {
                 <p className="text-sm text-gray-500 uppercase tracking-wider">
                   Disponible
                 </p>
-                <p className="text-lg font-semibold text-primary">24h/24 – 7j/7</p>
+                <p className="text-lg font-semibold text-primary">
+                  24h/24 – 7j/7
+                </p>
               </div>
             </div>
           </div>
@@ -170,7 +198,10 @@ export default async function SecteurPage({ params }) {
 
         <section className="max-w-6xl mx-auto px-6 mt-10">
           {data.secondaryIntro.map((paragraph, index) => (
-            <p key={index} className="text-lg text-gray-700 leading-relaxed mb-4">
+            <p
+              key={index}
+              className="text-lg text-gray-700 leading-relaxed mb-4"
+            >
               {paragraph}
             </p>
           ))}
@@ -243,7 +274,9 @@ export default async function SecteurPage({ params }) {
                 <h3 className="text-2xl font-semibold text-primary mb-3">
                   {card.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">{card.description}</p>
+                <p className="text-gray-700 leading-relaxed">
+                  {card.description}
+                </p>
               </div>
             ))}
           </div>
@@ -303,12 +336,17 @@ export default async function SecteurPage({ params }) {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {data.establishments.map((item, index) => (
-                  <tr key={index} className="hover:bg-gray-50 transition-colors">
+                  <tr
+                    key={index}
+                    className="hover:bg-gray-50 transition-colors"
+                  >
                     <td className="px-4 py-3 text-gray-700 font-medium">
                       {item.name}
                     </td>
                     <td className="px-4 py-3 text-gray-600">{item.city}</td>
-                    <td className="px-4 py-3 text-gray-600">{item.speciality}</td>
+                    <td className="px-4 py-3 text-gray-600">
+                      {item.speciality}
+                    </td>
                     <td className="px-4 py-3">
                       <a
                         href={item.website}
@@ -341,7 +379,10 @@ export default async function SecteurPage({ params }) {
             </h2>
             <div className="space-y-6">
               {data.faq.map((item, index) => (
-                <div key={index} className="border border-gray-200 rounded-2xl p-6">
+                <div
+                  key={index}
+                  className="border border-gray-200 rounded-2xl p-6"
+                >
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     {item.question}
                   </h3>
@@ -360,23 +401,118 @@ export default async function SecteurPage({ params }) {
             {data.resource?.description && (
               <p className="text-blue-900 mb-3">{data.resource.description}</p>
             )}
-            {Array.isArray(data.resource?.links) && data.resource.links.length > 0 && (
-              <div className="flex flex-wrap gap-3">
-                {data.resource.links.map((link, index) => (
-                  <a
-                    key={`${link.url}-${index}`}
-                    href={link.url}
-                    className="inline-flex items-center gap-2 text-blue-700 font-semibold underline"
-                    target={link.target || "_self"}
-                    rel={link.rel || undefined}
-                  >
-                    {link.label} →
-                  </a>
-                ))}
-              </div>
-            )}
+            {Array.isArray(data.resource?.links) &&
+              data.resource.links.length > 0 && (
+                <div className="flex flex-wrap gap-3">
+                  {data.resource.links.map((link, index) => (
+                    <a
+                      key={`${link.url}-${index}`}
+                      href={link.url}
+                      className="inline-flex items-center gap-2 text-blue-700 font-semibold underline"
+                      target={link.target || "_self"}
+                      rel={link.rel || undefined}
+                    >
+                      {link.label} →
+                    </a>
+                  ))}
+                </div>
+              )}
           </div>
         </section>
+
+        {fallbackPosts.length > 0 && (
+          <section className="max-w-6xl mx-auto px-6 mt-14">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900">
+                  À lire aussi pour organiser votre trajet {data.cityName}
+                </h2>
+                <p className="text-gray-600 mt-2 max-w-2xl">
+                  Guides pratiques, recommandations aéroport et articles dédiés
+                  aux déplacements Nice ↔ {data.cityName}. Des ressources
+                  complémentaires pour préparer votre transfert avec Taxi Nice
+                  06.
+                </p>
+              </div>
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors"
+              >
+                Tous nos articles
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.8}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mt-10">
+              {fallbackPosts.map((post) => (
+                <article
+                  key={post.slug}
+                  className="bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+                >
+                  <div className="relative h-48">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
+                    />
+                    {post.category && (
+                      <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 text-primary text-xs font-semibold rounded-full">
+                        {post.category}
+                      </span>
+                    )}
+                  </div>
+                  <div className="p-6 space-y-3">
+                    <span className="text-sm text-gray-500">
+                      {formatDate(post.date)}
+                    </span>
+                    <h3 className="text-xl font-semibold text-gray-900 leading-tight">
+                      <Link
+                        href={`/blog/${post.slug}`}
+                        className="hover:text-primary transition-colors"
+                      >
+                        {post.title}
+                      </Link>
+                    </h3>
+                    <p className="text-gray-600 line-clamp-3">{post.excerpt}</p>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
+                    >
+                      Lire l&apos;article
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1.8}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="max-w-6xl mx-auto px-6 mt-14">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -440,8 +576,8 @@ export default async function SecteurPage({ params }) {
                   Prêt à réserver votre chauffeur ?
                 </h2>
                 <p className="text-lg text-blue-100">
-                  Contactez-nous par téléphone ou via le formulaire. Notre équipe
-                  vous répond rapidement avec un devis sur mesure.
+                  Contactez-nous par téléphone ou via le formulaire. Notre
+                  équipe vous répond rapidement avec un devis sur mesure.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -476,5 +612,3 @@ export default async function SecteurPage({ params }) {
     </div>
   );
 }
-
-
