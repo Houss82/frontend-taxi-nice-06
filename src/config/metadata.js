@@ -2,26 +2,18 @@
 export const metadata = {
   metadataBase: new URL("https://taxi-nice-06.com"),
   title: {
-    default: "Taxi Nice Côte d'Azur - Chauffeur Privé Premium 24/7",
-    template: "%s | Taxi Nice Côte d'Azur",
+    default: "Taxi Nice – Transferts Aéroport, Courses Locales & Conventionné",
+    template: "%s | Taxi Nice ",
   },
   description:
-    "Service de taxi premium à Nice et Côte d'Azur. Transferts Aéroport Nice, VSL, Excursions. Mercedes GLC et Van Premium. Réservation 24/7.",
-  keywords: [
-    "taxi nice",
-    "chauffeur privé nice",
-    "vtc nice",
-    "transfert aéroport nice",
-    "taxi côte d'azur",
-    "transport premium nice",
-    "vsl nice",
-    "excursions nice",
-    "mercedes glc nice",
-    "van premium nice",
-  ],
-  authors: [{ name: "Taxi Nice Côte d'Azur" }],
-  creator: "Taxi Nice Côte d'Azur",
-  publisher: "Taxi Nice Côte d'Azur",
+    "Taxi Nice : transferts Aéroport Nice, courses locales et trajets médicaux conventionnés CPAM. Réservation 24/7. Mercedes GLC & Van.",
+
+  authors: [{ name: "Taxi Nice" }],
+  creator: "Taxi Nice",
+  publisher: "Taxi Nice ",
+  alternates: {
+    canonical: "/", // évite les variantes en doublon
+  },
   formatDetection: {
     email: false,
     address: false,
@@ -31,10 +23,10 @@ export const metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://taxi-nice-06.com",
-    siteName: "Taxi Nice Côte d'Azur",
-    title: "Taxi Nice Côte d'Azur - Chauffeur Privé Premium 24/7",
+    siteName: "Taxi Nice ",
+    title: "Taxi Nice – Transferts Aéroport, Courses Locales & Conventionné",
     description:
-      "Service de taxi premium à Nice et Côte d'Azur. Transferts Aéroport Nice, VSL, Excursions. Mercedes GLC et Van Premium.",
+      "Taxi à Nice 24/7. Aéroport Nice, courses locales, trajets conventionnés CPAM. Mercedes GLC & Van.",
     images: [
       {
         url: "/bg-image.png",
@@ -46,9 +38,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Nice Côte d'Azur - Chauffeur Privé Premium 24/7",
+    title: "Taxi Nice – Transferts Aéroport, Courses Locales & Conventionné",
     description:
-      "Service de taxi premium à Nice et Côte d'Azur. Transferts Aéroport Nice, VSL, Excursions.",
+      "Taxi à Nice 24/7 : Aéroport, local, CPAM. Mercedes GLC & Van.",
     images: ["/bg-image.png"],
   },
   robots: {
@@ -63,6 +55,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: "votre-code-verification-google",
+    google:
+      "google-site-verification=cbmoVT_5GP607cQG1x7wxzQf6_RWvC6xGutXk9KfECw",
   },
 };
