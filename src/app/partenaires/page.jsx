@@ -4,22 +4,10 @@ import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import { motion } from "framer-motion";
-import {
-  Building2,
-  ExternalLink,
-  Globe,
-  HandshakeIcon,
-  Heart,
-  Plane,
-  Sparkles,
-  Users,
-} from "lucide-react";
+import { Building2, HandshakeIcon, Sparkles, Users } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function PartenairesPage() {
-  const [selectedCategory, setSelectedCategory] = useState("Tous");
-
   const breadcrumbItems = [
     {
       name: "Nos Partenaires",
@@ -29,73 +17,28 @@ export default function PartenairesPage() {
   ];
 
   // Partenaires
-  const partners = [
+  const partners = [];
+
+  const usefulResources = [
     {
-      name: "Taxi Conventionné PACA",
-      category: "Transport",
+      label: "Office de Tourisme Métropolitain Nice Côte d'Azur",
+      url: "https://www.explorenicecotedazur.com/",
       description:
-        "Spécialiste transport médical conventionné CPAM. Couverture complète Fréjus, Saint-Raphaël, Draguignan et est du Var. Service sanitaire fiable et professionnel.",
-      website: "https://www.taxi-conventionne-paca.fr/",
-      image: "/logo-taxi-conventionne-paca.png",
-      icon: Heart,
-      featured: true,
+        "Informations officielles sur les événements, hébergements et activités locales.",
     },
     {
-      name: "Taxi Conventionné Antibes",
-      category: "Transport",
+      label: "Aéroport Nice Côte d'Azur",
+      url: "https://www.nice.aeroport.fr/",
       description:
-        "Transport médical VSL agréé CPAM à Antibes. Service conventionné couvrant Antibes, Juan-les-Pins, La Fontonne et Cap d'Antibes. Transport sanitaire professionnel.",
-      website: "https://www.taxi-conventionne-antibes.fr/",
-      image: "/logo-taxi-conventionne-antibes.png",
-      icon: Heart,
-      featured: true,
+        "Statut des vols, accès terminaux T1 et T2, services aux passagers et assistance PMR.",
     },
     {
-      name: "Taxis Conventionnés Var",
-      category: "Transport",
+      label: "Centre Hospitalier Universitaire de Nice (CHU)",
+      url: "https://www.chu-nice.fr/",
       description:
-        "VSL agréé CPAM transport médical 24h/24. Spécialiste conventionné Fréjus, Saint-Raphaël, Roquebrune-sur-Argens, Draguignan. Service tiers payant intégral.",
-      website: "https://www.taxis-conventionnes-var.fr/",
-      image: "/logo-2 copie.png",
-      icon: Heart,
-      featured: true,
-    },
-    {
-      name: "Taxi Nice Airport",
-      category: "Transport",
-      description:
-        "Service VTC spécialisé transferts aéroport Nice. Chauffeurs anglophones, Mercedes premium, tarifs fixes dès 40€. Suivi de vol et meet & greet inclus.",
-      website: "https://www.taxi-niceairport.com/",
-      image: "/logo-taxi-nice-airport.png",
-      icon: Plane,
-      featured: true,
-    },
-    {
-      name: "Aéroport Nice Côte d'Azur",
-      category: "Transport",
-      description: "3ème aéroport de France, porte d'entrée de la Côte d'Azur",
-      website: "https://www.nice.aeroport.fr",
-      image: "/airport_18499216.png",
-      icon: Plane,
-      featured: false,
-    },
-    {
-      name: "Office de Tourisme Nice",
-      category: "Tourisme",
-      description: "Promotion et information touristique de la ville de Nice",
-      website: "https://www.nicetourisme.com",
-      image: "/monaco.jpg",
-      icon: Globe,
-      featured: false,
+        "Contacts et informations pratiques pour les établissements Pasteur 2, L'Archet ou Cimiez.",
     },
   ];
-
-  const categories = ["Tous", "Transport", "Tourisme"];
-
-  const filteredPartners =
-    selectedCategory === "Tous"
-      ? partners
-      : partners.filter((p) => p.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-gray-50 mt-20 sm:mt-0">
@@ -181,229 +124,29 @@ export default function PartenairesPage() {
       </section>
 
       {/* Filtres */}
-      <section className="py-8 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap gap-3 justify-center">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
-                  selectedCategory === category
-                    ? "bg-primary text-white shadow-lg"
-                    : "bg-white text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Liste des partenaires */}
       <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Partenaires Premium */}
-          {filteredPartners.some((p) => p.featured) && (
-            <div className="mb-16">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-12"
-              >
-                <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                    Partenaires Premium
-                  </span>
-                </h2>
-                <div className="flex justify-center items-center gap-3">
-                  <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <div className="h-px w-16 bg-gradient-to-l from-transparent to-blue-500"></div>
-                </div>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                {filteredPartners
-                  .filter((p) => p.featured)
-                  .map((partner, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1, duration: 0.6 }}
-                      className="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-primary/20 hover:-translate-y-2"
-                    >
-                      {/* Image avec overlay gradient */}
-                      <div className="relative h-64 overflow-hidden">
-                        <Image
-                          src={partner.image}
-                          alt={`Logo ${partner.name} - ${partner.description}`}
-                          fill
-                          className="object-contain p-6 group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                        {/* Badge Premium */}
-                        <div className="absolute top-4 right-4">
-                          <span className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-semibold flex items-center gap-2 shadow-lg">
-                            <Sparkles className="w-4 h-4" />
-                            Premium
-                          </span>
-                        </div>
-                      </div>
-
-                      <div className="p-8">
-                        {/* En-tête avec icône */}
-                        <div className="flex items-start gap-4 mb-4">
-                          <div className="w-14 h-14 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                            <partner.icon className="w-7 h-7 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">
-                              {partner.name}
-                            </h3>
-                            <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-semibold">
-                              <span className="w-1.5 h-1.5 bg-blue-600 rounded-full" aria-hidden="true"></span>
-                              {partner.category}
-                            </span>
-                          </div>
-                        </div>
-
-                        {/* Description */}
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                          {partner.description}
-                        </p>
-
-                        {/* CTA Button */}
-                        <a
-                          href={partner.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title={`Visiter le site de ${partner.name} - ${partner.description}`}
-                          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg group/btn"
-                        >
-                          <ExternalLink className="w-5 h-5 group-hover/btn:rotate-45 transition-transform duration-300" />
-                          Découvrir nos services
-                        </a>
-                      </div>
-                    </motion.div>
-                  ))}
-              </div>
-            </div>
-          )}
-
-          {/* Autres partenaires */}
-          {filteredPartners.some((p) => !p.featured) && (
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-12"
-              >
-                <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                    Nos Partenaires
-                  </span>
-                </h2>
-                <div className="flex justify-center items-center gap-3">
-                  <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <div className="h-px w-16 bg-gradient-to-l from-transparent to-blue-500"></div>
-                </div>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredPartners
-                  .filter((p) => !p.featured)
-                  .map((partner, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1, duration: 0.6 }}
-                      className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-                    >
-                      {/* Image */}
-                      <div className="relative h-48 overflow-hidden bg-gray-50">
-                        <Image
-                          src={partner.image}
-                          alt={`Logo ${partner.name} - ${partner.description}`}
-                          fill
-                          className="object-contain p-4 group-hover:scale-110 transition-transform duration-500"
-                        />
-                      </div>
-
-                      <div className="p-6">
-                        {/* Catégorie avec icône */}
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
-                            <partner.icon className="w-4 h-4 text-primary" />
-                          </div>
-                          <span className="text-sm text-primary font-semibold uppercase tracking-wide">
-                            {partner.category}
-                          </span>
-                        </div>
-
-                        {/* Titre */}
-                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                          {partner.name}
-                        </h3>
-
-                        {/* Description */}
-                        <p className="text-gray-600 mb-4 text-sm line-clamp-3 leading-relaxed">
-                          {partner.description}
-                        </p>
-
-                        {/* Lien */}
-                        <a
-                          href={partner.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title={`Visiter le site de ${partner.name} - ${partner.description}`}
-                          className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primaryDark transition-colors text-sm group/link"
-                        >
-                          Découvrir nos services
-                          <ExternalLink
-                            className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300"
-                            aria-hidden="true"
-                          />
-                        </a>
-                      </div>
-                    </motion.div>
-                  ))}
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* CTA Devenir partenaire */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primaryDark">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+        <div className="max-w-5xl mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white rounded-3xl shadow-xl border border-gray-100 p-10 text-center space-y-6"
           >
-            <HandshakeIcon className="w-16 h-16 text-white mx-auto mb-6" />
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Devenez partenaire
+            <h2 className="text-4xl font-black text-gray-900">
+              Partenaires disponibles sur demande
             </h2>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Vous êtes un professionnel du tourisme, de l'hôtellerie ou de
-              l'événementiel sur la Côte d'Azur ? Rejoignez notre réseau de
-              partenaires et développons ensemble nos activités.
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Notre réseau de partenaires est volontairement confidentiel pour
+              éviter tout échange artificiel de liens. Nous partageons les
+              coordonnées des prestataires lorsque cela répond à une demande
+              précise (transport médical, événementiel, tourisme…). Contactez
+              directement notre équipe pour être mis en relation avec le service
+              le plus adapté.
             </p>
-            <a
-              href="/contact"
-              className="inline-block px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg"
-            >
-              Nous contacter
-            </a>
+            <p className="text-gray-500 italic">
+              « Nous privilégions des collaborations locales, validées et
+              alignées avec nos standards de qualité Taxi Nice 06. »
+            </p>
           </motion.div>
         </div>
       </section>

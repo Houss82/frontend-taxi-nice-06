@@ -488,12 +488,12 @@ export const sectorData = {
     slug: "antibes",
     cityName: "Antibes",
     hero: {
-      title: "Taxi Antibes – Chauffeur privé & port Vauban",
+      title: "Taxi Nice vers Antibes – Transferts Nice ↔ Antibes",
       highlight: "Antibes & Juan-les-Pins",
       subtitle:
-        "Transferts aéroport, Sophia Antipolis et déplacements médicaux",
+        "Transferts Nice ↔ Antibes, Sophia Antipolis et déplacements médicaux",
       image: "/taxi-antibes-secteur.jpeg",
-      imageAlt: "Taxi premium à Antibes",
+      imageAlt: "Taxi vers Antibes",
     },
     introduction: [
       "Basés entre Nice et Antibes, nous accompagnons les habitants et visiteurs pour tous les trajets : gare d'Antibes, port Vauban, Juan-les-Pins, Sophia Antipolis et zones résidentielles de luxe. Nous assurons les transferts depuis ou vers l'aéroport Nice Côte d'Azur ainsi que depuis la ville de Nice vers Antibes tout au long de l'année.",
