@@ -955,3 +955,84 @@ img {
   background: #f8fafc;
 }
 
+/* Comparaison Taxi vs VTC vs Transport */
+.comparison-box,
+.prose .comparison-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.comparison-item,
+.prose .comparison-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%) !important;
+  border: 1px solid #e2e8f0 !important;
+  border-left: 4px solid #0b4f6c !important;
+  border-radius: 0.75rem !important;
+  padding: 1.25rem 1.5rem !important;
+  margin: 0.75rem 0 !important;
+  box-shadow: 0 2px 8px rgba(11, 79, 108, 0.08) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.comparison-item:hover,
+.prose .comparison-item:hover {
+  transform: translateX(4px) !important;
+  box-shadow: 0 4px 12px rgba(11, 79, 108, 0.12) !important;
+}
+
+.comparison-item strong,
+.prose .comparison-item strong {
+  display: block !important;
+  font-size: 1.1rem !important;
+  color: #0b4f6c !important;
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 2px solid rgba(11, 79, 108, 0.1) !important;
+}
+
+.comparison-item ul,
+.prose .comparison-item ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0.5rem 0 0 0 !important;
+}
+
+.comparison-item li,
+.prose .comparison-item li {
+  padding: 0.5rem 0 !important;
+  margin: 0.25rem 0 !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.5) !important;
+  font-size: 0.95rem !important;
+}
+
+.comparison-item li:last-child,
+.prose .comparison-item li:last-child {
+  border-bottom: none !important;
+}
+
+.comparison-item li strong,
+.prose .comparison-item li strong {
+  display: inline !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+  margin-right: 0.5rem !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+  font-size: inherit !important;
+}
+
+@media (max-width: 768px) {
+  .comparison-item,
+  .prose .comparison-item {
+    padding: 1rem 1.25rem !important;
+  }
+
+  .comparison-item strong,
+  .prose .comparison-item strong {
+    font-size: 1rem !important;
+  }
+}
+
