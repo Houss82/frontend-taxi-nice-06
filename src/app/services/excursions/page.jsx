@@ -14,6 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ExcursionsPage() {
   const breadcrumbItems = [
@@ -453,8 +454,32 @@ export default function ExcursionsPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Prêt pour l'Aventure ?
             </h2>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-white/90 mb-4">
               Réservez dès maintenant votre excursion sur mesure en Côte d'Azur
+            </p>
+            <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+              Découvrez aussi notre service complet de{" "}
+              <Link
+                href="/taxi-nice"
+                className="text-white font-semibold underline underline-offset-4 hover:text-blue-200 transition-colors"
+              >
+                taxi Nice 24/7
+              </Link>{" "}
+              pour tous vos déplacements :{" "}
+              <Link
+                href="/secteurs/nice-gare"
+                className="text-white font-semibold underline underline-offset-4 hover:text-blue-200 transition-colors"
+              >
+                taxi gare Nice
+              </Link>
+              ,{" "}
+              <Link
+                href="/secteurs/nice-centre-ville"
+                className="text-white font-semibold underline underline-offset-4 hover:text-blue-200 transition-colors"
+              >
+                taxi centre-ville Nice
+              </Link>{" "}
+              et transferts aéroport.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

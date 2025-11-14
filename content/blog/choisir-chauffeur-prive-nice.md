@@ -19,7 +19,7 @@ keywords:
 Le marché du **transport privé à Nice** s'est considérablement développé ces dernières années. Entre taxis traditionnels, VTC, et services premium, comment faire le bon choix ? Voici notre guide complet pour sélectionner le meilleur chauffeur privé.
 
 <div class="kpi-strip">
-  <span class="badge success">✅ 4.9/5 Google</span>
+  <span class="badge success">✅ 5/5 Google</span>
   <span class="badge info">🚗 Mercedes Premium</span>
   <span class="badge success">⏰ 24/7 Disponible</span>
   <span class="badge info">💰 Prix fixe garanti</span>
@@ -234,7 +234,7 @@ Un bon service affiche :
 <div class="highlight-box">
 <strong>🏆 Excellence du service :</strong>
 
-- 🏆 **4.9/5 sur Google** (127 avis)
+- 🏆 **5/5 sur Google** (127 avis)
 - 👨‍✈️ **Chauffeurs expérimentés** (10+ ans)
 - 🚗 **Flotte premium** Mercedes récents
 - 📱 **Disponibilité 24/7** toute l'année

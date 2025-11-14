@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import { Car, Clock, Shield, Thermometer, Users, Wifi } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function VanPremiumPage() {
   const features = [
@@ -207,9 +208,19 @@ export default function VanPremiumPage() {
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
                 Voyagez en Groupe
               </h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-blue-100 mb-4">
                 Réservez votre van premium et profitez d'un transport
                 confortable pour 8 personnes
+              </p>
+              <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
+                Pour découvrir tous nos services de{" "}
+                <Link
+                  href="/taxi-nice"
+                  className="text-white font-semibold underline underline-offset-4 hover:text-blue-100 transition-colors"
+                >
+                  taxi Nice 24/7
+                </Link>{" "}
+                avec véhicules Mercedes premium, consultez notre page principale dédiée.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

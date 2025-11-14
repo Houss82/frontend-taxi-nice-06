@@ -18,6 +18,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function VSLPage() {
   const breadcrumbItems = [
@@ -377,8 +378,18 @@ export default function VSLPage() {
           <h2 className="text-5xl lg:text-6xl font-bold text-white mb-8">
             Besoin d'un Transport VSL ?
           </h2>
-          <p className="text-xl lg:text-2xl text-white/90 mb-12 leading-relaxed">
+          <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Contactez-nous pour réserver votre transport médicalisé
+          </p>
+          <p className="text-lg text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto">
+            Nous proposons aussi un service complet de{" "}
+            <Link
+              href="/taxi-nice"
+              className="text-white font-semibold underline underline-offset-4 hover:text-pink-200 transition-colors"
+            >
+              taxi Nice 24/7
+            </Link>{" "}
+            pour tous vos déplacements sur la Côte d'Azur : transferts aéroport, gare, centre-ville et longues distances.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

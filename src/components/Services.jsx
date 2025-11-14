@@ -15,13 +15,13 @@ function AnimatedCounter({ end, duration = 2000, decimals = 0, suffix = "" }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            
+
             // Animation optionnelle : on peut animer depuis une valeur plus basse
             // mais on garde la valeur finale visible dès le début
             const startTime = performance.now();
             const startValue = end * 0.7; // Commence à 70% de la valeur finale pour une animation subtile
             const endValue = parseFloat(end);
-            
+
             // Mettre à jour immédiatement avec la valeur finale pour éviter les 0
             setCount(endValue);
 
@@ -250,7 +250,7 @@ export default function Services() {
                 <Star className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-bold text-2xl mb-2">
-                <AnimatedCounter end={4.9} decimals={1} duration={2000} />
+                <AnimatedCounter end={5} decimals={0} duration={2000} />
                 <span className="text-primary">/5</span>
               </h3>
               <p className="text-gray-600">Satisfaction client</p>

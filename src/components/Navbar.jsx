@@ -16,6 +16,7 @@ import {
   Menu,
   Phone,
   Plane,
+  Sitemap,
   Users,
   X,
 } from "lucide-react";
@@ -79,6 +80,12 @@ export default function Navbar() {
         <nav className="hidden lg:flex gap-6 xl:gap-8">
           <Link href="/" className="text-black hover:text-primary font-medium">
             ACCUEIL
+          </Link>
+          <Link
+            href="/taxi-nice"
+            className="text-black hover:text-primary font-medium"
+          >
+            TAXI NICE
           </Link>
 
           {/* Services Dropdown */}
@@ -228,6 +235,36 @@ export default function Navbar() {
                   className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg py-2"
                 >
                   <Link
+                    href="/secteurs/nice"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Car className="w-4 h-4 text-cyan-600" />
+                      <span>Taxi Nice</span>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/secteurs/nice-gare"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="w-4 h-4 text-blue-600" />
+                      <span>Taxi Nice Gare</span>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/secteurs/nice-centre-ville"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="w-4 h-4 text-indigo-600" />
+                      <span>Taxi Nice Centre-Ville</span>
+                    </div>
+                  </Link>
+                  <Link
                     href="/secteurs/monaco"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsSectorsOpen(false)}
@@ -297,6 +334,12 @@ export default function Navbar() {
             className="text-black hover:text-primary font-medium"
           >
             CONTACT
+          </Link>
+          <Link
+            href="/plan-du-site"
+            className="text-black hover:text-primary font-medium"
+          >
+            PLAN DU SITE
           </Link>
         </nav>
 
@@ -401,6 +444,23 @@ export default function Navbar() {
                     <Home className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
                     <span>ACCUEIL</span>
                   </Link>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.35 }}
+                    whileHover={{ scale: 1.02, x: 5 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Link
+                      href="/taxi-nice"
+                      className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-50 to-blue-50 hover:from-cyan-100 hover:to-blue-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <Car className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                      <span>TAXI NICE</span>
+                    </Link>
                   </motion.div>
 
                   {/* Services avec sous-menu pliable */}
@@ -631,6 +691,23 @@ export default function Navbar() {
                       <span>CONTACT</span>
                     </Link>
                   </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 1.0 }}
+                    whileHover={{ scale: 1.02, x: 5 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Link
+                      href="/plan-du-site"
+                      className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-gray-50 to-slate-50 hover:from-gray-100 hover:to-slate-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <Sitemap className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                      <span>PLAN DU SITE</span>
+                    </Link>
+                  </motion.div>
                 </div>
               </motion.nav>
 
@@ -668,6 +745,36 @@ export default function Navbar() {
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                       className="ml-6 space-y-1 border-l-2 border-gray-200 pl-4 overflow-hidden"
                     >
+                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                        <Link
+                          href="/secteurs/nice"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <Car className="w-4 h-4 text-cyan-600" />
+                          <span className="text-sm">Taxi Nice</span>
+                        </Link>
+                      </motion.div>
+                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                        <Link
+                          href="/secteurs/nice-gare"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <MapPin className="w-4 h-4 text-blue-600" />
+                          <span className="text-sm">Taxi Nice Gare</span>
+                        </Link>
+                      </motion.div>
+                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                        <Link
+                          href="/secteurs/nice-centre-ville"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <MapPin className="w-4 h-4 text-indigo-600" />
+                          <span className="text-sm">Taxi Nice Centre-Ville</span>
+                        </Link>
+                      </motion.div>
                       <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
                         <Link
                           href="/secteurs/monaco"

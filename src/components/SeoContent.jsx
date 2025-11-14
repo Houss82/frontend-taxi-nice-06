@@ -45,7 +45,7 @@ export default function SeoContent() {
   const conclusion = {
     title: "Pourquoi Choisir Notre Service de Taxi ?",
     content:
-      "Choisir notre service Taxi Nice, c'est opter pour la qualité, la fiabilité et le professionnalisme. Avec plus de 1000 clients satisfaits chaque mois et une note moyenne de 4.9/5, nous sommes fiers de notre réputation. Nos chauffeurs locaux connaissent tous les raccourcis et les meilleures routes pour éviter les embouteillages. Nous nous engageons à vous offrir une expérience de transport exceptionnelle, que ce soit pour un trajet de 5 minutes ou un voyage de plusieurs heures. Contactez-nous dès maintenant pour réserver votre prochain transport Taxi Nice sur la Côte d'Azur.",
+      "Choisir notre service Taxi Nice, c'est opter pour la qualité, la fiabilité et le professionnalisme. Avec plus de 1000 clients satisfaits chaque mois et une note moyenne de 5/5, nous sommes fiers de notre réputation. Nos chauffeurs locaux connaissent tous les raccourcis et les meilleures routes pour éviter les embouteillages. Nous nous engageons à vous offrir une expérience de transport exceptionnelle, que ce soit pour un trajet de 5 minutes ou un voyage de plusieurs heures. Contactez-nous dès maintenant pour réserver votre prochain transport Taxi Nice sur la Côte d'Azur.",
   };
   const [expandedCards, setExpandedCards] = useState(new Set());
 

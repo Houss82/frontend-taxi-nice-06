@@ -4,6 +4,7 @@ import HospitalsList from "@/components/HospitalsList.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import { getAllPosts } from "@/lib/blog";
+import { Car, CheckCircle, MapPin, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -144,13 +145,19 @@ export default async function SecteurPage({ params }) {
         <section className="max-w-6xl mx-auto px-6 pt-12">
           <div className="grid lg:grid-cols-[1.1fr,0.9fr] gap-12 items-start">
             <div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/10 to-blue-100 rounded-full text-primary font-semibold text-sm mb-6 shadow-md">
+                <MapPin className="w-4 h-4" />
+                <span>Guide Local Nice</span>
+              </div>
+              
+              <h1 className="text-4xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
                 {data.hero.title}
-                <span className="block text-primary">
+                <span className="block bg-gradient-to-r from-primary via-blue-600 to-cyan-600 bg-clip-text text-transparent mt-2">
                   {data.hero.highlight}
                 </span>
               </h1>
-              <h2 className="text-2xl text-primary/80 font-semibold mb-6">
+              <h2 className="text-2xl lg:text-3xl text-primary font-bold mb-6">
                 {data.hero.subtitle}
               </h2>
 
@@ -175,22 +182,37 @@ export default async function SecteurPage({ params }) {
                 </p>
               )}
             </div>
-            <div className="relative h-72 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
-              <Image
-                src={data.hero.image}
-                alt={data.hero.imageAlt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
-                priority
-              />
-              <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-4 py-3 rounded-xl shadow-lg border border-primary/20">
-                <p className="text-sm text-gray-500 uppercase tracking-wider">
+            <div className="relative h-72 sm:h-96 rounded-3xl shadow-2xl border-2 border-primary/20 transform hover:scale-105 transition-transform duration-500">
+              <div className="absolute inset-0 rounded-3xl overflow-hidden">
+                <Image
+                  src={data.hero.image}
+                  alt={data.hero.imageAlt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-6 right-6 bg-gradient-to-br from-primary to-blue-600 text-white px-6 py-4 rounded-2xl shadow-2xl border-2 border-white/20 z-10">
+                <p className="text-xs text-white/80 uppercase tracking-wider font-semibold mb-1">
                   Disponible
                 </p>
-                <p className="text-lg font-semibold text-primary">
+                <p className="text-2xl font-black">
                   24h/24 – 7j/7
                 </p>
+              </div>
+              {/* Badge flottant */}
+              <div className="absolute -top-4 -left-4 bg-white rounded-2xl p-3 shadow-2xl border-2 border-primary/30 z-10">
+                <div className="flex items-center gap-2">
+                  <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center">
+                    <Star className="w-5 h-5 text-white fill-white" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-gray-500 font-semibold">Note</div>
+                    <div className="text-lg font-black text-gray-900">5/5</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -208,21 +230,31 @@ export default async function SecteurPage({ params }) {
         </section>
 
         <section className="max-w-6xl mx-auto px-6 mt-14">
-          <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              {data.servicesTitle}
-            </h2>
-            <ul className="grid md:grid-cols-2 gap-4 text-gray-700 text-lg">
-              {data.services.map((service, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-3 bg-primary/5 border border-primary/10 rounded-2xl px-4 py-3"
-                >
-                  <span className="text-primary text-xl">•</span>
-                  <span>{service}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="bg-gradient-to-br from-white to-primary/5 rounded-3xl shadow-2xl border-2 border-primary/10 p-10 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary/10 to-blue-100 rounded-bl-full opacity-50"></div>
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <Car className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-3xl lg:text-4xl font-black text-gray-900">
+                  {data.servicesTitle}
+                </h2>
+              </div>
+              <ul className="grid md:grid-cols-2 gap-4 text-gray-700 text-lg">
+                {data.services.map((service, index) => (
+                  <li
+                    key={index}
+                    className="group flex items-start gap-3 bg-white/80 backdrop-blur-sm border-2 border-primary/10 rounded-2xl px-5 py-4 shadow-md hover:shadow-xl hover:border-primary/30 hover:-translate-y-1 transition-all duration-300"
+                  >
+                    <div className="w-8 h-8 bg-gradient-to-br from-primary to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
+                    <span className="font-medium">{service}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -235,9 +267,9 @@ export default async function SecteurPage({ params }) {
             {data.coverageAreas.map((area) => (
               <div
                 key={area}
-                className="bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-700 shadow-sm"
+                className="group bg-white border-2 border-gray-200 rounded-xl px-5 py-4 text-gray-700 shadow-md hover:shadow-xl hover:border-primary/30 hover:-translate-y-1 transition-all duration-300"
               >
-                {area}
+                <span className="font-medium">{area}</span>
               </div>
             ))}
           </div>

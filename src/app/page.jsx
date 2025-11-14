@@ -248,8 +248,15 @@ export default function Page() {
                       Taxi aéroport de Nice
                     </strong>{" "}
                     – transferts toutes distances vers Cannes, Monaco, Antibes
-                    et toute la Côte d’Azur. Suivi de vol, accueil personnalisé,
-                    véhicules haut de gamme.
+                    et toute la Côte d'Azur. Suivi de vol, accueil personnalisé,
+                    véhicules haut de gamme. Découvrez notre{" "}
+                    <Link
+                      href="/taxi-nice"
+                      className="text-blue-600 hover:text-blue-800 underline font-medium"
+                    >
+                      service de taxi Nice 24/7
+                    </Link>{" "}
+                    pour tous vos déplacements.
                   </p>
                 </div>
 
@@ -342,6 +349,7 @@ export default function Page() {
                     {
                       title: "Taxi Nice & chauffeur privé",
                       text: "Service 24h/24 et 7j/7",
+                      link: "/taxi-nice",
                     },
                     {
                       title: "Transport médical VSL / conventionné",
@@ -366,7 +374,16 @@ export default function Page() {
                         </span>
                       </div>
                       <div>
-                        <strong className="text-gray-900">{item.title}</strong>
+                        {item.link ? (
+                          <Link
+                            href={item.link}
+                            className="text-gray-900 hover:text-blue-600 transition-colors font-semibold"
+                          >
+                            {item.title}
+                          </Link>
+                        ) : (
+                          <strong className="text-gray-900">{item.title}</strong>
+                        )}
                         <p className="text-gray-600 text-sm">{item.text}</p>
                       </div>
                     </div>
@@ -619,8 +636,14 @@ export default function Page() {
                   Comment réserver un taxi à l'aéroport de Nice ?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Vous pouvez réserver votre <strong>taxi à Nice</strong> en
-                  ligne sur notre site via le formulaire de réservation, ou
+                  Vous pouvez réserver votre{" "}
+                  <Link
+                    href="/taxi-nice"
+                    className="text-blue-600 hover:text-blue-800 underline font-medium"
+                  >
+                    taxi à Nice
+                  </Link>{" "}
+                  en ligne sur notre site via le formulaire de réservation, ou
                   simplement par téléphone. Il suffit d'indiquer votre numéro de
                   vol, la date et l'heure d'arrivée, et nous vous confirmons
                   votre transfert immédiatement.
@@ -748,8 +771,14 @@ export default function Page() {
             </h2>
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 space-y-4">
               <p className="text-gray-700 leading-relaxed text-lg">
-                Notre société de taxi basée à Nice assure vos déplacements{" "}
-                <strong className="text-blue-600">7j/7</strong> dans tout le
+                Notre société de{" "}
+                <Link
+                  href="/taxi-nice"
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  taxi basée à Nice
+                </Link>{" "}
+                assure vos déplacements <strong className="text-blue-600">7j/7</strong> dans tout le
                 département des Alpes-Maritimes : <strong>Nice</strong>,
                 Saint-Laurent du Var, Cagnes-sur-Mer, Villefranche-sur-Mer,
                 Beaulieu, Eze, <strong>Monaco</strong>, Menton,{" "}
@@ -761,8 +790,13 @@ export default function Page() {
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Si vous recherchez un{" "}
-                <strong className="text-blue-600">taxi à Nice</strong> fiable,
-                ponctuel et avec un véhicule haut de gamme, Taxi Nice 06 est le
+                <Link
+                  href="/taxi-nice"
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  taxi à Nice
+                </Link>{" "}
+                fiable, ponctuel et avec un véhicule haut de gamme, Taxi Nice 06 est le
                 bon choix. Nous proposons aussi un service de{" "}
                 <strong className="text-blue-600">taxi conventionné</strong>{" "}
                 pour vos trajets médicaux vers les hôpitaux ou centres de soins

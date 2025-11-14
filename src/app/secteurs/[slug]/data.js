@@ -215,8 +215,9 @@ export const sectorData = {
     ],
     commitments: [
       {
-        title: "Ponctualité garantie",
-        description: "Arrivée 15 minutes avant la prise en charge programmée.",
+        title: "Ponctualité premium Monaco",
+        description:
+          "Arrivée 15 minutes avant la prise en charge programmée, adaptée aux contraintes du Rocher.",
       },
       {
         title: "Discrétion absolue",
@@ -720,6 +721,741 @@ export const sectorData = {
       url: "https://taxi-nice-06.com/secteurs/antibes",
       latitude: "43.580418",
       longitude: "7.125102",
+    },
+  },
+  nice: {
+    slug: "nice",
+    cityName: "Nice",
+    hero: {
+      title: "Guide Taxi Nice – Zones, Hôpitaux & Établissements",
+      highlight: "Nice & Alentours",
+      subtitle:
+        "Informations pratiques : zones couvertes, établissements desservis, tarifs indicatifs",
+      image: "/image1.jpeg",
+      imageAlt: "Taxi à Nice sur la Promenade des Anglais",
+    },
+    introduction: [
+      "Cette page détaille nos services de taxi spécifiquement pour Nice : zones couvertes, établissements desservis (hôpitaux, aéroport, gares), tarifs indicatifs et conseils pratiques. Pour une vue d'ensemble de notre service Taxi Nice 24/7 avec réservation en ligne et tous nos mots-clés longue traîne, consultez notre page principale dédiée.",
+      "Nous desservons tous les quartiers de Nice : centre-ville, Promenade des Anglais, quartiers résidentiels (Cimiez, Gairaut, Rimiez), zones aéroportuaires (Fabron, Caucade, Arenas) et communes limitrophes (Saint-Laurent-du-Var, Cagnes-sur-Mer). Nos chauffeurs locaux connaissent parfaitement les raccourcis, les heures de pointe et les accès aux établissements importants.",
+    ],
+    secondaryIntro: [
+      "Nos transferts depuis Nice vers l'aéroport Nice Côte d'Azur (T1/T2) sont organisés avec suivi de vol et ajustement automatique des horaires. Pour les trajets médicaux, nous desservons tous les hôpitaux et cliniques de Nice (voir liste détaillée ci-dessous) avec possibilité de conventionnement CPAM selon votre prescription.",
+      "Pour les longues distances depuis Nice (Marseille, Italie, stations de ski), nous proposons des forfaits avec pauses adaptées. Consultez notre page principale pour découvrir tous nos services et réserver en ligne.",
+    ],
+    servicesTitle: "Services taxi à Nice et Côte d'Azur",
+    services: [
+      "Taxi Nice centre-ville (courses locales, rendez-vous, hôtels, restaurants)",
+      "Taxi Aéroport Nice Côte d'Azur (Terminal 1 & Terminal 2, arrivée et départ)",
+      "Taxi gare de Nice-Ville, Nice Riquier et Nice Saint-Augustin",
+      "Taxi Nice pour longues distances (Monaco, Cannes, Antibes, Var, Italie)",
+      "Taxi médical et transports vers hôpitaux et cliniques à Nice",
+      "Mise à disposition de taxi à Nice pour une soirée, un mariage ou un événement",
+    ],
+    coverageDescription:
+      "Nous desservons toute la ville de Nice et ses alentours :",
+    coverageAreas: [
+      "✓ Nice centre-ville, Jean Médecin, Avenue Malausséna",
+      "✓ Promenade des Anglais, hôtels du bord de mer et plages",
+      "✓ Quartiers Cimiez, Gairaut, Rimiez, Saint-Pancrace",
+      "✓ Nice Ouest, Fabron, Caucade, Arenas, Arénas – aéroport",
+      "✓ Nice Est, Riquier, Port de Nice, Mont Boron",
+      "✓ Collines niçoises et communes voisines : Saint-Laurent-du-Var, Cagnes-sur-Mer",
+    ],
+    map: {
+      description:
+        "Notre service de taxi à Nice couvre l'ensemble de la ville, du centre historique aux quartiers collinaires.",
+      info: "Depuis Nice, nous assurons aussi les transferts vers l'aéroport, Monaco, Cannes, Antibes, l'arrière-pays et les stations de ski.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Nice%20France&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Taxi à Nice pour le quotidien",
+        description:
+          "Courses courtes, retours de soirée, rendez-vous médicaux, accompagnement des enfants : votre taxi à Nice s'adapte à votre rythme.",
+      },
+      {
+        title: "Chauffeur privé Nice longue distance",
+        description:
+          "Transferts Nice → Monaco, Cannes, Antibes, Italie ou stations de ski avec un seul interlocuteur et un suivi complet de votre trajet.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Taxi basé à Nice",
+        description:
+          "Chauffeurs réellement implantés à Nice, connaissant les rues, les sens interdits, les heures de pointe et les accès rapides.",
+      },
+      {
+        title: "✓ Disponibilité 24h/24 – 7j/7",
+        description:
+          "Taxi à Nice de jour comme de nuit, pour les premiers vols, les retours tardifs et les urgences de dernière minute.",
+      },
+      {
+        title: "✓ Confort & sécurité",
+        description:
+          "Véhicules récents, climatisés, entretien rigoureux et conduite souple pour tous vos trajets en taxi à Nice.",
+      },
+      {
+        title: "✓ Réservation simple",
+        description:
+          "Demande de taxi à Nice par téléphone ou formulaire en ligne, confirmation rapide et tarif annoncé à l'avance.",
+      },
+    ],
+    hospitalsTitle: "Hôpitaux et cliniques desservis en taxi depuis Nice",
+    hospitals: [
+      {
+        name: "CHU Pasteur 2",
+        city: "Nice",
+        description:
+          "Hôpital universitaire de Nice, urgences et nombreuses spécialités.",
+        speciality: "Urgences, médecine, chirurgie",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+      {
+        name: "Hôpital de l'Archet",
+        city: "Nice",
+        description: "Grand hôpital de Nice Ouest, proche de l'autoroute.",
+        speciality: "Médecine, chirurgie, maternité",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 60 00",
+      },
+      {
+        name: "Fondation Lenval",
+        city: "Nice",
+        description: "Hôpital pour enfants situé en bord de mer à Nice.",
+        speciality: "Pédiatrie, urgences pédiatriques",
+        website: "https://lenval.org/",
+        phone: "04 92 03 03 03",
+      },
+      {
+        name: "Clinique Saint George",
+        city: "Nice",
+        description: "Établissement privé avec de nombreuses spécialités.",
+        speciality: "Chirurgie, cardiologie, maternité",
+        website: "https://www.clinique-saint-george.com/",
+        phone: "04 92 11 11 11",
+      },
+    ],
+    establishmentsTitle:
+      "Lieux importants desservis en taxi dans Nice et alentours",
+    establishments: [
+      {
+        name: "Aéroport Nice Côte d'Azur (T1 & T2)",
+        city: "Nice",
+        speciality: "Aéroport international",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+      {
+        name: "Gare de Nice-Ville",
+        city: "Nice",
+        speciality: "Trains TGV, TER, Intercités",
+        website: "https://www.sncf.com/fr",
+        phone: "36 35",
+      },
+      {
+        name: "Port de Nice",
+        city: "Nice",
+        speciality: "Départs ferries & croisières",
+        website: "https://www.riviera-ports.com/",
+        phone: "04 92 00 41 00",
+      },
+      {
+        name: "Allianz Riviera",
+        city: "Nice",
+        speciality: "Stade & grands événements",
+        website: "https://www.allianz-riviera.fr/",
+        phone: "04 89 22 42 24",
+      },
+      {
+        name: "Palais Nikaïa",
+        city: "Nice",
+        speciality: "Salles de concert & spectacles",
+        website: "https://www.palaisnikaia.fr/",
+        phone: "04 92 29 31 29",
+      },
+      {
+        name: "Office de tourisme – Promenade des Anglais",
+        city: "Nice",
+        speciality: "Accueil touristes & informations",
+        website: "https://www.explorenicecotedazur.com/",
+        phone: "04 92 14 46 14",
+      },
+    ],
+    faq: [
+      {
+        question: "Comment réserver un taxi à Nice avec Taxi Nice 06 ?",
+        answer:
+          "Vous pouvez réserver votre taxi à Nice par téléphone ou via notre formulaire de réservation en ligne. Nous vous confirmons l'heure de prise en charge, le lieu de rendez-vous et, si besoin, le tarif estimatif avant le trajet.",
+      },
+      {
+        question:
+          "Quel est le prix d'un taxi entre Nice centre et l'aéroport de Nice ?",
+        answer:
+          "Le tarif dépend de l'heure, du trafic et du point de départ exact. Donnez-nous votre adresse à Nice et l'horaire souhaité : nous vous indiquons un prix clair avant d'envoyer le taxi.",
+      },
+      {
+        question:
+          "Proposez-vous un taxi médical ou VSL à Nice pour les rendez-vous à l'hôpital ?",
+        answer:
+          "Oui, nous pouvons organiser des trajets vers les hôpitaux et cliniques de Nice. Sur présentation de votre prescription médicale et de votre carte vitale, nous vous indiquons les modalités de prise en charge.",
+      },
+    ],
+    homepageLink: {
+      before:
+        "💡 Cette page détaille les zones, hôpitaux et établissements desservis à Nice. Pour découvrir notre service complet Taxi Nice 24/7 avec réservation en ligne, véhicules Mercedes premium et tarifs détaillés, consultez ",
+      linkText: "notre page principale Taxi Nice",
+      after: ".",
+      href: "/taxi-nice",
+    },
+    resource: {
+      description:
+        "Pour préparer vos trajets taxi à Nice (aéroport, gare, hôpitaux, longues distances), consultez aussi nos guides et articles dédiés.",
+      links: [
+        {
+          label: "Page principale Taxi Nice",
+          url: "https://taxi-nice-06.com/taxi-nice",
+        },
+        {
+          label: "Tous nos articles depuis Nice",
+          url: "https://taxi-nice-06.com/blog",
+        },
+        {
+          label: "Taxi Aéroport Nice → Cannes",
+          url: "https://taxi-nice-06.com/blog/taxi-aeroport-nice-cannes",
+        },
+      ],
+    },
+    specialties: [
+      {
+        title: "Taxi aéroport & gares de Nice",
+        description:
+          "Prise en charge à domicile, à l'hôtel ou en entreprise pour rejoindre l'aéroport de Nice ou les gares SNCF.",
+      },
+      {
+        title: "Taxi médical & longues distances",
+        description:
+          "Accompagnement pour vos rendez-vous médicaux à Nice et trajets longue distance vers toute la région.",
+      },
+    ],
+    pricing: [
+      "Nice centre ↔ Aéroport Nice : tarif annoncé à l'avance selon l'adresse et l'horaire",
+      "Courses locales à Nice : compteur taxi réglementé, devis possible pour trajets fréquents",
+      "Longues distances Nice ↔ Monaco / Cannes / Antibes : forfait sur demande",
+      "Trajets médicaux : conditions selon prescription et prise en charge éventuelle",
+    ],
+    commitments: [
+      {
+        title: "Ponctualité à Nice",
+        description:
+          "Votre taxi arrive en avance au point de rendez-vous pour éviter le stress, surtout pour l'aéroport et la gare.",
+      },
+      {
+        title: "Disponibilité & écoute",
+        description:
+          "Un interlocuteur unique pour vos questions, vos habitudes de trajet et vos besoins spécifiques à Nice.",
+      },
+      {
+        title: "Transparence totale",
+        description:
+          "Annonces claires sur les horaires, les itinéraires et les tarifs pour chaque course taxi à Nice, sans surprise.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Nice 06 - Taxi à Nice",
+      image: "https://taxi-nice-06.com/image1.jpeg",
+      telephone: "06 51 68 36 87",
+      locality: "Nice",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://taxi-nice-06.com/secteurs/nice",
+      latitude: "43.710173",
+      longitude: "7.261953",
+    },
+  },
+  "nice-gare": {
+    slug: "nice-gare",
+    cityName: "Nice Gare",
+    hero: {
+      title: "Taxi Nice Gare – Transferts Gare SNCF Nice-Ville",
+      highlight: "Gare de Nice-Ville & Gares SNCF",
+      subtitle:
+        "Taxi depuis la gare de Nice-Ville, Nice Riquier, Nice Saint-Augustin vers toute destination",
+      image: "/gare-jour copie.jpeg",
+      imageAlt: "Taxi à la gare de Nice-Ville",
+    },
+    introduction: [
+      "Cette page détaille nos services de taxi spécifiquement pour les gares SNCF de Nice : Gare de Nice-Ville (gare principale), Gare de Nice Riquier et Gare de Nice Saint-Augustin. Pour une vue d'ensemble de notre service Taxi Nice 24/7, consultez notre page principale dédiée.",
+      "Nous assurons vos transferts depuis et vers toutes les gares SNCF de Nice avec ponctualité garantie. Nos chauffeurs connaissent parfaitement les accès aux gares, les zones de stationnement taxi et les horaires des trains pour vous éviter tout retard.",
+    ],
+    secondaryIntro: [
+      "Que vous arriviez en TGV, TER ou Intercités, votre taxi vous attend à la sortie de la gare avec une pancarte nominative. Nous suivons votre train en temps réel et ajustons notre arrivée en cas de retard.",
+      "Depuis la gare de Nice-Ville, nous vous emmenons vers l'aéroport Nice Côte d'Azur, Monaco, Cannes, Antibes, le centre-ville de Nice ou toute autre destination sur la Côte d'Azur.",
+    ],
+    servicesTitle: "Services taxi depuis les gares SNCF de Nice",
+    services: [
+      "Taxi depuis Gare de Nice-Ville (gare principale TGV/TER)",
+      "Taxi depuis Gare de Nice Riquier (quartier Est)",
+      "Taxi depuis Gare de Nice Saint-Augustin (quartier Ouest)",
+      "Transfert gare Nice → Aéroport Nice Côte d'Azur",
+      "Transfert gare Nice → Monaco, Cannes, Antibes",
+      "Transfert gare Nice → Centre-ville Nice et hôtels",
+    ],
+    coverageDescription:
+      "Nous desservons toutes les gares SNCF de Nice et leurs alentours :",
+    coverageAreas: [
+      "✓ Gare de Nice-Ville (Avenue Thiers, centre-ville)",
+      "✓ Gare de Nice Riquier (Boulevard de l'Impératrice)",
+      "✓ Gare de Nice Saint-Augustin (Avenue de la Californie)",
+      "✓ Zones de stationnement taxi aux abords des gares",
+      "✓ Accès direct depuis les quais et halls d'arrivée",
+      "✓ Transferts vers toute la Côte d'Azur depuis les gares",
+    ],
+    map: {
+      description:
+        "Localisation des gares SNCF de Nice et notre zone d'intervention.",
+      info: "Depuis les gares de Nice, nous assurons les transferts vers l'aéroport, Monaco, Cannes, Antibes et toute destination sur la Côte d'Azur.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Gare+de+Nice-Ville&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Taxi depuis gare avec suivi train",
+        description:
+          "Nous suivons votre train en temps réel et ajustons notre arrivée automatiquement en cas de retard. Votre taxi vous attend à l'heure prévue.",
+      },
+      {
+        title: "Transferts gare vers toute destination",
+        description:
+          "Depuis les gares de Nice, rejoignez rapidement l'aéroport, Monaco, Cannes, Antibes, le centre-ville ou votre hôtel avec un seul taxi.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Accueil personnalisé à la gare",
+        description:
+          "Pancarte nominative, aide aux bagages et accueil chaleureux à la sortie de votre train.",
+      },
+      {
+        title: "✓ Ponctualité à la gare",
+        description:
+          "Nous arrivons en avance à la gare pour éviter tout stress, même en cas de retard de train grâce au suivi en temps réel.",
+      },
+      {
+        title: "✓ Suivi train en temps réel",
+        description:
+          "Nous suivons votre train et ajustons notre arrivée automatiquement si nécessaire.",
+      },
+      {
+        title: "✓ Tarifs fixes et transparents",
+        description:
+          "Prix annoncé à l'avance pour tous vos transferts depuis les gares de Nice.",
+      },
+    ],
+    hospitalsTitle:
+      "Destinations principales accessibles depuis les gares SNCF de Nice",
+    hospitals: [
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        description:
+          "Transfert direct depuis la gare vers l'aéroport (T1/T2) en 15-20 minutes.",
+        speciality: "Aéroport international",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+      {
+        name: "Centre-ville Nice",
+        city: "Nice",
+        description:
+          "Accès rapide au centre historique et à la Promenade des Anglais.",
+        speciality: "Centre-ville et quartiers touristiques",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Monaco",
+        city: "Monaco",
+        description:
+          "Transfert direct depuis la gare vers Monaco en 25-30 minutes.",
+        speciality: "Principauté de Monaco",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Cannes",
+        city: "Cannes",
+        description: "Transfert depuis la gare vers Cannes en 35-40 minutes.",
+        speciality: "Palais des Festivals et Croisette",
+        website: "",
+        phone: "",
+      },
+    ],
+    establishmentsTitle: "Gares SNCF desservies et destinations depuis Nice",
+    establishments: [
+      {
+        name: "Gare de Nice-Ville",
+        city: "Nice",
+        speciality: "Gare principale TGV, TER, Intercités",
+        website: "https://www.sncf.com/fr",
+        phone: "36 35",
+      },
+      {
+        name: "Gare de Nice Riquier",
+        city: "Nice",
+        speciality: "Gare TER quartier Est",
+        website: "https://www.sncf.com/fr",
+        phone: "36 35",
+      },
+      {
+        name: "Gare de Nice Saint-Augustin",
+        city: "Nice",
+        speciality: "Gare TER quartier Ouest",
+        website: "https://www.sncf.com/fr",
+        phone: "36 35",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        speciality: "Transfert gare → aéroport",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+    ],
+    faq: [
+      {
+        question: "Comment réserver un taxi depuis la gare de Nice-Ville ?",
+        answer:
+          "Appelez-nous ou réservez en ligne en précisant votre numéro de train, heure d'arrivée et destination finale. Nous confirmons votre réservation et suivons votre train en temps réel pour ajuster notre arrivée si nécessaire.",
+      },
+      {
+        question:
+          "Combien coûte un taxi depuis la gare de Nice vers l'aéroport ?",
+        answer:
+          "Le tarif dépend de l'heure et du trafic. Depuis la gare de Nice-Ville vers l'aéroport, comptez environ 25-35€ selon l'heure. Tarif exact annoncé à la réservation.",
+      },
+      {
+        question: "Attendez-vous même si mon train a du retard ?",
+        answer:
+          "Oui, nous suivons votre train en temps réel et ajustons automatiquement notre arrivée. Votre taxi vous attend même en cas de retard.",
+      },
+    ],
+    homepageLink: {
+      before:
+        "💡 Cette page se concentre sur les transferts depuis les gares SNCF de Nice. Pour une vue d'ensemble de tous nos services Taxi Nice 24/7 (aéroport, centre-ville, longues distances) avec réservation en ligne, consultez ",
+      linkText: "notre page principale Taxi Nice",
+      after: ".",
+      href: "/taxi-nice",
+    },
+    resource: {
+      description:
+        "Pour préparer vos trajets depuis les gares de Nice, consultez aussi nos guides et articles dédiés.",
+      links: [
+        {
+          label: "Page principale Taxi Nice",
+          url: "https://taxi-nice-06.com/taxi-nice",
+        },
+        {
+          label: "Guide Taxi Nice Centre-Ville",
+          url: "https://taxi-nice-06.com/secteurs/nice-centre-ville",
+        },
+      ],
+    },
+    specialties: [
+      {
+        title: "Transferts gare → aéroport",
+        description:
+          "Transfert direct depuis les gares SNCF de Nice vers l'aéroport Nice Côte d'Azur avec suivi train.",
+      },
+      {
+        title: "Transferts gare → destinations Côte d'Azur",
+        description:
+          "Depuis les gares de Nice, rejoignez rapidement Monaco, Cannes, Antibes ou toute autre destination.",
+      },
+    ],
+    pricing: [
+      "Gare Nice-Ville → Aéroport Nice : 25-35€ selon heure et trafic",
+      "Gare Nice-Ville → Centre-ville Nice : 12-18€ selon destination",
+      "Gare Nice-Ville → Monaco : 50-70€ selon heure",
+      "Gare Nice-Ville → Cannes : 60-80€ selon heure",
+    ],
+    commitments: [
+      {
+        title: "Ponctualité à la gare",
+        description:
+          "Votre taxi arrive en avance à la gare et vous attend même en cas de retard de train grâce au suivi en temps réel.",
+      },
+      {
+        title: "Accueil personnalisé",
+        description:
+          "Pancarte nominative, aide aux bagages et accueil chaleureux à la sortie de votre train.",
+      },
+      {
+        title: "Facturation détaillée",
+        description:
+          "Tarifs annoncés à l'avance et facture détaillée pour tous vos transferts depuis les gares SNCF de Nice.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Nice 06 - Taxi Gare Nice",
+      image: "https://taxi-nice-06.com/gare-jour copie.jpeg",
+      telephone: "06 51 68 36 87",
+      locality: "Nice",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://taxi-nice-06.com/secteurs/nice-gare",
+      latitude: "43.7044",
+      longitude: "7.2619",
+    },
+  },
+  "nice-centre-ville": {
+    slug: "nice-centre-ville",
+    cityName: "Nice Centre-Ville",
+    hero: {
+      title: "Taxi Nice Centre-Ville – Courses Locales & Déplacements",
+      highlight: "Centre-Ville Nice & Promenade des Anglais",
+      subtitle:
+        "Taxi dans Nice centre, Vieux Nice, Promenade des Anglais, quartiers résidentiels et commerces",
+      image: "/medecin2.jpeg",
+      imageAlt: "Taxi dans le centre-ville de Nice",
+    },
+    introduction: [
+      "Cette page détaille nos services de taxi spécifiquement pour le centre-ville de Nice : Vieux Nice, Promenade des Anglais, quartiers commerçants et résidentiels. Pour une vue d'ensemble de notre service Taxi Nice 24/7, consultez notre page principale dédiée.",
+      "Nous assurons vos déplacements dans tout le centre-ville de Nice : courses locales, rendez-vous, courses de shopping, retours de soirée, déplacements professionnels. Nos chauffeurs connaissent parfaitement les rues, les sens interdits, les heures de pointe et les meilleurs itinéraires.",
+    ],
+    secondaryIntro: [
+      "Que vous ayez besoin d'un taxi pour un rendez-vous médical, un déplacement professionnel, une course de shopping ou un retour de soirée, nous sommes disponibles 24h/24 dans le centre-ville de Nice.",
+      "Nous desservons tous les quartiers du centre : Vieux Nice, Promenade des Anglais, Jean Médecin, Garibaldi, Port de Nice, ainsi que les quartiers résidentiels proches (Cimiez, Gairaut, Mont Boron).",
+    ],
+    servicesTitle: "Services taxi dans le centre-ville de Nice",
+    services: [
+      "Taxi Vieux Nice (cours Saleya, place Garibaldi, vieille ville)",
+      "Taxi Promenade des Anglais (hôtels, plages, restaurants)",
+      "Taxi Jean Médecin (avenue principale, commerces)",
+      "Taxi Port de Nice (port de plaisance, restaurants)",
+      "Taxi quartiers résidentiels (Cimiez, Gairaut, Mont Boron)",
+      "Courses locales et rendez-vous dans Nice centre",
+    ],
+    coverageDescription:
+      "Nous desservons tous les quartiers du centre-ville de Nice :",
+    coverageAreas: [
+      "✓ Vieux Nice (cours Saleya, place Garibaldi, vieille ville)",
+      "✓ Promenade des Anglais (hôtels, plages, restaurants du bord de mer)",
+      "✓ Avenue Jean Médecin (commerces, boutiques, centre commercial)",
+      "✓ Place Masséna et place Garibaldi",
+      "✓ Port de Nice (port de plaisance, restaurants, croisières)",
+      "✓ Quartiers résidentiels : Cimiez, Gairaut, Mont Boron, Rimiez",
+    ],
+    map: {
+      description:
+        "Notre zone d'intervention dans le centre-ville de Nice et ses quartiers.",
+      info: "Depuis le centre-ville de Nice, nous assurons aussi les transferts vers l'aéroport, Monaco, Cannes, Antibes et toute destination sur la Côte d'Azur.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Centre-ville+Nice+France&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Taxi pour le quotidien à Nice",
+        description:
+          "Courses locales, rendez-vous médicaux, courses de shopping, retours de soirée : votre taxi s'adapte à tous vos besoins dans Nice centre.",
+      },
+      {
+        title: "Déplacements professionnels",
+        description:
+          "Transferts vers bureaux, rendez-vous clients, déplacements d'affaires dans le centre-ville de Nice avec facture détaillée.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Connaissance parfaite du centre",
+        description:
+          "Chauffeurs locaux connaissant toutes les rues, sens interdits, heures de pointe et raccourcis du centre-ville.",
+      },
+      {
+        title: "✓ Disponibilité 24h/24",
+        description:
+          "Taxi disponible jour et nuit dans le centre-ville pour tous vos déplacements urgents ou planifiés.",
+      },
+      {
+        title: "✓ Tarifs clairs pour le centre",
+        description:
+          "Compteur taxi réglementé pour les courses locales ou forfait annoncé à l'avance selon votre trajet dans Nice centre.",
+      },
+      {
+        title: "✓ Réactivité rapide",
+        description:
+          "Arrivée rapide dans le centre-ville grâce à notre flotte de véhicules disponibles en permanence.",
+      },
+    ],
+    hospitalsTitle:
+      "Hôpitaux et cliniques desservis depuis le centre-ville de Nice",
+    hospitals: [
+      {
+        name: "CHU Pasteur 2",
+        city: "Nice",
+        description:
+          "Hôpital universitaire de Nice, urgences et nombreuses spécialités. Accessible rapidement depuis le centre-ville.",
+        speciality: "Urgences, médecine, chirurgie",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+      {
+        name: "Fondation Lenval",
+        city: "Nice",
+        description:
+          "Hôpital pour enfants situé en bord de mer, proche de la Promenade des Anglais.",
+        speciality: "Pédiatrie, urgences pédiatriques",
+        website: "https://lenval.org/",
+        phone: "04 92 03 03 03",
+      },
+      {
+        name: "Clinique Saint George",
+        city: "Nice",
+        description:
+          "Établissement privé avec de nombreuses spécialités, accessible depuis le centre-ville.",
+        speciality: "Chirurgie, cardiologie, maternité",
+        website: "https://www.clinique-saint-george.com/",
+        phone: "04 92 11 11 11",
+      },
+      {
+        name: "Hôpital de l'Archet",
+        city: "Nice",
+        description:
+          "Grand hôpital de Nice Ouest, accessible depuis le centre-ville en 15-20 minutes.",
+        speciality: "Médecine, chirurgie, maternité",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 60 00",
+      },
+    ],
+    establishmentsTitle:
+      "Établissements et lieux desservis dans Nice centre-ville",
+    establishments: [
+      {
+        name: "Promenade des Anglais",
+        city: "Nice",
+        speciality: "Hôtels, plages, restaurants",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Vieux Nice",
+        city: "Nice",
+        speciality: "Quartier historique et commerces",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Avenue Jean Médecin",
+        city: "Nice",
+        speciality: "Commerces et centre commercial",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Port de Nice",
+        city: "Nice",
+        speciality: "Port de plaisance et restaurants",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Place Masséna",
+        city: "Nice",
+        speciality: "Place centrale et commerces",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Musée Matisse",
+        city: "Nice",
+        speciality: "Musée et culture",
+        website: "",
+        phone: "",
+      },
+    ],
+    faq: [
+      {
+        question: "Comment réserver un taxi dans le centre-ville de Nice ?",
+        answer:
+          "Contactez-nous par téléphone ou via notre formulaire en ligne en précisant votre point de départ dans Nice centre et votre destination. Nous vous confirmons rapidement avec l'heure exacte d'arrivée du taxi.",
+      },
+      {
+        question:
+          "Quel est le tarif d'une course dans le centre-ville de Nice ?",
+        answer:
+          "Les courses locales dans Nice centre sont au compteur taxi réglementé. Pour un trajet type Vieux Nice → Promenade des Anglais, comptez environ 8-12€ selon le trafic.",
+      },
+      {
+        question: "Êtes-vous disponibles la nuit dans le centre-ville ?",
+        answer:
+          "Oui, nous sommes disponibles 24h/24 et 7j/7 dans le centre-ville de Nice, y compris pour les retours de soirée et déplacements nocturnes.",
+      },
+    ],
+    homepageLink: {
+      before:
+        "💡 Cette page se concentre sur les courses locales et déplacements dans le centre-ville de Nice. Pour découvrir tous nos services Taxi Nice 24/7 (aéroport, gare, longues distances) avec réservation en ligne, consultez ",
+      linkText: "notre page principale Taxi Nice",
+      after: ".",
+      href: "/taxi-nice",
+    },
+    resource: {
+      description:
+        "Pour préparer vos déplacements dans Nice centre-ville, consultez aussi nos guides et articles dédiés.",
+      links: [
+        {
+          label: "Page principale Taxi Nice",
+          url: "https://taxi-nice-06.com/taxi-nice",
+        },
+        {
+          label: "Guide Taxi Nice Gare",
+          url: "https://taxi-nice-06.com/secteurs/nice-gare",
+        },
+      ],
+    },
+    specialties: [
+      {
+        title: "Courses locales Nice centre",
+        description:
+          "Déplacements dans tout le centre-ville : Vieux Nice, Promenade des Anglais, quartiers commerçants et résidentiels.",
+      },
+      {
+        title: "Déplacements professionnels",
+        description:
+          "Transferts vers bureaux, rendez-vous clients et déplacements d'affaires dans Nice centre avec facture détaillée.",
+      },
+    ],
+    pricing: [
+      "Courses locales centre-ville : compteur taxi réglementé (environ 8-15€ selon distance)",
+      "Vieux Nice → Promenade des Anglais : 8-12€ selon trafic",
+      "Centre-ville → Aéroport Nice : 25-35€ selon heure",
+      "Forfait soirée/disponibilité : devis sur demande",
+    ],
+    commitments: [
+      {
+        title: "Réactivité dans le centre",
+        description:
+          "Arrivée rapide dans le centre-ville grâce à notre connaissance parfaite des rues et de la circulation.",
+      },
+      {
+        title: "Disponibilité permanente",
+        description:
+          "Taxi disponible 24h/24 dans le centre-ville pour tous vos déplacements, y compris la nuit.",
+      },
+      {
+        title: "Tarification claire",
+        description:
+          "Compteur taxi réglementé pour les courses locales ou forfait annoncé à l'avance pour toutes vos courses dans Nice centre.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Nice 06 - Taxi Centre-Ville Nice",
+      image: "https://taxi-nice-06.com/image1.jpeg",
+      telephone: "06 51 68 36 87",
+      locality: "Nice",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://taxi-nice-06.com/secteurs/nice-centre-ville",
+      latitude: "43.710173",
+      longitude: "7.261953",
     },
   },
 };

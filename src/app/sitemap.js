@@ -7,6 +7,7 @@ export default function sitemap() {
 
   const staticPages = [
     { path: "", priority: 1.0, changeFrequency: "weekly" },
+    { path: "/taxi-nice", priority: 1.0, changeFrequency: "weekly" },
     { path: "/reservation", priority: 0.9, changeFrequency: "weekly" },
     {
       path: "/services/transferts-aeroport",
@@ -47,9 +48,13 @@ export default function sitemap() {
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     { path: "/partenaires", priority: 0.6, changeFrequency: "monthly" },
     { path: "/secteurs", priority: 0.6, changeFrequency: "weekly" },
+    { path: "/secteurs/nice", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/secteurs/nice-gare", priority: 0.8, changeFrequency: "weekly" },
+    { path: "/secteurs/nice-centre-ville", priority: 0.8, changeFrequency: "weekly" },
     { path: "/secteurs/monaco", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/cannes", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/antibes", priority: 0.6, changeFrequency: "weekly" },
+    { path: "/plan-du-site", priority: 0.5, changeFrequency: "monthly" },
     { path: "/cgv", priority: 0.3, changeFrequency: "yearly" },
     { path: "/mentions-legales", priority: 0.3, changeFrequency: "yearly" },
     {

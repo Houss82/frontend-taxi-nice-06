@@ -342,7 +342,7 @@ la Côte d'Azur depuis plus de 10 ans. Nous transportons quotidiennement :
 
 📊 Nos chiffres :
 - 1000+ clients satisfaits/mois
-- 4.9/5 sur Google (127 avis)
+- 5/5 sur Google (127 avis)
 - Flotte premium (Mercedes GLC, Van)
 
 🤝 Notre proposition :

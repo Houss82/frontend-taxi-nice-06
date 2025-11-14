@@ -14,6 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ArriveesDestinationsPage() {
   const features = [
@@ -288,9 +289,33 @@ export default function ArriveesDestinationsPage() {
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
                 Prêt pour un accueil VIP ?
               </h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-blue-100 mb-4">
                 Réservez dès maintenant votre service d'accueil personnalisé et
                 faites de votre arrivée un moment inoubliable
+              </p>
+              <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
+                Découvrez aussi notre service complet de{" "}
+                <Link
+                  href="/taxi-nice"
+                  className="text-white font-semibold underline underline-offset-4 hover:text-blue-100 transition-colors"
+                >
+                  taxi Nice 24/7
+                </Link>{" "}
+                pour tous vos déplacements : transferts aéroport,{" "}
+                <Link
+                  href="/secteurs/nice-gare"
+                  className="text-white font-semibold underline underline-offset-4 hover:text-blue-100 transition-colors"
+                >
+                  taxi gare Nice
+                </Link>
+                ,{" "}
+                <Link
+                  href="/secteurs/nice-centre-ville"
+                  className="text-white font-semibold underline underline-offset-4 hover:text-blue-100 transition-colors"
+                >
+                  taxi centre-ville Nice
+                </Link>{" "}
+                et longues distances.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

@@ -6,6 +6,27 @@ import Link from "next/link";
 
 const sectors = [
   {
+    slug: "nice",
+    name: "Nice",
+    description:
+      "Taxi Nice 24/7 : centre-ville, aéroport, gare, hôpitaux et longues distances.",
+    image: "/image1.jpeg",
+  },
+  {
+    slug: "nice-gare",
+    name: "Nice Gare",
+    description:
+      "Taxi depuis gare Nice-Ville, Nice Riquier, Nice Saint-Augustin vers toute destination.",
+    image: "/gare-jour copie.jpeg",
+  },
+  {
+    slug: "nice-centre-ville",
+    name: "Nice Centre-Ville",
+    description:
+      "Taxi dans Nice centre, Vieux Nice, Promenade des Anglais et quartiers résidentiels.",
+    image: "/image1.jpeg",
+  },
+  {
     slug: "monaco",
     name: "Monaco",
     description:
@@ -24,7 +45,7 @@ const sectors = [
     name: "Antibes",
     description:
       "Juan-les-Pins, Sophia Antipolis, port Vauban : service sur-mesure toute l'année.",
-    image: "/taxi-antibes.png",
+    image: "/taxi-antibes-secteur.jpeg",
   },
 ];
 
@@ -57,15 +78,17 @@ export default function SecteursPage() {
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Nos secteurs desservis
                 <span className="block text-primary">
-                  Monaco, Cannes, Antibes & plus
+                  Nice, Nice Gare, Nice Centre-Ville, Monaco, Cannes, Antibes &
+                  plus
                 </span>
               </h1>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Notre équipe de chauffeurs privés opère sur toute la Côte
                 d&apos;Azur avec un service premium 24/7. Découvrez nos pages
-                dédiées pour Monaco, Cannes et Antibes, et accédez à des
-                informations détaillées sur les transferts, les établissements
-                de santé desservis et nos engagements qualité.
+                dédiées pour Nice, Nice Gare, Nice Centre-Ville, Monaco, Cannes
+                et Antibes, et accédez à des informations détaillées sur les
+                transferts, les établissements de santé desservis et nos
+                engagements qualité.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Besoin d&apos;un chauffeur pour un évènement, un transfert
@@ -108,7 +131,7 @@ export default function SecteursPage() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {sectors.map((sector) => (
               <Link
                 key={sector.slug}

@@ -81,7 +81,7 @@ export default function TransfertsAeroportPage() {
   const serviceMetrics = [
     { value: "24/7", label: "Disponibilité continue" },
     { value: "15 min", label: "Prise en charge moyenne" },
-    { value: "4.9/5", label: "Satisfaction client" },
+    { value: "5/5", label: "Satisfaction client" },
   ];
 
   const destinations = [
@@ -270,7 +270,14 @@ export default function TransfertsAeroportPage() {
                 >
                   notre guide complet du transfert depuis l'aéroport de Nice
                 </a>{" "}
-                pour découvrir tous nos conseils pratiques.
+                pour découvrir tous nos conseils pratiques. Pour une vue d'ensemble de tous nos services de{" "}
+                <a
+                  href="/taxi-nice"
+                  className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
+                >
+                  taxi Nice 24/7
+                </a>
+                , consultez notre page principale dédiée.
               </p>
             </div>
             <div className="bg-gradient-to-br from-cyan-600 to-blue-600 text-white rounded-2xl p-8 shadow-xl border border-cyan-500/40">

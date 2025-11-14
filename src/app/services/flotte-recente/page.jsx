@@ -14,6 +14,7 @@ import {
   Wrench,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FlotteRecentePage() {
   const features = [
@@ -330,9 +331,19 @@ export default function FlotteRecentePage() {
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
                 Voyagez dans le Confort
               </h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-blue-100 mb-4">
                 Réservez votre trajet avec notre flotte récente et profitez d'un
                 voyage premium
+              </p>
+              <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
+                Pour découvrir tous nos services de{" "}
+                <Link
+                  href="/taxi-nice"
+                  className="text-white font-semibold underline underline-offset-4 hover:text-blue-100 transition-colors"
+                >
+                  taxi Nice 24/7
+                </Link>{" "}
+                avec véhicules Mercedes premium, consultez notre page principale dédiée.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

@@ -203,13 +203,96 @@ export default async function BlogPostPage({ params }) {
         </div>
       </article>
 
+      {/* Liens vers pages secteurs */}
+      <section className="py-12 bg-gradient-to-br from-cyan-50 to-blue-50 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              Découvrez nos services Taxi Nice
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link
+                href="/taxi-nice"
+                className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-cyan-50 to-blue-50 hover:from-cyan-100 hover:to-blue-100 border border-cyan-200 hover:border-cyan-300 transition-all duration-300 group"
+              >
+                <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                    Taxi Nice 24/7
+                  </div>
+                  <div className="text-sm text-gray-600">Service complet</div>
+                </div>
+              </Link>
+              <Link
+                href="/secteurs/nice-gare"
+                className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 border border-blue-200 hover:border-blue-300 transition-all duration-300 group"
+              >
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    Taxi Nice Gare
+                  </div>
+                  <div className="text-sm text-gray-600">Transferts gare SNCF</div>
+                </div>
+              </Link>
+              <Link
+                href="/secteurs/nice-centre-ville"
+                className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-indigo-50 to-purple-50 hover:from-indigo-100 hover:to-purple-100 border border-indigo-200 hover:border-indigo-300 transition-all duration-300 group"
+              >
+                <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">
+                    Taxi Nice Centre-Ville
+                  </div>
+                  <div className="text-sm text-gray-600">Courses locales</div>
+                </div>
+              </Link>
+              <Link
+                href="/secteurs/nice"
+                className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 border border-purple-200 hover:border-purple-300 transition-all duration-300 group"
+              >
+                <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
+                    Guide Taxi Nice
+                  </div>
+                  <div className="text-sm text-gray-600">Zones & établissements</div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Articles similaires */}
       {relatedPosts.length > 0 && (
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white border-t border-gray-200">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Articles similaires
-            </h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Articles similaires
+              </h2>
+              <p className="text-lg text-gray-600">
+                Continuez votre lecture avec nos autres guides et conseils
+              </p>
+            </div>
             <div className="grid md:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost) => (
                 <Link
@@ -217,22 +300,34 @@ export default async function BlogPostPage({ params }) {
                   href={`/blog/${relatedPost.slug}`}
                   className="group"
                 >
-                  <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                    <div className="relative h-48">
+                  <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary/20">
+                    <div className="relative h-48 overflow-hidden">
                       <Image
                         src={relatedPost.image}
                         alt={relatedPost.title}
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="p-6">
+                      {relatedPost.category && (
+                        <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold mb-3">
+                          {relatedPost.category}
+                        </span>
+                      )}
                       <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2">
                         {relatedPost.title}
                       </h3>
-                      <p className="text-gray-600 line-clamp-2">
+                      <p className="text-gray-600 line-clamp-2 mb-4">
                         {relatedPost.excerpt}
                       </p>
+                      <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-2 transition-all">
+                        Lire l'article
+                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </Link>
