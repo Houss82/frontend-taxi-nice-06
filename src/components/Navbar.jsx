@@ -74,7 +74,7 @@ export default function Navbar() {
             NICE
           </span>
         </Link>
-        <nav className="hidden lg:flex gap-6 xl:gap-8">
+        <nav className="hidden xl:flex gap-6 2xl:gap-8">
           <Link href="/" className="text-black hover:text-primary font-medium">
             ACCUEIL
           </Link>
@@ -344,7 +344,7 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop CTA Button */}
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden xl:flex items-center gap-4">
           <Link
             href="/reservation"
             className="px-4 py-2 bg-primary text-white hover:bg-primary/90 rounded-lg font-semibold transition-colors duration-300 inline-flex items-center gap-2"
@@ -356,14 +356,20 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden p-2"
+          className="xl:hidden flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
           aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? (
-            <X className="w-6 h-6" aria-hidden="true" />
+            <>
+              <X className="w-6 h-6" aria-hidden="true" />
+              <span className="font-medium text-gray-900">FERMER</span>
+            </>
           ) : (
-            <Menu className="w-6 h-6" aria-hidden="true" />
+            <>
+              <Menu className="w-6 h-6" aria-hidden="true" />
+              <span className="font-medium text-gray-900">MENU</span>
+            </>
           )}
         </button>
       </div>
@@ -379,18 +385,18 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+              className="xl:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
               onClick={() => setIsMenuOpen(false)}
             />
 
             {/* Menu principal */}
             <motion.div
               key="mobile-menu"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
+              initial={{ opacity: 0, x: "100%" }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: "100%" }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="lg:hidden fixed top-16 left-0 right-0 bottom-0 z-50 bg-gradient-to-br from-white to-gray-50 border-t border-gray-200 shadow-2xl flex flex-col"
+              className="xl:hidden fixed top-16 right-0 bottom-0 w-full max-w-md z-50 bg-gradient-to-br from-white to-gray-50 border-l border-gray-200 shadow-2xl flex flex-col"
             >
               <motion.nav
                 initial={{ y: -20 }}
