@@ -91,25 +91,11 @@ export default function CriticalCSS() {
         }
       }
 
-      /* Préchargement des polices critiques */
-      @font-face {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 400 700;
-        font-display: swap;
-        src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2")
-          format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2122, U+2191, U+2193, U+2212, U+2215,
-          U+FEFF, U+FFFD;
-      }
-
       /* Styles de base pour éviter le layout shift */
       body {
         margin: 0;
         padding: 0;
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Geist", sans-serif;
       }
 
       /* Skeleton loader pour les images */

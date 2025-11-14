@@ -2,7 +2,20 @@ import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import { getAllPosts } from "@/lib/blog";
-import { Car, MapPin, Plane, Users } from "lucide-react";
+import {
+  Award,
+  Calendar,
+  Car,
+  Compass,
+  Euro,
+  Heart,
+  Home,
+  MapPin,
+  Phone,
+  Plane,
+  Stethoscope,
+  Users,
+} from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -18,17 +31,14 @@ export const metadata = {
 export default function PlanDuSitePage() {
   const allPosts = getAllPosts();
 
-  const breadcrumbItems = [
-    { name: "Accueil", url: "/" },
-    { name: "Plan du Site", url: "/plan-du-site" },
-  ];
+  const breadcrumbItems = [{ name: "Plan du Site", url: "/plan-du-site" }];
 
   const mainPages = [
     {
       title: "Accueil",
       url: "/",
       description: "Page d'accueil - Service de taxi Nice 24/7",
-      icon: Car,
+      icon: Home,
       color: "text-cyan-600",
     },
     {
@@ -42,21 +52,21 @@ export default function PlanDuSitePage() {
       title: "Réservation",
       url: "/reservation",
       description: "Réservez votre taxi Nice en ligne",
-      icon: Car,
+      icon: Calendar,
       color: "text-green-600",
     },
     {
       title: "Tarifs",
       url: "/tarifs",
       description: "Tarifs transparents pour tous nos services",
-      icon: Car,
+      icon: Euro,
       color: "text-orange-600",
     },
     {
       title: "Contact",
       url: "/contact",
       description: "Contactez-nous pour vos demandes",
-      icon: Car,
+      icon: Phone,
       color: "text-purple-600",
     },
   ];
@@ -66,36 +76,50 @@ export default function PlanDuSitePage() {
       title: "Transferts Aéroport",
       url: "/services/transferts-aeroport",
       description: "Transferts vers et depuis l'aéroport Nice Côte d'Azur",
+      icon: Plane,
+      color: "text-blue-600",
     },
     {
       title: "VSL Transport Médicalisé",
       url: "/services/vsl",
       description: "Véhicule Sanitaire Léger pour personnes à mobilité réduite",
+      icon: Stethoscope,
+      color: "text-pink-600",
     },
     {
       title: "Arrivées & Destinations",
       url: "/services/arrivees-destinations",
       description: "Accueil personnalisé à votre arrivée",
+      icon: MapPin,
+      color: "text-indigo-600",
     },
     {
       title: "Van Premium",
       url: "/services/van-premium",
       description: "Véhicule premium pour groupes jusqu'à 8 personnes",
+      icon: Users,
+      color: "text-purple-600",
     },
     {
       title: "Excursions",
       url: "/services/excursions",
       description: "Excursions et découvertes sur la Côte d'Azur",
+      icon: Compass,
+      color: "text-orange-600",
     },
     {
       title: "Événements & Mariages",
       url: "/services/evenements-mariages",
       description: "Transport pour événements et mariages",
+      icon: Heart,
+      color: "text-rose-600",
     },
     {
       title: "Flotte Récente",
       url: "/services/flotte-recente",
       description: "Véhicules Mercedes récents et premium",
+      icon: Award,
+      color: "text-amber-600",
     },
   ];
 
@@ -208,9 +232,18 @@ export default function PlanDuSitePage() {
                 href={page.url}
                 className="group bg-white rounded-lg p-5 shadow-md border border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
               >
-                <h3 className="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors">
-                  {page.title}
-                </h3>
+                <div className="flex items-start gap-3 mb-3">
+                  <div
+                    className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform bg-gradient-to-br from-white to-gray-50 border border-gray-200`}
+                  >
+                    <page.icon className={`w-5 h-5 ${page.color}`} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary transition-colors">
+                      {page.title}
+                    </h3>
+                  </div>
+                </div>
                 <p className="text-gray-600 text-sm mb-2">{page.description}</p>
                 <div className="text-primary text-xs font-medium group-hover:underline">
                   Voir le service →

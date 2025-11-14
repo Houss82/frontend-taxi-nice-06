@@ -12,11 +12,11 @@ import {
   Euro,
   Heart,
   Home,
+  List,
   MapPin,
   Menu,
   Phone,
   Plane,
-  Sitemap,
   Users,
   X,
 } from "lucide-react";
@@ -35,10 +35,7 @@ export default function Navbar() {
   // Fermer le menu services quand on clique à l'extérieur
   useEffect(() => {
     function handleClickOutside(event) {
-      if (
-        servicesRef.current &&
-        !servicesRef.current.contains(event.target)
-      ) {
+      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
         setIsServicesOpen(false);
       }
 
@@ -320,7 +317,10 @@ export default function Navbar() {
           >
             TARIFS
           </Link>
-          <Link href="/blog" className="text-black hover:text-primary font-medium">
+          <Link
+            href="/blog"
+            className="text-black hover:text-primary font-medium"
+          >
             BLOG
           </Link>
           <Link
@@ -369,11 +369,12 @@ export default function Navbar() {
       </div>
 
       {/* Menu mobile avec animation améliorée */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isMenuOpen && (
           <>
             {/* Overlay avec effet de flou */}
             <motion.div
+              key="overlay"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -384,6 +385,7 @@ export default function Navbar() {
 
             {/* Menu principal */}
             <motion.div
+              key="mobile-menu"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
@@ -441,9 +443,9 @@ export default function Navbar() {
                       className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                    <Home className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    <span>ACCUEIL</span>
-                  </Link>
+                      <Home className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                      <span>ACCUEIL</span>
+                    </Link>
                   </motion.div>
 
                   <motion.div
@@ -499,17 +501,25 @@ export default function Navbar() {
                           transition={{ duration: 0.3, ease: "easeInOut" }}
                           className="ml-6 space-y-1 border-l-2 border-gray-200 pl-4 overflow-hidden"
                         >
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services/transferts-aeroport"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
                               onClick={() => setIsMenuOpen(false)}
                             >
                               <Plane className="w-4 h-4 text-blue-500" />
-                              <span className="text-sm">Transferts Aéroport</span>
+                              <span className="text-sm">
+                                Transferts Aéroport
+                              </span>
                             </Link>
                           </motion.div>
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services/arrivees-destinations"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -521,7 +531,10 @@ export default function Navbar() {
                               </span>
                             </Link>
                           </motion.div>
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services/van-premium"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -533,7 +546,10 @@ export default function Navbar() {
                               </span>
                             </Link>
                           </motion.div>
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services/flotte-recente"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -543,7 +559,10 @@ export default function Navbar() {
                               <span className="text-sm">Flotte Récente</span>
                             </Link>
                           </motion.div>
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services/excursions-decouvertes"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -555,7 +574,10 @@ export default function Navbar() {
                               </span>
                             </Link>
                           </motion.div>
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services/evenements-mariages"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -567,7 +589,10 @@ export default function Navbar() {
                               </span>
                             </Link>
                           </motion.div>
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services/transferts-evenements"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -579,7 +604,10 @@ export default function Navbar() {
                               </span>
                             </Link>
                           </motion.div>
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services/vsl"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -592,7 +620,10 @@ export default function Navbar() {
                             </Link>
                           </motion.div>
                           <div className="border-t border-gray-200 my-2"></div>
-                          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
                             <Link
                               href="/services"
                               className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-blue-600 font-semibold transition-all duration-200"
@@ -704,7 +735,7 @@ export default function Navbar() {
                       className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-gray-50 to-slate-50 hover:from-gray-100 hover:to-slate-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      <Sitemap className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                      <List className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
                       <span>PLAN DU SITE</span>
                     </Link>
                   </motion.div>
@@ -729,7 +760,7 @@ export default function Navbar() {
                     <span>NOS SECTEURS</span>
                   </div>
                   <motion.div
-                    animate={{ rotate: isMobileSectorsOpen ? 180 : 0 }}
+                    animate={{ rotate: isMobileSectorsOpen ? 0 : 180 }}
                     transition={{ duration: 0.3 }}
                   >
                     <ChevronDown className="w-5 h-5 text-primary" />
@@ -745,7 +776,10 @@ export default function Navbar() {
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                       className="ml-6 space-y-1 border-l-2 border-gray-200 pl-4 overflow-hidden"
                     >
-                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
                         <Link
                           href="/secteurs/nice"
                           className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -755,7 +789,10 @@ export default function Navbar() {
                           <span className="text-sm">Taxi Nice</span>
                         </Link>
                       </motion.div>
-                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
                         <Link
                           href="/secteurs/nice-gare"
                           className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -765,17 +802,25 @@ export default function Navbar() {
                           <span className="text-sm">Taxi Nice Gare</span>
                         </Link>
                       </motion.div>
-                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
                         <Link
                           href="/secteurs/nice-centre-ville"
                           className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           <MapPin className="w-4 h-4 text-indigo-600" />
-                          <span className="text-sm">Taxi Nice Centre-Ville</span>
+                          <span className="text-sm">
+                            Taxi Nice Centre-Ville
+                          </span>
                         </Link>
                       </motion.div>
-                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
                         <Link
                           href="/secteurs/monaco"
                           className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -785,7 +830,10 @@ export default function Navbar() {
                           <span className="text-sm">Taxi Monaco</span>
                         </Link>
                       </motion.div>
-                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
                         <Link
                           href="/secteurs/cannes"
                           className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -795,7 +843,10 @@ export default function Navbar() {
                           <span className="text-sm">Taxi Cannes</span>
                         </Link>
                       </motion.div>
-                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
                         <Link
                           href="/secteurs/antibes"
                           className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
@@ -806,7 +857,10 @@ export default function Navbar() {
                         </Link>
                       </motion.div>
                       <div className="border-t border-gray-200 my-2"></div>
-                      <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
                         <Link
                           href="/secteurs"
                           className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-blue-600 font-semibold transition-all duration-200"
