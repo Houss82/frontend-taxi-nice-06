@@ -10,7 +10,7 @@ language: "fr"
 
 # 🚖 Taxi Aéroport Nice → Saint-Tropez : votre trajet VIP longue distance
 
-Pour rejoindre **Saint-Tropez depuis l'aéroport de Nice**, profitez d'un service **premium longue distance** avec chauffeur professionnel et flotte Mercedes. Un trajet de **113 km** qui vous mènera directement au cœur de la Côte d'Azur, dans le confort et la sérénité. **Combien coûte un taxi Nice Saint-Tropez ?** Le **prix d'un transfert Nice Saint-Tropez** varie entre **220€ et 260€** selon le véhicule choisi, avec un **tarif fixe garanti** sans surprise.
+Pour rejoindre **Saint-Tropez depuis l'aéroport de Nice**, profitez d'un service **premium longue distance** avec chauffeur professionnel et flotte Mercedes. Un trajet de **113 km** qui vous mènera directement au cœur de la Côte d'Azur, dans le confort et la sérénité. **Combien coûte un taxi Nice Saint-Tropez ?** Le **prix d'un transfert Nice Saint-Tropez** varie entre **280€ et 350€** selon le véhicule choisi, avec un **tarif fixe garanti** sans surprise.
 
 <div class="kpi-strip">
   <span class="badge success">✅ Trajet longue distance</span>
@@ -28,7 +28,7 @@ Pour rejoindre **Saint-Tropez depuis l'aéroport de Nice**, profitez d'un servic
 
 - ⏱ **Durée moyenne** : **1h30 à 1h50** (selon le trafic)
 - 📍 **Distance** : **113 km**
-- 💰 **Tarif** : **220€ à 260€** (prix fixe garanti)
+- 💰 **Tarif** : **À partir de 280€** (prix fixe garanti)
 - 🚗 **Véhicules disponibles** : Mercedes Classe E, GLC, Classe V
 
 </div>
@@ -67,9 +67,9 @@ Pour un trajet longue distance comme Nice → Saint-Tropez, le confort est essen
 <div class="content-box">
 <strong>🚗 Nos véhicules disponibles pour Nice → Saint-Tropez :</strong>
 
-- **Mercedes Classe E** : 1 à 3 passagers - 220€ - Confort premium et élégance
-- **Mercedes GLC** : 1 à 4 passagers - 240€ - Confort supérieur & style SUV
-- **Mercedes Classe V** : jusqu'à 7 passagers - 260€ - Idéal pour groupes ou familles avec bagages
+- **Mercedes Classe E** : 1 à 3 passagers - 280€ - Confort premium et élégance
+- **Mercedes GLC** : 1 à 4 passagers - 300€ - Confort supérieur & style SUV
+- **Mercedes Classe V** : jusqu'à 7 passagers - 350€ - Idéal pour groupes ou familles avec bagages
 
 Tous nos véhicules sont équipés de **climatisation, Wi-Fi gratuit, bouteilles d'eau** et sont parfaitement entretenus pour un trajet agréable de **113 km**.
 
@@ -112,7 +112,7 @@ Pour un trajet longue distance comme Nice → Saint-Tropez, plusieurs facteurs f
 
 **Comparaison des services :**
 
-- **Prix fixe garanti** : ✅ Taxi Nice Côte d'Azur (220-260€) | ❌ Uber/VTC (tarif variable selon la demande)
+- **Prix fixe garanti** : ✅ Taxi Nice Côte d'Azur (À partir de 280€) | ❌ Uber/VTC (tarif variable selon la demande)
 - **Attente à l'aéroport** : ✅ Chauffeur présent avec pancarte | ⚠️ Variable selon disponibilité
 - **Suivi du vol** : ✅ Inclus automatiquement | ❌ Souvent absent
 - **Véhicules haut de gamme** : ✅ Mercedes Classe E / V / GLC | ⚠️ Qualité variable
@@ -170,10 +170,10 @@ Pour découvrir nos autres services et destinations :
 
 <details class="faq">
 <summary><strong>1. Combien coûte un transfert Nice → Saint-Tropez ?</strong></summary>
-Le prix est de **220€ à 260€** selon le véhicule choisi :
-- Mercedes Classe E : 220€ (1-3 passagers)
-- Mercedes GLC : 240€ (1-4 passagers)
-- Mercedes Classe V : 260€ (jusqu'à 7 passagers)
+Le prix est de **280€ à 350€** selon le véhicule choisi :
+- Mercedes Classe E : 280€ (1-3 passagers)
+- Mercedes GLC : 300€ (1-4 passagers)
+- Mercedes Classe V : 350€ (jusqu'à 7 passagers)
 
 Le tarif est **fixe et garanti**, même en cas de bouchons ou de détours. Consultez nos [tarifs détaillés](/tarifs) pour connaître le prix exact de votre trajet.
 
@@ -202,7 +202,7 @@ Oui, et c'est même **fortement recommandé**, surtout en haute saison (juin-sep
 
 <details class="faq">
 <summary><strong>5. Proposez-vous des véhicules pour groupes vers Saint-Tropez ?</strong></summary>
-Oui ! Nous avons des [vans premium](/services/van-premium) (Mercedes Classe V) pouvant accueillir jusqu'à **7 passagers avec bagages**. Parfait pour les familles ou groupes d'amis se rendant à Saint-Tropez. Tarif : 260€.
+Oui ! Nous avons des [vans premium](/services/van-premium) (Mercedes Classe V) pouvant accueillir jusqu'à **7 passagers avec bagages**. Parfait pour les familles ou groupes d'amis se rendant à Saint-Tropez. Tarif : 350€.
 </details>
 
 <details class="faq">

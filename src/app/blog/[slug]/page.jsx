@@ -222,7 +222,7 @@ export default async function BlogPostPage({ params }) {
                       name: "Combien coûte un transfert Nice → Saint-Tropez ?",
                       acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Le prix est de 220€ à 260€ selon le véhicule choisi : Mercedes Classe E : 220€ (1-3 passagers), Mercedes GLC : 240€ (1-4 passagers), Mercedes Classe V : 260€ (jusqu'à 7 passagers). Le tarif est fixe et garanti, même en cas de bouchons ou de détours.",
+                        text: "Le prix est de 280€ à 350€ selon le véhicule choisi : Mercedes Classe E : 280€ (1-3 passagers), Mercedes GLC : 300€ (1-4 passagers), Mercedes Classe V : 350€ (jusqu'à 7 passagers). Le tarif est fixe et garanti, même en cas de bouchons ou de détours.",
                       },
                     },
                     {
@@ -254,7 +254,7 @@ export default async function BlogPostPage({ params }) {
                       name: "Proposez-vous des véhicules pour groupes vers Saint-Tropez ?",
                       acceptedAnswer: {
                         "@type": "Answer",
-                        text: "Oui ! Nous avons des vans premium (Mercedes Classe V) pouvant accueillir jusqu'à 7 passagers avec bagages. Parfait pour les familles ou groupes d'amis se rendant à Saint-Tropez. Tarif : 260€.",
+                        text: "Oui ! Nous avons des vans premium (Mercedes Classe V) pouvant accueillir jusqu'à 7 passagers avec bagages. Parfait pour les familles ou groupes d'amis se rendant à Saint-Tropez. Tarif : 350€.",
                       },
                     },
                     {
