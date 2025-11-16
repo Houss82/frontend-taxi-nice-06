@@ -49,13 +49,13 @@ export default async function BlogPostPage({ params }) {
 
       {/* Breadcrumb */}
       <div className="bg-white border-b">
-        <div className="max-w-4xl mx-auto px-4 pt-20">
+        <div className="max-w-4xl mx-auto px-4 pt-20 sm:pt-10 sm:pb-6">
           <SEOBreadcrumb items={breadcrumbItems} />
         </div>
       </div>
 
       {/* Article */}
-      <article className="pt-4 pb-10">
+      <article className="pt-4 pb-10 ">
         <div className="max-w-4xl mx-auto px-4 pt-6">
           {/* En-tête */}
           <div className="mb-6">
