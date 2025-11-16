@@ -207,6 +207,58 @@ export default async function BlogPostPage({ params }) {
             }}
           />
 
+          {/* Schema JSON-LD Service/TaxiService pour l'article Saint-Tropez */}
+          {post.slug === "taxi-aeroport-nice-saint-tropez" && (
+            <Script
+              id="service-schema"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "TaxiService",
+                  name: "Transfert Aéroport Nice → Saint-Tropez",
+                  description:
+                    "Service de transfert premium entre l'aéroport de Nice et Saint-Tropez avec chauffeur privé professionnel et véhicules Mercedes haut de gamme. Prix fixe garanti dès 280€.",
+                  provider: {
+                    "@type": "Organization",
+                    name: "Taxi Nice Côte d'Azur",
+                    url: "https://taxi-nice-06.com",
+                    telephone: "+33651683687",
+                    address: {
+                      "@type": "PostalAddress",
+                      addressLocality: "Nice",
+                      addressRegion: "Alpes-Maritimes",
+                      addressCountry: "FR",
+                    },
+                  },
+                  areaServed: {
+                    "@type": "City",
+                    name: "Saint-Tropez",
+                  },
+                  serviceType: "Transport de personnes",
+                  offers: {
+                    "@type": "Offer",
+                    price: "280",
+                    priceCurrency: "EUR",
+                    priceSpecification: {
+                      "@type": "UnitPriceSpecification",
+                      price: "280",
+                      priceCurrency: "EUR",
+                      unitText: "par trajet",
+                    },
+                    availability: "https://schema.org/InStock",
+                    validFrom: "2025-01-01",
+                  },
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: "5",
+                    reviewCount: "127",
+                  },
+                }),
+              }}
+            />
+          )}
+
           {/* Schema JSON-LD FAQPage pour l'article Saint-Tropez */}
           {post.slug === "taxi-aeroport-nice-saint-tropez" && (
             <Script
