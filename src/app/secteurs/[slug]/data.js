@@ -6,7 +6,7 @@ export const sectorData = {
       title: "Taxi Nice vers Monaco – Transferts Aéroport Nice Côte d'Azur",
       highlight: "Monaco & Riviera",
       subtitle: "Transferts aéroport, port Hercule et hôtels 5 étoiles 24/7",
-      image: "/st-jean-cap-ferrat4.jpeg",
+      image: "/gare-Monaco.jpeg",
       imageAlt: "Taxi premium à Monaco",
     },
     introduction: [
