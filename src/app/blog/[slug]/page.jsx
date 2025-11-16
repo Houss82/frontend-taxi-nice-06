@@ -49,14 +49,14 @@ export default async function BlogPostPage({ params }) {
 
       {/* Breadcrumb */}
       <div className="bg-white border-b">
-        <div className="max-w-4xl mx-auto px-4 py-4">
+        <div className="max-w-4xl mx-auto px-4 pt-20">
           <SEOBreadcrumb items={breadcrumbItems} />
         </div>
       </div>
 
       {/* Article */}
-      <article className="py-16">
-        <div className="max-w-4xl mx-auto px-4">
+      <article className="pt-4 pb-10">
+        <div className="max-w-4xl mx-auto px-4 pt-6">
           {/* En-tête */}
           <div className="mb-6">
             <span className="px-4 py-2 bg-primary text-white rounded-full text-sm font-semibold">
@@ -124,6 +124,12 @@ export default async function BlogPostPage({ params }) {
               alt={post.title}
               fill
               className="object-cover"
+              style={{
+                objectPosition:
+                  post.slug === "taxi-aeroport-nice-saint-tropez"
+                    ? "60% center"
+                    : "center center",
+              }}
               priority={true}
               quality={85}
             />
@@ -200,6 +206,86 @@ export default async function BlogPostPage({ params }) {
               }),
             }}
           />
+
+          {/* Schema JSON-LD FAQPage pour l'article Saint-Tropez */}
+          {post.slug === "taxi-aeroport-nice-saint-tropez" && (
+            <Script
+              id="faq-schema"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "Combien coûte un transfert Nice → Saint-Tropez ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Le prix est de 220€ à 260€ selon le véhicule choisi : Mercedes Classe E : 220€ (1-3 passagers), Mercedes GLC : 240€ (1-4 passagers), Mercedes Classe V : 260€ (jusqu'à 7 passagers). Le tarif est fixe et garanti, même en cas de bouchons ou de détours.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Combien de temps dure le trajet Nice → Saint-Tropez ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Le trajet dure entre 1h30 et 1h50 selon le trafic : Trafic fluide : ~1h30, Trafic normal : ~1h40, Trafic dense (été, week-end) : 1h50-2h. Votre chauffeur optimise l'itinéraire en temps réel pour minimiser le temps de trajet.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Le chauffeur attend-il en cas de retard d'avion ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, nous suivons votre vol en temps réel et ajustons l'heure d'arrivée automatiquement sans frais supplémentaires. C'est inclus dans notre service premium. Votre chauffeur sera présent même si votre vol a du retard.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on réserver à l'avance pour Saint-Tropez ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, et c'est même fortement recommandé, surtout en haute saison (juin-septembre). Réservez via notre site de réservation ou par téléphone au 06 51 68 36 87. Vous recevrez une confirmation immédiate.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Proposez-vous des véhicules pour groupes vers Saint-Tropez ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui ! Nous avons des vans premium (Mercedes Classe V) pouvant accueillir jusqu'à 7 passagers avec bagages. Parfait pour les familles ou groupes d'amis se rendant à Saint-Tropez. Tarif : 260€.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Les péages sont-ils inclus dans le prix ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, tous les péages sont inclus dans le tarif fixe. Aucun frais supplémentaire à prévoir. Le prix annoncé est le prix final que vous paierez.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on faire des arrêts en route vers Saint-Tropez ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, informez-nous lors de la réservation. Un supplément peut s'appliquer selon la durée de l'arrêt. Nous sommes flexibles pour répondre à vos besoins (arrêt à Cannes, Antibes, etc.).",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Acceptez-vous les paiements par carte ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, nous acceptons carte bancaire, espèces et virement. Le paiement se fait directement auprès du chauffeur ou en ligne lors de la réservation pour plus de sécurité.",
+                      },
+                    },
+                  ],
+                }),
+              }}
+            />
+          )}
         </div>
       </article>
 
@@ -216,8 +302,18 @@ export default async function BlogPostPage({ params }) {
                 className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-cyan-50 to-blue-50 hover:from-cyan-100 hover:to-blue-100 border border-cyan-200 hover:border-cyan-300 transition-all duration-300 group"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
                   </svg>
                 </div>
                 <div>
@@ -232,15 +328,27 @@ export default async function BlogPostPage({ params }) {
                 className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 border border-blue-200 hover:border-blue-300 transition-all duration-300 group"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                    />
                   </svg>
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                     Taxi Nice Gare
                   </div>
-                  <div className="text-sm text-gray-600">Transferts gare SNCF</div>
+                  <div className="text-sm text-gray-600">
+                    Transferts gare SNCF
+                  </div>
                 </div>
               </Link>
               <Link
@@ -248,9 +356,24 @@ export default async function BlogPostPage({ params }) {
                 className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-indigo-50 to-purple-50 hover:from-indigo-100 hover:to-purple-100 border border-indigo-200 hover:border-indigo-300 transition-all duration-300 group"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
                   </svg>
                 </div>
                 <div>
@@ -265,15 +388,27 @@ export default async function BlogPostPage({ params }) {
                 className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 border border-purple-200 hover:border-purple-300 transition-all duration-300 group"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                    />
                   </svg>
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
                     Guide Taxi Nice
                   </div>
-                  <div className="text-sm text-gray-600">Zones & établissements</div>
+                  <div className="text-sm text-gray-600">
+                    Zones & établissements
+                  </div>
                 </div>
               </Link>
             </div>
@@ -324,8 +459,18 @@ export default async function BlogPostPage({ params }) {
                       </p>
                       <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-2 transition-all">
                         Lire l'article
-                        <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        <svg
+                          className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
                         </svg>
                       </div>
                     </div>
