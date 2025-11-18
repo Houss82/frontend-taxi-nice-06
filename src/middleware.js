@@ -8,25 +8,22 @@ export function middleware(request) {
     return NextResponse.next();
   }
 
-  const hostname = request.nextUrl.hostname;
-  const protocol = request.nextUrl.protocol;
-  const isWWW = hostname.startsWith("www.");
-  const isHTTP = protocol === "http:";
+  // ✅ NOTE : Les redirections HTTP → HTTPS et www → non-www sont gérées par vercel.json
+  // Le middleware ne gère QUE les paramètres ?lang=en et /en pour éviter la double redirection
+  
   const hasLangEN = searchParams.has("lang") && searchParams.get("lang") === "en";
   const isENPath = pathname === "/en" || pathname.startsWith("/en/");
 
-  // ✅ VERSION CANONIQUE : https://taxi-nice-06.com (sans www, HTTPS uniquement)
-  const canonicalHostname = "taxi-nice-06.com";
-  
   // Si aucune redirection n'est nécessaire, continuer
-  if (!isHTTP && !isWWW && !hasLangEN && !isENPath) {
+  if (!hasLangEN && !isENPath) {
     return NextResponse.next();
   }
 
+  // ✅ VERSION CANONIQUE : https://taxi-nice-06.com (sans www, HTTPS uniquement)
   // Construire l'URL canonique finale
   const canonicalUrl = new URL(request.url);
   canonicalUrl.protocol = "https:";
-  canonicalUrl.hostname = canonicalHostname;
+  canonicalUrl.hostname = "taxi-nice-06.com";
   
   // Supprimer le paramètre lang=en si présent
   if (hasLangEN) {

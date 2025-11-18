@@ -46,18 +46,8 @@ const nextConfig = {
         destination: "/",
         permanent: true, // Redirection 301 vers l'accueil (gère aussi /a-propos?lang=en)
       },
-      // ✅ Redirection www → non-www (unifie les versions du site)
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.taxi-nice-06.com",
-          },
-        ],
-        destination: "https://taxi-nice-06.com/:path*",
-        permanent: true, // Redirection 301 permanente
-      },
+      // ✅ NOTE : La redirection www → non-www est gérée par vercel.json pour éviter la double redirection
+      // Cette redirection dans next.config.mjs est désactivée car vercel.json la traite en premier
       // ✅ Redirection trailing slash → sans trailing slash (sauf pour la racine)
       // Évite les doublons /services/ vs /services
       {
