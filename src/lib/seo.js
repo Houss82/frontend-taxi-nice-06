@@ -24,10 +24,10 @@ export async function generateSEOMetadata(locale = "fr") {
     description,
 
     alternates: {
-      canonical: "/",
+      canonical: `${baseUrl}/`,
       languages: {
-        "x-default": "/",
-        "fr-FR": "/",
+        "x-default": `${baseUrl}/`,
+        "fr-FR": `${baseUrl}/`,
       },
     },
 

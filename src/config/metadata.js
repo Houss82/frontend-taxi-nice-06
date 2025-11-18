@@ -12,7 +12,7 @@ export const metadata = {
   creator: "Taxi Nice",
   publisher: "Taxi Nice ",
   alternates: {
-    canonical: "/", // évite les variantes en doublon
+    canonical: "https://taxi-nice-06.com/", // URL canonique absolue - évite les variantes en doublon
   },
   formatDetection: {
     email: false,

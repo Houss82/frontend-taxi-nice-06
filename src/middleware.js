@@ -2,32 +2,44 @@ import { NextResponse } from "next/server";
 
 export function middleware(request) {
   const { pathname, searchParams } = request.nextUrl;
-  const url = request.nextUrl.clone();
-
-  // ✅ Redirection HTTP → HTTPS (si ce n'est pas déjà géré par l'hébergeur)
-  if (url.protocol === "http:" && url.hostname !== "localhost") {
-    url.protocol = "https:";
-    return NextResponse.redirect(url, 301);
+  
+  // Ne pas traiter les requêtes locales
+  if (request.nextUrl.hostname === "localhost" || request.nextUrl.hostname === "127.0.0.1") {
+    return NextResponse.next();
   }
 
-  // ✅ Redirection www → non-www (doublon avec next.config.mjs mais sécurité supplémentaire)
-  if (url.hostname.startsWith("www.")) {
-    url.hostname = url.hostname.replace(/^www\./, "");
-    return NextResponse.redirect(url, 301);
+  const hostname = request.nextUrl.hostname;
+  const protocol = request.nextUrl.protocol;
+  const isWWW = hostname.startsWith("www.");
+  const isHTTP = protocol === "http:";
+  const hasLangEN = searchParams.has("lang") && searchParams.get("lang") === "en";
+  const isENPath = pathname === "/en" || pathname.startsWith("/en/");
+
+  // ✅ VERSION CANONIQUE : https://taxi-nice-06.com (sans www, HTTPS uniquement)
+  const canonicalHostname = "taxi-nice-06.com";
+  
+  // Si aucune redirection n'est nécessaire, continuer
+  if (!isHTTP && !isWWW && !hasLangEN && !isENPath) {
+    return NextResponse.next();
   }
 
-  // ✅ Rediriger toutes les URLs avec ?lang=en vers la version française (sans paramètre)
-  if (searchParams.has("lang") && searchParams.get("lang") === "en") {
-    // Créer une nouvelle URL sans le paramètre lang
-    const newUrl = request.nextUrl.clone();
-    newUrl.searchParams.delete("lang");
-    
-    // Redirection 301 permanente vers la version française
-    return NextResponse.redirect(newUrl, 301);
+  // Construire l'URL canonique finale
+  const canonicalUrl = new URL(request.url);
+  canonicalUrl.protocol = "https:";
+  canonicalUrl.hostname = canonicalHostname;
+  
+  // Supprimer le paramètre lang=en si présent
+  if (hasLangEN) {
+    canonicalUrl.searchParams.delete("lang");
+  }
+  
+  // Rediriger /en vers /
+  if (isENPath) {
+    canonicalUrl.pathname = "/";
   }
 
-  // Continuer normalement si pas de redirection nécessaire
-  return NextResponse.next();
+  // Redirection 301 permanente vers la version canonique
+  return NextResponse.redirect(canonicalUrl, 301);
 }
 
 // Appliquer le middleware à toutes les routes sauf les fichiers statiques
