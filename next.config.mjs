@@ -55,6 +55,12 @@ const nextConfig = {
         destination: "/:path+",
         permanent: true,
       },
+      // ✅ Redirection ancienne URL service vers nouvelle URL
+      {
+        source: "/services/excursions",
+        destination: "/services/excursions-decouvertes",
+        permanent: true, // 301 - Ancienne page déplacée vers la nouvelle
+      },
       // ✅ Redirections anciens slugs anglais vers les articles FR
       {
         source: "/blog/nice-airport-transfer-guide",

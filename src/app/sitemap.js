@@ -23,7 +23,6 @@ export default function sitemap() {
       priority: 0.7,
       changeFrequency: "weekly",
     },
-    { path: "/services/excursions", priority: 0.7, changeFrequency: "weekly" },
     {
       path: "/services/flotte-recente",
       priority: 0.7,

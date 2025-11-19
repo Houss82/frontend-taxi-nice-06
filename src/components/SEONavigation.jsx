@@ -39,7 +39,7 @@ export default function SEONavigation() {
         "Véhicules sanitaires légers pour personnes à mobilité réduite",
     },
     {
-      href: "/services/excursions",
+      href: "/services/excursions-decouvertes",
       label: "Excursions",
       title: "Excursions Côte d'Azur",
       description: "Visites touristiques et excursions dans la région",
@@ -99,7 +99,7 @@ export function SEOFooterLinks() {
           title: "Véhicule Sanitaire Léger",
         },
         {
-          href: "/services/excursions",
+          href: "/services/excursions-decouvertes",
           label: "Excursions",
           title: "Excursions Côte d'Azur",
         },

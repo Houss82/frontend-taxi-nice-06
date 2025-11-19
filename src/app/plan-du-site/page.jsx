@@ -102,7 +102,7 @@ export default function PlanDuSitePage() {
     },
     {
       title: "Excursions",
-      url: "/services/excursions",
+      url: "/services/excursions-decouvertes",
       description: "Excursions et découvertes sur la Côte d'Azur",
       icon: Compass,
       color: "text-orange-600",
