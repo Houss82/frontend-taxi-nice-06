@@ -3,7 +3,7 @@ title: "Taxi Antibes – Notre partenaire officiel pour vos trajets, transferts 
 date: "2025-11-07"
 excerpt: "Découvrez pourquoi Taxi Antibes est notre partenaire privilégié pour les transferts aéroport Nice Côte d’Azur, les courses locales, les trajets longue distance et le transport conventionné CPAM."
 image: "/partenaire-antibes.jpeg"
-category: "Partenaires"
+category: "Transferts Aéroport"
 author: "Taxi Antibes"
 language: "fr"
 keywords:

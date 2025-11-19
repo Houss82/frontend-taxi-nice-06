@@ -3,7 +3,7 @@ title: "Grève & Perturbations à Nice : Comment Assurer Votre Taxi (Guide 2025)
 date: "2025-11-13"
 excerpt: "Grèves, embouteillages, météo : découvrez nos stratégies pour garantir un taxi à l'heure à Nice et vers l'aéroport, même les jours compliqués."
 image: "/greve-taxi-Nice.jpeg"
-category: "Conseils Pratiques"
+category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
 ---

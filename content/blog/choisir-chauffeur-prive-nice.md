@@ -3,7 +3,7 @@ title: "Comment Choisir son Chauffeur Privé à Nice ? Le Guide Complet 2025"
 date: "2025-10-20"
 excerpt: "Tous nos conseils pour sélectionner le meilleur service de chauffeur privé à Nice. Critères de qualité, tarifs, et pièges à éviter."
 image: "/musée copie.jpeg"
-category: "Conseils"
+category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
 keywords:

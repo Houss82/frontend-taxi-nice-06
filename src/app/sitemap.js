@@ -1,9 +1,16 @@
-import { getAllPostSlugs } from "@/lib/blog";
+import { getAllPostSlugs, getAllPosts } from "@/lib/blog";
 
 const baseUrl = "https://taxi-nice-06.com";
 
 export default function sitemap() {
   const now = new Date();
+  const allPosts = getAllPosts();
+
+  // Créer un map pour accéder rapidement aux dates des articles
+  const postDatesMap = {};
+  allPosts.forEach((post) => {
+    postDatesMap[post.slug] = post.date ? new Date(post.date) : now;
+  });
 
   const staticPages = [
     { path: "", priority: 1.0, changeFrequency: "weekly" },
@@ -49,7 +56,11 @@ export default function sitemap() {
     { path: "/secteurs", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/nice", priority: 0.9, changeFrequency: "weekly" },
     { path: "/secteurs/nice-gare", priority: 0.8, changeFrequency: "weekly" },
-    { path: "/secteurs/nice-centre-ville", priority: 0.8, changeFrequency: "weekly" },
+    {
+      path: "/secteurs/nice-centre-ville",
+      priority: 0.8,
+      changeFrequency: "weekly",
+    },
     { path: "/secteurs/monaco", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/cannes", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/antibes", priority: 0.6, changeFrequency: "weekly" },
@@ -70,11 +81,10 @@ export default function sitemap() {
 
   const blogPosts = getAllPostSlugs().map(({ slug }) => ({
     url: `${baseUrl}/blog/${slug}`,
-    lastModified: now,
+    lastModified: postDatesMap[slug] || now,
     changeFrequency: "monthly",
     priority: 0.6,
   }));
 
   return [...staticPages, ...blogPosts];
 }
-
