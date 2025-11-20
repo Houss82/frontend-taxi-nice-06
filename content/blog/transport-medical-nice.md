@@ -6,19 +6,6 @@ image: "/centre-lacassagne-GLC.png"
 category: "Santé"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-keywords:
-  [
-    "transport médical nice",
-    "taxi conventionné nice",
-    "VSL nice",
-    "taxi CPAM nice",
-    "transport médicalisé nice",
-    "accompagnement médical nice",
-    "taxi hôpital nice",
-    "remboursement transport médical",
-    "prescription médicale transport",
-    "CHU nice transport",
-  ]
 ---
 
 # 🚑 Transport Médical à Nice : VSL, Taxi Conventionné & Accompagnement Sécurisé
