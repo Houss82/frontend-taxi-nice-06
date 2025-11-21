@@ -332,4 +332,4 @@ Pour un transport **rapide**, **fiable** et **confortable** depuis la **Gare SNC
 
 ---
 
-_Article mis à jour le 14 novembre 2025_
+_Article mis à jour le 21 novembre 2025_

@@ -338,6 +338,70 @@ export default async function BlogPostPage({ params }) {
               }}
             />
           )}
+
+          {/* Schema JSON-LD FAQPage pour l'article Taxi Nice Gare SNCF */}
+          {post.slug === "taxi-nice-gare-sncf" && (
+            <Script
+              id="faq-schema-gare"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "Un chauffeur peut-il m'attendre avec une pancarte à mon nom ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui sur réservation. Votre chauffeur vous attendra directement sur le quai ou à la sortie de la gare avec une pancarte affichant votre nom pour une identification rapide et facile.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Le trajet gare → aéroport dure combien de temps ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "En moyenne 15 à 20 minutes en conditions normales, et 18 à 25 minutes en cas de trafic dense. La distance est de 6,5 km. Nous recommandons de prévoir au moins 30 minutes entre votre arrivée en gare et votre vol pour être serein.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Puis-je réserver un transport pour plusieurs personnes avec bagages ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Absolument. Nos Mercedes Classe V peuvent accueillir jusqu'à 7 passagers avec leurs bagages. Pour les groupes plus importants, nous organisons plusieurs véhicules. Mentionnez simplement le nombre de personnes et de bagages lors de votre réservation.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Que faire si mon train a du retard ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Pas de problème ! Contactez-nous dès que vous connaissez le nouveau horaire d'arrivée. Nous ajusterons l'heure de prise en charge sans frais supplémentaires. Votre chauffeur vous attendra à la nouvelle heure prévue.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Les tarifs sont-ils fixes ou variables selon le trafic ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Tous nos tarifs sont fixes et garantis, affichés sur notre site. Aucun supplément en cas de trafic, détour ou attente. Le prix convenu lors de la réservation est le prix final que vous paierez.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Proposez-vous un service de retour (aller-retour) ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, nous proposons des formules aller-retour avec tarifs dégressifs. Parfait pour les déplacements réguliers ou les séjours avec retour prévu. Contactez-nous pour un devis personnalisé selon vos besoins.",
+                      },
+                    },
+                  ],
+                }),
+              }}
+            />
+          )}
         </div>
       </article>
 
