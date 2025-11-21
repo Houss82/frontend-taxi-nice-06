@@ -14,6 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TransfertsAeroportPage() {
   const trustBadges = [
@@ -271,19 +272,19 @@ export default function TransfertsAeroportPage() {
                   notre guide complet du transfert depuis l'aéroport de Nice
                 </a>{" "}
                 pour découvrir tous nos conseils pratiques. Arrivée en train ? Découvrez notre{" "}
-                <a
+                <Link
                   href="/blog/taxi-nice-gare-sncf"
                   className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
                 >
                   service Taxi Nice Gare SNCF
-                </a>{" "}
+                </Link>{" "}
                 pour un transport rapide depuis la gare vers l'aéroport. Pour une vue d'ensemble de tous nos services de{" "}
-                <a
+                <Link
                   href="/taxi-nice"
                   className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
                 >
                   taxi Nice 24/7
-                </a>
+                </Link>
                 , consultez notre page principale dédiée.
               </p>
             </div>
