@@ -199,6 +199,7 @@ Pour découvrir nos autres services et destinations :
 
 - 👉 [Taxi Nice → Monaco](/secteurs/monaco) - Transfert premium vers la Principauté
 - 👉 [Taxi Nice → Cannes](/secteurs/cannes) - Le trajet le plus demandé
+- 👉 [Taxi Nice Gare SNCF](/blog/taxi-nice-gare-sncf) - Service rapide depuis la gare 24/7
 - 👉 [Transferts Aéroport](/services/transferts-aeroport) - Service complet 24/7
 - 👉 [Van Premium](/services/van-premium) - Idéal pour groupes jusqu'à 7 personnes
 - 👉 [Taxi Nice 24/7](/taxi-nice) - Page principale de nos services

@@ -164,7 +164,7 @@ Découvrez tous nos [transferts aéroport](/services/transferts-aeroport) avec t
 Pour approfondir vos connaissances sur nos services :
 
 - **Service principal** : <a href="/taxi-nice">Taxi Nice 24/7</a> - Page principale avec tous nos services de taxi à Nice
-- **Taxi Nice Gare** : <a href="/secteurs/nice-gare">Transferts depuis les gares SNCF de Nice</a> - Guide complet pour vos trajets depuis la gare
+- **Taxi Nice Gare** : <a href="/blog/taxi-nice-gare-sncf">Taxi Nice Gare SNCF – Service rapide 24/7</a> - Guide complet pour vos trajets depuis la gare
 - **Taxi Nice Centre-Ville** : <a href="/secteurs/nice-centre-ville">Courses locales dans le centre-ville de Nice</a> - Déplacements dans Nice centre et Promenade des Anglais
 - **Guide Taxi Nice** : <a href="/secteurs/nice">Guide complet Taxi Nice</a> - Zones, hôpitaux et établissements à Nice
 - **Transferts Aéroport** : <a href="/services/transferts-aeroport">Guide complet des transferts aéroport Nice</a>

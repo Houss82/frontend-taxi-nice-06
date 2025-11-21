@@ -174,6 +174,7 @@ Ne laissez rien au hasard pour votre arrivée à Nice. Profitez d'un service pre
 Découvrez également nos autres services :
 
 - **[Transferts Aéroport](/services/transferts-aeroport)** - Service complet 24/7
+- **[Taxi Nice Gare SNCF](/blog/taxi-nice-gare-sncf)** - Service rapide depuis la gare 24/7
 - **[VSL Transport Médical](/services/vsl)** - Véhicules adaptés
 - **[Excursions Côte d'Azur](/services/excursions-decouvertes)** - Circuits personnalisés
 

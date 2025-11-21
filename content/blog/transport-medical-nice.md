@@ -304,7 +304,7 @@ Pour plus d'informations sur les conditions de remboursement, consultez le site 
 
 ---
 
-## 🔗 Maillage Interne SEO
+## 🔗 Découvrez aussi nos autres services
 
 Pour approfondir vos connaissances sur nos services de transport à Nice :
 
