@@ -26,7 +26,7 @@ export default function SEONavigation() {
       description: "Découvrez nos tarifs transparents et compétitifs",
     },
     {
-      href: "/services/transfert-aeroport",
+      href: "/services/transferts-aeroport",
       label: "Transfert Aéroport",
       title: "Transfert Aéroport Nice Côte d'Azur",
       description: "Service de transfert depuis et vers l'aéroport de Nice",
@@ -89,7 +89,7 @@ export function SEOFooterLinks() {
       title: "Services",
       links: [
         {
-          href: "/services/transfert-aeroport",
+          href: "/services/transferts-aeroport",
           label: "Transfert Aéroport",
           title: "Transfert Aéroport Nice",
         },
