@@ -90,7 +90,7 @@ Pour un trajet longue distance vers Fréjus, le confort est essentiel. Nous mett
 <div class="content-box">
 <strong>🚗 Nos véhicules disponibles pour votre déplacement vers Fréjus :</strong>
 
-- **Mercedes Classe E** : 1 à 3 passagers - 150€ - Confort premium et élégance
+- **Mercedes Classe E** : 1 à 3 passagers - 160€ - Confort premium et élégance
 - **Mercedes GLC** : 1 à 4 passagers - 170€ - Confort supérieur & style SUV
 - **Mercedes Classe V** : jusqu'à 7 passagers - 180€ - Idéal pour groupes ou familles avec bagages
 
@@ -242,8 +242,8 @@ Pour continuer votre découverte de nos services de transport :
 
 <details class="faq">
 <summary><strong>1. Combien coûte un transfert Nice → Fréjus ?</strong></summary>
-Le prix est de **150€ à 180€** selon le véhicule choisi :
-- Mercedes Classe E : 150€ (1-3 passagers)
+Le prix est de **160€ à 190€** selon le véhicule choisi :
+- Mercedes Classe E : 160€ (1-3 passagers)
 - Mercedes GLC : 170€ (1-4 passagers)
 - Mercedes Classe V : 180€ (jusqu'à 7 passagers)
 

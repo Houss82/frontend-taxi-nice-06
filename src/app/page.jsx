@@ -2,6 +2,7 @@ import About from "@/components/About.jsx";
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import QuickBooking from "@/components/QuickBooking.jsx";
+import ReviewsSection from "@/components/ReviewsSection.jsx";
 import SeoContent from "@/components/SeoContent.jsx";
 import ServicesCarousel from "@/components/Services-Caroussel.jsx";
 import Services from "@/components/Services.jsx";
@@ -600,6 +601,9 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* Section Avis Clients */}
+        <ReviewsSection />
 
         {/* Autres sections */}
         <Services />
