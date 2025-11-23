@@ -25,7 +25,7 @@ Le marché du **transport privé à Nice** s'est considérablement développé c
   <span class="badge info">💰 Prix fixe garanti</span>
 </div>
 
-# Les critères essentiels pour choisir un chauffeur privé
+## Les critères essentiels pour choisir un chauffeur privé
 
 ## 1. Licence et assurances
 

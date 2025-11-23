@@ -8,8 +8,6 @@ author: "Taxi Nice Côte d'Azur"
 language: "fr"
 ---
 
-# 🚖 Grève & Perturbations à Nice : comment être sûr d'avoir un taxi
-
 À Nice, **plus de 15 millions de passagers** transitent chaque année par l'aéroport Nice Côte d'Azur, et près de **40% des trajets** sont impactés par des perturbations : grèves des transports, embouteillages sur la Promenade des Anglais, événements majeurs (Festival de Cannes, Grand Prix de Monaco), ou conditions météorologiques difficiles.
 
 Bonne nouvelle : avec une **réservation anticipée**, une **marge horaire réaliste** et un **chauffeur local expérimenté**, vous arrivez **à l'heure** – même lors des pics de trafic. Nos statistiques montrent que **98% de nos clients** arrivent à l'heure malgré les perturbations, grâce à notre système de suivi en temps réel et notre connaissance approfondie des itinéraires alternatifs.

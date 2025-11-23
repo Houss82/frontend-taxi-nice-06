@@ -8,8 +8,6 @@ author: "Taxi Nice Côte d'Azur"
 language: "fr"
 ---
 
-# 🚑 Transport Médical à Nice : VSL, Taxi Conventionné & Accompagnement Sécurisé
-
 Besoin d'un **transport médicalisé à Nice** pour un rendez-vous, un traitement régulier ou une hospitalisation ? Nos **taxis conventionnés CPAM** assurent vos trajets vers tous les centres médicaux de Nice et de la Côte d'Azur.
 
 Le tarif est **remboursé** (selon prescription médicale), et le trajet se fait en **sécurité**, **ponctualité** et **confort**.

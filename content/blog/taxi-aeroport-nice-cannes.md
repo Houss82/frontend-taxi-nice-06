@@ -16,8 +16,6 @@ keywords:
   ]
 ---
 
-# 🚖 Taxi Aéroport de Nice – Cannes : le trajet le plus demandé sur la Côte d'Azur
-
 Chaque jour, des centaines de voyageurs choisissent notre [service de taxi premium](https://taxi-nice-06.com) entre l'aéroport de Nice et Cannes. Que vous veniez pour affaires, un festival, ou un séjour détente, nous vous garantissons un transfert sans stress, dans un confort absolu.
 
 <div class="kpi-strip">

@@ -8,8 +8,6 @@ author: "Taxi Nice Côte d'Azur"
 language: "fr"
 ---
 
-# 🚖 Taxi Nice Gare SNCF – Disponible 24h/24 et 7j/7
-
 Besoin d'un **transport depuis la Gare SNCF de Nice-Ville** ? Que vous arriviez d'un train TGV, TER ou Intercités, notre service de **chauffeur privé** vous attend devant la gare ou directement à la sortie de votre quai (sur demande).
 
 La **Gare de Nice-Ville** accueille chaque année **plus de 8 millions de voyageurs**, ce qui en fait l'une des gares les plus fréquentées de la région Provence-Alpes-Côte d'Azur. Avec ses **3 sorties principales** et ses **parkings souvent saturés**, trouver un transport rapide et fiable peut s'avérer compliqué, surtout en haute saison.

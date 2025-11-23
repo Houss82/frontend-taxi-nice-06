@@ -25,7 +25,7 @@ La **Côte d'Azur** est l'une des destinations les plus prisées au monde. Entre
   <span class="badge info">💰 Prix tout compris</span>
 </div>
 
-# 1. Monaco : Le Rocher et Monte-Carlo
+## 1. Monaco : Le Rocher et Monte-Carlo
 
 ## Une principauté de rêve
 

@@ -24,7 +24,7 @@ L'**aéroport Nice Côte d'Azur** est le troisième aéroport le plus fréquent�
   <span class="badge info">💰 Prix fixe</span>
 </div>
 
-# Pourquoi choisir un chauffeur privé ?
+## Pourquoi choisir un chauffeur privé ?
 
 ## Confort et sérénité
 

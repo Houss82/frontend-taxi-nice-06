@@ -8,8 +8,6 @@ author: "Taxi Nice Côte d'Azur"
 language: "fr"
 ---
 
-# 🏖️ Plages secrètes & coins cachés de Nice : comment y accéder facilement grâce à un taxi local
-
 Nice attire chaque année **plus de 5 millions de visiteurs** selon l'[Office de Tourisme de Nice](https://www.nicecotedazur.org), mais peu connaissent les plages **cachées**, **difficiles d'accès** ou **peu desservies** par les transports en commun.
 
 Pourtant, c'est là que l'on trouve :

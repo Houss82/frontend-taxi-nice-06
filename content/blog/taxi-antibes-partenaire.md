@@ -16,9 +16,7 @@ keywords:
   ]
 ---
 
-# 🚖 Taxi Antibes – Notre partenaire officiel
-
-## Le service de transport de confiance pour Antibes, Nice, l’aéroport et toute la Côte d’Azur
+## Le service de transport de confiance pour Antibes, Nice, l'aéroport et toute la Côte d'Azur
 
 Sur la Côte d’Azur, où l’exigence de qualité, de ponctualité et de professionnalisme est particulièrement élevée, il devient essentiel pour un service de transport de s’appuyer sur un partenaire fiable, expérimenté et reconnu localement. [**Taxi Antibes**](https://www.taxi-antibes.fr) s’est imposé comme l’un des acteurs les plus sérieux et les plus complets dans le domaine du transport privé et conventionné dans la région.
 
