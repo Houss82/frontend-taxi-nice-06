@@ -54,9 +54,36 @@ Selon nos données internes et les statistiques de l'aéroport Nice Côte d'Azur
 
 **💶 Prix transfert vers Fréjus :** Le tarif est **fixe et transparent**, sans surprise. Que vous recherchiez un **chauffeur privé vers Fréjus** abordable ou un service premium, nos tarifs sont clairs dès la réservation :
 
-- **Mercedes Classe E** : 150€ (1-3 passagers) - Confort premium et élégance
-- **Mercedes GLC** : 170€ (1-4 passagers) - Confort supérieur & style SUV
-- **Mercedes Classe V** : 180€ (jusqu'à 7 passagers) - Idéal pour groupes ou familles avec bagages
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #f3f4f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Véhicule</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Capacité</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Tarif</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes Classe E</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">1-3 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>150€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Confort premium et élégance</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes GLC</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">1-4 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>170€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Confort supérieur & style SUV</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes Classe V</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Jusqu'à 7 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>180€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Idéal pour groupes ou familles avec bagages</td>
+    </tr>
+  </tbody>
+</table>
 
 Tous nos véhicules sont équipés de **climatisation, Wi-Fi gratuit, bouteilles d'eau** et sont parfaitement entretenus pour un trajet agréable de **65 km**.
 
@@ -90,9 +117,36 @@ Pour un trajet longue distance vers Fréjus, le confort est essentiel. Nous mett
 <div class="content-box">
 <strong>🚗 Nos véhicules disponibles pour votre déplacement vers Fréjus :</strong>
 
-- **Mercedes Classe E** : 1 à 3 passagers - 160€ - Confort premium et élégance
-- **Mercedes GLC** : 1 à 4 passagers - 170€ - Confort supérieur & style SUV
-- **Mercedes Classe V** : jusqu'à 7 passagers - 180€ - Idéal pour groupes ou familles avec bagages
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #f3f4f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Véhicule</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Capacité</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Tarif</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes Classe E</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">1 à 3 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>160€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Confort premium et élégance</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes GLC</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">1 à 4 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>170€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Confort supérieur & style SUV</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes Classe V</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Jusqu'à 7 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>180€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Idéal pour groupes ou familles avec bagages</td>
+    </tr>
+  </tbody>
+</table>
 
 Tous nos véhicules sont équipés de **climatisation, Wi-Fi gratuit, bouteilles d'eau** et sont parfaitement entretenus pour un trajet agréable de **65 km**.
 
@@ -193,13 +247,52 @@ Pour un trajet longue distance vers Fréjus, plusieurs facteurs font la différe
 
 **Comparaison des services :**
 
-- **Prix fixe garanti** : ✅ Chauffeur privé Nice Côte d'Azur (À partir de 150€) | ❌ Uber/VTC (tarif variable selon la demande)
-- **Attente à l'aéroport** : ✅ Chauffeur présent avec pancarte | ⚠️ Variable selon disponibilité
-- **Suivi du vol** : ✅ Inclus automatiquement | ❌ Souvent absent
-- **Véhicules haut de gamme** : ✅ Mercedes Classe E / V / GLC | ⚠️ Qualité variable
-- **Chauffeur professionnel agréé** : ✅ Oui, formé et expérimenté | ❌ Pas toujours
-- **Confort longue distance** : ✅ Sièges confortables, espace, climatisation | ⚠️ Variable
-- **Connaissance du trafic** : ✅ Itinéraires optimisés | ⚠️ GPS standard
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #f3f4f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Caractéristique</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Chauffeur privé Nice Côte d'Azur</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Uber/VTC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Prix fixe garanti</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ À partir de 150€</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Tarif variable selon la demande</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Attente à l'aéroport</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Chauffeur présent avec pancarte</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Variable selon disponibilité</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Suivi du vol</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Inclus automatiquement</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Souvent absent</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Véhicules haut de gamme</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Mercedes Classe E / V / GLC</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Qualité variable</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Chauffeur professionnel agréé</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Oui, formé et expérimenté</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Pas toujours</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Confort longue distance</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Sièges confortables, espace, climatisation</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Variable</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Connaissance du trafic</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Itinéraires optimisés</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ GPS standard</td>
+    </tr>
+  </tbody>
+</table>
 
 Avec nous, **pas de surprise**, le tarif est connu à l'avance et votre confort est garanti pour ce trajet de 65 km. Pour en savoir plus sur [notre service de transport à Nice](https://taxi-nice-06.com/taxi-nice) et découvrir tous nos prestations, visitez notre site web.
 

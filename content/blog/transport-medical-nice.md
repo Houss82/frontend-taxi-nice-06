@@ -102,29 +102,66 @@ Pour en savoir plus sur les conditions de remboursement, consultez le site de l'
 <strong>⚖️ Comparatif Taxi conventionné / VSL / Ambulance</strong>
 </div>
 
-### Taxi Conventionné CPAM
-
-✅ **Flexibilité horaire** – Disponible 24/7  
-✅ **Accompagnement personnalisé** – Chauffeur dédié  
-✅ **Conduite douce** – Véhicule confortable adapté aux patients fragiles  
-✅ **Attente possible** – Le chauffeur peut attendre pendant votre rendez-vous  
-✅ **Trajet individuel** – Pas de partage avec d'autres patients  
-✅ **Remboursement CPAM** – Selon prescription médicale  
-✅ **Ponctualité garantie** – Arrivée à l'heure pour vos rendez-vous médicaux
-
-### VSL (Véhicule Sanitaire Léger)
-
-⚠️ **Transport partagé** – Peut transporter plusieurs patients  
-⚠️ **Délais plus longs** – Attente pour regrouper les trajets  
-✅ **Adapté aux patients autonomes** – Pas besoin d'aide particulière  
-⚠️ **Horaires fixes** – Moins de flexibilité
-
-### Ambulance
-
-✅ **Soins médicaux** pendant le trajet  
-✅ **Équipement médical** complet  
-⚠️ **Réservée aux situations** nécessitant surveillance médicale  
-⚠️ **Coût plus élevé** – Généralement non remboursé pour les trajets simples
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #f3f4f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Caractéristique</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Taxi Conventionné CPAM</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">VSL</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Ambulance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Flexibilité horaire</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Disponible 24/7</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Horaires fixes</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Disponible 24/7</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Accompagnement</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Chauffeur dédié</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Transport partagé</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Équipe médicale</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Confort</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Véhicule confortable adapté</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Adapté aux patients autonomes</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Équipement médical complet</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Attente possible</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Oui</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Délais plus longs</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Oui</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Trajet individuel</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Pas de partage</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Peut transporter plusieurs patients</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Oui</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Remboursement CPAM</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Selon prescription médicale</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Selon prescription médicale</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Généralement non remboursé pour trajets simples</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Ponctualité</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Garantie</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Variable</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Garantie</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Coût</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Modéré</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Modéré</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Plus élevé</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Notre Position
 

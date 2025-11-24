@@ -150,7 +150,7 @@ export default async function SecteurPage({ params }) {
                 <MapPin className="w-4 h-4" />
                 <span>Guide Local Nice</span>
               </div>
-              
+
               <h1 className="text-4xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
                 {data.hero.title}
                 <span className="block bg-gradient-to-r from-primary via-blue-600 to-cyan-600 bg-clip-text text-transparent mt-2">
@@ -198,9 +198,7 @@ export default async function SecteurPage({ params }) {
                 <p className="text-xs text-white/80 uppercase tracking-wider font-semibold mb-1">
                   Disponible
                 </p>
-                <p className="text-2xl font-black">
-                  24h/24 – 7j/7
-                </p>
+                <p className="text-2xl font-black">24h/24 – 7j/7</p>
               </div>
               {/* Badge flottant */}
               <div className="absolute -top-4 -left-4 bg-white rounded-2xl p-3 shadow-2xl border-2 border-primary/30 z-10">
@@ -209,7 +207,9 @@ export default async function SecteurPage({ params }) {
                     <Star className="w-5 h-5 text-white fill-white" />
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500 font-semibold">Note</div>
+                    <div className="text-xs text-gray-500 font-semibold">
+                      Note
+                    </div>
                     <div className="text-lg font-black text-gray-900">5/5</div>
                   </div>
                 </div>

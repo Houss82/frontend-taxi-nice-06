@@ -10,7 +10,7 @@ const sectors = [
     name: "Nice",
     description:
       "Taxi Nice 24/7 : centre-ville, aéroport, gare, hôpitaux et longues distances.",
-    image: "/image1.jpeg",
+    image: "/méridien3.jpeg",
   },
   {
     slug: "nice-gare",
@@ -24,21 +24,21 @@ const sectors = [
     name: "Nice Centre-Ville",
     description:
       "Taxi dans Nice centre, Vieux Nice, Promenade des Anglais et quartiers résidentiels.",
-    image: "/image1.jpeg",
+    image: "/Nice-jean-medecin.jpeg",
   },
   {
     slug: "monaco",
     name: "Monaco",
     description:
       "Transferts premium, accueil portuaire et déplacements professionnels 24/7.",
-    image: "/van-premium.jpeg",
+    image: "/Hotel-Monaco.jpeg",
   },
   {
     slug: "cannes",
     name: "Cannes",
     description:
       "Festival, congrès, hôtels 5 étoiles : un chauffeur dédié pour chaque besoin.",
-    image: "/bg-image.png",
+    image: "/cannes1.jpeg",
   },
   {
     slug: "antibes",
@@ -46,6 +46,13 @@ const sectors = [
     description:
       "Juan-les-Pins, Sophia Antipolis, port Vauban : service sur-mesure toute l'année.",
     image: "/taxi-antibes-secteur.jpeg",
+  },
+  {
+    slug: "menton",
+    name: "Menton",
+    description:
+      "Transferts vers frontière italienne, jardins remarquables et villas Belle Époque 24/7.",
+    image: "/taxi-nice-Menton.png",
   },
 ];
 
@@ -78,16 +85,16 @@ export default function SecteursPage() {
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Nos secteurs desservis
                 <span className="block text-primary">
-                  Nice, Nice Gare, Nice Centre-Ville, Monaco, Cannes, Antibes &
-                  plus
+                  Nice, Nice Gare, Nice Centre-Ville, Monaco, Cannes, Antibes,
+                  Menton & plus
                 </span>
               </h1>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Notre équipe de chauffeurs privés opère sur toute la Côte
                 d&apos;Azur avec un service premium 24/7. Découvrez nos pages
-                dédiées pour Nice, Nice Gare, Nice Centre-Ville, Monaco, Cannes
-                et Antibes, et accédez à des informations détaillées sur les
-                transferts, les établissements de santé desservis et nos
+                dédiées pour Nice, Nice Gare, Nice Centre-Ville, Monaco, Cannes,
+                Antibes et Menton, et accédez à des informations détaillées sur
+                les transferts, les établissements de santé desservis et nos
                 engagements qualité.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -99,7 +106,7 @@ export default function SecteursPage() {
             </div>
             <div className="relative h-80 lg:h-full min-h-[320px]">
               <Image
-                src="/van-premium.jpeg"
+                src="/aeroport-nice-depart-t2-lamparo.jpeg"
                 alt="Chauffeur privé Taxi Nice 06"
                 fill
                 className="object-cover rounded-3xl shadow-2xl"
@@ -171,9 +178,10 @@ export default function SecteursPage() {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Nous intervenons chaque jour depuis l&apos;aéroport Nice Côte
                   d&apos;Azur, la gare de Nice-Ville, le port de Monaco, le
-                  Palais des Festivals à Cannes ou encore le port Vauban
-                  d&apos;Antibes. Notre objectif : vous assurer ponctualité,
-                  confort et discrétion pour chaque déplacement.
+                  Palais des Festivals à Cannes, le port Vauban d&apos;Antibes
+                  ou encore la frontière italienne à Menton. Notre objectif :
+                  vous assurer ponctualité, confort et discrétion pour chaque
+                  déplacement.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   En réservant via Taxi Nice 06, vous bénéficiez d&apos;un

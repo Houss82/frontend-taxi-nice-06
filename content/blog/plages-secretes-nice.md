@@ -252,11 +252,54 @@ Nous trouvons le véhicule adapté et pouvons vous conseiller sur les équipemen
 
 ## 🗺️ Distances & temps depuis Nice Centre (avec et sans trafic)
 
-- **Coco Beach** : 3 km - 8–12 min (15–20 min en trafic dense) - À partir de 15€
-- **La Réserve** : 2.5 km - 6–10 min (12–18 min en trafic dense) - À partir de 12€
-- **La Lanterne** : 7 km - 15–20 min (25–35 min en trafic dense) - À partir de 20€
-- **Mont Boron** : 4 km - 10–15 min (18–25 min en trafic dense) - À partir de 18€
-- **Cap de Nice** : 4 km - 10–14 min (18–28 min en trafic dense) - À partir de 16€
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #f3f4f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Plage</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Distance</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Temps (normal)</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Temps (trafic dense)</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Tarif</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Coco Beach</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">3 km</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">8–12 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">15–20 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>À partir de 15€</strong></td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>La Réserve</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">2.5 km</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">6–10 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">12–18 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>À partir de 12€</strong></td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>La Lanterne</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">7 km</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">15–20 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">25–35 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>À partir de 20€</strong></td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mont Boron</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">4 km</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">10–15 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">18–25 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>À partir de 18€</strong></td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Cap de Nice</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">4 km</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">10–14 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">18–28 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>À partir de 16€</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 👉 Tous les tarifs détaillés sont visibles ici : **[/tarifs](/tarifs)**
 

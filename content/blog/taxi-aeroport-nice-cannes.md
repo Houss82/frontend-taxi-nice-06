@@ -52,9 +52,36 @@ Nous mettons à votre disposition une **flotte de Mercedes** récente et entrete
 <div class="content-box">
 <strong>🚗 Nos véhicules disponibles :</strong>
 
-- **Mercedes Classe E** : 1 à 3 passagers - 110€ - Idéal pour voyage d'affaires ou couple
-- **Mercedes Classe V** : jusqu'à 7 passagers - 130€ - Famille ou groupe avec bagages
-- **Mercedes GLC** : 1 à 4 passagers - 120€ - Confort supérieur & style SUV
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #f3f4f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Véhicule</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Capacité</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Tarif</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes Classe E</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">1 à 3 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>110€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Idéal pour voyage d'affaires ou couple</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes Classe V</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Jusqu'à 7 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>130€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Famille ou groupe avec bagages</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Mercedes GLC</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">1 à 4 passagers</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>120€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Confort supérieur & style SUV</td>
+    </tr>
+  </tbody>
+</table>
 
 Tous nos véhicules sont équipés de **climatisation, Wi-Fi et bouteilles d'eau** pour un trajet agréable entre **Nice et Cannes (env. 30 km / 40 minutes)**.
 
@@ -88,11 +115,42 @@ Nous couvrons **toutes les zones de Cannes** : La Croisette, Le Suquet, Port Can
 
 **Comparaison des services :**
 
-- **Prix fixe garanti** : ✅ Taxi Nice Côte d'Azur | ❌ Uber/VTC
-- **Attente à l'aéroport** : ✅ Chauffeur présent | ⚠️ Variable
-- **Suivi du vol** : ✅ Inclus | ❌ Souvent absent
-- **Véhicules haut de gamme** : ✅ Mercedes Classe E / V | ⚠️ Qualité variable
-- **Chauffeur professionnel agréé** : ✅ Oui | ❌ Pas toujours
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #f3f4f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Caractéristique</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Taxi Nice Côte d'Azur</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Uber/VTC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Prix fixe garanti</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Oui</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Non</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Attente à l'aéroport</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Chauffeur présent</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Variable</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Suivi du vol</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Inclus</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Souvent absent</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Véhicules haut de gamme</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Mercedes Classe E / V</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Qualité variable</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Chauffeur professionnel agréé</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Oui</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Pas toujours</td>
+    </tr>
+  </tbody>
+</table>
 
 Avec nous, **pas de surprise**, le tarif est connu à l'avance et votre confort est garanti. Pour en savoir plus sur [notre service de taxi à Nice](https://taxi-nice-06.com) et découvrir tous nos prestations, visitez notre site web.
 

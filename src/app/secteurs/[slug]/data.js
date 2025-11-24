@@ -731,7 +731,7 @@ export const sectorData = {
       highlight: "Nice & Alentours",
       subtitle:
         "Informations pratiques : zones couvertes, établissements desservis, tarifs indicatifs",
-      image: "/image1.jpeg",
+      image: "/musée-chagall.jpeg",
       imageAlt: "Taxi à Nice sur la Promenade des Anglais",
     },
     introduction: [
@@ -1456,6 +1456,269 @@ export const sectorData = {
       url: "https://taxi-nice-06.com/secteurs/nice-centre-ville",
       latitude: "43.710173",
       longitude: "7.261953",
+    },
+  },
+  menton: {
+    slug: "menton",
+    cityName: "Menton",
+    hero: {
+      title:
+        "Taxi Nice vers Menton – Transferts Aéroport & Frontière Italienne",
+      highlight: "Menton & Riviera Est",
+      subtitle:
+        "Transferts Nice ↔ Menton, Monaco, frontière italienne et excursions Côte d'Azur",
+      image: "/taxi-nice-Menton.png",
+      imageAlt: "Taxi vers Menton depuis Nice",
+    },
+    introduction: [
+      "Taxi Nice 06 assure vos déplacements vers Menton, dernière ville française avant la frontière italienne. Nous réalisons vos transferts depuis ou vers l'aéroport Nice Côte d'Azur, depuis Nice centre, Monaco ou directement depuis Menton pour tous vos besoins : arrivées gare SNCF, déplacements vers les jardins remarquables, villas Belle Époque, plages privées ou établissements médicaux.",
+      "Nos chauffeurs expérimentés connaissent parfaitement les accès à Menton centre-ville, le quartier du Garavan, les hôtels de prestige, les résidences de bord de mer et les sites touristiques majeurs. Nous maîtrisons également les trajets transfrontaliers vers Vintimille, San Remo et la Ligurie italienne pour vos excursions ou rendez-vous d'affaires.",
+      "Menton bénéficie d'un microclimat exceptionnel qui en fait la ville la plus douce de France. Nous accompagnons les résidents permanents comme les visiteurs saisonniers pour profiter pleinement de cette perle de la Côte d'Azur, que ce soit pour le Festival du Citron, les jardins botaniques ou les plages de galets.",
+    ],
+    secondaryIntro: [
+      "Nous proposons un service de transport médical conventionné CPAM pour vos rendez-vous au Centre Hospitalier de Menton ou vers les établissements spécialisés de Nice et Monaco. Nos véhicules adaptés assurent également les transferts vers les cliniques privées de la région.",
+      "Pour vos loisirs, nous organisons des circuits personnalisés : découverte de la vieille ville de Menton, visite des jardins Serre de la Madone et Val Rahmeh, excursions vers les villages perchés de l'arrière-pays mentonnais ou transferts vers les stations de ski des Alpes-Maritimes.",
+    ],
+    contentImage: {
+      src: "/taxi-nice-Menton.png",
+      alt: "Taxi Mercedes vers Menton depuis Nice - Transfert confortable vers la frontière italienne",
+    },
+    servicesTitle: "Prestations Taxi Menton & Riviera Est",
+    services: [
+      "Transferts Aéroport Nice ↔ Menton avec suivi de vol",
+      "Navettes gare SNCF Menton-Garavan & centre-ville",
+      "Transport vers jardins botaniques & sites patrimoniaux",
+      "Accompagnement médical conventionné CPAM",
+      "Transferts transfrontaliers vers Italie (Vintimille, San Remo)",
+      "Mises à disposition pour événements & festivals",
+      "Excursions personnalisées Côte d'Azur & arrière-pays",
+    ],
+    coverageDescription:
+      "Zones desservies quotidiennement par nos chauffeurs :",
+    coverageAreas: [
+      "✓ Menton centre-ville & Vieux Menton",
+      "✓ Garavan & quartier résidentiel",
+      "✓ Plages de Menton & bord de mer",
+      "✓ Frontière italienne & zone transfrontalière",
+      "✓ Roquebrune-Cap-Martin & Carnolès",
+      "✓ Gorbio & villages perchés",
+    ],
+    map: {
+      description:
+        "Notre zone d'intervention autour de Menton et la frontière italienne.",
+      info: "Transferts réguliers vers Nice, Monaco, Italie et stations de ski des Alpes du Sud.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Menton%20France&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Connaissance locale approfondie",
+        description:
+          "Chauffeurs familiers des rues étroites de Menton, des accès aux jardins et des horaires de circulation frontalière.",
+      },
+      {
+        title: "Service transfrontalier",
+        description:
+          "Transferts vers l'Italie facilités : Vintimille, San Remo, Ligurie avec gestion des formalités douanières.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Réactivité frontalière",
+        description:
+          "Prise en charge rapide à la gare, au port ou à domicile avec connaissance des horaires transfrontaliers.",
+      },
+      {
+        title: "✓ Confort véhicules premium",
+        description:
+          "Berlines Mercedes et vans climatisés adaptés aux familles et groupes pour tous vos trajets.",
+      },
+      {
+        title: "✓ Transport conventionné",
+        description:
+          "Prise en charge des trajets médicaux avec tiers payant CPAM vers les établissements de santé.",
+      },
+      {
+        title: "✓ Support 24/7",
+        description:
+          "Équipe disponible de jour comme de nuit pour vos urgences et transferts tardifs.",
+      },
+    ],
+    hospitalsTitle: "Établissements de santé desservis depuis Menton",
+    hospitals: [
+      {
+        name: "Centre Hospitalier de Menton",
+        city: "Menton",
+        description: "Hôpital public principal de la ville.",
+        speciality: "Urgences, médecine générale, soins de suite",
+        website: "https://www.ch-menton.fr/",
+        phone: "04 92 10 50 50",
+      },
+      {
+        name: "Centre Hospitalier Princesse Grace",
+        city: "Monaco",
+        description: "Hôpital de référence de la Principauté.",
+        speciality: "Urgences, chirurgie, spécialités médicales",
+        website: "https://www.chpg.mc/",
+        phone: "+377 97 98 99 00",
+      },
+      {
+        name: "Hôpital Pasteur 2",
+        city: "Nice",
+        description: "Centre hospitalier universitaire de référence.",
+        speciality: "Urgences, spécialités, chirurgie",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+      {
+        name: "Clinique Saint-Georges",
+        city: "Nice",
+        description: "Établissement privé de soins et chirurgie.",
+        speciality: "Chirurgie, médecine, rééducation",
+        website: "https://www.clinique-saint-george.com/",
+        phone: "04 92 15 77 77",
+      },
+    ],
+    establishmentsTitle:
+      "Lieux incontournables accessibles en taxi privé depuis Menton",
+    establishments: [
+      {
+        name: "Jardins Biovès",
+        city: "Menton",
+        speciality: "Jardins publics & Festival du Citron",
+        website: "https://www.tourisme-menton.fr/",
+        phone: "04 92 41 76 76",
+      },
+      {
+        name: "Musée Jean Cocteau - Collection Séverin Wunderman",
+        city: "Menton",
+        speciality: "Art moderne & contemporain",
+        website: "https://www.museecocteaumenton.fr/",
+        phone: "04 93 57 72 30",
+      },
+      {
+        name: "Jardin Serre de la Madone",
+        city: "Menton",
+        speciality: "Jardin botanique exceptionnel",
+        website:
+          "https://www.menton-riviera-merveilles.fr/offres/jardin-serre-de-la-madone-menton-fr-3051520/",
+        phone: "04 93 57 73 90",
+      },
+      {
+        name: "Marché couvert de Menton",
+        city: "Menton",
+        speciality: "Marché provençal & produits locaux",
+        website:
+          "https://www.menton-riviera-merveilles.fr/menton-et-le-littoral/nos-incontournables/marche-des-halles/",
+        phone: "04 92 41 76 76",
+      },
+      {
+        name: "Plage des Sablettes",
+        city: "Menton",
+        speciality: "Plage principale & bord de mer",
+        website:
+          "https://www.menton-riviera-merveilles.fr/offres/plage-des-sablettes-menton-fr-3051695/",
+        phone: "04 92 41 76 76",
+      },
+      {
+        name: "Vintimille (Italie)",
+        city: "Vintimille",
+        speciality: "Frontière italienne & marché hebdomadaire",
+        website: "https://www.comune.ventimiglia.it/",
+        phone: "+39 0184 351 111",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "Quel est le tarif pour un transfert aéroport Nice Côte d'Azur depuis Menton ?",
+        answer:
+          "Le forfait débute à 90€ selon l'adresse de prise en charge précise et l'heure. La distance est d'environ 30 km. Devis personnalisé sur simple demande avec confirmation immédiate.",
+      },
+      {
+        question: "Proposez-vous des transferts vers l'Italie depuis Menton ?",
+        answer:
+          "Oui, nous assurons les transferts transfrontaliers vers Vintimille, San Remo et la Ligurie italienne. Nos chauffeurs connaissent les formalités et les meilleurs itinéraires. Pensez à avoir votre pièce d'identité.",
+      },
+      {
+        question:
+          "Peut-on réserver un taxi conventionné CPAM pour les rendez-vous médicaux à Menton ?",
+        answer:
+          "Oui, nous sommes conventionnés CPAM. Fournissez votre prescription médicale, carte vitale et mutuelle pour bénéficier du tiers payant. Nous desservons le Centre Hospitalier de Menton et tous les établissements de la région.",
+      },
+      {
+        question: "Organisez-vous des excursions vers les jardins de Menton ?",
+        answer:
+          "Absolument. Nous proposons des circuits personnalisés incluant les Jardins Biovès, la Serre de la Madone, le jardin Val Rahmeh et la vieille ville. Mise à disposition à l'heure ou circuit complet avec commentaires.",
+      },
+      {
+        question: "Quel est le temps de trajet entre Nice et Menton ?",
+        answer:
+          "En moyenne 30 à 45 minutes selon le trafic et l'heure de la journée. Nous optimisons les itinéraires en fonction des conditions de circulation pour garantir votre ponctualité.",
+      },
+    ],
+    resource: {
+      description:
+        "Organisez facilement vos trajets sur Menton avec notre guide complet des sites à découvrir.",
+      links: [
+        {
+          label: "Guide complet Menton",
+          url: "https://www.tourisme-menton.fr/",
+        },
+      ],
+    },
+    homepageLink: {
+      before: "Vous programmez des trajets réguliers entre Menton et Nice ? ",
+      linkText: "Taxi Nice 06",
+      after:
+        " vous accompagne depuis notre base niçoise avec des transferts fréquents vers la frontière italienne et un suivi personnalisé.",
+      href: "/",
+    },
+    specialties: [
+      {
+        title: "Transferts transfrontaliers",
+        description:
+          "Accompagnement vers l'Italie : Vintimille, San Remo, Ligurie avec gestion des formalités et connaissance des meilleurs itinéraires.",
+      },
+      {
+        title: "Excursions patrimoniales",
+        description:
+          "Circuits personnalisés vers les jardins remarquables, musées, villas Belle Époque et villages perchés de l'arrière-pays mentonnais.",
+      },
+    ],
+    pricing: [
+      "Menton ↔ Nice aéroport dès 90€",
+      "Menton ↔ Monaco à partir de 50€",
+      "Menton ↔ Nice centre dès 70€",
+      "Menton ↔ Vintimille (Italie) dès 60€",
+      "Forfait VSL conventionné selon barème CPAM",
+    ],
+    commitments: [
+      {
+        title: "Disponibilité frontalière",
+        description:
+          "Chauffeurs disponibles pour réagir rapidement aux demandes depuis Menton et la zone transfrontalière.",
+      },
+      {
+        title: "Relation de confiance",
+        description:
+          "Clients résidents, visiteurs saisonniers et entreprises suivis toute l'année avec service personnalisé.",
+      },
+      {
+        title: "Sécurité & confort",
+        description:
+          "Véhicules entretenus quotidiennement, conduite souple adaptée aux routes sinueuses de la Riviera Est.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Menton - Taxi Nice 06",
+      image: "https://taxi-nice-06.com/taxi-menton.png",
+      telephone: "06 51 68 36 87",
+      locality: "Menton",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://taxi-nice-06.com/secteurs/menton",
+      latitude: "43.775000",
+      longitude: "7.500000",
     },
   },
 };

@@ -30,9 +30,10 @@ function formatDate(dateString) {
   });
 }
 
-export default function BlogPage({ searchParams }) {
+export default async function BlogPage({ searchParams }) {
   const allPosts = getAllPosts();
-  const selectedCategoryId = searchParams?.category || null;
+  const resolvedSearchParams = await searchParams;
+  const selectedCategoryId = resolvedSearchParams?.category || null;
   const selectedCategory = selectedCategoryId
     ? getCategoryById(selectedCategoryId)
     : null;

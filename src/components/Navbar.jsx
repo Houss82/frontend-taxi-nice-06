@@ -292,6 +292,16 @@ export default function Navbar() {
                     </div>
                   </Link>
                   <Link
+                    href="/secteurs/menton"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="w-4 h-4 text-red-500" />
+                      <span>Taxi Menton</span>
+                    </div>
+                  </Link>
+                  <Link
                     href="/secteurs"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors border-t border-gray-200 mt-2"
                     onClick={() => setIsSectorsOpen(false)}
@@ -322,12 +332,6 @@ export default function Navbar() {
             className="text-black hover:text-primary font-medium"
           >
             BLOG
-          </Link>
-          <Link
-            href="/partenaires"
-            className="text-black hover:text-primary font-medium"
-          >
-            PARTENAIRES
           </Link>
           <Link
             href="/contact"
@@ -703,23 +707,6 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Link
-                      href="/partenaires"
-                      className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-teal-50 to-cyan-50 hover:from-teal-100 hover:to-cyan-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <Users className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                      <span>PARTENAIRES</span>
-                    </Link>
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.3, delay: 0.9 }}
-                    whileHover={{ scale: 1.02, x: 5 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <Link
                       href="/contact"
                       className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-gray-50 to-slate-50 hover:from-gray-100 hover:to-slate-100 text-gray-800 hover:text-primary font-medium transition-all duration-300 group"
                       onClick={() => setIsMenuOpen(false)}
@@ -860,6 +847,19 @@ export default function Navbar() {
                         >
                           <MapPin className="w-4 h-4 text-green-600" />
                           <span className="text-sm">Taxi Antibes</span>
+                        </Link>
+                      </motion.div>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <Link
+                          href="/secteurs/menton"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <MapPin className="w-4 h-4 text-red-500" />
+                          <span className="text-sm">Taxi Menton</span>
                         </Link>
                       </motion.div>
                       <div className="border-t border-gray-200 my-2"></div>
