@@ -58,29 +58,29 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 md:sticky">
-      <div className="h-16 flex items-center justify-between px-4 md:px-6">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm md:sticky">
+      <div className="h-16 flex items-center justify-between px-3 sm:px-4 md:px-5 lg:px-6">
         <Link
           href="/"
-          className="flex items-center space-x-2 bg-black p-2 sm:pr-3 lg:pr-4 rounded-lg"
+          className="flex items-center space-x-1.5 sm:space-x-2 bg-black p-1.5 sm:p-2 sm:pr-2.5 md:pr-3 lg:pr-4 rounded-lg hover:opacity-90 transition-opacity"
         >
-          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">TN</span>
+          <div className="w-7 h-7 sm:w-8 sm:h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+            <span className="text-white font-bold text-xs sm:text-sm">TN</span>
           </div>
-          <span className="hidden lg:block text-white font-bold text-lg">
+          <span className="hidden md:block text-white font-bold text-sm lg:text-base xl:text-lg">
             TAXI
           </span>
-          <span className="hidden lg:block text-blue-500 font-bold text-lg">
+          <span className="hidden md:block text-blue-500 font-bold text-sm lg:text-base xl:text-lg">
             NICE
           </span>
         </Link>
-        <nav className="hidden xl:flex gap-6 2xl:gap-8">
-          <Link href="/" className="text-black hover:text-primary font-medium">
+        <nav className="hidden lg:flex gap-3 xl:gap-4 2xl:gap-6">
+          <Link href="/" className="text-black hover:text-primary font-medium text-sm xl:text-base whitespace-nowrap">
             ACCUEIL
           </Link>
           <Link
             href="/taxi-nice"
-            className="text-black hover:text-primary font-medium"
+            className="text-black hover:text-primary font-medium text-sm xl:text-base whitespace-nowrap"
           >
             TAXI NICE
           </Link>
@@ -92,11 +92,11 @@ export default function Navbar() {
                 setIsServicesOpen(!isServicesOpen);
                 setIsSectorsOpen(false);
               }}
-              className="text-black hover:text-primary font-medium flex items-center gap-1"
+              className="text-black hover:text-primary font-medium flex items-center gap-1 text-sm xl:text-base whitespace-nowrap"
             >
               SERVICES
               <ChevronDown
-                className={`w-4 h-4 transition-transform ${
+                className={`w-3.5 h-3.5 xl:w-4 xl:h-4 transition-transform ${
                   isServicesOpen ? "rotate-180" : ""
                 }`}
               />
@@ -109,15 +109,15 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg py-2"
+                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50"
                 >
                   <Link
                     href="/services/transferts-aeroport"
-                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors text-sm"
                     onClick={() => setIsServicesOpen(false)}
                   >
                     <div className="flex items-center space-x-3">
-                      <Plane className="w-4 h-4 text-blue-500" />
+                      <Plane className="w-4 h-4 text-blue-500 flex-shrink-0" />
                       <span>Transferts Aéroport</span>
                     </div>
                   </Link>
@@ -212,11 +212,11 @@ export default function Navbar() {
                 setIsSectorsOpen(!isSectorsOpen);
                 setIsServicesOpen(false);
               }}
-              className="text-black hover:text-primary font-medium flex items-center gap-1"
+              className="text-black hover:text-primary font-medium flex items-center gap-1 text-sm xl:text-base whitespace-nowrap"
             >
               NOS SECTEURS
               <ChevronDown
-                className={`w-4 h-4 transition-transform ${
+                className={`w-3.5 h-3.5 xl:w-4 xl:h-4 transition-transform ${
                   isSectorsOpen ? "rotate-180" : ""
                 }`}
               />
@@ -229,15 +229,15 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg py-2"
+                  className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50"
                 >
                   <Link
                     href="/secteurs/nice"
-                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors text-sm"
                     onClick={() => setIsSectorsOpen(false)}
                   >
                     <div className="flex items-center space-x-3">
-                      <Car className="w-4 h-4 text-cyan-600" />
+                      <Car className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                       <span>Taxi Nice</span>
                     </div>
                   </Link>
@@ -317,41 +317,41 @@ export default function Navbar() {
 
           <Link
             href="/reservation"
-            className="text-black hover:text-primary font-medium"
+            className="text-black hover:text-primary font-medium text-sm xl:text-base whitespace-nowrap"
           >
             RÉSERVATION
           </Link>
           <Link
             href="/tarifs"
-            className="text-black hover:text-primary font-medium"
+            className="text-black hover:text-primary font-medium text-sm xl:text-base whitespace-nowrap"
           >
             TARIFS
           </Link>
           <Link
             href="/blog"
-            className="text-black hover:text-primary font-medium"
+            className="text-black hover:text-primary font-medium text-sm xl:text-base whitespace-nowrap"
           >
             BLOG
           </Link>
           <Link
             href="/contact"
-            className="text-black hover:text-primary font-medium"
+            className="text-black hover:text-primary font-medium text-sm xl:text-base whitespace-nowrap"
           >
             CONTACT
           </Link>
           <Link
             href="/plan-du-site"
-            className="text-black hover:text-primary font-medium"
+            className="text-black hover:text-primary font-medium text-sm xl:text-base whitespace-nowrap hidden 2xl:block"
           >
             PLAN DU SITE
           </Link>
         </nav>
 
         {/* Desktop CTA Button */}
-        <div className="hidden xl:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-2 xl:gap-4">
           <Link
             href="/reservation"
-            className="px-4 py-2 bg-primary text-white hover:bg-primary/90 rounded-lg font-semibold transition-colors duration-300 inline-flex items-center gap-2"
+            className="px-3 py-1.5 xl:px-4 xl:py-2 bg-primary text-white hover:bg-primary/90 rounded-lg font-semibold transition-colors duration-300 inline-flex items-center gap-1.5 xl:gap-2 text-sm xl:text-base whitespace-nowrap shadow-sm hover:shadow-md"
           >
             RÉSERVER
           </Link>
@@ -360,19 +360,19 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="xl:hidden flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
+          className="lg:hidden flex items-center gap-2 px-2.5 sm:px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
           aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? (
             <>
-              <X className="w-6 h-6" aria-hidden="true" />
-              <span className="font-medium text-gray-900">FERMER</span>
+              <X className="w-5 h-5 sm:w-6 sm:h-6" aria-hidden="true" />
+              <span className="font-medium text-gray-900 text-sm sm:text-base">FERMER</span>
             </>
           ) : (
             <>
-              <Menu className="w-6 h-6" aria-hidden="true" />
-              <span className="font-medium text-gray-900">MENU</span>
+              <Menu className="w-5 h-5 sm:w-6 sm:h-6" aria-hidden="true" />
+              <span className="font-medium text-gray-900 text-sm sm:text-base">MENU</span>
             </>
           )}
         </button>
@@ -389,7 +389,7 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="xl:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+              className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
               onClick={() => setIsMenuOpen(false)}
             />
 
@@ -400,7 +400,7 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: "100%" }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="xl:hidden fixed top-16 right-0 bottom-0 w-full max-w-md z-50 bg-gradient-to-br from-white to-gray-50 border-l border-gray-200 shadow-2xl flex flex-col"
+              className="lg:hidden fixed top-16 right-0 bottom-0 w-full max-w-md z-50 bg-gradient-to-br from-white to-gray-50 border-l border-gray-200 shadow-2xl flex flex-col"
             >
               <motion.nav
                 initial={{ y: -20 }}

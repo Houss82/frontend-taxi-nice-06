@@ -1477,7 +1477,7 @@ export const sectorData = {
     ],
     secondaryIntro: [
       "Nous proposons un service de transport médical conventionné CPAM pour vos rendez-vous au Centre Hospitalier de Menton ou vers les établissements spécialisés de Nice et Monaco. Nos véhicules adaptés assurent également les transferts vers les cliniques privées de la région.",
-      "Pour vos loisirs, nous organisons des circuits personnalisés : découverte de la vieille ville de Menton, visite des jardins Serre de la Madone et Val Rahmeh, excursions vers les villages perchés de l'arrière-pays mentonnais ou transferts vers les stations de ski des Alpes-Maritimes.",
+      "Pour vos loisirs, nous organisons des circuits personnalisés : découverte de la vieille ville de Menton, visite des jardins Serre de la Madone et Val Rahmeh, excursions vers les villages perchés de l'arrière-pays mentonnais ou transferts vers les stations de ski des Alpes-Maritimes. Pour en savoir plus sur nos transferts depuis l'aéroport de Nice vers Menton, consultez notre [guide complet dédié](/blog/taxi-aeroport-nice-menton) avec tarifs détaillés, horaires et conseils pratiques.",
     ],
     contentImage: {
       src: "/taxi-nice-Menton.png",
@@ -1662,8 +1662,8 @@ export const sectorData = {
         "Organisez facilement vos trajets sur Menton avec notre guide complet des sites à découvrir.",
       links: [
         {
-          label: "Guide complet Menton",
-          url: "https://www.tourisme-menton.fr/",
+          label: "Transfert Aéroport Nice → Menton : Guide complet",
+          url: "/blog/taxi-aeroport-nice-menton",
         },
       ],
     },
@@ -1687,10 +1687,8 @@ export const sectorData = {
       },
     ],
     pricing: [
-      "Menton ↔ Nice aéroport dès 90€",
-      "Menton ↔ Monaco à partir de 50€",
-      "Menton ↔ Nice centre dès 70€",
-      "Menton ↔ Vintimille (Italie) dès 60€",
+      "Menton ↔ Nice aéroport dès 130€",
+      "Menton ↔ Nice centre dès 110€",
       "Forfait VSL conventionné selon barème CPAM",
     ],
     commitments: [
