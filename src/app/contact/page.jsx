@@ -102,7 +102,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@taxi-nice.com",
+      value: "contact@taxi-nice-06.com",
       description: "Envoyez-nous un email",
       color: "from-green-500 to-green-700",
     },
