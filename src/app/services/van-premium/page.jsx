@@ -201,6 +201,37 @@ export default function VanPremiumPage() {
           </div>
         </section>
 
+        {/* Blog Article Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-lg border border-blue-100">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="flex-1">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                    Guide Complet : Taxi Groupe à Nice
+                  </h2>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Découvrez notre guide détaillé sur le service de taxi groupe
+                    avec van 7 places Mercedes Classe V. Tarifs, capacités, cas
+                    d'usage, FAQ et conseils pratiques pour voyager en groupe à
+                    Nice.
+                  </p>
+                  <Link
+                    href="/blog/taxi-groupe-nice-van-7-places"
+                    className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300"
+                  >
+                    Lire l'article complet →
+                  </Link>
+                </div>
+                <div className="text-center md:text-right">
+                  <div className="text-4xl mb-2">📖</div>
+                  <p className="text-sm text-gray-500">Guide expert</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 bg-blue-600">
           <div className="max-w-4xl mx-auto px-4 text-center">
@@ -220,7 +251,8 @@ export default function VanPremiumPage() {
                 >
                   taxi Nice 24/7
                 </Link>{" "}
-                avec véhicules Mercedes premium, consultez notre page principale dédiée.
+                avec véhicules Mercedes premium, consultez notre page principale
+                dédiée.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
