@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
+import ResponsiveTableWrapper from "@/components/ResponsiveTableWrapper.jsx";
 import { getAllPosts, getAllPostSlugs, getPostBySlug } from "@/lib/blog";
 import Image from "next/image";
 import Link from "next/link";
@@ -136,10 +137,11 @@ export default async function BlogPostPage({ params }) {
           </div>
 
           {/* Contenu */}
-          <div
+          <ResponsiveTableWrapper
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-          />
+          >
+          </ResponsiveTableWrapper>
 
           {/* Mots-clés */}
           {post.keywords && post.keywords.length > 0 && (

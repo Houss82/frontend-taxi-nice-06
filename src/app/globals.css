@@ -211,6 +211,9 @@
 
 .prose table {
   @apply w-full border-collapse mb-6;
+  display: table;
+  width: 100%;
+  table-layout: auto;
 }
 
 .prose th {
@@ -223,6 +226,56 @@
 
 .prose tr:nth-child(even) {
   @apply bg-gray-50;
+}
+
+/* Wrapper pour les tableaux responsives */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Styles responsives pour les tableaux sur mobile */
+@media (max-width: 768px) {
+  /* Tableaux responsives - les tableaux sont maintenant enveloppés dans .table-wrapper */
+  .table-wrapper table {
+    font-size: 0.875rem;
+    min-width: 600px; /* Largeur minimale pour forcer le scroll si nécessaire */
+    width: max-content;
+    display: table;
+  }
+
+  .table-wrapper th,
+  .table-wrapper td {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    white-space: nowrap; /* Garder le texte sur une ligne */
+  }
+
+  .table-wrapper th {
+    font-size: 0.8125rem;
+    padding: 0.625rem 0.75rem;
+  }
 }
 
 .prose img {
