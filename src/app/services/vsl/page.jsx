@@ -340,6 +340,75 @@ export default function VSLPage() {
         </div>
       </section>
 
+      {/* Blog Articles Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
+              Guides & Informations
+            </h2>
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Découvrez nos guides complets sur le transport médical à Nice
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Article 1 */}
+            <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-8 shadow-lg border border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="flex items-start space-x-6">
+                <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-8 h-8 text-pink-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Transport Médical à Nice
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    Guide complet sur les trajets médicaux à Nice : VSL, taxi
+                    conventionné CPAM, prise en charge, accompagnement sécurisé.
+                    Trajets vers CHU, cliniques et centres spécialisés.
+                  </p>
+                  <Link
+                    href="/blog/transport-medical-nice"
+                    className="inline-flex items-center text-pink-600 font-semibold hover:text-pink-700 transition-colors duration-300"
+                  >
+                    Lire l'article complet
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Article 2 */}
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="flex items-start space-x-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-8 h-8 text-blue-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Nouvelle Convention 2025
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    Nouvelle convention transports médicaux 2025 : forfait 13€,
+                    tarification kilométrique, impact patients. Guide complet
+                    pour comprendre les changements et bien préparer vos trajets
+                    médicaux.
+                  </p>
+                  <Link
+                    href="/blog/nouvelle-convention-transports-medicaux-2025"
+                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300"
+                  >
+                    Lire l'article complet
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Requirements Section */}
       <section className="py-24 bg-gradient-to-br from-pink-50 to-purple-50">
         <div className="max-w-5xl mx-auto px-4">
@@ -389,7 +458,8 @@ export default function VSLPage() {
             >
               taxi Nice 24/7
             </Link>{" "}
-            pour tous vos déplacements sur la Côte d'Azur : transferts aéroport, gare, centre-ville et longues distances.
+            pour tous vos déplacements sur la Côte d'Azur : transferts aéroport,
+            gare, centre-ville et longues distances.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
