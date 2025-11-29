@@ -34,7 +34,7 @@ const blogCategories = [
       iconColor: "text-pink-600",
       hover: "hover:bg-pink-100",
     },
-    articleCategories: ["Tourisme", "Excursions", "Découvertes"],
+    articleCategories: ["Tourisme", "Voyage & Tourisme", "Excursions", "Découvertes"],
   },
   {
     id: "local",

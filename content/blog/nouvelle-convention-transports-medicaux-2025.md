@@ -1,5 +1,5 @@
 ---
-title: "La nouvelle convention des transports médicaux en 2025 : ce que les patients doivent vraiment savoir"
+title: "Transports médicaux 2025 à Nice : ce que les patients doivent savoir sur la nouvelle convention"
 date: "2025-11-28"
 excerpt: "Nouvelle convention transports médicaux 2025 : forfait 13€, tarification kilométrique, impact patients. Guide complet pour comprendre les changements et bien préparer vos trajets médicaux à Nice."
 image: "/nouvelle-convention-CPAM.png"
@@ -9,6 +9,8 @@ language: "fr"
 ---
 
 Nice évolue, et les règles du transport médical conventionné aussi. Beaucoup de patients, d'associations et même de professionnels de santé ne comprennent pas encore ce qui change réellement avec la nouvelle convention entrée en vigueur en 2025.
+
+**Cet article s'adresse aux patients de Nice et des Alpes-Maritimes** qui utilisent un taxi conventionné ou un transport médical remboursé par la CPAM. Si vous vous rendez régulièrement vers les hôpitaux niçois (Pasteur, Archet, Lenval, Centre Antoine Lacassagne) ou les cliniques privées de la région, ce guide vous aidera à comprendre les changements et à bien préparer vos trajets médicaux.
 
 Selon les données de l'[Assurance Maladie](https://www.ameli.fr/assure/remboursements/rembourse/frais-transport), **plus de 12 millions de trajets médicaux** sont réalisés chaque année en France, dont une part importante dans les Alpes-Maritimes. La nouvelle convention modifie profondément la façon dont ces transports sont pris en charge et organisés.
 

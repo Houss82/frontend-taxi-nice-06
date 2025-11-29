@@ -496,4 +496,4 @@ Offrez-vous un transport premium pour votre groupe avec un **Mercedes Classe V 7
 
 ---
 
-_Article mis à jour le 14 novembre 2025_
+_Article mis à jour le 29 novembre 2025_
