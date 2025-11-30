@@ -65,6 +65,11 @@ export default function sitemap() {
     { path: "/secteurs/cannes", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/antibes", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/menton", priority: 0.6, changeFrequency: "weekly" },
+    {
+      path: "/secteurs/saint-tropez",
+      priority: 0.6,
+      changeFrequency: "weekly",
+    },
     { path: "/plan-du-site", priority: 0.5, changeFrequency: "monthly" },
     { path: "/cgv", priority: 0.3, changeFrequency: "yearly" },
     { path: "/mentions-legales", priority: 0.3, changeFrequency: "yearly" },
