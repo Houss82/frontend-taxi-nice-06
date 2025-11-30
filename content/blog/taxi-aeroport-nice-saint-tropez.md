@@ -195,6 +195,7 @@ Cette destination emblématique de la Côte d'Azur est connue pour son port de p
 
 Pour découvrir nos autres services et destinations :
 
+- 👉 [Taxi Nice → Saint-Tropez](/secteurs/saint-tropez) - Page locale complète avec zones desservies, établissements et services
 - 👉 [Taxi Nice → Monaco](/secteurs/monaco) - Transfert premium vers la Principauté
 - 👉 [Taxi Nice → Cannes](/secteurs/cannes) - Le trajet le plus demandé
 - 👉 [Taxi Nice Gare SNCF](/blog/taxi-nice-gare-sncf) - Service rapide depuis la gare 24/7

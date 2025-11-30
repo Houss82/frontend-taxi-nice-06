@@ -49,7 +49,7 @@ const blogCategories = [
       iconColor: "text-green-600",
       hover: "hover:bg-green-100",
     },
-    articleCategories: ["Partenaires", "Actualités", "Entreprises"],
+    articleCategories: ["Partenaires", "Actualités", "Entreprises", "Vie locale & Entreprises"],
   },
   {
     id: "sante",

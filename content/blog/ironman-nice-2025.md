@@ -1,5 +1,5 @@
 ---
-title: "Ironman Nice 2026 : guide complet de l'événement triathlon majeur de la Côte d'Azur"
+title: "Ironman Nice 2026 : dates, parcours et guide complet pour participer"
 date: "2025-11-26"
 excerpt: "Découvrez l'Ironman de Nice, l'un des plus grands triathlons au monde : dates, parcours, accès, conseils pratiques et transport pour athlètes et supporters. Événement sportif majeur en juin."
 image: "/ironman-nice.jpg"

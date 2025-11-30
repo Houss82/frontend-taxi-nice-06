@@ -1719,6 +1719,268 @@ export const sectorData = {
       longitude: "7.500000",
     },
   },
+  "saint-tropez": {
+    slug: "saint-tropez",
+    cityName: "Saint-Tropez",
+    hero: {
+      title:
+        "Taxi Nice vers Saint-Tropez – Transferts Premium Golfe de Saint-Tropez",
+      highlight: "Saint-Tropez & Golfe",
+      subtitle:
+        "Transferts Nice ↔ Saint-Tropez, port de plaisance, plages Pampelonne et événements prestigieux",
+      image: "/Nice-saint-tropez.png",
+      imageAlt: "Taxi vers Saint-Tropez depuis Nice",
+    },
+    introduction: [
+      "Taxi Nice 06 assure vos déplacements vers Saint-Tropez, station balnéaire emblématique du Golfe de Saint-Tropez. Nous réalisons vos transferts depuis ou vers l'aéroport Nice Côte d'Azur, depuis Nice centre ou directement depuis Saint-Tropez pour tous vos besoins : arrivées port de plaisance, déplacements vers les plages de Pampelonne, villas de prestige, événements nautiques ou établissements médicaux.",
+      "Nos chauffeurs expérimentés connaissent parfaitement les accès à Saint-Tropez centre-ville, le port de plaisance, les quartiers résidentiels de prestige (Les Parcs, La Ponche), les plages privées et les sites touristiques majeurs. Nous maîtrisons également les trajets vers les communes du Golfe : Ramatuelle, Gassin, La Croix-Valmer, Grimaud pour vos excursions ou rendez-vous d'affaires.",
+      "Saint-Tropez est une destination mythique de la Côte d'Azur, réputée pour son port de plaisance, ses plages de renommée mondiale, son patrimoine culturel et ses événements prestigieux comme les Voiles de Saint-Tropez. Nous accompagnons les résidents permanents comme les visiteurs saisonniers pour profiter pleinement de cette perle du Var.",
+    ],
+    secondaryIntro: [
+      "Nous proposons un service de transport médical conventionné CPAM pour vos rendez-vous au Centre Hospitalier de Saint-Tropez ou vers les établissements spécialisés de Fréjus, Draguignan et Nice. Nos véhicules adaptés assurent également les transferts vers les cliniques privées de la région.",
+      "Pour vos loisirs et événements, nous organisons des circuits personnalisés : découverte de la vieille ville de Saint-Tropez, visite du musée de l'Annonciade, excursions vers les plages de Pampelonne, Ramatuelle et Gassin, ou transferts vers les événements nautiques. Pour en savoir plus sur nos transferts depuis l'aéroport de Nice vers Saint-Tropez, consultez notre [guide complet dédié](/blog/taxi-aeroport-nice-saint-tropez) avec tarifs détaillés, horaires et conseils pratiques.",
+    ],
+    contentImage: {
+      src: "/aéroport-Nice-saint-tropez.jpeg",
+      alt: "Taxi Mercedes vers Saint-Tropez depuis Nice - Transfert premium vers le Golfe de Saint-Tropez",
+    },
+    servicesTitle: "Prestations Taxi Saint-Tropez & Golfe",
+    services: [
+      "Transferts Aéroport Nice ↔ Saint-Tropez avec suivi de vol",
+      "Navettes port de plaisance & quai des yachts",
+      "Transport vers plages Pampelonne & sites balnéaires",
+      "Accompagnement médical conventionné CPAM",
+      "Mises à disposition pour événements nautiques (Voiles de Saint-Tropez)",
+      "Transferts vers communes du Golfe (Ramatuelle, Gassin, Grimaud)",
+      "Excursions personnalisées Golfe de Saint-Tropez & arrière-pays",
+    ],
+    coverageDescription:
+      "Zones desservies quotidiennement par nos chauffeurs :",
+    coverageAreas: [
+      "✓ Saint-Tropez centre-ville & Vieux Port",
+      "✓ Port de plaisance & quai des yachts",
+      "✓ Les Parcs & quartier résidentiel de prestige",
+      "✓ La Ponche & quartier historique",
+      "✓ Plages Pampelonne & Tahiti",
+      "✓ Ramatuelle, Gassin & Grimaud",
+    ],
+    map: {
+      description:
+        "Notre zone d'intervention autour de Saint-Tropez et le Golfe.",
+      info: "Transferts réguliers vers Nice, Cannes, Monaco, Fréjus et stations de ski des Alpes du Sud.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Saint-Tropez%20France&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Connaissance locale approfondie",
+        description:
+          "Chauffeurs familiers des routes sinueuses du Golfe, des accès aux plages privées et des horaires de circulation estivale.",
+      },
+      {
+        title: "Service événements prestigieux",
+        description:
+          "Gestion des navettes pour les Voiles de Saint-Tropez, événements nautiques et festivals avec coordination multi-véhicules.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Réactivité Golfe",
+        description:
+          "Prise en charge rapide au port, aux plages ou à domicile avec connaissance des horaires de circulation estivale.",
+      },
+      {
+        title: "✓ Confort véhicules premium",
+        description:
+          "Berlines Mercedes et vans climatisés adaptés aux familles et groupes pour tous vos trajets longue distance.",
+      },
+      {
+        title: "✓ Transport conventionné",
+        description:
+          "Prise en charge des trajets médicaux avec tiers payant CPAM vers les établissements de santé du Var.",
+      },
+      {
+        title: "✓ Support 24/7",
+        description:
+          "Équipe disponible de jour comme de nuit pour vos urgences et transferts tardifs, même en haute saison.",
+      },
+    ],
+    hospitalsTitle: "Établissements de santé desservis depuis Saint-Tropez",
+    hospitals: [
+      {
+        name: "Centre Hospitalier de Saint-Tropez",
+        city: "Saint-Tropez",
+        description: "Hôpital public principal du Golfe.",
+        speciality: "Urgences, médecine générale, soins de suite",
+        website: "https://www.ch-saint-tropez.fr/",
+        phone: "04 94 55 70 00",
+      },
+      {
+        name: "Centre Hospitalier de Fréjus-Saint-Raphaël",
+        city: "Fréjus",
+        description: "Hôpital de référence du Var Est.",
+        speciality: "Urgences, chirurgie, spécialités médicales",
+        website: "https://www.ch-frejus-saint-raphael.fr/",
+        phone: "04 94 40 21 21",
+      },
+      {
+        name: "Centre Hospitalier de Draguignan",
+        city: "Draguignan",
+        description: "Centre hospitalier de référence du Var.",
+        speciality: "Urgences, spécialités, chirurgie",
+        website: "https://www.ch-dracenie.fr/",
+        phone: "04 94 60 50 50",
+      },
+      {
+        name: "Hôpital Pasteur 2",
+        city: "Nice",
+        description: "Centre hospitalier universitaire de référence.",
+        speciality: "Urgences, spécialités, chirurgie",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+    ],
+    establishmentsTitle:
+      "Lieux incontournables accessibles en taxi privé depuis Saint-Tropez",
+    establishments: [
+      {
+        name: "Port de Saint-Tropez",
+        city: "Saint-Tropez",
+        speciality: "Port de plaisance & yachts de luxe",
+        website: "https://www.saint-tropez.fr/",
+        phone: "04 94 97 45 21",
+      },
+      {
+        name: "Plage de Pampelonne",
+        city: "Ramatuelle",
+        speciality: "Plage emblématique & clubs de plage",
+        website: "https://www.ramatuelle.fr/",
+        phone: "04 94 97 45 21",
+      },
+      {
+        name: "Musée de l'Annonciade",
+        city: "Saint-Tropez",
+        speciality: "Art moderne & peinture",
+        website: "https://www.saint-tropez.fr/culture/musee-de-lannonciade/",
+        phone: "04 94 17 84 10",
+      },
+      {
+        name: "Citadelle de Saint-Tropez",
+        city: "Saint-Tropez",
+        speciality: "Musée d'histoire maritime",
+        website: "https://www.saint-tropez.fr/culture/citadelle/",
+        phone: "04 94 97 59 43",
+      },
+      {
+        name: "Village de Ramatuelle",
+        city: "Ramatuelle",
+        speciality: "Village perché & patrimoine provençal",
+        website: "https://www.ramatuelle.fr/",
+        phone: "04 94 79 20 06",
+      },
+      {
+        name: "Gassin",
+        city: "Gassin",
+        speciality: "Village perché & vue panoramique",
+        website: "https://www.mairie-gassin.fr/fr/",
+        phone: "04 94 56 15 56",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "Quel est le tarif pour un transfert aéroport Nice Côte d'Azur depuis Saint-Tropez ?",
+        answer:
+          "Le forfait débute à 280€ selon l'adresse de prise en charge précise et l'heure. La distance est d'environ 113 km (1h30 de trajet). Devis personnalisé sur simple demande avec confirmation immédiate. Pour plus de détails, consultez notre [guide complet transfert aéroport Nice → Saint-Tropez](/blog/taxi-aeroport-nice-saint-tropez).",
+      },
+      {
+        question:
+          "Proposez-vous des transferts vers les plages de Pampelonne ?",
+        answer:
+          "Oui, nous assurons les transferts vers toutes les plages du Golfe de Saint-Tropez, notamment Pampelonne, Tahiti et les plages privées. Nos chauffeurs connaissent les meilleurs accès et les horaires de circulation estivale.",
+      },
+      {
+        question:
+          "Peut-on réserver un taxi conventionné CPAM pour les rendez-vous médicaux à Saint-Tropez ?",
+        answer:
+          "Oui, nous sommes conventionnés CPAM. Fournissez votre prescription médicale, carte vitale et mutuelle pour bénéficier du tiers payant. Nous desservons le Centre Hospitalier de Saint-Tropez et tous les établissements de la région.",
+      },
+      {
+        question:
+          "Organisez-vous des navettes pour les Voiles de Saint-Tropez ?",
+        answer:
+          "Absolument. Nous proposons des services de navettes et mises à disposition pour les événements nautiques, avec coordination multi-véhicules et gestion des plannings. Réservez à l'avance pour garantir votre disponibilité pendant les périodes de forte affluence.",
+      },
+      {
+        question: "Quel est le temps de trajet entre Nice et Saint-Tropez ?",
+        answer:
+          "En moyenne 1h30 à 2h selon le trafic et l'heure de la journée. En haute saison estivale, prévoyez jusqu'à 2h30 en cas de forte circulation. Nous optimisons les itinéraires en fonction des conditions de circulation pour garantir votre ponctualité.",
+      },
+    ],
+    resource: {
+      description:
+        "Organisez facilement vos trajets sur Saint-Tropez avec notre guide complet des transferts aéroport et sites à découvrir.",
+      links: [
+        {
+          label: "Transfert Aéroport Nice → Saint-Tropez : Guide complet",
+          url: "/blog/taxi-aeroport-nice-saint-tropez",
+        },
+      ],
+    },
+    homepageLink: {
+      before:
+        "Vous programmez des trajets réguliers entre Saint-Tropez et Nice ? ",
+      linkText: "Taxi Nice 06",
+      after:
+        " vous accompagne depuis notre base niçoise avec des transferts fréquents vers le Golfe de Saint-Tropez et un suivi personnalisé.",
+      href: "/",
+    },
+    specialties: [
+      {
+        title: "Transferts portuaires & yachts",
+        description:
+          "Accompagnement des équipages, transferts vers aéroports et intendance du yacht avec connaissance des accès portuaires.",
+      },
+      {
+        title: "Événements nautiques & festivals",
+        description:
+          "Gestion des navettes pour les Voiles de Saint-Tropez, événements prestigieux et festivals avec coordination multi-véhicules.",
+      },
+    ],
+    pricing: [
+      "Saint-Tropez ↔ Nice aéroport dès 280€",
+      "Saint-Tropez ↔ Nice centre dès 250€",
+      "Saint-Tropez ↔ Cannes dès 200€",
+      "Forfait VSL conventionné selon barème CPAM",
+    ],
+    commitments: [
+      {
+        title: "Disponibilité Golfe",
+        description:
+          "Chauffeurs disponibles pour réagir rapidement aux demandes depuis Saint-Tropez et les communes du Golfe, même en haute saison.",
+      },
+      {
+        title: "Relation de confiance",
+        description:
+          "Clients résidents, visiteurs saisonniers et entreprises suivis toute l'année avec service personnalisé et discrétion.",
+      },
+      {
+        title: "Sécurité & confort",
+        description:
+          "Véhicules entretenus quotidiennement, conduite souple adaptée aux routes sinueuses du Golfe et trajets longue distance.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Saint-Tropez - Taxi Nice 06",
+      image: "https://taxi-nice-06.com/aéroport-Nice-saint-tropez.jpeg",
+      telephone: "06 51 68 36 87",
+      locality: "Saint-Tropez",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://taxi-nice-06.com/secteurs/saint-tropez",
+      latitude: "43.269444",
+      longitude: "6.638889",
+    },
+  },
 };
 
 export const sectorSlugs = Object.keys(sectorData);
