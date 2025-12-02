@@ -2,7 +2,7 @@
 title: "Taxi Aéroport de Nice vers Menton – Prix, Réservation & Trajet 2025"
 date: "2025-11-25"
 excerpt: "Transfert aéroport Nice → Menton : prix fixe, Mercedes haut de gamme, chauffeur professionnel 24/7. Distance ~40 km, durée 35-45 minutes, tarif dès 120€."
-image: "/taxi-aeroport-nice-menton2.png"
+image: "/taxi-Nice-menton-ville.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
