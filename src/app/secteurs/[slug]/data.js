@@ -1160,6 +1160,10 @@ export const sectorData = {
           label: "Guide Taxi Nice Centre-Ville",
           url: "https://taxi-nice-06.com/secteurs/nice-centre-ville",
         },
+        {
+          label: "Taxi Nice Gare → Aéroport : Guide Complet",
+          url: "/blog/taxi-nice-gare-aeroport",
+        },
       ],
     },
     specialties: [
