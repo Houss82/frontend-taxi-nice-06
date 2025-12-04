@@ -82,6 +82,7 @@ const blogCategories = [
     articleCategories: [
       "Guides Pratiques",
       "Guide Pratique",
+      "Guides pratiques & Lifestyle",
       "Conseils",
       "Conseils Pratiques",
       "Lifestyle",
