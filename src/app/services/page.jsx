@@ -135,7 +135,7 @@ export default function ServicesPage() {
     {
       id: 6,
       image: "/aéro-arrivé.jpeg",
-      title: "Transferts Aéroport Toutes Distances",
+      title: "Taxi Aéroport Nice",
       description:
         "Service fiable vers l'aéroport de Nice et toutes destinations. Accueil avec panneau nominatif",
       keywords: [
@@ -152,7 +152,7 @@ export default function ServicesPage() {
       ],
       icon: MapPin,
       color: "from-cyan-500 to-cyan-700",
-      detailUrl: "/services/transferts-aeroport",
+      detailUrl: "/services/taxi-aeroport-nice",
     },
     {
       id: 7,

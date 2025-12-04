@@ -73,9 +73,9 @@ export default function PlanDuSitePage() {
 
   const servicesPages = [
     {
-      title: "Transferts Aéroport",
-      url: "/services/transferts-aeroport",
-      description: "Transferts vers et depuis l'aéroport Nice Côte d'Azur",
+      title: "Taxi Aéroport Nice",
+      url: "/services/taxi-aeroport-nice",
+      description: "Taxi vers et depuis l'aéroport Nice Côte d'Azur",
       icon: Plane,
       color: "text-blue-600",
     },

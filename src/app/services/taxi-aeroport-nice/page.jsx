@@ -18,7 +18,7 @@ import Link from "next/link";
 
 export default function TransfertsAeroportPage() {
   const trustBadges = [
-    { icon: BadgeCheck, label: "Chauffeurs agréés VTC & Taxi" },
+    { icon: BadgeCheck, label: "Chauffeurs agréés et officiels Taxi Nice" },
     { icon: Clock, label: "Suivi de vol temps réel" },
     { icon: Shield, label: "Paiement sécurisé & facture" },
   ];
@@ -133,8 +133,8 @@ export default function TransfertsAeroportPage() {
             items={[
               { name: "Services", url: "/services" },
               {
-                name: "Transferts Aéroport",
-                url: "/services/transferts-aeroport",
+                name: "Taxi Aéroport Nice",
+                url: "/services/taxi-aeroport-nice",
               },
             ]}
           />
@@ -148,13 +148,13 @@ export default function TransfertsAeroportPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 pt-10 sm:py-0">
-                  Transfert Aéroport Nice
+                  Taxi Aéroport Nice
                   <span className="block text-cyan-600">
                     Chauffeur Privé & Taxi 24/7
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Service premium depuis et vers l'aéroport Nice Côte d'Azur
+                  Service de Taxi depuis et vers l'aéroport Nice Côte d'Azur
                   (T1/T2). Accueil nominatif, suivi de vol en temps réel, tarifs
                   fixes et transparents, disponibilité 24/7.
                 </p>
@@ -271,14 +271,16 @@ export default function TransfertsAeroportPage() {
                 >
                   notre guide complet du transfert depuis l'aéroport de Nice
                 </a>{" "}
-                pour découvrir tous nos conseils pratiques. Arrivée en train ? Découvrez notre{" "}
+                pour découvrir tous nos conseils pratiques. Arrivée en train ?
+                Découvrez notre{" "}
                 <Link
                   href="/blog/taxi-nice-gare-sncf"
                   className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
                 >
                   service Taxi Nice Gare SNCF
                 </Link>{" "}
-                pour un transport rapide depuis la gare vers l'aéroport. Pour une vue d'ensemble de tous nos services de{" "}
+                pour un transport rapide depuis la gare vers l'aéroport. Pour
+                une vue d'ensemble de tous nos services de{" "}
                 <Link
                   href="/taxi-nice"
                   className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"

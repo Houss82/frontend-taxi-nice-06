@@ -61,7 +61,7 @@ export default function TaxiNicePage() {
       name: "Taxi Nice Aéroport",
       description:
         "Transfert vers et depuis l'aéroport Nice Côte d'Azur (T1/T2)",
-      link: "/services/transferts-aeroport",
+      link: "/services/taxi-aeroport-nice",
     },
     {
       name: "Taxi Nice Gare",

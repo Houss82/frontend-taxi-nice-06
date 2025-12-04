@@ -111,7 +111,7 @@ export default function Services() {
   const services = [
     {
       icon: Plane,
-      title: "Transferts Aéroport",
+      title: "Taxi Aéroport Nice",
       description:
         "Service de transfert professionnel vers et depuis l'aéroport Nice Côte d'Azur avec suivi des vols en temps réel.",
       features: [

@@ -8,12 +8,12 @@ export function generateServiceMetadata(serviceKey, locale = "fr") {
 
   // Métadonnées par service (statiques pour le SEO)
   const serviceMetadata = {
-    "transferts-aeroport": {
+    "taxi-aeroport-nice": {
       fr: {
         title:
-          "Transferts Aéroport Nice | Suivi Vol & Accueil Nominatif | Taxi Nice-06",
+          "Taxi Aéroport Nice | Suivi Vol & Accueil Nominatif | Taxi Nice-06",
         description:
-          "Service fiable vers l'aéroport de Nice et toutes destinations. Accueil avec panneau nominatif, suivi de vol en temps réel et ponctualité garantie.",
+          "Service de taxi fiable vers l'aéroport de Nice et toutes destinations. Accueil avec panneau nominatif, suivi de vol en temps réel et ponctualité garantie.",
         keywords: [
           "transfert aéroport nice",
           "aéroport taxi nice",
@@ -149,11 +149,11 @@ export function generateServiceStructuredData(serviceKey, locale = "fr") {
   const baseUrl = "https://taxi-nice-06.com";
 
   const serviceData = {
-    "transferts-aeroport": {
+    "taxi-aeroport-nice": {
       fr: {
-        name: "Transferts Aéroport Nice",
+        name: "Taxi Aéroport Nice",
         description:
-          "Service de transfert aéroport professionnel avec accueil nominatif et suivi de vol",
+          "Service de taxi aéroport professionnel avec accueil nominatif et suivi de vol",
         serviceType: "Transport aéroport",
       },
       en: {

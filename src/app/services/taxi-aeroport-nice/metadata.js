@@ -16,7 +16,7 @@ export const metadata = {
     title: "Transferts Aéroport Nice | Taxi Nice-06",
     description:
       "Service fiable vers l'aéroport de Nice et toutes destinations. Accueil avec panneau nominatif, suivi de vol en temps réel.",
-    url: "https://taxi-nice-06.com/services/transferts-aeroport",
+    url: "https://taxi-nice-06.com/services/taxi-aeroport-nice",
     type: "website",
     images: [
       {

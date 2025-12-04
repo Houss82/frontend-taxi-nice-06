@@ -17,7 +17,7 @@ export default function sitemap() {
     { path: "/taxi-nice", priority: 1.0, changeFrequency: "weekly" },
     { path: "/reservation", priority: 0.9, changeFrequency: "weekly" },
     {
-      path: "/services/transferts-aeroport",
+      path: "/services/taxi-aeroport-nice",
       priority: 0.9,
       changeFrequency: "weekly",
     },
