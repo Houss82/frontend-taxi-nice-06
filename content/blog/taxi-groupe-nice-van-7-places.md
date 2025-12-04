@@ -1,5 +1,5 @@
 ---
-title: "Taxi Groupe à Nice – Van 7 Places Mercedes Classe V : Guide Complet 2025"
+title: "Taxi Van Nice 7 Places – Mercedes Classe V : Tarifs, Réservation & Service Groupe 2025"
 date: "2025-11-27"
 excerpt: "Besoin d'un taxi pour un groupe à Nice ? Profitez d'un Van Mercedes Classe V 7 places, idéal pour familles, amis, entreprises et transferts aéroport. Service premium disponible 24/7."
 image: "/taxi-aeroport-nice-van-7-plaves.png"
