@@ -61,11 +61,17 @@ const nextConfig = {
         destination: "/services/excursions-decouvertes",
         permanent: true, // 301 - Ancienne page déplacée vers la nouvelle
       },
-      // ✅ Redirection URL singulier vers pluriel (correction 404)
+      // ✅ Redirection URL singulier vers nouvelle URL
       {
         source: "/services/transfert-aeroport",
-        destination: "/services/transferts-aeroport",
-        permanent: true, // 301 - Correction URL singulier → pluriel
+        destination: "/services/taxi-aeroport-nice",
+        permanent: true, // 301 - Ancienne URL singulier → nouvelle URL
+      },
+      // ✅ Redirection ancienne URL pluriel vers nouvelle URL
+      {
+        source: "/services/transferts-aeroport",
+        destination: "/services/taxi-aeroport-nice",
+        permanent: true, // 301 - Ancienne URL pluriel → nouvelle URL
       },
       // ✅ Redirections anciens slugs anglais vers les articles FR
       {
