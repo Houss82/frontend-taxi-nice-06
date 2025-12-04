@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Les métadonnées sont maintenant générées dynamiquement avec les traductions
+// Les métadonnées sont maintenant générées dynamiquement
 export async function generateMetadata() {
-  return await generateSEOMetadata("fr");
+  return await generateSEOMetadata();
 }
 
 export default async function RootLayout({ children }) {

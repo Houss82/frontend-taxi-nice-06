@@ -1,19 +1,12 @@
 /**
  * Génère les métadonnées SEO optimisées 100% compatible Next.js
  */
-export async function generateSEOMetadata(locale = "fr") {
+export async function generateSEOMetadata() {
   const baseUrl = "https://taxi-nice-06.com";
   const siteName = "Taxi Nice Côte d'Azur";
-
-  const titleBase =
-    locale === "fr"
-      ? "Taxi Nice Côte d'Azur – Transferts Aéroport 24/7"
-      : "Nice Taxi – Airport Transfers 24/7";
-
+  const titleBase = "Taxi Nice Côte d'Azur – Transferts Aéroport 24/7";
   const description =
-    locale === "fr"
-      ? "Taxi à Nice et transferts aéroport 24/7. Service officiel sur la Côte d'Azur : aéroport, VSL, excursions. Mercedes GLC & Van premium. Réservation en ligne."
-      : "Taxi in Nice and 24/7 airport transfers. Official service on the French Riviera: airport, medical, tours. Mercedes GLC & premium vans. Online booking.";
+    "Taxi à Nice et transferts aéroport 24/7. Service officiel sur la Côte d'Azur : aéroport, VSL, excursions. Mercedes GLC & Van premium. Réservation en ligne.";
 
   return {
     metadataBase: new URL(baseUrl),
@@ -33,7 +26,7 @@ export async function generateSEOMetadata(locale = "fr") {
 
     openGraph: {
       type: "website",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: "fr_FR",
       url: "/",
       siteName,
       title: titleBase,
@@ -75,12 +68,8 @@ export async function generateSEOMetadata(locale = "fr") {
         { url: "/logo1.png", sizes: "512x512", type: "image/png" },
         { url: "/favicon.ico", sizes: "any" },
       ],
-      apple: [
-        { url: "/logo1.png", sizes: "180x180", type: "image/png" },
-      ],
-      shortcut: [
-        { url: "/logo1.png", type: "image/png" },
-      ],
+      apple: [{ url: "/logo1.png", sizes: "180x180", type: "image/png" }],
+      shortcut: [{ url: "/logo1.png", type: "image/png" }],
     },
   };
 }
