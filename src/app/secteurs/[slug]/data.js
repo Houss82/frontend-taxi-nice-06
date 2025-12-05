@@ -366,15 +366,14 @@ export const sectorData = {
         city: "Cannes",
         speciality: "Hotel 5★ Grand Luxe",
         website:
-          "https://www.hyatt.com/fr-FR/hotel/france/hotel-martinez/jcnrz",
+          "https://www.hyatt.com/unbound-collection/fr-FR/jcagh-hotel-martinez",
         phone: "04 93 90 12 34",
       },
       {
         name: "Carlton Cannes",
         city: "Cannes",
         speciality: "Palace historique 5★",
-        website:
-          "https://www.ihg.com/carltonhotels/hotels/fr/fr/cannes/ncejw/hoteldetail",
+        website: "https://carltoncannes.com/",
         phone: "04 93 06 40 06",
       },
       {
@@ -586,7 +585,7 @@ export const sectorData = {
         city: "Saint-Laurent-du-Var",
         description: "Centre médico-chirurgical réputé.",
         speciality: "Cardiologie, ophtalmologie, pneumologie",
-        website: "https://www.tzanck.org/saint-laurent-du-var/",
+        website: "https://saintlaurentduvar.tzanck.org/",
         phone: "04 92 27 33 33",
       },
       {

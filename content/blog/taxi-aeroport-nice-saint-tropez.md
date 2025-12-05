@@ -187,7 +187,7 @@ Notre service de transfert couvre les deux terminaux. Votre chauffeur vous atten
 
 **À propos de cette station balnéaire mythique :**
 
-Cette destination emblématique de la Côte d'Azur est connue pour son port de plaisance, ses plages de renommée mondiale comme [Pampelonne](https://www.saint-tropez.fr/fr/decouvrir/plages), et son patrimoine culturel riche. La ville accueille chaque année des millions de visiteurs, notamment pendant la saison estivale. Pour découvrir les événements et attractions, consultez le [site officiel de l'Office du Tourisme de Saint-Tropez](https://www.saint-tropez.fr/).
+Cette destination emblématique de la Côte d'Azur est connue pour son port de plaisance, ses plages de renommée mondiale comme [Pampelonne](https://www.camping-argentiere.com/fr/decouvrir-la-region/plage-pampelonne/), et son patrimoine culturel riche. La ville accueille chaque année des millions de visiteurs, notamment pendant la saison estivale. Pour découvrir les événements et attractions, consultez le [site officiel de l'Office du Tourisme de Saint-Tropez](https://www.sainttropeztourisme.com/fr/office-de-tourisme/).
 
 ---
 
