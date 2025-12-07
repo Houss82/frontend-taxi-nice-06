@@ -73,6 +73,18 @@ const nextConfig = {
         destination: "/services/taxi-aeroport-nice",
         permanent: true, // 301 - Ancienne URL pluriel → nouvelle URL
       },
+      // ✅ Redirection page secteurs/nice vers page d'accueil (évite cannibalisation SEO)
+      {
+        source: "/secteurs/nice",
+        destination: "/",
+        permanent: true, // 301 - Redirection vers page d'accueil
+      },
+      // ✅ Redirection page taxi-nice vers page d'accueil (évite cannibalisation SEO)
+      {
+        source: "/taxi-nice",
+        destination: "/",
+        permanent: true, // 301 - Redirection vers page d'accueil
+      },
       // ✅ Redirections anciens slugs anglais vers les articles FR
       {
         source: "/blog/nice-airport-transfer-guide",

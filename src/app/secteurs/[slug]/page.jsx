@@ -24,7 +24,25 @@ export async function generateMetadata({ params }) {
     return {};
   }
 
-  const title = `${data.hero.title} | Taxi Nice 06`;
+  let title;
+  if (data.slug === "monaco") {
+    title = "Transfert Nice - Monaco | Navette Premium 24h/24";
+  } else if (data.slug === "cannes") {
+    title = "Transfert Nice - Cannes | Navette Premium 24h/24";
+  } else if (data.slug === "antibes") {
+    title = "Transfert Nice - Antibes | Navette Premium 24h/24";
+  } else if (data.slug === "menton") {
+    title = "Transfert Nice - Menton | Navette Premium 24h/24";
+  } else if (data.slug === "saint-tropez") {
+    title = "Transfert Nice - Saint-Tropez | Navette Premium 24h/24";
+  } else if (data.slug === "nice-gare") {
+    title = "Transfert Gare SNCF Nice | Nice-Ville & Riquier";
+  } else if (data.slug === "nice-centre-ville") {
+    title = "Transfert Centre-Ville Nice | Vieux-Nice & Promenade";
+  } else {
+    title = `${data.hero.title} | Taxi Nice 06`;
+  }
+
   const description =
     data.introduction[0]?.slice(0, 155) ??
     `Taxi Nice 06 - Chauffeur privé ${data.cityName}.`;

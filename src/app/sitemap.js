@@ -14,7 +14,6 @@ export default function sitemap() {
 
   const staticPages = [
     { path: "", priority: 1.0, changeFrequency: "weekly" },
-    { path: "/taxi-nice", priority: 1.0, changeFrequency: "weekly" },
     { path: "/reservation", priority: 0.9, changeFrequency: "weekly" },
     {
       path: "/services/taxi-aeroport-nice",
@@ -54,7 +53,6 @@ export default function sitemap() {
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     { path: "/partenaires", priority: 0.6, changeFrequency: "monthly" },
     { path: "/secteurs", priority: 0.6, changeFrequency: "weekly" },
-    { path: "/secteurs/nice", priority: 0.9, changeFrequency: "weekly" },
     { path: "/secteurs/nice-gare", priority: 0.8, changeFrequency: "weekly" },
     {
       path: "/secteurs/nice-centre-ville",

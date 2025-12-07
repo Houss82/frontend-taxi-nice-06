@@ -18,6 +18,7 @@ import {
   User,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -171,7 +172,14 @@ export default function ContactPage() {
             </h1>
             <div className="w-24 h-1 bg-white rounded-full mb-8"></div>
             <p className="text-xl md:text-2xl leading-relaxed">
-              {contactDescription}
+              Notre équipe est disponible pour répondre à toutes vos questions et vous aider à organiser votre transport sur la Côte d'Azur.{" "}
+              <Link
+                href="/"
+                className="text-white underline hover:text-blue-200 transition-colors font-semibold"
+              >
+                Découvrez notre service de taxi à Nice
+              </Link>
+              .
             </p>
           </motion.div>
         </div>

@@ -100,7 +100,7 @@ export default function Page() {
           </div>
 
           {/* Contenu */}
-          <div className="relative min-h-full flex flex-col items-center justify-center px-4 text-center py-20 sm:py-16 md:py-8">
+          <div className="relative min-h-full flex flex-col items-center justify-center px-4 lg:px-8 text-center py-20 sm:py-10 lg:py-2 md:py-8">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-4 animate-fade-in">
               <svg
@@ -200,7 +200,7 @@ export default function Page() {
 
         {/* SECTION 1 : Présentation / SEO principale */}
         <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-          <div className="max-w-5xl mx-auto px-4">
+          <div className="max-w-5xl mx-auto px-4 lg:px-8">
             {/* H2 n°1 */}
             <div className="text-center mb-12 relative">
               {/* Badge */}
@@ -252,7 +252,7 @@ export default function Page() {
                     et toute la Côte d'Azur. Suivi de vol, accueil personnalisé,
                     véhicules haut de gamme. Découvrez notre{" "}
                     <Link
-                      href="/taxi-nice"
+                      href="/"
                       className="text-blue-600 hover:text-blue-800 underline font-medium"
                     >
                       service de taxi Nice 24/7
@@ -350,7 +350,7 @@ export default function Page() {
                     {
                       title: "Taxi Nice & chauffeur privé",
                       text: "Service 24h/24 et 7j/7",
-                      link: "/taxi-nice",
+                      link: "/",
                     },
                     {
                       title: "Transport médical VSL / conventionné",
@@ -383,7 +383,9 @@ export default function Page() {
                             {item.title}
                           </Link>
                         ) : (
-                          <strong className="text-gray-900">{item.title}</strong>
+                          <strong className="text-gray-900">
+                            {item.title}
+                          </strong>
                         )}
                         <p className="text-gray-600 text-sm">{item.text}</p>
                       </div>
@@ -397,7 +399,7 @@ export default function Page() {
 
         {/* Secteurs desservis */}
         <section className="py-20 bg-white">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl lg:max-w-5xl mx-auto px-4 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-xl font-black text-gray-900 mb-6">
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
@@ -498,7 +500,7 @@ export default function Page() {
 
         {/* Derniers articles */}
         <section className="py-20 bg-gray-50 border-t border-gray-100">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl lg:max-w-5xl mx-auto px-4 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
                 <h2 className="text-4xl font-black text-gray-900">
@@ -619,7 +621,7 @@ export default function Page() {
 
         {/* FAQ */}
         <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl lg:max-w-5xl mx-auto px-4 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
                 Questions{" "}
@@ -642,7 +644,7 @@ export default function Page() {
                 <p className="text-gray-700 leading-relaxed">
                   Vous pouvez réserver votre{" "}
                   <Link
-                    href="/taxi-nice"
+                    href="/"
                     className="text-blue-600 hover:text-blue-800 underline font-medium"
                   >
                     taxi à Nice
@@ -768,7 +770,7 @@ export default function Page() {
 
         {/* Bloc SEO additionnel pour améliorer le ratio contenu/code */}
         <section className="py-16 bg-gray-50">
-          <div className="max-w-5xl mx-auto px-4">
+          <div className="max-w-5xl mx-auto px-4 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
               Taxi à Nice, Aéroport de Nice et{" "}
               <span className="text-blue-600">Côte d&apos;Azur</span>
@@ -777,12 +779,13 @@ export default function Page() {
               <p className="text-gray-700 leading-relaxed text-lg">
                 Notre société de{" "}
                 <Link
-                  href="/taxi-nice"
+                  href="/"
                   className="text-blue-600 hover:text-blue-800 underline font-medium"
                 >
                   taxi basée à Nice
                 </Link>{" "}
-                assure vos déplacements <strong className="text-blue-600">7j/7</strong> dans tout le
+                assure vos déplacements{" "}
+                <strong className="text-blue-600">7j/7</strong> dans tout le
                 département des Alpes-Maritimes : <strong>Nice</strong>,
                 Saint-Laurent du Var, Cagnes-sur-Mer, Villefranche-sur-Mer,
                 Beaulieu, Eze, <strong>Monaco</strong>, Menton,{" "}
@@ -795,13 +798,13 @@ export default function Page() {
               <p className="text-gray-700 leading-relaxed">
                 Si vous recherchez un{" "}
                 <Link
-                  href="/taxi-nice"
+                  href="/"
                   className="text-blue-600 hover:text-blue-800 underline font-medium"
                 >
                   taxi à Nice
                 </Link>{" "}
-                fiable, ponctuel et avec un véhicule haut de gamme, Taxi Nice 06 est le
-                bon choix. Nous proposons aussi un service de{" "}
+                fiable, ponctuel et avec un véhicule haut de gamme, Taxi Nice 06
+                est le bon choix. Nous proposons aussi un service de{" "}
                 <strong className="text-blue-600">taxi conventionné</strong>{" "}
                 pour vos trajets médicaux vers les hôpitaux ou centres de soins
                 (sous conditions CPAM). La réservation est possible{" "}

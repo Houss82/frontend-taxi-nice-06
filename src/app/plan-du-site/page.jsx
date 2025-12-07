@@ -42,13 +42,6 @@ export default function PlanDuSitePage() {
       color: "text-cyan-600",
     },
     {
-      title: "Taxi Nice 24/7",
-      url: "/taxi-nice",
-      description: "Page principale Taxi Nice avec tous nos services",
-      icon: Car,
-      color: "text-blue-600",
-    },
-    {
       title: "Réservation",
       url: "/reservation",
       description: "Réservez votre taxi Nice en ligne",
@@ -124,11 +117,6 @@ export default function PlanDuSitePage() {
   ];
 
   const secteursPages = [
-    {
-      title: "Taxi Nice",
-      url: "/secteurs/nice",
-      description: "Guide complet : zones, hôpitaux et établissements",
-    },
     {
       title: "Taxi Nice Gare",
       url: "/secteurs/nice-gare",
