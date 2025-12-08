@@ -55,6 +55,11 @@ export const sectorData = {
         description:
           "Gestion des navettes VIP pour le Grand Prix, le Monaco Yacht Show ou les mariages de prestige.",
       },
+      {
+        title: "Conditions de réservation à Monaco",
+        description:
+          "La prise en charge à Monaco est soumise à réservation : 1 heure à l'avance en été et 3 heures à l'avance en hiver.",
+      },
     ],
     sellingPoints: [
       {
@@ -166,6 +171,12 @@ export const sectorData = {
           "Comment réserver un taxi pour Monaco depuis l'aéroport de Nice ?",
         answer:
           "Contactez-nous par téléphone ou via le formulaire de réservation. Nous suivons votre vol en temps réel et un chauffeur vous attend au terminal avec un panneau nominatif.",
+      },
+      {
+        question:
+          "Quels sont les délais de réservation pour une prise en charge à Monaco ?",
+        answer:
+          "La prise en charge à Monaco est toujours soumise à réservation : réservation obligatoire 1 heure à l'avance en été (avril à septembre) et 3 heures à l'avance en hiver (octobre à mars).",
       },
       {
         question: "Proposez-vous un service lors du Grand Prix de Monaco ?",
