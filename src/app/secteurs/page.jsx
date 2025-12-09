@@ -27,13 +27,6 @@ const sectors = [
     image: "/Nice-jean-medecin.jpeg",
   },
   {
-    slug: "monaco",
-    name: "Monaco",
-    description:
-      "Transferts premium, accueil portuaire et déplacements professionnels 24/7.",
-    image: "/Hotel-Monaco.jpeg",
-  },
-  {
     slug: "cannes",
     name: "Cannes",
     description:
@@ -85,14 +78,14 @@ export default function SecteursPage() {
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Nos secteurs desservis
                 <span className="block text-primary">
-                  Nice, Nice Gare, Nice Centre-Ville, Monaco, Cannes, Antibes,
+                  Nice, Nice Gare, Nice Centre-Ville, Cannes, Antibes,
                   Menton & plus
                 </span>
               </h1>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Notre équipe de chauffeurs privés opère sur toute la Côte
                 d&apos;Azur avec un service premium 24/7. Découvrez nos pages
-                dédiées pour Nice, Nice Gare, Nice Centre-Ville, Monaco, Cannes,
+                dédiées pour Nice, Nice Gare, Nice Centre-Ville, Cannes,
                 Antibes et Menton, et accédez à des informations détaillées sur
                 les transferts, les établissements de santé desservis et nos
                 engagements qualité.

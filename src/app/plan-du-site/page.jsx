@@ -128,11 +128,6 @@ export default function PlanDuSitePage() {
       description: "Courses locales dans le centre-ville de Nice",
     },
     {
-      title: "Taxi Monaco",
-      url: "/secteurs/monaco",
-      description: "Transferts Nice vers Monaco et Principauté",
-    },
-    {
       title: "Taxi Cannes",
       url: "/secteurs/cannes",
       description: "Transferts Nice vers Cannes et Palais des Festivals",
