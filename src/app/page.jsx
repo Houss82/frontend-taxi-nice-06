@@ -28,19 +28,6 @@ export default function Page() {
 
   const citySectors = [
     {
-      slug: "monaco",
-      name: "Taxi Nice vers Monaco",
-      tagline: "Transferts Monaco ↔ Nice 24h/24",
-      description:
-        "Accueil port Hercule, héliport et hôtels 5★ avec chauffeur bilingue.",
-      image: "/st-jean-cap-ferrat4.jpeg",
-      alt: "Taxi premium entre Nice et Monaco",
-      gradient: "from-blue-500 via-cyan-400 to-blue-600",
-      overlay: "from-blue-900/80 via-blue-700/20 to-transparent",
-      badgeClass: "bg-blue-500/25 border-blue-200 text-blue-50",
-      linkColor: "text-blue-600 hover:text-blue-800",
-    },
-    {
       slug: "cannes",
       name: "Taxi Nice vers Cannes",
       tagline: "Festival & congrès depuis Nice",
@@ -65,6 +52,19 @@ export default function Page() {
       overlay: "from-emerald-900/80 via-teal-700/20 to-transparent",
       badgeClass: "bg-emerald-500/25 border-emerald-200 text-emerald-50",
       linkColor: "text-emerald-600 hover:text-emerald-800",
+    },
+    {
+      slug: "menton",
+      name: "Taxi Nice vers Menton",
+      tagline: "Frontière italienne & jardins remarquables",
+      description:
+        "Transferts vers Menton, villas Belle Époque et frontière italienne 24/7.",
+      image: "/taxi-nice-Menton.png",
+      alt: "Taxi vers Menton depuis Nice",
+      gradient: "from-amber-500 via-orange-400 to-red-500",
+      overlay: "from-red-900/80 via-orange-700/20 to-transparent",
+      badgeClass: "bg-amber-500/25 border-amber-200 text-amber-50",
+      linkColor: "text-amber-600 hover:text-amber-800",
     },
   ];
 
@@ -248,9 +248,10 @@ export default function Page() {
                     <strong className="text-blue-900">
                       Taxi aéroport de Nice
                     </strong>{" "}
-                    – transferts toutes distances vers Cannes, Monaco, Antibes
-                    et toute la Côte d'Azur. Suivi de vol, accueil personnalisé,
-                    véhicules haut de gamme. Découvrez notre{" "}
+                    – transferts toutes distances vers Cannes, Antibes,
+                    Saint-Tropez, Menton et toute la Côte d'Azur. Suivi de vol,
+                    accueil personnalisé, véhicules haut de gamme. Découvrez
+                    notre{" "}
                     <Link
                       href="/"
                       className="text-blue-600 hover:text-blue-800 underline font-medium"
@@ -268,31 +269,31 @@ export default function Page() {
                   </h2>
 
                   <div className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="flex gap-3">
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-white text-xs font-bold">✓</span>
                       </div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 leading-relaxed flex-1">
                         Véhicules Mercedes récents (GLC, Classe V) pour votre
                         confort
                       </p>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="flex gap-3">
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-white text-xs font-bold">✓</span>
                       </div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 leading-relaxed flex-1">
                         Transferts aéroport de Nice – Terminal 1 et 2, toutes
-                        distances, Monaco, Cannes
+                        distances, Saint-Tropez, Cannes, Antibes, Menton
                       </p>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="flex gap-3">
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-white text-xs font-bold">✓</span>
                       </div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 leading-relaxed flex-1">
                         <a
                           href="/tarifs"
                           className="text-blue-600 hover:text-blue-800 underline"
@@ -362,32 +363,34 @@ export default function Page() {
                     },
                     {
                       title: "Excursions Côte d’Azur",
-                      text: "Monaco, Cannes, Antibes, arrière-pays",
+                      text: "Saint-Tropez, Cannes, Antibes, arrière-pays",
                     },
                   ].map((item, idx) => (
                     <div
                       key={item.title}
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                      className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                     >
-                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-blue-600 text-xs font-bold">
                           {idx + 1}
                         </span>
                       </div>
-                      <div>
+                      <div className="flex-1">
                         {item.link ? (
                           <Link
                             href={item.link}
-                            className="text-gray-900 hover:text-blue-600 transition-colors font-semibold"
+                            className="text-gray-900 hover:text-blue-600 transition-colors font-semibold block leading-tight"
                           >
                             {item.title}
                           </Link>
                         ) : (
-                          <strong className="text-gray-900">
+                          <strong className="text-gray-900 block leading-tight">
                             {item.title}
                           </strong>
                         )}
-                        <p className="text-gray-600 text-sm">{item.text}</p>
+                        <p className="text-gray-600 text-sm mt-1 leading-relaxed">
+                          {item.text}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -410,8 +413,8 @@ export default function Page() {
                 Taxi privé Nice ↔ Côte d&apos;Azur
               </h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Nos pages dédiées détaillent nos trajets Nice ↔ Monaco, Cannes
-                et Antibes : tarifs estimatifs, zones couvertes, établissements
+                Nos pages dédiées détaillent nos trajets Nice ↔ Cannes et
+                Antibes : tarifs estimatifs, zones couvertes, établissements
                 desservis, FAQ et ressources locales pour planifier vos
                 déplacements.
               </p>
@@ -452,7 +455,6 @@ export default function Page() {
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, 33vw"
-                      priority={city.slug === "monaco"}
                       quality={80}
                     />
                     <div
@@ -664,8 +666,8 @@ export default function Page() {
                 <p className="text-gray-700 leading-relaxed">
                   Nos <strong>tarifs de taxi à Nice</strong> sont fixes et
                   transparents. Ils varient selon la destination (Cannes,
-                  Monaco, Antibes...) et le type de véhicule choisi (Mercedes
-                  GLC ou Van Premium). Consultez la{" "}
+                  Saint-Tropez, Antibes...) et le type de véhicule choisi
+                  (Mercedes GLC ou Van Premium). Consultez la{" "}
                   <a
                     href="/tarifs"
                     className="text-blue-600 hover:text-blue-800 underline font-medium"
@@ -717,9 +719,9 @@ export default function Page() {
                 <p className="text-gray-700 leading-relaxed">
                   Oui, nous proposons des{" "}
                   <strong>excursions privées sur la Côte d'Azur</strong> :
-                  Monaco, Cannes, Saint-Tropez, Antibes ou Grasse. Nos
-                  chauffeurs vous accompagnent pour découvrir les plus beaux
-                  sites de la région à votre rythme.
+                  Cannes, Saint-Tropez, Antibes ou Grasse. Nos chauffeurs vous
+                  accompagnent pour découvrir les plus beaux sites de la région
+                  à votre rythme.
                 </p>
               </div>
 
@@ -788,12 +790,11 @@ export default function Page() {
                 <strong className="text-blue-600">7j/7</strong> dans tout le
                 département des Alpes-Maritimes : <strong>Nice</strong>,
                 Saint-Laurent du Var, Cagnes-sur-Mer, Villefranche-sur-Mer,
-                Beaulieu, Eze, <strong>Monaco</strong>, Menton,{" "}
-                <strong>Antibes</strong> et <strong>Cannes</strong>. Nous
-                prenons en charge aussi bien les arrivées à l&apos;aéroport de
-                Nice que les départs vers les hôtels, ports, gares et cliniques.
-                Nos chauffeurs sont expérimentés et parlent{" "}
-                <strong>français et anglais</strong>.
+                Beaulieu, Eze, Menton, <strong>Antibes</strong> et{" "}
+                <strong>Cannes</strong>. Nous prenons en charge aussi bien les
+                arrivées à l&apos;aéroport de Nice que les départs vers les
+                hôtels, ports, gares et cliniques. Nos chauffeurs sont
+                expérimentés et parlent <strong>français et anglais</strong>.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Si vous recherchez un{" "}
@@ -828,7 +829,7 @@ export default function Page() {
                 <strong className="text-blue-600">
                   transferts touristiques
                 </strong>{" "}
-                sur la Côte d&apos;Azur : Monaco, Cannes, Antibes,
+                sur la Côte d&apos;Azur : Cannes, Antibes, Saint-Tropez,
                 Saint-Paul-de-Vence, Eze, Gourdon, Grasse. Idéal pour les
                 croisiéristes, familles et voyageurs d&apos;affaires.
               </p>

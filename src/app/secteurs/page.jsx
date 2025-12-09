@@ -45,7 +45,7 @@ const sectors = [
     name: "Menton",
     description:
       "Transferts vers frontière italienne, jardins remarquables et villas Belle Époque 24/7.",
-    image: "/taxi-nice-Menton.png",
+    image: "/taxi-nice-menton-lamparo.jpeg",
   },
 ];
 
@@ -78,16 +78,16 @@ export default function SecteursPage() {
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Nos secteurs desservis
                 <span className="block text-primary">
-                  Nice, Nice Gare, Nice Centre-Ville, Cannes, Antibes,
-                  Menton & plus
+                  Nice, Nice Gare, Nice Centre-Ville, Cannes, Antibes, Menton &
+                  plus
                 </span>
               </h1>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Notre équipe de chauffeurs privés opère sur toute la Côte
                 d&apos;Azur avec un service premium 24/7. Découvrez nos pages
-                dédiées pour Nice, Nice Gare, Nice Centre-Ville, Cannes,
-                Antibes et Menton, et accédez à des informations détaillées sur
-                les transferts, les établissements de santé desservis et nos
+                dédiées pour Nice, Nice Gare, Nice Centre-Ville, Cannes, Antibes
+                et Menton, et accédez à des informations détaillées sur les
+                transferts, les établissements de santé desservis et nos
                 engagements qualité.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -149,7 +149,7 @@ export default function SecteursPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    Taxi {sector.name}
+                    {sector.name}
                   </h3>
                   <p className="text-gray-600 mb-4">{sector.description}</p>
                   <span className="text-primary font-semibold">
@@ -170,7 +170,7 @@ export default function SecteursPage() {
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Nous intervenons chaque jour depuis l&apos;aéroport Nice Côte
-                  d&apos;Azur, la gare de Nice-Ville, le port de Monaco, le
+                  d&apos;Azur, la gare de Nice-Ville, le port de Saint-Tropez,
                   Palais des Festivals à Cannes, le port Vauban d&apos;Antibes
                   ou encore la frontière italienne à Menton. Notre objectif :
                   vous assurer ponctualité, confort et discrétion pour chaque

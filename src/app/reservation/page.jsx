@@ -298,11 +298,11 @@ export default function ReservationPage() {
       {/* Contenu principal en deux sections verticales */}
       <div className="min-h-screen flex flex-col">
         {/* Section haute - Image avec titre */}
-        <div className="w-full h-[50vh] relative">
+        <div className="w-full h-[65vh] relative">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/image-résa.jpeg')",
+              backgroundImage: "url('/taxi-nice-pomenade-des-anglais.jpeg')",
             }}
           />
           {/* Overlay pour améliorer la lisibilité du contenu */}
@@ -462,7 +462,10 @@ export default function ReservationPage() {
 
                     <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                       <div className="space-y-2">
-                        <label htmlFor="date" className="text-gray-700 font-semibold flex items-center gap-2">
+                        <label
+                          htmlFor="date"
+                          className="text-gray-700 font-semibold flex items-center gap-2"
+                        >
                           <Calendar className="w-4 h-4 text-primary" />
                           Date *
                         </label>
@@ -478,7 +481,10 @@ export default function ReservationPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <label htmlFor="heure" className="text-gray-700 font-semibold flex items-center gap-2">
+                        <label
+                          htmlFor="heure"
+                          className="text-gray-700 font-semibold flex items-center gap-2"
+                        >
                           <Clock className="w-4 h-4 text-primary" />
                           Heure *
                         </label>
