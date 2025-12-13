@@ -260,8 +260,8 @@ export const sectorData = {
       imageAlt: "Taxi haut de gamme à Cannes",
     },
     introduction: [
-      "Notre équipe assure vos déplacements à Cannes toute l'année : salons professionnels, festival du film, rendez-vous d'affaires et séjours balnéaires. Nous réalisons vos transferts depuis ou vers l'aéroport de Nice, mais aussi directement depuis la ville de Nice vers Cannes et sa Croisette.",
-      "Nous garantissons un accueil personnalisé depuis Nice centre, l'aéroport Nice Côte d'Azur ou l'aérodrome de Cannes-Mandelieu. Nos chauffeurs bilingues connaissent parfaitement les accès VIP, les hôtels de luxe et les lieux événementiels de la ville.",
+      "Notre équipe assure vos déplacements à Cannes toute l'année : salons professionnels, festival du film, rendez-vous d'affaires et séjours balnéaires. Nous réalisons vos **transferts aéroport Nice Côte d'Azur vers Cannes** avec suivi de vol en temps réel, mais aussi directement depuis la ville de Nice vers Cannes et sa Croisette.",
+      "Nous garantissons un accueil personnalisé depuis Nice centre, l'**aéroport Nice Côte d'Azur** ou l'aérodrome de Cannes-Mandelieu. Nos chauffeurs bilingues connaissent parfaitement les accès VIP de l'aéroport, les hôtels de luxe et les lieux événementiels de la ville. Pour vos arrivées à l'aéroport, votre chauffeur vous attend dans le hall des arrivées avec une pancarte à votre nom.",
     ],
     secondaryIntro: [
       "Vous organisez un congrès au Palais des Festivals ? Nous planifions les navettes pour vos équipes, speakers et invités, avec disponibilité 24/7 et coordinateur sur demande.",
@@ -269,12 +269,12 @@ export const sectorData = {
     ],
     servicesTitle: "Nos prestations Taxi Cannes",
     services: [
-      "Transferts Aéroport Nice ↔ Cannes / Mandelieu",
-      "Navettes congrès (MIPIM, MIPCOM, Cannes Lions, Film Festival)",
-      "Déplacements hôtels 5★ : Martinez, Majestic, Carlton",
-      "Transferts portuaires yacht & croisière",
+      "Transferts Aéroport Nice Côte d'Azur ↔ Cannes avec suivi de vol",
+      "Navettes aéroport pour congrès (MIPIM, MIPCOM, Cannes Lions, Film Festival)",
+      "Déplacements depuis l'aéroport vers hôtels 5★ : Martinez, Majestic, Carlton",
+      "Transferts portuaires yacht & croisière depuis l'aéroport",
       "Chauffeur privé shopping & restaurants",
-      "Transport médical vers CH Cannes & cliniques privées",
+      "Transport médical vers CH Cannes & cliniques privées depuis l'aéroport",
     ],
     coverageDescription: "Zones principales couvertes par nos chauffeurs :",
     coverageAreas: [
@@ -306,9 +306,9 @@ export const sectorData = {
     ],
     sellingPoints: [
       {
-        title: "✓ Accueil VIP au terminal",
+        title: "✓ Accueil VIP à l'aéroport",
         description:
-          "Pancarte nominative, assistance bagages, chauffeures bilingues.",
+          "Pancarte nominative au terminal aéroport, assistance bagages, chauffeurs bilingues, suivi de vol en temps réel.",
       },
       {
         title: "✓ Capacité événementielle",
@@ -461,7 +461,9 @@ export const sectorData = {
       },
     ],
     pricing: [
-      "Nice aéroport ↔ Cannes à partir de 90€",
+      "Transfert aéroport Nice Côte d'Azur ↔ Cannes à partir de 90€",
+      "Aéroport Nice → Cannes (Mercedes Classe E) : 110€",
+      "Aéroport Nice → Cannes (Mercedes Classe V 7 places) : 130€",
       "Cannes ↔ Monaco dès 130€",
       "Mise à disposition 80€/heure (minimum 2h)",
       "Devis personnalisé pour groupes et événements",
@@ -672,11 +674,11 @@ export const sectorData = {
     ],
     resource: {
       description:
-        "Organisez facilement vos trajets sur Antibes avec notre guide complet des partenaires locaux.",
+        "Organisez facilement vos trajets sur Antibes avec notre guide complet des partenaires locaux et nos articles dédiés aux transferts aéroport.",
       links: [
         {
-          label: "Guide Taxi Antibes",
-          url: "https://taxi-nice-06.com/blog/taxi-antibes-partenaire",
+          label: "Taxi aéroport Nice → Antibes : durée, tarifs et conseils",
+          url: "https://taxi-nice-06.com/blog/taxi-aeroport-nice-antibes",
         },
       ],
     },
@@ -1236,7 +1238,7 @@ export const sectorData = {
     ],
     secondaryIntro: [
       "Nous proposons un service de transport médical conventionné CPAM pour vos rendez-vous au Centre Hospitalier de Menton ou vers les établissements spécialisés de Nice et Monaco. Nos véhicules adaptés assurent également les transferts vers les cliniques privées de la région.",
-      "Pour vos loisirs, nous organisons des circuits personnalisés : découverte de la vieille ville de Menton, visite des jardins Serre de la Madone et Val Rahmeh, excursions vers les villages perchés de l'arrière-pays mentonnais ou transferts vers les stations de ski des Alpes-Maritimes. Pour en savoir plus sur nos transferts depuis l'aéroport de Nice vers Menton, consultez notre [guide complet dédié](/blog/taxi-aeroport-nice-menton) avec tarifs détaillés, horaires et conseils pratiques.",
+      "Pour vos loisirs, nous organisons des circuits personnalisés : découverte de la vieille ville de Menton, visite des jardins Serre de la Madone et Val Rahmeh, excursions vers les villages perchés de l'arrière-pays mentonnais ou transferts vers les stations de ski des Alpes-Maritimes. Pour plus d'informations sur les transferts aéroport Nice → Menton, consultez notre [article dédié aux transferts aéroport](/blog/taxi-aeroport-nice-menton) avec tarifs détaillés, durée de trajet et conseils pratiques.",
     ],
     contentImage: {
       src: "/taxi-nice-Menton.png",
@@ -1418,10 +1420,10 @@ export const sectorData = {
     ],
     resource: {
       description:
-        "Organisez facilement vos trajets sur Menton avec notre guide complet des sites à découvrir.",
+        "Organisez facilement vos trajets sur Menton avec nos articles dédiés aux transferts et sites à découvrir.",
       links: [
         {
-          label: "Transfert Aéroport Nice → Menton : Guide complet",
+          label: "Taxi aéroport Nice → Menton : durée, tarifs et conseils",
           url: "/blog/taxi-aeroport-nice-menton",
         },
       ],
@@ -1445,7 +1447,9 @@ export const sectorData = {
       },
     ],
     pricing: [
-      "Menton ↔ Nice aéroport dès 130€",
+      "Transfert aéroport Nice Côte d'Azur ↔ Menton dès 130€",
+      "Aéroport Nice → Menton (Mercedes Classe E) : 120€",
+      "Aéroport Nice → Menton (Mercedes Classe V 7 places) : 150€",
       "Menton ↔ Nice centre dès 110€",
       "Forfait VSL conventionné selon barème CPAM",
     ],
@@ -1495,7 +1499,7 @@ export const sectorData = {
     ],
     secondaryIntro: [
       "Nous proposons un service de transport médical conventionné CPAM pour vos rendez-vous au Centre Hospitalier de Saint-Tropez ou vers les établissements spécialisés de Fréjus, Draguignan et Nice. Nos véhicules adaptés assurent également les transferts vers les cliniques privées de la région.",
-      "Pour vos loisirs et événements, nous organisons des circuits personnalisés : découverte de la vieille ville de Saint-Tropez, visite du musée de l'Annonciade, excursions vers les plages de Pampelonne, Ramatuelle et Gassin, ou transferts vers les événements nautiques. Pour en savoir plus sur nos transferts depuis l'aéroport de Nice vers Saint-Tropez, consultez notre [guide complet dédié](/blog/taxi-aeroport-nice-saint-tropez) avec tarifs détaillés, horaires et conseils pratiques.",
+      "Pour vos loisirs et événements, nous organisons des circuits personnalisés : découverte de la vieille ville de Saint-Tropez, visite du musée de l'Annonciade, excursions vers les plages de Pampelonne, Ramatuelle et Gassin, ou transferts vers les événements nautiques. Pour plus d'informations sur les transferts aéroport Nice → Saint-Tropez, consultez notre [article dédié aux transferts aéroport](/blog/taxi-aeroport-nice-saint-tropez) avec tarifs détaillés, durée de trajet et conseils pratiques.",
     ],
     contentImage: {
       src: "/aéroport-Nice-saint-tropez.jpeg",
@@ -1503,7 +1507,7 @@ export const sectorData = {
     },
     servicesTitle: "Prestations Taxi Saint-Tropez & Golfe",
     services: [
-      "Transferts Aéroport Nice ↔ Saint-Tropez avec suivi de vol",
+      "Transferts aéroport Nice Côte d'Azur ↔ Saint-Tropez avec suivi de vol",
       "Navettes port de plaisance & quai des yachts",
       "Transport vers plages Pampelonne & sites balnéaires",
       "Accompagnement médical conventionné CPAM",
@@ -1544,12 +1548,12 @@ export const sectorData = {
       {
         title: "✓ Réactivité Golfe",
         description:
-          "Prise en charge rapide au port, aux plages ou à domicile avec connaissance des horaires de circulation estivale.",
+          "Prise en charge rapide au port, aux plages, à l'aéroport ou à domicile avec connaissance des horaires de circulation estivale.",
       },
       {
         title: "✓ Confort véhicules premium",
         description:
-          "Berlines Mercedes et vans climatisés adaptés aux familles et groupes pour tous vos trajets longue distance.",
+          "Berlines Mercedes et vans climatisés adaptés aux familles et groupes pour tous vos trajets longue distance, notamment depuis l'aéroport Nice Côte d'Azur.",
       },
       {
         title: "✓ Transport conventionné",
@@ -1559,7 +1563,7 @@ export const sectorData = {
       {
         title: "✓ Support 24/7",
         description:
-          "Équipe disponible de jour comme de nuit pour vos urgences et transferts tardifs, même en haute saison.",
+          "Équipe disponible de jour comme de nuit pour vos urgences et transferts tardifs depuis l'aéroport, même en haute saison.",
       },
     ],
     hospitalsTitle: "Établissements de santé desservis depuis Saint-Tropez",
@@ -1648,7 +1652,7 @@ export const sectorData = {
         question:
           "Quel est le tarif pour un transfert aéroport Nice Côte d'Azur depuis Saint-Tropez ?",
         answer:
-          "Le forfait débute à 280€ selon l'adresse de prise en charge précise et l'heure. La distance est d'environ 113 km (1h30 de trajet). Devis personnalisé sur simple demande avec confirmation immédiate. Pour plus de détails, consultez notre [guide complet transfert aéroport Nice → Saint-Tropez](/blog/taxi-aeroport-nice-saint-tropez).",
+          "Le forfait débute à 280€ selon l'adresse de prise en charge précise et l'heure. La distance est d'environ 113 km (1h30 de trajet). Devis personnalisé sur simple demande avec confirmation immédiate. Pour plus de détails, consultez notre [article dédié aux transferts aéroport Nice → Saint-Tropez](/blog/taxi-aeroport-nice-saint-tropez).",
       },
       {
         question:
@@ -1676,11 +1680,12 @@ export const sectorData = {
     ],
     resource: {
       description:
-        "Organisez facilement vos trajets sur Saint-Tropez avec notre guide complet des transferts aéroport et sites à découvrir.",
+        "Organisez facilement vos trajets sur Saint-Tropez avec nos articles dédiés aux transferts aéroport et sites à découvrir.",
       links: [
         {
-          label: "Transfert Aéroport Nice → Saint-Tropez : Guide complet",
-          url: "/blog/taxi-aeroport-nice-saint-tropez",
+          label:
+            "Taxi aéroport Nice → Saint-Tropez : durée, tarifs et conseils",
+          url: "https://taxi-nice-06.com/blog/taxi-aeroport-nice-saint-tropez",
         },
       ],
     },
@@ -1703,7 +1708,9 @@ export const sectorData = {
       },
     ],
     pricing: [
-      "Saint-Tropez ↔ Nice aéroport dès 280€",
+      "Transfert aéroport Nice Côte d'Azur ↔ Saint-Tropez dès 280€",
+      "Aéroport Nice → Saint-Tropez (Mercedes GLC) : 280€",
+      "Aéroport Nice → Saint-Tropez (Mercedes Classe V 7 places) : 350€",
       "Saint-Tropez ↔ Nice centre dès 250€",
       "Saint-Tropez ↔ Cannes dès 200€",
       "Forfait VSL conventionné selon barème CPAM",

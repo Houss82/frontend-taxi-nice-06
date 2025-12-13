@@ -27,7 +27,7 @@ Pour rejoindre **le Golfe de Saint-Tropez depuis l'aéroport de Nice**, profitez
 - ⏱ **Durée moyenne** : **1h30 à 1h50** (selon le trafic)
 - 📍 **Distance** : **113 km**
 - 💰 **Tarif** : **À partir de 280€** (prix fixe garanti)
-- 🚗 **Véhicules disponibles** : Mercedes Classe E, GLC, Classe V
+- 🚗 **Véhicules disponibles** : Mercedes GLC, Classe V
 
 </div>
 
@@ -62,18 +62,8 @@ Dès votre atterrissage à l'aéroport Nice Côte d'Azur, votre chauffeur profes
 
 Pour un trajet longue distance vers le Golfe de Saint-Tropez, le confort est essentiel. Nous mettons à votre disposition une **flotte de Mercedes** récente et entretenue avec soin.
 
-<div class="content-box">
-<strong>🚗 Nos véhicules disponibles pour votre déplacement vers la Côte Varoise :</strong>
+Pour un trajet longue distance vers le Golfe de Saint-Tropez, le confort est essentiel. Nous mettons à votre disposition une **flotte de Mercedes** récente et entretenue avec soin.
 
-- **Mercedes Classe E** : 1 à 3 passagers - 280€ - Confort premium et élégance
-- **Mercedes GLC** : 1 à 4 passagers - 300€ - Confort supérieur & style SUV
-- **Mercedes Classe V** : jusqu'à 7 passagers - 350€ - Idéal pour groupes ou familles avec bagages
-
-Tous nos véhicules sont équipés de **climatisation, Wi-Fi gratuit, bouteilles d'eau** et sont parfaitement entretenus pour un trajet agréable de **113 km**.
-
-</div>
-
-<img src="/Glc-saint-tropez.png" alt="Taxi Mercedes Classe V pour transfert aéroport Nice vers Saint-Tropez - Service premium longue distance 113 km" style="max-width: 600px; max-height: 350px; width: 100%; height: 350px; margin: 2rem auto; display: block; border-radius: 0.75rem; object-fit: cover; object-position: center 65%;" />
 
 Découvrez notre [flotte complète de véhicules premium](/services/flotte-recente) et choisissez celui qui correspond le mieux à vos besoins pour rejoindre votre destination.
 
@@ -113,7 +103,7 @@ Pour un trajet longue distance vers votre destination dans le Var, plusieurs fac
 - **Prix fixe garanti** : ✅ Chauffeur privé Nice Côte d'Azur (À partir de 280€) | ❌ Uber/VTC (tarif variable selon la demande)
 - **Attente à l'aéroport** : ✅ Chauffeur présent avec pancarte | ⚠️ Variable selon disponibilité
 - **Suivi du vol** : ✅ Inclus automatiquement | ❌ Souvent absent
-- **Véhicules haut de gamme** : ✅ Mercedes Classe E / V / GLC | ⚠️ Qualité variable
+- **Véhicules haut de gamme** : ✅ Mercedes GLC / Classe V | ⚠️ Qualité variable
 - **Chauffeur professionnel agréé** : ✅ Oui, formé et expérimenté | ❌ Pas toujours
 - **Confort longue distance** : ✅ Sièges confortables, espace, climatisation | ⚠️ Variable
 - **Connaissance du trafic** : ✅ Itinéraires optimisés | ⚠️ GPS standard
@@ -211,8 +201,7 @@ Pour découvrir nos autres services et destinations :
 <details class="faq">
 <summary><strong>1. Combien coûte un transfert vers cette destination dans le Var ?</strong></summary>
 Le prix est de **280€ à 350€** selon le véhicule choisi :
-- Mercedes Classe E : 280€ (1-3 passagers)
-- Mercedes GLC : 300€ (1-4 passagers)
+- Mercedes GLC : 280€ (1-4 passagers)
 - Mercedes Classe V : 350€ (jusqu'à 7 passagers)
 
 Le tarif est **fixe et garanti**, même en cas de bouchons ou de détours. Consultez nos [tarifs détaillés](/tarifs) pour connaître le prix exact de votre trajet.
@@ -280,4 +269,4 @@ Pour découvrir tous nos services (transferts aéroport, VSL, excursions), consu
 
 ---
 
-_Article mis à jour le 16 novembre 2025_
+_Article mis à jour le 13 décembre 2025_

@@ -167,6 +167,12 @@ Votre chauffeur peut également vous accompagner pour un **aller-retour journée
 
 ---
 
+## 🚖 Réserver votre transfert aéroport Nice → Cannes
+
+Pour réserver votre taxi depuis l'**aéroport de Nice** vers Cannes avec nos tarifs détaillés et toutes nos options de service, consultez notre [page dédiée aux transferts Nice - Cannes](/secteurs/cannes). Vous y trouverez toutes les informations sur nos prestations, nos véhicules disponibles et nos tarifs pour vos transferts aéroport.
+
+---
+
 ## ❓ FAQ – Taxi Aéroport de Nice vers Cannes
 
 <details class="faq">
@@ -209,3 +215,5 @@ Pour découvrir tous nos services (transferts aéroport, VSL, excursions), consu
 **Confort, élégance et ponctualité — votre voyage commence dès l'aéroport.**
 
 ---
+
+_Article mis à jour le 13 décembre 2025_
