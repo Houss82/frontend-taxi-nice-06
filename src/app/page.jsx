@@ -805,7 +805,15 @@ export default function Page() {
                   taxi à Nice
                 </Link>{" "}
                 fiable, ponctuel et avec un véhicule haut de gamme, Taxi Nice 06
-                est le bon choix. Nous proposons aussi un service de{" "}
+                est le bon choix. Pour vous aider à choisir entre taxi, bus et
+                tramway selon vos besoins, consultez notre{" "}
+                <Link
+                  href="/blog/taxi-nice-guide-complet-2025"
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  guide complet pour choisir le meilleur transport à Nice
+                </Link>
+                . Nous proposons aussi un service de{" "}
                 <strong className="text-blue-600">taxi conventionné</strong>{" "}
                 pour vos trajets médicaux vers les hôpitaux ou centres de soins
                 (sous conditions CPAM). La réservation est possible{" "}
