@@ -32,6 +32,7 @@ jobs:
       
       - name: Run auto-publish script
         run: node scripts/auto-publish-articles.js
+        continue-on-error: false
       
       - name: Check for changes
         id: git-check
@@ -43,9 +44,10 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add content/blog/
-          git commit -m "🤖 Auto-publish articles scheduled for $(date +%Y-%m-%d)"
-          git push
+          git add content/blog/ content/blog/draft/
+          git status
+          git commit -m "🤖 Auto-publish articles scheduled for $(date +%Y-%m-%d)" || exit 0
+          git push origin HEAD:main || git push
       
       - name: No changes
         if: steps.git-check.outputs.has_changes != 'true'
