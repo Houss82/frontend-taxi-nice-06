@@ -518,6 +518,18 @@ Pour réserver votre taxi à Nice avec nos tarifs détaillés et toutes nos opti
 
 Notre service de taxi à Nice est disponible 24/7 pour tous vos déplacements : transferts aéroport Nice Côte d'Azur, trajets vers Cannes, Antibes, Menton, Monaco, Saint-Tropez, transport médicalisé VSL conventionné CPAM, et excursions sur la Côte d'Azur.
 
+## 📍 Guides par quartier de Nice
+
+Si vous recherchez des informations spécifiques sur nos services de taxi dans un quartier précis de Nice, consultez nos guides détaillés par quartier :
+
+- **[Taxi Vieux-Nice](/blog/taxi-vieux-nice)** : Service de taxi dans le quartier historique, transferts depuis les hôtels et restaurants du Vieux-Nice
+- **[Taxi Cimiez Nice](/blog/taxi-cimiez-nice)** : Transferts vers l'hôpital Cimiez, musées et quartier résidentiel
+- **[Taxi Libération Nice](/blog/taxi-liberation-nice)** : Service depuis le marché de Libération et transferts gare SNCF
+- **[Taxi Nice Nord](/blog/taxi-nice-nord)** : Déplacements dans les quartiers nord de Nice
+- **[Taxi Promenade des Anglais](/blog/taxi-promenade-des-anglais-nice)** : Service pour les hôtels de luxe et plages de la Promenade
+
+Ces guides vous fournissent des informations détaillées sur les trajets, tarifs et services spécifiques à chaque quartier de Nice.
+
 ---
 
 _Article mis à jour le 16 décembre 2025_

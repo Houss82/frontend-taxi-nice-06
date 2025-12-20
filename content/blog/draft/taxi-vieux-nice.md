@@ -7,7 +7,6 @@ category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
 published: false
-
 ---
 
 Le **Vieux-Nice** est le cœur historique et touristique de la ville, avec ses ruelles colorées, ses marchés animés (Cours Saleya), ses restaurants renommés et ses monuments emblématiques. Situé entre la **Promenade des Anglais** et la **Colline du Château**, ce quartier attire chaque année des millions de visiteurs et nécessite des services de transport adaptés à ses rues étroites et à son animation permanente.
