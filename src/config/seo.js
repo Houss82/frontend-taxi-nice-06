@@ -2,7 +2,7 @@
 
 export const seoConfig = {
   // Informations de base
-  siteName: "Taxi Nice Côte d'Azur",
+  siteName: "Taxi Nice 06",
   siteUrl: "https://taxi-nice-06.com",
   defaultLanguage: "fr-FR",
   alternateLanguages: [],
