@@ -434,7 +434,7 @@ export const sectorData = {
       links: [
         {
           label: "Guide transport Cannes",
-          url: "https://taxi-nice-06.com/blog/excursions-cote-azur",
+          url: "https://taxi-nice-06.com/blog/taxi-excursions-nice",
         },
         {
           label: "Taxi Aéroport Nice → Cannes",

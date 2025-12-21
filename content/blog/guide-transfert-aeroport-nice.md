@@ -6,13 +6,6 @@ image: "/arrivees-t2-copie-2.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-keywords:
-  [
-    "transfert aéroport nice",
-    "taxi aéroport",
-    "transport nice",
-    "aéroport côte d'azur",
-  ]
 ---
 
 L'**aéroport Nice Côte d'Azur** est le troisième aéroport le plus fréquenté de France. Que vous arriviez pour affaires ou pour des vacances sur la Riviera, bien organiser votre transfert est essentiel pour commencer votre séjour dans les meilleures conditions.

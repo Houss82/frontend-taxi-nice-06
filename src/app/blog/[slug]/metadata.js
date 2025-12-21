@@ -6,7 +6,7 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: "Article non trouvé | Taxi Nice Côte d'Azur",
+      title: "Article non trouvé | Taxi Nice 06",
       description: "L'article que vous recherchez n'existe pas.",
       robots: {
         index: false,
@@ -25,18 +25,18 @@ export async function generateMetadata({ params }) {
     : `https://taxi-nice-06.com${post.image}`;
 
   return {
-    title: `${post.title} | Taxi Nice Côte d'Azur`,
+    title: `${post.title} | Taxi Nice 06`,
     description: post.excerpt || `Découvrez ${post.title.toLowerCase()}.`,
     keywords: Array.isArray(post.keywords)
       ? post.keywords.join(", ")
       : post.keywords || "",
-    authors: [{ name: post.author || "Taxi Nice Côte d'Azur" }],
+    authors: [{ name: post.author || "Taxi Nice 06" }],
     openGraph: {
       type: "article",
       url: canonicalUrl,
       title: post.title,
       description: post.excerpt,
-      siteName: "Taxi Nice Côte d'Azur",
+      siteName: "Taxi Nice 06",
       images: [
         {
           url: imageUrl,
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }) {
       ],
       locale: "fr_FR",
       publishedTime: post.date,
-      authors: [post.author || "Taxi Nice Côte d'Azur"],
+      authors: [post.author || "Taxi Nice 06"],
       section: post.category,
     },
     twitter: {

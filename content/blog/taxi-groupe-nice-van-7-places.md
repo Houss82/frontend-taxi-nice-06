@@ -6,14 +6,6 @@ image: "/taxi-aeroport-nice-van-7-plaves.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-keywords:
-  [
-    "taxi groupe nice",
-    "van 7 places nice",
-    "taxi classe v nice",
-    "taxi famille nombreuse nice",
-    "taxi aeroport 7 places nice",
-  ]
 ---
 
 # 🚐 Taxi Groupe à Nice – Van 7 Places Premium Mercedes Classe V

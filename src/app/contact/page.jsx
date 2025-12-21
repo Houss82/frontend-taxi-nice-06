@@ -59,7 +59,7 @@ export default function ContactPage() {
     {
       name: "Contact",
       url: "/contact",
-      title: "Contact Taxi Nice Côte d'Azur",
+      title: "Contact Taxi Nice 06",
     },
   ];
 
@@ -149,7 +149,7 @@ export default function ContactPage() {
       <section className="relative h-[60vh] overflow-hidden">
         <Image
           src="/contact.jpg"
-          alt="Contact Taxi Nice Côte d'Azur - Service client 24h/24"
+          alt="Contact Taxi Nice 06 - Service client 24h/24"
           fill
           className="object-cover"
           priority={true}

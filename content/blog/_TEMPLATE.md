@@ -6,7 +6,6 @@ image: "/nom-de-votre-image.jpg" # Image dans le dossier /public
 category: "Guides Pratiques" # Options: Guides Pratiques, Conseils, Actualités, Tourisme
 author: "Taxi Nice Côte d'Azur"
 language: "fr" # IMPORTANT: "fr" pour français, "en" pour anglais
-keywords: ["mot-clé 1", "mot-clé 2", "mot-clé 3", "mot-clé 4"]
 ---
 
 # Titre principal de votre article (H1)
@@ -100,7 +99,7 @@ _Article mis à jour le [DATE]_
    - `image` : Nom du fichier dans /public
    - `category` : Choisir parmi les catégories existantes
    - `language` : **IMPORTANT** - "fr" pour français, "en" pour anglais
-   - `keywords` : 4-6 mots-clés pertinents
+   - **Note** : Les keywords ne sont plus utilisés dans le frontmatter (Google ne les considère plus depuis 2009)
 
 3. **Structure de l'article** :
 

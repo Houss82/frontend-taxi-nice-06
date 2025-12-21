@@ -117,8 +117,8 @@ export default function Page() {
 
             {/* H1 SEO optimisé - Structure sur 2 lignes avec dégradé et contour blanc */}
             <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 drop-shadow-2xl">
-              <span className="block h1-with-stroke" data-text="Taxi Nice">
-                <span className="h1-gradient">Taxi Nice</span>
+              <span className="block h1-with-stroke" data-text="Taxi Nice 06">
+                <span className="h1-gradient">Taxi Nice 06</span>
               </span>
               <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-100">
                 Transferts Aéroport & VSL Conventionnés

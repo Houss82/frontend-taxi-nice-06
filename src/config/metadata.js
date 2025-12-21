@@ -2,15 +2,15 @@
 export const metadata = {
   metadataBase: new URL("https://taxi-nice-06.com"),
   title: {
-    default: "Taxi Nice – Transferts Aéroport, Courses Locales & Conventionné",
-    template: "%s | Taxi Nice ",
+    default: "Taxi Nice 06 – Transferts Aéroport, Courses Locales & Conventionné",
+    template: "%s | Taxi Nice 06",
   },
   description:
-    "Taxi Nice : transferts Aéroport Nice, courses locales et trajets médicaux conventionnés CPAM. Réservation 24/7. Mercedes GLC & Van.",
+    "Taxi Nice 06 : transferts Aéroport Nice, courses locales et trajets médicaux conventionnés CPAM. Réservation 24/7. Mercedes GLC & Van.",
 
-  authors: [{ name: "Taxi Nice" }],
-  creator: "Taxi Nice",
-  publisher: "Taxi Nice ",
+  authors: [{ name: "Taxi Nice 06" }],
+  creator: "Taxi Nice 06",
+  publisher: "Taxi Nice 06",
   alternates: {
     canonical: "https://taxi-nice-06.com/", // URL canonique absolue - évite les variantes en doublon
   },
@@ -23,10 +23,10 @@ export const metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://taxi-nice-06.com",
-    siteName: "Taxi Nice ",
-    title: "Taxi Nice – Transferts Aéroport, Courses Locales & Conventionné",
+    siteName: "Taxi Nice 06",
+    title: "Taxi Nice 06 – Transferts Aéroport, Courses Locales & Conventionné",
     description:
-      "Taxi à Nice 24/7. Aéroport Nice, courses locales, trajets conventionnés CPAM. Mercedes GLC & Van.",
+      "Taxi Nice 06 à Nice 24/7. Aéroport Nice, courses locales, trajets conventionnés CPAM. Mercedes GLC & Van.",
     images: [
       {
         url: "/bg-image.png",
@@ -38,9 +38,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Nice – Transferts Aéroport, Courses Locales & Conventionné",
+    title: "Taxi Nice 06 – Transferts Aéroport, Courses Locales & Conventionné",
     description:
-      "Taxi à Nice 24/7 : Aéroport, local, CPAM. Mercedes GLC & Van.",
+      "Taxi Nice 06 à Nice 24/7 : Aéroport, local, CPAM. Mercedes GLC & Van.",
     images: ["/bg-image.png"],
   },
   robots: {

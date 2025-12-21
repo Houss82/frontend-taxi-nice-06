@@ -6,14 +6,6 @@ image: "/aéroport-nice-glc.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-keywords:
-  [
-    "taxi aéroport Nice",
-    "transfert Nice Cannes",
-    "taxi Cannes",
-    "chauffeur privé Nice",
-    "aéroport Nice Côte d'Azur",
-  ]
 ---
 
 Chaque jour, des centaines de voyageurs choisissent notre [service de taxi premium](https://taxi-nice-06.com) entre l'aéroport de Nice et Cannes. Que vous veniez pour affaires, un festival, ou un séjour détente, nous vous garantissons un transfert sans stress, dans un confort absolu.

@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Mentions Légales | Taxi Nice Côte d'Azur | Taxi Nice-06",
+  title: "Mentions Légales | Taxi Nice 06",
   description:
-    "Mentions légales du site Taxi Nice Côte d'Azur. Informations sur l'entreprise, propriété intellectuelle, RGPD, hébergement et conditions d'utilisation du service de taxi à Nice.",
+    "Mentions légales du site Taxi Nice 06. Informations sur l'entreprise, propriété intellectuelle, RGPD, hébergement et conditions d'utilisation du service de taxi à Nice.",
   keywords: [
     "mentions légales taxi nice",
     "informations légales",
@@ -11,17 +11,17 @@ export const metadata = {
     "conditions utilisation",
   ],
   openGraph: {
-    title: "Mentions Légales | Taxi Nice Côte d'Azur",
+    title: "Mentions Légales | Taxi Nice 06",
     description:
-      "Mentions légales du site Taxi Nice Côte d'Azur. Informations sur l'entreprise, propriété intellectuelle et conditions d'utilisation.",
+      "Mentions légales du site Taxi Nice 06. Informations sur l'entreprise, propriété intellectuelle et conditions d'utilisation.",
     url: "https://taxi-nice-06.com/mentions-legales",
     type: "website",
-    siteName: "Taxi Nice Côte d'Azur",
+    siteName: "Taxi Nice 06",
   },
   twitter: {
     card: "summary",
-    title: "Mentions Légales | Taxi Nice Côte d'Azur",
-    description: "Mentions légales du site Taxi Nice Côte d'Azur.",
+    title: "Mentions Légales | Taxi Nice 06",
+    description: "Mentions légales du site Taxi Nice 06.",
   },
   alternates: {
     canonical: "https://taxi-nice-06.com/mentions-legales",

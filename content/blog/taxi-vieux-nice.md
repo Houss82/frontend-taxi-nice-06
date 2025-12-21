@@ -6,7 +6,7 @@ image: "/vieux-nice.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Le **Vieux-Nice** est le cœur historique et touristique de la ville, avec ses ruelles colorées, ses marchés animés (Cours Saleya), ses restaurants renommés et ses monuments emblématiques. Situé entre la **Promenade des Anglais** et la **Colline du Château**, ce quartier attire chaque année des millions de visiteurs et nécessite des services de transport adaptés à ses rues étroites et à son animation permanente.
@@ -51,7 +51,7 @@ Le **Vieux-Nice** (également appelé "Vieille Ville") est le quartier historiqu
 
 ### ✈️ Transfert aéroport Nice → Vieux-Nice
 
-Le trajet depuis l'**aéroport Nice Côte d'Azur** vers le Vieux-Nice dure environ **20-25 minutes** selon le trafic (distance : 8 km). Nos chauffeurs connaissent parfaitement les accès au quartier et vous déposent au point le plus proche de votre destination, compte tenu des rues piétonnes.
+Le trajet depuis l'**aéroport Nice Côte d'Azur** ([site officiel](https://www.nice.aeroport.fr/)) vers le Vieux-Nice dure environ **20-25 minutes** selon le trafic (distance : 8 km). Nos chauffeurs connaissent parfaitement les accès au quartier et vous déposent au point le plus proche de votre destination, compte tenu des rues piétonnes.
 
 **Avantages :**
 
@@ -206,21 +206,22 @@ Nous assurons vos déplacements vers les établissements médicaux de Nice :
 
 <img src="/imageGLC.png" alt="Mercedes GLC taxi Vieux-Nice" style="max-width:100%; border-radius:0.75rem; margin:1.5rem 0;" />
 
-Le **Mercedes GLC** est parfait pour les transferts depuis et vers le Vieux-Nice :
+Le **Mercedes GLC** est idéal pour naviguer dans les ruelles étroites du Vieux-Nice :
 
-- **Capacité** : 4 passagers + chauffeur
-- **Bagages** : 2-3 grandes valises
-- **Confort** : Sièges en cuir, climatisation, Wi-Fi, bouteilles d'eau
-- **Adapté aux rues étroites** : Taille compacte pour accéder facilement au quartier
+- **Maneuvrabilité** : Taille compacte permettant d'accéder aux points de dépose autorisés près des ruelles piétonnes
+- **Dépose optimisée** : Arrêt au plus près de votre hôtel ou restaurant, même dans les rues les plus étroites
+- **Assistance bagages** : Aide pour transporter vos valises depuis le point de dépose jusqu'à votre destination dans les ruelles
+- **Accès marché** : Dépose pratique pour le Cours Saleya et les marchés du Vieux-Nice
+- **Discrétion** : Véhicule élégant qui s'intègre dans l'ambiance historique du quartier
 
 ### Van Mercedes Classe V : Idéal pour groupes et familles
 
-Le **Van Mercedes Classe V** est recommandé pour les groupes ou familles avec bagages :
+Le **Van Mercedes Classe V** est parfait pour les groupes visitant le Vieux-Nice :
 
-- **Capacité** : 6-8 passagers + chauffeur
-- **Bagages** : 6-8 grandes valises
-- **Confort premium** : Sièges spacieux, climatisation, Wi-Fi, espace pour poussettes
-- **Accessibilité** : Possibilité d'équipement PMR sur demande
+- **Sorties restaurant en groupe** : Transport de 6-8 personnes vers les restaurants du Vieux-Nice (place Rossetti, Cours Saleya)
+- **Visites guidées** : Accompagnement de groupes touristiques découvrant le patrimoine historique
+- **Événements** : Transport pour les soirées et événements dans le quartier
+- **Familles avec enfants** : Espace pour poussettes et équipements de plage après une journée au marché
 
 ---
 
@@ -254,7 +255,7 @@ Nos chauffeurs connaissent parfaitement le Vieux-Nice :
 
 ### Scénario 1 : Arrivée à l'aéroport
 
-Vous arrivez à l'**aéroport Nice Côte d'Azur** et votre hôtel se trouve dans le Vieux-Nice. Un taxi vous attend à la sortie du terminal avec une pancarte nominative et vous conduit directement à votre hôtel, même si celui-ci se trouve dans une ruelle étroite.
+Vous arrivez à l'**aéroport Nice Côte d'Azur** ([site officiel](https://www.nice.aeroport.fr/)) et votre hôtel se trouve dans le Vieux-Nice. Un taxi vous attend à la sortie du terminal avec une pancarte nominative et vous conduit directement à votre hôtel, même si celui-ci se trouve dans une ruelle étroite.
 
 ### Scénario 2 : Dîner au restaurant
 

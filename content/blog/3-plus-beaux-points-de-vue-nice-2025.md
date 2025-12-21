@@ -6,16 +6,6 @@ image: "/points-de-vue-nice-2025.png"
 category: "Voyage & Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-keywords:
-  [
-    "points de vue Nice",
-    "belvédère Nice",
-    "panorama Nice",
-    "photo Nice",
-    "spots photo Nice",
-    "coucher soleil Nice",
-    "vues panoramiques Nice",
-  ]
 ---
 
 Nice est une destination de rêve pour les photographes et amateurs de panoramas. Selon les données de l'[Office de Tourisme de Nice](https://www.nicecotedazur.org), **plus de 5 millions de visiteurs** viennent chaque année capturer la beauté de la Côte d'Azur, et les réseaux sociaux regorgent de clichés spectaculaires pris depuis les belvédères niçois.

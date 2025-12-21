@@ -19,13 +19,13 @@ export const metadata = {
       "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur. Guides pratiques, actualités et informations sur nos services de taxi premium.",
     url: "https://taxi-nice-06.com/blog",
     type: "website",
-    siteName: "Taxi Nice Côte d'Azur",
+    siteName: "Taxi Nice 06",
     images: [
       {
         url: "https://taxi-nice-06.com/bg-image.png",
         width: 1200,
         height: 630,
-        alt: "Blog Taxi Nice Côte d'Azur",
+        alt: "Blog Taxi Nice 06",
       },
     ],
   },

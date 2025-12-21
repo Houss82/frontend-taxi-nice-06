@@ -98,7 +98,12 @@ const nextConfig = {
       },
       {
         source: "/blog/french-riviera-tours",
-        destination: "/blog/excursions-cote-azur",
+        destination: "/blog/taxi-excursions-nice",
+        permanent: true,
+      },
+      {
+        source: "/blog/excursions-cote-azur",
+        destination: "/blog/taxi-excursions-nice",
         permanent: true,
       },
     ];
