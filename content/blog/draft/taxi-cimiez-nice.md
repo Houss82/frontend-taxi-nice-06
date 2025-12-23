@@ -1,6 +1,6 @@
 ---
 title: "Taxi Cimiez Nice : Transferts Aéroport, Gare & Hôpital - Service 24/7"
-date: "2025-12-28"
+date: "2025-12-29"
 excerpt: "Service de taxi Cimiez Nice disponible 24/7 : transferts aéroport, gare SNCF, hôpital Cimiez, musées. Chauffeur local expert du quartier résidentiel. Tarifs transparents et véhicules premium Mercedes."
 image: "/taxi-nice-cimiez.jpeg"
 category: "Taxi"
