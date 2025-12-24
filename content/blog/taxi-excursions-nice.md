@@ -1,12 +1,12 @@
 ---
 title: "Taxi pour les Excursions depuis Nice : Monaco, Cannes, Èze & Toute la Côte d'Azur"
-date: "2026-12-24"
+date: "2025-12-24"
 excerpt: "Service de taxi pour les excursions depuis Nice : Monaco, Cannes, Èze, Saint-Paul-de-Vence, Antibes. Circuits personnalisés, tarifs journée complète et demi-journée, chauffeur guide local."
 image: "/excursion-monaco-nice.png"
 category: "Voyage et Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Nice est le point de départ idéal pour découvrir la **Côte d'Azur** : **Monaco**, **Cannes**, **Èze**, **Saint-Paul-de-Vence**, **Antibes**, et bien d'autres destinations emblématiques. Chaque année, **plus de 3 millions de visiteurs** organisent des excursions depuis Nice selon l'[Office de Tourisme de Nice](https://www.nicecotedazur.org), faisant de la capitale azuréenne la base parfaite pour explorer la Riviera française.
@@ -381,4 +381,4 @@ Oui, nos chauffeurs parlent **français, anglais, italien et espagnol**. Ils con
 
 ---
 
-_Article mis à jour le 24 décembre 2026_
+_Article mis à jour le 24 décembre 2025_
