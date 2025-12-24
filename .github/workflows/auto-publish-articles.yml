@@ -27,12 +27,10 @@ jobs:
           node-version: '18'
       
       - name: Install dependencies (optional)
-        working-directory: ./frontend
         run: npm ci || echo "⚠️ npm ci failed, but continuing as script only uses Node.js built-ins"
         continue-on-error: true
       
       - name: Run auto-publish script
-        working-directory: ./frontend
         env:
           CI: true
         run: |
@@ -40,6 +38,8 @@ jobs:
           echo "📅 Date du jour (UTC): $(date -u +%Y-%m-%d)"
           echo "📅 Date du jour (local): $(date +%Y-%m-%d)"
           echo "📁 Working directory: $(pwd)"
+          echo "📁 Listing répertoire racine:"
+          ls -la | head -20
           echo "📁 Listing content/blog:"
           ls -la content/blog/ || echo "⚠️ content/blog directory not found"
           echo "📁 Listing content/blog/draft:"
@@ -47,6 +47,8 @@ jobs:
           echo "🔍 Vérification du script..."
           if [ ! -f scripts/auto-publish-articles.js ]; then
             echo "❌ Script introuvable: scripts/auto-publish-articles.js"
+            echo "📁 Contenu du dossier scripts:"
+            ls -la scripts/ || echo "⚠️ scripts directory not found"
             exit 1
           fi
           echo "✅ Script trouvé, exécution..."
@@ -62,14 +64,14 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code frontend/content/blog/ frontend/content/blog/draft/ || echo "has_changes=true" >> $GITHUB_OUTPUT
+          git diff --exit-code content/blog/ content/blog/draft/ || echo "has_changes=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push changes
         if: steps.git-check.outputs.has_changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add frontend/content/blog/ frontend/content/blog/draft/
+          git add content/blog/ content/blog/draft/
           git status
           git commit -m "🤖 Auto-publish articles scheduled for $(date +%Y-%m-%d)" || exit 0
           git push origin HEAD:main || git push
