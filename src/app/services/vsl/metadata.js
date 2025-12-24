@@ -1,9 +1,12 @@
 export const metadata = {
-  title: "VSL Nice | Transport Médicalisé & Conventionné CPAM | Taxi Nice-06",
+  title: "Taxi Conventionné Nice (CPAM) – VSL & Transport Médical 24/7 | Taxi Nice 06",
   description:
-    "Service VSL conventionné CPAM à Nice. Véhicules sanitaires agréés, chauffeurs formés, transport médicalisé 24/7 pour personnes à mobilité réduite.",
+    "Taxi conventionné CPAM à Nice : VSL et transport médical 24/7 vers hôpitaux et cliniques. Chauffeurs formés, véhicules agréés, réservation rapide au 06 51 68 36 87.",
   keywords: [
+    "taxi conventionné nice",
+    "taxi conventionné cpam nice",
     "vsl nice",
+    "transport médical nice",
     "transport médicalisé nice",
     "vsl conventionné cpam",
     "véhicule sanitaire nice",
@@ -12,9 +15,9 @@ export const metadata = {
     "chauffeur vsl nice",
   ],
   openGraph: {
-    title: "VSL Nice | Transport Médicalisé | Taxi Nice-06",
+    title: "Taxi Conventionné Nice (CPAM) – VSL & Transport Médical 24/7 | Taxi Nice 06",
     description:
-      "Service VSL conventionné CPAM à Nice. Véhicules sanitaires agréés, chauffeurs formés, transport médicalisé 24/7.",
+      "Taxi conventionné CPAM à Nice : VSL et transport médical 24/7 vers hôpitaux et cliniques. Chauffeurs formés, véhicules agréés, réservation rapide.",
     url: "https://taxi-nice-06.com/services/vsl",
     type: "website",
     images: [
@@ -22,14 +25,14 @@ export const metadata = {
         url: "https://taxi-nice-06.com/classB-darguignan copie.png",
         width: 1200,
         height: 630,
-        alt: "VSL Nice - Véhicule Sanitaire Léger",
+        alt: "VSL Nice - Taxi Conventionné CPAM",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "VSL Nice | Transport Médicalisé | Taxi Nice-06",
-    description: "Service VSL conventionné CPAM à Nice. Transport médicalisé 24/7.",
+    title: "Taxi Conventionné Nice (CPAM) – VSL & Transport Médical 24/7 | Taxi Nice 06",
+    description: "Taxi conventionné CPAM à Nice : VSL et transport médical 24/7 vers hôpitaux et cliniques.",
     images: ["https://taxi-nice-06.com/classB-darguignan copie.png"],
   },
   alternates: {

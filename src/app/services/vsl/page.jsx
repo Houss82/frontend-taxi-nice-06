@@ -176,20 +176,22 @@ export default function VSLPage() {
                 </div>
                 <div>
                   <h1 className="text-6xl lg:text-8xl font-bold text-white mb-2">
-                    VSL
+                    Taxi Conventionné Nice
+                    <span className="block text-pink-300 text-2xl lg:text-3xl font-light mt-2">
+                      VSL & Transport Médical CPAM
+                    </span>
                   </h1>
-                  <p className="text-2xl lg:text-3xl text-pink-300 font-light">
-                    Transport Médicalisé
-                  </p>
                 </div>
               </div>
 
               <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 rounded-full mb-8"></div>
 
               <p className="text-xl lg:text-2xl text-white/90 leading-relaxed mb-10 max-w-3xl">
-                Service de transport médicalisé pour personnes à mobilité
-                réduite. Véhicules sanitaires agréés et chauffeurs formés pour
-                votre confort et sécurité.
+                Notre service de <strong>taxi conventionné à Nice</strong> (VSL)
+                assure vos transports médicaux remboursés par la CPAM vers les
+                hôpitaux, cliniques et centres de soins. Véhicules sanitaires
+                agréés, chauffeurs formés et accompagnement personnalisé pour
+                tous vos rendez-vous médicaux, en toute sécurité.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6">
@@ -245,6 +247,111 @@ export default function VSLPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Taxi Conventionné CPAM Section */}
+      <section className="py-24 bg-gradient-to-br from-pink-50 to-purple-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="bg-white rounded-3xl p-10 shadow-xl border border-pink-100">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+              Taxi conventionné CPAM à Nice
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+              Notre <strong>taxi conventionné CPAM à Nice</strong> est agréé
+              pour le transport médical prescrit par votre médecin. Selon votre
+              situation, vos trajets peuvent être pris en charge partiellement
+              ou totalement par l'Assurance Maladie.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <Stethoscope className="w-6 h-6 text-pink-600" />
+                  Transports médicaux pris en charge
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Consultations et examens médicaux
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Hospitalisations et sorties d'hôpital
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Traitements réguliers (dialyse, radiothérapie,
+                      chimiothérapie)
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Soins de rééducation et suivi médical
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <Heart className="w-6 h-6 text-pink-600" />
+                  Établissements desservis à Nice
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">CHU Pasteur</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Hôpital de l'Archet</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Fondation Lenval</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Cliniques et centres médicaux de Nice et alentours
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-pink-50 rounded-2xl p-6 border border-pink-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Conditions de prise en charge
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                  <span>Prescription médicale obligatoire</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                  <span>Carte Vitale à jour</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                  <span>Accord préalable si nécessaire</span>
+                </li>
+              </ul>
+            </div>
+
+            <p className="text-lg text-gray-700 leading-relaxed mt-8">
+              Notre équipe vous accompagne à chaque étape pour un transport
+              médical serein, ponctuel et conforme aux exigences CPAM.
+            </p>
           </div>
         </div>
       </section>
@@ -484,6 +591,113 @@ export default function VSLPage() {
           </div>
         </div>
       </section>
+
+      {/* JSON-LD TaxiService pour Taxi Conventionné CPAM */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TaxiService",
+            name: "Taxi Conventionné Nice - VSL (CPAM)",
+            url: "https://taxi-nice-06.com/services/vsl",
+            telephone: "+33651683687",
+            email: "taxiniceca@gmail.com",
+            areaServed: [
+              { "@type": "City", name: "Nice" },
+              { "@type": "AdministrativeArea", name: "Alpes-Maritimes" },
+            ],
+            serviceType: [
+              "Taxi conventionné CPAM",
+              "Transport médical",
+              "VSL",
+              "Transport de patients",
+            ],
+            availableChannel: {
+              "@type": "ServiceChannel",
+              servicePhone: {
+                "@type": "ContactPoint",
+                telephone: "+33651683687",
+              },
+              availableLanguage: ["fr"],
+            },
+            provider: {
+              "@type": "LocalBusiness",
+              name: "Taxi Nice 06",
+              url: "https://taxi-nice-06.com",
+              telephone: "+33651683687",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Nice",
+                addressRegion: "PACA",
+                addressCountry: "FR",
+              },
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                  ],
+                  opens: "00:00",
+                  closes: "23:59",
+                },
+              ],
+            },
+            sameAs: ["https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"],
+          }),
+        }}
+      />
+
+      {/* JSON-LD FAQPage pour CPAM */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Qu'est-ce qu'un taxi conventionné CPAM à Nice ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Un taxi conventionné CPAM est un transport agréé pour les déplacements médicaux prescrits. Selon votre situation, la CPAM peut prendre en charge tout ou partie du trajet.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Quels documents faut-il pour un transport médical pris en charge ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "En général : prescription médicale, carte Vitale à jour et, si nécessaire, accord préalable.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Faites-vous les trajets vers les hôpitaux et cliniques de Nice ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, nous assurons les transports médicaux vers les établissements de Nice (CHU Pasteur, Hôpital de l'Archet, Fondation Lenval, cliniques) et les communes alentours.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Comment réserver un taxi conventionné à Nice ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Vous pouvez réserver par téléphone 24/7 au 06 51 68 36 87. Nous confirmons le trajet et préparons votre prise en charge.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
       <Footer />
     </div>
