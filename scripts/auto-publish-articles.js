@@ -18,8 +18,19 @@
 const fs = require('fs');
 const path = require('path');
 
-const draftDir = path.join(process.cwd(), 'content/blog/draft');
-const blogDir = path.join(process.cwd(), 'content/blog');
+// Déterminer le répertoire de base (peut être différent dans GitHub Actions)
+const baseDir = process.cwd();
+const draftDir = path.join(baseDir, 'content/blog/draft');
+const blogDir = path.join(baseDir, 'content/blog');
+
+// Log pour débogage
+if (process.env.CI || process.argv.includes('--debug')) {
+  console.log(`🔍 Debug: baseDir = ${baseDir}`);
+  console.log(`🔍 Debug: draftDir = ${draftDir}`);
+  console.log(`🔍 Debug: blogDir = ${blogDir}`);
+  console.log(`🔍 Debug: draftDir exists = ${fs.existsSync(draftDir)}`);
+  console.log(`🔍 Debug: blogDir exists = ${fs.existsSync(blogDir)}`);
+}
 
 // Fonction pour parser le frontmatter
 function parseFrontmatter(content) {
@@ -135,9 +146,22 @@ function publishArticle(fileName) {
 function main() {
   console.log('🚀 Démarrage de la vérification automatique des articles...\n');
   
+  // Log pour débogage
+  if (process.env.CI || process.argv.includes('--debug')) {
+    console.log(`🔍 Debug: Working directory = ${process.cwd()}`);
+    console.log(`🔍 Debug: draftDir = ${draftDir}`);
+    console.log(`🔍 Debug: blogDir = ${blogDir}`);
+  }
+  
   // Vérifier que le dossier draft existe
   if (!fs.existsSync(draftDir)) {
     console.log(`ℹ️  Le dossier draft n'existe pas: ${draftDir}`);
+    console.log(`ℹ️  Vérification du répertoire parent...`);
+    const parentDir = path.dirname(draftDir);
+    if (fs.existsSync(parentDir)) {
+      console.log(`ℹ️  Répertoire parent trouvé: ${parentDir}`);
+      console.log(`ℹ️  Contenu: ${fs.readdirSync(parentDir).join(', ')}`);
+    }
     console.log('✅ Aucun article à vérifier.\n');
     return;
   }

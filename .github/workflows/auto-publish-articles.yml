@@ -2,8 +2,9 @@ name: Auto Publish Articles
 
 on:
   schedule:
-    # Exécute tous les jours à 18h00 UTC (19h00 heure française en hiver, 20h00 en été)
-    - cron: '0 18 * * *'
+    # Exécute tous les jours à 21h40 UTC (22h40 heure française en hiver, 23h40 en été)
+    # MODIFIÉ POUR TEST - À remettre à 18h00 après le test
+    - cron: '40 21 * * *'
   workflow_dispatch: # Permet de déclencher manuellement
 
 permissions:
@@ -25,14 +26,27 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Install dependencies
+      - name: Install dependencies (optional)
         working-directory: ./frontend
-        run: npm ci
+        run: npm ci || echo "⚠️ npm ci failed, but continuing as script only uses Node.js built-ins"
+        continue-on-error: true
       
       - name: Run auto-publish script
         working-directory: ./frontend
-        run: node scripts/auto-publish-articles.js
-        continue-on-error: false
+        env:
+          CI: true
+        run: |
+          echo "📅 Date du jour (UTC): $(date -u +%Y-%m-%d)"
+          echo "📅 Date du jour (local): $(date +%Y-%m-%d)"
+          echo "📁 Working directory: $(pwd)"
+          echo "📁 Listing content/blog:"
+          ls -la content/blog/ || echo "⚠️ content/blog directory not found"
+          echo "📁 Listing content/blog/draft:"
+          ls -la content/blog/draft/ || echo "⚠️ content/blog/draft directory not found"
+          node scripts/auto-publish-articles.js --debug || {
+            echo "❌ Script failed with exit code $?"
+            exit 1
+          }
       
       - name: Check for changes
         id: git-check
