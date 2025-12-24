@@ -6,7 +6,7 @@ image: "/excursion-monaco-nice.png"
 category: "Voyage et Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Nice est le point de départ idéal pour découvrir la **Côte d'Azur** : **Monaco**, **Cannes**, **Èze**, **Saint-Paul-de-Vence**, **Antibes**, et bien d'autres destinations emblématiques. Chaque année, **plus de 3 millions de visiteurs** organisent des excursions depuis Nice selon l'[Office de Tourisme de Nice](https://www.nicecotedazur.org), faisant de la capitale azuréenne la base parfaite pour explorer la Riviera française.
