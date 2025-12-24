@@ -2,9 +2,8 @@ name: Auto Publish Articles
 
 on:
   schedule:
-    # Exécute tous les jours à 21h40 heure française (20h40 UTC en hiver, 19h40 UTC en été)
-    # MODIFIÉ POUR TEST - À remettre à 18h00 UTC après le test
-    - cron: '40 20 * * *'
+    # Exécute tous les jours à 18h00 heure française (17h00 UTC en hiver, 16h00 UTC en été)
+    - cron: '0 17 * * *'
   workflow_dispatch: # Permet de déclencher manuellement
 
 permissions:
@@ -50,9 +49,8 @@ jobs:
       
       - name: Check for changes
         id: git-check
-        working-directory: ./frontend
         run: |
-          git diff --exit-code content/blog/ content/blog/draft/ || echo "has_changes=true" >> $GITHUB_OUTPUT
+          git diff --exit-code frontend/content/blog/ frontend/content/blog/draft/ || echo "has_changes=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push changes
         if: steps.git-check.outputs.has_changes == 'true'
