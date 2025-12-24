@@ -262,9 +262,13 @@ function main() {
 // Exécuter le script
 try {
   main();
+  // Toujours terminer avec succès même si aucun article n'a été publié
+  // (c'est normal si aucun article n'a la date d'aujourd'hui)
+  console.log('✅ Script terminé avec succès\n');
   process.exit(0); // Succès
 } catch (error) {
   console.error('❌ Erreur fatale:', error);
+  console.error('Stack:', error.stack);
   process.exit(1); // Échec
 }
 

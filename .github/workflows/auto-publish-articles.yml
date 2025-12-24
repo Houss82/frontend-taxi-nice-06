@@ -36,6 +36,7 @@ jobs:
         env:
           CI: true
         run: |
+          set -e  # Arrêter en cas d'erreur
           echo "📅 Date du jour (UTC): $(date -u +%Y-%m-%d)"
           echo "📅 Date du jour (local): $(date +%Y-%m-%d)"
           echo "📁 Working directory: $(pwd)"
@@ -43,10 +44,20 @@ jobs:
           ls -la content/blog/ || echo "⚠️ content/blog directory not found"
           echo "📁 Listing content/blog/draft:"
           ls -la content/blog/draft/ || echo "⚠️ content/blog/draft directory not found"
-          node scripts/auto-publish-articles.js --debug || {
-            echo "❌ Script failed with exit code $?"
+          echo "🔍 Vérification du script..."
+          if [ ! -f scripts/auto-publish-articles.js ]; then
+            echo "❌ Script introuvable: scripts/auto-publish-articles.js"
             exit 1
-          }
+          fi
+          echo "✅ Script trouvé, exécution..."
+          node scripts/auto-publish-articles.js --debug
+          EXIT_CODE=$?
+          echo "📊 Script terminé avec le code: $EXIT_CODE"
+          if [ $EXIT_CODE -ne 0 ]; then
+            echo "❌ Script failed with exit code $EXIT_CODE"
+            exit 1
+          fi
+          echo "✅ Script exécuté avec succès"
       
       - name: Check for changes
         id: git-check
