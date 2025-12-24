@@ -150,13 +150,25 @@ export default function TransfertsAeroportPage() {
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 pt-10 sm:py-0">
                   Taxi Aéroport Nice
                   <span className="block text-cyan-600">
-                    Chauffeur Privé & Taxi 24/7
+                    Réservation 24/7 – Terminal 1 & 2
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Service de Taxi depuis et vers l'aéroport Nice Côte d'Azur
-                  (T1/T2). Accueil nominatif, suivi de vol en temps réel, tarifs
-                  fixes et transparents, disponibilité 24/7.
+                  Service de <strong>taxi Nice aéroport</strong> et{" "}
+                  <strong>taxi aéroport Nice</strong> 24/7 avec suivi de vol et
+                  prise en charge T1/T2. Accueil nominatif, tarifs fixes et
+                  transparents, disponibilité continue.
+                </p>
+                <p className="text-lg text-gray-700 mb-8">
+                  Découvrez tous nos services de{" "}
+                  <Link
+                    href="/"
+                    className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
+                  >
+                    taxi Nice 06
+                  </Link>{" "}
+                  : transferts aéroport, courses locales, trajets conventionnés
+                  CPAM et excursions sur la Côte d'Azur.
                 </p>
                 <ul className="grid sm:grid-cols-2 gap-3 text-gray-700 mb-8">
                   <li className="flex items-center gap-2">
@@ -263,14 +275,12 @@ export default function TransfertsAeroportPage() {
               </p>
               <p className="text-gray-700 leading-relaxed mt-4">
                 Besoin de préparer chaque étape ? Consultez{" "}
-                <a
-                  href="https://taxi-nice-06.com/blog/guide-transfert-aeroport-nice"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/blog/guide-transfert-aeroport-nice"
                   className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
                 >
                   notre guide complet du transfert depuis l'aéroport de Nice
-                </a>{" "}
+                </Link>{" "}
                 pour découvrir tous nos conseils pratiques. Arrivée en train ?
                 Découvrez notre{" "}
                 <Link
@@ -458,6 +468,109 @@ export default function TransfertsAeroportPage() {
           </div>
         </section>
 
+        {/* Section Où retrouver le chauffeur */}
+        <section className="py-16 bg-gradient-to-br from-cyan-50 to-blue-50 border-t">
+          <div className="max-w-5xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Où retrouver votre chauffeur à l'aéroport de Nice ?
+            </h2>
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              Pour garantir une prise en charge sans stress, voici les points de
+              rendez-vous précis pour chaque terminal :
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-cyan-100">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                  <MapPin className="w-6 h-6 text-cyan-600" />
+                  Terminal 1 (T1)
+                </h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Point de rendez-vous :</strong> Sortie principale
+                      du hall des arrivées, niveau 0
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Repère :</strong> Panneau "TAXI" vert et blanc,
+                      zone de stationnement dédiée
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Votre chauffeur :</strong> Vous attendra avec un
+                      panneau affichant votre nom
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-cyan-100">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                  <MapPin className="w-6 h-6 text-cyan-600" />
+                  Terminal 2 (T2)
+                </h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Point de rendez-vous :</strong> Sortie du hall des
+                      arrivées, niveau 0, zone taxi
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Repère :</strong> À droite après la sortie des
+                      bagages, devant les panneaux d'affichage des vols
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Votre chauffeur :</strong> Vous attendra avec un
+                      panneau affichant votre nom
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-lg border border-cyan-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <Clock className="w-6 h-6 text-cyan-600" />
+                Temps d'attente et suivi de vol
+              </h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                  <span>
+                    <strong>Temps d'attente :</strong> Votre chauffeur arrive 15
+                    minutes avant l'heure prévue d'atterrissage
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                  <span>
+                    <strong>En cas de retard :</strong> Nous suivons votre vol
+                    en temps réel et ajustons automatiquement l'heure de prise
+                    en charge. Aucun frais supplémentaire.
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                  <span>
+                    <strong>Contact :</strong> Vous recevrez un SMS avec le
+                    numéro de téléphone de votre chauffeur 1h avant l'arrivée
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ SEO */}
         <section className="py-16 bg-white border-t">
           <div className="max-w-5xl mx-auto px-4">
@@ -501,7 +614,9 @@ export default function TransfertsAeroportPage() {
                       Où retrouver mon chauffeur à l'aéroport de Nice ?
                     </h3>
                     <p className="text-gray-700">
-                      À la sortie du terminal, avec un panneau nominatif.
+                      À la sortie du terminal (T1 ou T2), avec un panneau
+                      nominatif. Voir la section détaillée ci-dessous pour les
+                      points de rendez-vous précis.
                     </p>
                   </div>
                 </div>
@@ -555,16 +670,19 @@ export default function TransfertsAeroportPage() {
         </section>
       </main>
 
-      {/* JSON-LD LocalBusiness + FAQ */}
+      {/* JSON-LD TaxiService + FAQ */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": "TaxiService",
             name: "Taxi Nice 06",
             url: "https://taxi-nice-06.com",
             telephone: "+33651683687",
+            email: "taxiniceca@gmail.com",
+            logo: "https://taxi-nice-06.com/logo.png",
+            image: "https://taxi-nice-06.com/bg-image.png",
             areaServed: [
               "Nice",
               "Aéroport Nice Côte d'Azur",
@@ -597,6 +715,14 @@ export default function TransfertsAeroportPage() {
               },
             ],
             serviceType: "Transfert aéroport",
+            sameAs: ["https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"],
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "5",
+              reviewCount: "80",
+              bestRating: "5",
+              worstRating: "1",
+            },
           }),
         }}
       />
@@ -628,7 +754,7 @@ export default function TransfertsAeroportPage() {
                 name: "Où retrouver mon chauffeur à l'aéroport de Nice ?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "À la sortie du terminal (T1/T2) avec panneau nominatif.",
+                  text: "Terminal 1 : Sortie principale du hall des arrivées, niveau 0, zone taxi avec panneau vert et blanc. Terminal 2 : Sortie du hall des arrivées, niveau 0, à droite après la sortie des bagages. Votre chauffeur vous attend avec un panneau affichant votre nom. Temps d'attente : 15 minutes avant l'heure prévue d'atterrissage. Suivi de vol en temps réel en cas de retard.",
                 },
               },
               {
