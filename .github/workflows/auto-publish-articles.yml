@@ -2,9 +2,9 @@ name: Auto Publish Articles
 
 on:
   schedule:
-    # Exécute tous les jours à 21h40 UTC (22h40 heure française en hiver, 23h40 en été)
-    # MODIFIÉ POUR TEST - À remettre à 18h00 après le test
-    - cron: '40 21 * * *'
+    # Exécute tous les jours à 21h40 heure française (20h40 UTC en hiver, 19h40 UTC en été)
+    # MODIFIÉ POUR TEST - À remettre à 18h00 UTC après le test
+    - cron: '40 20 * * *'
   workflow_dispatch: # Permet de déclencher manuellement
 
 permissions:
