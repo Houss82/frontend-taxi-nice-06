@@ -6,7 +6,7 @@ image: "/musee-matisse-nice.png"
 category: "Voyage et Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Nice compte **plus de 15 musées** selon la [Ville de Nice](https://www.nice.fr/), dont certains parmi les plus prestigieux de France : le **Musée Matisse**, le **Musée Marc Chagall**, le **Musée des Beaux-Arts**, et bien d'autres. Chaque année, ces institutions culturelles attirent **plus de 500 000 visiteurs** selon les **Musées de Nice**, faisant de Nice l'une des capitales culturelles de la Côte d'Azur.
@@ -310,4 +310,4 @@ Oui, nos chauffeurs parlent **français, anglais, italien et espagnol**. Ils son
 
 ---
 
-_Article mis à jour le 30 décembre 2025_
+_Article mis à jour le 26 décembre 2025_
