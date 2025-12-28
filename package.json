@@ -12,7 +12,8 @@
     "test-optimizations": "node scripts/test-optimizations.js",
     "deploy": "node scripts/deploy.js",
     "build-prod": "npm run build && npm run start",
-    "performance-check": "npm run build && npm run start & sleep 5 && curl -s 'http://localhost:3000' > /dev/null && echo 'Site accessible' || echo 'Site non accessible'"
+    "performance-check": "npm run build && npm run start & sleep 5 && curl -s 'http://localhost:3000' > /dev/null && echo 'Site accessible' || echo 'Site non accessible'",
+    "validate-categories": "node scripts/validate-categories.js"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.14",
