@@ -369,15 +369,15 @@ export default function VSLPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-12">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mb-12">
             {/* Colonne 1 */}
-            <div className="space-y-8">
-              <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 border border-pink-100">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-                  <FileText className="w-7 h-7 text-pink-600" />
-                  Qu'est-ce qu'un taxi conventionné à Nice ?
+            <div className="space-y-6 md:space-y-8">
+              <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-pink-100">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
+                  <FileText className="w-6 h-6 sm:w-7 sm:h-7 text-pink-600 flex-shrink-0" />
+                  <span>Qu'est-ce qu'un taxi conventionné à Nice ?</span>
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base">
                   Un <strong>taxi conventionné à Nice</strong> est un véhicule
                   de transport médical agréé par la CPAM (Caisse Primaire
                   d'Assurance Maladie) pour effectuer des trajets médicaux
@@ -385,7 +385,7 @@ export default function VSLPage() {
                   ce service spécialisé répond à des critères stricts d'agrément
                   et de formation des chauffeurs.
                 </p>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                   À Nice, notre service de <strong>taxi conventionné</strong>{" "}
                   est reconnu par l'Assurance Maladie des Alpes-Maritimes et
                   permet aux patients de bénéficier d'une prise en charge
@@ -394,27 +394,27 @@ export default function VSLPage() {
                 </p>
               </div>
 
-              <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-                  <Shield className="w-7 h-7 text-blue-600" />
-                  Comment fonctionne le remboursement CPAM ?
+              <div className="bg-blue-50 rounded-2xl p-6 md:p-8 border border-blue-100">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
+                  <Shield className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600 flex-shrink-0" />
+                  <span>Comment fonctionne le remboursement CPAM ?</span>
                 </h3>
-                <div className="space-y-4">
-                  <div className="bg-white rounded-xl p-4 border border-blue-200">
-                    <h4 className="font-bold text-gray-900 mb-2">
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="bg-white rounded-xl p-3 sm:p-4 border border-blue-200">
+                    <h4 className="font-bold text-gray-900 mb-2 text-sm sm:text-base">
                       1. Prescription médicale
                     </h4>
-                    <p className="text-gray-700 text-sm">
+                    <p className="text-gray-700 text-xs sm:text-sm">
                       Votre médecin doit prescrire le transport médical sur
                       ordonnance. Cette prescription est obligatoire pour
                       bénéficier de la prise en charge CPAM.
                     </p>
                   </div>
-                  <div className="bg-white rounded-xl p-4 border border-blue-200">
-                    <h4 className="font-bold text-gray-900 mb-2">
+                  <div className="bg-white rounded-xl p-3 sm:p-4 border border-blue-200">
+                    <h4 className="font-bold text-gray-900 mb-2 text-sm sm:text-base">
                       2. Tiers payant
                     </h4>
-                    <p className="text-gray-700 text-sm">
+                    <p className="text-gray-700 text-xs sm:text-sm">
                       Avec notre service de{" "}
                       <strong>taxi conventionné à Nice</strong>, vous pouvez
                       bénéficier du tiers payant : la CPAM paie directement le
@@ -422,11 +422,11 @@ export default function VSLPage() {
                       (ticket modérateur).
                     </p>
                   </div>
-                  <div className="bg-white rounded-xl p-4 border border-blue-200">
-                    <h4 className="font-bold text-gray-900 mb-2">
+                  <div className="bg-white rounded-xl p-3 sm:p-4 border border-blue-200">
+                    <h4 className="font-bold text-gray-900 mb-2 text-sm sm:text-base">
                       3. Montant remboursé
                     </h4>
-                    <p className="text-gray-700 text-sm">
+                    <p className="text-gray-700 text-xs sm:text-sm">
                       Le remboursement varie selon votre situation : 100% pour
                       les ALD (Affections Longue Durée), 65% pour les autres
                       cas, avec possibilité de complément par votre mutuelle.
@@ -437,18 +437,18 @@ export default function VSLPage() {
             </div>
 
             {/* Colonne 2 */}
-            <div className="space-y-8">
-              <div className="bg-green-50 rounded-2xl p-8 border border-green-100">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-                  <MapPin className="w-7 h-7 text-green-600" />
-                  Zones desservies par notre taxi conventionné à Nice
+            <div className="space-y-6 md:space-y-8">
+              <div className="bg-green-50 rounded-2xl p-6 md:p-8 border border-green-100">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
+                  <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-green-600 flex-shrink-0" />
+                  <span>Zones desservies par notre taxi conventionné à Nice</span>
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base">
                   Notre service de <strong>taxi conventionné Nice</strong>{" "}
                   couvre l'ensemble de la métropole niçoise et les communes
                   environnantes :
                 </p>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                   {[
                     "Nice Centre",
                     "Nice Nord",
@@ -468,18 +468,18 @@ export default function VSLPage() {
                       className="flex items-center gap-2 bg-white rounded-lg p-2 border border-green-200"
                     >
                       <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
-                      <span className="text-sm text-gray-700">{zone}</span>
+                      <span className="text-xs sm:text-sm text-gray-700">{zone}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-purple-50 rounded-2xl p-8 border border-purple-100">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-                  <Clock className="w-7 h-7 text-purple-600" />
-                  Avantages d'un taxi conventionné à Nice
+              <div className="bg-purple-50 rounded-2xl p-6 md:p-8 border border-purple-100">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
+                  <Clock className="w-6 h-6 sm:w-7 sm:h-7 text-purple-600 flex-shrink-0" />
+                  <span>Avantages d'un taxi conventionné à Nice</span>
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-2 sm:space-y-3">
                   {[
                     "Prise en charge CPAM automatique avec tiers payant",
                     "Chauffeurs formés aux gestes médicaux et à l'accueil des personnes à mobilité réduite",
@@ -488,9 +488,9 @@ export default function VSLPage() {
                     "Ponctualité garantie pour vos rendez-vous médicaux",
                     "Accompagnement personnalisé et sécurisé",
                   ].map((avantage, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{avantage}</span>
+                    <li key={index} className="flex items-start gap-2 sm:gap-3">
+                      <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700 text-sm sm:text-base">{avantage}</span>
                     </li>
                   ))}
                 </ul>
@@ -666,7 +666,9 @@ export default function VSLPage() {
                       "100"
                     )} rounded-2xl flex items-center justify-center flex-shrink-0 mx-auto sm:mx-0`}
                   >
-                    <service.icon className={`w-7 h-7 sm:w-8 sm:h-8 ${service.iconColor}`} />
+                    <service.icon
+                      className={`w-7 h-7 sm:w-8 sm:h-8 ${service.iconColor}`}
+                    />
                   </div>
                   <div className="flex-1 w-full">
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 text-center sm:text-left">
@@ -682,7 +684,9 @@ export default function VSLPage() {
                           className="flex items-start sm:items-center gap-2 sm:gap-3"
                         >
                           <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-pink-500 flex-shrink-0 mt-0.5 sm:mt-0" />
-                          <span className="text-gray-700 text-sm sm:text-base">{feature}</span>
+                          <span className="text-gray-700 text-sm sm:text-base">
+                            {feature}
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -799,28 +803,28 @@ export default function VSLPage() {
       </section>
 
       {/* Requirements Section */}
-      <section className="py-24 bg-gradient-to-br from-pink-50 to-purple-50">
+      <section className="py-16 sm:py-24 bg-gradient-to-br from-pink-50 to-purple-50">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="bg-white rounded-3xl p-12 shadow-2xl">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <div className="bg-white rounded-3xl p-6 md:p-12 shadow-2xl">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Documents Requis
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
                 Les documents nécessaires pour bénéficier du transport VSL
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
               {requirements.map((requirement, index) => (
                 <div
                   key={index}
-                  className="flex items-start space-x-4 p-4 rounded-2xl hover:bg-gray-50 transition-colors duration-300"
+                  className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-2xl hover:bg-gray-50 transition-colors duration-300"
                 >
-                  <div className="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <CheckCircle className="w-5 h-5 text-pink-500" />
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1 mx-auto sm:mx-0">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-pink-500" />
                   </div>
-                  <span className="text-gray-700 text-lg leading-relaxed">
+                  <span className="text-gray-700 text-base sm:text-lg leading-relaxed text-center sm:text-left w-full">
                     {requirement}
                   </span>
                 </div>
