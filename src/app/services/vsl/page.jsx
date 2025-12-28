@@ -653,36 +653,36 @@ export default function VSLPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10">
             {services.map((service, index) => (
               <div
                 key={index}
-                className={`${service.color} rounded-3xl p-8 border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}
+                className={`${service.color} rounded-3xl p-6 md:p-8 border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}
               >
-                <div className="flex items-start space-x-6">
+                <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
                   <div
-                    className={`w-16 h-16 ${service.color.replace(
+                    className={`w-14 h-14 sm:w-16 sm:h-16 ${service.color.replace(
                       "50",
                       "100"
-                    )} rounded-2xl flex items-center justify-center flex-shrink-0`}
+                    )} rounded-2xl flex items-center justify-center flex-shrink-0 mx-auto sm:mx-0`}
                   >
-                    <service.icon className={`w-8 h-8 ${service.iconColor}`} />
+                    <service.icon className={`w-7 h-7 sm:w-8 sm:h-8 ${service.iconColor}`} />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <div className="flex-1 w-full">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 text-center sm:text-left">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
+                    <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base text-center sm:text-left">
                       {service.description}
                     </p>
-                    <ul className="space-y-3">
+                    <ul className="space-y-2 sm:space-y-3">
                       {service.features.map((feature, featureIndex) => (
                         <li
                           key={featureIndex}
-                          className="flex items-center space-x-3"
+                          className="flex items-start sm:items-center gap-2 sm:gap-3"
                         >
-                          <CheckCircle className="w-5 h-5 text-pink-500 flex-shrink-0" />
-                          <span className="text-gray-700">{feature}</span>
+                          <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-pink-500 flex-shrink-0 mt-0.5 sm:mt-0" />
+                          <span className="text-gray-700 text-sm sm:text-base">{feature}</span>
                         </li>
                       ))}
                     </ul>
