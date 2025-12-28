@@ -364,7 +364,8 @@ export default function VSLPage() {
               Guide Complet : Taxi Conventionné à Nice
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Tout ce que vous devez savoir sur le transport médical conventionné CPAM à Nice et dans les Alpes-Maritimes
+              Tout ce que vous devez savoir sur le transport médical
+              conventionné CPAM à Nice et dans les Alpes-Maritimes
             </p>
           </div>
 
@@ -377,10 +378,19 @@ export default function VSLPage() {
                   Qu'est-ce qu'un taxi conventionné à Nice ?
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Un <strong>taxi conventionné à Nice</strong> est un véhicule de transport médical agréé par la CPAM (Caisse Primaire d'Assurance Maladie) pour effectuer des trajets médicaux prescrits par un médecin. Contrairement à un taxi classique, ce service spécialisé répond à des critères stricts d'agrément et de formation des chauffeurs.
+                  Un <strong>taxi conventionné à Nice</strong> est un véhicule
+                  de transport médical agréé par la CPAM (Caisse Primaire
+                  d'Assurance Maladie) pour effectuer des trajets médicaux
+                  prescrits par un médecin. Contrairement à un taxi classique,
+                  ce service spécialisé répond à des critères stricts d'agrément
+                  et de formation des chauffeurs.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  À Nice, notre service de <strong>taxi conventionné</strong> est reconnu par l'Assurance Maladie des Alpes-Maritimes et permet aux patients de bénéficier d'une prise en charge partielle ou totale de leurs frais de transport médical selon leur situation et leur prescription.
+                  À Nice, notre service de <strong>taxi conventionné</strong>{" "}
+                  est reconnu par l'Assurance Maladie des Alpes-Maritimes et
+                  permet aux patients de bénéficier d'une prise en charge
+                  partielle ou totale de leurs frais de transport médical selon
+                  leur situation et leur prescription.
                 </p>
               </div>
 
@@ -391,21 +401,35 @@ export default function VSLPage() {
                 </h3>
                 <div className="space-y-4">
                   <div className="bg-white rounded-xl p-4 border border-blue-200">
-                    <h4 className="font-bold text-gray-900 mb-2">1. Prescription médicale</h4>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      1. Prescription médicale
+                    </h4>
                     <p className="text-gray-700 text-sm">
-                      Votre médecin doit prescrire le transport médical sur ordonnance. Cette prescription est obligatoire pour bénéficier de la prise en charge CPAM.
+                      Votre médecin doit prescrire le transport médical sur
+                      ordonnance. Cette prescription est obligatoire pour
+                      bénéficier de la prise en charge CPAM.
                     </p>
                   </div>
                   <div className="bg-white rounded-xl p-4 border border-blue-200">
-                    <h4 className="font-bold text-gray-900 mb-2">2. Tiers payant</h4>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      2. Tiers payant
+                    </h4>
                     <p className="text-gray-700 text-sm">
-                      Avec notre service de <strong>taxi conventionné à Nice</strong>, vous pouvez bénéficier du tiers payant : la CPAM paie directement le transporteur, vous n'avancez que votre part restante (ticket modérateur).
+                      Avec notre service de{" "}
+                      <strong>taxi conventionné à Nice</strong>, vous pouvez
+                      bénéficier du tiers payant : la CPAM paie directement le
+                      transporteur, vous n'avancez que votre part restante
+                      (ticket modérateur).
                     </p>
                   </div>
                   <div className="bg-white rounded-xl p-4 border border-blue-200">
-                    <h4 className="font-bold text-gray-900 mb-2">3. Montant remboursé</h4>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      3. Montant remboursé
+                    </h4>
                     <p className="text-gray-700 text-sm">
-                      Le remboursement varie selon votre situation : 100% pour les ALD (Affections Longue Durée), 65% pour les autres cas, avec possibilité de complément par votre mutuelle.
+                      Le remboursement varie selon votre situation : 100% pour
+                      les ALD (Affections Longue Durée), 65% pour les autres
+                      cas, avec possibilité de complément par votre mutuelle.
                     </p>
                   </div>
                 </div>
@@ -420,7 +444,9 @@ export default function VSLPage() {
                   Zones desservies par notre taxi conventionné à Nice
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Notre service de <strong>taxi conventionné Nice</strong> couvre l'ensemble de la métropole niçoise et les communes environnantes :
+                  Notre service de <strong>taxi conventionné Nice</strong>{" "}
+                  couvre l'ensemble de la métropole niçoise et les communes
+                  environnantes :
                 </p>
                 <div className="grid grid-cols-2 gap-3">
                   {[
@@ -435,9 +461,12 @@ export default function VSLPage() {
                     "Cagnes-sur-Mer",
                     "Villeneuve-Loubet",
                     "Saint-Laurent-du-Var",
-                    "Antibes"
+                    "Antibes",
                   ].map((zone, index) => (
-                    <div key={index} className="flex items-center gap-2 bg-white rounded-lg p-2 border border-green-200">
+                    <div
+                      key={index}
+                      className="flex items-center gap-2 bg-white rounded-lg p-2 border border-green-200"
+                    >
                       <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
                       <span className="text-sm text-gray-700">{zone}</span>
                     </div>
@@ -457,7 +486,7 @@ export default function VSLPage() {
                     "Véhicules agréés et conformes aux normes sanitaires",
                     "Disponibilité 24h/24 et 7j/7 pour les urgences médicales",
                     "Ponctualité garantie pour vos rendez-vous médicaux",
-                    "Accompagnement personnalisé et sécurisé"
+                    "Accompagnement personnalisé et sécurisé",
                   ].map((avantage, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
@@ -478,22 +507,29 @@ export default function VSLPage() {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <h4 className="font-bold text-xl mb-3">Forfait de base CPAM</h4>
                 <p className="text-3xl font-bold mb-2">13€</p>
-                <p className="text-white/90 text-sm">Forfait kilométrique selon barème CPAM en vigueur</p>
+                <p className="text-white/90 text-sm">
+                  Forfait kilométrique selon barème CPAM en vigueur
+                </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <h4 className="font-bold text-xl mb-3">Tiers payant</h4>
                 <p className="text-lg mb-2">Disponible</p>
-                <p className="text-white/90 text-sm">CPAM paie directement, vous n'avancez que votre part</p>
+                <p className="text-white/90 text-sm">
+                  CPAM paie directement, vous n'avancez que votre part
+                </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <h4 className="font-bold text-xl mb-3">Complément mutuelle</h4>
                 <p className="text-lg mb-2">Selon contrat</p>
-                <p className="text-white/90 text-sm">Votre mutuelle peut compléter le remboursement CPAM</p>
+                <p className="text-white/90 text-sm">
+                  Votre mutuelle peut compléter le remboursement CPAM
+                </p>
               </div>
             </div>
             <p className="text-center mt-6 text-white/90">
-              Les tarifs de notre <strong>taxi conventionné à Nice</strong> respectent le barème CPAM officiel. 
-              Le montant exact dépend de la distance parcourue et de votre situation médicale.
+              Les tarifs de notre <strong>taxi conventionné à Nice</strong>{" "}
+              respectent le barème CPAM officiel. Le montant exact dépend de la
+              distance parcourue et de votre situation médicale.
             </p>
           </div>
         </div>
@@ -510,28 +546,42 @@ export default function VSLPage() {
             <div className="space-y-6">
               <div className="border-l-4 border-pink-500 pl-6 py-4">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Quelle est la différence entre un taxi conventionné et un taxi classique à Nice ?
+                  Quelle est la différence entre un taxi conventionné et un taxi
+                  classique à Nice ?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Un <strong>taxi conventionné à Nice</strong> est spécialement agréé pour les transports médicaux et peut être remboursé par la CPAM. Les chauffeurs sont formés aux gestes médicaux et à l'accueil des personnes à mobilité réduite. Un taxi classique ne bénéficie pas de cette convention et ne peut pas être remboursé par l'Assurance Maladie.
+                  Un <strong>taxi conventionné à Nice</strong> est spécialement
+                  agréé pour les transports médicaux et peut être remboursé par
+                  la CPAM. Les chauffeurs sont formés aux gestes médicaux et à
+                  l'accueil des personnes à mobilité réduite. Un taxi classique
+                  ne bénéficie pas de cette convention et ne peut pas être
+                  remboursé par l'Assurance Maladie.
                 </p>
               </div>
 
               <div className="border-l-4 border-blue-500 pl-6 py-4">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Combien de temps à l'avance faut-il réserver un taxi conventionné à Nice ?
+                  Combien de temps à l'avance faut-il réserver un taxi
+                  conventionné à Nice ?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Pour un <strong>taxi conventionné Nice</strong>, nous recommandons de réserver au moins 24 à 48 heures à l'avance, surtout pour les rendez-vous programmés. Cependant, nous acceptons également les réservations en urgence pour les cas médicaux nécessitant un transport immédiat.
+                  Pour un <strong>taxi conventionné Nice</strong>, nous
+                  recommandons de réserver au moins 24 à 48 heures à l'avance,
+                  surtout pour les rendez-vous programmés. Cependant, nous
+                  acceptons également les réservations en urgence pour les cas
+                  médicaux nécessitant un transport immédiat.
                 </p>
               </div>
 
               <div className="border-l-4 border-green-500 pl-6 py-4">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Quels établissements de santé desservez-vous avec votre taxi conventionné à Nice ?
+                  Quels établissements de santé desservez-vous avec votre taxi
+                  conventionné à Nice ?
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-2">
-                  Notre <strong>taxi conventionné Nice</strong> dessert tous les établissements de santé de la métropole niçoise et des Alpes-Maritimes :
+                  Notre <strong>taxi conventionné Nice</strong> dessert tous les
+                  établissements de santé de la métropole niçoise et des
+                  Alpes-Maritimes :
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
                   <li>CHU Pasteur (Nice)</li>
@@ -545,10 +595,16 @@ export default function VSLPage() {
 
               <div className="border-l-4 border-purple-500 pl-6 py-4">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Le taxi conventionné à Nice est-il disponible pour les personnes en fauteuil roulant ?
+                  Le taxi conventionné à Nice est-il disponible pour les
+                  personnes en fauteuil roulant ?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Oui, notre service de <strong>taxi conventionné Nice</strong> dispose de véhicules adaptés (VSL - Véhicule Sanitaire Léger) équipés pour accueillir les fauteuils roulants. Nos chauffeurs sont formés à la manipulation sécurisée des personnes à mobilité réduite. Précisez ce besoin lors de votre réservation.
+                  Oui, notre service de <strong>taxi conventionné Nice</strong>{" "}
+                  dispose de véhicules adaptés (VSL - Véhicule Sanitaire Léger)
+                  équipés pour accueillir les fauteuils roulants. Nos chauffeurs
+                  sont formés à la manipulation sécurisée des personnes à
+                  mobilité réduite. Précisez ce besoin lors de votre
+                  réservation.
                 </p>
               </div>
             </div>
@@ -748,6 +804,25 @@ export default function VSLPage() {
         </div>
       </section>
 
+      {/* Section Lien vers Taxi Nice Général - Évite la cannibalisation */}
+      <section className="py-16 bg-white border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-lg text-gray-600 mb-4">
+            Vous recherchez un <strong>taxi à Nice</strong> pour d'autres besoins ?
+          </p>
+          <p className="text-base text-gray-500 mb-6">
+            Notre service de <Link href="/" className="text-blue-600 hover:text-blue-800 font-semibold underline underline-offset-2">taxi Nice 24/7</Link> propose également des transferts aéroport, trajets vers Monaco, Cannes, Antibes, et tous vos déplacements sur la Côte d'Azur.
+          </p>
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-colors duration-300"
+          >
+            Découvrir tous nos services de taxi à Nice
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-pink-500 via-pink-600 to-purple-600">
         <div className="max-w-5xl mx-auto px-4 text-center">
@@ -760,7 +835,7 @@ export default function VSLPage() {
           <p className="text-lg text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto">
             Nous proposons aussi un service complet de{" "}
             <Link
-              href="/taxi-nice"
+              href="/"
               className="text-white font-semibold underline underline-offset-4 hover:text-pink-200 transition-colors"
             >
               taxi Nice 24/7
