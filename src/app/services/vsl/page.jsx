@@ -155,7 +155,7 @@ export default function VSLPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[90vh] overflow-hidden">
+      <section className="relative min-h-[90vh] overflow-hidden pb-16 sm:pb-0">
         <div className="absolute inset-0">
           <Image
             src="/classB-darguignan copie.png"
@@ -167,7 +167,7 @@ export default function VSLPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
         </div>
 
-        <div className="relative h-full flex items-center">
+        <div className="relative min-h-[90vh] flex items-center py-16 sm:py-0">
           <div className="max-w-7xl mx-auto px-4 w-full">
             <div className="max-w-4xl">
               <div className="flex items-center mb-8">
@@ -175,7 +175,7 @@ export default function VSLPage() {
                   <Heart className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h1 className="text-6xl lg:text-8xl font-bold text-white mb-2">
+                  <h1 className="text-5xl lg:text-8xl font-bold text-white mb-2">
                     Taxi Conventionné Nice
                     <span className="block text-pink-300 text-2xl lg:text-3xl font-light mt-2">
                       VSL & Transport Médical CPAM
@@ -194,7 +194,7 @@ export default function VSLPage() {
                 tous vos rendez-vous médicaux, en toute sécurité.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6">
+              <div className="flex flex-col sm:flex-row gap-6 mb-8 sm:mb-0">
                 <a
                   href="tel:0651683687"
                   className="px-10 py-5 bg-pink-500 hover:bg-pink-600 text-white rounded-2xl font-bold text-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl"
@@ -503,7 +503,7 @@ export default function VSLPage() {
             <h3 className="text-3xl font-bold mb-6 text-center">
               Tarifs Taxi Conventionné à Nice
             </h3>
-            
+
             {/* Message principal sur le tiers payant */}
             <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 mb-6 border-2 border-white/30">
               <div className="flex items-start gap-4">
@@ -513,10 +513,12 @@ export default function VSLPage() {
                     Avec une prescription médicale : rien à avancer
                   </h4>
                   <p className="text-white/95 text-lg leading-relaxed">
-                    Grâce au <strong>tiers payant CPAM</strong>, vous n'avancez aucun frais lors de votre transport médical. 
-                    La CPAM paie directement notre service de <strong>taxi conventionné à Nice</strong>. 
-                    Vous ne payez que votre part restante (ticket modérateur) uniquement si elle existe, 
-                    et souvent votre mutuelle la prend en charge.
+                    Grâce au <strong>tiers payant CPAM</strong>, vous n'avancez
+                    aucun frais lors de votre transport médical. La CPAM paie
+                    directement notre service de{" "}
+                    <strong>taxi conventionné à Nice</strong>. Vous ne payez que
+                    votre part restante (ticket modérateur) uniquement si elle
+                    existe, et souvent votre mutuelle la prend en charge.
                   </p>
                 </div>
               </div>
@@ -532,9 +534,11 @@ export default function VSLPage() {
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <h4 className="font-bold text-xl mb-3">Tiers payant inclus</h4>
-                <p className="text-2xl font-bold mb-2 text-green-200">0€ à avancer</p>
+                <p className="text-2xl font-bold mb-2 text-green-200">
+                  0€ à avancer
+                </p>
                 <p className="text-white/90 text-sm">
-                  Avec prescription médicale valide, la CPAM paie directement. 
+                  Avec prescription médicale valide, la CPAM paie directement.
                   Vous n'avancez rien.
                 </p>
               </div>
@@ -542,15 +546,15 @@ export default function VSLPage() {
                 <h4 className="font-bold text-xl mb-3">Complément mutuelle</h4>
                 <p className="text-lg mb-2">Selon votre contrat</p>
                 <p className="text-white/90 text-sm">
-                  Votre mutuelle peut compléter le remboursement CPAM, 
-                  réduisant encore votre reste à charge
+                  Votre mutuelle peut compléter le remboursement CPAM, réduisant
+                  encore votre reste à charge
                 </p>
               </div>
             </div>
             <p className="text-center mt-6 text-white/90 text-lg">
               Les tarifs de notre <strong>taxi conventionné à Nice</strong>{" "}
-              respectent le barème CPAM officiel. Avec une prescription médicale 
-              et le tiers payant, <strong>vous n'avez rien à avancer</strong> - 
+              respectent le barème CPAM officiel. Avec une prescription médicale
+              et le tiers payant, <strong>vous n'avez rien à avancer</strong> -
               la CPAM règle directement le transport.
             </p>
           </div>
