@@ -188,61 +188,7 @@ export default function StructuredData() {
       ],
       inLanguage: "fr-FR",
     },
-    // Données structurées pour les FAQ
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Comment réserver un taxi à l'aéroport de Nice ?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Vous pouvez réserver votre taxi à Nice en ligne sur notre site via le formulaire de réservation, ou simplement par téléphone. Il suffit d'indiquer votre numéro de vol, la date et l'heure d'arrivée, et nous vous confirmons votre transfert immédiatement.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Quels sont vos tarifs pour un transfert aéroport ?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Nos tarifs de taxi à Nice sont fixes et transparents. Ils varient selon la destination (Cannes, Monaco, Antibes...) et le type de véhicule choisi (Mercedes GLC ou Van Premium). Consultez notre page tarifs pour les détails complets.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Proposez-vous un service VSL à Nice ?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Oui, nous proposons un service VSL conventionné CPAM à Nice et sur toute la Côte d'Azur. Nos chauffeurs sont agréés et formés pour le transport médical assis, disponibles 24h/24 et 7j/7.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Quels types de véhicules proposez-vous ?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Nous disposons de Mercedes GLC pour les trajets privés (jusqu'à 4 passagers) et de Vans Premium jusqu'à 8 places. Tous nos véhicules sont récents, climatisés, spacieux et parfaitement entretenus.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Faites-vous des excursions touristiques ?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Oui, nous proposons des excursions privées sur la Côte d'Azur : Monaco, Cannes, Saint-Tropez, Antibes ou Grasse. Nos chauffeurs vous accompagnent pour découvrir les plus beaux sites de la région à votre rythme.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Comment puis-je vous contacter ?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Vous pouvez nous contacter par téléphone 24h/24 et 7j/7, via notre page contact ou par WhatsApp. Réponse rapide garantie en français et en anglais.",
-          },
-        },
-      ],
-    },
+    // Note: Les schémas FAQPage sont définis individuellement sur chaque page pour éviter les doublons
     // Breadcrumb pour la navigation
     {
       "@context": "https://schema.org",
