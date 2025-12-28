@@ -1,5 +1,4 @@
-"use client";
-
+// Server Component pour meilleur SEO et référencement
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
