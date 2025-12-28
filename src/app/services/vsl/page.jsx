@@ -441,7 +441,9 @@ export default function VSLPage() {
               <div className="bg-green-50 rounded-2xl p-6 md:p-8 border border-green-100">
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
                   <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-green-600 flex-shrink-0" />
-                  <span>Zones desservies par notre taxi conventionné à Nice</span>
+                  <span>
+                    Zones desservies par notre taxi conventionné à Nice
+                  </span>
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base">
                   Notre service de <strong>taxi conventionné Nice</strong>{" "}
@@ -468,7 +470,9 @@ export default function VSLPage() {
                       className="flex items-center gap-2 bg-white rounded-lg p-2 border border-green-200"
                     >
                       <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
-                      <span className="text-xs sm:text-sm text-gray-700">{zone}</span>
+                      <span className="text-xs sm:text-sm text-gray-700">
+                        {zone}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -490,7 +494,9 @@ export default function VSLPage() {
                   ].map((avantage, index) => (
                     <li key={index} className="flex items-start gap-2 sm:gap-3">
                       <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700 text-sm sm:text-base">{avantage}</span>
+                      <span className="text-gray-700 text-sm sm:text-base">
+                        {avantage}
+                      </span>
                     </li>
                   ))}
                 </ul>
