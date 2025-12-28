@@ -503,33 +503,55 @@ export default function VSLPage() {
             <h3 className="text-3xl font-bold mb-6 text-center">
               Tarifs Taxi Conventionné à Nice
             </h3>
+            
+            {/* Message principal sur le tiers payant */}
+            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 mb-6 border-2 border-white/30">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-8 h-8 text-white flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="text-2xl font-bold mb-2">
+                    Avec une prescription médicale : rien à avancer
+                  </h4>
+                  <p className="text-white/95 text-lg leading-relaxed">
+                    Grâce au <strong>tiers payant CPAM</strong>, vous n'avancez aucun frais lors de votre transport médical. 
+                    La CPAM paie directement notre service de <strong>taxi conventionné à Nice</strong>. 
+                    Vous ne payez que votre part restante (ticket modérateur) uniquement si elle existe, 
+                    et souvent votre mutuelle la prend en charge.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <h4 className="font-bold text-xl mb-3">Forfait de base CPAM</h4>
                 <p className="text-3xl font-bold mb-2">13€</p>
                 <p className="text-white/90 text-sm">
-                  Forfait kilométrique selon barème CPAM en vigueur
+                  Forfait kilométrique selon barème CPAM officiel en vigueur
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                <h4 className="font-bold text-xl mb-3">Tiers payant</h4>
-                <p className="text-lg mb-2">Disponible</p>
+                <h4 className="font-bold text-xl mb-3">Tiers payant inclus</h4>
+                <p className="text-2xl font-bold mb-2 text-green-200">0€ à avancer</p>
                 <p className="text-white/90 text-sm">
-                  CPAM paie directement, vous n'avancez que votre part
+                  Avec prescription médicale valide, la CPAM paie directement. 
+                  Vous n'avancez rien.
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <h4 className="font-bold text-xl mb-3">Complément mutuelle</h4>
-                <p className="text-lg mb-2">Selon contrat</p>
+                <p className="text-lg mb-2">Selon votre contrat</p>
                 <p className="text-white/90 text-sm">
-                  Votre mutuelle peut compléter le remboursement CPAM
+                  Votre mutuelle peut compléter le remboursement CPAM, 
+                  réduisant encore votre reste à charge
                 </p>
               </div>
             </div>
-            <p className="text-center mt-6 text-white/90">
+            <p className="text-center mt-6 text-white/90 text-lg">
               Les tarifs de notre <strong>taxi conventionné à Nice</strong>{" "}
-              respectent le barème CPAM officiel. Le montant exact dépend de la
-              distance parcourue et de votre situation médicale.
+              respectent le barème CPAM officiel. Avec une prescription médicale 
+              et le tiers payant, <strong>vous n'avez rien à avancer</strong> - 
+              la CPAM règle directement le transport.
             </p>
           </div>
         </div>
@@ -808,10 +830,19 @@ export default function VSLPage() {
       <section className="py-16 bg-white border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-lg text-gray-600 mb-4">
-            Vous recherchez un <strong>taxi à Nice</strong> pour d'autres besoins ?
+            Vous recherchez un <strong>taxi à Nice</strong> pour d'autres
+            besoins ?
           </p>
           <p className="text-base text-gray-500 mb-6">
-            Notre service de <Link href="/" className="text-blue-600 hover:text-blue-800 font-semibold underline underline-offset-2">taxi Nice 24/7</Link> propose également des transferts aéroport, trajets vers Monaco, Cannes, Antibes, et tous vos déplacements sur la Côte d'Azur.
+            Notre service de{" "}
+            <Link
+              href="/"
+              className="text-blue-600 hover:text-blue-800 font-semibold underline underline-offset-2"
+            >
+              taxi Nice 24/7
+            </Link>{" "}
+            propose également des transferts aéroport, trajets vers Monaco,
+            Cannes, Antibes, et tous vos déplacements sur la Côte d'Azur.
           </p>
           <Link
             href="/"
