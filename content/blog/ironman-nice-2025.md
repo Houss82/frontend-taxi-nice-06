@@ -157,6 +157,131 @@ L'Ironman de Nice 2026 se déroulera généralement en **juin**, avec des dates 
 
 ---
 
+## 🎯 Date officielle confirmée : Ironman Nice 2026
+
+**Excellente nouvelle pour tous les triathlètes !** La date de l'édition 2026 de l'Ironman de Nice est **officiellement confirmée** : **Dimanche 28 juin 2026**.
+
+Cette année, Nice accueillera **deux épreuves exceptionnelles le même jour**, offrant aux athlètes le choix entre deux formats selon leur niveau et leurs objectifs :
+
+<div class="info-box">
+<strong>📅 Date confirmée :</strong> <strong>Dimanche 28 juin 2026</strong><br/>
+<strong>🏊 Deux formats au choix :</strong> Ironman France Nice (format complet) et Ironman 70.3 Nice (format half)
+</div>
+
+### 🏆 Ironman France Nice : Le format complet (Full Distance)
+
+L'**Ironman France Nice** est le format classique et le plus exigeant, réservé aux triathlètes expérimentés ayant déjà complété plusieurs triathlons longue distance.
+
+**Parcours complet** :
+
+- **🏊 Natation** : **3,8 km** en mer Méditerranée
+  - Départ depuis la plage publique de la Promenade des Anglais
+  - Boucle en mer avec retour sur la plage
+  - Eau de mer, température moyenne 20-22°C en juin
+  - Temps moyen : 1h15 - 1h30 pour les athlètes amateurs
+
+- **🚴 Vélo** : **180 km** dans les Alpes-Maritimes
+  - Parcours : Nice → Col de Vence → retour Nice
+  - Dénivelé : Plus de 2 000 mètres de dénivelé positif
+  - Point culminant : Col de Vence (963 mètres)
+  - Routes de montagne spectaculaires avec vues panoramiques sur la Méditerranée
+  - Temps moyen : 6h - 7h30 pour les athlètes amateurs
+
+- **🏃 Course à pied** : **42,2 km** (marathon complet)
+  - Parcours : Plusieurs boucles sur la Promenade des Anglais
+  - Revêtement : Asphalte, surface plane et rapide
+  - Ambiance : Des milliers de spectateurs encouragent les athlètes
+  - Temps moyen : 4h - 5h30 pour les athlètes amateurs
+
+**Temps total moyen** : 11h30 - 14h30 pour les athlètes amateurs
+
+**Objectifs** : Qualification pour le Championnat du Monde Ironman à Kona (Hawaï) pour les meilleurs, défi personnel ultime pour les autres.
+
+### 🥈 Ironman 70.3 Nice : Le format half (Half Distance)
+
+L'**Ironman 70.3 Nice** (également appelé "Half Ironman") est le format idéal pour les triathlètes souhaitant découvrir l'Ironman ou pour ceux qui préfèrent une distance plus accessible tout en conservant le prestige de l'événement.
+
+**Parcours half** :
+
+- **🏊 Natation** : **1,9 km** en mer Méditerranée
+  - Départ depuis la plage publique de la Promenade des Anglais
+  - Parcours réduit par rapport au format complet
+  - Mêmes conditions de mer que le format complet
+  - Temps moyen : 35-45 minutes pour les athlètes amateurs
+
+- **🚴 Vélo** : **90 km** dans les Alpes-Maritimes
+  - Parcours adapté : Version raccourcie du parcours complet
+  - Dénivelé : Environ 1 000 mètres de dénivelé positif
+  - Routes de montagne avec passages techniques mais moins exigeants que le format complet
+  - Temps moyen : 3h - 4h pour les athlètes amateurs
+
+- **🏃 Course à pied** : **21,1 km** (demi-marathon)
+  - Parcours : Boucles sur la Promenade des Anglais
+  - Même revêtement et ambiance que le format complet
+  - Distance réduite pour une expérience plus accessible
+  - Temps moyen : 1h45 - 2h30 pour les athlètes amateurs
+
+**Temps total moyen** : 5h30 - 7h15 pour les athlètes amateurs
+
+**Objectifs** : Découverte de l'Ironman, préparation au format complet, défi accessible pour les triathlètes intermédiaires.
+
+### 📊 Comparaison des deux formats
+
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #f3f4f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Épreuve</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #e5e7eb; font-weight: 600;">Ironman France Nice<br/>(Format complet)</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #e5e7eb; font-weight: 600;">Ironman 70.3 Nice<br/>(Format half)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>🏊 Natation</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;"><strong>3,8 km</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;"><strong>1,9 km</strong></td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>🚴 Vélo</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;"><strong>180 km</strong><br/><small>(+2 000m dénivelé)</small></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;"><strong>90 km</strong><br/><small>(+1 000m dénivelé)</small></td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>🏃 Course à pied</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;"><strong>42,2 km</strong><br/><small>(Marathon)</small></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;"><strong>21,1 km</strong><br/><small>(Demi-marathon)</small></td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>⏱️ Temps total moyen</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;"><strong>11h30 - 14h30</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;"><strong>5h30 - 7h15</strong></td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>🎯 Niveau requis</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;">Expérimenté<br/><small>(Plusieurs triathlons)</small></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb; text-align: center;">Intermédiaire<br/><small>(Accessible)</small></td>
+    </tr>
+  </tbody>
+</table>
+
+### 🎯 Quel format choisir ?
+
+**Choisissez l'Ironman France Nice (format complet)** si :
+- Vous avez déjà complété plusieurs triathlons longue distance
+- Vous visez une qualification pour Kona (Championnat du Monde)
+- Vous recherchez le défi ultime du triathlon
+- Vous avez une expérience solide en triathlon
+
+**Choisissez l'Ironman 70.3 Nice (format half)** si :
+- Vous découvrez l'Ironman pour la première fois
+- Vous préparez votre premier Ironman complet
+- Vous préférez une distance plus accessible
+- Vous recherchez une expérience Ironman sans l'intensité du format complet
+
+**💡 Conseil** : Les deux formats partagent les mêmes zones de départ, de transition et d'arrivée sur la Promenade des Anglais, facilitant le suivi pour les supporters et les familles. Les horaires de départ seront échelonnés pour permettre aux spectateurs de suivre les deux épreuves tout au long de la journée.
+
+---
+
 ## 🚗 Accès et mobilité pendant l'Ironman : expertise locale
 
 Pendant l'Ironman, Nice connaît des **modifications majeures de circulation** et une **affluence exceptionnelle**. Voici les défis à anticiper :
@@ -316,7 +441,12 @@ Pendant l'Ironman, un **transport privé** est fortement recommandé pour :
 <details class="faq">
 <summary><strong>1. Quand se déroule l'Ironman de Nice 2026 ?</strong></summary>
 
-L'Ironman de Nice 2026 se déroulera généralement en **juin**, avec des dates exactes confirmées en début d'année sur le [site officiel Ironman France](https://www.ironman.com/im-france). L'événement se déroule sur **une journée complète**, avec un départ natation très tôt le matin (6h30-7h) et une fermeture de la ligne d'arrivée à 17h.
+L'Ironman de Nice 2026 se déroulera le **Dimanche 28 juin 2026**. Cette année, Nice accueillera **deux épreuves le même jour** :
+
+- **Ironman France Nice** : Format complet (3,8 km natation / 180 km vélo / 42,2 km course à pied)
+- **Ironman 70.3 Nice** : Format half (1,9 km natation / 90 km vélo / 21,1 km course à pied)
+
+L'événement se déroule sur **une journée complète**, avec des départs échelonnés dès 6h30-7h pour la natation et une fermeture de la ligne d'arrivée à 17h. Consultez le [site officiel Ironman France](https://www.ironman.com/im-france) pour les horaires détaillés de chaque format.
 
 </details>
 
