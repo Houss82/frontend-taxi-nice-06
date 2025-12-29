@@ -175,12 +175,14 @@ L'**Ironman France Nice** est le format classique et le plus exigeant, réservé
 **Parcours complet** :
 
 - **🏊 Natation** : **3,8 km** en mer Méditerranée
+
   - Départ depuis la plage publique de la Promenade des Anglais
   - Boucle en mer avec retour sur la plage
   - Eau de mer, température moyenne 20-22°C en juin
   - Temps moyen : 1h15 - 1h30 pour les athlètes amateurs
 
 - **🚴 Vélo** : **180 km** dans les Alpes-Maritimes
+
   - Parcours : Nice → Col de Vence → retour Nice
   - Dénivelé : Plus de 2 000 mètres de dénivelé positif
   - Point culminant : Col de Vence (963 mètres)
@@ -204,12 +206,14 @@ L'**Ironman 70.3 Nice** (également appelé "Half Ironman") est le format idéal
 **Parcours half** :
 
 - **🏊 Natation** : **1,9 km** en mer Méditerranée
+
   - Départ depuis la plage publique de la Promenade des Anglais
   - Parcours réduit par rapport au format complet
   - Mêmes conditions de mer que le format complet
   - Temps moyen : 35-45 minutes pour les athlètes amateurs
 
 - **🚴 Vélo** : **90 km** dans les Alpes-Maritimes
+
   - Parcours adapté : Version raccourcie du parcours complet
   - Dénivelé : Environ 1 000 mètres de dénivelé positif
   - Routes de montagne avec passages techniques mais moins exigeants que le format complet
@@ -267,12 +271,14 @@ L'**Ironman 70.3 Nice** (également appelé "Half Ironman") est le format idéal
 ### 🎯 Quel format choisir ?
 
 **Choisissez l'Ironman France Nice (format complet)** si :
+
 - Vous avez déjà complété plusieurs triathlons longue distance
 - Vous visez une qualification pour Kona (Championnat du Monde)
 - Vous recherchez le défi ultime du triathlon
 - Vous avez une expérience solide en triathlon
 
 **Choisissez l'Ironman 70.3 Nice (format half)** si :
+
 - Vous découvrez l'Ironman pour la première fois
 - Vous préparez votre premier Ironman complet
 - Vous préférez une distance plus accessible
@@ -581,4 +587,4 @@ Réservez votre taxi dès maintenant et profitez de notre expertise locale pour 
 
 ---
 
-_Article mis à jour le 26 novembre 2025_
+_Article mis à jour le 29 décembre 2025_
