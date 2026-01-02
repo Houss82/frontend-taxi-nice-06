@@ -325,6 +325,13 @@ export default function VSLPage() {
                     </span>
                   </li>
                 </ul>
+                <Link
+                  href="/blog/centres-medicaux-specialistes-nice-2025"
+                  className="mt-4 inline-flex items-center text-pink-600 font-semibold hover:text-pink-700 transition-colors duration-300 text-sm"
+                >
+                  Découvrir tous les établissements médicaux de Nice
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
               </div>
             </div>
 
@@ -751,7 +758,7 @@ export default function VSLPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Article 1 */}
             <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-8 shadow-lg border border-pink-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-start space-x-6">
@@ -797,6 +804,32 @@ export default function VSLPage() {
                   <Link
                     href="/blog/nouvelle-convention-transports-medicaux-2025"
                     className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300"
+                  >
+                    Lire l'article complet
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Article 3 */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="flex items-start space-x-6">
+                <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Stethoscope className="w-8 h-8 text-green-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Centres Médicaux Nice 2025
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    Guide complet des centres médicaux et spécialistes à Nice :
+                    hôpitaux, cliniques privées, maisons de santé, spécialités
+                    médicales et accès transport pour vos soins.
+                  </p>
+                  <Link
+                    href="/blog/centres-medicaux-specialistes-nice-2025"
+                    className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors duration-300"
                   >
                     Lire l'article complet
                     <ArrowRight className="w-5 h-5 ml-2" />

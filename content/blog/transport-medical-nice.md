@@ -169,6 +169,8 @@ Pour en savoir plus sur les conditions de remboursement, consultez le site de l'
 
 **Confort + ponctualité + remboursement possible.**
 
+👉 **Découvrez notre service VSL** : [Taxi conventionné CPAM Nice](/services/vsl) – Service dédié au transport médical avec prise en charge CPAM.
+
 ---
 
 ## 🚗 Flotte Confortable pour Vos Trajets Médicaux
@@ -252,6 +254,8 @@ Nous assurons les trajets vers **tous les hôpitaux et cliniques** de la ville :
 </div>
 
 Votre chauffeur connaît parfaitement les **entrées, parkings et accès patients** de chaque établissement. Il vous dépose au plus près de votre destination pour minimiser la marche.
+
+👉 **En savoir plus** : [Guide complet des centres médicaux et spécialistes à Nice](/blog/centres-medicaux-specialistes-nice-2025) – Découvrez tous les établissements de santé, leurs spécialités et leurs accès.
 
 ---
 
@@ -343,12 +347,14 @@ Pour plus d'informations sur les conditions de remboursement, consultez le site 
 
 Pour approfondir vos connaissances sur nos services de transport à Nice :
 
-- **[Taxi Nice 24/7](/taxi-nice)** – Service principal avec tous nos services de taxi à Nice
-- **[Transport médical à Antibes](/secteurs/antibes)** – Trajets médicaux depuis Antibes vers Nice
-- **[Transferts vers hôpitaux](/services/transferts-aeroport)** – Service de transfert vers les établissements de santé
-- **[Van Premium](/services/van-premium)** – Véhicule adapté pour les trajets médicaux avec accompagnants
-- **[Réserver votre taxi](/reservation)** – Réservation en ligne pour vos trajets médicaux
-- **[Tarifs détaillés](/tarifs)** – Consultez nos tarifs pour les trajets médicaux
+- 👉 **[Taxi conventionné CPAM Nice : service VSL](/services/vsl)** – Service dédié au transport médical conventionné
+- 👉 **[Centres médicaux et spécialistes Nice 2025](/blog/centres-medicaux-specialistes-nice-2025)** – Guide complet des établissements de santé à Nice
+- 👉 **[Taxi Nice 24/7](/taxi-nice)** – Service principal avec tous nos services de taxi à Nice
+- 👉 **[Transport médical à Antibes](/secteurs/antibes)** – Trajets médicaux depuis Antibes vers Nice
+- 👉 **[Transferts vers hôpitaux](/services/transferts-aeroport)** – Service de transfert vers les établissements de santé
+- 👉 **[Van Premium](/services/van-premium)** – Véhicule adapté pour les trajets médicaux avec accompagnants
+- 👉 **[Réserver votre taxi](/reservation)** – Réservation en ligne pour vos trajets médicaux
+- 👉 **[Tarifs détaillés](/tarifs)** – Consultez nos tarifs pour les trajets médicaux
 
 ---
 

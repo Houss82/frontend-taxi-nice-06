@@ -96,7 +96,7 @@ Le **Centre Hospitalier Universitaire (CHU) de Nice** est le plus grand établis
 
 ### 🚗 Accès taxi recommandé
 
-Le CHU de Nice est facilement accessible en taxi depuis toute la métropole. Nos chauffeurs conventionnés CPAM connaissent parfaitement les différents sites et peuvent vous déposer directement aux entrées principales ou aux services spécifiques. Pour plus d'informations sur les services du CHU, consultez le [site officiel du CHU de Nice](https://www.chu-nice.fr/).
+Le CHU de Nice est facilement accessible en taxi depuis toute la métropole. Nos chauffeurs conventionnés CPAM connaissent parfaitement les différents sites et peuvent vous déposer directement aux entrées principales ou aux services spécifiques. 👉 [Réserver un transport médical vers le CHU](/services/vsl) – Service taxi conventionné avec prise en charge CPAM possible. Pour plus d'informations sur les services du CHU, consultez le [site officiel du CHU de Nice](https://www.chu-nice.fr/).
 
 ---
 
@@ -128,7 +128,7 @@ Le **Centre Antoine Lacassagne** est le **centre de lutte contre le cancer** de 
 
 ### 🚗 Accès taxi conventionné
 
-Les trajets vers le Centre Antoine Lacassagne sont souvent pris en charge par la CPAM pour les patients en traitement (radiothérapie, chimiothérapie). Nos taxis conventionnés assurent ces trajets réguliers avec ponctualité et confort.
+Les trajets vers le Centre Antoine Lacassagne sont souvent pris en charge par la CPAM pour les patients en traitement (radiothérapie, chimiothérapie). Nos taxis conventionnés assurent ces trajets réguliers avec ponctualité et confort. 👉 [Service VSL pour trajets médicaux réguliers](/services/vsl) – Transport médical conventionné avec prise en charge CPAM.
 
 ---
 
@@ -333,6 +333,10 @@ L'accès facile aux établissements médicaux est **crucial** pour vos rendez-vo
 - Bénéficier de la prise en charge CPAM si éligible
 
 Nos services de taxi conventionné CPAM complètent parfaitement l'accès aux établissements médicaux, notamment pour les trajets réguliers ou les consultations spécialisées.
+
+👉 **En savoir plus** : [Service VSL et taxi conventionné CPAM Nice](/services/vsl) – Découvrez notre service dédié au transport médical avec prise en charge CPAM.
+
+👉 **Guide complet** : [Transport médical à Nice : guide VSL et taxi conventionné](/blog/transport-medical-nice) – Tout savoir sur les trajets médicaux, la prise en charge et l'accompagnement.
 
 ---
 
