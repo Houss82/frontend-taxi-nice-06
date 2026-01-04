@@ -6,7 +6,7 @@ image: "/taxi-nice-place-massena.jpeg"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 La **Place Masséna** est le cœur battant de Nice, la place centrale emblématique qui relie le **Vieux-Nice** à la **Promenade des Anglais**. Cette place prestigieuse, avec son architecture Belle Époque, ses façades colorées et ses célèbres statues suspendues, est le point de convergence de tous les déplacements dans Nice. Avec sa **proximité immédiate du centre-ville**, de la **gare SNCF**, du **Vieux-Nice** et de la **Promenade des Anglais**, la Place Masséna est le point de départ idéal pour découvrir Nice.
@@ -324,4 +324,4 @@ Oui, nos chauffeurs parlent **français, anglais, italien, espagnol et allemand*
 
 ---
 
-_Article mis à jour le 04 janvier 2026_
+_Article mis à jour le 4 janvier 2026_
