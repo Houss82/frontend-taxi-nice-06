@@ -6,7 +6,7 @@ image: "/taxi-place-massena-nice-marché-de-noel.jpeg"
 category: "Voyage et Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Nice compte de nombreux **sites touristiques** emblématiques qui attirent chaque année **plus de 5 millions de visiteurs** selon l'[Office de Tourisme de Nice](https://www.nicecotedazur.org) : la **Colline du Château**, le **Vieux-Nice**, le **Port Lympia**, la **Promenade des Anglais**, et bien d'autres lieux incontournables. Ces sites font de Nice l'une des destinations touristiques les plus prisées de la Méditerranée.
