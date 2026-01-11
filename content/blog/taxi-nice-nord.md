@@ -6,7 +6,7 @@ image: "/nice-ville-nord.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Nice Nord** désigne l'ensemble des quartiers situés au nord de Nice, comprenant des zones résidentielles, des quartiers populaires et des zones d'activité. Ces quartiers s'étendent des **collines de Nice** jusqu'aux limites de la ville, offrant une grande diversité de paysages et d'habitats. Avec leur **proximité de l'aéroport** et du **centre-ville**, les quartiers de Nice Nord nécessitent des services de transport adaptés à leurs besoins spécifiques.
