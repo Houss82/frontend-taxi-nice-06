@@ -2,7 +2,7 @@
 title: "Taxi Mont-Boron Nice : Transferts Aéroport & Port Lympia - Service 24/7"
 date: "2026-02-02"
 excerpt: "Service de taxi Mont-Boron Nice disponible 24/7 : transferts aéroport, gare SNCF, port Lympia, criques secrètes. Chauffeur local expert du quartier résidentiel privilégié. Tarifs transparents et véhicules premium Mercedes."
-image: "/mont-boron-port-nice.png"
+image: "/taxi-nice-mont-boron.jpeg"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"

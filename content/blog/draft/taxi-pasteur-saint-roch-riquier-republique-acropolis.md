@@ -2,7 +2,7 @@
 title: "Taxi Pasteur Nice : Transferts CHU Pasteur & Aéroport - Service 24/7"
 date: "2026-01-25"
 excerpt: "Service de taxi Pasteur Nice disponible 24/7 : transferts aéroport, gare SNCF, CHU Pasteur, centre-ville. Chauffeur local expert des quartiers centraux (Pasteur, Saint-Roch, Riquier, République, Acropolis). Tarifs transparents et véhicules premium Mercedes."
-image: "/pasteur-saint-roch-riquier.png"
+image: "/taxi-nice-pasteur.jpeg"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
