@@ -83,6 +83,8 @@ Le **CHU Pasteur** ([site officiel](https://www.chu-nice.fr/)) est un établisse
 - **Service conventionné** : Possibilité de prise en charge selon votre mutuelle
 - **Connaissance des accès** : Dépose aux entrées principales et services spécifiques
 
+👉 **[En savoir plus : Taxi Hôpital Pasteur 2 Nice](/secteurs/nice-hopital-pasteur-2)** – Guide complet pour vos déplacements vers le CHU Pasteur 2
+
 ### 🎭 Déplacements vers le Palais Acropolis
 
 Le **Palais Acropolis** est un centre de congrès et d'événements majeur. Nous assurons vos transferts vers et depuis le palais :
@@ -308,6 +310,7 @@ Pour en savoir plus sur nos services de taxi à Nice :
 - **[Transport médical à Nice](/blog/transport-medical-nice)** : Guide complet sur les trajets médicaux
 - **[Centres médicaux Nice 2025](/blog/centres-medicaux-specialistes-nice-2025)** : Guide des établissements de santé
 - **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- **[Taxi Hôpital Pasteur 2 Nice : RDV & Urgences](/secteurs/nice-hopital-pasteur-2)** – Transport médical vers le CHU Pasteur 2
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi dans ces quartiers en quelques clics
 
 ---
@@ -320,7 +323,7 @@ Le tarif pour un transfert Quartiers Centraux → Aéroport Nice Côte d'Azur es
 
 ### Proposez-vous des transferts vers le CHU Pasteur ?
 
-Oui, nous assurons régulièrement des transferts vers et depuis le CHU Pasteur. Nous connaissons les entrées principales et les services spécifiques de l'hôpital. Le trajet depuis ces quartiers est très court (5-8 minutes).
+Oui, nous assurons régulièrement des transferts vers et depuis le CHU Pasteur. Nous connaissons les entrées principales et les services spécifiques de l'hôpital. Le trajet depuis ces quartiers est très court (5-8 minutes). Pour plus d'informations détaillées sur les transferts vers l'Hôpital Pasteur 2, consultez notre **[page dédiée Taxi Hôpital Pasteur 2 Nice](/secteurs/nice-hopital-pasteur-2)**.
 
 ### Combien coûte un taxi vers le CHU Pasteur depuis ces quartiers ?
 
