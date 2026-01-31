@@ -1743,6 +1743,261 @@ export const sectorData = {
       longitude: "6.638889",
     },
   },
+  "nice-hopital-pasteur-2": {
+    slug: "nice-hopital-pasteur-2",
+    cityName: "Hôpital Pasteur 2",
+    hero: {
+      title: "Taxi Hôpital Pasteur 2 Nice",
+      highlight: "RDV & Urgences",
+      subtitle: "Transport médical vers le CHU Pasteur 2 | Prise en charge CPAM",
+      image: "/taxi-nice-pasteur.jpeg",
+      imageAlt: "Taxi vers Hôpital Pasteur 2 Nice - Transport médical CHU",
+    },
+    introduction: [
+      "Notre service de taxi assure vos déplacements vers l'Hôpital Pasteur 2 (CHU de Nice), l'un des principaux centres hospitaliers universitaires de la Côte d'Azur. Nous vous accompagnons pour vos rendez-vous médicaux, consultations spécialisées, examens, hospitalisations et sorties d'hôpital.",
+      "Nos chauffeurs connaissent parfaitement les accès à l'Hôpital Pasteur 2 : entrées principales, services d'urgences, consultations externes, bloc opératoire et parkings. Nous vous déposons et récupérons exactement où vous en avez besoin pour faciliter vos déplacements.",
+    ],
+    secondaryIntro: [
+      "Besoin d'un transport remboursé ? Voir notre taxi conventionné CPAM (VSL) pour bénéficier de la prise en charge par l'Assurance Maladie.",
+      "Nous assurons également les transferts depuis et vers l'aéroport Nice Côte d'Azur, la gare SNCF de Nice, Monaco, Cannes et toute la métropole niçoise vers l'Hôpital Pasteur 2.",
+    ],
+    servicesTitle: "Services de transport vers Hôpital Pasteur 2",
+    services: [
+      "Transport vers consultations et rendez-vous médicaux",
+      "Transfert depuis urgences et sorties d'hôpital",
+      "Déplacement vers examens médicaux (scanner, IRM, échographie)",
+      "Transport conventionné CPAM avec tiers payant",
+      "Accompagnement pour hospitalisations programmées",
+      "Transferts depuis aéroport, gare ou domicile vers Pasteur 2",
+    ],
+    coverageDescription: "Points de dépôt et récupération à l'Hôpital Pasteur 2 :",
+    coverageAreas: [
+      "✓ Entrée principale (Avenue de la Voie Romaine)",
+      "✓ Service des urgences (24h/24)",
+      "✓ Consultations externes (bâtiment principal)",
+      "✓ Bloc opératoire et hospitalisation",
+      "✓ Imagerie médicale (scanner, IRM)",
+      "✓ Laboratoires d'analyses",
+    ],
+    map: {
+      description:
+        "Localisation de l'Hôpital Pasteur 2 et itinéraires fréquents depuis Nice.",
+      info: "Nous assurons les transferts depuis toute la métropole niçoise, l'aéroport, la gare et les communes alentours vers l'Hôpital Pasteur 2.",
+      embedUrl:
+        "https://maps.google.com/maps?q=CHU+Pasteur+2+Nice&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Où déposer et récupérer à Pasteur 2",
+        description:
+          "Entrée principale Avenue de la Voie Romaine pour les consultations. Service des urgences accessible 24h/24. Nos chauffeurs vous accompagnent jusqu'à l'entrée du service concerné.",
+      },
+      {
+        title: "Itinéraires fréquents vers Pasteur 2",
+        description:
+          "Gare SNCF Nice-Ville → Pasteur 2 (15 min), Aéroport Nice Côte d'Azur → Pasteur 2 (20-25 min), Centre-ville Nice → Pasteur 2 (10-15 min), Monaco → Pasteur 2 (30-35 min).",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Connaissance des accès Pasteur 2",
+        description:
+          "Chauffeurs familiers des entrées, parkings et services de l'hôpital pour un dépôt précis.",
+      },
+      {
+        title: "✓ Transport conventionné CPAM",
+        description:
+          "Prise en charge des trajets médicaux avec tiers payant si vous avez une prescription médicale.",
+      },
+      {
+        title: "✓ Disponibilité 24/7",
+        description:
+          "Service disponible jour et nuit pour les urgences et sorties d'hôpital tardives.",
+      },
+      {
+        title: "✓ Ponctualité garantie",
+        description:
+          "Arrivée à l'heure pour vos rendez-vous médicaux, avec marge de sécurité intégrée.",
+      },
+    ],
+    hospitalsTitle: "Services et spécialités de l'Hôpital Pasteur 2",
+    hospitals: [
+      {
+        name: "Service des Urgences",
+        city: "Nice",
+        description: "Accès 24h/24 pour les urgences médicales et chirurgicales.",
+        speciality: "Urgences adultes",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+      {
+        name: "Consultations externes",
+        city: "Nice",
+        description: "Toutes spécialités médicales et chirurgicales sur rendez-vous.",
+        speciality: "Médecine, chirurgie, spécialités",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+      {
+        name: "Imagerie médicale",
+        city: "Nice",
+        description: "Scanner, IRM, échographie, radiologie pour vos examens.",
+        speciality: "Radiologie, imagerie",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+      {
+        name: "Bloc opératoire",
+        city: "Nice",
+        description: "Chirurgie programmée et urgences chirurgicales.",
+        speciality: "Chirurgie",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+    ],
+    establishmentsTitle: "Itinéraires fréquents vers Hôpital Pasteur 2",
+    establishments: [
+      {
+        name: "Gare SNCF Nice-Ville",
+        city: "Nice",
+        speciality: "Transfert gare → Pasteur 2",
+        website: "https://www.sncf.com/fr",
+        phone: "36 35",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        speciality: "Transfert aéroport → Pasteur 2",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+      {
+        name: "Centre-ville Nice",
+        city: "Nice",
+        speciality: "Transfert centre → Pasteur 2",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Monaco",
+        city: "Monaco",
+        speciality: "Transfert Monaco → Pasteur 2",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Cannes",
+        city: "Cannes",
+        speciality: "Transfert Cannes → Pasteur 2",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Antibes",
+        city: "Antibes",
+        speciality: "Transfert Antibes → Pasteur 2",
+        website: "",
+        phone: "",
+      },
+    ],
+    faq: [
+      {
+        question: "Où dois-je me faire déposer à l'Hôpital Pasteur 2 ?",
+        answer:
+          "L'entrée principale se trouve Avenue de la Voie Romaine. Pour les consultations externes, nous vous déposons à l'entrée du bâtiment principal. Pour les urgences, nous vous conduisons directement au service des urgences (accessible 24h/24). Précisez votre destination lors de la réservation.",
+      },
+      {
+        question: "Quels documents CPAM sont nécessaires pour un transport conventionné vers Pasteur 2 ?",
+        answer:
+          "Pour bénéficier du transport conventionné CPAM vers Pasteur 2, vous devez avoir : une prescription médicale mentionnant le transport, votre carte Vitale à jour, et éventuellement un accord préalable si votre mutuelle l'exige. Nous gérons le tiers payant directement.",
+      },
+      {
+        question: "Combien de temps à l'avance faut-il réserver un taxi vers Pasteur 2 ?",
+        answer:
+          "Pour un rendez-vous programmé, nous recommandons de réserver 24 à 48 heures à l'avance. Pour les urgences ou sorties d'hôpital, nous acceptons les réservations de dernière minute et sommes disponibles 24h/24.",
+      },
+      {
+        question: "Proposez-vous des transferts depuis l'aéroport vers Pasteur 2 ?",
+        answer:
+          "Oui, nous assurons les transferts depuis l'aéroport Nice Côte d'Azur vers l'Hôpital Pasteur 2 en environ 20-25 minutes selon le trafic. Nous suivons votre vol en temps réel et ajustons notre arrivée si nécessaire.",
+      },
+      {
+        question: "Le transport vers Pasteur 2 peut-il être remboursé par la CPAM ?",
+        answer:
+          "Oui, avec une prescription médicale valide, le transport vers Pasteur 2 peut être pris en charge par la CPAM. Nous proposons le tiers payant : vous n'avancez rien, la CPAM paie directement. Votre mutuelle peut compléter le remboursement.",
+      },
+    ],
+    resource: {
+      description:
+        "Pour en savoir plus sur le transport médical conventionné CPAM à Nice et découvrir tous les établissements de santé de Nice.",
+      links: [
+        {
+          label: "Taxi conventionné CPAM / VSL à Nice",
+          url: "/services/vsl",
+        },
+        {
+          label: "Guide complet des centres médicaux et spécialistes à Nice",
+          url: "/blog/centres-medicaux-specialistes-nice-2025",
+        },
+        {
+          label: "Transport médical à Nice : guide complet",
+          url: "/blog/transport-medical-nice",
+        },
+      ],
+    },
+    homepageLink: {
+      before: "",
+      linkText: "Découvrez tous nos services de taxi à Nice",
+      after: "",
+      href: "/",
+    },
+    specialties: [
+      {
+        title: "Transport médical conventionné",
+        description:
+          "Prise en charge CPAM avec tiers payant pour vos rendez-vous, examens et hospitalisations à Pasteur 2.",
+      },
+      {
+        title: "Transferts urgences et sorties",
+        description:
+          "Service disponible 24h/24 pour les urgences médicales et les sorties d'hôpital, même tardives.",
+      },
+    ],
+    pricing: [
+      "Transport conventionné CPAM selon barème officiel (forfait de base 13€)",
+      "Tiers payant inclus : rien à avancer avec prescription médicale",
+      "Gare Nice-Ville → Pasteur 2 : 15-20€ selon trafic",
+      "Aéroport Nice → Pasteur 2 : 30-40€ selon heure",
+      "Centre-ville Nice → Pasteur 2 : 12-18€ selon destination",
+    ],
+    commitments: [
+      {
+        title: "Ponctualité pour vos RDV",
+        description:
+          "Arrivée à l'heure pour vos rendez-vous médicaux avec marge de sécurité intégrée.",
+      },
+      {
+        title: "Connaissance des accès",
+        description:
+          "Chauffeurs familiers des entrées et services de Pasteur 2 pour un dépôt précis.",
+      },
+      {
+        title: "Accompagnement personnalisé",
+        description:
+          "Aide à la montée/descente et accompagnement jusqu'à l'entrée du service concerné si nécessaire.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Hôpital Pasteur 2 Nice",
+      image: "https://taxi-nice-06.com/classB-darguignan copie.png",
+      telephone: "06 51 68 36 87",
+      locality: "Nice",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://taxi-nice-06.com/secteurs/nice-hopital-pasteur-2",
+      latitude: "43.710173",
+      longitude: "7.261953",
+    },
+  },
 };
 
 export const sectorSlugs = Object.keys(sectorData);

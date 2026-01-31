@@ -34,7 +34,7 @@ export const metadata = {
     images: ["https://taxi-nice-06.com/aéro-arrivé.jpeg"],
   },
   alternates: {
-    canonical: "https://taxi-nice-06.com/services/transferts-aeroport",
+    canonical: "https://taxi-nice-06.com/services/taxi-aeroport-nice",
   },
   robots: {
     index: true,

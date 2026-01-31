@@ -287,7 +287,7 @@ Pour aller plus loin avec Taxi Nice Côte d'Azur :
 - [Taxi Nice → Monaco](/secteurs/monaco) – Transfert vers la Principauté
 - [Taxi Nice → Cannes](/secteurs/cannes) – Trajet très demandé sur la Côte d'Azur
 - [Taxi Nice → Menton (centre-ville)](/secteurs/menton) – Page dédiée au trajet ville à ville
-- [Transferts Aéroport](/services/transferts-aeroport) – Toutes nos destinations depuis NCE
+- [Transferts Aéroport](/services/taxi-aeroport-nice) – Toutes nos destinations depuis NCE
 - [Van Premium](/services/van-premium) – Idéal pour familles et groupes jusque 7 personnes
 - [Consultez nos tarifs](/tarifs) – Vue globale de nos prix Nice et alentours
 

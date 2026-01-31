@@ -151,7 +151,7 @@ Nos chauffeurs locaux connaissent **tous les itinéraires alternatifs** : voie r
 - **Aéroport → Cannes** : **30 km** • **45–65 min** – À partir de **85€**
 - **Aéroport → Antibes** : **20 km** • **30–45 min** – À partir de **70€**
 
-Découvrez tous nos [transferts aéroport](/services/transferts-aeroport) avec tarifs fixes garantis, sans surprise.
+Découvrez tous nos [transferts aéroport](/services/taxi-aeroport-nice) avec tarifs fixes garantis, sans surprise.
 
 💡 **Arrivée en train à Nice ?** Notre service [Taxi Nice Gare](/secteurs/nice-gare) vous accueille à la gare SNCF avec un suivi personnalisé de votre train. Pour une vue d'ensemble de tous nos services, consultez notre [page principale Taxi Nice 24/7](/taxi-nice).
 
@@ -165,7 +165,7 @@ Pour approfondir vos connaissances sur nos services :
 - **Taxi Nice Gare** : <a href="/blog/taxi-nice-gare-sncf">Taxi Nice Gare SNCF – Service rapide 24/7</a> - Guide complet pour vos trajets depuis la gare
 - **Taxi Nice Centre-Ville** : <a href="/secteurs/nice-centre-ville">Courses locales dans le centre-ville de Nice</a> - Déplacements dans Nice centre et Promenade des Anglais
 - **Guide Taxi Nice** : <a href="/secteurs/nice">Guide complet Taxi Nice</a> - Zones, hôpitaux et établissements à Nice
-- **Transferts Aéroport** : <a href="/services/transferts-aeroport">Guide complet des transferts aéroport Nice</a>
+- **Transferts Aéroport** : <a href="/services/taxi-aeroport-nice">Guide complet des transferts aéroport Nice</a>
 - **Monaco** : <a href="/secteurs/monaco">Taxi vers Monaco : tarifs et conseils</a>
 - **Cannes** : <a href="/secteurs/cannes">Transfert Nice-Cannes : votre guide pratique</a>
 - **Tarifs** : <a href="/tarifs">Tarifs transparents et compétitifs</a>

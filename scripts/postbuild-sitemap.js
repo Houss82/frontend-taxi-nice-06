@@ -34,7 +34,7 @@ function generateCustomSitemap() {
   const pages = [
     { path: "", priority: 1.0, changefreq: "weekly" },
     { path: "/reservation", priority: 0.9, changefreq: "weekly" },
-    { path: "/services/transferts-aeroport", priority: 0.9, changefreq: "weekly" },
+    { path: "/services/taxi-aeroport-nice", priority: 0.9, changefreq: "weekly" },
     { path: "/tarifs", priority: 0.8, changefreq: "monthly" },
     { path: "/services", priority: 0.8, changefreq: "weekly" },
     { path: "/services/vsl", priority: 0.8, changefreq: "weekly" },

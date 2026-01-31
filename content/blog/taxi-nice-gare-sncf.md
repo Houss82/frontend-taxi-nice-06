@@ -305,7 +305,7 @@ Oui, nous proposons des formules aller-retour avec tarifs dégressifs. Parfait p
 - 👉 **[Taxi Nice Côte d'Azur](/)** – Découvrez tous nos services de transport premium à Nice et sur la Côte d'Azur
 - 👉 **[Taxi Nice Gare → Aéroport : Guide Complet](/blog/taxi-nice-gare-aeroport)** – Guide détaillé du transfert spécifique Gare SNCF → Aéroport Nice avec temps de trajet, tarifs et conseils pratiques
 - 👉 **[Page dédiée Gare SNCF Nice](/secteurs/nice-gare)** – Guide complet des transferts depuis la gare avec tarifs et zones desservies
-- 👉 **[Transferts Aéroport Nice](/services/transferts-aeroport)** – Service dédié depuis et vers l'aéroport
+- 👉 **[Transferts Aéroport Nice](/services/taxi-aeroport-nice)** – Service dédié depuis et vers l'aéroport
 - 👉 **[Taxi Nice → Monaco](/secteurs/monaco)** – Trajets réguliers vers la Principauté
 - 👉 **[Taxi Nice → Cannes](/secteurs/cannes)** – Déplacements vers la Croisette
 - 👉 **[Excursions Côte d'Azur](/services/excursions-decouvertes)** – Visites touristiques avec chauffeur

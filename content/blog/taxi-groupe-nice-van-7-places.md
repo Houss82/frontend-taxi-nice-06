@@ -322,7 +322,7 @@ Lorsque vous réservez un van Mercedes Classe V, vous bénéficiez automatiqueme
 
 Pour aller plus loin avec Taxi Nice Côte d'Azur :
 
-- 👉 [Transferts Aéroport Nice](/services/transferts-aeroport) – Service dédié aux arrivées/départs aéroport
+- 👉 [Transferts Aéroport Nice](/services/taxi-aeroport-nice) – Service dédié aux arrivées/départs aéroport
 - 👉 [Taxi Nice → Cannes](/secteurs/cannes) – Trajet très demandé pour les événements
 - 👉 [Taxi Nice → Monaco](/secteurs/monaco) – Transfert vers la Principauté
 - 👉 [Taxi Nice → Antibes](/secteurs/antibes) – Service vers Antibes et Juan-les-Pins

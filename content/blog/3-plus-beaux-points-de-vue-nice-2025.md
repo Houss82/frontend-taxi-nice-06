@@ -480,7 +480,7 @@ Pour aller plus loin dans votre découverte photographique de Nice et de la Côt
 - 👉 [Plages secrètes de Nice](/blog/plages-secretes-nice) – Spots photo naturels avec criques et eau turquoise
 - 👉 [5 lieux incontournables à visiter à Nice](/blog/5-lieux-incontournables-nice-2025) – Guide complet des sites essentiels
 - 👉 [Excursions Côte d'Azur](/services/excursions) – Découvrez Monaco, Cannes, Antibes pour vos sessions photo
-- 👉 [Transfert Aéroport Nice](/services/transferts-aeroport) – Service premium depuis l'aéroport vers tous les spots photo
+- 👉 [Transfert Aéroport Nice](/services/taxi-aeroport-nice) – Service premium depuis l'aéroport vers tous les spots photo
 - 👉 [Taxi Nice 24/7](/taxi-nice) – Service complet pour tous vos déplacements photo à Nice
 
 ---

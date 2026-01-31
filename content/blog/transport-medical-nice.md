@@ -349,9 +349,10 @@ Pour approfondir vos connaissances sur nos services de transport à Nice :
 
 - 👉 **[Taxi conventionné CPAM Nice : service VSL](/services/vsl)** – Service dédié au transport médical conventionné
 - 👉 **[Centres médicaux et spécialistes Nice 2025](/blog/centres-medicaux-specialistes-nice-2025)** – Guide complet des établissements de santé à Nice
+- 👉 **[Taxi Hôpital Pasteur 2 Nice : RDV & Urgences](/secteurs/nice-hopital-pasteur-2)** – Transport médical vers le CHU Pasteur 2
 - 👉 **[Taxi Nice 24/7](/taxi-nice)** – Service principal avec tous nos services de taxi à Nice
 - 👉 **[Transport médical à Antibes](/secteurs/antibes)** – Trajets médicaux depuis Antibes vers Nice
-- 👉 **[Transferts vers hôpitaux](/services/transferts-aeroport)** – Service de transfert vers les établissements de santé
+- 👉 **[Transferts vers hôpitaux](/services/taxi-aeroport-nice)** – Service de transfert vers les établissements de santé
 - 👉 **[Van Premium](/services/van-premium)** – Véhicule adapté pour les trajets médicaux avec accompagnants
 - 👉 **[Réserver votre taxi](/reservation)** – Réservation en ligne pour vos trajets médicaux
 - 👉 **[Tarifs détaillés](/tarifs)** – Consultez nos tarifs pour les trajets médicaux

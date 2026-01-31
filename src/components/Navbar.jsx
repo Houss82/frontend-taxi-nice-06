@@ -246,6 +246,16 @@ export default function Navbar() {
                     </div>
                   </Link>
                   <Link
+                    href="/secteurs/nice-hopital-pasteur-2"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Heart className="w-4 h-4 text-pink-600" />
+                      <span>Hôpital Pasteur 2</span>
+                    </div>
+                  </Link>
+                  <Link
                     href="/secteurs/cannes"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsSectorsOpen(false)}
@@ -762,6 +772,19 @@ export default function Navbar() {
                           <span className="text-sm">
                             Centre-Ville
                           </span>
+                        </Link>
+                      </motion.div>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <Link
+                          href="/secteurs/nice-hopital-pasteur-2"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <Heart className="w-4 h-4 text-pink-600" />
+                          <span className="text-sm">Hôpital Pasteur 2</span>
                         </Link>
                       </motion.div>
                       <motion.div

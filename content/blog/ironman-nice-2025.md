@@ -420,7 +420,7 @@ Pendant l'Ironman, Nice connaît une **affluence hôtelière exceptionnelle** av
 - **Promenade des Anglais** : Vue sur la course, prix élevés
 - **Vieux-Nice** : Ambiance authentique, accès à pied
 
-👉 **Transport depuis l'aéroport** : [Découvrez nos transferts aéroport Nice](/services/transferts-aeroport)
+👉 **Transport depuis l'aéroport** : [Découvrez nos transferts aéroport Nice](/services/taxi-aeroport-nice)
 
 ---
 
@@ -559,7 +559,7 @@ Pour continuer votre découverte de Nice et de nos services :
 
 - 👉 [Nice – Guide complet](/secteurs/nice) – Tous nos secteurs desservis
 - 👉 [Transport pour événements](/services/transferts-evenements) – Service dédié aux événements sportifs
-- 👉 [Transferts aéroport Nice](/services/transferts-aeroport) – Arrivée sereine pour l'Ironman
+- 👉 [Transferts aéroport Nice](/services/taxi-aeroport-nice) – Arrivée sereine pour l'Ironman
 - 👉 [Van Premium](/services/van-premium) – Idéal pour groupes et familles avec matériel
 - 👉 [Excursions Côte d'Azur](/services/excursions-decouvertes) – Découvrez la région
 - 👉 [Réservation transport](/reservation) – Réservez votre trajet en ligne

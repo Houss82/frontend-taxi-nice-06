@@ -411,6 +411,7 @@ Le **Centre Antoine Lacassagne** est le centre de référence pour la cancérolo
 - 👉 [Transport médical à Nice : guide complet VSL et taxi conventionné](/blog/transport-medical-nice)
 - 👉 [Nouvelle convention transports médicaux 2025 : ce que les patients doivent savoir](/blog/nouvelle-convention-transports-medicaux-2025)
 - 👉 [Taxi conventionné CPAM Nice : service de transport médical](/services/vsl)
+- 👉 [Taxi Hôpital Pasteur 2 Nice : RDV & Urgences](/secteurs/nice-hopital-pasteur-2)
 - 👉 [Zones d'activité économique Nice 2025 : guide complet](/blog/zones-activite-economique-nice-2025)
 
 ---

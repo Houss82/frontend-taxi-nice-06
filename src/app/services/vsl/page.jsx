@@ -308,7 +308,14 @@ export default function VSLPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">CHU Pasteur</span>
+                    <span className="text-gray-700">
+                      <Link
+                        href="/secteurs/nice-hopital-pasteur-2"
+                        className="text-pink-600 hover:text-pink-700 font-semibold underline underline-offset-2 transition-colors"
+                      >
+                        Taxi CHU Pasteur
+                      </Link>
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />

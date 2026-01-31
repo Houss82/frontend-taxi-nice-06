@@ -539,7 +539,7 @@ Oui, nous proposons des **formules aller-retour** avec tarifs dégressifs. Parfa
 ## 🔗 Liens Internes Utiles
 
 - 👉 **[Réserver votre transfert Gare → Aéroport](/reservation)** – Réservation en ligne rapide et sécurisée
-- 👉 **[Service Transferts Aéroport Nice](/services/transferts-aeroport)** – Découvrez tous nos services depuis et vers l'aéroport
+- 👉 **[Service Transferts Aéroport Nice](/services/taxi-aeroport-nice)** – Découvrez tous nos services depuis et vers l'aéroport
 - 👉 **[Taxi Nice Gare SNCF – Service Rapide & Fiable 24/7](/blog/taxi-nice-gare-sncf)** – Guide complet du service taxi depuis la gare SNCF de Nice avec toutes les destinations et informations pratiques
 - 👉 **[Taxi Nice Gare SNCF](/secteurs/nice-gare)** – Page locale dédiée aux transferts depuis la gare avec tarifs et zones desservies
 - 👉 **[Taxi Nice → Monaco](/secteurs/monaco)** – Trajets réguliers vers la Principauté depuis la gare

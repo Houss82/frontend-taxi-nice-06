@@ -392,7 +392,7 @@ Pour continuer votre découverte de Nice et de nos services :
 - 👉 [Excursions Côte d'Azur](/services/excursions) – Circuits personnalisés
 - 👉 [Nice → Monaco](/secteurs/monaco) – Transfert premium vers la Principauté
 - 👉 [Nice → Cannes](/secteurs/cannes) – Le trajet le plus demandé
-- 👉 [Transferts aéroport Nice](/services/transferts-aeroport) – Service complet 24/7
+- 👉 [Transferts aéroport Nice](/services/taxi-aeroport-nice) – Service complet 24/7
 - 👉 [Van Premium](/services/van-premium) – Idéal pour groupes jusqu'à 7 personnes
 - 👉 [Nos services](/services) – Découvrez tous nos services
 - 👉 [Contact](/contact) – Besoin d'informations ?

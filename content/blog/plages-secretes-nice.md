@@ -346,7 +346,7 @@ Pour continuer votre découverte de Nice et de la Côte d'Azur :
 - **<a href="/services/excursions-decouvertes">Excursions Côte d'Azur</a>** – Découvrez la région avec chauffeur privé
 - **<a href="/secteurs/monaco">Taxi Nice → Monaco</a>** – Transferts vers la Principauté
 - **<a href="/secteurs/cannes">Taxi Nice → Cannes</a>** – Trajets vers Cannes et ses plages
-- **<a href="/services/transferts-aeroport">Transferts Aéroport</a>** – Depuis et vers l'aéroport Nice Côte d'Azur
+- **<a href="/services/taxi-aeroport-nice">Transferts Aéroport</a>** – Depuis et vers l'aéroport Nice Côte d'Azur
 - **<a href="/services/van-premium">Van Premium</a>** – Idéal pour groupes et familles
 - **<a href="/taxi-nice">Taxi Nice 24/7</a>** – Service complet de transport à Nice
 - **<a href="/reservation">Réserver un taxi</a>** – Réservation en ligne rapide et sécurisée

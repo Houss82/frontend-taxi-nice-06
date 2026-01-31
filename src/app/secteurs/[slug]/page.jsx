@@ -39,6 +39,8 @@ export async function generateMetadata({ params }) {
     title = "Transfert Gare SNCF Nice | Nice-Ville & Riquier";
   } else if (data.slug === "nice-centre-ville") {
     title = "Transfert Centre-Ville Nice | Vieux-Nice & Promenade";
+  } else if (data.slug === "nice-hopital-pasteur-2") {
+    title = "Taxi Hôpital Pasteur 2 Nice | RDV & Urgences | Taxi Nice 06";
   } else {
     title = `${data.hero.title} | Taxi Nice 06`;
   }
@@ -245,6 +247,18 @@ export default async function SecteurPage({ params }) {
               {paragraph}
             </p>
           ))}
+          {data.slug === "nice-hopital-pasteur-2" && (
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Besoin d'un transport remboursé ? Voir notre{" "}
+              <Link
+                href="/services/vsl"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                taxi conventionné CPAM / VSL à Nice
+              </Link>
+              .
+            </p>
+          )}
         </section>
 
         <section className="max-w-6xl mx-auto px-6 mt-14">

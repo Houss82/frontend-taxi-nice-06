@@ -82,7 +82,7 @@
 
 ### 2. Création des pages manquantes
 
-- `/services/transfert-aeroport`
+- `/services/taxi-aeroport-nice`
 - `/services/vsl`
 - `/services/excursions`
 - `/contact`

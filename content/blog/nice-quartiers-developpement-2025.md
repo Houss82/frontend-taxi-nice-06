@@ -399,7 +399,7 @@ Pour aller plus loin dans votre découverte de Nice et de ses transformations :
 
 - 👉 [Taxi Nice 24/7](/taxi-nice) – Service complet pour tous vos déplacements dans Nice
 - 👉 [Nice – nos secteurs desservis](/secteurs/nice) – Guide complet des zones couvertes
-- 👉 [Transferts Aéroport Nice](/services/transferts-aeroport) – Service premium depuis l'aéroport
+- 👉 [Transferts Aéroport Nice](/services/taxi-aeroport-nice) – Service premium depuis l'aéroport
 - 👉 [Blog Vie Locale & Entreprises](/blog) – Tous nos articles sur Nice et la région
 - 👉 [Réserver un taxi à Nice](/reservation) – Formulaire de réservation rapide
 
