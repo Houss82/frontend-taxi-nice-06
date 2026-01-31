@@ -6,7 +6,7 @@ image: "/taxi-nice-pasteur.jpeg"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Pasteur, Saint-Roch, Riquier, République et Acropolis** sont des quartiers centraux de Nice, situés au **cœur de la ville** et regroupant des zones résidentielles, commerciales et médicales. Ces quartiers abritent notamment le **CHU Pasteur** (hôpital universitaire majeur), des commerces animés, des zones résidentielles populaires et le **Palais Acropolis** (centre de congrès et événements). Avec leur **proximité du centre-ville** et leur **accessibilité**, ces quartiers nécessitent des services de transport adaptés à leurs besoins variés.
@@ -344,4 +344,4 @@ Oui, nous recommandons fortement de réserver à l'avance pour les rendez-vous m
 
 ---
 
-_Article mis à jour le 17 janvier 2026_
+_Article mis à jour le 25 janvier 2026_
