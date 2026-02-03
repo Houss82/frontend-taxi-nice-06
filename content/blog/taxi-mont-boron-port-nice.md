@@ -6,7 +6,7 @@ image: "/taxi-nice-mont-boron.jpeg"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Mont-Boron** est un quartier résidentiel privilégié de Nice, situé sur une colline à l'est de la ville, offrant des **vues panoramiques exceptionnelles sur la Baie des Anges** et la Méditerranée. Ce quartier calme et verdoyant abrite des villas de luxe, des résidences haut de gamme et des criques secrètes accessibles par sentiers. Le **Port de Nice (Port Lympia)** est quant à lui le port historique de la ville, avec ses restaurants de poissons, ses bateaux de plaisance et son animation maritime.
@@ -315,4 +315,4 @@ Oui, nous recommandons de réserver à l'avance, surtout pour les transferts aé
 
 ---
 
-_Article mis à jour le 15 janvier 2026_
+_Article mis à jour le 2 février 2026_
