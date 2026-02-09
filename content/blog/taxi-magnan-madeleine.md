@@ -6,7 +6,7 @@ image: "/magnan-madeleine.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Magnan et La Madeleine** sont des quartiers résidentiels de l'ouest de Nice, situés entre la **Promenade des Anglais** et les **collines niçoises**. Ces quartiers calmes et verdoyants offrent un **cadre de vie privilégié** avec proximité de la mer, espaces verts et accès facile au centre-ville. Avec leur **proximité de la Promenade des Anglais** et leur **accessibilité**, ces quartiers nécessitent des services de transport adaptés à leurs besoins résidentiels.
@@ -333,4 +333,4 @@ Oui, nous recommandons de réserver à l'avance, surtout pour les transferts aé
 
 ---
 
-_Article mis à jour le 18 janvier 2026_
+_Article mis à jour le 9 février 2026_
