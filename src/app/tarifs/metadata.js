@@ -1,18 +1,20 @@
 export const metadata = {
-  title: "Tarifs Taxi Nice | Prix Transparents Transferts Aéroport | Taxi Nice-06",
+  title: "Prix Taxi Nice : Tarifs 2026, Combien coûte un Taxi à Nice ?",
   description:
-    "Tarifs fixes et transparents pour vos transferts à Nice. Prix détaillés pour aéroport, VSL, excursions et tous vos déplacements sur la Côte d'Azur.",
+    "Prix taxi Nice et tarifs taxi Nice 2026. Découvrez combien coûte un taxi à Nice : tarifs fixes pour aéroport, centre-ville, Cannes, Monaco. Prix transparents et garantis.",
   keywords: [
-    "tarifs taxi nice",
     "prix taxi nice",
-    "tarifs transfert nice",
-    "prix aéroport nice",
-    "tarifs transparents nice",
+    "tarif taxi nice",
+    "taxi nice prix",
+    "taxi nice tarif",
+    "combien coûte un taxi à nice",
+    "prix d'un taxi à nice",
+    "tarifs taxi nice 2026",
   ],
   openGraph: {
-    title: "Tarifs Taxi Nice | Taxi Nice-06",
+    title: "Prix Taxi Nice : Tarifs 2026, Combien coûte un Taxi à Nice ?",
     description:
-      "Tarifs fixes et transparents pour vos transferts à Nice. Prix détaillés pour aéroport, VSL, excursions.",
+      "Prix taxi Nice et tarifs taxi Nice 2026. Découvrez combien coûte un taxi à Nice : tarifs fixes pour aéroport, centre-ville, Cannes, Monaco.",
     url: "https://taxi-nice-06.com/tarifs",
     type: "website",
     images: [
@@ -26,8 +28,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tarifs Taxi Nice | Taxi Nice-06",
-    description: "Tarifs fixes et transparents pour vos transferts à Nice.",
+    title: "Prix Taxi Nice : Tarifs 2026, Combien coûte un Taxi à Nice ?",
+    description: "Prix taxi Nice et tarifs taxi Nice 2026. Découvrez combien coûte un taxi à Nice.",
     images: ["https://taxi-nice-06.com/stratégie prix.webp"],
   },
   alternates: {

@@ -2,6 +2,6 @@ import { metadata } from "./metadata";
 
 export { metadata };
 
-export default function TarifsLayout({ children }) {
+export default function TaxiNiceNumeroLayout({ children }) {
   return children;
 }

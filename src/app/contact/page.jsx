@@ -23,7 +23,7 @@ import { useState } from "react";
 
 export default function ContactPage() {
   // Données en français
-  const contactTitle = "Contactez-Nous";
+  const contactTitle = "Contact Taxi Nice 06 – Service Client 24h/24";
   const contactSubtitle = "Une équipe à votre écoute 24h/24";
   const contactDescription =
     "Notre équipe est disponible pour répondre à toutes vos questions et vous aider à organiser votre transport sur la Côte d'Azur.";
@@ -165,10 +165,7 @@ export default function ContactPage() {
             className="text-white max-w-4xl"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              {contactTitle}
-              <span className="block text-3xl md:text-4xl font-light mt-2">
-                {contactSubtitle}
-              </span>
+              Contact Taxi Nice 06 – Service Client 24h/24
             </h1>
             <div className="w-24 h-1 bg-white rounded-full mb-8"></div>
             <p className="text-xl md:text-2xl leading-relaxed">
@@ -181,6 +178,117 @@ export default function ContactPage() {
               </Link>
               .
             </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Bloc SEO Principal - Comment contacter */}
+      <section className="py-16 bg-gradient-to-br from-blue-50 via-primary/5 to-purple-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-10"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Comment contacter un taxi à Nice ?
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-primaryDark rounded-full mx-auto mb-8"></div>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border-t-4 border-primary"
+          >
+            <div className="text-center mb-6">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-primaryDark rounded-full mb-4">
+                <Phone className="w-10 h-10 text-white" />
+              </div>
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4">
+                Pour contacter Taxi Nice 06, appelez le{" "}
+                <a
+                  href="tel:+33651683687"
+                  className="text-primary hover:text-primaryDark font-bold text-2xl md:text-3xl transition-colors underline decoration-2 underline-offset-4 whitespace-nowrap inline-block"
+                >
+                  06 51 68 36 87
+                </a>{" "}
+                ou utilisez le formulaire de contact.
+              </p>
+              <div className="inline-flex items-center gap-2 px-6 py-3 bg-green-100 rounded-full">
+                <Clock className="w-5 h-5 text-green-600" />
+                <span className="text-green-800 font-semibold">
+                  Service disponible 24h/24 et 7j/7
+                </span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Bloc SEO Services */}
+      <section className="py-16 bg-gradient-to-br from-primary/10 via-white to-blue-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Contacter Taxi Nice pour :
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-primaryDark rounded-full mx-auto"></div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10"
+          >
+            {[
+              "Réservation taxi Nice",
+              "Transfert aéroport Nice Côte d'Azur",
+              "Transport gare Nice Ville",
+              "Transport longue distance",
+              "Taxi conventionné",
+            ].map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ scale: 1.05, y: -5 }}
+                className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-primary to-primaryDark rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-lg font-semibold text-gray-800 pt-1">
+                    {service}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-center"
+          >
+            <Link
+              href="/taxi-nice-numero"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-primaryDark text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
+              <Phone className="w-6 h-6" />
+              Voir le numéro direct du taxi à Nice
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -534,26 +642,63 @@ export default function ContactPage() {
             </h2>
             <p className="text-xl text-white/90 mb-8">{ctaDescription}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
+              <motion.a
+                href="tel:+33651683687"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-primary rounded-xl font-bold hover:shadow-lg transition-all duration-300 flex items-center justify-center"
+                className="px-8 py-4 bg-white text-primary rounded-xl font-bold hover:shadow-lg transition-all duration-300 flex items-center justify-center whitespace-nowrap"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 06 51 68 36 87
-              </motion.button>
-              <motion.button
+              </motion.a>
+              <motion.a
+                href="mailto:contact@taxi-nice-06.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 border-2 border-white text-white rounded-xl font-bold hover:bg-white hover:text-primary transition-all duration-300 flex items-center justify-center"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 {ctaEmailButton}
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Taxi Nice 06",
+            telephone: "+33651683687",
+            email: "contact@taxi-nice-06.com",
+            areaServed: {
+              "@type": "City",
+              name: "Nice",
+            },
+            url: "https://taxi-nice-06.com",
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ],
+                opens: "00:00",
+                closes: "23:59",
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* Footer */}
       <Footer />

@@ -1,18 +1,19 @@
 export const metadata = {
-  title: "Contact Taxi Nice | Nous Contacter 24/7 | Taxi Nice-06",
+  title: "Contact Taxi Nice 06 – Téléphone, Email et Réservation 24h/24",
   description:
-    "Contactez-nous pour réserver votre taxi à Nice. Disponible 24/7 par téléphone, email ou formulaire de contact. Réponse rapide garantie.",
+    "Contact Taxi Nice 06 facilement. Téléphone, email et formulaire disponibles 24h/24. Réservation rapide et service professionnel à Nice.",
   keywords: [
+    "taxi nice contact",
     "contact taxi nice",
+    "contacter taxi nice",
     "téléphone taxi nice",
     "email taxi nice",
-    "contacter taxi nice",
     "coordonnées taxi nice",
   ],
   openGraph: {
-    title: "Contact Taxi Nice | Taxi Nice-06",
+    title: "Contact Taxi Nice 06 – Téléphone, Email et Réservation 24h/24",
     description:
-      "Contactez-nous pour réserver votre taxi à Nice. Disponible 24/7 par téléphone, email ou formulaire de contact.",
+      "Contact Taxi Nice 06 facilement. Téléphone, email et formulaire disponibles 24h/24. Réservation rapide et service professionnel à Nice.",
     url: "https://taxi-nice-06.com/contact",
     type: "website",
     images: [
@@ -20,14 +21,14 @@ export const metadata = {
         url: "https://taxi-nice-06.com/contact.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact Taxi Nice",
+        alt: "Contact Taxi Nice 06",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Taxi Nice | Taxi Nice-06",
-    description: "Contactez-nous pour réserver votre taxi à Nice. Disponible 24/7.",
+    title: "Contact Taxi Nice 06 – Téléphone, Email et Réservation 24h/24",
+    description: "Contact Taxi Nice 06 facilement. Téléphone, email et formulaire disponibles 24h/24.",
     images: ["https://taxi-nice-06.com/contact.jpg"],
   },
   alternates: {

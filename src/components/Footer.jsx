@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, Phone, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -29,7 +29,12 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-white/90" />
-                <span>+33 6 51 68 36 87</span>
+                <a
+                  href="/taxi-nice-numero"
+                  className="hover:text-white/70 transition-colors underline underline-offset-2"
+                >
+                  +33 6 51 68 36 87
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-white/90" />
@@ -44,6 +49,13 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-white/90" />
                 <span>Nice, Côte d'Azur</span>
               </a>
+              <Link
+                href="/taxi-nice-numero"
+                className="flex items-center space-x-3 hover:text-white/70 transition-colors"
+              >
+                <ExternalLink className="w-4 h-4 text-white/90" />
+                <span>Voir la page numéro</span>
+              </Link>
             </div>
           </div>
 

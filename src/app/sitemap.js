@@ -24,6 +24,7 @@ export default function sitemap() {
     { path: "/services", priority: 0.8, changeFrequency: "weekly" },
     { path: "/services/vsl", priority: 0.8, changeFrequency: "weekly" },
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/taxi-nice-numero", priority: 0.8, changeFrequency: "monthly" },
     {
       path: "/services/arrivees-destinations",
       priority: 0.7,
