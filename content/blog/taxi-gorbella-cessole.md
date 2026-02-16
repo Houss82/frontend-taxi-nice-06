@@ -6,7 +6,7 @@ image: "/gorbella-cessole.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Gorbella et Cessole** sont des quartiers résidentiels du nord de Nice, situés sur les **collines niçoises** et offrant un **cadre de vie privilégié** avec vues panoramiques, espaces verts et calme relatif. Ces quartiers calmes et verdoyants abritent des résidences modernes, des villas avec jardin et des immeubles de standing. Avec leur **proximité du centre-ville** et leur **accessibilité**, ces quartiers nécessitent des services de transport adaptés à leurs besoins résidentiels.
@@ -317,4 +317,4 @@ Oui, nos véhicules Mercedes GLC sont équipés de moteurs puissants et de suspe
 
 ---
 
-_Article mis à jour le 20 janvier 2026_
+_Article mis à jour le 16 février 2026_
