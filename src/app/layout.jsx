@@ -26,27 +26,39 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
-        {/* Google Analytics / Google Ads - Chargement ultra-différé */}
+        {/* Google Analytics - Code standard */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-L3Q6HXNYDD"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              // Initialiser dataLayer immédiatement
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              
+              gtag('js', new Date());
+              gtag('config', 'G-L3Q6HXNYDD');
+            `,
+          }}
+        />
+
+        {/* Google Ads - Chargement ultra-différé */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
               // Protection contre le double chargement
               let gtmLoaded = false;
               let gtmLoading = false;
               
-              // Charger Google Tag Manager de manière ultra-différée
-              function loadGTM() {
+              // Charger Google Ads de manière ultra-différée
+              function loadGoogleAds() {
                 // Éviter le double chargement
                 if (gtmLoaded || gtmLoading) {
                   return;
                 }
                 
                 // Vérifier si le script n'est pas déjà présent
-                if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+                if (document.querySelector('script[src*="googletagmanager.com/gtag/js?id=AW-"]')) {
                   gtmLoaded = true;
                   return;
                 }
@@ -61,7 +73,6 @@ export default async function RootLayout({ children }) {
                 script.onload = function() {
                   gtmLoaded = true;
                   gtmLoading = false;
-                  gtag('js', new Date());
                   gtag('config', 'AW-17599375066');
                 };
                 
@@ -72,21 +83,21 @@ export default async function RootLayout({ children }) {
                 document.head.appendChild(script);
               }
               
-              // Charger GTM après que la page soit complètement chargée et interactive
+              // Charger Google Ads après que la page soit complètement chargée et interactive
               if (document.readyState === 'complete') {
-                setTimeout(loadGTM, 3000); // Délai augmenté à 3s pour améliorer les performances
+                setTimeout(loadGoogleAds, 3000); // Délai augmenté à 3s pour améliorer les performances
               } else {
                 window.addEventListener('load', function() {
-                  setTimeout(loadGTM, 3000);
+                  setTimeout(loadGoogleAds, 3000);
                 });
               }
               
-              // Prioriser l'interactivité - charger GTM seulement si l'utilisateur scroll
+              // Prioriser l'interactivité - charger Google Ads seulement si l'utilisateur scroll
               let userInteracted = false;
               const handleUserInteraction = function() {
                 if (!userInteracted) {
                   userInteracted = true;
-                  setTimeout(loadGTM, 1000);
+                  setTimeout(loadGoogleAds, 1000);
                   window.removeEventListener('scroll', handleUserInteraction);
                   window.removeEventListener('click', handleUserInteraction);
                 }
