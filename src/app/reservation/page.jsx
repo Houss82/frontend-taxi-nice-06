@@ -78,7 +78,7 @@ export default function ReservationPage() {
       }
 
       // Rediriger vers la page de confirmation
-      router.push("/reservation/confirmé");
+      router.push("/reservation/confirme");
     } catch (error) {
       console.error("Erreur:", error);
       const errorMessage =
