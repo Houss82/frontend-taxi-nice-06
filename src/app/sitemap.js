@@ -4,13 +4,23 @@ const baseUrl = "https://taxi-nice-06.com";
 
 export default function sitemap() {
   const now = new Date();
-  const allPosts = getAllPosts();
+  let blogPosts = [];
 
-  // Créer un map pour accéder rapidement aux dates des articles
-  const postDatesMap = {};
-  allPosts.forEach((post) => {
-    postDatesMap[post.slug] = post.date ? new Date(post.date) : now;
-  });
+  try {
+    const allPosts = getAllPosts() || [];
+    const postDatesMap = {};
+    allPosts.forEach((post) => {
+      postDatesMap[post.slug] = post.date ? new Date(post.date) : now;
+    });
+    blogPosts = (getAllPostSlugs() || []).map(({ slug }) => ({
+      url: `${baseUrl}/blog/${slug}`,
+      lastModified: postDatesMap[slug] || now,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    }));
+  } catch (error) {
+    console.error("Sitemap blog error:", error);
+  }
 
   const staticPages = [
     { path: "", priority: 1.0, changeFrequency: "weekly" },
@@ -87,13 +97,6 @@ export default function sitemap() {
     lastModified: now,
     changeFrequency,
     priority,
-  }));
-
-  const blogPosts = getAllPostSlugs().map(({ slug }) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: postDatesMap[slug] || now,
-    changeFrequency: "monthly",
-    priority: 0.6,
   }));
 
   return [...staticPages, ...blogPosts];

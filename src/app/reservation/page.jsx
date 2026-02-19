@@ -57,11 +57,25 @@ export default function ReservationPage() {
       return;
     }
 
-    try {
-      // Envoyer à la base de données (API backend)
-      await reservationApi.create(formData);
+    // Validation du numéro de téléphone
+    const cleanedTelephone = formData.telephone.replace(/\D/g, ""); // Garder uniquement les chiffres
+    if (cleanedTelephone.length < 8 || cleanedTelephone.length > 15) {
+      alert("Le numéro de téléphone doit contenir entre 8 et 15 chiffres");
+      setIsSubmitting(false);
+      return;
+    }
 
-      // Envoyer l'email via Formspree
+    try {
+      // Nettoyer le numéro de téléphone (supprimer espaces, tirets, etc.)
+      const cleanedData = {
+        ...formData,
+        telephone: cleanedTelephone,
+      };
+
+      // Envoyer à la base de données (API backend)
+      await reservationApi.create(cleanedData);
+
+      // Envoyer l'email via Formspree (avec les données originales pour l'affichage)
       await formspreeService.sendReservation(formData);
 
       // Déclencher la conversion Google Ads

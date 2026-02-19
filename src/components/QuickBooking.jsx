@@ -45,8 +45,12 @@ export default function QuickBooking() {
     setIsSubmitted(false);
 
     try {
+      // Nettoyer le numéro de téléphone (supprimer espaces, tirets, etc.)
+      const cleanedTelephone = formData.telephone.replace(/\D/g, "");
+
       await formspreeService.sendQuickBooking({
         ...formData,
+        telephone: cleanedTelephone,
         indicatifPays: "+33",
         typeTransport: "ALD exonérante",
         commentaires: `Demande rapide - Véhicule: ${
