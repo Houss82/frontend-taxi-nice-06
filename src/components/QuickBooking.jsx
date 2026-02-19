@@ -11,9 +11,11 @@ import {
   Phone,
   User,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function QuickBooking() {
+  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -69,19 +71,8 @@ export default function QuickBooking() {
         );
       }
 
-      setIsSubmitted(true);
-      setFormData({
-        nom: "",
-        telephone: "",
-        email: "",
-        adresseDepart: "",
-        adresseArrivee: "",
-        date: "",
-        heure: "",
-        typeVehicule: "glc",
-        numeroVol: "",
-        siegeEnfant: false,
-      });
+      // Rediriger vers la page de confirmation
+      router.push("/reservation/confirmé");
     } catch (error) {
       console.error("Erreur:", error);
       const errorMessage =

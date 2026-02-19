@@ -14,9 +14,11 @@ import {
   Phone,
   User,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function ReservationPage() {
+  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -75,23 +77,8 @@ export default function ReservationPage() {
         console.log("Conversion Google Ads déclenchée pour la réservation");
       }
 
-      setIsSubmitted(true);
-      setFormData({
-        nom: "",
-        indicatifPays: "+33",
-        telephone: "",
-        email: "",
-        date: "",
-        heure: "",
-        adresseDepart: "",
-        adresseArrivee: "",
-        nombreBagages: "",
-        nombrePassagers: "",
-        numeroVol: "",
-        siegeEnfant: false,
-        typeVehicule: "glc",
-        commentaires: "",
-      });
+      // Rediriger vers la page de confirmation
+      router.push("/reservation/confirmé");
     } catch (error) {
       console.error("Erreur:", error);
       const errorMessage =
