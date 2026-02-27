@@ -2,7 +2,7 @@
 title: "Taxi Gorbella Nice : Transferts Aéroport & Centre-ville - Service 24/7"
 date: "2026-02-16"
 excerpt: "Service de taxi Gorbella Nice disponible 24/7 : transferts aéroport, gare SNCF, centre-ville. Chauffeur local expert des quartiers résidentiels nord (Gorbella, Cessole). Tarifs transparents et véhicules premium Mercedes."
-image: "/gorbella-cessole.png"
+image: "/taxi-nice-gorbella.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"

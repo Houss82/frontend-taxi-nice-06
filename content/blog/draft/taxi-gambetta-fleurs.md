@@ -2,7 +2,7 @@
 title: "Taxi Gambetta Nice : Transferts Centre-ville & Aéroport - Service 24/7"
 date: "2026-02-23"
 excerpt: "Service de taxi Gambetta Nice disponible 24/7 : transferts aéroport, gare SNCF, centre-ville. Chauffeur local expert des quartiers résidentiels centraux (Gambetta, Fleurs). Tarifs transparents et véhicules premium Mercedes."
-image: "/gambetta-fleurs.png"
+image: "/taxi-gambetta-nice.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
