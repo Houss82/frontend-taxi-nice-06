@@ -6,7 +6,7 @@ image: "/taxi-fabron-nice.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Fabron, Lanterne, Corniche Fleurie et Collines** sont des quartiers résidentiels de l'ouest de Nice, offrant un **cadre de vie privilégié** avec vue sur la mer et accès facile au centre-ville. Ces quartiers calmes et verdoyants abritent des résidences modernes, des villas avec jardin et des espaces verts. Situés à **proximité de l'aéroport** et bien desservis par les transports en commun, ces quartiers nécessitent des services de transport adaptés à leurs besoins résidentiels.
@@ -318,4 +318,4 @@ Ces quartiers sont très proches de l'aéroport (3-5 km), ce qui permet des tran
 
 ---
 
-_Article mis à jour le 16 janvier 2026_
+_Article mis à jour le 1 mars 2026_
