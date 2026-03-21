@@ -195,4 +195,4 @@ Consultez nos tarifs et réservez en ligne pour un prix garanti. <a href="/reser
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 21 mars 2026_
