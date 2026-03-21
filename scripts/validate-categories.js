@@ -54,20 +54,29 @@ function extractCategoriesFromArticles() {
     return [];
   }
   
-  // Lire tous les fichiers .md dans blog/ et draft/
-  const directories = [blogDir, path.join(blogDir, 'draft')];
-  
-  directories.forEach(dir => {
-    if (!fs.existsSync(dir)) {
-      return;
+  // Fonction pour récupérer récursivement tous les fichiers .md
+  function getMarkdownFiles(dir, relativePath = '') {
+    const results = [];
+    if (!fs.existsSync(dir)) return results;
+    const items = fs.readdirSync(dir, { withFileTypes: true });
+    for (const item of items) {
+      const fullPath = path.join(dir, item.name);
+      const relPath = relativePath ? path.join(relativePath, item.name) : item.name;
+      if (item.isDirectory()) {
+        results.push(...getMarkdownFiles(fullPath, relPath));
+      } else if (item.name.endsWith('.md') && !item.name.startsWith('_') && item.name !== 'README.md') {
+        results.push({ path: fullPath, relPath });
+      }
     }
-    
-    const files = fs.readdirSync(dir).filter(
-      fileName => fileName.endsWith('.md') && !fileName.startsWith('_') && fileName !== 'README.md'
-    );
-    
-    files.forEach(fileName => {
-      const filePath = path.join(dir, fileName);
+    return results;
+  }
+
+  // Lire tous les fichiers .md dans blog/ et draft/ (récursivement)
+  const blogFiles = getMarkdownFiles(blogDir);
+  const draftFiles = getMarkdownFiles(path.join(blogDir, 'draft'));
+  const allFiles = [...blogFiles, ...draftFiles];
+  
+  allFiles.forEach(({ path: filePath }) => {
       try {
         const fileContents = fs.readFileSync(filePath, 'utf8');
         const { data } = matter(fileContents);
@@ -76,9 +85,8 @@ function extractCategoriesFromArticles() {
           categories.add(data.category);
         }
       } catch (error) {
-        console.error(`⚠️  Erreur lors de la lecture de ${fileName}:`, error.message);
+        console.error(`⚠️  Erreur lors de la lecture de ${filePath}:`, error.message);
       }
-    });
   });
   
   return Array.from(categories);

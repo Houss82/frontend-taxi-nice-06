@@ -31,19 +31,43 @@ if (!articleName) {
   process.exit(1);
 }
 
-// Vérifier que le fichier existe dans draft
-const draftFile = path.join(draftDir, `${articleName}.md`);
-const blogFile = path.join(blogDir, `${articleName}.md`);
+// Fonction pour trouver un fichier .md récursivement dans draft/
+function findDraftFile(dir, targetName, relativePath = '') {
+  const items = fs.readdirSync(dir, { withFileTypes: true });
+  for (const item of items) {
+    const fullPath = path.join(dir, item.name);
+    const relPath = relativePath ? path.join(relativePath, item.name) : item.name;
+    if (item.isDirectory()) {
+      const found = findDraftFile(fullPath, targetName, relPath);
+      if (found) return found;
+    } else if (item.name === targetName) {
+      return fullPath;
+    }
+  }
+  return null;
+}
+
+// Vérifier que le fichier existe dans draft (racine ou sous-dossiers)
+const targetFileName = `${articleName}.md`;
+const draftFile = findDraftFile(draftDir, targetFileName) || path.join(draftDir, targetFileName);
+const blogFile = path.join(blogDir, targetFileName);
 
 if (!fs.existsSync(draftFile)) {
-  console.error(`❌ Erreur: L'article "${articleName}.md" n'existe pas dans le dossier draft`);
-  console.log(`\nFichiers disponibles dans draft:`);
-  const files = fs.readdirSync(draftDir).filter(f => f.endsWith('.md') && f !== 'README.md');
-  if (files.length > 0) {
-    files.forEach(f => console.log(`  - ${f}`));
-  } else {
-    console.log(`  (aucun fichier trouvé)`);
+  console.error(`❌ Erreur: L'article "${targetFileName}" n'existe pas dans le dossier draft`);
+  console.log(`\nFichiers disponibles dans draft (y compris sous-dossiers):`);
+  function listMdFiles(dir, prefix = '') {
+    const items = fs.readdirSync(dir, { withFileTypes: true });
+    items.forEach(item => {
+      const fullPath = path.join(dir, item.name);
+      if (item.isDirectory()) {
+        listMdFiles(fullPath, prefix + item.name + '/');
+      } else if (item.name.endsWith('.md') && item.name !== 'README.md') {
+        console.log(`  - ${prefix}${item.name}`);
+      }
+    });
   }
+  if (fs.existsSync(draftDir)) listMdFiles(draftDir);
+  else console.log(`  (dossier draft introuvable)`);
   process.exit(1);
 }
 

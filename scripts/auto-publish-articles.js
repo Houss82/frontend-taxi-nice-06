@@ -75,15 +75,34 @@ function formatDateFrench(dateString) {
   });
 }
 
+// Fonction pour récupérer récursivement tous les fichiers .md dans draft/ (y compris sous-dossiers)
+function getMarkdownFiles(dir, relativePath = '') {
+  const results = [];
+  const items = fs.readdirSync(dir, { withFileTypes: true });
+  for (const item of items) {
+    const fullPath = path.join(dir, item.name);
+    const relPath = relativePath ? path.join(relativePath, item.name) : item.name;
+    if (item.isDirectory()) {
+      results.push(...getMarkdownFiles(fullPath, relPath));
+    } else if (item.name.endsWith('.md') && !item.name.startsWith('_') && item.name !== 'README.md') {
+      results.push(relPath);
+    }
+  }
+  return results;
+}
+
 // Fonction pour publier un article
-function publishArticle(fileName) {
+// filePath peut être "taxi-nice.md" ou "Taxi/taxi-saint-augustin-nice.md" (avec sous-dossier)
+function publishArticle(filePath) {
   try {
-    const draftFile = path.join(draftDir, fileName);
+    const draftFile = path.join(draftDir, filePath);
+    // Les articles publiés vont à la racine de blog/, pas dans des sous-dossiers
+    const fileName = path.basename(filePath);
     const blogFile = path.join(blogDir, fileName);
     
     // Vérifier que le fichier draft existe
     if (!fs.existsSync(draftFile)) {
-      console.error(`❌ Erreur: Fichier draft introuvable: ${fileName}`);
+      console.error(`❌ Erreur: Fichier draft introuvable: ${filePath}`);
       return false;
     }
     
@@ -99,7 +118,7 @@ function publishArticle(fileName) {
     // Parser le frontmatter
     const parsed = parseFrontmatter(content);
     if (!parsed) {
-      console.error(`❌ Erreur: Impossible de parser le frontmatter de ${fileName}`);
+      console.error(`❌ Erreur: Impossible de parser le frontmatter de ${filePath}`);
       return false;
     }
     
@@ -137,7 +156,7 @@ function publishArticle(fileName) {
     
     return true;
   } catch (error) {
-    console.error(`❌ Erreur lors de la publication de ${fileName}: ${error.message}`);
+    console.error(`❌ Erreur lors de la publication de ${filePath}: ${error.message}`);
     return false;
   }
 }
@@ -172,10 +191,8 @@ function main() {
   
   console.log(`📅 Date du jour: ${todayString}\n`);
   
-  // Lire tous les fichiers .md dans draft/
-  const files = fs.readdirSync(draftDir).filter(
-    fileName => fileName.endsWith('.md') && !fileName.startsWith('_') && fileName !== 'README.md'
-  );
+  // Lire tous les fichiers .md dans draft/ (récursivement, y compris sous-dossiers)
+  const files = getMarkdownFiles(draftDir);
   
   if (files.length === 0) {
     console.log('ℹ️  Aucun article trouvé dans le dossier draft.\n');
@@ -188,13 +205,13 @@ function main() {
   let skippedCount = 0;
   
   // Vérifier chaque fichier
-  for (const fileName of files) {
+  for (const filePath of files) {
     try {
-      const draftFile = path.join(draftDir, fileName);
+      const draftFile = path.join(draftDir, filePath);
       
       // Vérifier que le fichier existe et est lisible
       if (!fs.existsSync(draftFile)) {
-        console.error(`⚠️  ${fileName}: Fichier introuvable, ignoré`);
+        console.error(`⚠️  ${filePath}: Fichier introuvable, ignoré`);
         skippedCount++;
         continue;
       }
@@ -203,7 +220,7 @@ function main() {
       const parsed = parseFrontmatter(content);
       
       if (!parsed) {
-        console.error(`❌ ${fileName}: Impossible de parser le frontmatter`);
+        console.error(`❌ ${filePath}: Impossible de parser le frontmatter`);
         skippedCount++;
         continue;
       }
@@ -214,33 +231,33 @@ function main() {
       if (data.date === todayString) {
         // Vérifier si published est false
         if (data.published === false) {
-          console.log(`📝 ${fileName}: Date correspond à aujourd'hui (${data.date})`);
+          console.log(`📝 ${filePath}: Date correspond à aujourd'hui (${data.date})`);
           console.log(`   Statut: published: false → published: true`);
           
           // Publier l'article
-          const success = publishArticle(fileName);
+          const success = publishArticle(filePath);
           
           if (success) {
-            console.log(`✅ ${fileName}: Publié avec succès et déplacé vers blog/\n`);
+            console.log(`✅ ${filePath}: Publié avec succès et déplacé vers blog/\n`);
             publishedCount++;
           } else {
-            console.log(`❌ ${fileName}: Erreur lors de la publication\n`);
+            console.log(`❌ ${filePath}: Erreur lors de la publication\n`);
             skippedCount++;
           }
         } else {
-          console.log(`⏭️  ${fileName}: Date correspond mais déjà publié (published: ${data.published})\n`);
+          console.log(`⏭️  ${filePath}: Date correspond mais déjà publié (published: ${data.published})\n`);
           skippedCount++;
         }
       } else {
         // Date ne correspond pas, afficher pour info si en mode verbose
         if (process.argv.includes('--verbose') || process.argv.includes('-v')) {
-          console.log(`⏭️  ${fileName}: Date prévue ${data.date} (pas aujourd'hui)\n`);
+          console.log(`⏭️  ${filePath}: Date prévue ${data.date} (pas aujourd'hui)\n`);
         }
         skippedCount++;
       }
     } catch (error) {
       // Gérer les erreurs individuelles sans faire échouer tout le script
-      console.error(`❌ ${fileName}: Erreur lors du traitement - ${error.message}`);
+      console.error(`❌ ${filePath}: Erreur lors du traitement - ${error.message}`);
       skippedCount++;
       continue;
     }
