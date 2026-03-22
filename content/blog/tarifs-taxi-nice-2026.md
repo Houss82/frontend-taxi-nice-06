@@ -1,6 +1,6 @@
 ---
 title: "Tarifs Taxi Nice 2026 : Prix, Grille Officielle & Conseils Pratiques"
-date: "2026-03-09"
+date: "2026-03-22"
 excerpt: "Tarifs taxi Nice 2026 : grille officielle préfectorale, prix au km, prise en charge. Comparatif trajets courants : aéroport, gare, Monaco, Cannes. Guide complet."
 image: "/taxi-nice-centre.jpeg"
 category: "Guide Pratique"
@@ -195,4 +195,4 @@ Consultez nos tarifs et réservez en ligne pour un prix garanti. <a href="/reser
 
 ---
 
-_Article mis à jour le 21 mars 2026_
+_Article mis à jour le 22 mars 2026_

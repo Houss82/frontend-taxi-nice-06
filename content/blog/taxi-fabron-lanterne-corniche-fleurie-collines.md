@@ -1,6 +1,6 @@
 ---
 title: "Taxi Fabron Nice : Transferts Aéroport & Centre-ville - Service 24/7"
-date: "2026-06-04"
+date: "2026-03-09"
 excerpt: "Service de taxi Fabron Nice disponible 24/7 : transferts aéroport, gare SNCF, centre-ville. Chauffeur local expert des quartiers résidentiels ouest (Fabron, Lanterne, Corniche Fleurie, Collines). Tarifs transparents et véhicules premium Mercedes."
 image: "/taxi-fabron-nice.png"
 category: "Taxi"
@@ -318,4 +318,4 @@ Ces quartiers sont très proches de l'aéroport (3-5 km), ce qui permet des tran
 
 ---
 
-_Article mis à jour le 1 mars 2026_
+_Article mis à jour le 22 mars 2026_
