@@ -6,7 +6,7 @@ image: "/fete-du-citron-menton-2026.png"
 category: "Actualités"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **La Fête du Citron de Menton** est l'un des **événements les plus populaires** de la Côte d'Azur. Chaque année en février-mars, des centaines de milliers de visiteurs découvrent les **chars en citrons et oranges** et les **jardins de Biovès** transformés en œuvres d'art éphémères. Selon le [site officiel de la Fête du Citron](https://www.feteducitron.com/) et l'[Office de Tourisme de Menton](https://www.menton-riviera-merveilles.fr/), l'événement attire plus de 200 000 visiteurs.
@@ -147,4 +147,4 @@ Réservez votre taxi Nice → Menton dès maintenant. <a href="/reservation" cla
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 23 mars 2026_
