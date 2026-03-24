@@ -36,7 +36,7 @@ export default function ReviewsSection() {
 
   // Calcul de la note moyenne et du nombre total d'avis
   const averageRating = 5;
-  const totalReviews = 45; // Nombre total d'avis sur Google
+  const totalReviews = 113; // Nombre total d'avis sur Google
 
   return (
     <>
