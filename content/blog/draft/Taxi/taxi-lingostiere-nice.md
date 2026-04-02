@@ -2,7 +2,7 @@
 title: "Taxi Lingostière Nice : Transferts Zones Commerciales & Aéroport - Service 24/7"
 date: "2026-03-30"
 excerpt: "Service de taxi Lingostière Nice disponible 24/7 : transferts aéroport, zones commerciales Nice Lingostière, centre-ville. Chauffeur local expert des zones d'activité. Tarifs transparents et véhicules premium Mercedes."
-image: "/taxi-lingostiere-nice.png"
+image: "/taxi-nice-lingostiere.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
