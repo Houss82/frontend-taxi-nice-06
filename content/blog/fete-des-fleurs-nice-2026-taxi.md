@@ -6,7 +6,7 @@ image: "/fete-des-fleurs-nice-2026.png"
 category: "Actualités"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **La Bataille des Fleurs** est l'un des **événements emblématiques** du Carnaval de Nice. Elle se déroule sur la **Promenade des Anglais** et attire des milliers de spectateurs. Selon le [site officiel du Carnaval de Nice](https://www.nicecarnaval.com/) et la [Ville de Nice](https://www.nice.fr/), la Bataille des Fleurs propose des chars fleuris, des défilés et des lancers de fleurs dans une ambiance festive.
@@ -145,4 +145,4 @@ Réservez votre taxi dès maintenant. <a href="/reservation" class="cta-link">R�
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 7 avril 2026_
