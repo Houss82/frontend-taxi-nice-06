@@ -1,6 +1,6 @@
 ---
 title: "Fête des Fleurs Nice 2026 : Taxi & Transferts Bataille des Fleurs"
-date: "2026-04-09"
+date: "2026-04-07"
 excerpt: "Fête des Fleurs Nice 2026 : taxi et transferts pour la Bataille des Fleurs. Promenade des Anglais, dépose optimale. Service 24/7 pendant l'événement."
 image: "/fete-des-fleurs-nice-2026.png"
 category: "Actualités"

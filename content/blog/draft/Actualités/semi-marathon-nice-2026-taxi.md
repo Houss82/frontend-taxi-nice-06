@@ -1,6 +1,6 @@
 ---
 title: "Semi-Marathon Nice 2026 : Taxi & Transferts Départ Course"
-date: "2026-05-14"
+date: "2026-04-14"
 excerpt: "Semi-Marathon Nice 2026 : taxi et transferts pour le départ de la course. Promenade des Anglais, dépose optimale. Service matinal, réservation à l'avance."
 image: "/semi-marathon-nice-2026.png"
 category: "Actualités"

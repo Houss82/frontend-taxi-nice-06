@@ -1,6 +1,6 @@
 ---
 title: "Taxi Personnes Âgées Nice : Transport Seniors & PMR - Service Adapté"
-date: "2026-04-30"
+date: "2026-05-05"
 excerpt: "Taxi pour personnes âgées Nice : transport seniors, PMR, rendez-vous médicaux. Véhicules adaptés, chauffeur patient, aide à la marche. Service 24/7."
 image: "/taxi-personnes-agees-nice.png"
 category: "Guide Pratique"

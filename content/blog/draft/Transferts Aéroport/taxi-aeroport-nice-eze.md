@@ -1,6 +1,6 @@
 ---
 title: "Taxi Aéroport Nice vers Èze : Transfert Village perché - Prix & Réservation 2026"
-date: "2026-03-16"
+date: "2026-08-04"
 excerpt: "Transfert aéroport Nice → Èze : taxi premium 24/7, prix fixe dès 55€. Village perché médiéval à 15 km. Chauffeur local, Mercedes confort, suivi de vol inclus."
 image: "/new-taxi-aeroport-nice copie.jpeg"
 category: "Transferts Aéroport"

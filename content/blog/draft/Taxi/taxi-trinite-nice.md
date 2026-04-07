@@ -1,6 +1,6 @@
 ---
 title: "Taxi Trinité Nice : Transferts Aéroport & Centre-ville - Service 24/7"
-date: "2026-05-04"
+date: "2026-06-09"
 excerpt: "Service de taxi Trinité Nice disponible 24/7 : transferts aéroport, gare SNCF, centre-ville. Chauffeur local expert des quartiers des collines niçoises. Tarifs transparents et véhicules premium Mercedes."
 image: "/taxi-trinite-nice.png"
 category: "Taxi"

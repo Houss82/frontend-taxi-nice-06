@@ -1,6 +1,6 @@
 ---
 title: "Taxi Aéroport Nice vers Beaulieu-sur-Mer : Transfert Cap Ferrat - Prix & Réservation 2026"
-date: "2026-04-20"
+date: "2026-07-14"
 excerpt: "Transfert aéroport Nice → Beaulieu-sur-Mer : taxi premium 24/7, prix fixe dès 50€. Port de plaisance et Cap Ferrat à 12 km. Chauffeur local, Mercedes, suivi de vol."
 image: "/aéroport-Nice-départ-t1-2 copie.jpeg"
 category: "Transferts Aéroport"

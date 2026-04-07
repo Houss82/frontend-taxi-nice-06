@@ -1,6 +1,6 @@
 ---
 title: "Tour de France Nice 2026 : Taxi & Transferts pendant l'Étape"
-date: "2026-04-27"
+date: "2026-04-21"
 excerpt: "Tour de France Nice 2026 : taxi et transferts pendant l'étape. Rues fermées, circulation perturbée. Conseils pour se déplacer et réserver un taxi à Nice."
 image: "/tour-de-france-nice-2026.png"
 category: "Actualités"

@@ -1,6 +1,6 @@
 ---
 title: "Taxi Aéroport Nice vers Cap Ferrat : Transfert Presqu'île de Luxe - Prix & Réservation 2026"
-date: "2026-05-25"
+date: "2026-07-28"
 excerpt: "Transfert aéroport Nice → Cap Ferrat : taxi premium 24/7, prix fixe dès 55€. Presqu'île de luxe, Villa Ephrussi. Chauffeur local, Mercedes, suivi de vol inclus."
 image: "/aero-depart-jour-glc copie.jpeg"
 category: "Transferts Aéroport"
