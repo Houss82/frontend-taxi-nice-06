@@ -12,7 +12,7 @@ Nous intervenons surtout depuis **Nice** et l’**aéroport Nice Côte d’Azur*
 
 ## Pourquoi on mentionne ce service
 
-Si vous cherchez **<a href="https://www.taxi-antibes.fr/">un taxi à Antibes</a>**, vous croiserez souvent cette équipe dans le paysage du transport sur la Côte d’Azur : courses courtes, trajets vers l’aéroport, déplacements plus longs quand le besoin s’en fait sentir. Rien de spectaculaire à vendre ici — simplement le fait que, lorsqu’on nous demande une adresse fiable du côté d’Antibes, c’est vers ce type de structure locale qu’on oriente souvent les gens.
+<a href="https://www.taxi-antibes.fr/">Taxi Antibes</a> est une équipe qu’on croise dans le paysage du transport sur la Côte d’Azur : courses courtes, trajets vers l’aéroport, déplacements plus longs quand le besoin s’en fait sentir. Rien de spectaculaire à vendre ici — simplement le fait que, lorsqu’on nous demande une adresse fiable du côté d’Antibes, c’est vers ce type de structure locale qu’on oriente souvent les gens.
 
 Ce n’est pas une “offre groupée” ni un partenaire commercial à mettre en avant : **une recommandation pratique** pour ceux qui ne sont pas sur notre zone d’intervention habituelle mais restent sur le même bassin (aéroport de Nice, déplacements le long de la côte, etc.).
 
