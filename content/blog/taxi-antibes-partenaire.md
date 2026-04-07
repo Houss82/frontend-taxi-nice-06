@@ -1,7 +1,7 @@
 ---
 title: "Taxi Antibes : notre recommandation locale"
 date: "2025-11-07"
-excerpt: "Si vous êtes sur Antibes ou Juan-les-Pins et cherchez un taxi local, voici une piste simple — un seul lien vers le service que nous connaissons sur le terrain."
+excerpt: "Si vous êtes sur Antibes ou Juan-les-Pins et cherchez un taxi local : une mention simple, sans renvoi vers un site tiers."
 image: "/partenaire-antibes.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
@@ -12,7 +12,7 @@ Nous intervenons surtout depuis **Nice** et l’**aéroport Nice Côte d’Azur*
 
 ## Pourquoi on mentionne ce service
 
-Si vous cherchez **<a href="https://www.taxi-antibes.fr/">un taxi à Antibes</a>**, vous croiserez souvent cette équipe dans le paysage du transport sur la Côte d’Azur : courses courtes, trajets vers l’aéroport, déplacements plus longs quand le besoin s’en fait sentir. Rien de spectaculaire à vendre ici — simplement le fait que, lorsqu’on nous demande une adresse fiable du côté d’Antibes, c’est vers ce type de structure locale qu’on oriente souvent les gens.
+Si vous cherchez **un taxi à Antibes**, vous croiserez souvent cette équipe dans le paysage du transport sur la Côte d’Azur : courses courtes, trajets vers l’aéroport, déplacements plus longs quand le besoin s’en fait sentir. Rien de spectaculaire à vendre ici — simplement le fait que, lorsqu’on nous demande une adresse fiable du côté d’Antibes, c’est vers ce type de structure locale qu’on oriente souvent les gens.
 
 Ce n’est pas une “offre groupée” ni un partenaire commercial à mettre en avant : **une recommandation pratique** pour ceux qui ne sont pas sur notre zone d’intervention habituelle mais restent sur le même bassin (aéroport de Nice, déplacements le long de la côte, etc.).
 
@@ -22,6 +22,6 @@ Comme pour tout taxi sérieux, l’idée est de vérifier **horaires**, **type d
 
 ## Et nous, Taxi Nice ?
 
-Notre métier reste **Nice**, l’aéroport et les trajets que nous assurons nous-mêmes. Cet article existe surtout pour répondre à une question fréquente : _“Connaissez-vous un taxi du côté d’Antibes ?”_ — avec une réponse courte et un **seul lien**, pour que ce soit clair pour tout le monde, y compris pour les moteurs de recherche.
+Notre métier reste **Nice**, l’aéroport et les trajets que nous assurons nous-mêmes. Cet article existe surtout pour répondre à une question fréquente : _“Connaissez-vous un taxi du côté d’Antibes ?”_ — avec une réponse courte et factuelle, sans lien sortant.
 
 Si votre départ ou votre arrivée concerne **Nice**, vous pouvez bien sûr [nous contacter](/contact) ou consulter nos [tarifs](/tarifs) habituels.
