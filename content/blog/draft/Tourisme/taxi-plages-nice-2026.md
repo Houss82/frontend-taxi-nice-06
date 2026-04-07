@@ -2,7 +2,7 @@
 title: "Taxi Plages Nice 2026 : Accès Plages Privées & Publiques - Transfert Mer"
 date: "2026-04-06"
 excerpt: "Taxi pour accéder aux plages de Nice : Promenade des Anglais, Coco Beach, Réserve, Villefranche. Pas de parking ? Taxi vous dépose à la plage. Service 24/7."
-image: "/taxi-plages-nice.png"
+image: "/plage-nice-2026.png"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
