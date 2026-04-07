@@ -6,7 +6,7 @@ image: "/plage-nice-2026.png"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Les plages de Nice** sont parmi les plus fréquentées de la Côte d'Azur. Mais **trouver une place de parking** en été relève du parcours du combattant. Selon les données de la [Ville de Nice](https://www.nice.fr/) et de l'[Office de Tourisme](https://www.nicecotedazur.org), les plages niçoises accueillent des millions de visiteurs chaque année, avec une saturation des parkings dès 9h en haute saison.
@@ -196,4 +196,4 @@ Réservez votre transfert et profitez de la mer sans stress de parking. <a href=
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 6 avril 2026_

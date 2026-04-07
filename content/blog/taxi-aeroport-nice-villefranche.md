@@ -6,7 +6,7 @@ image: "/aeroport-nice-glc-depart-1 copie.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Pour rejoindre **Villefranche-sur-Mer** depuis l'aéroport de Nice, optez pour un transfert **confortable, sécurisé et disponible 24/7**. Votre chauffeur vous attend directement à la sortie du terminal avec une pancarte à votre nom pour un trajet d'environ **10 km** vers l'une des plus belles baies de la Côte d'Azur, célèbre pour sa citadelle, son port de plaisance et ses plages.
@@ -250,4 +250,4 @@ Offrez-vous un transfert sans stress entre **l'aéroport de Nice** et **Villefra
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 2 avril 2026_
