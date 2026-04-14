@@ -6,7 +6,7 @@ image: "/semi-marathon-nice-2026.png"
 category: "Actualités"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Le Semi-Marathon de Nice** est une **course à pied** courue sur la **Promenade des Anglais** et les corniches. Elle attire des milliers de coureurs chaque année. Selon les organisateurs et la [Ville de Nice](https://www.nice.fr/), le départ a lieu tôt le matin (8h-9h) et les **transports en commun** sont limités à cette heure.
@@ -145,4 +145,4 @@ Réservez votre taxi dès maintenant. <a href="/reservation" class="cta-link">R�
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 14 avril 2026_
