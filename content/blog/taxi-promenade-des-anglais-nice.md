@@ -228,6 +228,12 @@ Le **Van Mercedes Classe V** est la solution idéale pour les familles et groupe
 
 ---
 
+## Carnaval de Nice et Bataille des fleurs
+
+La **Promenade des Anglais** concentre aussi les grands moments du **Carnaval de Nice**, dont la **Bataille des fleurs** : circulation modifiée, **stationnement** très limité et forte affluence. Pour le spectacle ou le corso, un **taxi** permet souvent une **dépose** près d'une zone d'accès autorisé et un **retour** plus serein en fin d'après-midi — **réservez à l'avance** pendant cette période. Dates et programme : [site officiel du Carnaval de Nice](https://www.nicecarnaval.com/).
+
+---
+
 ## 📍 Pourquoi choisir notre service de taxi Promenade des Anglais ?
 
 ### ✅ Chauffeur local expert de la Promenade

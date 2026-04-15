@@ -106,6 +106,12 @@ const nextConfig = {
         destination: "/blog/taxi-excursions-nice",
         permanent: true,
       },
+      // 301 : ancien article événement → page pilier Promenade (Bataille des fleurs / Carnaval)
+      {
+        source: "/blog/fete-des-fleurs-nice-2026-taxi",
+        destination: "/blog/taxi-promenade-des-anglais-nice",
+        permanent: true,
+      },
     ];
   },
   async headers() {
