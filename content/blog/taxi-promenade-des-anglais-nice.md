@@ -2,7 +2,7 @@
 title: "Taxi Promenade des Anglais Nice : Hôtels, Plages & Transferts 24/7 - Service Premium"
 date: "2026-01-18"
 excerpt: "Service de taxi Promenade des Anglais Nice disponible 24/7 : transferts aéroport, gare SNCF, hôtels de luxe, plages. Chauffeur local expert de la Promenade. Tarifs transparents et véhicules premium Mercedes."
-image: "/semi-marathon-nice-2026.png"
+image: "/taxi-nice-promenade-des-anglais.jpeg"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
