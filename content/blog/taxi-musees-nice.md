@@ -275,8 +275,8 @@ Certains musées organisent des visites nocturnes ou des événements spéciaux.
 
 Pour en savoir plus sur nos services de taxi à Nice et dans la Côte d'Azur :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
+- **[Chauffeur privé musées Nice](/)** : réservation en ligne
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi musées Nice en quelques clics
 - **[Musées de Nice](https://www.nice.fr/fr/culture/musees)** : Informations officielles sur les musées de Nice
 

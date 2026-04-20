@@ -458,6 +458,8 @@ Les transformations urbaines de Nice créent de nouvelles opportunités mais aus
 - **Ponctualité garantie** : Arrivée à l'heure pour vos rendez-vous importants
 - **Service premium** : Véhicules Mercedes récents, confort et sécurité
 
+Besoin d’une vue globale ? **[Taxi Nice centre & mobilité](/)** sur l’accueil du site.
+
 👉 [Réservez votre taxi pour naviguer facilement dans la Nice qui change](/reservation)
 
 📞 **06 51 68 36 87** | ✉️ **taxiniceca@gmail.com**

@@ -1,7 +1,7 @@
 ---
-title: "Taxi Antibes : notre recommandation locale"
+title: "Taxi Antibes & Juan-les-Pins : recommandation locale (question fréquente)"
 date: "2025-11-07"
-excerpt: "Si vous êtes sur Antibes ou Juan-les-Pins et cherchez un taxi local : une mention simple, sans renvoi vers un site tiers."
+excerpt: "Vous cherchez un taxi sur Antibes ou Juan-les-Pins alors que nous intervenons surtout depuis Nice ? Réponse courte et pratique, sans lien commercial tiers."
 image: "/partenaire-antibes.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
@@ -24,4 +24,4 @@ Comme pour tout taxi sérieux, l’idée est de vérifier **horaires**, **type d
 
 Notre métier reste **Nice**, l’aéroport et les trajets que nous assurons nous-mêmes. Cet article existe surtout pour répondre à une question fréquente : _“Connaissez-vous un taxi du côté d’Antibes ?”_ — avec une réponse courte et factuelle, sans lien sortant.
 
-Si votre départ ou votre arrivée concerne **Nice**, vous pouvez bien sûr [nous contacter](/contact) ou consulter nos [tarifs](/tarifs) habituels.
+Si votre départ ou votre arrivée concerne **Nice**, vous pouvez bien sûr [nous contacter](/contact), consulter nos [tarifs](/tarifs) ou le **[service taxi depuis Nice](/)** sur notre accueil.

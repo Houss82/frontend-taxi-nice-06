@@ -140,6 +140,8 @@ Oui ✅. Le tarif communiqué inclut les péages de l'A8. Aucune surprise au mom
 
 ---
 
+Depuis Nice, tout le **[service taxi depuis l’accueil**](/) est regroupé sur la page principale du site.
+
 <div class="cta-box">
 <strong>🍋 Prêt pour la Fête du Citron ?</strong><br/>
 Réservez votre taxi Nice → Menton dès maintenant. <a href="/reservation" class="cta-link">Réserver maintenant →</a>

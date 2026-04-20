@@ -811,7 +811,7 @@ export default function Page() {
                   href="/blog/taxi-nice-guide-complet-2025"
                   className="text-blue-600 hover:text-blue-800 underline font-medium"
                 >
-                  guide complet pour choisir le meilleur transport à Nice
+                  guide pratique : pièges fréquents, prix et bus/tram
                 </Link>
                 . Nous proposons aussi un service de{" "}
                 <strong className="text-blue-600">taxi conventionné</strong>{" "}

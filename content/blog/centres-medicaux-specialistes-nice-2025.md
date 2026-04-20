@@ -416,6 +416,8 @@ Le **Centre Antoine Lacassagne** est le centre de référence pour la cancérolo
 
 ---
 
+Pour le **taxi conventionné** et le reste de l’offre, l’[**accueil du site**](/) oriente vers VSL et réservation.
+
 <div class="cta">
   <a class="cta-button" href="/reservation">🚑 Réserver un taxi conventionné pour vos déplacements médicaux</a>
   <p class="cta-sub">Accès optimisé vers tous les établissements médicaux de Nice</p>

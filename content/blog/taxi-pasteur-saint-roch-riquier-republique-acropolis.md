@@ -306,10 +306,10 @@ Vous résidez dans ces quartiers et souhaitez vous rendre au centre-ville ou au 
 
 Pour en savoir plus sur nos services de taxi à Nice :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
 - **[Transport médical à Nice](/blog/transport-medical-nice)** : Guide complet sur les trajets médicaux
 - **[Centres médicaux Nice 2025](/blog/centres-medicaux-specialistes-nice-2025)** : Guide des établissements de santé
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- **[Taxi hôpitaux & CHU Pasteur](/)** : service depuis l’accueil
 - **[Taxi Hôpital Pasteur 2 Nice : RDV & Urgences](/secteurs/nice-hopital-pasteur-2)** – Transport médical vers le CHU Pasteur 2
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi dans ces quartiers en quelques clics
 

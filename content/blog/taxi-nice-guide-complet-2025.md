@@ -1,7 +1,7 @@
 ---
-title: "Taxi à Nice : Guide Complet 2025 - Comment Choisir le Meilleur Service de Transport"
+title: "Choisir un taxi à Nice en 2025 : pièges fréquents, prix, TC et taxis conventionnés"
 date: "2025-12-16"
-excerpt: "Guide complet pour choisir un taxi à Nice en 2025 : comparatif taxi vs bus vs tramway, tarifs, zones desservies, critères de choix et conseils pratiques. Service premium disponible 24/7."
+excerpt: "Guide pratique (angle informationnel) : éviter les erreurs courantes, comprendre bus/tram/taxi, repères prix et taxis conventionnés — distinct d'une page de réservation."
 image: "/nice-ville-glc-3.jpeg"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
@@ -13,6 +13,8 @@ Nice, capitale de la Côte d'Azur, accueille chaque année **plus de 5 millions 
 Selon les statistiques de la [Métropole Nice Côte d'Azur](https://www.nicecotedazur.org/metropole/), le réseau de transports en commun [Lignes d'Azur](https://www.lignesdazur.com/) transporte chaque jour **plus de 200 000 passagers**, tandis que les services de taxi et VTC représentent une part importante des déplacements, notamment pour les trajets vers l'aéroport, les gares, les hôtels et les destinations non desservies par les transports en commun.
 
 Cet article vous guide dans le choix du **meilleur mode de transport à Nice** en comparant en détail **taxi, bus et tramway**, avec leurs avantages, leurs limites, leurs tarifs et leurs zones de couverture. Vous découvrirez également les critères essentiels pour choisir un service de taxi fiable et professionnel à Nice.
+
+Pour **réserver directement** un chauffeur et des tarifs annoncés à l’avance (aéroport, gare, trajets sur Nice), utilisez la **[page d’accueil Taxi Nice 06](/)** — ici nous restons sur l’**aide à la décision**, pas sur la prise de commande.
 
 <div class="kpi-strip">
   <span class="badge success">🚗 Service taxi 24/7</span>

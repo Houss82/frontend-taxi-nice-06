@@ -313,7 +313,7 @@ export default function ReservationPage() {
           <div className="relative z-10 h-full flex flex-col justify-center items-center p-8 text-white">
             <div className="text-center max-w-4xl">
               <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold mb-6">
-                Réservation de Taxi
+                Réserver un taxi à Nice
               </h1>
               <div className="w-24 h-1 bg-white mx-auto rounded-full mb-8"></div>
               <p className="text-lg lg:text-2xl leading-relaxed max-w-3xl mx-auto">

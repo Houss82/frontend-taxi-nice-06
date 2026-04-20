@@ -407,6 +407,8 @@ Chaque visiteur peut ainsi profiter au meilleur moment, éviter les contraintes,
 
 **Bon à savoir** : Nos chauffeurs locaux connaissent parfaitement ces lieux et peuvent vous conseiller les meilleurs moments pour les visiter, ainsi que les itinéraires optimaux pour enchaîner plusieurs sites dans la même journée.
 
+Pour réserver ou voir la flotte, passez par l’[**accueil taxi à Nice**](/).
+
 ---
 
 <div class="cta-box">

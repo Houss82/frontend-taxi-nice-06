@@ -404,7 +404,7 @@ Offrez-vous un transfert sans stress avec **Taxi Nice Côte d'Azur** pour rejoin
 👉 [Réservez votre taxi en ligne dès maintenant](https://taxi-nice-06.com/reservation)  
 ou [contactez-nous via notre site](https://taxi-nice-06.com/contact) au **06 51 68 36 87**.
 
-Pour découvrir tous nos services (transferts aéroport, VSL, excursions), consultez [notre page d'accueil](https://taxi-nice-06.com).
+Pour l’ensemble de nos prestations et trajets longue distance, ouvrez l’[**accueil Taxi Nice 06**](/).
 
 <div class="cta">
 <a class="cta-button" href="/reservation">📲 Réserver maintenant</a>

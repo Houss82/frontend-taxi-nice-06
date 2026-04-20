@@ -383,6 +383,8 @@ Péninsule de luxe avec ses résidences prestigieuses, ses hôtels 5 étoiles (c
 
 Pour réserver votre taxi depuis l'**aéroport de Nice** vers Antibes avec nos tarifs détaillés et toutes nos options de service, consultez notre [page dédiée aux transferts Nice - Antibes](/secteurs/antibes). Vous y trouverez toutes les informations sur nos prestations, nos véhicules disponibles et nos tarifs pour vos transferts aéroport.
 
+Pour l’offre globale **[taxi à Nice](/)** (tous services), ouvrez également notre accueil.
+
 <div class="cta">
   <a class="cta-button" href="/reservation">📲 Réserver votre transfert aéroport Nice → Antibes</a>
   <p class="cta-sub">Réservation rapide et sécurisée en 2 minutes</p>

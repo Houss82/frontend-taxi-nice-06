@@ -194,6 +194,8 @@ Les **taxis** ont des tarifs réglementés par la préfecture. Les **VTC** ont d
 
 ---
 
+Avant le formulaire, vous pouvez aussi parcourir l’[**accueil taxi à Nice**](/) pour la flotte et les destinations.
+
 <div class="cta-box">
 <strong>🚖 Prêt à réserver ?</strong><br/>
 Réservez votre taxi en ligne en 2 minutes. <a href="/reservation" class="cta-link">Réserver maintenant →</a>

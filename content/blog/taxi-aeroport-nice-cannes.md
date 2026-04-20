@@ -8,7 +8,7 @@ author: "Taxi Nice Côte d'Azur"
 language: "fr"
 ---
 
-Chaque jour, des centaines de voyageurs choisissent notre [service de taxi premium](https://taxi-nice-06.com) entre l'aéroport de Nice et Cannes. Que vous veniez pour affaires, un festival, ou un séjour détente, nous vous garantissons un transfert sans stress, dans un confort absolu.
+Chaque jour, des centaines de voyageurs choisissent notre [service de taxi premium](/services/taxi-aeroport-nice) entre l'aéroport de Nice et Cannes. Que vous veniez pour affaires, un festival, ou un séjour détente, nous vous garantissons un transfert sans stress, dans un confort absolu.
 
 <div class="kpi-strip">
   <span class="badge success">✅ 24/7 Disponible</span>
@@ -144,7 +144,7 @@ Nous couvrons **toutes les zones de Cannes** : La Croisette, Le Suquet, Port Can
   </tbody>
 </table>
 
-Avec nous, **pas de surprise**, le tarif est connu à l'avance et votre confort est garanti. Pour en savoir plus sur [notre service de taxi à Nice](https://taxi-nice-06.com) et découvrir tous nos prestations, visitez notre site web.
+Avec nous, **pas de surprise**, le tarif est connu à l'avance et votre confort est garanti. Pour en savoir plus sur [notre service de taxi à Nice](/) et découvrir nos autres prestations, parcourez l’accueil du site.
 
 ---
 
@@ -195,7 +195,7 @@ Offrez-vous un transfert sans stress avec **Taxi Nice Côte d'Azur**.
 👉 [Réservez votre taxi en ligne dès maintenant](https://taxi-nice-06.com/reservation)  
 ou [contactez-nous via notre site](https://taxi-nice-06.com/contact) au **06 51 68 36 87**.
 
-Pour découvrir tous nos services (transferts aéroport, VSL, excursions), consultez [notre page d'accueil](https://taxi-nice-06.com).
+Pour découvrir tous nos services (transferts aéroport, VSL, excursions), consultez le [**taxi à Nice — accueil du service**](/).
 
 **Arrivée en train à Nice ?** Découvrez notre [service Taxi Nice Gare SNCF](/blog/taxi-nice-gare-sncf) pour un transport rapide et fiable depuis la gare vers l'aéroport ou votre destination.
 

@@ -189,6 +189,8 @@ Oui. Service **24/7**. Idéal pour les départs matinaux vers les plages avant l
 
 ---
 
+Un **[chauffeur privé à Nice](/)** peut vous déposer près des plages ; réservation et flotte sont sur l’accueil.
+
 <div class="cta-box">
 <strong>🚖 Besoin d'un taxi pour les plages de Nice ?</strong><br/>
 Réservez votre transfert et profitez de la mer sans stress de parking. <a href="/reservation" class="cta-link">Réserver maintenant →</a>

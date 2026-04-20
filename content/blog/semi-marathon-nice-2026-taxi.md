@@ -138,6 +138,8 @@ Oui ✅. Les accompagnants peuvent réserver un taxi pour se rendre à la zone d
 
 ---
 
+Besoin d’un **[taxi à Nice disponible 24h/24](/)** pour l’événement ou vos trajets habituels ? L’accueil centralise réservation et infos.
+
 <div class="cta-box">
 <strong>🏃 Prêt pour le Semi-Marathon ?</strong><br/>
 Réservez votre taxi dès maintenant. <a href="/reservation" class="cta-link">Réserver maintenant →</a>

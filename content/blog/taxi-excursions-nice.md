@@ -346,8 +346,8 @@ Vous souhaitez assister à un événement spécial (Grand Prix de Monaco, Festiv
 
 Pour en savoir plus sur nos services de taxi à Nice et dans la Côte d'Azur :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
+- **[Chauffeur privé à Nice](/)** : Mercedes, excursions et réservation
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi excursion Nice en quelques clics
 - **[Office de Tourisme de Nice](https://www.nicecotedazur.org)** : Informations sur les excursions depuis Nice
 

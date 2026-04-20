@@ -470,6 +470,8 @@ Avec Taxi Nice 06, vous êtes certain que :
 
 ---
 
+Toute l’offre (dont **conventionné**) est présentée depuis l’[**accueil Taxi Nice 06**](/).
+
 <div class="cta-box">
 <strong>🚖 Besoin d'un taxi conventionné à Nice ?</strong><br/>
 Réservez facilement votre transport médical et profitez de notre expertise locale pour vos trajets vers tous les établissements de santé niçois. <a href="/reservation" class="cta-link">Réserver maintenant →</a>

@@ -276,8 +276,8 @@ Vous avez un rendez-vous dans un établissement médical de Nice et résidez ou 
 
 Pour en savoir plus sur nos services de taxi à Nice :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
+- **[Taxi zones actives & Lingostière](/)** : réservation sur l’accueil
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi à Lingostière en quelques clics
 
 ---

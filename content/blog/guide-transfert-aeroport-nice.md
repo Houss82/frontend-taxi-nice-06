@@ -175,7 +175,7 @@ Découvrez également nos autres services :
 
 📞 **06 51 68 36 87** (24h/24)  
 ✉️ **taxiniceca@gmail.com**  
-🌐 **[taxi-nice-06.com](https://taxi-nice-06.com)**
+🌐 **[Taxi à Nice — accueil du service](/)**
 
 <div class="cta">
 <a class="cta-button" href="/reservation">📲 Réserver maintenant</a>

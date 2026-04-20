@@ -291,8 +291,8 @@ Vous souhaitez visiter la Colline du Château au coucher du soleil ou profiter d
 
 Pour en savoir plus sur nos services de taxi à Nice et dans la Côte d'Azur :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
+- **[Taxi touristique Nice](/)** : circuits depuis l’accueil
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi sites touristiques Nice en quelques clics
 - **[Office de Tourisme de Nice](https://www.nicecotedazur.org)** : Informations sur les sites touristiques de Nice
 

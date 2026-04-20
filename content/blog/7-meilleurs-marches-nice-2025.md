@@ -321,11 +321,13 @@ Oui, la plupart des marchés sont ouverts toute l'année, mais avec des horaires
 - 👉 **[5 lieux incontournables à visiter à Nice](/blog/5-lieux-incontournables-nice-2025)** – Découvrez les autres trésors de Nice
 - 👉 **[3 meilleurs spots photo de Nice](/blog/3-plus-beaux-points-de-vue-nice-2025)** – Guide des meilleurs panoramas pour photographes
 - 👉 **[Excursions Côte d'Azur](/services/excursions-decouvertes)** – Visites guidées et découvertes de la région
-- 👉 **[Taxi Nice Centre-Ville](/secteurs/nice)** – Service de transport dans tout Nice
+- 👉 **[Taxi à Nice — accueil & quartiers](/)** – Vue d’ensemble puis pages secteurs
 
 ---
 
 ## 📞 Réserver votre taxi pour visiter les marchés
+
+Le **[chauffeur privé Nice — page principale](/)** centralise aussi les trajets courts vers les marchés.
 
 Pour un accès simple, rapide et confortable aux marchés de Nice, contactez Taxi Nice Côte d'Azur :
 

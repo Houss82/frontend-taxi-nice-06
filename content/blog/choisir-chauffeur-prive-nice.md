@@ -332,7 +332,7 @@ Chez **Taxi Nice Côte d'Azur**, nous mettons tout en œuvre pour vous offrir la
 
 📞 **06 51 68 36 87** (24h/24)  
 ✉️ **taxiniceca@gmail.com**  
-🌐 **[taxi-nice-06.com](https://taxi-nice-06.com)**
+🌐 **[Accueil Taxi Nice 06 — chauffeur privé & réservation](/)**
 
 ## ✅ Nos garanties
 

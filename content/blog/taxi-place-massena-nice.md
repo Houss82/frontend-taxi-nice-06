@@ -289,8 +289,8 @@ Vous assistez à un événement sur la Place Masséna (Carnaval, concert). Nous 
 
 Pour en savoir plus sur nos services de taxi à Nice :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
+- **[Taxi Nice centre & Masséna](/)** : réservation sur l’accueil
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi Place Masséna en quelques clics
 - **[Office de Tourisme de Nice](https://www.nicecotedazur.org/)** : Informations sur la Place Masséna et le centre-ville
 

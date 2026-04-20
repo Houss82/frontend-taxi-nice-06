@@ -112,6 +112,11 @@ const nextConfig = {
         destination: "/blog/taxi-promenade-des-anglais-nice",
         permanent: true,
       },
+      {
+        source: "/blog/antibesarticle",
+        destination: "/blog/taxi-antibes-partenaire",
+        permanent: true,
+      },
     ];
   },
   async headers() {

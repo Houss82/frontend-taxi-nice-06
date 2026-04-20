@@ -475,6 +475,8 @@ Pour les groupes de 4 à 7 personnes, le van 7 places est généralement **plus 
 
 ## 📞 Réservez votre van 7 places à Nice
 
+Pour l’offre complète **[taxi Nice centre & aéroport**](/), consultez aussi notre accueil.
+
 Offrez-vous un transport premium pour votre groupe avec un **Mercedes Classe V 7 places**, un chauffeur professionnel et un service adapté à vos besoins.
 
 👉 [Réservez votre taxi groupe en ligne dès maintenant](/reservation) ou contactez-nous par téléphone au **06 51 68 36 87**.

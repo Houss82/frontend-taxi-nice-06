@@ -8,7 +8,12 @@ import remarkRehype from "remark-rehype";
 
 const postsDirectory = path.join(process.cwd(), "content/blog");
 
-// Récupérer tous les articles
+/** Brouillon si `published: false` dans le frontmatter ; absent = publié. */
+export function isPostPublished(data) {
+  return data?.published !== false;
+}
+
+// Récupérer tous les articles publiés
 export function getAllPosts() {
   // Vérifier si le dossier existe
   if (!fs.existsSync(postsDirectory)) {
@@ -34,7 +39,8 @@ export function getAllPosts() {
         author: data.author || "Taxi Nice Côte d'Azur",
         ...data,
       };
-    });
+    })
+    .filter((post) => isPostPublished(post));
 
   // Trier par date (plus récent en premier)
   return allPostsData.sort((a, b) => {
@@ -56,6 +62,10 @@ export async function getPostBySlug(slug) {
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
+
+  if (!isPostPublished(data)) {
+    return null;
+  }
 
   // Convertir le markdown en HTML avec support du HTML brut
   const processedContent = await remark()
@@ -79,20 +89,9 @@ export async function getPostBySlug(slug) {
   };
 }
 
-// Récupérer tous les slugs (pour la génération statique)
+// Récupérer tous les slugs publiés (génération statique, sitemap)
 export function getAllPostSlugs() {
-  if (!fs.existsSync(postsDirectory)) {
-    return [];
-  }
-
-  const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames
-    .filter((fileName) => fileName.endsWith(".md") && !fileName.startsWith("_"))
-    .map((fileName) => {
-      return {
-        slug: fileName.replace(/\.md$/, ""),
-      };
-    });
+  return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
 // Récupérer les articles par catégorie

@@ -362,6 +362,8 @@ Pour réserver votre taxi depuis l'**aéroport de Nice** vers Menton avec nos ta
 
 ## 📞 Réservez votre transfert Nice Aéroport → Menton
 
+Pour une vue d’ensemble des trajets et de la flotte, consultez aussi l’[**accueil taxi Nice aéroport & ville**](/).
+
 Offrez-vous un transfert sans stress entre **l'aéroport de Nice** et **Menton** avec un chauffeur professionnel, un véhicule haut de gamme et un **prix connu à l'avance**.
 
 👉 [Réservez votre taxi en ligne dès maintenant](/reservation)

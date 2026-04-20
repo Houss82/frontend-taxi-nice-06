@@ -276,9 +276,9 @@ Vous passez la soirée dans le centre-ville de Nice et devez rentrer à votre r�
 
 Pour en savoir plus sur nos services de taxi à Nice :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
 - **[Plages secrètes de Nice](/blog/plages-secretes-nice)** : Guide des criques secrètes de Mont-Boron
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- **[Taxi Port Lympia & Mont-Boron](/)** : réservation à l’accueil
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi Mont-Boron en quelques clics
 
 ---

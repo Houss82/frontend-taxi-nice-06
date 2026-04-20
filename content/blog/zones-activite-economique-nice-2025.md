@@ -408,6 +408,8 @@ Les zones d'activité économique de Nice évoluent constamment pour répondre a
 
 ---
 
+Pour **taxi Nice aéroport, gare et zones d’activité**, consultez l’[**accueil du service**](/).
+
 <div class="cta">
   <a class="cta-button" href="/reservation">🚖 Réserver un taxi pour vos déplacements professionnels</a>
   <p class="cta-sub">Accès optimisé vers toutes les zones d'activité économique de Nice</p>

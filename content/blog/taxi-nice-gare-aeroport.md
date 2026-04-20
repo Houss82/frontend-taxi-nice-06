@@ -550,6 +550,8 @@ Oui, nous proposons des **formules aller-retour** avec tarifs dégressifs. Parfa
 
 ## 📞 Réserver Votre Transfert Gare → Aéroport Maintenant
 
+Pour une vue d’ensemble **[taxi Nice gare & aéroport**](/), l’accueil du site centralise aussi les autres trajets.
+
 Pour un transfert **rapide**, **fiable** et **confortable** entre la **Gare SNCF Nice-Ville** et l'**Aéroport Nice Côte d'Azur**, contactez Taxi Nice Côte d'Azur :
 
 👉 **[Réserver maintenant](/reservation)** – Réservation en ligne 24/7 avec confirmation immédiate

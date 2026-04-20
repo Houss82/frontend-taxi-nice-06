@@ -275,8 +275,8 @@ Vous passez la soirée dans les bars ou restaurants du Vieux-Nice et avez besoin
 
 Pour en savoir plus sur nos services de taxi à Nice et dans la Côte d'Azur :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
+- **[Taxi Vieux-Nice](/)** : réservation depuis l’accueil
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi Vieux-Nice en quelques clics
 
 ---

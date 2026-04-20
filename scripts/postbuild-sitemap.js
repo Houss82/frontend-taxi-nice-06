@@ -7,12 +7,13 @@
 
 const fs = require("fs");
 const path = require("path");
+const matter = require("gray-matter");
 
 // Configuration
 const baseUrl = "https://taxi-nice-06.com";
 const currentDate = new Date().toISOString();
 
-// Fonction pour récupérer les articles de blog
+// Articles publiés uniquement (`published: false` = exclu)
 function getAllPostSlugs() {
   const postsDirectory = path.join(process.cwd(), "content/blog");
 
@@ -23,6 +24,11 @@ function getAllPostSlugs() {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames
     .filter((fileName) => fileName.endsWith(".md") && !fileName.startsWith("_"))
+    .filter((fileName) => {
+      const fullPath = path.join(postsDirectory, fileName);
+      const { data } = matter(fs.readFileSync(fullPath, "utf8"));
+      return data.published !== false;
+    })
     .map((fileName) => fileName.replace(/\.md$/, ""));
 }
 

@@ -578,6 +578,8 @@ Nos chauffeurs locaux connaissent parfaitement les événements, les meilleurs p
 
 **Bon à savoir** : L'Ironman de Nice est l'un des événements sportifs les plus photographiés de la Côte d'Azur. N'oubliez pas votre appareil photo pour immortaliser ces moments exceptionnels !
 
+Pour le **[taxi Nice centre & événements**](/), l’accueil du site regroupe réservation et infos pratiques.
+
 ---
 
 <div class="cta-box">

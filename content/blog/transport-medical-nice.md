@@ -442,6 +442,8 @@ Votre chauffeur connaît parfaitement les accès et parkings de chaque établiss
 
 ## 📞 Réservez Votre Transport Médical à Nice
 
+Pour l’ensemble des prestations (dont **taxi conventionné**), consultez aussi l’[**accueil Taxi Nice 06**](/).
+
 Pour un trajet médical **sécurisé**, **ponctuel** et **confortable**, contactez Taxi Nice Côte d'Azur :
 
 👉 **[Réserver un taxi conventionné](/reservation)**

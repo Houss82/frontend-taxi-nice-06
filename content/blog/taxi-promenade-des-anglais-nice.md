@@ -283,8 +283,8 @@ Vous passez la soirée dans les bars ou restaurants de la Promenade et avez beso
 
 Pour en savoir plus sur nos services de taxi à Nice :
 
-- **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
-- **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
+- **[Taxi Promenade des Anglais](/)** : tout sur la page d’accueil
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi Promenade des Anglais en quelques clics
 
 ---
