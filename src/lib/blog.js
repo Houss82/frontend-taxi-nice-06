@@ -13,6 +13,21 @@ export function isPostPublished(data) {
   return data?.published !== false;
 }
 
+/** Frontmatter YAML : `keywords` peut être une liste ou une chaîne « a, b, c ». */
+export function normalizeKeywords(keywords) {
+  if (keywords == null) return [];
+  if (Array.isArray(keywords)) {
+    return keywords.map(String).map((k) => k.trim()).filter(Boolean);
+  }
+  if (typeof keywords === "string") {
+    return keywords
+      .split(",")
+      .map((k) => k.trim())
+      .filter(Boolean);
+  }
+  return [];
+}
+
 // Récupérer tous les articles publiés
 export function getAllPosts() {
   // Vérifier si le dossier existe
@@ -38,6 +53,7 @@ export function getAllPosts() {
         category: data.category || "Actualités",
         author: data.author || "Taxi Nice Côte d'Azur",
         ...data,
+        keywords: normalizeKeywords(data.keywords),
       };
     })
     .filter((post) => isPostPublished(post));
@@ -84,8 +100,8 @@ export async function getPostBySlug(slug) {
     image: data.image || "/bg-image.png",
     category: data.category || "Actualités",
     author: data.author || "Taxi Nice Côte d'Azur",
-    keywords: data.keywords || [],
     ...data,
+    keywords: normalizeKeywords(data.keywords),
   };
 }
 
