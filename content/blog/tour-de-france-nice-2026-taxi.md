@@ -6,7 +6,7 @@ image: "/tour-de-france-nice-2026.png"
 category: "Actualités"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Le Tour de France** arrive régulièrement à Nice pour des **arrivées ou départs d'étape**. En 2026, Nice pourrait à nouveau accueillir la Grande Boucle. Selon l'[organisateur ASO](https://www.letour.fr/) et la [Ville de Nice](https://www.nice.fr/), les étapes niçoises génèrent des perturbations majeures : rues fermées, circulation modifiée, parkings saturés.
@@ -175,4 +175,4 @@ Réservez votre taxi dès maintenant. <a href="/reservation" class="cta-link">R�
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 21 avril 2026_
