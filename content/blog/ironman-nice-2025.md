@@ -21,6 +21,16 @@ En tant que service de transport local, nous accompagnons chaque année des cent
   <span class="badge info">🚖 Transport optimisé</span>
 </div>
 
+<div style="border: 2px solid #f59e0b; background: #fffbeb; padding: 1.25rem; border-radius: 0.9rem; margin: 2rem 0;">
+<strong style="display: block; color: #92400e; font-size: 1.15rem; margin-bottom: 0.75rem;">📰 Dernière actualité - Le Parisien, 24 avril 2026</strong>
+
+Les **Championnats du monde Ironman 70.3** auront finalement bien lieu à **Nice les 12 et 13 septembre 2026**, malgré l'annonce initiale d'annulation par le maire Éric Ciotti pour raisons d'économies. Selon l'article du <strong>Parisien</strong>, environ **5 000 athlètes** étaient inscrits à cette épreuve mondiale, composée de **1,9 km de natation**, **90 km de vélo** et **21,1 km de course à pied** avec une arrivée sur la Promenade des Anglais.
+
+La Ville de Nice a finalement confirmé le maintien de l'événement, mais **sans verser la redevance municipale d'environ 1,6 million d'euros** aux organisateurs privés. Les organisateurs d'Ironman auraient renoncé intégralement aux subventions de Nice. Pour les athlètes, accompagnateurs, hôtels, restaurants et services de transport, c'est une nouvelle importante : les réservations de séjour, billets d'avion, transferts aéroport et trajets vers les zones de course restent donc d'actualité.
+
+<strong>À retenir :</strong> l'Ironman France Nice du <strong>28 juin 2026</strong> et les <strong>Championnats du monde Ironman 70.3 des 12-13 septembre 2026</strong> sont deux rendez-vous à bien distinguer. Pour septembre, il faudra anticiper une très forte demande de taxis, vans, transferts aéroport et déplacements autour de la Promenade des Anglais.
+</div>
+
 ---
 
 ## 📊 L'Ironman de Nice en chiffres : un événement sportif majeur
@@ -166,16 +176,6 @@ Cette année, Nice accueillera **deux épreuves exceptionnelles le même jour**,
 <div class="info-box">
 <strong>📅 Date confirmée :</strong> <strong>Dimanche 28 juin 2026</strong><br/>
 <strong>🏊 Deux formats au choix :</strong> Ironman France Nice (format complet) et Ironman 70.3 Nice (format half)
-</div>
-
-<div style="border: 2px solid #f59e0b; background: #fffbeb; padding: 1.25rem; border-radius: 0.9rem; margin: 2rem 0;">
-<strong style="display: block; color: #92400e; font-size: 1.15rem; margin-bottom: 0.75rem;">📰 Dernière actualité - Le Parisien, 24 avril 2026</strong>
-
-Les **Championnats du monde Ironman 70.3** auront finalement bien lieu à **Nice les 12 et 13 septembre 2026**, malgré l'annonce initiale d'annulation par le maire Éric Ciotti pour raisons d'économies. Selon l'article du <strong>Parisien</strong>, environ **5 000 athlètes** étaient inscrits à cette épreuve mondiale, composée de **1,9 km de natation**, **90 km de vélo** et **21,1 km de course à pied** avec une arrivée sur la Promenade des Anglais.
-
-La Ville de Nice a finalement confirmé le maintien de l'événement, mais **sans verser la redevance municipale d'environ 1,6 million d'euros** aux organisateurs privés. Les organisateurs d'Ironman auraient renoncé intégralement aux subventions de Nice. Pour les athlètes, accompagnateurs, hôtels, restaurants et services de transport, c'est une nouvelle importante : les réservations de séjour, billets d'avion, transferts aéroport et trajets vers les zones de course restent donc d'actualité.
-
-<strong>À retenir :</strong> l'Ironman France Nice du <strong>28 juin 2026</strong> et les <strong>Championnats du monde Ironman 70.3 des 12-13 septembre 2026</strong> sont deux rendez-vous à bien distinguer. Pour septembre, il faudra anticiper une très forte demande de taxis, vans, transferts aéroport et déplacements autour de la Promenade des Anglais.
 </div>
 
 ### 🏆 Ironman France Nice : Le format complet (Full Distance)

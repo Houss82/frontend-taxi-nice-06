@@ -21,6 +21,8 @@ import Link from "next/link";
 
 export const revalidate = 3600;
 
+const POSTS_PER_PAGE = 9;
+
 function formatDate(dateString) {
   const date = new Date(dateString);
   return date.toLocaleDateString("fr-FR", {
@@ -30,10 +32,26 @@ function formatDate(dateString) {
   });
 }
 
+function getPageHref(page, categoryId) {
+  const params = new URLSearchParams();
+
+  if (categoryId) {
+    params.set("category", categoryId);
+  }
+
+  if (page > 1) {
+    params.set("page", String(page));
+  }
+
+  const query = params.toString();
+  return query ? `/blog?${query}` : "/blog";
+}
+
 export default async function BlogPage({ searchParams }) {
   const allPosts = getAllPosts();
   const resolvedSearchParams = await searchParams;
   const selectedCategoryId = resolvedSearchParams?.category || null;
+  const requestedPage = Number.parseInt(resolvedSearchParams?.page || "1", 10);
   const selectedCategory = selectedCategoryId
     ? getCategoryById(selectedCategoryId)
     : null;
@@ -47,9 +65,16 @@ export default async function BlogPage({ searchParams }) {
     });
   }
 
-  const displayedPosts = selectedCategory
-    ? filteredPosts
-    : filteredPosts.slice(0, 9);
+  const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
+  const currentPage = Number.isFinite(requestedPage)
+    ? Math.min(Math.max(requestedPage, 1), totalPages)
+    : 1;
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const displayedPosts = filteredPosts.slice(
+    startIndex,
+    startIndex + POSTS_PER_PAGE
+  );
+  const hasPagination = filteredPosts.length > POSTS_PER_PAGE;
 
   const breadcrumbItems = [
     {
@@ -208,6 +233,13 @@ export default async function BlogPage({ searchParams }) {
                 ? `Découvrez tous nos articles dans la catégorie "${selectedCategory.label}".`
                 : "Retrouvez nos articles dédiés aux transferts aéroport de Nice, aux trajets vers Monaco, Cannes ou Antibes et à nos services conventionnés. Chaque guide est rédigé en interne pour répondre aux questions les plus fréquentes de nos passagers."}
             </p>
+            <p className="text-sm text-gray-500 mt-4">
+              {filteredPosts.length} article{filteredPosts.length > 1 ? "s" : ""} disponible
+              {filteredPosts.length > 1 ? "s" : ""}
+              {hasPagination
+                ? ` - page ${currentPage} sur ${totalPages}`
+                : ""}
+            </p>
           </div>
         </div>
       </section>
@@ -302,6 +334,59 @@ export default async function BlogPage({ searchParams }) {
                 );
               })}
             </div>
+          )}
+
+          {hasPagination && (
+            <nav
+              className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-3"
+              aria-label="Pagination des articles du blog"
+            >
+              <Link
+                href={getPageHref(currentPage - 1, selectedCategoryId)}
+                className={`px-4 py-2 rounded-lg border text-sm font-semibold transition-colors ${
+                  currentPage === 1
+                    ? "pointer-events-none border-gray-200 text-gray-300 bg-gray-50"
+                    : "border-gray-300 text-gray-700 bg-white hover:bg-gray-100"
+                }`}
+                aria-disabled={currentPage === 1}
+              >
+                ← Articles récents
+              </Link>
+
+              <div className="flex flex-wrap items-center justify-center gap-2">
+                {Array.from({ length: totalPages }, (_, index) => {
+                  const page = index + 1;
+                  const isCurrent = page === currentPage;
+
+                  return (
+                    <Link
+                      key={page}
+                      href={getPageHref(page, selectedCategoryId)}
+                      aria-current={isCurrent ? "page" : undefined}
+                      className={`min-w-10 px-3 py-2 rounded-lg border text-center text-sm font-semibold transition-colors ${
+                        isCurrent
+                          ? "border-primary bg-primary text-white"
+                          : "border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                      }`}
+                    >
+                      {page}
+                    </Link>
+                  );
+                })}
+              </div>
+
+              <Link
+                href={getPageHref(currentPage + 1, selectedCategoryId)}
+                className={`px-4 py-2 rounded-lg border text-sm font-semibold transition-colors ${
+                  currentPage === totalPages
+                    ? "pointer-events-none border-gray-200 text-gray-300 bg-gray-50"
+                    : "border-gray-300 text-gray-700 bg-white hover:bg-gray-100"
+                }`}
+                aria-disabled={currentPage === totalPages}
+              >
+                Articles anciens →
+              </Link>
+            </nav>
           )}
         </div>
       </section>
