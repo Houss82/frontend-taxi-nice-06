@@ -2,7 +2,7 @@
 title: "Taxi de Nuit Nice : Service Nocturne 24/7 - Retours Soirée & Aéroport"
 date: "2026-04-28"
 excerpt: "Taxi de nuit Nice : service 24/7 pour retours soirée, aéroport, gare. Pas de stress après minuit. Tarifs nuit, disponibilité et réservation."
-image: "/taxi-nuit-nice.png"
+image: "/aéroport-Nice-départ-t2 copie.jpeg"
 category: "Guide Pratique"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
