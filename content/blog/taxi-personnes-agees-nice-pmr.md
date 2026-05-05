@@ -6,7 +6,7 @@ image: "/taxi-personnes-agees-nice.png"
 category: "Guide Pratique"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Un taxi pour personnes âgées à Nice** offre un transport sûr et confortable pour les seniors et les personnes à mobilité réduite (PMR). Rendez-vous médicaux, sorties, visites familiales : notre **service taxi seniors Nice** s'adapte à vos besoins avec patience, aide à la marche et véhicules spacieux.
@@ -154,4 +154,4 @@ Réservez votre transport adapté dès maintenant. <a href="/reservation" class=
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 5 mai 2026_
