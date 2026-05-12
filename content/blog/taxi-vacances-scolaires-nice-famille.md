@@ -6,7 +6,7 @@ image: "/taxi-vacances-scolaires-nice.png"
 category: "Guide Pratique"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Partir en vacances à Nice en famille** avec des enfants nécessite un transport adapté. **Taxi ou transfert aéroport** avec sièges auto, espace pour les bagages et confort pour les petits : notre **service taxi famille Nice** est conçu pour les déplacements avec enfants.
@@ -181,4 +181,4 @@ Réservez votre transfert aéroport ou vos déplacements en ville. <a href="/res
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 12 mai 2026_
