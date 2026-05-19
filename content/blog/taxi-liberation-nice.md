@@ -6,7 +6,7 @@ image: "/taxi-liberation-nice.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Libération** est un quartier animé et central de Nice, connu pour son **marché emblématique** et sa **vie de quartier authentique**. Situé entre le centre-ville et les quartiers nord, Libération offre un **accès facile** aux commerces, transports en commun et services. Avec sa **proximité du centre-ville** (5-10 minutes) et son **animation quotidienne**, ce quartier nécessite des services de transport adaptés aux besoins des habitants et des visiteurs.
@@ -310,4 +310,4 @@ Libération est très proche du centre-ville (5-10 minutes) et de la gare (8-12 
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 19 mai 2026_
