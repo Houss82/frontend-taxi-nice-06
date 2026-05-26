@@ -6,7 +6,7 @@ image: "/taxi-hotels-nice.png"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Réserver un taxi pour votre hôtel à Nice** garantit une arrivée sans stress. Que vous arriviez à l'aéroport, à la gare ou que vous souhaitiez vous déplacer depuis votre hébergement, un **taxi hôtels Nice** vous dépose à la porte. Selon les données de l'[Office de Tourisme de Nice](https://www.nicecotedazur.org) et de l'[aéroport Nice Côte d'Azur](https://www.nice.aeroport.fr/), Nice compte des milliers de chambres d'hôtel réparties sur tous les quartiers.
@@ -198,4 +198,4 @@ Réservez votre transfert aéroport ou gare → hôtel dès maintenant. <a href=
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 26 mai 2026_
