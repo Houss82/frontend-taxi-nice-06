@@ -2,7 +2,7 @@
 title: "Taxi Hôtels Nice : Transferts Aéroport & Centre-ville - Service 24/7"
 date: "2026-05-26"
 excerpt: "Taxi pour transferts hôtels Nice : aéroport → hôtel, gare → hôtel, hôtel → centre-ville. Dépose à la porte de votre hébergement. Service 24/7, tarifs fixes."
-image: "/taxi-hotels-nice.png"
+image: "/taxi-nice-06-le-meridien.jpeg"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
