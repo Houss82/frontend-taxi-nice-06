@@ -6,7 +6,7 @@ image: "/aéroport-Nice-départ-t1-2 copie.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Pour rejoindre **Beaulieu-sur-Mer** depuis l'aéroport de Nice, optez pour un transfert **confortable, sécurisé et disponible 24/7**. Votre chauffeur vous attend directement à la sortie du terminal avec une pancarte à votre nom pour un trajet d'environ **12 km** vers cette station balnéaire élégante, porte d'entrée du **Cap Ferrat** et de la **Villa Kerylos**.
@@ -237,4 +237,4 @@ Oui ✅. Le tarif communiqué inclut les frais de prise en charge à l'aéroport
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 2 juin 2026_
