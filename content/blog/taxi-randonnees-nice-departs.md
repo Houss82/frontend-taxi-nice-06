@@ -6,7 +6,7 @@ image: "/taxi-randonnees-nice.png"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Les randonnées autour de Nice** attirent des milliers de marcheurs chaque année : sentier du littoral, colline du Château, Parc du Mont-Boron, Cap Ferrat, Mercantour. Mais **accéder au point de départ** peut être compliqué sans voiture. Selon les données du [Parc national du Mercantour](https://www.mercantour-parcnational.fr/) et de la [Ville de Nice](https://www.nice.fr/), les sentiers niçois et les massifs environnants offrent des paysages exceptionnels.
@@ -197,4 +197,4 @@ Réservez votre dépose au point de départ dès maintenant. <a href="/reservati
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 16 juin 2026_
