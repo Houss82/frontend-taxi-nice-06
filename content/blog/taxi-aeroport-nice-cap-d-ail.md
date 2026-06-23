@@ -6,7 +6,7 @@ image: "/aéroport-nice-t1 copie.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Pour rejoindre **Cap d'Ail** depuis l'aéroport de Nice, optez pour un transfert **confortable, sécurisé et disponible 24/7**. Votre chauffeur vous attend directement à la sortie du terminal avec une pancarte à votre nom pour un trajet d'environ **18 km** vers cette commune côtière située entre Nice et Monaco, réputée pour ses **plages cachées** (Mala, Marquet) et son cadre préservé.
@@ -240,4 +240,4 @@ Oui ✅. Le tarif communiqué inclut les péages éventuels et les frais de pris
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 23 juin 2026_
