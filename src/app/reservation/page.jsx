@@ -4,7 +4,7 @@ import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
 import Footer from "@/components/Footer.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import { reservationApi } from "@/lib/api.jsx";
-import { formspreeService } from "@/lib/formspree.jsx";
+import { emailService } from "@/lib/email.jsx";
 import {
   Calendar,
   Clock,
@@ -75,8 +75,7 @@ export default function ReservationPage() {
       // Envoyer à la base de données (API backend)
       await reservationApi.create(cleanedData);
 
-      // Envoyer l'email via Formspree (avec les données originales pour l'affichage)
-      await formspreeService.sendReservation(formData);
+      await emailService.sendReservation(formData);
 
       // Déclencher la conversion Google Ads
       if (typeof window !== "undefined" && window.gtag) {

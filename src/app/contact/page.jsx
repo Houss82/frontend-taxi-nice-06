@@ -4,7 +4,7 @@ import Footer from "@/components/Footer.jsx";
 import GoogleMap from "@/components/GoogleMap.jsx";
 import Navbar from "@/components/Navbar.jsx";
 import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
-import { formspreeService } from "@/lib/formspree.jsx";
+import { emailService } from "@/lib/email.jsx";
 import { motion } from "framer-motion";
 import {
   Calendar,
@@ -74,7 +74,7 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await formspreeService.sendContact(formData);
+      await emailService.sendContact(formData);
       setIsSubmitted(true);
       setFormData({
         nom: "",

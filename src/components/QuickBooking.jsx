@@ -1,7 +1,7 @@
 "use client";
 
 import AddressAutocomplete from "@/components/AddressAutocomplete.jsx";
-import { formspreeService } from "@/lib/formspree.jsx";
+import { emailService } from "@/lib/email.jsx";
 import {
   Car,
   CheckCircle,
@@ -48,7 +48,7 @@ export default function QuickBooking() {
       // Nettoyer le numéro de téléphone (supprimer espaces, tirets, etc.)
       const cleanedTelephone = formData.telephone.replace(/\D/g, "");
 
-      await formspreeService.sendQuickBooking({
+      await emailService.sendQuickBooking({
         ...formData,
         telephone: cleanedTelephone,
         indicatifPays: "+33",
