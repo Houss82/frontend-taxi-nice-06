@@ -6,7 +6,7 @@ image: "/taxi-saint-isidore-nice.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Saint-Isidore** est un quartier résidentiel et commercial du nord de Nice, situé à **proximité immédiate de l'aéroport** et des **zones d'activité Nice Méridia**. Ce quartier dynamique regroupe résidences, commerces et entreprises, offrant un cadre de vie pratique pour les professionnels et les familles. Avec sa **proximité de l'aéroport** (2-5 km) et son **accès aux zones d'activité**, Saint-Isidore nécessite des services de transport adaptés.
@@ -309,4 +309,4 @@ Saint-Isidore offre une **proximité exceptionnelle de l'aéroport** (5-10 minut
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 30 juin 2026_
