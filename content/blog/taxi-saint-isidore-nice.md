@@ -309,4 +309,4 @@ Saint-Isidore offre une **proximité exceptionnelle de l'aéroport** (5-10 minut
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 30 juin 2026_
