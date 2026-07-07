@@ -6,7 +6,7 @@ image: "/taxi-regates-nice-2026.png"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Les Régates de Nice** sont des **compétitions de voile** majeures qui se déroulent chaque année dans la **Baie des Anges**. Le **Port Lympia** et la **Promenade des Anglais** accueillent des milliers de spectateurs et de participants. Selon les données de la [Ville de Nice](https://www.nice.fr/) et du [Port de Nice](https://www.nicecotedazur.org), ces événements nautiques attirent des équipages professionnels et amateurs venus de toute l'Europe.
@@ -172,4 +172,4 @@ Réservez votre transfert dès maintenant et profitez des événements de voile 
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 7 juillet 2026_
