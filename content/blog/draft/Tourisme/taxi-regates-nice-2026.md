@@ -2,7 +2,7 @@
 title: "Taxi Régates Nice 2026 : Transferts Port Lympia & Événements Voile"
 date: "2026-07-07"
 excerpt: "Taxi Régates Nice 2026 : transferts vers le Port Lympia et les événements de voile. Évitez le parking. Service 24/7 pendant les régates. Dépose optimale."
-image: "/taxi-regates-nice-2026.png"
+image: "/taxi-port-nice-lympia.jpeg"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
