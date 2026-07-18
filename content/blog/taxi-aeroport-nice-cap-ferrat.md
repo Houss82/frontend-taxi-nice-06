@@ -6,7 +6,7 @@ image: "/aero-depart-jour-glc copie.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Pour rejoindre **Saint-Jean-Cap-Ferrat** (Cap Ferrat) depuis l'aéroport de Nice, optez pour un transfert **confortable, sécurisé et disponible 24/7**. Votre chauffeur vous attend directement à la sortie du terminal avec une pancarte à votre nom pour un trajet d'environ **15 km** vers cette **presqu'île de luxe** de la Côte d'Azur, célèbre pour la **Villa Ephrussi de Rothschild**, ses sentiers côtiers et ses villas de stars.
@@ -247,4 +247,4 @@ Offrez-vous un transfert sans stress entre **l'aéroport de Nice** et le **Cap F
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 14 juillet 2026_
