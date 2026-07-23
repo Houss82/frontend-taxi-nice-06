@@ -12,14 +12,11 @@ Ce dossier contient les articles de blog qui sont prêts mais **pas encore publi
 ### 🌍 Tourisme
 | Article | Date prévue |
 |---|---|
-| taxi-regates-nice-2026.md | 2026-07-07 |
 | taxi-restaurants-nice-sortie-soir.md | 2026-07-28 |
-| taxi-vignobles-bellet-nice.md | 2026-09-08 |
 
 ### ✈️ Transferts Aéroport
 | Article | Date prévue |
 |---|---|
-| taxi-aeroport-nice-cap-ferrat.md | 2026-07-14 |
 | taxi-aeroport-nice-eze.md | 2026-08-04 |
 | taxi-aeroport-nice-monaco.md | 2026-08-18 |
 | taxi-aeroport-nice-sophia-antipolis.md | 2026-09-01 |
@@ -27,7 +24,6 @@ Ce dossier contient les articles de blog qui sont prêts mais **pas encore publi
 ### 📖 Guide Pratique
 | Article | Date prévue |
 |---|---|
-| taxi-animaux-nice.md | 2026-08-11 |
 | taxi-affaires-nice-professionnels.md | 2026-08-25 |
 
 ### 📰 Actualités
@@ -35,7 +31,12 @@ Ce dossier contient les articles de blog qui sont prêts mais **pas encore publi
 |---|---|
 | taxi-monaco-yacht-show-2026.md | 2026-09-15 |
 
-**Total : 11 articles en attente sur 5 catégories**
+### 🤝 Partenaires
+| Article | Date prévue |
+|---|---|
+| taxi-grasse-ici-taxi-partenaire.md | 2026-09-22 |
+
+**Total : 8 articles en attente sur 6 catégories**
 
 ---
 
@@ -79,17 +80,14 @@ Les articles sont planifiés **1 par semaine** pour une indexation progressive p
 
 | Semaine | Article | Catégorie |
 |---|---|---|
-| 7 juil. | Régates Nice 2026 | Tourisme |
-| 14 juil. | Cap Ferrat | Transferts Aéroport |
 | 21 juil. | Trinité Nice | Taxi |
 | 28 juil. | Restaurants sortie soir | Tourisme |
 | 4 août | Èze | Transferts Aéroport |
-| 11 août | Animaux de compagnie | Guide Pratique |
 | 18 août | Aéroport → Monaco | Transferts Aéroport |
 | 25 août | Taxi affaires | Guide Pratique |
 | 1 sept. | Sophia Antipolis | Transferts Aéroport |
-| 8 sept. | Vignobles de Bellet | Tourisme |
 | 15 sept. | Monaco Yacht Show 2026 | Actualités |
+| 22 sept. | ICI Taxi Grasse (partenaire) | Partenaires |
 
 ---
 
