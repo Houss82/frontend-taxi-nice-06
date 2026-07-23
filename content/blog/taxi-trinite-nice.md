@@ -6,7 +6,7 @@ image: "/taxi-trinite-nice.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Trinité** est un quartier résidentiel du nord de Nice, situé sur les **collines niçoises** avec vue sur la mer et la baie. Ce quartier calme et verdoyant offre un **cadre de vie privilégié** avec espaces verts, commerces de proximité et une atmosphère villageoise. Avec sa **position en hauteur** et ses **accès parfois sinueux**, Trinité nécessite des chauffeurs connaissant parfaitement les routes des collines.
@@ -311,4 +311,4 @@ Trinité offre un **cadre de vie privilégié** sur les collines avec des vues p
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 21 juillet 2026_
