@@ -6,7 +6,7 @@ image: "/taxi-nice-restaurant-soir.png"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Dîner au restaurant à Nice** sans se soucier du **stationnement** ni de la conduite après un verre : c'est possible avec un **taxi pour sortie restaurant**. Le Vieux-Nice, la Promenade des Anglais et les quartiers animés regorgent de tables réputées, mais les places de parking sont rares. Selon les données de la [Ville de Nice](https://www.nice.fr/) et de l'[Office de Tourisme](https://www.nicecotedazur.org), Nice compte plus de **500 restaurants** dans les quartiers centraux.
@@ -184,4 +184,4 @@ Réservez votre taxi dès maintenant et profitez de votre soirée sans stress de
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 28 juillet 2026_
