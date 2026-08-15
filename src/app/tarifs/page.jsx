@@ -80,8 +80,14 @@ export default function TarifsPage({ searchParams }) {
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4">
                 Vous cherchez le <strong className="text-primary">prix d'un taxi à Nice</strong> ou les{" "}
                 <strong className="text-primary">tarifs taxi Nice</strong> ? Découvrez nos tarifs transparents
-                pour tous vos déplacements depuis Nice vers l'aéroport, la gare ou
-                toute la Côte d'Azur.
+                pour un{" "}
+                <Link
+                  href="/services/taxi-aeroport-nice"
+                  className="text-primary font-semibold underline underline-offset-4 hover:text-primaryDark"
+                >
+                  transfert vers l&apos;aéroport de Nice
+                </Link>
+                , la gare ou toute la Côte d&apos;Azur.
               </p>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
                 Le <strong className="text-primary">tarif taxi à Nice</strong> dépend de la distance, de
@@ -124,8 +130,8 @@ export default function TarifsPage({ searchParams }) {
               
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { label: "Prix taxi Nice Centre", price: "36", icon: MapPin, color: "from-blue-400 to-blue-600" },
-                  { label: "Prix taxi Nice → Aéroport", price: "32", icon: Route, color: "from-purple-400 to-purple-600" },
+                  { label: "Prix taxi Nice Centre", price: "40", icon: MapPin, color: "from-blue-400 to-blue-600" },
+                  { label: "Prix taxi Nice → Aéroport", price: "40", icon: Route, color: "from-purple-400 to-purple-600" },
                   { label: "Tarif taxi Nice → Antibes", price: "76", icon: MapPin, color: "from-orange-400 to-orange-600" },
                   { label: "Tarif taxi Nice → Cannes", price: "89", icon: MapPin, color: "from-pink-400 to-pink-600" },
                   { label: "Prix taxi Nice → Monaco", price: "99", icon: MapPin, color: "from-red-400 to-red-600" },
@@ -231,7 +237,7 @@ export default function TarifsPage({ searchParams }) {
                 },
                 {
                   question: "Combien coûte un taxi Nice → Aéroport ?",
-                  answer: "Le tarif taxi Nice vers l'aéroport commence à partir de 32 €.",
+                  answer: "Le tarif taxi Nice vers l'aéroport commence à partir de 40 €.",
                 },
                 {
                   question: "Les tarifs taxi Nice sont-ils fixes ?",

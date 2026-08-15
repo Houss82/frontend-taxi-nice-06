@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const sectors = [
   {
-    slug: "nice",
-    name: "Nice",
+    slug: "nice-port-lympia",
+    name: "Port Lympia",
     description:
-      "Taxi Nice 24/7 : centre-ville, aéroport, gare, hôpitaux et longues distances.",
-    image: "/méridien3.jpeg",
+      "Prise en charge au port de Nice : bagages, aéroport, gare, hôtels et groupes.",
+    image: "/taxi-port-nice-lympia.jpeg",
   },
   {
     slug: "nice-gare",
@@ -78,14 +78,14 @@ export default function SecteursPage() {
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Nos secteurs desservis
                 <span className="block text-primary">
-                  Nice, Nice Gare, Nice Centre-Ville, Cannes, Antibes, Menton &
+                  Port Lympia, gare, centre-ville, Cannes, Antibes, Menton &
                   plus
                 </span>
               </h1>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Notre équipe de chauffeurs privés opère sur toute la Côte
                 d&apos;Azur avec un service premium 24/7. Découvrez nos pages
-                dédiées pour Nice, Nice Gare, Nice Centre-Ville, Cannes, Antibes
+                dédiées pour le Port Lympia, Nice Gare, Nice Centre-Ville, Cannes, Antibes
                 et Menton, et accédez à des informations détaillées sur les
                 transferts, les établissements de santé desservis et nos
                 engagements qualité.

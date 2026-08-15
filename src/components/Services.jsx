@@ -1,6 +1,7 @@
 "use client";
 
 import { Building2, Clock, MapPin, Plane, Star, Users } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 // Composant pour animer les chiffres
@@ -112,6 +113,7 @@ export default function Services() {
     {
       icon: Plane,
       title: "Taxi Aéroport Nice",
+      href: "/services/taxi-aeroport-nice",
       description:
         "Service de transfert professionnel vers et depuis l'aéroport Nice Côte d'Azur avec suivi des vols en temps réel.",
       features: [
@@ -211,7 +213,16 @@ export default function Services() {
                     <service.icon className="w-14 h-14 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-black">
-                    {service.title}
+                    {service.href ? (
+                      <Link
+                        href={service.href}
+                        className="hover:text-primary transition-colors"
+                      >
+                        {service.title}
+                      </Link>
+                    ) : (
+                      service.title
+                    )}
                   </h3>
                   <p className="text-gray-600 text-center mb-4 flex-grow">
                     {service.description}

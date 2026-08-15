@@ -6,6 +6,7 @@ import AnimatedCard from "@/components/taxi-numero/AnimatedCard.jsx";
 import AnimatedServiceBox from "@/components/taxi-numero/AnimatedServiceBox.jsx";
 import AnimatedServiceCard from "@/components/taxi-numero/AnimatedServiceCard.jsx";
 import { Clock, Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function TaxiNiceNumeroPage() {
   const breadcrumbItems = [
@@ -127,8 +128,15 @@ export default function TaxiNiceNumeroPage() {
               </div>
               <p className="text-lg text-gray-700 leading-relaxed mt-6 text-center">
                 Notre service de taxi à Nice répond à tous vos besoins de
-                transport : transferts aéroport, trajets vers la gare,
-                déplacements dans Nice et sur toute la Côte d'Azur.
+                transport :{" "}
+                <Link
+                  href="/services/taxi-aeroport-nice"
+                  className="text-primary font-semibold underline underline-offset-4 hover:text-primaryDark"
+                >
+                  trajets vers l&apos;aéroport
+                </Link>
+                , trajets vers la gare, déplacements dans Nice et sur toute la
+                Côte d&apos;Azur.
               </p>
             </div>
           </AnimatedCard>

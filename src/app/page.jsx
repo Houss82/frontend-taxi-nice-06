@@ -646,14 +646,14 @@ export default function Page() {
                 <p className="text-gray-700 leading-relaxed">
                   Vous pouvez réserver votre{" "}
                   <Link
-                    href="/"
+                    href="/services/taxi-aeroport-nice"
                     className="text-blue-600 hover:text-blue-800 underline font-medium"
                   >
-                    taxi à Nice
+                    transfert vers l&apos;aéroport de Nice
                   </Link>{" "}
                   en ligne sur notre site via le formulaire de réservation, ou
-                  simplement par téléphone. Il suffit d'indiquer votre numéro de
-                  vol, la date et l'heure d'arrivée, et nous vous confirmons
+                  simplement par téléphone. Il suffit d&apos;indiquer votre numéro de
+                  vol, la date et l&apos;heure d&apos;arrivée, et nous vous confirmons
                   votre transfert immédiatement.
                 </p>
               </div>

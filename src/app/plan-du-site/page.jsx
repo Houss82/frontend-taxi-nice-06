@@ -123,6 +123,11 @@ export default function PlanDuSitePage() {
       description: "Transferts depuis les gares SNCF de Nice",
     },
     {
+      title: "Taxi Port Lympia",
+      url: "/secteurs/nice-port-lympia",
+      description: "Prise en charge au port de Nice : aéroport, gare, hôtels",
+    },
+    {
       title: "Taxi Nice Centre-Ville",
       url: "/secteurs/nice-centre-ville",
       description: "Courses locales dans le centre-ville de Nice",

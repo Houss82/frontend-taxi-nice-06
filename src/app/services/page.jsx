@@ -23,6 +23,28 @@ export default function ServicesPage() {
 
   const services = [
     {
+      id: 6,
+      image: "/aéro-arrivé.jpeg",
+      title: "Taxi Aéroport Nice",
+      description:
+        "Service fiable vers l'aéroport de Nice et toutes destinations. Accueil avec panneau nominatif",
+      keywords: [
+        "transfert aéroport nice",
+        "aéroport taxi",
+        "accueil aéroport",
+        "transport aéroport",
+      ],
+      features: [
+        "Toutes distances",
+        "Suivi vol",
+        "Accueil nominatif",
+        "Ponctualité",
+      ],
+      icon: MapPin,
+      color: "from-cyan-500 to-cyan-700",
+      detailUrl: "/services/taxi-aeroport-nice",
+    },
+    {
       id: 1,
       image: "/van-aéro.jpeg",
       title: "Véhicule Premium jusqu'à 8 personnes",
@@ -131,28 +153,6 @@ export default function ServicesPage() {
       icon: MapPin,
       color: "from-blue-500 to-blue-700",
       detailUrl: "/services/excursions-decouvertes",
-    },
-    {
-      id: 6,
-      image: "/aéro-arrivé.jpeg",
-      title: "Taxi Aéroport Nice",
-      description:
-        "Service fiable vers l'aéroport de Nice et toutes destinations. Accueil avec panneau nominatif",
-      keywords: [
-        "transfert aéroport nice",
-        "aéroport taxi",
-        "accueil aéroport",
-        "transport aéroport",
-      ],
-      features: [
-        "Toutes distances",
-        "Suivi vol",
-        "Accueil nominatif",
-        "Ponctualité",
-      ],
-      icon: MapPin,
-      color: "from-cyan-500 to-cyan-700",
-      detailUrl: "/services/taxi-aeroport-nice",
     },
     {
       id: 7,

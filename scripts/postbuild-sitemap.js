@@ -56,6 +56,7 @@ function generateCustomSitemap() {
     { path: "/partenaires", priority: 0.6, changefreq: "monthly" },
     { path: "/secteurs", priority: 0.6, changefreq: "weekly" },
     { path: "/secteurs/nice-gare", priority: 0.8, changefreq: "weekly" },
+    { path: "/secteurs/nice-port-lympia", priority: 0.8, changefreq: "weekly" },
     { path: "/secteurs/nice-centre-ville", priority: 0.8, changefreq: "weekly" },
     { path: "/secteurs/nice-hopital-pasteur-2", priority: 0.8, changefreq: "weekly" },
     { path: "/secteurs/monaco", priority: 0.6, changefreq: "weekly" },

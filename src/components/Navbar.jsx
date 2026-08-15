@@ -11,6 +11,7 @@ import {
   Crown,
   Euro,
   Heart,
+  Anchor,
   Home,
   List,
   MapPin,
@@ -233,6 +234,16 @@ export default function Navbar() {
                     <div className="flex items-center space-x-3">
                       <MapPin className="w-4 h-4 text-blue-600" />
                       <span>Gare SNCF</span>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/secteurs/nice-port-lympia"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Anchor className="w-4 h-4 text-cyan-600" />
+                      <span>Port Lympia</span>
                     </div>
                   </Link>
                   <Link
@@ -757,6 +768,19 @@ export default function Navbar() {
                         >
                           <MapPin className="w-4 h-4 text-blue-600" />
                           <span className="text-sm">Gare SNCF</span>
+                        </Link>
+                      </motion.div>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <Link
+                          href="/secteurs/nice-port-lympia"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <Anchor className="w-4 h-4 text-cyan-600" />
+                          <span className="text-sm">Port Lympia</span>
                         </Link>
                       </motion.div>
                       <motion.div

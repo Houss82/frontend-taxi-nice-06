@@ -191,10 +191,14 @@ export const sectorData = {
     ],
     resource: {
       description:
-        "Envie d'organiser un séjour ou un déplacement professionnel à Monaco ? Consultez notre guide complet pour optimiser votre agenda.",
+        "Envie d'organiser un séjour ou un déplacement professionnel à Monaco ? Consultez notre service aéroport et le guide pratique.",
       links: [
         {
-          label: "Conseils transferts Monaco",
+          label: "Transfert depuis l'aéroport de Nice",
+          url: "/services/taxi-aeroport-nice",
+        },
+        {
+          label: "Conseils pratiques (guide)",
           url: "https://taxi-nice-06.com/blog/guide-transfert-aeroport-nice",
         },
       ],
@@ -430,8 +434,12 @@ export const sectorData = {
     ],
     resource: {
       description:
-        "Préparez votre venue à Cannes avec nos conseils transferts et nos articles dédiés aux trajets Nice ↔ Cannes.",
+        "Préparez votre venue à Cannes avec notre service aéroport et nos articles dédiés aux trajets Nice ↔ Cannes.",
       links: [
+        {
+          label: "Réserver un taxi pour l'aéroport",
+          url: "/services/taxi-aeroport-nice",
+        },
         {
           label: "Guide transport Cannes",
           url: "https://taxi-nice-06.com/blog/taxi-excursions-nice",
@@ -1996,6 +2004,268 @@ export const sectorData = {
       url: "https://taxi-nice-06.com/secteurs/nice-hopital-pasteur-2",
       latitude: "43.710173",
       longitude: "7.261953",
+    },
+  },
+  "nice-port-lympia": {
+    slug: "nice-port-lympia",
+    cityName: "Port Lympia",
+    hero: {
+      title: "Taxi Port Lympia Nice",
+      highlight: "Arrivées, départs & correspondances",
+      subtitle:
+        "Prise en charge au port de Nice : bagages, aéroport, gare, hôtels et groupes",
+      image: "/taxi-port-nice-lympia.jpeg",
+      imageAlt:
+        "Taxi Mercedes au Port Lympia à Nice, prêt pour une prise en charge",
+    },
+    secondaryImage: {
+      src: "/taxi-nice-port copie3.jpeg",
+      alt: "Taxi au port de Nice, quais du Port Lympia",
+      caption:
+        "Dépose au plus près de l'accès autorisé le jour de votre embarquement ou de votre arrivée.",
+    },
+    introduction: [
+      "Le Port Lympia est le port de Nice : escales, plaisance et quais. Cette page concerne uniquement la prise en charge et la dépose autour du port — distincte du quartier résidentiel du Mont-Boron et des jours de régates, traités dans des articles dédiés.",
+      "Indiquez le navire, l'heure d'accostage ou d'embarquement, et le nombre de valises. Les accès quai peuvent être filtrés : le chauffeur vous indique le point de rendez-vous autorisé le jour J.",
+    ],
+    secondaryIntro: [
+      "Les correspondances les plus demandées depuis le port sont l'aéroport (Terminal 1 ou 2), la gare de Nice-Ville, le Vieux-Nice et les hôtels du centre. Comptez environ 20 à 35 minutes vers l'aéroport et 10 à 20 minutes vers la gare, selon le trafic.",
+      "Pour 5 passagers ou plus, ou un volume important de bagages, le van est souvent plus adapté que la berline. Le prix de la course vous est communiqué à la réservation.",
+    ],
+    servicesTitle: "Ce que nous prenons en charge au port",
+    services: [
+      "Arrivée : accueil au point convenu et aide aux bagages",
+      "Départ : dépose au plus près de l'embarquement autorisé",
+      "Correspondance vers l'aéroport Nice Côte d'Azur (T1 / T2)",
+      "Correspondance vers la gare de Nice-Ville",
+      "Hôtels, Vieux-Nice et Promenade des Anglais",
+      "Familles et groupes : berline ou van selon les places et les valises",
+    ],
+    coverageDescription:
+      "Nous intervenons autour du port et pour les liaisons qui en partent :",
+    coverageAreas: [
+      "✓ Quais et gare maritime du Port Lympia",
+      "✓ Accès autorisés le jour d'escale",
+      "✓ Restaurants et abords du port",
+      "✓ Vieux-Nice à quelques minutes",
+      "✓ Aéroport Nice Côte d'Azur (T1 et T2)",
+      "✓ Gare de Nice-Ville",
+    ],
+    map: {
+      description:
+        "Localisation du Port Lympia, à l'est du centre-ville de Nice.",
+      info: "Les accès quai varient selon les escales. Le point exact de prise en charge est confirmé à la réservation.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Port+Lympia+Nice&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Arrivée au port",
+        description:
+          "Vous descendez avec vos valises : le chauffeur vous attend au point d'accès indiqué, pas au milieu d'une zone filtrée. Utile le jour d'une escale, quand les taxis de rue et le stationnement saturent.",
+      },
+      {
+        title: "Départ et correspondances",
+        description:
+          "Embarquement, vol le jour même ou train : indiquez l'horaire cible. Nous calons une marge de trajet adaptée au trafic entre le port, l'aéroport ou la gare.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Point de rendez-vous clair",
+        description:
+          "Le quai n'est pas toujours accessible en voiture. Nous vous indiquons où vous retrouver avant d'arriver.",
+      },
+      {
+        title: "✓ Bagages",
+        description:
+          "Aide à la charge. Si vous voyagez nombreux ou avec beaucoup de valises, passez au van à la réservation.",
+      },
+      {
+        title: "✓ Horaires d'escale",
+        description:
+          "Un débarquement qui glisse : prévenez-nous. Les modalités d'attente sont confirmées à la réservation.",
+      },
+      {
+        title: "✓ Tarif avant le départ",
+        description:
+          "Le prix vous est annoncé à la réservation. La grille complète est sur la page tarifs.",
+      },
+    ],
+    hospitalsTitle: "Correspondances depuis le Port Lympia",
+    hospitals: [
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        description:
+          "Environ 20 à 35 minutes selon le trafic, Terminal 1 ou 2. Tarif selon la grille Nice-Est, confirmé à la réservation.",
+        speciality: "Vol le jour de l'escale",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "",
+      },
+      {
+        name: "Gare de Nice-Ville",
+        city: "Nice",
+        description:
+          "Environ 10 à 20 minutes (environ 2,5 km). Utile pour une correspondance TGV ou TER après l'arrivée au port.",
+        speciality: "Gare principale SNCF",
+        website: "https://www.garesetconnexions.sncf/fr/gare/frnce/nice-ville",
+        phone: "",
+      },
+      {
+        name: "Centre-ville et hôtels",
+        city: "Nice",
+        description:
+          "Vieux-Nice en 5 à 12 minutes, Promenade des Anglais et hôtels du centre selon l'adresse.",
+        speciality: "Hôtels, Vieux-Nice, Promenade",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Van pour les groupes",
+        city: "Nice",
+        description:
+          "Jusqu'à 8 passagers, plus d'espace bagages. À choisir à la réservation si vous êtes plusieurs ou très chargés.",
+        speciality: "Familles, équipages, valises",
+        website: "",
+        phone: "",
+      },
+    ],
+    establishmentsTitle: "Lieux de prise en charge et de dépose",
+    establishments: [
+      {
+        name: "Port Lympia",
+        city: "Nice",
+        speciality: "Port de Nice, gare maritime, quais",
+        website: "https://www.riviera-ports.com/",
+        phone: "",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        speciality: "Terminal 1 et Terminal 2",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "",
+      },
+      {
+        name: "Gare de Nice-Ville",
+        city: "Nice",
+        speciality: "TGV, TER, Intercités",
+        website: "https://www.garesetconnexions.sncf/fr/gare/frnce/nice-ville",
+        phone: "",
+      },
+    ],
+    faq: [
+      {
+        question: "Où le chauffeur m'attend-il au Port Lympia ?",
+        answer:
+          "Au point d'accès autorisé le jour J, confirmé à la réservation. Les quais peuvent être filtrés selon l'escale : nous ne vous donnons pas rendez-vous dans une zone interdite aux véhicules.",
+      },
+      {
+        question: "Que se passe-t-il si le débarquement est en retard ?",
+        answer:
+          "Prévenez-nous. Nous adaptons l'horaire dans la mesure du possible. Les conditions d'attente sont précisées au moment de la réservation.",
+      },
+      {
+        question: "Combien de temps faut-il jusqu'à l'aéroport ?",
+        answer:
+          "Environ 20 à 35 minutes selon le trafic, vers le Terminal 1 ou 2. Le tarif suit la grille Nice-Est et vous est communiqué avant le départ. Détail du service aéroport et de la grille sur les pages dédiées.",
+      },
+      {
+        question: "Nous sommes plusieurs, avec beaucoup de valises. Quel véhicule ?",
+        answer:
+          "Berline pour un foyer classique. Van à partir de 5 passagers ou si le volume de bagages l'exige. Indiquez le nombre de personnes et de valises dans le formulaire.",
+      },
+      {
+        question: "Comment réserver une prise en charge au port ?",
+        answer:
+          "Réservez en ligne ou par téléphone. Mentionnez Port Lympia, le navire si vous en avez un, l'heure d'arrivée ou d'embarquement, et la destination (aéroport, gare, hôtel).",
+      },
+    ],
+    homepageLink: {
+      before:
+        "Cette page concerne le port de Nice. Pour une course en ville ou un autre trajet, voir ",
+      linkText: "l'accueil Taxi Nice 06",
+      after: ".",
+      href: "/",
+    },
+    resource: {
+      description:
+        "Pour organiser la correspondance ou réserver, ces pages sont les plus utiles.",
+      links: [
+        {
+          label: "Réserver",
+          url: "/reservation",
+        },
+        {
+          label: "Tarifs",
+          url: "/tarifs",
+        },
+        {
+          label: "Transfert aéroport",
+          url: "/services/taxi-aeroport-nice",
+        },
+        {
+          label: "Taxi gare Nice-Ville",
+          url: "/secteurs/nice-gare",
+        },
+        {
+          label: "Van (groupes et bagages)",
+          url: "/services/van-premium",
+        },
+        {
+          label: "Mont-Boron (quartier, pas le port)",
+          url: "/blog/taxi-mont-boron-port-nice",
+        },
+        {
+          label: "Régates et événements voile",
+          url: "/blog/taxi-regates-nice-2026",
+        },
+      ],
+    },
+    specialties: [
+      {
+        title: "Jour d'escale",
+        description:
+          "Accueil ou dépose calés sur l'horaire du navire, avec un point de rendez-vous réaliste autour du port.",
+      },
+      {
+        title: "Vol ou train le même jour",
+        description:
+          "Marge de trajet vers l'aéroport ou la gare, véhicule adapté aux valises.",
+      },
+    ],
+    pricing: [
+      "Port Lympia → Aéroport : 20-35 min, tarif selon grille Nice-Est, confirmé à la réservation",
+      "Port Lympia → Gare Nice-Ville : 10-20 min",
+      "Port Lympia → Vieux-Nice : 5-12 min",
+    ],
+    commitments: [
+      {
+        title: "Rendez-vous au bon endroit",
+        description:
+          "Point d'accès autorisé, pas une zone quai fermée le jour de l'escale.",
+      },
+      {
+        title: "Aide aux bagages",
+        description:
+          "Chargement des valises. Van si le volume l'exige.",
+      },
+      {
+        title: "Prix annoncé",
+        description:
+          "Tarif communiqué à la réservation, avant le départ.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Nice 06 - Port Lympia",
+      image: "https://taxi-nice-06.com/taxi-port-nice-lympia.jpeg",
+      telephone: "06 51 68 36 87",
+      locality: "Nice",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://taxi-nice-06.com/secteurs/nice-port-lympia",
+      latitude: "43.6953",
+      longitude: "7.2856",
     },
   },
 };

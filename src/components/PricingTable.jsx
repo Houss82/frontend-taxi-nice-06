@@ -122,7 +122,7 @@ export default function PricingTable({ vehicleType = "glc" }) {
       },
       {
         name: destinationNames.niceCentre,
-        day: "36 €",
+        day: "40 €",
         night: "",
         fixed: true,
       },

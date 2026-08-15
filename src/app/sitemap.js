@@ -66,6 +66,11 @@ export default function sitemap() {
     { path: "/secteurs", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/nice-gare", priority: 0.8, changeFrequency: "weekly" },
     {
+      path: "/secteurs/nice-port-lympia",
+      priority: 0.8,
+      changeFrequency: "weekly",
+    },
+    {
       path: "/secteurs/nice-centre-ville",
       priority: 0.8,
       changeFrequency: "weekly",

@@ -41,24 +41,36 @@ export async function generateMetadata({ params }) {
     title = "Transfert Centre-Ville Nice | Vieux-Nice & Promenade";
   } else if (data.slug === "nice-hopital-pasteur-2") {
     title = "Taxi Hôpital Pasteur 2 Nice | RDV & Urgences | Taxi Nice 06";
+  } else if (data.slug === "nice-port-lympia") {
+    title = "Taxi Port Lympia Nice | Arrivées, départs & transferts";
   } else {
     title = `${data.hero.title} | Taxi Nice 06`;
   }
 
   const description =
-    data.introduction[0]?.slice(0, 155) ??
-    `Taxi Nice 06 - Chauffeur privé ${data.cityName}.`;
+    data.slug === "nice-port-lympia"
+      ? "Taxi au Port Lympia à Nice : arrivée, départ, bagages, correspondance aéroport ou gare, hôtels et groupes. Réservation 24/7."
+      : data.introduction[0]?.slice(0, 155) ??
+        `Taxi Nice 06 - Chauffeur privé ${data.cityName}.`;
   const canonical = `https://taxi-nice-06.com/secteurs/${data.slug}`;
 
   return {
     title,
     description,
-    keywords: [
-      `taxi ${data.cityName.toLowerCase()}`,
-      `chauffeur privé ${data.cityName.toLowerCase()}`,
-      `transfert ${data.cityName.toLowerCase()}`,
-      "taxi nice 06",
-    ],
+    keywords:
+      data.slug === "nice-port-lympia"
+        ? [
+            "taxi Port Lympia Nice",
+            "taxi port Nice",
+            "transfert Port Lympia",
+            "taxi nice 06",
+          ]
+        : [
+            `taxi ${data.cityName.toLowerCase()}`,
+            `chauffeur privé ${data.cityName.toLowerCase()}`,
+            `transfert ${data.cityName.toLowerCase()}`,
+            "taxi nice 06",
+          ],
     openGraph: {
       title,
       description,
@@ -104,7 +116,12 @@ export default async function SecteurPage({ params }) {
       const slugMatch = post.slug?.toLowerCase().includes(data.slug);
       const titleMatch = post.title?.toLowerCase().includes(keyword);
       const excerptMatch = post.excerpt?.toLowerCase().includes(keyword);
-      return slugMatch || titleMatch || excerptMatch;
+      const portMatch =
+        data.slug === "nice-port-lympia" &&
+        /lympia|port de nice|port-nice/i.test(
+          `${post.slug} ${post.title} ${post.excerpt}`
+        );
+      return slugMatch || titleMatch || excerptMatch || portMatch;
     })
     .slice(0, 3);
   const fallbackPosts =
@@ -259,7 +276,59 @@ export default async function SecteurPage({ params }) {
               .
             </p>
           )}
+          {data.slug === "nice-port-lympia" && (
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Correspondance avion :{" "}
+              <Link
+                href="/services/taxi-aeroport-nice"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                transfert depuis l&apos;aéroport de Nice
+              </Link>
+              . Train :{" "}
+              <Link
+                href="/secteurs/nice-gare"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                taxi gare Nice-Ville
+              </Link>
+              . Plusieurs passagers ou beaucoup de valises :{" "}
+              <Link
+                href="/services/van-premium"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                van premium
+              </Link>
+              .{" "}
+              <Link
+                href="/reservation"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                Réserver
+              </Link>
+              .
+            </p>
+          )}
         </section>
+
+        {data.secondaryImage && (
+          <section className="max-w-6xl mx-auto px-6 mt-10">
+            <div className="relative h-64 sm:h-96 rounded-3xl overflow-hidden border border-gray-100">
+              <Image
+                src={data.secondaryImage.src}
+                alt={data.secondaryImage.alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 1152px"
+              />
+            </div>
+            {data.secondaryImage.caption && (
+              <p className="text-sm text-gray-500 mt-3">
+                {data.secondaryImage.caption}
+              </p>
+            )}
+          </section>
+        )}
 
         <section className="max-w-6xl mx-auto px-6 mt-14">
           <div className="bg-gradient-to-br from-white to-primary/5 rounded-3xl shadow-2xl border-2 border-primary/10 p-10 relative overflow-hidden">
@@ -412,22 +481,30 @@ export default async function SecteurPage({ params }) {
                       {item.speciality}
                     </td>
                     <td className="px-4 py-3">
-                      <a
-                        href={item.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary hover:text-primary/80 underline"
-                      >
-                        Site officiel
-                      </a>
+                      {item.website ? (
+                        <a
+                          href={item.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:text-primary/80 underline"
+                        >
+                          Site officiel
+                        </a>
+                      ) : (
+                        <span className="text-gray-400">—</span>
+                      )}
                     </td>
                     <td className="px-4 py-3">
-                      <a
-                        href={`tel:${item.phone.replace(/\s+/g, "")}`}
-                        className="text-primary hover:text-primary/80"
-                      >
-                        {item.phone}
-                      </a>
+                      {item.phone ? (
+                        <a
+                          href={`tel:${item.phone.replace(/\s+/g, "")}`}
+                          className="text-primary hover:text-primary/80"
+                        >
+                          {item.phone}
+                        </a>
+                      ) : (
+                        <span className="text-gray-400">—</span>
+                      )}
                     </td>
                   </tr>
                 ))}

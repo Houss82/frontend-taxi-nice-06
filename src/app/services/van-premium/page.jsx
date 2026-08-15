@@ -47,6 +47,7 @@ export default function VanPremiumPage() {
       title: "Transferts Aéroport",
       description: "Transport de groupe vers l'aéroport Nice Côte d'Azur",
       price: "À partir de 100€",
+      href: "/services/taxi-aeroport-nice",
     },
     {
       title: "Excursions Côte d'Azur",
@@ -182,7 +183,16 @@ export default function VanPremiumPage() {
                 >
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold text-gray-900">
-                      {useCase.title}
+                      {useCase.href ? (
+                        <Link
+                          href={useCase.href}
+                          className="hover:text-blue-700 transition-colors"
+                        >
+                          {useCase.title}
+                        </Link>
+                      ) : (
+                        useCase.title
+                      )}
                     </h3>
                     <span className="text-blue-600 font-bold">
                       {useCase.price}

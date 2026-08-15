@@ -14,6 +14,7 @@ import {
   Phone,
   User,
 } from "lucide-react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -319,6 +320,16 @@ export default function ReservationPage() {
                 Réservez votre transport en quelques clics. Remplissez le
                 formulaire ci-dessous et nous vous confirmerons votre
                 réservation rapidement.
+              </p>
+              <p className="text-base lg:text-lg leading-relaxed max-w-3xl mx-auto mt-4 text-white/90">
+                Pour un vol, indiquez le numéro et le terminal : le détail du{" "}
+                <Link
+                  href="/services/taxi-aeroport-nice"
+                  className="text-white font-semibold underline underline-offset-4 hover:text-blue-100"
+                >
+                  taxi depuis l&apos;aéroport Nice Côte d&apos;Azur
+                </Link>{" "}
+                est sur la page dédiée.
               </p>
             </div>
           </div>
