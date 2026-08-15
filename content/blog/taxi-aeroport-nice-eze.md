@@ -6,7 +6,7 @@ image: "/new-taxi-aeroport-nice copie.jpeg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Pour rejoindre **Èze** depuis l'aéroport de Nice, optez pour un transfert **confortable, sécurisé et disponible 24/7**. Votre chauffeur vous attend directement à la sortie du terminal avec une pancarte à votre nom pour un trajet d'environ **15 km** vers l'un des plus beaux villages perchés de la Côte d'Azur, perché à 429 m d'altitude entre Nice et Monaco.
@@ -259,4 +259,4 @@ ou contactez-nous par téléphone au **06 51 68 36 87**.
 
 ---
 
-_Article mis à jour le 23 février 2026_
+_Article mis à jour le 4 août 2026_
