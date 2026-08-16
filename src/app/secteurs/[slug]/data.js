@@ -2014,16 +2014,26 @@ export const sectorData = {
       highlight: "Arrivées, départs & correspondances",
       subtitle:
         "Prise en charge au port de Nice : bagages, aéroport, gare, hôtels et groupes",
-      image: "/taxi-port-nice-lympia.jpeg",
+      image: "/taxi-nice-06-port-lympia-aout-2026.jpeg",
       imageAlt:
         "Taxi Mercedes au Port Lympia à Nice, prêt pour une prise en charge",
     },
     secondaryImage: {
-      src: "/taxi-nice-port copie3.jpeg",
-      alt: "Taxi au port de Nice, quais du Port Lympia",
+      src: "/taxi-nice-06-port-lympia-aout-2026-2.jpeg",
+      alt: "Taxi au Port Lympia, quais et prise en charge",
       caption:
         "Dépose au plus près de l'accès autorisé le jour de votre embarquement ou de votre arrivée.",
     },
+    extraImages: [
+      {
+        src: "/taxi-port-nice-lympia.jpeg",
+        alt: "Taxi au Port Lympia, vue sur le port de Nice",
+      },
+      {
+        src: "/taxi-nice-port copie3.jpeg",
+        alt: "Taxi le long des quais du port de Nice",
+      },
+    ],
     introduction: [
       "Le Port Lympia est le port de Nice : escales, plaisance et quais. Cette page concerne uniquement la prise en charge et la dépose autour du port — distincte du quartier résidentiel du Mont-Boron et des jours de régates, traités dans des articles dédiés.",
       "Indiquez le navire, l'heure d'accostage ou d'embarquement, et le nombre de valises. Les accès quai peuvent être filtrés : le chauffeur vous indique le point de rendez-vous autorisé le jour J.",
@@ -2259,7 +2269,7 @@ export const sectorData = {
     ],
     localBusiness: {
       name: "Taxi Nice 06 - Port Lympia",
-      image: "https://taxi-nice-06.com/taxi-port-nice-lympia.jpeg",
+      image: "https://taxi-nice-06.com/taxi-nice-06-port-lympia-aout-2026.jpeg",
       telephone: "06 51 68 36 87",
       locality: "Nice",
       region: "Provence-Alpes-Côte d'Azur",

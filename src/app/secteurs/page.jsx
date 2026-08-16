@@ -10,7 +10,7 @@ const sectors = [
     name: "Port Lympia",
     description:
       "Prise en charge au port de Nice : bagages, aéroport, gare, hôtels et groupes.",
-    image: "/taxi-port-nice-lympia.jpeg",
+    image: "/taxi-nice-06-port-lympia-aout-2026.jpeg",
   },
   {
     slug: "nice-gare",

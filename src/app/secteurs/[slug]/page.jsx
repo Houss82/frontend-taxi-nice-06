@@ -330,6 +330,34 @@ export default async function SecteurPage({ params }) {
           </section>
         )}
 
+        {Array.isArray(data.extraImages) && data.extraImages.length > 0 && (
+          <section className="max-w-6xl mx-auto px-6 mt-14">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Autour du Port Lympia
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Accès quais, abords du port et prise en charge pour une arrivée
+              ou un embarquement.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {data.extraImages.map((image) => (
+                <div
+                  key={image.src}
+                  className="relative h-56 sm:h-72 rounded-2xl overflow-hidden border border-gray-100"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 560px"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         <section className="max-w-6xl mx-auto px-6 mt-14">
           <div className="bg-gradient-to-br from-white to-primary/5 rounded-3xl shadow-2xl border-2 border-primary/10 p-10 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary/10 to-blue-100 rounded-bl-full opacity-50"></div>
