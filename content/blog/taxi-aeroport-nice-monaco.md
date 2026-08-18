@@ -6,7 +6,7 @@ image: "/taxi-aeroport-nice-monaco.png"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Le trajet entre l'**aéroport Nice Côte d'Azur** et **Monaco** est l'un des transferts les plus demandés de la Côte d'Azur. Chaque jour, hommes d'affaires, touristes et résidents de la Principauté effectuent ce parcours de **30 km** le long de la Moyenne Corniche ou par l'autoroute A8.
