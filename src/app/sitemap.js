@@ -80,6 +80,11 @@ export default function sitemap() {
       priority: 0.8,
       changeFrequency: "weekly",
     },
+    {
+      path: "/secteurs/centre-lacassagne-nice",
+      priority: 0.8,
+      changeFrequency: "weekly",
+    },
     { path: "/secteurs/monaco", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/cannes", priority: 0.6, changeFrequency: "weekly" },
     { path: "/secteurs/antibes", priority: 0.6, changeFrequency: "weekly" },

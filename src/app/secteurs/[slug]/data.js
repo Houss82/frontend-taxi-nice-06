@@ -1940,7 +1940,7 @@ export const sectorData = {
         "Pour en savoir plus sur le transport médical conventionné CPAM à Nice et découvrir tous les établissements de santé de Nice.",
       links: [
         {
-          label: "Taxi conventionné CPAM / VSL à Nice",
+          label: "Taxi conventionné CPAM à Nice",
           url: "/services/vsl",
         },
         {
@@ -2276,6 +2276,281 @@ export const sectorData = {
       url: "https://taxi-nice-06.com/secteurs/nice-port-lympia",
       latitude: "43.6953",
       longitude: "7.2856",
+    },
+  },
+  "centre-lacassagne-nice": {
+    slug: "centre-lacassagne-nice",
+    cityName: "Centre Antoine Lacassagne",
+    hero: {
+      title: "Taxi Centre Antoine Lacassagne Nice",
+      highlight: "Réservation & rendez-vous",
+      subtitle:
+        "Prise en charge depuis Nice, la gare, l'aéroport ou votre domicile | Dépose au centre de cancérologie",
+      image: "/centre-lacassagne-GLC.png",
+      imageAlt: "Taxi pour le Centre Antoine Lacassagne à Nice",
+    },
+    introduction: [
+      "Vous devez vous rendre au Centre Antoine Lacassagne pour une consultation, un examen ou un rendez-vous de suivi ? Taxi Nice 06 assure votre trajet en taxi depuis Nice, la métropole niçoise, la gare SNCF ou l'aéroport Nice Côte d'Azur.",
+      "Le Centre Antoine Lacassagne est le centre de lutte contre le cancer de Nice et des Alpes-Maritimes. Cette page concerne uniquement votre déplacement en taxi vers l'établissement — pas les démarches médicales ou administratives liées à vos soins.",
+    ],
+    secondaryIntro: [
+      "Indiquez la date, l'heure de votre rendez-vous et votre adresse de départ lors de la réservation. Nous calons l'horaire de prise en charge pour vous déposer à l'heure, avec une marge adaptée au trafic niçois.",
+      "Nous desservons les quartiers de Nice, les communes alentours, les hôtels du centre-ville, la gare de Nice-Ville et l'aéroport. Aller simple ou aller-retour : précisez votre besoin au moment de la réservation.",
+    ],
+    servicesTitle: "Votre taxi pour le Centre Antoine Lacassagne",
+    services: [
+      "Trajet domicile → Centre Antoine Lacassagne",
+      "Prise en charge depuis un hôtel ou un hébergement à Nice",
+      "Transfert gare SNCF Nice-Ville → Lacassagne",
+      "Transfert aéroport Nice Côte d'Azur → Lacassagne",
+      "Aller-retour pour consultations et examens programmés",
+      "Récupération après rendez-vous ou fin de journée de soins",
+    ],
+    coverageDescription:
+      "Prise en charge et dépose au Centre Antoine Lacassagne :",
+    coverageAreas: [
+      "✓ 33 Avenue de Valombrose, Nice (Centre Antoine Lacassagne)",
+      "✓ Dépose à l'entrée du centre, point confirmé à la réservation",
+      "✓ Récupération après votre rendez-vous",
+      "✓ Aller-retour sur demande",
+      "✓ Depuis Nice et la métropole niçoise",
+      "✓ Depuis la gare ou l'aéroport de Nice",
+    ],
+    map: {
+      description:
+        "Localisation du Centre Antoine Lacassagne, quartier de Valombrose à Nice.",
+      info: "L'adresse officielle du centre est le 33 Avenue de Valombrose. Le point exact de dépose ou de récupération est confirmé avec vous à la réservation.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Centre+Antoine+Lacassagne+33+Avenue+de+Valombrose+Nice&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Prise en charge et dépose au centre",
+        description:
+          "Nous vous déposons au Centre Antoine Lacassagne, 33 Avenue de Valombrose. Le point de rendez-vous précis est confirmé à la réservation en fonction de votre rendez-vous. À la sortie, le chauffeur vous récupère à l'endroit convenu.",
+      },
+      {
+        title: "Comment réserver votre taxi ?",
+        description:
+          "1. Indiquez la date de votre rendez-vous. 2. Précisez l'heure du rendez-vous. 3. Donnez votre adresse de départ. 4. Confirmez la destination Centre Antoine Lacassagne. 5. Mentionnez s'il s'agit d'un transport conventionné le cas échéant, ou si vous souhaitez un aller-retour.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Ponctualité pour vos rendez-vous",
+        description:
+          "Prise en charge calée sur l'heure de votre consultation ou examen, avec marge de trajet selon le trafic.",
+      },
+      {
+        title: "✓ Connaissance du secteur Valombrose",
+        description:
+          "Chauffeurs habitués des accès autour du Centre Antoine Lacassagne et des itinéraires depuis Nice.",
+      },
+      {
+        title: "✓ Aller-retour possible",
+        description:
+          "Un seul interlocuteur pour l'aller et le retour après votre rendez-vous.",
+      },
+      {
+        title: "✓ Tarif annoncé à la réservation",
+        description:
+          "Le prix de la course vous est communiqué avant le départ.",
+      },
+    ],
+    hospitalsTitle: "Depuis Nice vers le Centre Antoine Lacassagne",
+    hospitals: [
+      {
+        name: "Domicile à Nice",
+        city: "Nice",
+        description:
+          "Prise en charge à votre adresse dans les quartiers de Nice. Comptez environ 15 à 30 minutes selon votre point de départ et le trafic.",
+        speciality: "Consultations, examens, soins réguliers",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Hôtel ou centre-ville",
+        city: "Nice",
+        description:
+          "Depuis le Vieux-Nice, la Promenade des Anglais ou les hôtels du centre : environ 15 minutes selon le trafic (environ 6 km).",
+        speciality: "Rendez-vous programmés",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Gare SNCF Nice-Ville",
+        city: "Nice",
+        description:
+          "Transfert depuis la gare principale vers le Centre Antoine Lacassagne. Durée indicative : 15 à 20 minutes selon le trafic.",
+        speciality: "Correspondance train → rendez-vous",
+        website: "https://www.garesetconnexions.sncf/fr/gare/frnce/nice-ville",
+        phone: "",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        description:
+          "Transfert depuis l'aéroport (Terminal 1 ou 2) vers Lacassagne. Comptez environ 20 minutes selon le trafic (environ 10 km).",
+        speciality: "Arrivée en vol → rendez-vous",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "",
+      },
+    ],
+    establishmentsTitle: "Rendez-vous et soins réguliers",
+    establishments: [
+      {
+        name: "Consultations et examens",
+        city: "Nice",
+        speciality: "Rendez-vous programmés au centre",
+        website: "https://www.centreantoinelacassagne.org/",
+        phone: "",
+      },
+      {
+        name: "Chimiothérapie",
+        city: "Nice",
+        speciality: "Trajets réguliers sur créneaux fixes",
+        website: "https://www.centreantoinelacassagne.org/",
+        phone: "",
+      },
+      {
+        name: "Radiothérapie",
+        city: "Nice",
+        speciality: "Déplacements répétés selon votre planning",
+        website: "https://www.centreantoinelacassagne.org/",
+        phone: "",
+      },
+      {
+        name: "Centre Antoine Lacassagne",
+        city: "Nice",
+        speciality: "Centre de lutte contre le cancer",
+        website: "https://www.centreantoinelacassagne.org/",
+        phone: "",
+      },
+      {
+        name: "Hôpital Pasteur 2 (CHU)",
+        city: "Nice",
+        speciality: "Autre établissement médical à Nice",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "Comment réserver un taxi pour le Centre Antoine Lacassagne ?",
+        answer:
+          "Réservez en ligne via notre formulaire ou par téléphone au 06 51 68 36 87. Indiquez la date et l'heure de votre rendez-vous, votre adresse de départ et la destination Centre Antoine Lacassagne. Précisez si vous souhaitez un aller-retour.",
+      },
+      {
+        question: "Pouvez-vous venir me chercher à mon domicile ?",
+        answer:
+          "Oui, nous assurons la prise en charge à votre domicile à Nice et dans les communes alentours. Indiquez l'adresse exacte lors de la réservation.",
+      },
+      {
+        question: "Puis-je réserver un aller-retour ?",
+        answer:
+          "Oui. Précisez-le à la réservation : le chauffeur vous dépose pour votre rendez-vous et vous récupère à l'horaire convenu à la sortie.",
+      },
+      {
+        question:
+          "Proposez-vous un taxi conventionné pour Lacassagne ?",
+        answer:
+          "Certains déplacements médicaux vers le Centre Antoine Lacassagne peuvent, lorsque les conditions applicables sont réunies, être effectués en taxi conventionné. Les modalités détaillées (prescription, prise en charge) sont expliquées sur notre page taxi conventionné à Nice. Indiquez-le lors de la réservation.",
+      },
+      {
+        question: "Pouvez-vous me récupérer à la gare de Nice ?",
+        answer:
+          "Oui, nous assurons les transferts depuis la gare SNCF Nice-Ville vers le Centre Antoine Lacassagne. Comptez environ 15 à 20 minutes selon le trafic.",
+      },
+      {
+        question: "Peut-on réserver depuis l'aéroport de Nice ?",
+        answer:
+          "Oui, nous proposons des transferts depuis l'aéroport Nice Côte d'Azur (Terminal 1 ou 2) vers le Centre Antoine Lacassagne. Durée indicative : environ 20 minutes selon le trafic.",
+      },
+      {
+        question:
+          "Quels renseignements faut-il donner lors de la réservation ?",
+        answer:
+          "Date et heure du rendez-vous, adresse de départ, destination Centre Antoine Lacassagne, nombre de passagers, besoin d'un aller-retour, et le cas échéant la mention d'un transport conventionné. Ces informations nous permettent de caler la prise en charge au bon horaire.",
+      },
+    ],
+    homepageLink: {
+      before: "Pour une course en ville ou un autre trajet, voir ",
+      linkText: "l'accueil Taxi Nice 06",
+      after: ".",
+      href: "/",
+    },
+    resource: {
+      description:
+        "Pour réserver ou compléter votre trajet vers le Centre Antoine Lacassagne.",
+      links: [
+        {
+          label: "Taxi conventionné à Nice",
+          url: "/services/vsl",
+        },
+        {
+          label: "Taxi Hôpital Pasteur 2 Nice",
+          url: "/secteurs/nice-hopital-pasteur-2",
+        },
+        {
+          label: "Réserver",
+          url: "/reservation",
+        },
+        {
+          label: "Transfert aéroport Nice",
+          url: "/services/taxi-aeroport-nice",
+        },
+        {
+          label: "Taxi gare Nice-Ville",
+          url: "/secteurs/nice-gare",
+        },
+      ],
+    },
+    specialties: [
+      {
+        title: "Taxi conventionné pour Lacassagne",
+        description:
+          "Certains trajets médicaux réguliers vers le Centre Antoine Lacassagne peuvent, lorsque les conditions applicables sont réunies, être effectués en taxi conventionné. Consultez notre page dédiée pour les informations détaillées sur les modalités et la réservation.",
+      },
+      {
+        title: "Autres établissements médicaux à Nice",
+        description:
+          "Pour vos déplacements vers l'Hôpital Pasteur 2 (CHU de Nice), une page dédiée présente les transferts et la prise en charge vers cet établissement.",
+      },
+    ],
+    pricing: [
+      "Centre-ville Nice → Lacassagne : environ 15 minutes selon le trafic",
+      "Gare Nice-Ville → Lacassagne : environ 15 à 20 minutes",
+      "Aéroport Nice → Lacassagne : environ 20 minutes",
+      "Antibes → Lacassagne : environ 35 à 40 minutes",
+      "Tarif communiqué à la réservation, avant le départ",
+    ],
+    commitments: [
+      {
+        title: "À l'heure pour votre rendez-vous",
+        description:
+          "Prise en charge calée sur l'horaire de votre consultation ou examen.",
+      },
+      {
+        title: "Trajet confortable",
+        description:
+          "Véhicule récent, climatisé, avec espace pour vos affaires personnelles.",
+      },
+      {
+        title: "Disponibilité",
+        description:
+          "Réservation en ligne ou par téléphone, y compris pour des rendez-vous tôt le matin.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Centre Antoine Lacassagne Nice",
+      image: "https://taxi-nice-06.com/centre-lacassagne-GLC.png",
+      telephone: "06 51 68 36 87",
+      locality: "Nice",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://taxi-nice-06.com/secteurs/centre-lacassagne-nice",
+      latitude: "43.7038",
+      longitude: "7.2568",
     },
   },
 };

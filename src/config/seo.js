@@ -121,14 +121,14 @@ export const seoConfig = {
         changefreq: "monthly",
       },
       vsl: {
-        title: "VSL Nice | Transport Handicapé | Véhicule Sanitaire Léger",
+        title: "Taxi Conventionné Nice | Transport Médical CPAM",
         description:
-          "Service VSL (Véhicule Sanitaire Léger) à Nice et Côte d'Azur. Transport médicalisé pour personnes à mobilité réduite. Chauffeurs formés et véhicules adaptés.",
+          "Taxi conventionné à Nice pour vos déplacements médicaux assis. Rendez-vous médicaux, hospitalisations et soins réguliers. Réservation par téléphone.",
         keywords: [
-          "VSL nice",
-          "transport handicapé nice",
-          "véhicule sanitaire léger",
+          "taxi conventionné nice",
           "transport médical nice",
+          "taxi cpam nice",
+          "transport assis professionnalisé nice",
         ],
         priority: 0.8,
         changefreq: "monthly",

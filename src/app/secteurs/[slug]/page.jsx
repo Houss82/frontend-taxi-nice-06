@@ -43,19 +43,28 @@ export async function generateMetadata({ params }) {
     title = "Taxi Hôpital Pasteur 2 Nice | RDV & Urgences | Taxi Nice 06";
   } else if (data.slug === "nice-port-lympia") {
     title = "Taxi Port Lympia Nice | Arrivées, départs & transferts";
+  } else if (data.slug === "centre-lacassagne-nice") {
+    title = "Taxi Centre Antoine Lacassagne Nice | Réservation";
   } else {
     title = `${data.hero.title} | Taxi Nice 06`;
   }
 
+  const pageTitle =
+    data.slug === "centre-lacassagne-nice"
+      ? { absolute: title }
+      : title;
+
   const description =
     data.slug === "nice-port-lympia"
       ? "Taxi au Port Lympia à Nice : arrivée, départ, bagages, correspondance aéroport ou gare, hôtels et groupes. Réservation 24/7."
-      : data.introduction[0]?.slice(0, 155) ??
-        `Taxi Nice 06 - Chauffeur privé ${data.cityName}.`;
+      : data.slug === "centre-lacassagne-nice"
+        ? "Réservez un taxi pour le Centre Antoine Lacassagne à Nice. Prise en charge depuis votre domicile, un hôtel, la gare ou l'aéroport. Aller-retour sur demande."
+        : data.introduction[0]?.slice(0, 155) ??
+          `Taxi Nice 06 - Chauffeur privé ${data.cityName}.`;
   const canonical = `https://taxi-nice-06.com/secteurs/${data.slug}`;
 
   return {
-    title,
+    title: pageTitle,
     description,
     keywords:
       data.slug === "nice-port-lympia"
@@ -121,7 +130,12 @@ export default async function SecteurPage({ params }) {
         /lympia|port de nice|port-nice/i.test(
           `${post.slug} ${post.title} ${post.excerpt}`
         );
-      return slugMatch || titleMatch || excerptMatch || portMatch;
+      const lacassagneMatch =
+        data.slug === "centre-lacassagne-nice" &&
+        /lacassagne|cancérologie|centres-medicaux|transport-medical/i.test(
+          `${post.slug} ${post.title} ${post.excerpt}`
+        );
+      return slugMatch || titleMatch || excerptMatch || portMatch || lacassagneMatch;
     })
     .slice(0, 3);
   const fallbackPosts =
@@ -271,7 +285,33 @@ export default async function SecteurPage({ params }) {
                 href="/services/vsl"
                 className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
               >
-                taxi conventionné CPAM / VSL à Nice
+                taxi conventionné CPAM à Nice
+              </Link>
+              .
+            </p>
+          )}
+          {data.slug === "centre-lacassagne-nice" && (
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Transport conventionné : voir notre{" "}
+              <Link
+                href="/services/vsl"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                taxi conventionné à Nice
+              </Link>
+              . Autre établissement :{" "}
+              <Link
+                href="/secteurs/nice-hopital-pasteur-2"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                taxi Hôpital Pasteur 2
+              </Link>
+              .{" "}
+              <Link
+                href="/reservation"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                Réserver
               </Link>
               .
             </p>
@@ -774,6 +814,25 @@ export default async function SecteurPage({ params }) {
               __html: JSON.stringify(localBusinessJson),
             }}
           />
+          {Array.isArray(data.faq) && data.faq.length > 0 && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: data.faq.map((item) => ({
+                    "@type": "Question",
+                    name: item.question,
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: item.answer,
+                    },
+                  })),
+                }),
+              }}
+            />
+          )}
         </section>
       </main>
 

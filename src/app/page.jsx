@@ -354,8 +354,9 @@ export default function Page() {
                       link: "/",
                     },
                     {
-                      title: "Transport médical VSL / conventionné",
-                      text: "Véhicules agréés CPAM",
+                      title: "Taxi conventionné CPAM",
+                      text: "Transport médical assis à Nice — rendez-vous et soins réguliers",
+                      link: "/services/vsl",
                     },
                     {
                       title: "Événements et mariages",
@@ -681,7 +682,7 @@ export default function Page() {
               {/* FAQ 3 */}
               <div className="group bg-white rounded-2xl p-8 shadow-xl border-l-4 border-green-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">
-                  Proposez-vous un service VSL à Nice ?
+                  Proposez-vous un taxi conventionné à Nice ?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Oui, nous proposons un{" "}
@@ -689,11 +690,10 @@ export default function Page() {
                     href="/services/vsl"
                     className="text-blue-600 hover:text-blue-800 underline font-medium"
                   >
-                    service VSL conventionné CPAM
+                    taxi conventionné à Nice
                   </a>{" "}
-                  à Nice et sur toute la Côte d'Azur. Nos chauffeurs sont agréés
-                  et formés pour le transport médical assis, disponibles 24h/24
-                  et 7j/7.
+                  pour vos déplacements médicaux. Transport médical assis,
+                  disponible 24h/24 et 7j/7 sur Nice et la métropole.
                 </p>
               </div>
 

@@ -319,7 +319,7 @@ Chez **Taxi Nice Côte d'Azur**, nous mettons tout en œuvre pour vous offrir la
 - **[Transfert Aéroport](/services/taxi-aeroport-nice)** - Service 24/7 avec suivi de vol
 - **[Taxi Nice Gare SNCF](/blog/taxi-nice-gare-sncf)** - Service rapide depuis la gare 24/7
 - **[Excursions Côte d'Azur](/services/excursions-decouvertes)** - Circuits personnalisés avec guide
-- **[VSL Transport Médical](/services/vsl)** - Véhicules adaptés handicapés
+- **[Taxi conventionné Nice](/services/vsl)** - Transport médical assis à Nice
 - **[Transport Groupe](/services)** - Vans jusqu'à 8 passagers
 
 ## 📋 Options de réservation

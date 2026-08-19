@@ -189,9 +189,10 @@ export default function TaxiNiceNumeroPage() {
               {
                 title: "Taxi conventionné CPAM",
                 description:
-                  "Transport médical conventionné CPAM (VSL) avec prise en charge par l'Assurance Maladie. Chauffeurs formés et véhicules agréés.",
+                  "Transport médical assis à Nice. Prise en charge CPAM selon votre situation et votre prescription.",
                 icon: "🏥",
                 color: "from-pink-400 to-pink-600",
+                href: "/services/vsl",
               },
               {
                 title: "Trajets longues distances",

@@ -413,7 +413,7 @@ Tarif fixe garanti lors de la réservation. Consultez **[nos tarifs complets](/t
 <details class="faq">
 <summary><strong>8. Y a-t-il des plages accessibles aux personnes à mobilité réduite ?</strong></summary>
 
-**La Lanterne** est la plus accessible avec une promenade de plain-pied et des accès facilités. Pour les autres plages (Coco Beach, La Réserve), l'accès nécessite des escaliers. Nos véhicules VSL peuvent transporter des fauteuils roulants. Contactez-nous pour plus d'informations sur **[nos services VSL](/services/vsl)**.
+**La Lanterne** est la plus accessible avec une promenade de plain-pied et des accès facilités. Pour les autres plages (Coco Beach, La Réserve), l'accès nécessite des escaliers. Un Van PMR peut être proposé sur demande pour vous conduire jusqu'aux accès les plus proches — contactez-nous pour préciser vos besoins.
 
 </details>
 

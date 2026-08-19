@@ -73,9 +73,9 @@ export default function PlanDuSitePage() {
       color: "text-blue-600",
     },
     {
-      title: "VSL Transport Médicalisé",
+      title: "Taxi conventionné CPAM",
       url: "/services/vsl",
-      description: "Véhicule Sanitaire Léger pour personnes à mobilité réduite",
+      description: "Transport médical assis à Nice pour vos rendez-vous médicaux",
       icon: Stethoscope,
       color: "text-pink-600",
     },
@@ -126,6 +126,12 @@ export default function PlanDuSitePage() {
       title: "Taxi Port Lympia",
       url: "/secteurs/nice-port-lympia",
       description: "Prise en charge au port de Nice : aéroport, gare, hôtels",
+    },
+    {
+      title: "Taxi Centre Antoine Lacassagne",
+      url: "/secteurs/centre-lacassagne-nice",
+      description:
+        "Taxi pour le Centre Antoine Lacassagne : domicile, gare, aéroport",
     },
     {
       title: "Taxi Nice Centre-Ville",

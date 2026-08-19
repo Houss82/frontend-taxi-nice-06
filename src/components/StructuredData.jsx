@@ -8,7 +8,7 @@ export default function StructuredData() {
       name: "Taxi Nice Côte d'Azur",
       alternateName: "Taxi Nice 06",
       description:
-        "Chauffeur privé 24/7 à Nice et Côte d'Azur. Transferts Aéroport Nice, Hôtels, VSL, Excursions. Mercedes GLC et Van Premium. Service professionnel et fiable.",
+        "Chauffeur privé 24/7 à Nice et Côte d'Azur. Transferts Aéroport Nice, Hôtels, taxi conventionné CPAM, Excursions. Mercedes GLC et Van Premium. Service professionnel et fiable.",
       url: "https://taxi-nice-06.com",
       telephone: "+33 6 51 68 36 87",
       email: "taxiniceca@gmail.com",
@@ -90,15 +90,16 @@ export default function StructuredData() {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "VSL (Véhicule Sanitaire Léger)",
+              name: "Taxi conventionné CPAM",
               description:
-                "Transport médicalisé pour personnes à mobilité réduite",
+                "Transport médical assis à Nice pour rendez-vous médicaux et soins réguliers",
+              url: "https://taxi-nice-06.com/services/vsl",
               provider: {
                 "@type": "LocalBusiness",
                 name: "Taxi Nice Côte d'Azur",
               },
             },
-            price: "Sur devis",
+            price: "Selon barème CPAM",
             priceCurrency: "EUR",
             availability: "https://schema.org/InStock",
           },

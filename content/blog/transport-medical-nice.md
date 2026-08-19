@@ -169,7 +169,7 @@ Pour en savoir plus sur les conditions de remboursement, consultez le site de l'
 
 **Confort + ponctualité + remboursement possible.**
 
-👉 **Découvrez notre service VSL** : [Taxi conventionné CPAM Nice](/services/vsl) – Service dédié au transport médical avec prise en charge CPAM.
+👉 **Réserver un taxi conventionné** : [Notre service de transport médical à Nice](/services/vsl) – dédié aux déplacements médicaux avec prise en charge CPAM selon votre situation.
 
 ---
 
@@ -347,7 +347,7 @@ Pour plus d'informations sur les conditions de remboursement, consultez le site 
 
 Pour approfondir vos connaissances sur nos services de transport à Nice :
 
-- 👉 **[Taxi conventionné CPAM Nice : service VSL](/services/vsl)** – Service dédié au transport médical conventionné
+- 👉 **[Notre service de taxi conventionné à Nice](/services/vsl)** – Réserver un transport médical conventionné
 - 👉 **[Centres médicaux et spécialistes Nice 2025](/blog/centres-medicaux-specialistes-nice-2025)** – Guide complet des établissements de santé à Nice
 - 👉 **[Taxi Hôpital Pasteur 2 Nice : RDV & Urgences](/secteurs/nice-hopital-pasteur-2)** – Transport médical vers le CHU Pasteur 2
 - 👉 **[Taxi Nice 24/7](/taxi-nice)** – Service principal avec tous nos services de taxi à Nice

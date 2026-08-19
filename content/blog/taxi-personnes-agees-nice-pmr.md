@@ -44,7 +44,7 @@ Sur demande, nous disposons d'un **Van équipé PMR** pour les personnes en faut
 
 ## 🏥 Cas d'usage : Transport seniors et PMR
 
-- **Rendez-vous médicaux** : CHU Pasteur, CHU Cimiez, cliniques, cabinets
+- **Rendez-vous médicaux** : CHU Pasteur, CHU Cimiez, cliniques, cabinets — voir notre [taxi conventionné pour les rendez-vous médicaux](/services/vsl) si vous avez une prescription CPAM
 - **Dialyse** : Transport régulier vers centres de dialyse
 - **Sorties** : Marché, famille, promenade
 - **Aéroport/Gare** : Transferts avec assistance bagages

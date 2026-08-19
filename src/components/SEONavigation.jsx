@@ -33,10 +33,10 @@ export default function SEONavigation() {
     },
     {
       href: "/services/vsl",
-      label: "VSL",
-      title: "VSL Nice - Transport médicalisé",
+      label: "Taxi conventionné",
+      title: "Taxi conventionné Nice - Transport médical CPAM",
       description:
-        "Véhicules sanitaires légers pour personnes à mobilité réduite",
+        "Taxi conventionné à Nice pour vos déplacements médicaux assis",
     },
     {
       href: "/services/excursions-decouvertes",
@@ -95,8 +95,8 @@ export function SEOFooterLinks() {
         },
         {
           href: "/services/vsl",
-          label: "VSL Nice",
-          title: "Véhicule Sanitaire Léger",
+          label: "Taxi conventionné",
+          title: "Taxi conventionné Nice",
         },
         {
           href: "/services/excursions-decouvertes",

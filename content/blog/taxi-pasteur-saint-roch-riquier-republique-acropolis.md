@@ -308,6 +308,7 @@ Pour en savoir plus sur nos services de taxi à Nice :
 
 - ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
 - **[Transport médical à Nice](/blog/transport-medical-nice)** : Guide complet sur les trajets médicaux
+- **[Taxi conventionné à Nice](/services/vsl)** : réserver un transport médical conventionné
 - **[Centres médicaux Nice 2025](/blog/centres-medicaux-specialistes-nice-2025)** : Guide des établissements de santé
 - **[Taxi hôpitaux & CHU Pasteur](/)** : service depuis l’accueil
 - **[Taxi Hôpital Pasteur 2 Nice : RDV & Urgences](/secteurs/nice-hopital-pasteur-2)** – Transport médical vers le CHU Pasteur 2

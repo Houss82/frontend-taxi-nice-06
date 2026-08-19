@@ -6,6 +6,13 @@ import Link from "next/link";
 
 const sectors = [
   {
+    slug: "centre-lacassagne-nice",
+    name: "Centre Antoine Lacassagne",
+    description:
+      "Taxi pour le Centre Antoine Lacassagne : domicile, gare, aéroport et rendez-vous médicaux.",
+    image: "/centre-lacassagne-GLC.png",
+  },
+  {
     slug: "nice-port-lympia",
     name: "Port Lympia",
     description:

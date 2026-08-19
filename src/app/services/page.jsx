@@ -8,6 +8,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Clock,
+  Heart,
   Mail,
   MapPin,
   Phone,
@@ -153,6 +154,28 @@ export default function ServicesPage() {
       icon: MapPin,
       color: "from-blue-500 to-blue-700",
       detailUrl: "/services/excursions-decouvertes",
+    },
+    {
+      id: 8,
+      image: "/centre-lacassagne-GLC.png",
+      title: "Taxi conventionné CPAM",
+      description:
+        "Transport médical assis à Nice : rendez-vous médicaux, hospitalisations et soins réguliers",
+      keywords: [
+        "taxi conventionné nice",
+        "transport médical nice",
+        "taxi cpam nice",
+        "transport assis nice",
+      ],
+      features: [
+        "Transport médical assis",
+        "Nice et métropole",
+        "Rendez-vous médicaux",
+        "Soins réguliers",
+      ],
+      icon: Heart,
+      color: "from-pink-500 to-pink-700",
+      detailUrl: "/services/vsl",
     },
     {
       id: 7,

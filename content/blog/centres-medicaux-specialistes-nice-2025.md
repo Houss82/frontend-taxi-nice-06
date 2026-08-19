@@ -128,7 +128,7 @@ Le **Centre Antoine Lacassagne** est le **centre de lutte contre le cancer** de 
 
 ### 🚗 Accès taxi conventionné
 
-Les trajets vers le Centre Antoine Lacassagne sont souvent pris en charge par la CPAM pour les patients en traitement (radiothérapie, chimiothérapie). Nos taxis conventionnés assurent ces trajets réguliers avec ponctualité et confort. 👉 [Service VSL pour trajets médicaux réguliers](/services/vsl) – Transport médical conventionné avec prise en charge CPAM.
+Les trajets vers le Centre Antoine Lacassagne sont souvent pris en charge par la CPAM pour les patients en traitement (radiothérapie, chimiothérapie). Nos taxis conventionnés assurent ces trajets réguliers avec ponctualité et confort. 👉 [Réserver un taxi conventionné pour vos soins réguliers](/services/vsl) – Transport médical conventionné, prise en charge selon votre situation.
 
 ---
 
@@ -334,9 +334,7 @@ L'accès facile aux établissements médicaux est **crucial** pour vos rendez-vo
 
 Nos services de taxi conventionné CPAM complètent parfaitement l'accès aux établissements médicaux, notamment pour les trajets réguliers ou les consultations spécialisées.
 
-👉 **En savoir plus** : [Service VSL et taxi conventionné CPAM Nice](/services/vsl) – Découvrez notre service dédié au transport médical avec prise en charge CPAM.
-
-👉 **Guide complet** : [Transport médical à Nice : guide VSL et taxi conventionné](/blog/transport-medical-nice) – Tout savoir sur les trajets médicaux, la prise en charge et l'accompagnement.
+👉 **Guide complet** : [Transport médical à Nice : guide taxi conventionné et CPAM](/blog/transport-medical-nice) – Tout savoir sur les trajets médicaux, la prise en charge et l'accompagnement.
 
 ---
 

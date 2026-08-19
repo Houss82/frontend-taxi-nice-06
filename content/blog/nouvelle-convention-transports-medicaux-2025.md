@@ -466,7 +466,7 @@ Avec Taxi Nice 06, vous êtes certain que :
 - 👉 [Taxi Hôpital Pasteur 2 Nice : RDV & Urgences](/secteurs/nice-hopital-pasteur-2) – Transport médical vers le CHU Pasteur 2
 - 👉 [Transport médical à Nice : guide complet VSL et taxi conventionné](/blog/transport-medical-nice)
 - 👉 [Centres médicaux et spécialistes Nice 2025](/blog/centres-medicaux-specialistes-nice-2025) – Guide complet des établissements de santé
-- 👉 [Taxi conventionné CPAM Nice : service VSL](/services/vsl) – Service dédié au transport médical conventionné
+- 👉 [Taxi conventionné CPAM à Nice : réserver un transport médical](/services/vsl)
 
 ---
 

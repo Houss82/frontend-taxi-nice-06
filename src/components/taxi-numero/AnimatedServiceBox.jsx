@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function AnimatedServiceBox({ service, index }) {
   return (
@@ -19,9 +20,17 @@ export default function AnimatedServiceBox({ service, index }) {
           {service.icon}
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">
-            {service.title}
-          </h3>
+          {service.href ? (
+            <Link href={service.href}>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">
+                {service.title}
+              </h3>
+            </Link>
+          ) : (
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              {service.title}
+            </h3>
+          )}
           <p className="text-gray-700 leading-relaxed">{service.description}</p>
         </div>
       </div>

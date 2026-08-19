@@ -183,7 +183,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center space-x-3">
                       <Heart className="w-4 h-4 text-red-500" />
-                      <span>VSL Transport Médical</span>
+                      <span>Taxi conventionné</span>
                     </div>
                   </Link>
                   <Link
@@ -264,6 +264,16 @@ export default function Navbar() {
                     <div className="flex items-center space-x-3">
                       <Heart className="w-4 h-4 text-pink-600" />
                       <span>Hôpital Pasteur 2</span>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/secteurs/centre-lacassagne-nice"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsSectorsOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Heart className="w-4 h-4 text-purple-600" />
+                      <span>Centre Lacassagne</span>
                     </div>
                   </Link>
                   <Link
@@ -613,7 +623,7 @@ export default function Navbar() {
                             >
                               <Heart className="w-4 h-4 text-red-500" />
                               <span className="text-sm">
-                                VSL Transport Médical
+                                Taxi conventionné
                               </span>
                             </Link>
                           </motion.div>
@@ -809,6 +819,19 @@ export default function Navbar() {
                         >
                           <Heart className="w-4 h-4 text-pink-600" />
                           <span className="text-sm">Hôpital Pasteur 2</span>
+                        </Link>
+                      </motion.div>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <Link
+                          href="/secteurs/centre-lacassagne-nice"
+                          className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <Heart className="w-4 h-4 text-purple-600" />
+                          <span className="text-sm">Centre Lacassagne</span>
                         </Link>
                       </motion.div>
                       <motion.div
