@@ -251,11 +251,6 @@ export default async function BlogPostPage({ params }) {
                     availability: "https://schema.org/InStock",
                     validFrom: "2025-01-01",
                   },
-                  aggregateRating: {
-                    "@type": "AggregateRating",
-                    ratingValue: "5",
-                    reviewCount: "127",
-                  },
                 }),
               }}
             />
