@@ -1,0 +1,25 @@
+---
+description: Images d'articles — jamais réutiliser la même image générée deux fois
+alwaysApply: true
+---
+
+# Images distinctes dans les articles
+
+## Interdit
+
+Ne jamais utiliser la **même image** à la fois comme :
+- image de couverture / frontmatter (`image: "..."`)
+- et illustration inline dans le corps de l'article
+
+## Obligatoire
+
+Quand une image est générée pour un article :
+1. **Couverture** : une image dédiée (hero / accueil / extérieur)
+2. **Illustration inline** : une **deuxième image différente** (intérieur, détail, autre angle, autre scène)
+
+Si l'utilisateur demande « génère une image » pour un article qui a déjà une couverture, générer une **nouvelle** image pour le corps — ne pas recycler la couverture.
+
+## Exemple
+
+- Couverture : `taxi-affaires-nice-professionnels.png` (accueil aéroport)
+- Inline : `taxi-affaires-nice-interieur-travail.png` (intérieur véhicule)
