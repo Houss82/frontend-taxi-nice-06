@@ -4,6 +4,7 @@ import SEOBreadcrumb from "@/components/SEOBreadcrumb.jsx";
 import { getAllPosts } from "@/lib/blog";
 import {
   Award,
+  Briefcase,
   Calendar,
   Car,
   Compass,
@@ -73,6 +74,13 @@ export default function PlanDuSitePage() {
       color: "text-blue-600",
     },
     {
+      title: "Taxi Aéroport Nice → Sophia Antipolis",
+      url: "/services/taxi-aeroport-nice-sophia-antipolis",
+      description: "Transfert entre l'aéroport de Nice et la technopole",
+      icon: Plane,
+      color: "text-blue-600",
+    },
+    {
       title: "Taxi conventionné CPAM",
       url: "/services/vsl",
       description: "Transport médical assis à Nice pour vos rendez-vous médicaux",
@@ -106,6 +114,13 @@ export default function PlanDuSitePage() {
       description: "Transport pour événements et mariages",
       icon: Heart,
       color: "text-rose-600",
+    },
+    {
+      title: "Transferts Événements",
+      url: "/services/transferts-evenements",
+      description: "Transport pour congrès, salons et événements professionnels",
+      icon: Briefcase,
+      color: "text-cyan-600",
     },
     {
       title: "Flotte Récente",

@@ -81,6 +81,11 @@ Tous nos véhicules sont équipés de **climatisation, Wi-Fi et bouteilles d'eau
 
 Découvrez notre [flotte complète de véhicules premium](/services/flotte-recente) et choisissez celui qui correspond le mieux à vos besoins.
 
+Si votre arrivée à Cannes s'inscrit dans un congrès ou un salon, consultez
+notre service de [transport événementiel à Nice](/services/transferts-evenements)
+pour organiser les trajets des participants entre l'aéroport, les hôtels
+et le lieu de l'événement.
+
 ---
 
 ## 🕓 Disponibilité et flexibilité 24h/24 – 7j/7

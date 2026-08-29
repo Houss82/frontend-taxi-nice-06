@@ -158,6 +158,13 @@ export default function TransfertsAeroportPage() {
       href: "/secteurs/antibes",
     },
     {
+      name: "Sophia Antipolis",
+      distance: "environ 20 km",
+      duration: "selon trafic",
+      price: "60-65 €",
+      href: "/services/taxi-aeroport-nice-sophia-antipolis",
+    },
+    {
       name: "Saint-Tropez",
       distance: "environ 85 km",
       duration: "1h15-1h30",

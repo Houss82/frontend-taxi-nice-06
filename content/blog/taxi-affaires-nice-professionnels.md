@@ -509,7 +509,7 @@ Oui. Chargeurs disponibles, habitacle silencieux. Sur demande, trajet **sans con
 <details class="faq">
 <summary><strong>7. Proposez-vous des transferts vers Sophia Antipolis depuis l'aéroport ?</strong></summary>
 
-Oui. Trajet direct **aéroport → Sophia Antipolis** en 25-35 minutes selon le trafic. Idéal pour entretiens, missions tech et congrès. Tarif communiqué à la réservation.
+Oui. Trajet direct **[transfert entre l'aéroport de Nice et Sophia Antipolis](/services/taxi-aeroport-nice-sophia-antipolis)** en 25-35 minutes selon le trafic. Idéal pour entretiens, missions tech et congrès. Tarif communiqué à la réservation.
 
 </details>
 

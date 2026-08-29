@@ -30,6 +30,11 @@ export default function sitemap() {
       priority: 0.9,
       changeFrequency: "weekly",
     },
+    {
+      path: "/services/taxi-aeroport-nice-sophia-antipolis",
+      priority: 0.8,
+      changeFrequency: "weekly",
+    },
     { path: "/tarifs", priority: 0.8, changeFrequency: "monthly" },
     { path: "/services", priority: 0.8, changeFrequency: "weekly" },
     { path: "/services/vsl", priority: 0.8, changeFrequency: "weekly" },

@@ -688,6 +688,10 @@ export const sectorData = {
           label: "Taxi aéroport Nice → Antibes : durée, tarifs et conseils",
           url: "https://taxi-nice-06.com/blog/taxi-aeroport-nice-antibes",
         },
+        {
+          label: "Transfert aéroport Nice → Sophia Antipolis",
+          url: "/services/taxi-aeroport-nice-sophia-antipolis",
+        },
       ],
     },
     homepageLink: {

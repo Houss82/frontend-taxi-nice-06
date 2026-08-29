@@ -349,6 +349,33 @@ export default async function SecteurPage({ params }) {
               .
             </p>
           )}
+          {data.slug === "cannes" && (
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Pour un congrès ou un salon au Palais des Festivals, découvrez
+              notre service de{" "}
+              <Link
+                href="/services/transferts-evenements"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                transferts pour congrès et salons
+              </Link>{" "}
+              afin d&apos;organiser les déplacements de vos équipes et invités.
+            </p>
+          )}
+          {data.slug === "monaco" && (
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Pour un Grand Prix, un salon ou un événement au Grimaldi Forum,
+              notre{" "}
+              <Link
+                href="/services/transferts-evenements"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                transport des participants
+              </Link>{" "}
+              peut être étudiée selon vos horaires et vos lieux de prise en
+              charge.
+            </p>
+          )}
         </section>
 
         {data.secondaryImage && (

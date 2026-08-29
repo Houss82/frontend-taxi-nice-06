@@ -211,7 +211,7 @@ Le plus grand port de plaisance d'Europe avec ses **yachts de luxe**, ses **rest
 **Durée depuis l'aéroport** : 27-33 minutes  
 **Tarif** :70/80€ (Mercedes GLC)
 
-### Sophia Antipolis
+### [Sophia Antipolis](/services/taxi-aeroport-nice-sophia-antipolis)
 
 Technopole internationale située à proximité d'Antibes, avec ses **sièges d'entreprises**, ses **centres de recherche** et ses **campus universitaires**. Destination fréquente pour les déplacements professionnels.
 

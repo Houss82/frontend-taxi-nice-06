@@ -203,6 +203,11 @@ Vous séjournez à l'**Hôtel de Paris** ou au **Fairmont Monte Carlo**. Nous co
 
 Vous venez pour un grand événement de la Principauté. Nous anticipons les restrictions de circulation et les déviations pour vous déposer au plus près de votre destination.
 
+Pour un événement réunissant plusieurs participants, vous pouvez aussi
+consulter notre service d'[organisation des transferts professionnels](/services/transferts-evenements)
+afin de coordonner les horaires entre l'aéroport, les hôtels et le lieu de
+l'événement.
+
 ### Scénario 4 : Résident monégasque
 
 Vous résidez à Monaco et voyagez régulièrement depuis Nice. Nous proposons un service récurrent fiable, avec le même niveau de qualité à chaque trajet, aller comme retour.

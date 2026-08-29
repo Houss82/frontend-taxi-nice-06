@@ -117,6 +117,16 @@ export default function Navbar() {
                     </div>
                   </Link>
                   <Link
+                    href="/services/taxi-aeroport-nice-sophia-antipolis"
+                    className="block pl-10 pr-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors text-sm"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="w-3.5 h-3.5 text-cyan-500 flex-shrink-0" />
+                      <span>Aéroport → Sophia Antipolis</span>
+                    </div>
+                  </Link>
+                  <Link
                     href="/services/arrivees-destinations"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     onClick={() => setIsServicesOpen(false)}
@@ -521,6 +531,21 @@ export default function Navbar() {
                               <Plane className="w-4 h-4 text-blue-500" />
                               <span className="text-sm">
                                 Taxi Aéroport Nice
+                              </span>
+                            </Link>
+                          </motion.div>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Link
+                              href="/services/taxi-aeroport-nice-sophia-antipolis"
+                              className="flex items-center space-x-3 px-3 py-2 pl-6 rounded-lg hover:bg-blue-50 text-gray-600 hover:text-primary transition-all duration-200"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              <MapPin className="w-3.5 h-3.5 text-cyan-500" />
+                              <span className="text-sm">
+                                Aéroport → Sophia Antipolis
                               </span>
                             </Link>
                           </motion.div>

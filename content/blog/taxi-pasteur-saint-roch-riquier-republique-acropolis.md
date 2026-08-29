@@ -94,6 +94,10 @@ Le **Palais Acropolis** est un centre de congrès et d'événements majeur. Nous
 - **Dépose optimisée** : Arrêt au plus près de l'entrée principale
 - **Retour après événement** : Récupération après votre événement
 
+Pour un congrès ou un salon avec plusieurs arrivées et départs, découvrez
+également notre service de [transferts événementiels](/services/transferts-evenements)
+pour étudier l'organisation des trajets des participants.
+
 ### 🏙️ Déplacements Quartiers Centraux → Centre-ville
 
 Depuis ces quartiers, le trajet vers le **centre-ville de Nice** est très court (5-10 minutes). Nous assurons vos transferts vers :

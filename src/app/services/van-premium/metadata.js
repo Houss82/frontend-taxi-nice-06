@@ -1,18 +1,22 @@
 export const metadata = {
-  title: "Van Premium Nice | Transport Groupe jusqu'à 8 Passagers | Taxi Nice-06",
+  title: {
+    absolute: "Taxi Van Nice | Transport de groupe avec chauffeur",
+  },
   description:
-    "Van Premium Mercedes pour groupes jusqu'à 8 personnes. Confort et espace pour vos déplacements familiaux ou professionnels à Nice.",
+    "Taxi van à Nice avec chauffeur pour familles et groupes. Transferts depuis l'aéroport, la gare ou l'hôtel vers Nice et la Côte d'Azur. Réservation en ligne.",
   keywords: [
-    "van premium nice",
+    "taxi van nice",
     "transport groupe nice",
-    "van 8 personnes nice",
-    "mercedes van nice",
-    "transport famille nice",
+    "taxi groupe nice",
+    "van avec chauffeur nice",
+    "van premium nice",
+    "van aéroport nice",
+    "transfert groupe aéroport nice",
   ],
   openGraph: {
-    title: "Van Premium Nice | Taxi Nice-06",
+    title: "Taxi Van Nice | Transport de groupe avec chauffeur",
     description:
-      "Van Premium Mercedes pour groupes jusqu'à 8 personnes. Confort et espace pour vos déplacements familiaux ou professionnels.",
+      "Taxi van à Nice avec chauffeur pour familles et groupes. Transferts aéroport, gare, hôtels et Côte d'Azur.",
     url: "https://taxi-nice-06.com/services/van-premium",
     type: "website",
     images: [
@@ -20,14 +24,14 @@ export const metadata = {
         url: "https://taxi-nice-06.com/van-aéro.jpeg",
         width: 1200,
         height: 630,
-        alt: "Van Premium Nice - Transport groupe",
+        alt: "Van avec chauffeur pour transport de groupe à Nice",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Van Premium Nice | Taxi Nice-06",
-    description: "Van Premium Mercedes pour groupes jusqu'à 8 personnes.",
+    title: "Taxi Van Nice | Transport de groupe avec chauffeur",
+    description: "Taxi van à Nice avec chauffeur pour familles et groupes.",
     images: ["https://taxi-nice-06.com/van-aéro.jpeg"],
   },
   alternates: {
