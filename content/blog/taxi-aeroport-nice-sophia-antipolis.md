@@ -6,7 +6,7 @@ image: "/taxi-aeroport-nice-sophia-antipolis.png"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Sophia Antipolis**, première technopole d'Europe, accueille chaque jour des milliers de professionnels, chercheurs et étudiants venus du monde entier. Située sur les communes de **Valbonne, Biot, Mougins et Antibes**, la technopole se trouve à environ **20 km de l'aéroport Nice Côte d'Azur**, sans liaison ferroviaire directe.
@@ -239,4 +239,4 @@ Oui, c'est une demande très fréquente pour les missions d'une journée. Nous c
 
 ---
 
-_Article mis à jour le 1er septembre 2026_
+_Article mis à jour le 1 septembre 2026_
