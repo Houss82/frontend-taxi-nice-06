@@ -6,7 +6,7 @@ image: "/image-glc.png"
 category: "Tourisme"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Peillon**, **Peille** et **Sainte-Agnès** offrent des villages perchés moins fréquentés qu'Èze ou Saint-Paul-de-Vence. Un **taxi villages perchés** est adapté : routes étroites, stationnement quasi inexistant, virages.
@@ -88,4 +88,4 @@ Oui, en fixant un horaire et un point GPS / place du village.
 
 ---
 
-_Article mis à jour le 24 novembre 2026_
+_Article mis à jour le 8 septembre 2026_
