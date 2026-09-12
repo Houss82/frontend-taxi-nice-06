@@ -1116,3 +1116,42 @@ img {
   }
 }
 
+/* Styles pour les figures et légendes dans le blog */
+.prose figure {
+  margin: 2rem 0 !important;
+}
+
+.prose figure img {
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.prose figcaption {
+  text-align: center !important;
+  font-size: 0.9rem !important;
+  color: #64748b !important;
+  margin-top: 0.75rem !important;
+  font-style: italic !important;
+}
+
+/* Style pour les questions-réponses rapides (.va-qa) */
+.va-qa {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+  border: 1px solid #e2e8f0 !important;
+  border-left: 4px solid #0b4f6c !important;
+  border-radius: 0.75rem !important;
+  padding: 1.25rem 1.5rem !important;
+  margin: 1.25rem 0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.va-qa strong {
+  display: block !important;
+  color: #0b4f6c !important;
+  font-size: 1.05rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+
