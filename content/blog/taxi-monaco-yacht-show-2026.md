@@ -6,7 +6,7 @@ image: "/taxi-monaco-yacht-show-2026.png"
 category: "Actualités"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 Le **Monaco Yacht Show 2026** se tient du **23 au 26 septembre** sur le **Port Hercule**, au cœur de la Principauté. Cet événement mondial du yachting de luxe attire chaque année plus de **30 000 visiteurs professionnels et passionnés**, transformant Monaco en épicentre du nautisme haut de gamme.
