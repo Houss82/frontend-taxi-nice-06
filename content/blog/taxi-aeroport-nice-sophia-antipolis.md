@@ -2,7 +2,7 @@
 title: "Taxi Aéroport Nice vers Sophia Antipolis : Transfert Technopole - Prix & Réservation 2026"
 date: "2026-09-01"
 excerpt: "Transfert taxi aéroport Nice → Sophia Antipolis : 20 km, 25-35 minutes. Tarifs fixes, Mercedes premium, suivi de vol. Idéal professionnels tech, congrès et campus. Service 24/7."
-image: "/taxi-aeroport-nice-sophia-antipolis.png"
+image: "/taxi-aeroport-nice-sophia-antipolis-1.jpg"
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
@@ -92,6 +92,8 @@ Nous vous déposons directement devant votre entreprise, votre hôtel ou votre l
 - **Biot village** : 10 minutes, village des verriers
 - **Mougins** : 10-15 minutes
 - **Antibes** : 15 minutes
+
+<img src="/taxi-aeroport-nice-sophia-antipolis-2.jpg" alt="Taxi Mercedes van premium arrivant à Sophia Antipolis devant un campus d'entreprises" style="max-width:100%; border-radius:0.75rem; margin:1.5rem 0;" />
 
 ---
 

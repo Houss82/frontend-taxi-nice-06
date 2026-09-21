@@ -399,6 +399,94 @@ export default async function BlogPostPage({ params }) {
               }}
             />
           )}
+
+          {/* Schema JSON-LD FAQPage pour l'article Villages perchés Peillon / Peille / Sainte-Agnès */}
+          {post.slug === "taxi-villages-perches-peillon-peille" && (
+            <Script
+              id="faq-schema-villages-perches"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "Quels villages perchés visiter près de Nice ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Èze et Saint-Paul-de-Vence restent les plus connus. Pour l'arrière-pays à l'est, Peillon et Peille sont d'excellentes options proches de Nice. Sainte-Agnès convient surtout si vous êtes côté Menton ou si vous voulez un panorama littoral en altitude.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on visiter Peillon et Peille le même jour ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui. C'est même l'association la plus naturelle : les deux villages sont proches et accessibles depuis Nice via le même secteur. Adaptez le temps passé dans chacun selon votre rythme.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peillon ou Peille : lequel choisir ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Choisissez Peillon pour un village très compact en nid d'aigle. Choisissez Peille pour un bourg plus étendu, avec places et patrimoine civil. Idéalement, visitez les deux.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on combiner Sainte-Agnès et Menton ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, c'est l'association la plus logique pour Sainte-Agnès. Comptez une journée confortable pour profiter de Menton et monter au village.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Comment aller à Peillon depuis Nice ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Par la route via la vallée des Paillons, ou en train jusqu'à Sainte-Thècle puis accès au vieux village. Le cœur médiéval se visite à pied depuis la périphérie.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on réserver un taxi pour plusieurs étapes ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui. Vous pouvez demander un circuit avec arrêts (par exemple Peillon puis Peille) et une heure de reprise. Les modalités se précisent à la réservation.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Combien de temps prévoir pour une excursion ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Indicativement : un village = demi-journée ; Peillon + Peille = demi-journée à journée légère ; Menton + Sainte-Agnès = journée. Tout dépend du temps passé sur place et de la circulation.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Le tarif est-il fixé avant le départ ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Pour une course ou un circuit avec Taxi Nice Côte d'Azur, une estimation est communiquée avant validation. Consultez aussi la page tarifs.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on organiser une excursion en groupe ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, selon le véhicule disponible (berline ou van). Indiquez le nombre de passagers et les bagages lors de la demande.",
+                      },
+                    },
+                  ],
+                }),
+              }}
+            />
+          )}
         </div>
       </article>
 

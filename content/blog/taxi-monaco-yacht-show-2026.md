@@ -2,7 +2,7 @@
 title: "Taxi Monaco Yacht Show 2026 : Transferts Port Hercule & Hôtels - Guide Pratique"
 date: "2026-09-15"
 excerpt: "Taxi Monaco Yacht Show 2026 (23-26 sept.) : transferts aéroport Nice, hôtels Monte-Carlo, Port Hercule. Circulation restreinte, réservation obligatoire. Service premium 24/7."
-image: "/taxi-monaco-yacht-show-2026.png"
+image: "/taxi-monaco-yacht-show-2026-1.jpg"
 category: "Actualités"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
@@ -177,6 +177,8 @@ De nombreux visiteurs choisissent de loger à Nice (tarifs plus abordables) et s
 - **Yacht Club de Monaco**
 - **One Monte-Carlo** (centre commercial et restaurants)
 - **Casino de Monte-Carlo**
+
+<img src="/taxi-monaco-yacht-show-2026-2.jpg" alt="Taxi Mercedes van premium devant un hôtel de Monte-Carlo pendant le Monaco Yacht Show" style="max-width:100%; border-radius:0.75rem; margin:1.5rem 0;" />
 
 ---
 
