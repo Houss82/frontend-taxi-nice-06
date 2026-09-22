@@ -6,7 +6,7 @@ image: "/image-glc.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **L'Ariane** est un quartier résidentiel de l'est niçois, en colline, avec des accès parfois étroits. Pour un vol, un rendez-vous en centre-ville ou un trajet médical, un **taxi L'Ariane** évite les correspondances tram / bus et les stationnements difficiles.
