@@ -6,7 +6,7 @@ image: "/images/blog/taxi-ariane-nice.webp"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 keywords:
   - "L'Ariane Nice"
   - "quartier L'Ariane"
