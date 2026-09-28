@@ -16,6 +16,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function ServicesPage() {
@@ -268,8 +269,14 @@ export default function ServicesPage() {
             </h1>
             <div className="w-24 h-1 bg-cyan-400 mx-auto rounded-full mb-8"></div>
             <p className="text-lg md:text-2xl leading-relaxed">
-              Découvrez notre gamme complète de services de transport haut de
-              gamme pour tous vos besoins à Nice et sur la Côte d'Azur
+              Découvrez notre gamme complète de services de{" "}
+              <Link
+                href="/"
+                className="underline underline-offset-4 hover:text-cyan-200"
+              >
+                taxi à Nice
+              </Link>{" "}
+              et sur la Côte d&apos;Azur
             </p>
           </motion.div>
         </div>

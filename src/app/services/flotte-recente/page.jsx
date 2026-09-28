@@ -338,7 +338,7 @@ export default function FlotteRecentePage() {
               <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto">
                 Pour découvrir tous nos services de{" "}
                 <Link
-                  href="/taxi-nice"
+                  href="/"
                   className="text-white font-semibold underline underline-offset-4 hover:text-blue-100 transition-colors"
                 >
                   taxi Nice 24/7

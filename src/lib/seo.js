@@ -5,9 +5,9 @@ export async function generateSEOMetadata() {
   const baseUrl = "https://taxi-nice-06.com";
   const siteName = "Taxi Nice 06";
   const titleBase =
-    "Taxi Nice – Aéroport, gare, CPAM & VSL 24h/24 | Taxi Nice 06";
+    "Taxi Nice | Courses et réservation 24h/24 | Taxi Nice 06";
   const description =
-    "Taxi à Nice : transferts aéroport & gare, conventionné CPAM et VSL. Mercedes GLC & van premium, 24h/24 sur la Côte d'Azur. Réservez en ligne ou au 06 51 68 36 87.";
+    "Taxi à Nice, 24h/24 : courses en ville, réservation en ligne et chauffeur professionnel. Aéroport, gare et trajets sur la Côte d'Azur. 06 51 68 36 87.";
 
   return {
     metadataBase: new URL(baseUrl),

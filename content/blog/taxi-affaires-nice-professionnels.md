@@ -11,7 +11,7 @@ published: true
 
 Nice est l'une des **capitales économiques de la Côte d'Azur** : sièges régionaux, technopole de Sophia Antipolis, congrès au Palais Acropolis, flux aéroportuaire international et rendez-vous à Monaco ou Cannes. Pour un **cadre, un dirigeant ou une entreprise en déplacement**, chaque minute compte : un vol à ne pas manquer, un client à accueillir, un salon à ouvrir à l'heure.
 
-Un **taxi affaires à Nice** n'est pas un simple transport : c'est un **outil de productivité** — ponctualité, image professionnelle, facturation claire et discrétion à bord. Notre service est pensé pour les **entreprises, indépendants et assistant(e)s** qui gèrent des agendas serrés sur Nice et la métropole niçoise.
+Un **taxi affaires à Nice** n'est pas un simple transport : c'est un **outil de productivité** — ponctualité, image professionnelle, facturation claire et discrétion à bord. Ce [service de taxi à Nice](/) est pensé pour les **entreprises, indépendants et assistant(e)s** qui gèrent des agendas serrés sur Nice et la métropole niçoise.
 
 En tant que service de transport local, nous accompagnons chaque jour des **professionnels en mission** vers l'aéroport Nice Côte d'Azur, la gare SNCF, les quartiers d'affaires (L'Arénas, Méridia), Sophia Antipolis, Monaco et Cannes. Nous connaissons les **horaires de pointe, les accès congrès et les contraintes des grands événements** de la Riviera.
 

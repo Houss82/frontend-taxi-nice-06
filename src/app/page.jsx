@@ -121,7 +121,7 @@ export default function Page() {
                 <span className="h1-gradient">Taxi Nice 06</span>
               </span>
               <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-100">
-                Transferts Aéroport & VSL Conventionnés
+                Courses à Nice, 24h/24
               </span>
             </h1>
 
@@ -129,8 +129,9 @@ export default function Page() {
               className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-6 max-w-3xl text-white/95 leading-relaxed animate-slide-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Transferts aéroport de Nice, gares, VSL et excursions à Nice et
-              dans les Alpes-Maritimes
+              Courses à Nice pour vos hôtels, vos rendez-vous et vos trajets
+              locaux, avec réservation en ligne. Aéroport, gare et transport
+              conventionné restent disponibles selon le trajet.
             </p>
 
             <p
@@ -250,15 +251,8 @@ export default function Page() {
                     </strong>{" "}
                     – transferts toutes distances vers Cannes, Antibes,
                     Saint-Tropez, Menton et toute la Côte d'Azur. Suivi de vol,
-                    accueil personnalisé, véhicules haut de gamme. Découvrez
-                    notre{" "}
-                    <Link
-                      href="/"
-                      className="text-blue-600 hover:text-blue-800 underline font-medium"
-                    >
-                      service de taxi Nice 24/7
-                    </Link>{" "}
-                    pour tous vos déplacements.
+                    accueil personnalisé, véhicules haut de gamme. Notre service
+                    de taxi Nice 24/7 couvre tous vos déplacements.
                   </p>
                 </div>
 
@@ -779,14 +773,7 @@ export default function Page() {
             </h2>
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 space-y-4">
               <p className="text-gray-700 leading-relaxed text-lg">
-                Notre société de{" "}
-                <Link
-                  href="/"
-                  className="text-blue-600 hover:text-blue-800 underline font-medium"
-                >
-                  taxi basée à Nice
-                </Link>{" "}
-                assure vos déplacements{" "}
+                Notre société de taxi basée à Nice assure vos déplacements{" "}
                 <strong className="text-blue-600">7j/7</strong> dans tout le
                 département des Alpes-Maritimes : <strong>Nice</strong>,
                 Saint-Laurent du Var, Cagnes-sur-Mer, Villefranche-sur-Mer,
@@ -797,14 +784,8 @@ export default function Page() {
                 expérimentés et parlent <strong>français et anglais</strong>.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Si vous recherchez un{" "}
-                <Link
-                  href="/"
-                  className="text-blue-600 hover:text-blue-800 underline font-medium"
-                >
-                  taxi à Nice
-                </Link>{" "}
-                fiable, ponctuel et avec un véhicule haut de gamme, Taxi Nice 06
+                Si vous recherchez un taxi à Nice fiable, ponctuel et avec un
+                véhicule haut de gamme, Taxi Nice 06
                 est le bon choix. Pour vous aider à choisir entre taxi, bus et
                 tramway selon vos besoins, consultez notre{" "}
                 <Link

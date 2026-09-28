@@ -127,8 +127,13 @@ export default function TaxiNiceNumeroPage() {
                 </p>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed mt-6 text-center">
-                Notre service de taxi à Nice répond à tous vos besoins de
-                transport :{" "}
+                <Link
+                  href="/"
+                  className="text-primary font-semibold underline underline-offset-4 hover:text-primaryDark"
+                >
+                  Notre service de taxi à Nice
+                </Link>{" "}
+                répond à tous vos besoins de transport :{" "}
                 <Link
                   href="/services/taxi-aeroport-nice"
                   className="text-primary font-semibold underline underline-offset-4 hover:text-primaryDark"

@@ -286,7 +286,7 @@ export default function EvenementsMariagesPage() {
               <p className="text-lg text-pink-200 mb-8 max-w-2xl mx-auto">
                 Découvrez aussi notre service complet de{" "}
                 <Link
-                  href="/taxi-nice"
+                  href="/"
                   className="text-white font-semibold underline underline-offset-4 hover:text-pink-100 transition-colors"
                 >
                   taxi Nice 24/7

@@ -487,6 +487,85 @@ export default async function BlogPostPage({ params }) {
               }}
             />
           )}
+
+          {post.slug === "taxi-ariane-nice" && (
+            <Script
+              id="faq-schema-ariane"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "Peut-on réserver un taxi depuis L'Ariane à l'avance ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui. Indiquer l'adresse, le bâtiment si besoin, l'heure et la destination permet d'organiser la prise en charge avant le jour du départ.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on rejoindre l'aéroport de Nice depuis L'Ariane ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui. Précisez la résidence de départ, les bagages, le terminal et l'heure à laquelle vous devez être à l'aéroport. Le détail du service aéroport est sur la page dédiée.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on réserver pour la gare Nice-Ville ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui. L'heure du train et le volume de bagages aident à organiser le départ depuis L'Ariane. Les accès à la gare sont décrits sur la page du secteur gare.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Le véhicule peut-il venir devant une résidence ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, dès lors que l'adresse et l'entrée sont précises. Dans un ensemble de plusieurs bâtiments, le nom de l'immeuble ou le code d'accès évite une attente au mauvais seuil. Un chantier peut imposer un point d'arrêt à proximité plutôt que dans la cour.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Quelles informations faut-il donner pour la prise en charge ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "L'adresse complète, le bâtiment ou l'entrée, la destination, le jour, l'heure, le nombre de personnes et les bagages. Pour un avion, le numéro de vol et le terminal. Pour un train, l'heure de départ.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on partir tôt le matin ou le soir ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Le service est annoncé de jour comme de nuit. Pour un horaire très tôt ou très tard, la réservation préalable permet de confirmer la prise en charge à l'adresse indiquée.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Comment connaître le tarif avant le trajet ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Le prix est indiqué au moment de la réservation, selon le départ, l'arrivée et le véhicule. La page tarifs donne la grille générale. Cet article n'affiche pas de prix par destination.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Peut-on rejoindre l'hôpital Pasteur depuis L'Ariane ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Oui, pour un rendez-vous ou une visite, comme pour une autre adresse niçoise. Un remboursement par l'Assurance Maladie n'est pas automatique : il dépend d'une prescription et des conditions du transport conventionné, expliquées sur la page dédiée.",
+                      },
+                    },
+                  ],
+                }),
+              }}
+            />
+          )}
         </div>
       </article>
 

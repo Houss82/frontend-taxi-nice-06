@@ -317,9 +317,15 @@ export default function ReservationPage() {
               </h1>
               <div className="w-24 h-1 bg-white mx-auto rounded-full mb-8"></div>
               <p className="text-lg lg:text-2xl leading-relaxed max-w-3xl mx-auto">
-                Réservez votre transport en quelques clics. Remplissez le
-                formulaire ci-dessous et nous vous confirmerons votre
-                réservation rapidement.
+                En quelques clics, vous pouvez{" "}
+                <Link
+                  href="/"
+                  className="underline underline-offset-4 hover:text-blue-100"
+                >
+                  réserver un taxi à Nice
+                </Link>
+                . Remplissez le formulaire ci-dessous et nous vous confirmerons
+                votre réservation rapidement.
               </p>
               <p className="text-base lg:text-lg leading-relaxed max-w-3xl mx-auto mt-4 text-white/90">
                 Pour un vol, indiquez le numéro et le terminal : le détail du{" "}
