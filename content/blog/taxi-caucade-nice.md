@@ -6,7 +6,7 @@ image: "/image-glc.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Caucade** se situe à l'ouest de Nice, entre Magnan / La Madeleine et les axes vers l'aéroport. Un **taxi Caucade** est souvent plus simple qu'un enchaînement bus + tram, surtout avec des bagages ou tôt le matin.
