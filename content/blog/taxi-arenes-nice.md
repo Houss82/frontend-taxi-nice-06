@@ -6,7 +6,7 @@ image: "/image-glc.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **L'Arénas** est le quartier d'affaires situé face à l'aéroport Nice Côte d'Azur. Salariés, visiteurs de sièges régionaux et clients d'hôtels d'affaires y ont besoin d'un **taxi L'Arénas** ponctuel, avec facture.
