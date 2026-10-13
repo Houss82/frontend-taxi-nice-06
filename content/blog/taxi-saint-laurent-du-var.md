@@ -6,7 +6,7 @@ image: "/image-glc.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
-published: false
+published: true
 ---
 
 **Saint-Laurent-du-Var** jouxte Nice et l'aéroport. Résidents, clients de **Cap 3000** et voyageurs ont souvent besoin d'un taxi vers Nice, Cannes ou Monaco sans passer par un réseau de bus saturé le week-end.
