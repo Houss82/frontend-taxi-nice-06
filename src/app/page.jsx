@@ -247,12 +247,13 @@ export default function Page() {
                   </div>
                   <p className="text-gray-800 leading-relaxed">
                     <strong className="text-blue-900">
-                      Taxi aéroport de Nice
+                      Courses en taxi à Nice
                     </strong>{" "}
-                    – transferts toutes distances vers Cannes, Antibes,
-                    Saint-Tropez, Menton et toute la Côte d'Azur. Suivi de vol,
-                    accueil personnalisé, véhicules haut de gamme. Notre service
-                    de taxi Nice 24/7 couvre tous vos déplacements.
+                    pour vos trajets en centre-ville, hôtels, rendez-vous
+                    professionnels ou privés. Nous assurons aussi les transferts
+                    vers l&apos;aéroport Nice Côte d&apos;Azur, les gares et les
+                    transports conventionnés, avec véhicules récents et
+                    prise en charge 24h/24.
                   </p>
                 </div>
 

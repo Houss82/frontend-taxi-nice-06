@@ -14,7 +14,7 @@ Selon les statistiques de la [Métropole Nice Côte d'Azur](https://www.nicecote
 
 Cet article vous guide dans le choix du **meilleur mode de transport à Nice** en comparant en détail **taxi, bus et tramway**, avec leurs avantages, leurs limites, leurs tarifs et leurs zones de couverture. Vous découvrirez également les critères essentiels pour choisir un service de taxi fiable et professionnel à Nice.
 
-Pour **réserver directement** un chauffeur et des tarifs annoncés à l’avance (aéroport, gare, trajets sur Nice), utilisez la **[page d’accueil Taxi Nice 06](/)** — ici nous restons sur l’**aide à la décision**, pas sur la prise de commande.
+Pour **réserver directement** un chauffeur et des tarifs annoncés à l’avance (aéroport, gare, trajets sur Nice), utilisez la **[réservation d'un taxi à Nice](/)** — ici nous restons sur l’**aide à la décision**, pas sur la prise de commande.
 
 <div class="kpi-strip">
   <span class="badge success">🚗 Service taxi 24/7</span>

@@ -209,6 +209,7 @@ Pour organiser vos déplacements professionnels sur la Côte d'Azur :
 - **[Guide Transfert Aéroport Nice](/blog/guide-transfert-aeroport-nice)** : Tout savoir sur les transferts depuis l'aéroport
 - **[Taxi Aéroport Nice vers Antibes](/blog/taxi-aeroport-nice-antibes)** : La commune voisine de Sophia Antipolis
 - **[Taxi Groupe Nice : Van 7 Places](/blog/taxi-groupe-nice-van-7-places)** : Transport d'équipes et séminaires
+- **[service de taxi à Nice](/)** : vue d'ensemble des courses et transferts
 - **[Réservation en ligne](/reservation)** : Réservez votre transfert vers Sophia Antipolis
 
 ---

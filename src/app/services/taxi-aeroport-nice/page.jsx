@@ -217,12 +217,12 @@ export default function TransfertsAeroportPage() {
                 </p>
                 <p className="text-lg text-gray-700 mb-8">
                   Pour une course en ville, un trajet médical ou une autre
-                  destination, retrouvez l&apos;ensemble de nos services sur{" "}
+                  destination, retrouvez l&apos;ensemble de nos services via{" "}
                   <Link
                     href="/"
                     className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
                   >
-                    la page d&apos;accueil Taxi Nice 06
+                    Taxi Nice 06
                   </Link>
                   .
                 </p>

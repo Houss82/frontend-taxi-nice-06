@@ -238,7 +238,7 @@ Oui ✅. Le tarif communiqué inclut les péages éventuels et les frais de pris
 
 ## 🚖 Réserver votre transfert aéroport Nice → Èze
 
-Pour réserver votre taxi depuis l'**aéroport de Nice** vers Èze avec nos tarifs détaillés et toutes nos options de service, consultez notre [page de réservation](/reservation).
+Pour réserver votre taxi depuis l'**aéroport de Nice** vers Èze avec nos tarifs détaillés et toutes nos options de service, consultez notre [page de réservation](/reservation). Pour une [réservation d'un taxi à Nice](/) hors transfert aéroport (centre-ville, hôtels, rendez-vous), l'accueil regroupe l'ensemble des prestations.
 
 ---
 

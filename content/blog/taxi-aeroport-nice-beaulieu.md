@@ -226,6 +226,7 @@ Oui ✅. Le tarif communiqué inclut les frais de prise en charge à l'aéroport
 
 ## 📞 Réservez votre transfert Nice Aéroport → Beaulieu
 
+Pour vos autres trajets locaux, consultez aussi notre offre de [taxi à Nice](/).  
 👉 [Réservez votre taxi en ligne](/reservation) ou contactez-nous au **06 51 68 36 87**.
 
 <div class="cta">

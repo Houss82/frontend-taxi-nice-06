@@ -1167,8 +1167,8 @@ export const sectorData = {
     ],
     homepageLink: {
       before:
-        "💡 Cette page se concentre sur les courses locales et déplacements dans le centre-ville de Nice. ",
-      linkText: "Découvrez tous nos services de taxi à Nice",
+        "💡 Cette page se concentre sur les courses locales et déplacements dans le centre-ville de Nice. Pour l’offre globale, consultez notre ",
+      linkText: "service de taxi à Nice",
       after: ".",
       href: "/",
     },
@@ -1177,7 +1177,7 @@ export const sectorData = {
         "Pour préparer vos déplacements dans Nice centre-ville, consultez aussi nos guides et articles dédiés.",
       links: [
         {
-          label: "Découvrez tous nos services de taxi à Nice",
+          label: "Service de taxi à Nice",
           url: "/",
         },
         {
