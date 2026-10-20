@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
   } else if (data.slug === "saint-tropez") {
     title = "Transfert Nice - Saint-Tropez | Navette Premium 24h/24";
   } else if (data.slug === "nice-gare") {
-    title = "Transfert Gare SNCF Nice | Nice-Ville & Riquier";
+    title = "Taxi Gare Nice-Ville & SNCF | Réservation 24h/24";
   } else if (data.slug === "nice-centre-ville") {
     title = "Transfert Centre-Ville Nice | Vieux-Nice & Promenade";
   } else if (data.slug === "nice-hopital-pasteur-2") {
@@ -331,6 +331,13 @@ export default async function SecteurPage({ params }) {
                 className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
               >
                 taxi gare Nice-Ville
+              </Link>
+              . Dépose à l&apos;hôtel :{" "}
+              <Link
+                href="/blog/taxi-hotels-nice-transferts"
+                className="text-primary font-semibold hover:text-primary/80 transition-colors underline"
+              >
+                guide taxi vers les hôtels de Nice
               </Link>
               . Plusieurs passagers ou beaucoup de valises :{" "}
               <Link

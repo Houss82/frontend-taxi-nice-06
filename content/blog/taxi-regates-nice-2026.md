@@ -124,7 +124,7 @@ Les **Régates de Nice** se déroulent généralement au **printemps et en été
 
 ## 🔗 Liens utiles
 
-- [Taxi Nice centre → Port](/secteurs/nice) – Tous nos secteurs
+- [Réservation de taxi au Port Lympia](/secteurs/nice-port-lympia) – Prise en charge autour du port
 - [Transferts Aéroport](/services/taxi-aeroport-nice) – Arrivée à Nice
 - [Réservation en ligne](/reservation) – Réservez votre taxi
 - [Ville de Nice – Événements](https://www.nice.fr/) – Calendrier des régates

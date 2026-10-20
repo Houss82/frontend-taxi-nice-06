@@ -202,7 +202,7 @@ ou [contactez-nous via notre site](https://taxi-nice-06.com/contact) au **06 51 
 
 Pour découvrir tous nos services (transferts aéroport, VSL, excursions), consultez le [**taxi à Nice — accueil du service**](/).
 
-**Arrivée en train à Nice ?** Découvrez notre [service Taxi Nice Gare SNCF](/blog/taxi-nice-gare-sncf) pour un transport rapide et fiable depuis la gare vers l'aéroport ou votre destination.
+**Arrivée en train à Nice ?** Réservez via [Taxi Gare Nice](/secteurs/nice-gare). Pour les sorties et points de rendez-vous à Nice-Ville, voir le [guide pratique gare SNCF](/blog/taxi-nice-gare-sncf).
 
 <div class="cta">
 <a class="cta-button" href="/reservation">📲 Réserver maintenant</a>

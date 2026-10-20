@@ -359,8 +359,15 @@ export default function TransfertsAeroportPage() {
                   </h3>
                   <p className="mb-3">
                     Accueil au terminal d&apos;arrivée, puis transfert vers le
-                    centre-ville, un hôtel, un domicile, la gare SNCF ou la
-                    Promenade des Anglais.
+                    centre-ville, un hôtel, un domicile, la gare SNCF, la
+                    Promenade des Anglais ou le{" "}
+                    <Link
+                      href="/secteurs/nice-port-lympia"
+                      className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
+                    >
+                      Port Lympia
+                    </Link>
+                    .
                   </p>
                   <p>
                     Le numéro de vol permet d&apos;ajuster l&apos;attente en cas
@@ -373,10 +380,17 @@ export default function TransfertsAeroportPage() {
                     </Link>
                     . Arrivée en train :{" "}
                     <Link
-                      href="/blog/taxi-nice-gare-sncf"
+                      href="/secteurs/nice-gare"
                       className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
                     >
                       taxi gare Nice-Ville
+                    </Link>
+                    . Dépose à l&apos;hôtel :{" "}
+                    <Link
+                      href="/blog/taxi-hotels-nice-transferts"
+                      className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
+                    >
+                      taxi vers les hôtels de Nice
                     </Link>
                     .
                   </p>

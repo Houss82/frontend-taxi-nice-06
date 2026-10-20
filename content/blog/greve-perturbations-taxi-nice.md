@@ -153,7 +153,7 @@ Nos chauffeurs locaux connaissent **tous les itinéraires alternatifs** : voie r
 
 Découvrez tous nos [transferts aéroport](/services/taxi-aeroport-nice) avec tarifs fixes garantis, sans surprise.
 
-💡 **Arrivée en train à Nice ?** Notre service [Taxi Nice Gare](/secteurs/nice-gare) vous accueille à la gare SNCF avec un suivi personnalisé de votre train. Pour une vue d'ensemble de tous nos services, consultez notre [page principale Taxi Nice 24/7](/taxi-nice).
+💡 **Arrivée en train à Nice ?** Notre service [Taxi Nice Gare](/secteurs/nice-gare) vous accueille à la gare SNCF avec un suivi personnalisé de votre train. Pour une vue d'ensemble de tous nos services, consultez notre [page d'accueil Taxi Nice 06](/).
 
 ---
 
@@ -162,7 +162,8 @@ Découvrez tous nos [transferts aéroport](/services/taxi-aeroport-nice) avec ta
 Pour approfondir vos connaissances sur nos services :
 
 - **Service principal** : <a href="/">Taxi à Nice 24h/24 — accueil</a> - Page principale avec tous nos services
-- **Taxi Nice Gare** : <a href="/blog/taxi-nice-gare-sncf">Taxi Nice Gare SNCF – Service rapide 24/7</a> - Guide complet pour vos trajets depuis la gare
+- **Taxi Nice Gare** : <a href="/secteurs/nice-gare">Taxi Gare Nice — réservation</a> - Courses depuis Nice-Ville, Riquier et Saint-Augustin
+- **Guide gare Nice-Ville** : <a href="/blog/taxi-nice-gare-sncf">Sorties, accès et prise en charge</a> - Informations pratiques sur place
 - **Taxi Nice Centre-Ville** : <a href="/secteurs/nice-centre-ville">Courses locales dans le centre-ville de Nice</a> - Déplacements dans Nice centre et Promenade des Anglais
 - **Accueil site** : <a href="/">Vue d’ensemble taxi & transferts Nice</a> - Puis pages secteurs et services
 - **Transferts Aéroport** : <a href="/services/taxi-aeroport-nice">Guide complet des transferts aéroport Nice</a>

@@ -748,20 +748,20 @@ export const sectorData = {
     slug: "nice-gare",
     cityName: "Nice Gare",
     hero: {
-      title: "Transfert Gare SNCF Nice",
-      highlight: "Gare de Nice-Ville & Gares SNCF",
+      title: "Taxi Gare Nice",
+      highlight: "Nice-Ville, Riquier et Saint-Augustin",
       subtitle:
-        "Taxi depuis la gare de Nice-Ville, Nice Riquier, Nice Saint-Augustin vers toute destination",
+        "Réservez un taxi au départ ou à l'arrivée des gares SNCF de Nice, 24h/24",
       image: "/gare-jour copie.jpeg",
       imageAlt: "Taxi à la gare de Nice-Ville",
     },
     introduction: [
-      "Cette page détaille nos services de transfert spécifiquement pour les gares SNCF de Nice : Gare de Nice-Ville (gare principale), Gare de Nice Riquier et Gare de Nice Saint-Augustin.",
-      "Nous assurons vos transferts depuis et vers toutes les gares SNCF de Nice avec ponctualité garantie. Nos chauffeurs connaissent parfaitement les accès aux gares, les zones de stationnement taxi et les horaires des trains pour vous éviter tout retard.",
+      "Réservez un taxi au départ ou à destination des gares SNCF de Nice : Nice-Ville (gare principale TGV/TER), Nice-Riquier et Nice-Saint-Augustin. Nous prenons en charge les voyageurs avec bagages pour rejoindre un hôtel, un quartier de Nice ou l'aéroport Nice Côte d'Azur.",
+      "Nos chauffeurs connaissent les accès aux gares et les zones de prise en charge. Indiquez votre numéro de train à la réservation pour synchroniser l'accueil à votre arrivée.",
     ],
     secondaryIntro: [
-      "Que vous arriviez en TGV, TER ou Intercités, votre taxi vous attend à la sortie de la gare avec une pancarte nominative. Nous suivons votre train en temps réel et ajustons notre arrivée en cas de retard.",
-      "Depuis la gare de Nice-Ville, nous vous emmenons vers l'aéroport Nice Côte d'Azur, Monaco, Cannes, Antibes, le centre-ville de Nice ou toute autre destination sur la Côte d'Azur.",
+      "Que vous arriviez en TGV, TER ou Intercités, votre taxi peut vous attendre à la sortie de la gare. En cas de retard annoncé, nous adaptons l'horaire de prise en charge lorsque le numéro de train est communiqué.",
+      "Depuis Nice-Ville, Nice-Riquier ou Nice-Saint-Augustin, nous desservons le centre-ville, les hôtels, l'aéroport Nice Côte d'Azur, Monaco, Cannes, Antibes et le reste de la Côte d'Azur.",
     ],
     servicesTitle: "Services taxi depuis les gares SNCF de Nice",
     services: [
@@ -913,8 +913,8 @@ export const sectorData = {
     ],
     homepageLink: {
       before:
-        "💡 Cette page se concentre sur les transferts depuis les gares SNCF de Nice. ",
-      linkText: "Découvrez tous nos services de taxi à Nice",
+        "💡 Cette page est dédiée à la réservation d'un taxi depuis ou vers les gares SNCF de Nice. ",
+      linkText: "Voir tous les services de taxi à Nice",
       after: ".",
       href: "/",
     },
@@ -923,16 +923,20 @@ export const sectorData = {
         "Pour préparer vos trajets depuis les gares de Nice, consultez aussi nos guides et articles dédiés.",
       links: [
         {
-          label: "Découvrez tous nos services de taxi à Nice",
-          url: "/",
+          label: "Sorties, accès et prise en charge à Nice-Ville",
+          url: "/blog/taxi-nice-gare-sncf",
+        },
+        {
+          label: "Correspondance train → aéroport Nice",
+          url: "/blog/taxi-nice-gare-aeroport",
         },
         {
           label: "Guide Centre-Ville",
           url: "https://taxi-nice-06.com/secteurs/nice-centre-ville",
         },
         {
-          label: "Gare → Aéroport : Guide Complet",
-          url: "/blog/taxi-nice-gare-aeroport",
+          label: "Taxi au Port Lympia",
+          url: "/secteurs/nice-port-lympia",
         },
       ],
     },
@@ -940,7 +944,7 @@ export const sectorData = {
       {
         title: "Transferts gare → aéroport",
         description:
-          "Transfert direct depuis les gares SNCF de Nice vers l'aéroport Nice Côte d'Azur avec suivi train.",
+          "Transfert direct depuis les gares SNCF de Nice vers l'aéroport Nice Côte d'Azur lorsque le numéro de train est communiqué à la réservation.",
       },
       {
         title: "Transferts gare → destinations Côte d'Azur",
@@ -958,12 +962,12 @@ export const sectorData = {
       {
         title: "Ponctualité à la gare",
         description:
-          "Votre taxi arrive en avance à la gare et vous attend même en cas de retard de train grâce au suivi en temps réel.",
+          "Votre taxi peut arriver en avance à la gare ; l'horaire est ajusté si un retard de train est annoncé et communiqué.",
       },
       {
         title: "Accueil personnalisé",
         description:
-          "Pancarte nominative, aide aux bagages et accueil chaleureux à la sortie de votre train.",
+          "Pancarte nominative et aide aux bagages à la sortie de votre train, sur réservation.",
       },
       {
         title: "Facturation détaillée",
@@ -2043,8 +2047,8 @@ export const sectorData = {
       "Indiquez le navire, l'heure d'accostage ou d'embarquement, et le nombre de valises. Les accès quai peuvent être filtrés : le chauffeur vous indique le point de rendez-vous autorisé le jour J.",
     ],
     secondaryIntro: [
-      "Les correspondances les plus demandées depuis le port sont l'aéroport (Terminal 1 ou 2), la gare de Nice-Ville, le Vieux-Nice et les hôtels du centre. Comptez environ 20 à 35 minutes vers l'aéroport et 10 à 20 minutes vers la gare, selon le trafic.",
-      "Pour 5 passagers ou plus, ou un volume important de bagages, le van est souvent plus adapté que la berline. Le prix de la course vous est communiqué à la réservation.",
+      "Les correspondances les plus demandées depuis le port sont l'aéroport Nice Côte d'Azur (Terminal 1 ou 2), la gare de Nice-Ville, le Vieux-Nice et les hôtels du centre ou de la Promenade. Comptez environ 20 à 35 minutes vers l'aéroport et 10 à 20 minutes vers la gare, selon le trafic.",
+      "Mont-Boron, juste au-dessus du port, est un quartier résidentiel distinct : les courses vers une villa ou une résidence sur les hauteurs ne se confondent pas avec une prise en charge aux quais. Pour 5 passagers ou plus, ou un volume important de bagages, le van est souvent plus adapté que la berline. Le prix de la course vous est communiqué à la réservation.",
     ],
     servicesTitle: "Ce que nous prenons en charge au port",
     services: [
@@ -2226,6 +2230,10 @@ export const sectorData = {
         {
           label: "Van (groupes et bagages)",
           url: "/services/van-premium",
+        },
+        {
+          label: "Taxi vers un hôtel à Nice",
+          url: "/blog/taxi-hotels-nice-transferts",
         },
         {
           label: "Mont-Boron (quartier, pas le port)",

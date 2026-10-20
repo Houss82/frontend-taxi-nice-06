@@ -317,7 +317,7 @@ Chez **Taxi Nice Côte d'Azur**, nous mettons tout en œuvre pour vous offrir la
 ## 🎯 Nos services premium
 
 - **[Transfert Aéroport](/services/taxi-aeroport-nice)** - Service 24/7 avec suivi de vol
-- **[Taxi Nice Gare SNCF](/blog/taxi-nice-gare-sncf)** - Service rapide depuis la gare 24/7
+- **[Taxi Gare Nice](/secteurs/nice-gare)** - Réservation depuis Nice-Ville, Riquier et Saint-Augustin
 - **[Excursions Côte d'Azur](/services/excursions-decouvertes)** - Circuits personnalisés avec guide
 - **[Taxi conventionné Nice](/services/vsl)** - Transport médical assis à Nice
 - **[Transport Groupe](/services)** - Vans jusqu'à 8 passagers

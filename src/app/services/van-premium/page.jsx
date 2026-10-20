@@ -245,6 +245,7 @@ export default function VanPremiumPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
               {[
                 ["Gare de Nice-Ville", "/secteurs/nice-gare", "Arrivée en train, bagages et correspondance."],
+                ["Port Lympia", "/secteurs/nice-port-lympia", "Escale, bagages et transfert depuis le port de Nice."],
                 ["Monaco", "/secteurs/monaco", "Transfert de groupe vers la Principauté."],
                 ["Cannes", "/secteurs/cannes", "Séjour, congrès ou déplacement sur la Croisette."],
                 ["Antibes", "/secteurs/antibes", "Juan-les-Pins, port Vauban ou Sophia Antipolis."],
