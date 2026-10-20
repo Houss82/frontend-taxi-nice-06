@@ -531,7 +531,7 @@ Pour organiser vos déplacements professionnels sur la Côte d'Azur :
 - 👉 **[Transferts événements](/services/transferts-evenements)** — salons et congrès
 - 👉 **[Taxi groupe Nice — Van 7 places](/blog/taxi-groupe-nice-van-7-places)** — transport d'équipes
 - 👉 **[Guide transfert aéroport Nice](/blog/guide-transfert-aeroport-nice)** — tout savoir sur l'aéroport
-- 👉 **[Tarifs taxi Nice 2026](/blog/tarifs-taxi-nice-2026)** — grille tarifaire complète
+- 👉 **[Tarifs taxi Nice](/tarifs)** — grille tarifaire indicative
 - 👉 **[Taxi Acropolis & quartiers centraux](/blog/taxi-pasteur-saint-roch-riquier-republique-acropolis)** — congrès et centre-ville
 - 👉 **[Réservation en ligne](/reservation)** — réservez votre taxi affaires
 - 👉 **[Contact](/contact)** — compte entreprise et devis

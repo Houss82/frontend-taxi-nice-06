@@ -2,7 +2,7 @@
 title: "Taxi L'Arénas Nice : Quartier d'affaires & Aéroport"
 date: "2026-10-06"
 excerpt: "Taxi L'Arénas Nice : sièges d'entreprises face à l'aéroport, hôtels d'affaires, transferts T1/T2. Service professionnels 24/7."
-image: "/image-glc.png"
+image: "/images/blog/taxi-arenas-nice-affaires.webp"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"

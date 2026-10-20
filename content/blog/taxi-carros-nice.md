@@ -2,7 +2,7 @@
 title: "Taxi Carros : Zone industrielle, Nice & Aéroport"
 date: "2026-10-20"
 excerpt: "Taxi Carros (06) : zone industrielle, Carros-Le-Broc, transferts Nice et aéroport. Idéal salariés, logistique et rendez-vous médicaux."
-image: "/image-glc.png"
+image: "/images/blog/taxi-carros-zone-industrielle.webp"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"

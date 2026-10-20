@@ -1,11 +1,14 @@
 name: Auto Publish Articles
 
 on:
-  schedule:
-    # Exécute tous les jours à 22h15 heure française (21h15 UTC en hiver, 20h15 UTC en été)
-    # MODIFIÉ POUR TEST - À remettre à 17h00 UTC après le test
-    - cron: '15 21 * * *'
-  workflow_dispatch: # Permet de déclencher manuellement
+  # SUSPENDU temporairement (audit SEO — oct. 2026) : pas de publication automatique.
+  # Pour réactiver le calendrier quotidien, décommenter le bloc schedule ci-dessous.
+  # schedule:
+  #   # Tous les jours à 21h15 UTC
+  #   - cron: '15 21 * * *'
+
+  # Exécution manuelle contrôlée uniquement (Actions → Run workflow)
+  workflow_dispatch:
 
 permissions:
   contents: write # Nécessaire pour push les changements
@@ -79,4 +82,3 @@ jobs:
       - name: No changes
         if: steps.git-check.outputs.has_changes != 'true'
         run: echo "✅ No articles to publish today"
-

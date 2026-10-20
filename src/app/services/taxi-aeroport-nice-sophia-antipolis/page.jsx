@@ -345,6 +345,14 @@ export default function TaxiAeroportSophiaPage() {
                 >
                   page taxi aéroport Nice
                 </Link>
+                . Pour les zones de la technopole et les conseils trafic, voir
+                aussi le{" "}
+                <Link
+                  href="/blog/taxi-aeroport-nice-sophia-antipolis"
+                  className="text-cyan-600 font-semibold underline underline-offset-4 hover:text-cyan-700 transition-colors"
+                >
+                  guide pratique aéroport → Sophia Antipolis
+                </Link>
                 .
               </p>
             </div>

@@ -167,6 +167,7 @@ Ne laissez rien au hasard pour votre arrivée à Nice. Profitez d'un service pre
 Découvrez également nos autres services :
 
 - **[Transferts Aéroport](/services/taxi-aeroport-nice)** - Service complet 24/7
+- **[Aéroport Nice → Sophia Antipolis](/blog/taxi-aeroport-nice-sophia-antipolis)** - Zones, trafic et conseils technopole
 - **[Taxi Gare Nice](/secteurs/nice-gare)** - Réservation taxi depuis les gares SNCF
 - **[Taxi vers un hôtel à Nice](/blog/taxi-hotels-nice-transferts)** - Dépose à l'hébergement après l'arrivée
 - **[Excursions Côte d'Azur](/services/excursions-decouvertes)** - Circuits personnalisés

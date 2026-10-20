@@ -135,6 +135,7 @@ Cet article vous présente notre **service taxi famille à Nice** : transferts a
 ## 🔗 Liens utiles
 
 - [Taxi plages Nice](/blog/taxi-plages-nice-2026) – Accès plages en famille
+- [Taxi groupe : quand choisir un van](/blog/taxi-groupe-nice-van-7-places) – passagers et bagages
 - [Transferts Aéroport](/services/taxi-aeroport-nice) – Arrivée à Nice
 - [Réservation en ligne](/reservation) – Réservez votre taxi famille
 

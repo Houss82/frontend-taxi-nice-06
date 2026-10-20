@@ -137,8 +137,8 @@ Cet article vous présente notre **service de taxi pour sorties restaurants à N
 
 ## 🔗 Liens utiles
 
-- [Taxi Nice centre](/secteurs/nice) – Tous nos secteurs
-- [Réservation en ligne](/reservation) – Réservez votre taxi
+- [Déplacements de nuit à Nice](/blog/taxi-nuit-nice-service-nocturne) – après tram / bus, retours tardifs
+- [Réservation en ligne](/reservation) – Réserver votre taxi
 - [Guide Nice](/blog/5-lieux-incontournables-nice-2025) – Lieux à découvrir
 
 ---

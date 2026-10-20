@@ -372,6 +372,7 @@ Péninsule de luxe avec ses résidences prestigieuses, ses hôtels 5 étoiles (c
 ## 🔗 Découvrez nos autres articles
 
 - 👉 [Taxi aéroport Nice vers Cannes : durée, tarifs et conseils](/blog/taxi-aeroport-nice-cannes)
+- 👉 [Aéroport Nice → Sophia Antipolis : trajet et zones](/blog/taxi-aeroport-nice-sophia-antipolis)
 - 👉 [Taxi aéroport Nice vers Saint-Tropez : durée, tarifs et conseils](/blog/taxi-aeroport-nice-saint-tropez)
 - 👉 [Taxi aéroport Nice vers Menton : durée, tarifs et conseils](/blog/taxi-aeroport-nice-menton)
 - 👉 [Transferts Nice - Antibes : service complet et réservation](/secteurs/antibes)

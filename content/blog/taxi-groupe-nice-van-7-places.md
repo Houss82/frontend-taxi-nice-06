@@ -1,211 +1,135 @@
 ---
-title: "Taxi Van Nice 7 Places – Mercedes Classe V : Tarifs, Réservation & Service Groupe 2025"
+title: "Taxi Groupe à Nice : Quand Choisir un Van 7 Places ?"
 date: "2025-11-27"
-excerpt: "Besoin d'un taxi pour un groupe à Nice ? Profitez d'un Van Mercedes Classe V 7 places, idéal pour familles, amis, entreprises et transferts aéroport. Service premium disponible 24/7."
+excerpt: "Guide pratique pour les déplacements en groupe à Nice : passagers, bagages, berline ou van, organisation aéroport et événements. Complément de la page van premium."
 image: "/taxi-aeroport-nice-van-7-plaves.png"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
 ---
 
-# 🚐 Taxi Groupe à Nice – Van 7 Places Premium Mercedes Classe V
+Voyager à **plusieurs** à Nice (famille, amis, équipe) soulève surtout des questions pratiques : combien de places réellement disponibles une fois les valises chargées, faut-il une ou plusieurs voitures, comment caler l’horaire à l’aéroport ou pour un événement. Ce guide répond à ces critères.
 
-Voyager à plusieurs peut devenir compliqué : plusieurs bagages, organisation difficile, besoin de place et surtout d'un trajet confortable. Selon les données de l'[Office de Tourisme de Nice](https://www.nicecotedazur.org), **plus de 60% des visiteurs** arrivent à Nice en groupe (familles, amis, entreprises), et la majorité d'entre eux recherchent une solution de transport adaptée pour éviter les complications liées aux déplacements en groupe.
+L’offre commerciale du véhicule (présentation, réservation du van) est détaillée sur la page **[taxi van Nice avec chauffeur](/services/van-premium)**. Ici, l’angle reste **informationnel** : quand un van 7 places est pertinent, et comment préparer le trajet.
 
-Notre service **Taxi Groupe à Nice**, avec **Mercedes Classe V (jusqu'à 7 passagers)**, est la solution parfaite pour tous vos déplacements en famille, entre amis ou en entreprise. Le [Mercedes Classe V](https://www.mercedes-benz.fr/passengercars/models/van/v-class/overview.html#at-a-glance) est reconnu comme l'un des vans premium les plus confortables et spacieux du marché, offrant un niveau de confort et de sécurité exceptionnel pour les trajets longue distance.
-
-En tant que service de transport local, nous accompagnons chaque année **plus de 2 000 groupes** vers leurs destinations sur la Côte d'Azur, connaissant parfaitement les **contraintes d'accès, les besoins spécifiques des familles nombreuses, les événements locaux et les meilleurs itinéraires** pour garantir un trajet serein et confortable.
+Selon l'[Office de Tourisme de Nice](https://www.nicecotedazur.org), une part importante des visiteurs se déplacent en groupe. Sur le terrain, les freins les plus fréquents sont le volume de bagages, les correspondances en transports en commun et la difficulté à garder tout le monde dans le même véhicule.
 
 <div class="kpi-strip">
   <span class="badge success">✅ Jusqu'à 7 passagers</span>
-  <span class="badge info">🚐 Mercedes Classe V Premium</span>
-  <span class="badge success">💼 Idéal familles & groupes</span>
-  <span class="badge info">⏱ Disponible 24/7</span>
+  <span class="badge info">🧳 Bagages à anticiper</span>
+  <span class="badge success">👨‍👩‍👧‍👦 Familles & équipes</span>
+  <span class="badge info">✈️ Aéroport & événements</span>
 </div>
 
 ---
 
-## 📊 Taxi Groupe Nice en chiffres : statistiques et données authentiques
+## Critères pour choisir berline ou van
 
-Selon nos statistiques internes et les données de l'[Aéroport Nice Côte d'Azur](https://www.nice.aeroport.fr/), le service de taxi groupe représente :
+Avant de réserver, clarifiez :
 
-- **Plus de 2 000 groupes transportés** chaque année (familles, amis, entreprises)
-- **35% de nos clients** voyagent en groupe de 4 à 7 personnes
-- **Pic de demande** : été (juillet-août), événements (Carnaval, festivals), week-ends
-- **Trajets les plus demandés** : Aéroport → Hôtels (45%), Nice → Cannes/Monaco (30%), Excursions (25%)
-- **Taux de satisfaction** : 98% de clients satisfaits du confort et de l'espace
-- **Capacité bagages** : Jusqu'à 7 valises cabine ou 4 grandes valises + petits sacs
+1. **Nombre exact de passagers** (enfants inclus)
+2. **Volume de bagages** (grandes valises, poussette, matériel)
+3. **Type de trajet** : aéroport, hôtel, Cannes / Monaco, excursion
+4. **Contrainte horaire** : vol, cérémonie, début de séminaire
 
-**Le défi commun** : Les groupes rencontrent souvent des difficultés avec les transports en commun (multiples correspondances, bagages volumineux) ou les véhicules standards (manque d'espace, confort limité). Un van 7 places premium résout tous ces problèmes en un seul trajet confortable.
+En règle générale : **jusqu’à 3–4 passagers avec bagages légers**, une berline suffit souvent ; **à partir de 5 passagers** ou avec beaucoup de valises, un van évite de scinder le groupe. La configuration exacte se confirme à la réservation — voir aussi la [page van premium](/services/van-premium).
+
+---
+
+## 📊 Déplacements en groupe à Nice : ce qui compte vraiment
+
+Les demandes en van concernent le plus souvent :
+
+- **Transferts aéroport ↔ hôtel** avec plusieurs valises
+- **Nice ↔ Cannes / Monaco / Antibes** pour un événement ou un séjour
+- **Familles et petites équipes** qui veulent rester dans le même véhicule
+- **Pics saisonniers** : été, Carnaval, festivals, week-ends chargés
+
+**Le défi courant** : transports en commun peu pratiques avec beaucoup de bagages, ou plusieurs berlines à coordonner. Un van peut regrouper passagers et valises **si la configuration le permet** — à confirmer à la réservation (nombre de personnes + volume des bagages). Voir la [page van premium](/services/van-premium).
 
 <div class="info-box">
-<strong>💡 Expertise locale :</strong> Selon nos données internes, **85% des groupes** qui réservent un van 7 places le font pour éviter les complications liées aux transports en commun ou aux véhicules trop petits. Nos chauffeurs connaissent parfaitement les besoins spécifiques des familles nombreuses, les événements locaux et les meilleurs itinéraires pour garantir un trajet optimal.
+<strong>💡 Conseil :</strong> Indiquez toujours le nombre exact de passagers et une estimation des bagages. La capacité utile dépend du véhicule disponible ce jour-là, pas d’une promesse générique « 7 places + 7 valises ».
 </div>
 
 ---
 
-## 🚐 Pourquoi choisir un Van Mercedes Classe V 7 places ?
+## 🚐 Quand un van type Classe V est pertinent ?
 
-Le Mercedes Classe V est le véhicule parfait pour les groupes grâce à ses caractéristiques premium et son confort exceptionnel. Selon les spécifications techniques du [Mercedes Classe V](https://www.mercedes-benz.fr/passengercars/models/van/v-class/overview.html#at-a-glance), ce van offre :
+Un van spacieux (selon disponibilité de la flotte, souvent un modèle type Mercedes Classe V) convient surtout lorsque vous devez **réunir plusieurs passagers et des bagages** dans un seul trajet.
 
-### Avantages techniques du Mercedes Classe V
+### Points utiles à vérifier à la réservation
 
-- **Espace intérieur** : 5,14 mètres de longueur, 1,92 mètres de largeur, 1,88 mètres de hauteur
-- **Capacité** : Jusqu'à 7 passagers + conducteur
-- **Coffre** : 1 410 litres de volume de chargement (le plus grand de sa catégorie)
-- **Portes coulissantes** : Accès facilité pour tous les passagers
-- **Climatisation multi-zones** : Contrôle indépendant pour chaque zone
-- **Confort** : Sièges individuels réglables, suspension adaptative, isolation phonique renforcée
-- **Sécurité** : 7 airbags, système de freinage d'urgence, assistance à la conduite
+- **Nombre de places** : jusqu’à plusieurs passagers selon la configuration du véhicule du jour
+- **Bagages** : volume à préciser (grandes valises, poussette, etc.)
+- **Accès** : portes latérales souvent plus pratiques pour les familles
+- **Climatisation** et confort pour les trajets plus longs
+- **Wi‑Fi** : connexion possible **selon disponibilité** du véhicule (pas un équipement garanti sur chaque course)
 
-### Cas d'usage idéaux
+### Cas d'usage fréquents
 
-Le Mercedes Classe V est parfait pour :
-
-- **Familles nombreuses** : Espace pour enfants, poussettes, équipements de plage
-- **Groupes d'amis** : Sorties soirées, festivals, événements sportifs
-- **Déplacements professionnels** : Séminaires, congrès, événements d'entreprise
-- **Transferts aéroport** : Arrivées/départs en groupe avec bagages volumineux
-- **Voyages touristiques** : Excursions Côte d'Azur, visites de sites, découvertes régionales
-- **Événements** : Mariages, anniversaires, cérémonies
+- **Familles** : enfants, poussette, valises
+- **Groupes d'amis** : soirées, festivals, événements sportifs
+- **Déplacements professionnels** : petites équipes, séminaires
+- **Transferts aéroport** : arrivées/départs groupés
+- **Excursions** ou événements (mariage, cérémonie) — horaires à caler à l’avance
 
 <div class="content-box">
-<strong>🎯 Avantages spécifiques pour les groupes :</strong>
+<strong>🎯 À retenir pour les groupes :</strong>
 
-- **Grand coffre** : Jusqu'à 7 valises cabine ou 4 grandes valises + petits sacs
-- **Espace large et confortable** : Sièges individuels, espace pour les jambes optimal
-- **Portes coulissantes** : Accès facilité même dans les espaces restreints
-- **Climatisation zone arrière** : Contrôle indépendant pour le confort de tous
-- **Conduite ultra-silencieuse** : Isolation phonique renforcée pour les trajets longue distance
-- **Wi-Fi gratuit** : Connexion internet à bord pour tous les passagers
-- **Charges USB** : Prise de charge pour chaque passager
+- Un seul véhicule peut éviter de scinder le groupe **si** passagers + bagages tiennent dans la config. confirmée
+- Indiquez poussette ou équipements volumineux dès la réservation
+- Pour l’offre et la réservation du service : <a href="/services/van-premium">taxi van Nice avec chauffeur</a>
 </div>
 
-<img src="/intérieur-van-famille.jpeg" alt="Taxi groupe Nice van 7 places Mercedes Classe V - Service premium pour familles et groupes avec grand coffre et confort optimal" style="max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1.5rem 0;" />
+<img src="/intérieur-van-famille.jpeg" alt="Intérieur d’un van taxi à Nice pour trajet en famille ou en groupe" style="max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1.5rem 0;" />
 
 ---
 
-## 📍 Trajets les plus demandés pour les groupes à Nice
+## 📍 Trajets fréquents pour les groupes à Nice
 
-Selon nos statistiques internes, voici les trajets les plus fréquents pour les groupes :
+Exemples de trajets souvent demandés (durées indicatives selon trafic) :
 
-<div class="section-box">
-<strong>🚗 Top 5 des trajets groupes les plus demandés :</strong>
+1. **Aéroport de Nice → hôtels / centre** — environ 15–30 min selon la zone
+2. **Nice → Cannes** — souvent utile pour festivals, salons, hôtels
+3. **Nice → Monaco** — événements, hôtels, correspondances
+4. **Nice → Antibes / Juan-les-Pins** — plages, villas, Jazz
+5. **Excursions** — Èze, Saint-Paul-de-Vence, Menton, Grasse, etc.
 
-1. **Aéroport de Nice → Hôtels de Nice** (45% des demandes)
+**Prix** : communiqué à la réservation selon horaire, véhicule et adresses. Consultez la [page tarifs](/tarifs) et la [page van premium](/services/van-premium).
 
-   - Distance : 5-15 km selon la zone
-   - Durée : 15-30 minutes
-   - Tarif : À partir de 45€
-
-2. **Nice → Cannes** (20% des demandes)
-
-   - Distance : ~35 km
-   - Durée : 35-45 minutes
-   - Tarif : À partir de 80€
-   - Événements : MIPIM, Festival de Cannes, événements d'entreprise
-
-3. **Nice → Monaco** (15% des demandes)
-
-   - Distance : ~20 km
-   - Durée : 25-35 minutes
-   - Tarif : À partir de 70€
-   - Événements : Grand Prix, casinos, yachts, hôtels de luxe
-
-4. **Nice → Antibes / Juan-les-Pins** (12% des demandes)
-
-   - Distance : ~20 km
-   - Durée : 25-35 minutes
-   - Tarif : À partir de 65€
-   - Événements : Jazz Festival, plages, villas
-
-5. **Excursions Côte d'Azur** (8% des demandes)
-   - Destinations : Èze, Saint-Paul-de-Vence, Menton, Grasse
-   - Durée : Variable selon la destination
-   - Tarif : Sur devis selon l'itinéraire
-   </div>
-
-**💡 Conseil** : Pour les événements majeurs (Festival de Cannes, Grand Prix de Monaco, Carnaval de Nice), réservez votre van **au moins 2 semaines à l'avance** pour garantir la disponibilité et éviter les tarifs majorés.
+**Conseil** : pour Festival de Cannes, Grand Prix, Carnaval ou forte saison, réservez dès que vos horaires sont connus.
 
 ---
 
-## 💰 Tarifs et options pour votre taxi groupe
+## 💰 Tarifs et options
 
-Nos tarifs pour le van 7 places sont **transparents et fixes**, sans surprise. Voici les tarifs indicatifs selon les trajets les plus courants :
+Le prix de la course dépend de l’horaire, des adresses et du véhicule. Il vous est **communiqué à la réservation**.
 
-<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-  <thead>
-    <tr style="background-color: #f3f4f6;">
-      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Trajet</th>
-      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Distance</th>
-      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Durée</th>
-      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600;">Tarif indicatif</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Aéroport Nice → Centre-ville</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">~8 km</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">15-20 min</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>45€ - 55€</strong></td>
-    </tr>
-    <tr style="background-color: #f9fafb;">
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Nice → Cannes</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">~35 km</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">35-45 min</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>80€ - 100€</strong></td>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Nice → Monaco</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">~20 km</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">25-35 min</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>70€ - 85€</strong></td>
-    </tr>
-    <tr style="background-color: #f9fafb;">
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Nice → Antibes</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">~20 km</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">25-35 min</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>65€ - 80€</strong></td>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Aller-retour journée</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">Variable</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">Sur mesure</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Sur devis</strong></td>
-    </tr>
-  </tbody>
-</table>
+- Grille indicative : [page tarifs](/tarifs)
+- Offre van : [taxi van Nice avec chauffeur](/services/van-premium)
 
-**💶 Options disponibles :**
+**Options à préciser à la réservation :**
 
-- **Siège enfant** : Gratuit sur demande (normes européennes)
-- **Poussette** : Transport gratuit dans le coffre
-- **Équipements sportifs** : Vélos, planches de surf (supplément selon volume)
-- **Attente** : Tarif horaire pour événements ou visites
-- **Service 24/7** : Disponible toute l'année, jours fériés inclus
+- Siège enfant / rehausseur (selon disponibilité)
+- Poussette ou bagages volumineux
+- Attente éventuelle pendant un événement (conditions confirmées à la résa)
+- Service possible 24/7 selon disponibilité
 
-**💡 Bon à savoir** : Les tarifs sont **fixes et garantis** dès la réservation. Aucun supplément en cas de retard de vol (suivi de vol inclus), ni de frais cachés. Le tarif inclut les péages et les frais de prise en charge.
+Pour un transfert aéroport, le suivi de vol peut être demandé à la réservation ; les modalités (dont l’attente en cas de retard) sont confirmées pour votre course.
 
 ---
 
 ## 🧳 Capacité bagages et équipements
 
-Le Mercedes Classe V offre une capacité de chargement exceptionnelle pour les groupes :
+La capacité utile dépend de la **configuration du véhicule** et du volume réel des bagages. Il n’y a pas de volume de coffre « garanti » identique pour chaque course.
 
-### Capacité standard
+### À indiquer à la réservation
 
-- **Jusqu'à 7 valises cabine** (dimensions standard 55x40x20 cm)
-- **Ou 4 grandes valises** (dimensions 75x50x30 cm) + petits sacs à main
-- **Volume total** : 1 410 litres de coffre disponible
+- Nombre de **grandes valises** / sacs cabine
+- **Poussette** ou siège enfant
+- Matériel volumineux (sport, etc.) — faisabilité et conditions confirmées au cas par cas
 
-### Équipements acceptés
-
-- **Poussettes** : Transport gratuit dans le coffre
-- **Sacs de sport** : Équipements de plage, matériel de randonnée
-- **Bagages volumineux** : Valises XXL, équipements de ski (sur demande)
-- **Vélos** : Transport possible (supplément selon nombre et taille)
-
-**💡 Conseil** : Si vous voyagez avec des équipements volumineux (vélos, planches de surf, matériel de ski), indiquez-le lors de la réservation pour que nous puissions vous proposer la meilleure solution de transport.
+**Conseil** : mieux vaut sous-estimer les places disponibles une fois le coffre chargé que de prévoir trop juste.
 
 ---
 
@@ -215,33 +139,24 @@ Notre service de taxi groupe s'adresse à tous les profils qui recherchent confo
 
 ### Familles avec enfants
 
-- **Avantages** : Sièges enfants disponibles, espace pour poussettes, confort optimal pour les longs trajets
-- **Cas d'usage** : Transferts aéroport, excursions, visites de sites touristiques
-- **Statistiques** : 40% de nos clients groupes sont des familles avec enfants
+- Sièges enfants / rehausseurs **sur demande** selon disponibilité
+- Cas d’usage : aéroport, excursions, visites
 
 ### Groupes lors d'événements
 
-- **Festivals** : Jazz Festival de Nice, Festival de Cannes, événements musicaux
-- **Événements sportifs** : Ironman Nice, Grand Prix de Monaco, matchs de football
-- **Événements culturels** : Carnaval de Nice, expositions, spectacles
-- **Statistiques** : 30% de nos clients groupes réservent pour des événements
+- Festivals, sport, Carnaval, spectacles — réserver tôt si les rues sont fermées ou la demande forte
 
 ### Entreprises et séminaires
 
-- **Séminaires** : Transport de groupe vers les lieux de réunion
-- **Congrès** : Transferts vers les centres de congrès (Palais des Congrès, Acropolis)
-- **Événements d'entreprise** : Sorties d'équipe, team building, soirées d'entreprise
-- **Statistiques** : 20% de nos clients groupes sont des entreprises
+- Petites équipes vers lieux de réunion, congrès (Acropolis, etc.), sorties d’équipe
 
-### Groupes arrivant via l'aéroport
+### Groupes via l'aéroport
 
-- **Avantages** : Prise en charge directe à l'aéroport, gestion des bagages, trajet confortable vers l'hôtel
-- **Statistiques** : 45% de nos trajets groupes partent ou arrivent à l'aéroport
+- Prise en charge T1/T2 possible avec bagages — voir aussi [taxi aéroport Nice](/services/taxi-aeroport-nice)
 
 ### Mariages et événements privés
 
-- **Avantages** : Transport élégant pour les invités, gestion des bagages, flexibilité des horaires
-- **Cas d'usage** : Transport vers les lieux de cérémonie, réceptions, hôtels
+- Horaires et lieux à préciser ; plusieurs trajets possibles selon le planning
 
 ---
 
@@ -261,9 +176,9 @@ Pour vous aider à choisir la meilleure solution, voici une comparaison détaill
   <tbody>
     <tr>
       <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Capacité</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ 7 passagers + bagages</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ 6 passagers max (2×3)</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Limité, bagages difficiles</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Plusieurs passagers + bagages (selon config.)</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Plusieurs véhicules à coordonner</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Bagages souvent difficiles</td>
     </tr>
     <tr style="background-color: #f9fafb;">
       <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Confort</strong></td>
@@ -291,30 +206,29 @@ Pour vous aider à choisir la meilleure solution, voici une comparaison détaill
     </tr>
     <tr style="background-color: #f9fafb;">
       <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Bagages</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Grand coffre (1 410L)</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Espace limité</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Très limité</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Espace coffre selon véhicule</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Espace limité par voiture</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">Très limité</td>
     </tr>
   </tbody>
 </table>
 
-**💡 Conclusion** : Pour les groupes de 4 à 7 personnes, le van 7 places premium est la solution la plus économique, confortable et pratique. Vous voyagez ensemble, avec tous vos bagages, dans un seul véhicule premium.
+**Conclusion** : pour un groupe de plusieurs personnes avec bagages, un van est souvent plus simple qu’plusieurs taxis — **sous réserve** que la configuration confirmée à la réservation convienne. Sinon, une berline ou deux véhicules peuvent être plus adaptés.
 
 ---
 
-## 🚗 Service premium inclus avec votre van 7 places
+## 🚗 Ce que vous pouvez attendre du service
 
-Lorsque vous réservez un van Mercedes Classe V, vous bénéficiez automatiquement de :
+Selon la course réservée :
 
-- **Chauffeur professionnel** : Expérience locale, connaissance des itinéraires optimaux
-- **Suivi de vol** : Pour les transferts aéroport, attente gratuite en cas de retard
-- **Wi-Fi gratuit** : Connexion internet à bord pour tous les passagers
-- **Bouteilles d'eau** : Offertes à bord pour votre confort
-- **Climatisation** : Contrôle multi-zones pour le confort de tous
-- **Paiement flexible** : Carte bancaire, espèces, paiement en ligne
-- **Service 24/7** : Disponible toute l'année, jours fériés inclus
+- Chauffeur professionnel, itinéraires locaux
+- Pour l’aéroport : suivi de vol **si demandé** à la réservation (modalités confirmées pour votre trajet)
+- Wi‑Fi **selon disponibilité** du véhicule
+- Climatisation
+- Paiement selon les modes indiqués à la réservation / avec le chauffeur
+- Disponibilité large, y compris hors horaires classiques, selon planning
 
-**💡 Expertise locale** : Nos chauffeurs connaissent parfaitement les événements locaux, les meilleurs itinéraires pour éviter les embouteillages, et peuvent vous conseiller sur les meilleurs restaurants, plages ou sites à visiter pendant votre séjour.
+Détails de l’offre : [page van premium](/services/van-premium).
 
 ---
 
@@ -326,7 +240,7 @@ Pour aller plus loin avec Taxi Nice Côte d'Azur :
 - 👉 [Taxi Nice → Cannes](/secteurs/cannes) – Trajet très demandé pour les événements
 - 👉 [Taxi Nice → Monaco](/secteurs/monaco) – Transfert vers la Principauté
 - 👉 [Taxi Nice → Antibes](/secteurs/antibes) – Service vers Antibes et Juan-les-Pins
-- 👉 [Van Premium](/services/van-premium) – Page dédiée à notre service van
+- 👉 [Taxi van Nice avec chauffeur](/services/van-premium) – offre commerciale et réservation du van
 - 👉 [Excursions Côte d'Azur](/services/excursions-decouvertes) – Découvrez la région en groupe
 - 👉 [Réservation transport](/reservation) – Réservez votre trajet en ligne
 - 👉 [Nos tarifs](/tarifs) – Consultez nos prix détaillés
@@ -338,13 +252,7 @@ Pour aller plus loin avec Taxi Nice Côte d'Azur :
 <details class="faq">
 <summary><strong>1. Le van peut-il transporter 7 personnes + bagages ?</strong></summary>
 
-Oui ✅. Le Mercedes Classe V peut accueillir **jusqu'à 7 passagers** avec leurs bagages. La capacité exacte dépend du volume des valises :
-
-- **7 valises cabine** (dimensions standard 55x40x20 cm) : ✅ Possible
-- **4 grandes valises** (75x50x30 cm) + petits sacs : ✅ Possible
-- **Équipements volumineux** (vélos, planches) : Sur demande, supplément possible
-
-Indiquez lors de la réservation le nombre de passagers et le volume des bagages pour que nous puissions vous confirmer la capacité exacte.
+La capacité dépend de la **configuration du véhicule disponible** et du volume réel des bagages. Indiquez le nombre exact de passagers et une estimation des valises à la réservation : nous confirmons si un van convient, ou s’il faut adapter (autre véhicule, deux courses, etc.).
 
 </details>
 
@@ -364,30 +272,14 @@ Vous pouvez réserver en ligne via notre [page de réservation](/reservation) ou
 <details class="faq">
 <summary><strong>3. Vos vans sont-ils adaptés aux enfants ?</strong></summary>
 
-Oui ✅. Nos vans Mercedes Classe V sont parfaitement adaptés aux familles avec enfants :
-
-- **Sièges enfants** : Disponibles gratuitement sur demande (normes européennes)
-- **Espace** : Portes coulissantes facilitent l'accès avec poussettes
-- **Coffre** : Transport gratuit des poussettes dans le grand coffre
-- **Confort** : Climatisation multi-zones, sièges individuels réglables
-- **Sécurité** : 7 airbags, système de freinage d'urgence, assistance à la conduite
-
-Indiquez lors de la réservation le nombre et l'âge des enfants pour que nous puissions préparer les équipements adaptés.
+Oui, les familles sont fréquentes. Siège enfant ou rehausseur : **sur demande**, selon disponibilité. Indiquez l’âge et le nombre d’enfants, ainsi qu’une poussette le cas échéant.
 
 </details>
 
 <details class="faq">
-<summary><strong>4. Combien coûte un trajet en van 7 places ?</strong></summary>
+<summary><strong>4. Combien coûte un trajet en van ?</strong></summary>
 
-Les tarifs varient selon la distance et la destination :
-
-- **Aéroport Nice → Centre-ville** : À partir de 45€ - 55€
-- **Nice → Cannes** : À partir de 80€ - 100€
-- **Nice → Monaco** : À partir de 70€ - 85€
-- **Nice → Antibes** : À partir de 65€ - 80€
-- **Aller-retour journée** : Sur devis selon l'itinéraire
-
-Les tarifs sont **fixes et garantis** dès la réservation, sans frais cachés. Consultez notre [page tarifs](/tarifs) pour plus de détails ou demandez un devis personnalisé.
+Le prix dépend du trajet, de l’horaire et du véhicule. Il vous est **annoncé à la réservation**. Consultez la [page tarifs](/tarifs) et la [page van premium](/services/van-premium).
 
 </details>
 
@@ -407,39 +299,21 @@ Oui ✅, sous certaines conditions :
 <details class="faq">
 <summary><strong>6. Le chauffeur attend-il en cas de retard de vol ?</strong></summary>
 
-Oui ✅. Pour les transferts aéroport, nous proposons un **suivi de vol en temps réel** :
-
-- **Attente gratuite** : En cas de retard de vol, le chauffeur attend sans supplément
-- **Suivi automatique** : Nous suivons votre vol et ajustons l'heure de prise en charge
-- **Pancarte à votre nom** : Le chauffeur vous attend dans le hall des arrivées avec une pancarte
-
-Aucun supplément n'est appliqué en cas de retard de vol. C'est l'avantage d'un service premium avec suivi de vol inclus.
+Pour les transferts aéroport, un **suivi de vol** peut être prévu si vous l’indiquez à la réservation. L’horaire de prise en charge est alors adapté au statut du vol ; les modalités précises (dont l’attente) sont confirmées pour votre course. Voir aussi [taxi aéroport Nice](/services/taxi-aeroport-nice).
 
 </details>
 
 <details class="faq">
 <summary><strong>7. Peut-on réserver un aller-retour pour la journée ?</strong></summary>
 
-Oui ✅. Nous proposons des **formules aller-retour** adaptées aux besoins des groupes :
-
-- **Aller-retour simple** : Départ le matin, retour le soir
-- **Service avec attente** : Chauffeur disponible pendant votre événement ou visite
-- **Tarifs préférentiels** : Pour les réservations aller-retour journée complète
-
-Demandez un devis personnalisé lors de la réservation en précisant vos horaires de départ et de retour.
+Oui. Précisez les horaires d’aller et de retour (et une éventuelle attente). Le prix ou le devis vous est communiqué à la réservation.
 
 </details>
 
 <details class="faq">
-<summary><strong>8. Vos vans sont-ils disponibles 24/7 ?</strong></summary>
+<summary><strong>8. Les vans sont-ils disponibles 24/7 ?</strong></summary>
 
-Oui ✅. Notre service de van 7 places est disponible **24 heures sur 24, 7 jours sur 7**, toute l'année :
-
-- **Jours fériés** : Service disponible
-- **Nuits** : Service disponible (supplément possible selon horaires)
-- **Événements** : Service disponible même pendant les événements majeurs
-
-Réservez à l'avance pour garantir la disponibilité, surtout pendant les périodes de forte demande (été, événements).
+Les courses peuvent être organisées de jour comme de nuit selon disponibilité. En période chargée (été, grands événements), réservez dès que vos horaires sont connus.
 
 </details>
 
@@ -457,37 +331,23 @@ Le mode de paiement peut être choisi lors de la réservation ou directement ave
 </details>
 
 <details class="faq">
-<summary><strong>10. Quelle est la différence entre un van 7 places et plusieurs taxis standards ?</strong></summary>
+<summary><strong>10. Quelle est la différence entre un van et plusieurs taxis ?</strong></summary>
 
-Le van 7 places premium offre plusieurs avantages par rapport à plusieurs taxis standards :
-
-- **Coût** : 1 seul trajet au lieu de 2-3 trajets séparés (plus économique)
-- **Confort** : Espace premium, climatisation multi-zones, sièges individuels
-- **Organisation** : Groupe ensemble, pas de risque de séparation
-- **Bagages** : Grand coffre (1 410L) pour tous les bagages
-- **Flexibilité** : Horaires sur mesure, attente possible
-
-Pour les groupes de 4 à 7 personnes, le van 7 places est généralement **plus économique et plus pratique** que plusieurs taxis standards.
+Un van permet souvent de garder le groupe et les bagages ensemble. Plusieurs berlines peuvent être préférables si le volume de bagages ou le nombre de passagers dépasse la config. disponible. Le bon choix se confirme à la réservation.
 
 </details>
 
 ---
 
-## 📞 Réservez votre van 7 places à Nice
+## 📞 Après ce guide : réserver le véhicule
 
-Pour l’offre complète **[taxi Nice centre & aéroport**](/), consultez aussi notre accueil.
-
-Offrez-vous un transport premium pour votre groupe avec un **Mercedes Classe V 7 places**, un chauffeur professionnel et un service adapté à vos besoins.
-
-👉 [Réservez votre taxi groupe en ligne dès maintenant](/reservation) ou contactez-nous par téléphone au **06 51 68 36 87**.
+Pour les caractéristiques du van et la réservation du service, utilisez la page **[taxi van Nice avec chauffeur](/services/van-premium)**. Vous pouvez aussi passer par le [formulaire de réservation](/reservation) en indiquant le nombre de passagers et le volume de bagages, ou appeler le **06 51 68 36 87**.
 
 <div class="cta">
-<a class="cta-button" href="/reservation">📲 Réserver maintenant</a>
-<p class="cta-sub">Voyage idéal pour les groupes - Service premium disponible 24/7</p>
+<a class="cta-button" href="/services/van-premium">Voir le service van →</a>
+<p class="cta-sub">Ou <a href="/reservation">réserver un trajet</a> en précisant « groupe / van »</p>
 </div>
-
-**Confort, espace et fiabilité — votre trajet en groupe commence ici.**
 
 ---
 
-_Article mis à jour le 29 novembre 2025_
+_Article mis à jour le 20 octobre 2026_

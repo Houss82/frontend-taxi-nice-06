@@ -325,6 +325,7 @@ Chez **Taxi Nice Côte d'Azur**, nous mettons tout en œuvre pour vous offrir la
 ## 📋 Options de réservation
 
 - **[Réservation en ligne rapide](/reservation)** - Formulaire sécurisé en 2 minutes
+- **[Comment réserver un taxi à Nice](/blog/reserver-taxi-nice-guide)** - Infos à préparer et délais utiles
 - **[Consultez nos tarifs](/tarifs)** - Prix transparents pour toutes destinations
 - **[Contactez-nous](/contact)** - Service client professionnel 24h/24
 

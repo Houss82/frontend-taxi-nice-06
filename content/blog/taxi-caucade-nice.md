@@ -2,7 +2,7 @@
 title: "Taxi Caucade Nice : Ouest niçois, Aéroport & Promenade"
 date: "2026-09-29"
 excerpt: "Taxi Caucade Nice : quartier ouest, proche aéroport et Promenade des Anglais. Transferts 24/7, prise en charge à domicile."
-image: "/image-glc.png"
+image: "/images/blog/taxi-caucade-nice.webp"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"

@@ -2,15 +2,20 @@ import { NextResponse } from "next/server";
 
 /**
  * API Route pour la publication automatique des articles
- * 
+ *
  * Cette route peut être appelée par :
  * - Vercel Cron Jobs
  * - GitHub Actions avec schedule
  * - Services externes (cron-job.org, etc.)
- * 
+ *
  * URL: /api/cron/auto-publish
  * Méthode: GET ou POST
+ *
+ * Réactivation : passer AUTO_PUBLISH_SUSPENDED à false, puis redéployer.
  */
+
+/** @type {boolean} Suspendu temporairement (audit SEO — oct. 2026). */
+const AUTO_PUBLISH_SUSPENDED = true;
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -24,23 +29,35 @@ export async function POST(request) {
 }
 
 async function handleRequest(request) {
+  if (AUTO_PUBLISH_SUSPENDED) {
+    return NextResponse.json(
+      {
+        success: false,
+        suspended: true,
+        message:
+          "Publication automatique suspendue. Utilisez scripts/publish-article.js ou le workflow_dispatch GitHub Actions.",
+      },
+      { status: 503 }
+    );
+  }
+
   // Vérifier l'authentification si nécessaire (optionnel)
   // Vous pouvez ajouter une clé secrète pour sécuriser l'endpoint
   const authHeader = request.headers.get("authorization");
   const cronSecret = process.env.CRON_SECRET;
 
   if (cronSecret && authHeader !== `Bearer ${cronSecret}`) {
-    return NextResponse.json(
-      { error: "Unauthorized" },
-      { status: 401 }
-    );
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
   try {
     // Exécuter le script de publication automatique
     const { exec } = require("child_process");
     const path = require("path");
-    const scriptPath = path.join(process.cwd(), "scripts/auto-publish-articles.js");
+    const scriptPath = path.join(
+      process.cwd(),
+      "scripts/auto-publish-articles.js"
+    );
 
     return new Promise((resolve) => {
       exec(`node ${scriptPath}`, (error, stdout, stderr) => {
@@ -80,4 +97,3 @@ async function handleRequest(request) {
     );
   }
 }
-

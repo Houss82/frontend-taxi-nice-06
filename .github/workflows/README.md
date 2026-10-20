@@ -2,10 +2,25 @@
 
 Ce workflow publie automatiquement les articles dont la date correspond à aujourd'hui.
 
-## 📅 Programmation
+## ⏸️ Statut (oct. 2026)
 
-- **Fréquence** : Tous les jours à 16h30 UTC
-- **Heure française** : 17h30 (hiver) / 18h30 (été)
+**Publication automatique SUSPENDUE** : le `schedule` cron est commenté dans `auto-publish-articles.yml`.
+
+- Aucune publication quotidienne tant que le cron n’est pas réactivé.
+- Exécution manuelle possible : Actions → Auto Publish Articles → **Run workflow**.
+- CLI : `node scripts/publish-article.js nom-de-l-article`
+- Endpoint `/api/cron/auto-publish` : renvoie 503 (suspendu).
+
+### Réactiver le calendrier automatique
+
+1. Dans `auto-publish-articles.yml`, décommenter le bloc `schedule`.
+2. Dans `src/app/api/cron/auto-publish/route.js`, passer `AUTO_PUBLISH_SUSPENDED` à `false`.
+3. Commit / push (et redéployer pour l’API).
+
+## 📅 Programmation (quand réactivée)
+
+- **Fréquence** : Tous les jours à 21h15 UTC (cron `15 21 * * *`)
+- **Heure française** : ~22h15 (hiver) / ~23h15 (été)
 
 ## 🔄 Fonctionnement
 

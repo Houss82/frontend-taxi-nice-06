@@ -348,6 +348,7 @@ Pour plus d'informations sur les conditions de remboursement, consultez le site 
 Pour approfondir vos connaissances sur nos services de transport à Nice :
 
 - 👉 **[Notre service de taxi conventionné à Nice](/services/vsl)** – Réserver un transport médical conventionné
+- 👉 **[Taxi seniors à Nice](/blog/taxi-personnes-agees-nice-pmr)** – courses classiques vs cadre CPAM
 - 👉 **[Centres médicaux et spécialistes Nice 2025](/blog/centres-medicaux-specialistes-nice-2025)** – Guide complet des établissements de santé à Nice
 - 👉 **[Taxi Hôpital Pasteur 2 Nice : RDV & Urgences](/secteurs/nice-hopital-pasteur-2)** – Transport médical vers le CHU Pasteur 2
 - 👉 **[Taxi Nice 24/7](/taxi-nice)** – Service principal avec tous nos services de taxi à Nice

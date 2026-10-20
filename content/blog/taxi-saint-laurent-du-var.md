@@ -2,7 +2,7 @@
 title: "Taxi Saint-Laurent-du-Var : Aéroport Nice, Cap 3000 & Centre"
 date: "2026-10-13"
 excerpt: "Taxi Saint-Laurent-du-Var : commune voisine de Nice, Cap 3000, aéroport, gare. Transferts 24/7 vers Nice et la Côte d'Azur."
-image: "/image-glc.png"
+image: "/images/blog/taxi-saint-laurent-du-var.webp"
 category: "Taxi"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
