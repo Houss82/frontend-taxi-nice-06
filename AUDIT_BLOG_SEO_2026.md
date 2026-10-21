@@ -413,10 +413,9 @@ Ordre non chronologique. Clusters à risque regroupés dans les mêmes lots pour
 
 ## 9. Suivi des lots
 
-### Lot 1 — Optimisé + finalisé (20 octobre 2026) — en attente de validation et de déploiement
+### Lot 1 — Déployé (commit `e34ecf7`, 20 octobre 2026)
 
-**Statut :** contenus finalisés en local (affirmations van/PMR + lien brouillon affaires) ; **non déployé** ; auto-publish toujours suspendu.  
-**Build finalisation :** OK.
+**Statut :** validé et en production. Auto-publication toujours suspendue.
 
 **Articles concernés :**
 
@@ -436,4 +435,18 @@ Ordre non chronologique. Clusters à risque regroupés dans les mêmes lots pour
 - Sources maillage : restaurants, vacances scolaires, guide transfert, antibes, transport médical, choisir chauffeur, landing Sophia.
 - Build production : OK (20/10/2026).
 
-**Lots 2–15 :** non démarrés.
+### Lot 2 — Optimisé en local (21 octobre 2026) — en attente de validation
+
+**Statut :** cinq articles retravaillés en local. Non commité, non déployé. Auto-publication toujours suspendue. Images des quatre fiches géo déjà distinctes depuis `e34ecf7` (non régénérées). Image grève inchangée (`/greve-taxi-Nice.jpeg`). Texte alternatif descriptif via `imageAlt` (repli sur le titre pour les autres articles). **Build :** OK (21 octobre 2026).
+
+**Articles :**
+
+1. `/blog/taxi-caucade-nice`
+2. `/blog/taxi-arenes-nice`
+3. `/blog/taxi-saint-laurent-du-var`
+4. `/blog/taxi-carros-nice`
+5. `/blog/greve-perturbations-taxi-nice`
+
+**Résumé :** fiches géo étoffées (repères locaux, durées non chiffrées en prix, distinction des quartiers voisins). Grève : title 2025 retiré, prix et pourcentages non vérifiés retirés, lien `/secteurs/nice` remplacé. Maillage entrant depuis Magnan, Saint-Augustin, Lingostière, Saint-Isidore, zones d’activité, Ironman. Home et page aéroport non modifiées.
+
+**Lots 3–15 :** non démarrés.

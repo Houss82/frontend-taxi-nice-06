@@ -567,7 +567,7 @@ Nice offre de nombreuses activités pendant l'Ironman :
 
 Pour continuer votre découverte de Nice et de nos services :
 
-- 👉 [Nice – Guide complet](/secteurs/nice) – Tous nos secteurs desservis
+- 👉 [Grèves et perturbations à Nice](/blog/greve-perturbations-taxi-nice) – organiser un taxi quand le trafic est bloqué
 - 👉 [Transport pour événements](/services/transferts-evenements) – Service dédié aux événements sportifs
 - 👉 [Transferts aéroport Nice](/services/taxi-aeroport-nice) – Arrivée sereine pour l'Ironman
 - 👉 [Van Premium](/services/van-premium) – Idéal pour groupes et familles avec matériel

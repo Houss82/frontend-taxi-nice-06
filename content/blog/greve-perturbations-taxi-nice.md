@@ -1,16 +1,17 @@
 ---
-title: "Grève & Perturbations à Nice : Comment Assurer Votre Taxi (Guide 2025)"
+title: "Grève et perturbations à Nice : organiser un taxi"
 date: "2025-11-13"
-excerpt: "Grèves, embouteillages, météo : découvrez nos stratégies pour garantir un taxi à l'heure à Nice et vers l'aéroport, même les jours compliqués."
+excerpt: "Grève, embouteillage ou météo à Nice : quelle marge prévoir vers l’aéroport, quelles infos donner à la réservation, et où consulter le tarif réel."
 image: "/greve-taxi-Nice.jpeg"
+imageAlt: "Taxi sous la pluie devant la gare de Nice-Ville, enseigne lumineuse sur le toit."
 category: "Transferts Aéroport"
 author: "Taxi Nice Côte d'Azur"
 language: "fr"
 ---
 
-À Nice, **plus de 15 millions de passagers** transitent chaque année par l'aéroport Nice Côte d'Azur, et près de **40% des trajets** sont impactés par des perturbations : grèves des transports, embouteillages sur la Promenade des Anglais, événements majeurs (Festival de Cannes, Grand Prix de Monaco), ou conditions météorologiques difficiles.
+À Nice, un jour de grève des bus et du tram, un embouteillage sur la Promenade, un événement (Festival de Cannes, Grand Prix de Monaco) ou un orage peuvent allonger le trajet vers l’aéroport ou la gare. Cet article explique comment **organiser la course** : marge, informations à donner, pages où réserver. Il ne remplace pas la page [taxi aéroport Nice](/services/taxi-aeroport-nice) ni l’accueil [taxi Nice](/).
 
-Bonne nouvelle : avec une **réservation anticipée**, une **marge horaire réaliste** et un **chauffeur local expérimenté**, vous arrivez **à l'heure** – même lors des pics de trafic. Nos statistiques montrent que **98% de nos clients** arrivent à l'heure malgré les perturbations, grâce à notre système de suivi en temps réel et notre connaissance approfondie des itinéraires alternatifs.
+Une réservation anticipée et une marge horaire réduisent le risque d’arriver trop juste. Elles ne garantissent pas une heure d’arrivée au kilomètre près : la circulation du jour reste décisive.
 
 <div class="kpi-strip">
   <span class="badge success">✅ 24/7 Disponible</span>
@@ -21,34 +22,36 @@ Bonne nouvelle : avec une **réservation anticipée**, une **marge horaire réal
 
 ---
 
-## 📊 Les chiffres qui comptent : comprendre les perturbations à Nice
+## Ce qui ralentit vraiment un trajet à Nice
 
 ### Impact des grèves sur les transports
 
-Selon les données de la CCI Nice Côte d'Azur, **Nice enregistre en moyenne 8 à 12 jours de grève par an** affectant les transports publics. Lors de ces périodes :
+Quand bus et tram sont perturbés, davantage de personnes se reportent sur la route. Les axes souvent saturés :
 
-- **+35% de trafic** sur les axes principaux (Promenade des Anglais, A8, Basse Corniche)
-- **+50% de demandes** de taxis et VTC
-- **Temps de trajet multiplié par 1,5 à 2** selon la zone
+- Promenade des Anglais
+- A8 et accès à l’aéroport
+- Basse Corniche vers Villefranche et Monaco
+
+Le temps de trajet peut alors nettement dépasser le créneau habituel. Prévoyez une marge plutôt qu’un horaire « juste ».
 
 ### Trafic et embouteillages : les heures critiques
 
-Les données de trafic montrent que **Nice connaît des pics de congestion** à plusieurs moments :
+Les créneaux souvent plus lents, sans chiffre fixe :
 
-- **Matin (7h-9h)** : +25% de trafic vers le centre-ville et l'aéroport
-- **Soir (17h-19h)** : +30% de trafic sur la Promenade des Anglais
-- **Vendredi après-midi** : +40% de trafic vers Monaco et Cannes (départs week-end)
-- **Dimanche soir** : +45% de trafic vers l'aéroport (retours de vacances)
+- matin, vers le centre et l’aéroport
+- fin d’après-midi sur la Promenade
+- vendredi vers Monaco et Cannes
+- dimanche soir vers l’aéroport, au retour des week-ends
 
 ### Événements majeurs : impact sur la mobilité
 
-- **Festival de Cannes** (mai) : +60% de trafic Nice-Cannes, fermetures ponctuelles
-- **Grand Prix de Monaco** (mai) : +70% de trafic vers Monaco, routes fermées
-- **Nice Jazz Festival** (juillet) : +30% de trafic centre-ville, stationnement limité
-- **Matchs de l'OGC Nice** : +25% de trafic autour de l'Allianz Riviera
+- **Festival de Cannes** : axe Nice–Cannes plus lent, fermetures ponctuelles possibles
+- **Grand Prix de Monaco** : accès vers Monaco souvent très chargé, routes fermées selon le dispositif
+- **Nice Jazz Festival** : centre-ville plus animé, stationnement plus difficile
+- **Matchs de l’OGC Nice** : abords de l’Allianz Riviera et Promenade plus chargés après la rencontre
 
 <div class="info-box">
-<strong>💡 Astuce :</strong> Si votre vol change d'horaire, mettez à jour votre réservation en 1 clic depuis <a href="/reservation">notre formulaire de réservation</a> ou contactez-nous. Nous ajustons automatiquement l'heure de prise en charge.
+<strong>Astuce :</strong> si le vol change, prévenez-nous ou mettez à jour la demande via le <a href="/reservation">formulaire</a>. Le nouvel horaire est confirmé avec vous, il n’est pas modifié tout seul.
 </div>
 
 ---
@@ -57,13 +60,9 @@ Les données de trafic montrent que **Nice connaît des pics de congestion** à 
 
 ### 1. Réservez tôt : 12–24 h avant
 
-**Statistiques clés** : Les clients qui réservent **24h à l'avance** bénéficient de :
+Réserver la veille, ou plus tôt en haute saison et les jours d’événement, laisse le temps de confirmer le véhicule et l’adresse. Ce n’est pas une réduction automatique ni une disponibilité illimitée : le créneau se valide à la réservation.
 
-- **100% de disponibilité** garantie (vs 75% pour les réservations de dernière minute)
-- **Tarifs préférentiels** : jusqu'à 15% de réduction
-- **Choix du véhicule** : Mercedes Classe E, GLC ou Van Premium selon vos besoins
-
-Surtout si vous partez vers **T1/T2 de l'aéroport**, réservez au moins **24h avant** votre vol. En haute saison (juin-septembre), prévoyez même **48h à l'avance** pour garantir votre véhicule préféré.
+Surtout vers les **terminaux 1 et 2**, indiquez l’heure du vol. En juin–septembre ou pendant un grand événement, anticipez davantage.
 
 👉 **[Réservez votre taxi dès maintenant](/reservation)** – Formulaire rapide en 2 minutes
 
@@ -77,7 +76,7 @@ Surtout si vous partez vers **T1/T2 de l'aéroport**, réservez au moins **24h a
 - **Avec perturbations** : 35-50 minutes selon l'intensité
 - **Marge recommandée** : +30 minutes minimum en cas de grève ou événement majeur
 
-Nos chauffeurs locaux connaissent **tous les itinéraires alternatifs** : voie rapide, Basse Corniche, Moyenne Corniche, ou routes secondaires. Cette expertise permet de **réduire le temps de trajet de 20 à 30%** même en cas de bouchons.
+Selon la situation, le chauffeur peut proposer la voie rapide, la Basse Corniche, la Moyenne Corniche ou une rue secondaire. Aucune de ces options ne garantit un gain de temps fixe : la circulation du jour prime.
 
 ### 3. Indiquez les infos clés : terminal, bagages, siège enfant, numéro de vol
 
@@ -85,28 +84,28 @@ Nos chauffeurs locaux connaissent **tous les itinéraires alternatifs** : voie r
 
 - **Terminal d'arrivée** : T1 ou T2 (économie de 5-10 minutes)
 - **Numéro de vol** : suivi automatique, ajustement en cas de retard
-- **Nombre de bagages** : choix du véhicule adapté (GLC jusqu'à 3 valises, Van Premium jusqu'à 7)
-- **Siège enfant** : fourni gratuitement sur demande
+- **Nombre de bagages** : pour choisir un véhicule adapté, y compris un [van](/services/van-premium) si vous êtes plusieurs
+- **Siège enfant** : à demander à la réservation, selon disponibilité
 - **Point de rendez-vous précis** : adresse exacte, numéro de porte, code d'accès
 
 ### 4. Choisissez un véhicule adapté : Classe V pour groupes/bagages volumineux
 
 **Nos véhicules et leurs capacités** :
 
-- **[Mercedes Classe E](/services/flotte-recente)** : 1-3 passagers, 2-3 valises – **110€** – Idéal pour voyage d'affaires
-- **[Mercedes GLC](/services/flotte-recente)** : 1-4 passagers, 3-4 valises – **120€** – Confort SUV premium
-- **[Mercedes Classe V (Van Premium)](/services/van-premium)** : jusqu'à 7 passagers, 7 valises – **130€** – Parfait pour familles ou groupes
+- **Berline** : course classique, 1 à 3 passagers selon les bagages — voir la [flotte](/services/flotte-recente)
+- **[Van premium](/services/van-premium)** : à envisager pour un groupe ou beaucoup de bagages
+
+Le prix n’est pas figé dans cet article. Il est confirmé à la réservation. Repères : [tarifs taxi Nice](/tarifs).
 
 **Conseil** : En cas de doute, choisissez le **Van Premium** pour plus d'espace et de confort, surtout avec des bagages volumineux ou en cas de trafic dense.
 
-### 5. Suivi en direct : nous vous confirmons le chauffeur la veille 📲
+### 5. Restez joignable si l’horaire bouge
 
 **Notre système de suivi** :
 
-- **SMS de confirmation** 24h avant avec coordonnées du chauffeur
-- **SMS de rappel** 2h avant avec heure exacte de prise en charge
-- **Suivi de vol en temps réel** : ajustement automatique en cas de retard
-- **Contact direct** avec le chauffeur : numéro fourni par SMS
+- Indiquez votre numéro de téléphone pour être joint si l’horaire bouge
+- Donnez le numéro de vol si le trajet dépend d’un avion : le créneau peut être ajusté en cas de retard signalé
+- Le détail de la confirmation (message, horaire) suit ce qui est convenu à la réservation
 
 <div class="highlight-box">
 <strong>🔎 Transparence :</strong> En cas de situation exceptionnelle (grands rassemblements, météo extrême), nous vous prévenons par SMS avec une **heure de prise en charge ajustée**. Aucune mauvaise surprise, communication proactive.
@@ -142,16 +141,14 @@ Nos chauffeurs locaux connaissent **tous les itinéraires alternatifs** : voie r
 
 **Tarif fixe indicatif** (selon véhicule) : consultez nos [tarifs détaillés](/tarifs) pour connaître le prix exact de votre trajet.
 
-💡 **Déplacements dans Nice ?** Consultez notre [guide complet Taxi Nice](/secteurs/nice) pour connaître toutes les zones desservies, ou notre page [Taxi Nice Centre-Ville](/secteurs/nice-centre-ville) pour les courses locales.
+💡 **Déplacements dans Nice ?** Les courses locales passent par [Taxi Nice centre-ville](/secteurs/nice-centre-ville). L’accueil du service est sur la [page taxi Nice](/).
 
 ### Trajets depuis l'aéroport Nice Côte d'Azur
 
-- **Aéroport → Centre Nice** : **7–10 km** • **20–35 min** – À partir de **35€**
-- **Aéroport → Monaco** : **25 km** • **40–55 min** – À partir de **90€**
-- **Aéroport → Cannes** : **30 km** • **45–65 min** – À partir de **85€**
-- **Aéroport → Antibes** : **20 km** • **30–45 min** – À partir de **70€**
+- **Aéroport → centre de Nice** : souvent 20–35 min selon le trafic, davantage en cas de grève
+- **Aéroport → Monaco, Cannes ou Antibes** : la durée varie fortement les jours d’événement
 
-Découvrez tous nos [transferts aéroport](/services/taxi-aeroport-nice) avec tarifs fixes garantis, sans surprise.
+Les montants ne sont pas listés ici. Consultez les [tarifs](/tarifs) et la page [taxi aéroport Nice](/services/taxi-aeroport-nice) pour réserver le transfert.
 
 💡 **Arrivée en train à Nice ?** Notre service [Taxi Nice Gare](/secteurs/nice-gare) vous accueille à la gare SNCF avec un suivi personnalisé de votre train. Pour une vue d'ensemble de tous nos services, consultez notre [page d'accueil Taxi Nice 06](/).
 
@@ -181,63 +178,42 @@ Pour approfondir vos connaissances sur nos services :
 
 ### Conditions météorologiques
 
-**Pluie intense** (fréquente en automne/hiver) :
+**Pluie forte** (souvent en automne et en hiver) :
 
-- **+20% de temps de trajet** sur la Promenade des Anglais
-- **Ralentissements** sur l'A8 et la Basse Corniche
-- **Fermetures ponctuelles** des routes côtières en cas de vent fort
+- Promenade des Anglais plus lente
+- Ralentissements possibles sur l’A8 et la Basse Corniche
+- Routes côtières parfois restreintes par vent fort
 
-**Vent fort (Mistral/Tramontane)** :
+**Vent fort** :
 
-- **Fermetures temporaires** de la Promenade des Anglais
-- **Détours obligatoires** par la voie rapide ou routes secondaires
-- **Impact sur les ponts** : ralentissements sur le Pont du Var
+- La Promenade peut être momentanément limitée
+- Détour par la voie rapide ou des rues intérieures
+- Pont du Var plus lent
 
-### Événements majeurs : impact sur la mobilité
+### Événements
 
-**Festival de Cannes** (mai) :
+**Festival de Cannes** : l’axe Nice–Cannes est souvent plus long, avec des fermetures ponctuelles côté Croisette.
 
-- **+60% de trafic** sur l'axe Nice-Cannes
-- **Fermetures ponctuelles** de la Croisette
-- **Stationnement limité** : réservation de taxi fortement recommandée
+**Grand Prix de Monaco** : les accès vers Monaco sont chargés et certaines rues autour du circuit sont fermées. L’itinéraire se choisit le jour même.
 
-**Grand Prix de Monaco** (mai) :
+**Matchs de l’OGC Nice** : les abords de l’Allianz Riviera et la Promenade sont plus denses après la rencontre.
 
-- **+70% de trafic** vers Monaco
-- **Routes fermées** autour du circuit
-- **Détours obligatoires** : nos chauffeurs connaissent tous les itinéraires alternatifs
-
-**Matchs OGC Nice** :
-
-- **+25% de trafic** autour de l'Allianz Riviera
-- **Bouchons** sur la Promenade des Anglais après le match
-- **Réservation recommandée** pour éviter l'attente
-
-Nos chauffeurs adaptent **itinéraires et horaires** (voie rapide, Basse Corniche, A8 selon le contexte). L'objectif : **zéro stress** à l'aéroport.
+Le chauffeur adapte l’itinéraire (voie rapide, Basse Corniche, A8) selon ce qui est ouvert. Cela ne supprime pas le retard si tout le réseau est saturé.
 
 <div class="callout tip">
-<strong>💡 Conseil :</strong> Lors d'événements majeurs, réservez votre taxi **48h à l'avance** et prévoyez une **marge de 30-45 minutes** supplémentaire. Nos chauffeurs locaux connaissent tous les itinéraires alternatifs pour vous faire gagner du temps.
+<strong>Conseil :</strong> pour un événement, réservez la veille ou avant, et ajoutez 30 à 45 minutes de marge. Ce n’est pas une durée garantie.
 </div>
 
 ---
 
-## 📱 Notre système de suivi en temps réel : la garantie de ponctualité
+## Comment la réservation s’adapte un jour perturbé
 
-### Comment ça fonctionne ?
+1. Réservez via le [formulaire](/reservation) ou par téléphone, avec une marge.
+2. Laissez un numéro joignable si l’horaire doit bouger.
+3. Pour un vol, donnez le numéro : le créneau peut être revu en cas de retard signalé.
+4. Les conditions d’attente ou de modification sont celles confirmées au moment de la réservation.
 
-1. **Réservation** : Vous réservez via notre [formulaire en ligne](/reservation) ou par téléphone
-2. **Confirmation SMS** : Vous recevez un SMS 24h avant avec les coordonnées de votre chauffeur
-3. **Suivi de vol** : Si vous venez de l'aéroport, nous suivons votre vol en temps réel
-4. **Ajustement automatique** : En cas de retard, l'heure de prise en charge est ajustée automatiquement
-5. **Rappel SMS** : SMS de rappel 2h avant avec heure exacte de prise en charge
-6. **Contact direct** : Numéro du chauffeur fourni pour communication directe
-
-### Statistiques de performance
-
-- **98% de ponctualité** même en cas de perturbations
-- **100% de suivi de vol** pour les transferts aéroport
-- **Réponse SMS** en moins de 5 minutes
-- **Ajustement automatique** en cas de retard d'avion (sans frais supplémentaire)
+Aucun pourcentage de ponctualité n’est affiché ici : il dépend du trafic, de l’avance prise et des informations transmises.
 
 ---
 
@@ -254,27 +230,27 @@ Pour suivre l'actualité des perturbations et du trafic :
 
 <details class="faq">
 <summary><strong>1. Puis-je ajuster l'horaire si la grève est confirmée ?</strong></summary>
-Oui, absolument ! Nous vous proposons un nouvel horaire optimal selon le trafic annoncé et les contraintes de votre vol. Contactez-nous par SMS ou téléphone, et nous ajusterons votre réservation sans frais supplémentaire. Notre objectif : vous faire arriver à l'heure malgré les perturbations.
+Contactez-nous dès que la grève est confirmée. Nous regardons avec vous un horaire plus large par rapport au vol. Les conditions d’un changement dépendent de la réservation déjà prise : elles vous sont indiquées au moment de l’appel, sans engagement écrit dans cet article.
 </details>
 
 <details class="faq">
 <summary><strong>2. Vous suivez mon vol en cas de retard ?</strong></summary>
-Oui ✅. Retard de vol = prise en charge ajustée, sans frais de surprise. Nous suivons votre vol en temps réel grâce à votre numéro de vol. Si votre avion a 1h de retard, votre chauffeur arrive 1h plus tard automatiquement. Aucun frais supplémentaire, c'est inclus dans notre service premium.
+Donnez le numéro de vol à la réservation. En cas de retard, le créneau peut être décalé. Les éventuels frais liés à une attente prolongée sont ceux indiqués au moment de la réservation, pas une promesse de gratuité automatique.
 </details>
 
 <details class="faq">
 <summary><strong>3. Et si je voyage en groupe ?</strong></summary>
-Choisissez la <a href="/services/van-premium">Classe V (Van Premium)</a> (jusqu'à 7 passagers + bagages). Parfait pour les familles ou groupes d'amis. Avec plus d'espace, vous voyagez plus confortablement même en cas de trafic dense. Tarif fixe : **130€** pour Nice-Aéroport.
+Pour plusieurs personnes ou beaucoup de bagages, demandez un <a href="/services/van-premium">van</a> à la réservation. Le tarif du jour vous est confirmé avant le départ — voir aussi les <a href="/tarifs">tarifs</a>.
 </details>
 
 <details class="faq">
 <summary><strong>4. Que faire si mon vol est annulé ou reporté ?</strong></summary>
-Contactez-nous immédiatement par SMS ou téléphone. Nous annulons ou reportons votre réservation sans frais jusqu'à 2h avant l'heure prévue. En cas d'annulation de dernière minute due à un problème aérien, nous sommes compréhensifs et adaptons notre service.
+Prévenez dès que le vol est annulé ou décalé, par téléphone. Le report ou l’annulation se fait selon les conditions expliquées au moment de la réservation.
 </details>
 
 <details class="faq">
 <summary><strong>5. Comment éviter les embouteillages lors d'événements majeurs ?</strong></summary>
-Nos chauffeurs locaux connaissent **tous les itinéraires alternatifs** : voie rapide, Basse Corniche, Moyenne Corniche, ou routes secondaires. Lors d'événements comme le Festival de Cannes ou le Grand Prix de Monaco, nous privilégions ces itinéraires pour vous faire gagner du temps. Réservez **48h à l'avance** pour garantir votre véhicule et bénéficier de nos meilleurs tarifs.
+Lors d’un événement, les corniches ou l’A8 peuvent être préférables à l’axe habituel. Réservez à l’avance. Le tarif est celui confirmé à la réservation, pas un tarif « préférentiel » automatique.
 </details>
 
 <details class="faq">
@@ -293,17 +269,17 @@ Oui ! Vous pouvez payer en ligne lors de la réservation via notre [formulaire s
 <div class="comparison-item">
 <strong>🚗 Disponibilité en grève</strong>
 <ul>
-<li><strong>Taxi Nice Côte d'Azur</strong> : ✅ 24/7 garanti</li>
-<li><strong>VTC/Uber</strong> : ⚠️ Variable, souvent indisponible</li>
+<li><strong>Taxi réservé</strong> : créneau convenu à l’avance, sous réserve de disponibilité</li>
+<li><strong>VTC à la demande</strong> : variable selon l’offre du moment</li>
 <li><strong>Transport en commun</strong> : ❌ Impacté par les grèves</li>
 </ul>
 </div>
 
 <div class="comparison-item">
-<strong>💰 Prix fixe garanti</strong>
+<strong>Prix annoncé avant le départ</strong>
 <ul>
-<li><strong>Taxi Nice Côte d'Azur</strong> : ✅ Oui, connu à l'avance</li>
-<li><strong>VTC/Uber</strong> : ❌ Surge pricing (+50% à +200%)</li>
+<li><strong>Taxi réservé</strong> : montant annoncé avant le départ — voir les <a href="/tarifs">tarifs</a></li>
+<li><strong>VTC à la demande</strong> : le prix peut varier selon la demande</li>
 <li><strong>Transport en commun</strong> : ✅ Tarif fixe</li>
 </ul>
 </div>
@@ -311,8 +287,8 @@ Oui ! Vous pouvez payer en ligne lors de la réservation via notre [formulaire s
 <div class="comparison-item">
 <strong>✈️ Suivi de vol</strong>
 <ul>
-<li><strong>Taxi Nice Côte d'Azur</strong> : ✅ Inclus automatiquement</li>
-<li><strong>VTC/Uber</strong> : ❌ Souvent absent</li>
+<li><strong>Taxi réservé</strong> : possible si le numéro de vol est indiqué</li>
+<li><strong>VTC à la demande</strong> : selon l’application utilisée</li>
 <li><strong>Transport en commun</strong> : ❌ Non disponible</li>
 </ul>
 </div>
@@ -347,25 +323,23 @@ Oui ! Vous pouvez payer en ligne lors de la réservation via notre [formulaire s
 </div>
 
 <div class="highlight-box">
-<strong>🎯 Conclusion :</strong> En cas de perturbations, un <strong>taxi réservé à l'avance</strong> reste la solution la plus fiable et économique. Avec un service 24/7 garanti, des tarifs fixes connus à l'avance, et une connaissance approfondie des itinéraires alternatifs, vous arrivez à l'heure même les jours compliqués.
+<strong>Conclusion :</strong> un taxi réservé à l’avance, avec une marge et le tarif confirmé avant le départ, reste une option pratique quand les transports en commun sont perturbés. L’heure d’arrivée dépend toujours de la circulation.
 </div>
 
 ---
 
-## 📞 Réservez maintenant : votre taxi garanti même en cas de perturbations
+## Réserver un jour de perturbation
 
-Ne laissez rien au hasard. Avec **Taxi Nice Côte d'Azur**, vous bénéficiez de :
+- Le service se réserve 24h/24 via le [formulaire](/reservation) ou par téléphone, sous réserve de disponibilité.
+- Anticiper de 24 h à 48 h les jours chargés aide à caler le véhicule.
+- Indiquez le numéro de vol si l’horaire dépend d’un avion.
+- Chauffeurs qui connaissent les axes locaux (Promenade, A8, corniches)
+- Tarif annoncé avant le départ — [grille](/tarifs)
+- Véhicule adapté au nombre de passagers, à confirmer à la réservation
 
-- ✅ **Service 24/7** : disponible même les jours de grève
-- ✅ **Réservation anticipée** : garantissez votre véhicule 24h-48h à l'avance
-- ✅ **Suivi de vol** : ajustement automatique en cas de retard
-- ✅ **Chauffeurs locaux** : connaissance approfondie des itinéraires alternatifs
-- ✅ **Tarifs fixes** : pas de surprise, prix connu à l'avance
-- ✅ **Véhicules premium** : Mercedes Classe E, GLC ou Van Premium
+👉 <a class="cta-button" href="/reservation">Réserver</a>
 
-👉 <a class="cta-button" href="/reservation">📲 Réserver mon taxi maintenant</a>
-
-<p class="cta-sub">Confirmation immédiate par SMS — service 24/7 — ponctualité garantie même en cas de perturbations</p>
+<p class="cta-sub">Le créneau est confirmé à la réservation. La durée réelle dépend du trafic.</p>
 
 ### Autres moyens de contact
 
@@ -377,13 +351,13 @@ Ne laissez rien au hasard. Avec **Taxi Nice Côte d'Azur**, vous bénéficiez de
 
 ## 🎯 Résumé : les 3 actions essentielles
 
-1. **Réservez 24h-48h à l'avance** → Garantissez votre véhicule et bénéficiez de tarifs préférentiels
-2. **Prévoyez une marge de 30 minutes** → Arrivez à l'heure même en cas de perturbations
-3. **Communiquez votre numéro de vol** → Suivi automatique, ajustement en cas de retard
+1. **Réservez à l’avance** les jours de grève ou d’événement
+2. **Ajoutez une marge** (souvent une demi-heure, davantage si l’axe est annoncé bloqué)
+3. **Donnez le numéro de vol** si le trajet en dépend
 
-**Avec ces 3 réflexes, vous arrivez à l'heure dans 98% des cas, même les jours compliqués.**
+Ces réflexes aident à partir plus sereinement. Ils ne constituent pas un taux de ponctualité.
 
 ---
 
 _Article mis à jour le 13 novembre 2025_  
-_Statistiques basées sur nos données internes et sources officielles (CCI Nice Côte d'Azur, Aéroport Nice Côte d'Azur)_
+_Article mis à jour le 21 octobre 2026. Les durées restent indicatives : elles dépendent du trafic du jour._

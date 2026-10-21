@@ -122,7 +122,7 @@ export default async function BlogPostPage({ params }) {
           <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
             <Image
               src={post.image}
-              alt={post.title}
+              alt={post.imageAlt || post.title}
               fill
               className="object-cover"
               style={{
@@ -664,7 +664,7 @@ export default async function BlogPostPage({ params }) {
                 </div>
               </Link>
               <Link
-                href="/secteurs/nice"
+                href="/secteurs"
                 className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 border border-purple-200 hover:border-purple-300 transition-all duration-300 group"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -719,7 +719,7 @@ export default async function BlogPostPage({ params }) {
                     <div className="relative h-48 overflow-hidden">
                       <Image
                         src={relatedPost.image}
-                        alt={relatedPost.title}
+                        alt={relatedPost.imageAlt || relatedPost.title}
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />

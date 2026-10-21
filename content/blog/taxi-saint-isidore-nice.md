@@ -277,6 +277,7 @@ Pour en savoir plus sur nos services de taxi à Nice :
 
 - **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
 - **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- **[Taxi Saint-Laurent-du-Var](/blog/taxi-saint-laurent-du-var)** : commune voisine, Cap 3000 et aéroport
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi à Saint-Isidore en quelques clics
 
 ---

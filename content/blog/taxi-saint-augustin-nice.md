@@ -291,6 +291,7 @@ Pour en savoir plus sur nos services de taxi à Nice :
 
 - **[Taxi à Nice : Guide Complet 2025](/blog/taxi-nice-guide-complet-2025)** : Comparatif taxi vs bus vs tramway à Nice
 - **[Page d'accueil Taxi Nice 06](/)** : Tous nos services et destinations
+- **[Taxi L’Arénas](/blog/taxi-arenes-nice)** : bureaux et hôtels face à l’aéroport
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi à Saint-Augustin en quelques clics
 
 ---

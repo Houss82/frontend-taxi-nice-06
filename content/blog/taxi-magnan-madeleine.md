@@ -301,6 +301,7 @@ Pour en savoir plus sur nos services de taxi à Nice :
 
 - ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
 - **[Taxi Promenade & Magnan](/)** : accueil du service
+- **[Taxi Caucade](/blog/taxi-caucade-nice)** : quartier voisin, côté ouest vers l’aéroport
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi dans ces quartiers en quelques clics
 
 ---

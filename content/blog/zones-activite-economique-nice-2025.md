@@ -404,6 +404,7 @@ Les zones d'activité économique de Nice évoluent constamment pour répondre a
 
 - 👉 [Nice en mouvement : les quartiers qui se transforment en 2025](/blog/nice-quartiers-developpement-2025)
 - 👉 [Taxi Aéroport Nice : service professionnel 24/7](/services/taxi-aeroport-nice)
+- 👉 [Taxi depuis Carros](/blog/taxi-carros-nice) — zone industrielle de la vallée du Var
 - 👉 [Transferts professionnels Nice Côte d'Azur](/services)
 
 ---

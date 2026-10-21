@@ -275,7 +275,7 @@ export default async function BlogPage({ searchParams }) {
                       <div className="relative h-64 overflow-hidden group">
                         <Image
                           src={post.image}
-                          alt={post.title}
+                          alt={post.imageAlt || post.title}
                           fill
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
