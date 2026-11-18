@@ -1,5 +1,7 @@
 export const metadata = {
-  title: "Taxi Nice Numéro : 06 51 68 36 87 – Appelez maintenant",
+  title: {
+    absolute: "Taxi Nice Numéro : 06 51 68 36 87 – Appelez maintenant",
+  },
   description:
     "Taxi Nice numéro : 06 51 68 36 87. Appelez immédiatement votre taxi à Nice. Service disponible 24h/24.",
   keywords: [

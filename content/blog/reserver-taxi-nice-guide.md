@@ -136,6 +136,8 @@ published: true
 - [Tarifs taxi Nice](/tarifs) – grille indicative publiée
 - [Taxi aéroport Nice](/services/taxi-aeroport-nice) – T1 / T2
 - [Déplacements de nuit à Nice](/blog/taxi-nuit-nice-service-nocturne) – hors horaires TC
+- [Taxi après une panne de voiture](/services/taxi-assistance-panne-nice) – transport des passagers uniquement
+- [Panne voiture à Nice : que faire ?](/blog/panne-voiture-nice-solution-taxi) – guide pratique
 
 ---
 

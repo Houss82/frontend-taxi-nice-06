@@ -1,5 +1,7 @@
 export const metadata = {
-  title: "Contact Taxi Nice 06 – Téléphone, Email & Formulaire 24h/24",
+  title: {
+    absolute: "Contact Taxi Nice 06 – Téléphone, Email & Formulaire 24h/24",
+  },
   description:
     "Contact Taxi Nice 06 : téléphone, email et formulaire 24h/24. Coordonnées et prise de message pour organiser votre transport sur la Côte d'Azur.",
   keywords: [

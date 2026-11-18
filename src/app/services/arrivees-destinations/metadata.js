@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Arrivées & Destinations Nice | Transport Premium | Taxi Nice-06",
+  title: "Arrivées & Destinations Nice | Transport Premium",
   description:
     "Service d'accueil et transport vers toutes destinations depuis Nice. Chauffeur professionnel et véhicules premium pour vos déplacements.",
   keywords: [
@@ -10,7 +10,7 @@ export const metadata = {
     "chauffeur arrivée nice",
   ],
   openGraph: {
-    title: "Arrivées & Destinations Nice | Taxi Nice-06",
+    title: "Arrivées & Destinations Nice",
     description:
       "Service d'accueil et transport vers toutes destinations depuis Nice. Chauffeur professionnel et véhicules premium.",
     url: "https://taxi-nice-06.com/services/arrivees-destinations",
@@ -26,7 +26,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arrivées & Destinations Nice | Taxi Nice-06",
+    title: "Arrivées & Destinations Nice",
     description: "Service d'accueil et transport vers toutes destinations depuis Nice.",
     images: ["https://taxi-nice-06.com/bg-image.png"],
   },

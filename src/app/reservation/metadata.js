@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Réservation Taxi Nice | Réserver en Ligne 24/7 | Taxi Nice-06",
+  title: "Réservation Taxi Nice | Réserver en Ligne 24/7",
   description:
     "Réservez votre taxi à Nice en ligne 24/7. Formulaire de réservation simple et rapide pour transferts aéroport, VSL et déplacements.",
   keywords: [
@@ -10,7 +10,7 @@ export const metadata = {
     "taxi nice réservation",
   ],
   openGraph: {
-    title: "Réservation Taxi Nice | Taxi Nice-06",
+    title: "Réservation Taxi Nice",
     description:
       "Réservez votre taxi à Nice en ligne 24/7. Formulaire de réservation simple et rapide pour tous vos déplacements.",
     url: "https://taxi-nice-06.com/reservation",
@@ -26,7 +26,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Réservation Taxi Nice | Taxi Nice-06",
+    title: "Réservation Taxi Nice",
     description: "Réservez votre taxi à Nice en ligne 24/7.",
     images: ["https://taxi-nice-06.com/bg-image.png"],
   },

@@ -87,7 +87,14 @@ export default function TarifsPage({ searchParams }) {
                 >
                   transfert vers l&apos;aéroport de Nice
                 </Link>
-                , la gare ou toute la Côte d&apos;Azur.
+                , la gare, un{" "}
+                <Link
+                  href="/services/taxi-assistance-panne-nice"
+                  className="text-primary font-semibold underline underline-offset-4 hover:text-primaryDark"
+                >
+                  trajet après une panne automobile
+                </Link>{" "}
+                ou toute la Côte d&apos;Azur.
               </p>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
                 Le <strong className="text-primary">tarif taxi à Nice</strong> dépend de la distance, de

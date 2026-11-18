@@ -179,6 +179,28 @@ export default function ServicesPage() {
       detailUrl: "/services/vsl",
     },
     {
+      id: 9,
+      image: "/images/services/taxi-assistance-panne-nice.webp",
+      title: "Taxi Assistance Panne",
+      description:
+        "Transport des passagers après une panne automobile : domicile, garage, hôtel, gare ou aéroport",
+      keywords: [
+        "taxi assistance panne Nice",
+        "taxi après panne voiture",
+        "transport passagers panne",
+        "taxi véhicule immobilisé",
+      ],
+      features: [
+        "Passagers & bagages",
+        "Pas de remorquage",
+        "Garage / domicile",
+        "Sur réservation",
+      ],
+      icon: MapPin,
+      color: "from-slate-500 to-slate-700",
+      detailUrl: "/services/taxi-assistance-panne-nice",
+    },
+    {
       id: 7,
       image: "/glc-arrivé.jpeg",
       title: "Arrivées & Destinations",

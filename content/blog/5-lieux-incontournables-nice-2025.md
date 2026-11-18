@@ -85,7 +85,7 @@ L'accès peut être compliqué :
 
 **Tarif taxi depuis Nice centre** : À partir de 12€ (trajet 5-8 minutes)
 
-**Lien interne** : 👉 [Découvrez aussi notre page Nice – les secteurs desservis](/secteurs/nice)
+**Lien interne** : 👉 [Découvrez aussi nos secteurs desservis à Nice](/secteurs)
 
 ---
 
@@ -178,7 +178,7 @@ Accès compliqué pour les non-initiés :
 **Liens internes** :
 
 - 👉 [Lisez aussi : Les plages secrètes de Nice](/blog/plages-secretes-nice)
-- 👉 [Guide Cap de Nice – Spot premium](/secteurs/nice)
+- 👉 [Taxi Port Lympia Nice](/secteurs/nice-port-lympia) – Accès côté Est / Cap de Nice
 
 ---
 
@@ -222,7 +222,7 @@ Zones avec :
 **Liens internes** :
 
 - 👉 [Voir aussi : Nos recommandations Nice → Monaco](/secteurs/monaco)
-- 👉 [Guide Nice Est – quartiers à découvrir](/secteurs/nice)
+- 👉 [Taxi Nice centre-ville](/secteurs/nice-centre-ville) – Déplacements dans Nice
 
 ---
 
@@ -386,7 +386,7 @@ Consultez nos [tarifs détaillés](/tarifs) pour connaître les prix exacts selo
 
 Pour continuer votre découverte de Nice et de nos services :
 
-- 👉 [Nice – Guide complet](/secteurs/nice) – Tous nos secteurs desservis
+- 👉 [Nos secteurs](/secteurs) – Toutes les zones desservies
 - 👉 [Réservation transport local](/reservation) – Réservez votre trajet en ligne
 - 👉 [Blog – Plages secrètes](/blog/plages-secretes-nice) – Découvrez d'autres spots
 - 👉 [Excursions Côte d'Azur](/services/excursions) – Circuits personnalisés

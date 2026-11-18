@@ -335,7 +335,14 @@ export default function ReservationPage() {
                 >
                   taxi depuis l&apos;aéroport Nice Côte d&apos;Azur
                 </Link>{" "}
-                est sur la page dédiée.
+                est sur la page dédiée. En cas de véhicule immobilisé, le{" "}
+                <Link
+                  href="/services/taxi-assistance-panne-nice"
+                  className="text-white font-semibold underline underline-offset-4 hover:text-blue-100"
+                >
+                  transport des passagers après une panne
+                </Link>{" "}
+                s&apos;organise aussi via ce formulaire, selon disponibilité.
               </p>
             </div>
           </div>

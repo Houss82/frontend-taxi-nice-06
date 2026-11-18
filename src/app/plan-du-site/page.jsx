@@ -20,9 +20,12 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "Plan du Site | Taxi Nice 06 - Toutes les Pages",
+  title: "Plan du Site – Toutes les Pages",
   description:
     "Plan du site complet de Taxi Nice 06 : accès rapide à toutes nos pages (services, secteurs, blog, tarifs, réservation).",
+  alternates: {
+    canonical: "https://taxi-nice-06.com/plan-du-site",
+  },
   robots: {
     index: true,
     follow: true,
@@ -100,6 +103,14 @@ export default function PlanDuSitePage() {
       description: "Véhicule premium pour groupes jusqu'à 8 personnes",
       icon: Users,
       color: "text-purple-600",
+    },
+    {
+      title: "Taxi Assistance Panne",
+      url: "/services/taxi-assistance-panne-nice",
+      description:
+        "Transport des passagers après une panne automobile à Nice",
+      icon: Car,
+      color: "text-slate-700",
     },
     {
       title: "Excursions",

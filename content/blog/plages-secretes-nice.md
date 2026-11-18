@@ -341,7 +341,7 @@ Tous les trajets depuis la gare ajoutent **5-8 minutes** et **3-5€** au tarif 
 
 Pour continuer votre découverte de Nice et de la Côte d'Azur :
 
-- **<a href="/secteurs/nice">Guide Taxi Nice</a>** – Toutes les zones desservies à Nice
+- **<a href="/secteurs">Guide des secteurs Taxi Nice</a>** – Zones desservies à Nice et sur la Côte d'Azur
 - **<a href="/blog/taxi-nice-gare-sncf">Taxi Nice Gare SNCF</a>** – Service rapide depuis la gare 24/7
 - **<a href="/services/excursions-decouvertes">Excursions Côte d'Azur</a>** – Découvrez la région avec chauffeur privé
 - **<a href="/secteurs/monaco">Taxi Nice → Monaco</a>** – Transferts vers la Principauté

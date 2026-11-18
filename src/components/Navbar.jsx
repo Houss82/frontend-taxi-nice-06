@@ -197,6 +197,16 @@ export default function Navbar() {
                     </div>
                   </Link>
                   <Link
+                    href="/services/taxi-assistance-panne-nice"
+                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Car className="w-4 h-4 text-slate-600" />
+                      <span>Taxi Assistance Panne</span>
+                    </div>
+                  </Link>
+                  <Link
                     href="/services"
                     className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors border-t border-gray-200 mt-2"
                     onClick={() => setIsServicesOpen(false)}
@@ -649,6 +659,21 @@ export default function Navbar() {
                               <Heart className="w-4 h-4 text-red-500" />
                               <span className="text-sm">
                                 Taxi conventionné
+                              </span>
+                            </Link>
+                          </motion.div>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Link
+                              href="/services/taxi-assistance-panne-nice"
+                              className="flex items-center space-x-3 px-3 py-2 rounded-lg hover:bg-blue-50 text-gray-700 hover:text-primary transition-all duration-200"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              <Car className="w-4 h-4 text-slate-600" />
+                              <span className="text-sm">
+                                Taxi Assistance Panne
                               </span>
                             </Link>
                           </motion.div>

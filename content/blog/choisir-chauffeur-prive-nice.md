@@ -321,6 +321,7 @@ Chez **Taxi Nice Côte d'Azur**, nous mettons tout en œuvre pour vous offrir la
 - **[Excursions Côte d'Azur](/services/excursions-decouvertes)** - Circuits personnalisés avec guide
 - **[Taxi conventionné Nice](/services/vsl)** - Transport médical assis à Nice
 - **[Transport Groupe](/services)** - Vans jusqu'à 8 passagers
+- **[Taxi après panne automobile](/services/taxi-assistance-panne-nice)** - transport des passagers si le véhicule est immobilisé
 
 ## 📋 Options de réservation
 

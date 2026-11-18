@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Flotte Récente Nice | Véhicules Mercedes Premium | Taxi Nice-06",
+  title: "Flotte Récente Nice | Véhicules Mercedes Premium",
   description:
     "Flotte de véhicules Mercedes récents et premium à Nice. GLC, Classe V et Van Premium pour tous vos déplacements sur la Côte d'Azur.",
   keywords: [
@@ -10,7 +10,7 @@ export const metadata = {
     "véhicules premium nice",
   ],
   openGraph: {
-    title: "Flotte Récente Nice | Taxi Nice-06",
+    title: "Flotte Récente Nice",
     description:
       "Flotte de véhicules Mercedes récents et premium à Nice. GLC, Classe V et Van Premium pour tous vos déplacements.",
     url: "https://taxi-nice-06.com/services/flotte-recente",
@@ -26,7 +26,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flotte Récente Nice | Taxi Nice-06",
+    title: "Flotte Récente Nice",
     description: "Flotte de véhicules Mercedes récents et premium à Nice.",
     images: ["https://taxi-nice-06.com/bg-image.png"],
   },

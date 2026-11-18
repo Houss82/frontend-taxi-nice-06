@@ -3,25 +3,33 @@ import { getAllPostSlugs, getAllPosts } from "@/lib/blog";
 const baseUrl = "https://taxi-nice-06.com";
 
 export default function sitemap() {
-  const now = new Date();
   let blogPosts = [];
 
   try {
     const allPosts = getAllPosts() || [];
     const postDatesMap = {};
     allPosts.forEach((post) => {
-      postDatesMap[post.slug] = post.date ? new Date(post.date) : now;
+      if (post.date) {
+        postDatesMap[post.slug] = new Date(post.date);
+      }
     });
-    blogPosts = (getAllPostSlugs() || []).map(({ slug }) => ({
-      url: `${baseUrl}/blog/${slug}`,
-      lastModified: postDatesMap[slug] || now,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    }));
+    blogPosts = (getAllPostSlugs() || []).map(({ slug }) => {
+      const entry = {
+        url: `${baseUrl}/blog/${slug}`,
+        changeFrequency: "monthly",
+        priority: 0.6,
+      };
+      // lastModified uniquement si une date d'article fiable existe
+      if (postDatesMap[slug]) {
+        entry.lastModified = postDatesMap[slug];
+      }
+      return entry;
+    });
   } catch (error) {
     console.error("Sitemap blog error:", error);
   }
 
+  // Pages statiques : pas de lastModified artificiel (new Date() au build).
   const staticPages = [
     { path: "", priority: 1.0, changeFrequency: "weekly" },
     { path: "/reservation", priority: 0.9, changeFrequency: "weekly" },
@@ -66,6 +74,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
     },
     { path: "/services/van-premium", priority: 0.7, changeFrequency: "weekly" },
+    {
+      path: "/services/taxi-assistance-panne-nice",
+      priority: 0.8,
+      changeFrequency: "weekly",
+    },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     { path: "/partenaires", priority: 0.6, changeFrequency: "monthly" },
     { path: "/secteurs", priority: 0.6, changeFrequency: "weekly" },
@@ -109,7 +122,6 @@ export default function sitemap() {
     },
   ].map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
-    lastModified: now,
     changeFrequency,
     priority,
   }));

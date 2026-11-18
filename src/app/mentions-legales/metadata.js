@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Mentions Légales | Taxi Nice 06",
+  title: "Mentions Légales",
   description:
     "Mentions légales du site Taxi Nice 06. Informations sur l'entreprise, propriété intellectuelle, RGPD, hébergement et conditions d'utilisation du service de taxi à Nice.",
   keywords: [
@@ -11,7 +11,7 @@ export const metadata = {
     "conditions utilisation",
   ],
   openGraph: {
-    title: "Mentions Légales | Taxi Nice 06",
+    title: "Mentions Légales",
     description:
       "Mentions légales du site Taxi Nice 06. Informations sur l'entreprise, propriété intellectuelle et conditions d'utilisation.",
     url: "https://taxi-nice-06.com/mentions-legales",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Mentions Légales | Taxi Nice 06",
+    title: "Mentions Légales",
     description: "Mentions légales du site Taxi Nice 06.",
   },
   alternates: {

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Partenaires Taxi Nice | Conventions & Accords | Taxi Nice-06",
+  title: "Partenaires Taxi Nice | Conventions & Accords",
   description:
     "Partenariats et conventions de taxi à Nice. Accords avec hôtels, entreprises et professionnels pour des services de transport premium.",
   keywords: [
@@ -9,7 +9,7 @@ export const metadata = {
     "partenariats nice",
   ],
   openGraph: {
-    title: "Partenaires Taxi Nice | Taxi Nice-06",
+    title: "Partenaires Taxi Nice",
     description:
       "Partenariats et conventions de taxi à Nice. Accords avec hôtels, entreprises et professionnels.",
     url: "https://taxi-nice-06.com/partenaires",
@@ -25,7 +25,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Partenaires Taxi Nice | Taxi Nice-06",
+    title: "Partenaires Taxi Nice",
     description: "Partenariats et conventions de taxi à Nice.",
     images: ["https://taxi-nice-06.com/partenaires copie 2.jpg"],
   },

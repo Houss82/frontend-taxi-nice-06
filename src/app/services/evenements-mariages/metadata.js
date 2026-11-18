@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Événements & Mariages Nice | Service Prestige | Taxi Nice-06",
+  title: "Événements & Mariages Nice | Service Prestige",
   description:
     "Service de transport premium pour mariages, cérémonies et événements d'entreprise à Nice et sur la Côte d'Azur. Véhicules de prestige.",
   keywords: [
@@ -11,7 +11,7 @@ export const metadata = {
     "chauffeur mariage",
   ],
   openGraph: {
-    title: "Événements & Mariages Nice | Taxi Nice-06",
+    title: "Événements & Mariages Nice",
     description:
       "Service de transport premium pour mariages, cérémonies et événements d'entreprise à Nice et sur la Côte d'Azur.",
     url: "https://taxi-nice-06.com/services/evenements-mariages",
@@ -27,7 +27,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Événements & Mariages Nice | Taxi Nice-06",
+    title: "Événements & Mariages Nice",
     description: "Service de transport premium pour mariages, cérémonies et événements d'entreprise.",
     images: ["https://taxi-nice-06.com/bg-image.png"],
   },

@@ -528,6 +528,7 @@ Pour organiser vos déplacements professionnels sur la Côte d'Azur :
 
 - 👉 **[Transfert aéroport Nice](/services/taxi-aeroport-nice)** — arrivée et départ professionnels
 - 👉 **[Van premium](/services/van-premium)** — équipes et séminaires
+- 👉 **[Taxi après panne automobile](/services/taxi-assistance-panne-nice)** — poursuivre un déplacement professionnel si le véhicule est immobilisé
 - 👉 **[Transferts événements](/services/transferts-evenements)** — salons et congrès
 - 👉 **[Taxi groupe Nice — Van 7 places](/blog/taxi-groupe-nice-van-7-places)** — transport d'équipes
 - 👉 **[Guide transfert aéroport Nice](/blog/guide-transfert-aeroport-nice)** — tout savoir sur l'aéroport

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Services Taxi Nice | Transport Premium Côte d'Azur | Taxi Nice-06",
+  title: "Services Taxi Nice | Transport Premium Côte d'Azur",
   description:
     "Services de taxi premium à Nice : transferts aéroport, VSL, excursions, événements. Véhicules Mercedes récents et chauffeurs professionnels.",
   keywords: [
@@ -10,7 +10,7 @@ export const metadata = {
     "services premium nice",
   ],
   openGraph: {
-    title: "Services Taxi Nice | Taxi Nice-06",
+    title: "Services Taxi Nice",
     description:
       "Services de taxi premium à Nice : transferts aéroport, VSL, excursions, événements. Véhicules Mercedes récents.",
     url: "https://taxi-nice-06.com/services",
@@ -26,7 +26,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Services Taxi Nice | Taxi Nice-06",
+    title: "Services Taxi Nice",
     description: "Services de taxi premium à Nice : transferts aéroport, VSL, excursions, événements.",
     images: ["https://taxi-nice-06.com/services.jpeg"],
   },

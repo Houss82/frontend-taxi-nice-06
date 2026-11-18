@@ -150,7 +150,7 @@ Cet article vous présente notre **service de taxi pour les plages de Nice** : d
 ## 🔗 Liens utiles
 
 - [5 lieux incontournables Nice](/blog/5-lieux-incontournables-nice-2025) – Coco Beach, La Réserve
-- [Taxi Nice centre](/secteurs/nice) – Tous nos secteurs
+- [Taxi Nice centre-ville](/secteurs/nice-centre-ville) – Courses dans le centre et la Promenade
 - [Réservation en ligne](/reservation) – Réservez votre taxi
 
 ---

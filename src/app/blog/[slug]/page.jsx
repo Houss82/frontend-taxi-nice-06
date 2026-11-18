@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }) {
             </span>
           </div>
 
-          <h1 className="article-title">{post.title}</h1>
+          <h1 className="article-title">{post.h1 || post.title}</h1>
 
           <div className="flex flex-wrap items-center gap-6 text-gray-600 mb-8">
             <div className="flex items-center gap-2">

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Transferts Événements Nice | MIPIM, Festival Cannes | Taxi Nice-06",
+  title: "Transferts Événements Nice | MIPIM, Festival Cannes",
   description:
     "Service professionnel de transferts pour événements : MIPIM, Festival de Cannes, Lions, événements d'entreprise. Chauffeurs en uniforme.",
   keywords: [
@@ -11,7 +11,7 @@ export const metadata = {
     "lions nice",
   ],
   openGraph: {
-    title: "Transferts Événements Nice | Taxi Nice-06",
+    title: "Transferts Événements Nice",
     description:
       "Service professionnel de transferts pour événements : MIPIM, Festival de Cannes, Lions, événements d'entreprise.",
     url: "https://taxi-nice-06.com/services/transferts-evenements",
@@ -27,7 +27,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Transferts Événements Nice | Taxi Nice-06",
+    title: "Transferts Événements Nice",
     description: "Service professionnel de transferts pour événements : MIPIM, Festival de Cannes, Lions.",
     images: ["https://taxi-nice-06.com/mipim.jpg"],
   },

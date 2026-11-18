@@ -51,6 +51,7 @@ En cas de circulation difficile (grève, événement, accès saturés), prévoye
 - [Taxi aéroport Nice](/services/taxi-aeroport-nice) — transferts T1/T2
 - [Taxi Caucade](/blog/taxi-caucade-nice) — ouest de Nice, de l’autre côté du Var
 - [Taxi Saint-Isidore](/blog/taxi-saint-isidore-nice) — nord-ouest niçois
+- [Taxi après une panne](/services/taxi-assistance-panne-nice) — passagers vers garage ou domicile
 - [Réserver](/reservation)
 
 ---

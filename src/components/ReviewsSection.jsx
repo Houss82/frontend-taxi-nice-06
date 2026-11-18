@@ -203,56 +203,9 @@ export default function ReviewsSection() {
           </div>
         </div>
       </section>
-
-      {/* JSON-LD pour les avis - Tag script normal pour garantir la visibilité par Google */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Taxi Nice Côte d'Azur",
-            image: "https://taxi-nice-06.com/logo1.png",
-            "@id": "https://taxi-nice-06.com",
-            url: "https://taxi-nice-06.com",
-            telephone: "+33651683687",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Nice",
-              addressRegion: "Alpes-Maritimes",
-              postalCode: "06000",
-              addressCountry: "FR",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: "43.7102",
-              longitude: "7.2620",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "5",
-              reviewCount: totalReviews.toString(),
-              bestRating: "5",
-              worstRating: "1",
-            },
-            review: reviews.map((review) => ({
-              "@type": "Review",
-              author: {
-                "@type": "Person",
-                name: review.author,
-              },
-              reviewBody: review.text,
-              reviewRating: {
-                "@type": "Rating",
-                ratingValue: review.rating.toString(),
-                bestRating: "5",
-                worstRating: "1",
-              },
-            })),
-            sameAs: ["https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"],
-          }),
-        }}
-      />
+      {/* Pas de JSON-LD AggregateRating / Review ici :
+          les notes structurées doivent provenir d'une source d'avis conforme.
+          Les témoignages restent visibles dans la section ci-dessus. */}
     </>
   );
 }

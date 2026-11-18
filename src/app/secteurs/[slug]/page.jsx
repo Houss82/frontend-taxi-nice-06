@@ -40,13 +40,13 @@ export async function generateMetadata({ params }) {
   } else if (data.slug === "nice-centre-ville") {
     title = "Transfert Centre-Ville Nice | Vieux-Nice & Promenade";
   } else if (data.slug === "nice-hopital-pasteur-2") {
-    title = "Taxi Hôpital Pasteur 2 Nice | RDV & Urgences | Taxi Nice 06";
+    title = "Taxi Hôpital Pasteur 2 Nice | RDV & Urgences";
   } else if (data.slug === "nice-port-lympia") {
     title = "Taxi Port Lympia Nice | Arrivées, départs & transferts";
   } else if (data.slug === "centre-lacassagne-nice") {
     title = "Taxi Centre Antoine Lacassagne Nice | Réservation";
   } else {
-    title = `${data.hero.title} | Taxi Nice 06`;
+    title = data.hero.title;
   }
 
   const pageTitle =

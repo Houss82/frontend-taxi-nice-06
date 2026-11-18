@@ -6,7 +6,9 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: "Article non trouvé | Taxi Nice 06",
+      title: {
+        absolute: "Article non trouvé | Taxi Nice 06",
+      },
       description: "L'article que vous recherchez n'existe pas.",
       robots: {
         index: false,
@@ -25,7 +27,11 @@ export async function generateMetadata({ params }) {
     : `https://taxi-nice-06.com${post.image}`;
 
   return {
-    title: `${post.title} | Taxi Nice 06`,
+    // absolute : un seul suffixe de marque (le template racine ne s'applique
+    // pas de façon fiable sur ce segment dynamique)
+    title: {
+      absolute: `${post.title} | Taxi Nice 06`,
+    },
     description: post.excerpt || `Découvrez ${post.title.toLowerCase()}.`,
     keywords: Array.isArray(post.keywords)
       ? post.keywords.join(", ")

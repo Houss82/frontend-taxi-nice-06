@@ -170,6 +170,8 @@ Pour approfondir vos connaissances sur nos services :
 - **Réservation** : <a href="/reservation">Réservez votre taxi en ligne en 2 minutes</a>
 - **Flotte Premium** : <a href="/services/flotte-recente">Découvrez nos Mercedes haut de gamme</a>
 - **Van Premium** : <a href="/services/van-premium">Véhicule idéal pour groupes et familles</a>
+- **Après une panne** : <a href="/services/taxi-assistance-panne-nice">Transport des passagers (pas de remorquage)</a>
+- **Guide panne voiture Nice** : <a href="/blog/panne-voiture-nice-solution-taxi">Réflexes et organisation du retour</a>
 - **Excursions** : <a href="/services/excursions-decouvertes">Circuits personnalisés Côte d'Azur</a>
 
 ---

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Nos Secteurs | Taxi Nice 06 sur la Côte d'Azur",
+  title: "Nos Secteurs sur la Côte d'Azur",
   description:
     "Découvrez les secteurs desservis par Taxi Nice 06 : Monaco, Cannes, Antibes et toute la Côte d'Azur. Chauffeur privé 24/7, service premium et réservation rapide.",
   openGraph: {

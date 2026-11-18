@@ -1,6 +1,8 @@
 export default function StructuredData() {
   const structuredData = [
     // Données structurées principales de l'entreprise
+    // Pas d'AggregateRating / Review : notes non vérifiables côté code
+    // (règles Google sur les avis d'entreprises locales).
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -126,43 +128,6 @@ export default function StructuredData() {
         "https://www.instagram.com/taxi_nice_cote_dazur",
         "https://www.linkedin.com/company/taxi-nice-cote-dazur",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: 5,
-        reviewCount: 21,
-        bestRating: 5,
-        worstRating: 1,
-      },
-      review: [
-        {
-          "@type": "Review",
-          author: {
-            "@type": "Person",
-            name: "Marie L.",
-          },
-          reviewRating: {
-            "@type": "Rating",
-            ratingValue: 5,
-            bestRating: 5,
-          },
-          reviewBody:
-            "Service excellent, chauffeur très professionnel et ponctuel. Je recommande vivement !",
-        },
-        {
-          "@type": "Review",
-          author: {
-            "@type": "Person",
-            name: "Jean-Pierre M.",
-          },
-          reviewRating: {
-            "@type": "Rating",
-            ratingValue: 5,
-            bestRating: 5,
-          },
-          reviewBody:
-            "Très bon service pour les transferts aéroport. Véhicules impeccables.",
-        },
-      ],
     },
     // Données structurées pour le site web
     {
@@ -176,80 +141,11 @@ export default function StructuredData() {
       publisher: {
         "@id": "https://taxi-nice-06.com/#organization",
       },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://taxi-nice-06.com/reservation?q={search_term_string}",
-          },
-          "query-input": "required name=search_term_string",
-        },
-      ],
       inLanguage: "fr-FR",
     },
-    // Note: Les schémas FAQPage sont définis individuellement sur chaque page pour éviter les doublons
-    // Breadcrumb pour la navigation
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Accueil",
-          item: "https://taxi-nice-06.com",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Services",
-          item: "https://taxi-nice-06.com/services",
-        },
-      ],
-    },
-    // Données structurées TaxiService pour le référencement local
-    {
-      "@context": "https://schema.org",
-      "@type": "TaxiService",
-      "@id": "https://taxi-nice-06.com/#taxiservice",
-      name: "Taxi Nice Côte d'Azur",
-      description: "Service de taxi premium 24/7 à Nice et sur la Côte d'Azur",
-      provider: {
-        "@id": "https://taxi-nice-06.com/#organization",
-      },
-      areaServed: [
-        {
-          "@type": "City",
-          name: "Nice",
-        },
-        {
-          "@type": "City",
-          name: "Cannes",
-        },
-        {
-          "@type": "City",
-          name: "Monaco",
-        },
-        {
-          "@type": "City",
-          name: "Antibes",
-        },
-      ],
-      availableChannel: [
-        {
-          "@type": "ServiceChannel",
-          serviceUrl: "https://taxi-nice-06.com/reservation",
-          serviceType: "OnlineReservation",
-        },
-        {
-          "@type": "ServiceChannel",
-          telephone: "+33 6 51 68 36 87",
-          serviceType: "Phone",
-        },
-      ],
-    },
+    // TaxiService : uniquement sur les pages commerciales dédiées
+    // (aéroport, van, VSL, Sophia, etc.) pour éviter les doublons.
+    // BreadcrumbList : uniquement via SEOBreadcrumb page par page.
   ];
 
   return (

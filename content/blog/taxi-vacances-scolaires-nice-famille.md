@@ -138,6 +138,8 @@ Cet article vous présente notre **service taxi famille à Nice** : transferts a
 - [Taxi groupe : quand choisir un van](/blog/taxi-groupe-nice-van-7-places) – passagers et bagages
 - [Transferts Aéroport](/services/taxi-aeroport-nice) – Arrivée à Nice
 - [Réservation en ligne](/reservation) – Réservez votre taxi famille
+- [Panne en vacances à Nice](/blog/panne-voiture-nice-solution-taxi) – comment poursuivre le séjour
+- [Taxi Assistance Panne](/services/taxi-assistance-panne-nice) – transport des passagers vers hôtel ou garage
 
 ---
 

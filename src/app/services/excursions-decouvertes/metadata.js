@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Excursions & Découvertes Nice | Visites Privées Côte d'Azur | Taxi Nice-06",
+  title: "Excursions & Découvertes Nice | Visites Privées Côte d'Azur",
   description:
     "Excursions et découvertes privées sur la Côte d'Azur. Visites personnalisées de Monaco, Cannes, Saint-Tropez avec chauffeur privé expérimenté.",
   keywords: [
@@ -10,7 +10,7 @@ export const metadata = {
     "chauffeur privé découvertes",
   ],
   openGraph: {
-    title: "Excursions & Découvertes Nice | Taxi Nice-06",
+    title: "Excursions & Découvertes Nice",
     description:
       "Excursions et découvertes privées sur la Côte d'Azur. Visites personnalisées de Monaco, Cannes, Saint-Tropez.",
     url: "https://taxi-nice-06.com/services/excursions-decouvertes",
@@ -26,7 +26,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Excursions & Découvertes Nice | Taxi Nice-06",
+    title: "Excursions & Découvertes Nice",
     description: "Excursions et découvertes privées sur la Côte d'Azur.",
     images: ["https://taxi-nice-06.com/bg-image.png"],
   },

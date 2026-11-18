@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Blog Taxi Nice | Conseils & Actualités Transport | Taxi Nice-06",
+  title: "Blog Taxi Nice | Conseils & Actualités Transport",
   description:
     "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur. Guides pratiques, actualités et informations sur nos services de taxi premium. Articles sur transferts aéroport, VSL et excursions.",
   keywords: [
@@ -14,7 +14,7 @@ export const metadata = {
     "conseils taxi",
   ],
   openGraph: {
-    title: "Blog Taxi Nice | Conseils & Actualités | Taxi Nice-06",
+    title: "Blog Taxi Nice | Conseils & Actualités",
     description:
       "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur. Guides pratiques, actualités et informations sur nos services de taxi premium.",
     url: "https://taxi-nice-06.com/blog",
@@ -31,7 +31,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog Taxi Nice | Conseils & Actualités | Taxi Nice-06",
+    title: "Blog Taxi Nice | Conseils & Actualités",
     description:
       "Découvrez nos conseils pour vos transports à Nice et Côte d'Azur. Guides pratiques et actualités.",
     images: ["https://taxi-nice-06.com/bg-image.png"],

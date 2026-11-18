@@ -441,7 +441,7 @@ Pour continuer votre découverte de nos services de transport médical et conven
 - 👉 [Réservation transport médical](/reservation) – Réservez votre trajet en ligne
 - 👉 [Taxi Conventionné Nice](/services/taxi-conventionne) – Service dédié aux trajets médicaux
 - 👉 [Nos tarifs](/tarifs) – Consultez nos prix pour transports médicaux
-- 👉 [Hôpitaux & Cliniques Nice](/secteurs/nice) – Tous les établissements desservis
+- 👉 [Taxi Hôpital Pasteur 2 Nice](/secteurs/nice-hopital-pasteur-2) – Accès et prise en charge médicale
 - 👉 [Contact](/contact) – Besoin d'informations sur votre transport médical ?
 
 ---
