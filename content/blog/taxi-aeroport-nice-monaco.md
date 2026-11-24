@@ -221,6 +221,9 @@ Pour préparer votre voyage sur la Côte d'Azur :
 - **[Guide Transfert Aéroport Nice](/blog/guide-transfert-aeroport-nice)** : Tout savoir sur les transferts depuis l'aéroport
 - **[Taxi pour les Excursions depuis Nice](/blog/taxi-excursions-nice)** : Découvrir Monaco en excursion à la journée
 - **[Taxi Aéroport Nice vers Cap d'Ail](/blog/taxi-aeroport-nice-cap-d-ail)** : La commune voisine de Monaco
+- **[Aéroport Nice → Cap Ferrat](/blog/taxi-aeroport-nice-cap-ferrat)** : Presqu’île avant la Principauté
+- **[Aéroport Nice → Beaulieu](/blog/taxi-aeroport-nice-beaulieu)** : Villa Kerylos et accès Cap Ferrat
+- **[Aéroport Nice → Villefranche](/blog/taxi-aeroport-nice-villefranche)** : Baie et port de la Darse
 - **[Taxi Nice 06](/)** : courses en ville, aéroport, gare et réservation
 - **[Réservation en ligne](/reservation)** : Réservez votre transfert Nice → Monaco en quelques clics
 

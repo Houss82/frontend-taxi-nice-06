@@ -84,7 +84,7 @@ Nice est parfaitement située pour découvrir la **Côte d'Azur** en excursions 
 
 ### 🏰 Excursion Èze (demi-journée)
 
-**Èze** est un village perché médiéval situé à **12 km** de Nice, soit environ **20-25 minutes** de trajet. Accès difficile en transport en commun, idéal pour un taxi.
+**Èze** est un village perché médiéval situé à **12 km** de Nice, soit environ **20-25 minutes** de trajet. Accès difficile en transport en commun, idéal pour un taxi. Pour un trajet direct depuis l’aéroport, voir aussi [aéroport Nice → Èze](/blog/taxi-aeroport-nice-eze).
 
 **Points d'intérêt à Èze :**
 

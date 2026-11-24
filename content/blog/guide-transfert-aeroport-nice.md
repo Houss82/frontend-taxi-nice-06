@@ -69,6 +69,8 @@ _Tarifs indicatifs, variables selon le trafic et l'heure_
 
 Consultez nos [tarifs détaillés](/tarifs) pour connaître le prix exact de votre destination.
 
+Sur la baie à l’est de Nice, des guides pratiques détaillent durée et accès : [Villefranche-sur-Mer](/blog/taxi-aeroport-nice-villefranche), [Beaulieu-sur-Mer](/blog/taxi-aeroport-nice-beaulieu), [Saint-Jean-Cap-Ferrat](/blog/taxi-aeroport-nice-cap-ferrat), [Èze](/blog/taxi-aeroport-nice-eze) et [Cap d’Ail](/blog/taxi-aeroport-nice-cap-d-ail).
+
 ## Nos conseils pour un transfert réussi
 
 ## 1. Réservez à l'avance

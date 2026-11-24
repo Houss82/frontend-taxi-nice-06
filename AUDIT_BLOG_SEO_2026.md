@@ -435,9 +435,9 @@ Ordre non chronologique. Clusters à risque regroupés dans les mêmes lots pour
 - Sources maillage : restaurants, vacances scolaires, guide transfert, antibes, transport médical, choisir chauffeur, landing Sophia.
 - Build production : OK (20/10/2026).
 
-### Lot 2 — Optimisé en local (21 octobre 2026) — en attente de validation
+### Lot 2 — Déployé (commit `3b42aa0`)
 
-**Statut :** cinq articles retravaillés en local. Non commité, non déployé. Auto-publication toujours suspendue. Images des quatre fiches géo déjà distinctes depuis `e34ecf7` (non régénérées). Image grève inchangée (`/greve-taxi-Nice.jpeg`). Texte alternatif descriptif via `imageAlt` (repli sur le titre pour les autres articles). **Build :** OK (21 octobre 2026).
+**Statut :** validé et en production. Auto-publication toujours suspendue.
 
 **Articles :**
 
@@ -449,4 +449,26 @@ Ordre non chronologique. Clusters à risque regroupés dans les mêmes lots pour
 
 **Résumé :** fiches géo étoffées (repères locaux, durées non chiffrées en prix, distinction des quartiers voisins). Grève : title 2025 retiré, prix et pourcentages non vérifiés retirés, lien `/secteurs/nice` remplacé. Maillage entrant depuis Magnan, Saint-Augustin, Lingostière, Saint-Isidore, zones d’activité, Ironman. Home et page aéroport non modifiées.
 
-**Lots 3–15 :** non démarrés.
+### Lot 3 — Finalisé en local (24 novembre 2026) — en attente de validation / déploiement
+
+**Statut :** cinq articles Baie des Anges Est finalisés en local (contenu + WebP + maillage). Non commité, non déployé. Auto-publication toujours suspendue (`AUTO_PUBLISH_SUSPENDED = true`). Cluster Taxi Assistance Panne préservé. Home et `/services/taxi-aeroport-nice` non modifiées. Pilotage : `../PLAN_RECONQUETE_SEO_TOP3_2026_2027.md` (racine du dépôt).
+
+**Articles :**
+
+1. `/blog/taxi-aeroport-nice-beaulieu`
+2. `/blog/taxi-aeroport-nice-villefranche`
+3. `/blog/taxi-aeroport-nice-cap-ferrat`
+4. `/blog/taxi-aeroport-nice-cap-d-ail`
+5. `/blog/taxi-aeroport-nice-eze`
+
+**Résumé :**
+
+- Titles recentrés « guide trajet » (durée, accès, cas d’usage) pour limiter la cannibalisation avec la landing aéroport.
+- Suppression des prix forfaitaires non vérifiables, KPI inventés (+% demandes, 98 % ponctualité) et blocs flotte/Uber répétitifs.
+- Différenciation locale : Villa Kerylos / Darse-croisière / Cap Ferrat-presqu’île / Mala-Monaco / Èze Village vs Èze-sur-Mer.
+- Correction des liens cassés `/secteurs/beaulieu`, `/secteurs/cap-ferrat`, `/secteurs/eze` (secteurs inexistants).
+- Images WebP 1200×675 contextualisées + `imageAlt`.
+- Maillage entrant depuis guide-transfert, Monaco, Menton, excursions, Mont-Boron + maillage croisé Lot 3.
+- Renvoi systématique vers `/services/taxi-aeroport-nice`, `/tarifs`, `/reservation`.
+
+**Lots 4–15 :** non démarrés.
