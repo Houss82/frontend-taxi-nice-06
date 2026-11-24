@@ -449,9 +449,9 @@ Ordre non chronologique. Clusters à risque regroupés dans les mêmes lots pour
 
 **Résumé :** fiches géo étoffées (repères locaux, durées non chiffrées en prix, distinction des quartiers voisins). Grève : title 2025 retiré, prix et pourcentages non vérifiés retirés, lien `/secteurs/nice` remplacé. Maillage entrant depuis Magnan, Saint-Augustin, Lingostière, Saint-Isidore, zones d’activité, Ironman. Home et page aéroport non modifiées.
 
-### Lot 3 — Finalisé en local (24 novembre 2026) — en attente de validation / déploiement
+### Lot 3 — Déployé (24 novembre 2026)
 
-**Statut :** cinq articles Baie des Anges Est finalisés en local (contenu + WebP + maillage). Non commité, non déployé. Auto-publication toujours suspendue (`AUTO_PUBLISH_SUSPENDED = true`). Cluster Taxi Assistance Panne préservé. Home et `/services/taxi-aeroport-nice` non modifiées. Pilotage : `../PLAN_RECONQUETE_SEO_TOP3_2026_2027.md` (racine du dépôt).
+**Statut :** **déployé en production** — commit `198ad50` (`Optimize blog Lot 3 SEO for Baie des Anges East destinations.`). Auto-publication toujours suspendue (`AUTO_PUBLISH_SUSPENDED = true`). Cluster Taxi Assistance Panne préservé. Home et `/services/taxi-aeroport-nice` non modifiées. Pilotage : `PLAN_RECONQUETE_SEO_TOP3_2026_2027.md`.
 
 **Articles :**
 
@@ -461,14 +461,15 @@ Ordre non chronologique. Clusters à risque regroupés dans les mêmes lots pour
 4. `/blog/taxi-aeroport-nice-cap-d-ail`
 5. `/blog/taxi-aeroport-nice-eze`
 
-**Résumé :**
+**Contrôles prod (24/11/2026) :** HTTP 200 ; canonicals sans www ; titles/H1 guides ; images WebP 200 ; liens hub aéroport présents ; `robots` index,follow ; présents dans sitemap (107 URLs).
+
+**Résumé éditorial :**
 
 - Titles recentrés « guide trajet » (durée, accès, cas d’usage) pour limiter la cannibalisation avec la landing aéroport.
-- Suppression des prix forfaitaires non vérifiables, KPI inventés (+% demandes, 98 % ponctualité) et blocs flotte/Uber répétitifs.
+- Suppression des prix forfaitaires non vérifiables, KPI inventés et blocs flotte/Uber répétitifs.
 - Différenciation locale : Villa Kerylos / Darse-croisière / Cap Ferrat-presqu’île / Mala-Monaco / Èze Village vs Èze-sur-Mer.
-- Correction des liens cassés `/secteurs/beaulieu`, `/secteurs/cap-ferrat`, `/secteurs/eze` (secteurs inexistants).
-- Images WebP 1200×675 contextualisées + `imageAlt`.
-- Maillage entrant depuis guide-transfert, Monaco, Menton, excursions, Mont-Boron + maillage croisé Lot 3.
+- Correction des liens cassés `/secteurs/beaulieu`, `/secteurs/cap-ferrat`, `/secteurs/eze`.
+- Images WebP 1200×675 + `imageAlt` ; maillage entrant (guide, Monaco, Menton, excursions, Mont-Boron, hôtels) + croisé Lot 3.
 - Renvoi systématique vers `/services/taxi-aeroport-nice`, `/tarifs`, `/reservation`.
 
 **Lots 4–15 :** non démarrés.
