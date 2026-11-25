@@ -342,6 +342,7 @@ export default function Page() {
                     {
                       title: "Transferts aéroport Nice",
                       text: "Terminal 1 et 2 avec suivi en temps réel",
+                      link: "/services/taxi-aeroport-nice",
                     },
                     {
                       title: "Taxi Nice & chauffeur privé",

@@ -125,6 +125,7 @@ Indiquez l’heure limite au garage et l’horaire souhaité pour la course. Une
 Une panne ou un accident immobilise le véhicule, pas forcément les passagers. Une fois en sécurité, un taxi peut vous conduire vers la suite du programme — domicile, garage, hôtel ou correspondance — selon disponibilité. Taxi Nice 06 transporte les personnes ; le véhicule reste à la charge du dépannage ou du remorquage choisi.
 
 - Service dédié : [Taxi Assistance 06](/services/taxi-assistance-panne-nice)
+- Vue d’ensemble : [service de taxi niçois](/)
 - Demande de course : [réserver un taxi à Nice](/reservation)
 
 _Article publié le 18 novembre 2026_

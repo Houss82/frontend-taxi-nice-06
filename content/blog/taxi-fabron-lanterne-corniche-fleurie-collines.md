@@ -286,6 +286,7 @@ Pour en savoir plus sur nos services de taxi à Nice :
 
 - ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
 - **[Taxi Nice ouest & Corniche](/)** : prise en charge depuis l’accueil
+- **[accueil aéroport Nice](/services/taxi-aeroport-nice)** : transferts depuis Fabron et Corniche Fleurie
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi dans ces quartiers en quelques clics
 
 ---

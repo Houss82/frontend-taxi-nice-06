@@ -278,6 +278,7 @@ Pour en savoir plus sur nos services de taxi à Nice :
 
 - ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
 - **[Taxi zones actives & Lingostière](/)** : réservation sur l’accueil
+- **[taxi aéroport Nice](/services/taxi-aeroport-nice)** : trajets courts Lingostière ↔ terminaux
 - **[Taxi Carros](/blog/taxi-carros-nice)** : zone industrielle de la vallée du Var, au-delà de Lingostière
 - **[Réservation en ligne](/reservation)** : Réservez votre taxi à Lingostière en quelques clics
 

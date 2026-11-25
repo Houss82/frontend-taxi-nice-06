@@ -535,6 +535,7 @@ Oui, nous proposons des **formules aller-retour** avec tarifs dégressifs. Parfa
 
 ## 🔗 Liens utiles
 
+- 👉 **[notre service de taxi](/)** – Accueil Taxi Nice 06, courses et réservation
 - 👉 **[Taxi Gare Nice — réservation](/secteurs/nice-gare)** – Courses depuis Nice-Ville, Riquier et Saint-Augustin
 - 👉 **[Sorties et accès Gare Nice-Ville](/blog/taxi-nice-gare-sncf)** – Points de rendez-vous, bagages et organisation sur place
 - 👉 **[Service Transferts Aéroport Nice](/services/taxi-aeroport-nice)** – Offre aéroport T1/T2

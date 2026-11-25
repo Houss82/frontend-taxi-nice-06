@@ -236,6 +236,7 @@ Détails de l’offre : [page van premium](/services/van-premium).
 
 Pour aller plus loin avec Taxi Nice Côte d'Azur :
 
+- 👉 [Taxi Nice 06](/) – Accueil du service et vue d’ensemble des trajets
 - 👉 [Transferts Aéroport Nice](/services/taxi-aeroport-nice) – Service dédié aux arrivées/départs aéroport
 - 👉 [Taxi Nice → Cannes](/secteurs/cannes) – Trajet très demandé pour les événements
 - 👉 [Taxi Nice → Monaco](/secteurs/monaco) – Transfert vers la Principauté

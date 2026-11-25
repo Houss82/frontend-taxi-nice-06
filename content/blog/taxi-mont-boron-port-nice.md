@@ -277,6 +277,8 @@ Vous passez la soirée dans le centre-ville de Nice et devez rentrer à votre r�
 Pour en savoir plus sur nos services de taxi à Nice :
 
 - ***[Choisir un taxi à Nice : guide pratique (bus, tram, critères)](/blog/taxi-nice-guide-complet-2025)** : article comparatif
+- **[taxi à Nice](/)** : accueil du service et courses locales
+- **[Taxi aéroport Nice](/services/taxi-aeroport-nice)** : transferts T1 / T2 depuis ou vers Mont-Boron
 - **[Plages secrètes de Nice](/blog/plages-secretes-nice)** : Guide des criques secrètes de Mont-Boron
 - **[Taxi au Port Lympia](/secteurs/nice-port-lympia)** : réservation depuis ou vers les quais (distinct du quartier Mont-Boron)
 - **[Aéroport Nice → Villefranche](/blog/taxi-aeroport-nice-villefranche)** : baie juste à l’est, au-delà de Mont-Boron

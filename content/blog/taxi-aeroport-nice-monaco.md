@@ -218,6 +218,7 @@ Vous résidez à Monaco et voyagez régulièrement depuis Nice. Nous proposons u
 
 Pour préparer votre voyage sur la Côte d'Azur :
 
+- **[Taxi aéroport Nice](/services/taxi-aeroport-nice)** : offre commerciale T1 / T2, suivi de vol et réservation
 - **[Guide Transfert Aéroport Nice](/blog/guide-transfert-aeroport-nice)** : Tout savoir sur les transferts depuis l'aéroport
 - **[Taxi pour les Excursions depuis Nice](/blog/taxi-excursions-nice)** : Découvrir Monaco en excursion à la journée
 - **[Taxi Aéroport Nice vers Cap d'Ail](/blog/taxi-aeroport-nice-cap-d-ail)** : La commune voisine de Monaco

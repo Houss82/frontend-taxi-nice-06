@@ -161,6 +161,7 @@ Les courses dans le [centre-ville de Nice](/secteurs/nice-centre-ville) (hôtels
 
 ## 🔗 Liens utiles
 
+- [taxi à Nice](/) – Accueil du service et courses locales
 - [Taxi aéroport Nice](/services/taxi-aeroport-nice) – Transferts T1 / T2
 - [Aéroport Nice → Villefranche](/blog/taxi-aeroport-nice-villefranche) – hôtels baie / Darse
 - [Aéroport Nice → Beaulieu](/blog/taxi-aeroport-nice-beaulieu) – Villa Kerylos et Cap Ferrat
