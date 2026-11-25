@@ -1,6 +1,7 @@
 ---
 title: "Taxi Caucade Nice : Ouest niçois, Aéroport & Promenade"
 date: "2026-09-29"
+updatedAt: "2026-10-21"
 excerpt: "Prise en charge à Caucade, ouest de Nice : aéroport, Promenade des Anglais et gare. Ce qu’il faut indiquer à la réservation, sans confondre avec Magnan ou Saint-Augustin."
 image: "/images/blog/taxi-caucade-nice.webp"
 imageAlt: "Berline noire dans une rue de l’ouest de Nice, entre immeubles à volets et arbres."

@@ -1,6 +1,7 @@
 ---
 title: "Aéroport Nice → Villefranche-sur-Mer : Baie, Port de la Darse & Trajet"
 date: "2025-11-27"
+updatedAt: "2026-11-24"
 excerpt: "Guide pratique aéroport Nice → Villefranche-sur-Mer : durée, Basse Corniche, port de la Darse, citadelle et escales croisière. Tarif confirmé à la réservation."
 image: "/images/blog/taxi-aeroport-nice-villefranche.webp"
 imageAlt: "Taxi Mercedes avec lumineux TAXI près du port et de la baie de Villefranche-sur-Mer."

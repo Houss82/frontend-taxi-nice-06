@@ -1,6 +1,7 @@
 ---
 title: "Aéroport Nice → Èze : Village perché, Accès & Conseils Trajet"
 date: "2026-08-04"
+updatedAt: "2026-11-24"
 excerpt: "Guide pratique aéroport Nice → Èze : durée, Moyenne Corniche ou A8, Èze Village, Èze-sur-Mer et Jardin Exotique. Tarif confirmé à la réservation."
 image: "/images/blog/taxi-aeroport-nice-eze.webp"
 imageAlt: "Taxi Mercedes avec lumineux TAXI sur la Moyenne Corniche face au village perché d’Èze."

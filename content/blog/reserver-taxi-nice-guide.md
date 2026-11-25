@@ -1,6 +1,7 @@
 ---
 title: "Comment Réserver un Taxi à Nice : Guide Pratique 2026"
 date: "2026-03-26"
+updatedAt: "2026-10-20"
 excerpt: "Organiser une réservation de taxi à Nice : infos à fournir, délais utiles selon aéroport, gare ou soirée, téléphone ou formulaire. Sans refaire l’offre commerciale du site."
 image: "/taxi-nice-palais-exposition.jpeg"
 category: "Guide Pratique"

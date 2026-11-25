@@ -1,6 +1,7 @@
 ---
 title: "Taxi Saint-Laurent-du-Var : Aéroport Nice, Cap 3000 & Centre"
 date: "2026-10-13"
+updatedAt: "2026-10-21"
 excerpt: "Départs depuis Saint-Laurent-du-Var : Cap 3000, aéroport de Nice, gare et centre de Nice. Conseils de rendez-vous, sans remplacer les guides aéroport vers Cannes ou Antibes."
 image: "/images/blog/taxi-saint-laurent-du-var.webp"
 imageAlt: "Berline noire sur une route littorale bordée de palmiers, avec la mer et des collines."

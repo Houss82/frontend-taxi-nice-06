@@ -1,6 +1,7 @@
 ---
 title: "Taxi Carros : Zone industrielle, Nice & Aéroport"
 date: "2026-10-20"
+updatedAt: "2026-10-21"
 excerpt: "Taxi depuis Carros et Carros-Le-Broc : zone d’activités, village, liaisons vers Nice, l’aéroport et les rendez-vous médicaux. Adresse d’entreprise et horaire de poste à préciser."
 image: "/images/blog/taxi-carros-zone-industrielle.webp"
 imageAlt: "Berline noire le long d’entrepôts d’une zone d’activités, avec des cyprès et des collines."

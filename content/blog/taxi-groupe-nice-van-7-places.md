@@ -1,6 +1,7 @@
 ---
 title: "Taxi Groupe à Nice : Quand Choisir un Van 7 Places ?"
 date: "2025-11-27"
+updatedAt: "2026-10-20"
 excerpt: "Guide pratique pour les déplacements en groupe à Nice : passagers, bagages, berline ou van, organisation aéroport et événements. Complément de la page van premium."
 image: "/taxi-aeroport-nice-van-7-plaves.png"
 category: "Taxi"

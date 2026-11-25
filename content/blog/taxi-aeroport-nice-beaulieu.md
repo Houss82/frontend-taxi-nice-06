@@ -1,6 +1,7 @@
 ---
 title: "Aéroport Nice → Beaulieu-sur-Mer : Trajet, Villa Kerylos & Conseils"
 date: "2026-06-02"
+updatedAt: "2026-11-24"
 excerpt: "Guide pratique aéroport Nice → Beaulieu-sur-Mer : durée, Basse Corniche, Villa Kerylos, port et accès Cap Ferrat. Tarif confirmé à la réservation."
 image: "/images/blog/taxi-aeroport-nice-beaulieu.webp"
 imageAlt: "Taxi Mercedes avec lumineux TAXI stationné près du port de Beaulieu-sur-Mer sur la Côte d'Azur."

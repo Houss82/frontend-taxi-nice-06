@@ -1,6 +1,7 @@
 ---
 title: "Aéroport Nice → Sophia Antipolis : Trajet, Zones & Conseils Pratiques"
 date: "2026-09-01"
+updatedAt: "2026-10-20"
 excerpt: "Guide pratique aéroport Nice → Sophia Antipolis : durée, A8, heures de pointe, zones (Lucioles, Dolines, campus). Pour réserver le transfert, voir la page service dédiée."
 image: "/taxi-aeroport-nice-sophia-antipolis-1.jpg"
 category: "Transferts Aéroport"

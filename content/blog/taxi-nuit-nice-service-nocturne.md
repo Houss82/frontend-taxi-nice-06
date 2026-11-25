@@ -1,6 +1,7 @@
 ---
 title: "Taxi de Nuit Nice : Service Nocturne 24/7 - Retours Soirée & Aéroport"
 date: "2026-04-28"
+updatedAt: "2026-10-20"
 excerpt: "Déplacements après le tram et les bus à Nice : retours de soirée, vols tardifs ou matinaux, gare. Réservation en ligne 24/7, prix annoncé avant le départ."
 image: "/aéroport-Nice-départ-t2-2.jpeg"
 category: "Guide Pratique"

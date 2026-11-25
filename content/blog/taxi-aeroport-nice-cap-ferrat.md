@@ -1,6 +1,7 @@
 ---
 title: "Aéroport Nice → Saint-Jean-Cap-Ferrat : Trajet & Accès Presqu'île"
 date: "2026-07-14"
+updatedAt: "2026-11-24"
 excerpt: "Guide pratique aéroport Nice → Cap Ferrat : durée, accès via Beaulieu, Villa Ephrussi, hôtels et routes de la presqu’île. Tarif confirmé à la réservation."
 image: "/images/blog/taxi-aeroport-nice-cap-ferrat.webp"
 imageAlt: "Taxi Mercedes avec lumineux TAXI sur une route de la presqu’île de Saint-Jean-Cap-Ferrat."

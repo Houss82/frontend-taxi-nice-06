@@ -1,6 +1,7 @@
 ---
 title: "Taxi L'Arénas Nice : Quartier d'affaires & Aéroport"
 date: "2026-10-06"
+updatedAt: "2026-10-21"
 excerpt: "Courses depuis L’Arénas, quartier d’affaires face à l’aéroport de Nice : bureaux, hôtels, T1/T2 et retour en ville. Prix annoncé à la réservation."
 image: "/images/blog/taxi-arenas-nice-affaires.webp"
 imageAlt: "Berline noire garée devant des tours de bureaux vitrées, quartier d’affaires."

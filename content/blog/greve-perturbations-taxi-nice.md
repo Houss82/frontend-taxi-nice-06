@@ -1,6 +1,7 @@
 ---
 title: "Grève et perturbations à Nice : organiser un taxi"
 date: "2025-11-13"
+updatedAt: "2026-10-21"
 excerpt: "Grève, embouteillage ou météo à Nice : quelle marge prévoir vers l’aéroport, quelles infos donner à la réservation, et où consulter le tarif réel."
 image: "/greve-taxi-Nice.jpeg"
 imageAlt: "Taxi sous la pluie devant la gare de Nice-Ville, enseigne lumineuse sur le toit."

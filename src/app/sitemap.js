@@ -2,6 +2,33 @@ import { getAllPostSlugs, getAllPosts } from "@/lib/blog";
 
 const baseUrl = "https://taxi-nice-06.com";
 
+/**
+ * Convertit une date frontmatter (date ou updatedAt) en lastModified sitemap.
+ * - Pas de new Date() « maintenant » au build
+ * - Rejette dates invalides ou futures
+ */
+function toSitemapLastModified(raw) {
+  if (raw == null || raw === "") return undefined;
+  const value = typeof raw === "string" ? raw.trim() : raw;
+  const parsed = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(parsed.getTime())) return undefined;
+
+  const today = new Date();
+  const parsedDay = Date.UTC(
+    parsed.getUTCFullYear(),
+    parsed.getUTCMonth(),
+    parsed.getUTCDate()
+  );
+  const todayDay = Date.UTC(
+    today.getUTCFullYear(),
+    today.getUTCMonth(),
+    today.getUTCDate()
+  );
+  if (parsedDay > todayDay) return undefined;
+
+  return parsed;
+}
+
 export default function sitemap() {
   let blogPosts = [];
 
@@ -9,8 +36,10 @@ export default function sitemap() {
     const allPosts = getAllPosts() || [];
     const postDatesMap = {};
     allPosts.forEach((post) => {
-      if (post.date) {
-        postDatesMap[post.slug] = new Date(post.date);
+      // Priorité : updatedAt (modification significative) puis date (publication)
+      const lastModified = toSitemapLastModified(post.updatedAt || post.date);
+      if (lastModified) {
+        postDatesMap[post.slug] = lastModified;
       }
     });
     blogPosts = (getAllPostSlugs() || []).map(({ slug }) => {
@@ -19,7 +48,6 @@ export default function sitemap() {
         changeFrequency: "monthly",
         priority: 0.6,
       };
-      // lastModified uniquement si une date d'article fiable existe
       if (postDatesMap[slug]) {
         entry.lastModified = postDatesMap[slug];
       }

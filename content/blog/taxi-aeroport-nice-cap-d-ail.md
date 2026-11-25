@@ -1,6 +1,7 @@
 ---
 title: "Aéroport Nice → Cap d'Ail : Trajet, Plage de Mala & Monaco"
 date: "2026-06-23"
+updatedAt: "2026-11-24"
 excerpt: "Guide pratique aéroport Nice → Cap d'Ail : durée, accès plages Mala et Marquet, proximité Monaco et Grand Prix. Tarif confirmé à la réservation."
 image: "/images/blog/taxi-aeroport-nice-cap-d-ail.webp"
 imageAlt: "Taxi Mercedes avec lumineux TAXI près du littoral de Cap d'Ail sur la Côte d'Azur."

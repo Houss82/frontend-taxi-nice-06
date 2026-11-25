@@ -1,6 +1,7 @@
 ---
 title: "Taxi Personnes Âgées Nice : Transport Seniors & Accompagnement"
 date: "2026-05-05"
+updatedAt: "2026-10-20"
 excerpt: "Déplacements pour seniors à Nice : rendez-vous, sorties, aéroport ou gare. Différence avec le taxi conventionné CPAM, infos pratiques pour accompagnants, réservation 24/7."
 image: "/taxi-personnes-agees-nice.png"
 category: "Guide Pratique"

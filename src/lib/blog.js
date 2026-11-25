@@ -53,6 +53,8 @@ export function getAllPosts() {
         category: data.category || "Actualités",
         author: data.author || "Taxi Nice Côte d'Azur",
         ...data,
+        // Champ optionnel : dernière modification significative (sitemap lastmod)
+        updatedAt: data.updatedAt || null,
         keywords: normalizeKeywords(data.keywords),
       };
     })
@@ -101,6 +103,7 @@ export async function getPostBySlug(slug) {
     category: data.category || "Actualités",
     author: data.author || "Taxi Nice Côte d'Azur",
     ...data,
+    updatedAt: data.updatedAt || null,
     keywords: normalizeKeywords(data.keywords),
   };
 }
