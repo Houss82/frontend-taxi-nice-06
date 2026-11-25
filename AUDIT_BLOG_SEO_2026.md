@@ -451,25 +451,20 @@ Ordre non chronologique. Clusters à risque regroupés dans les mêmes lots pour
 
 ### Lot 3 — Déployé (24 novembre 2026)
 
-**Statut :** **déployé en production** — commit `198ad50` (`Optimize blog Lot 3 SEO for Baie des Anges East destinations.`). Auto-publication toujours suspendue (`AUTO_PUBLISH_SUSPENDED = true`). Cluster Taxi Assistance Panne préservé. Home et `/services/taxi-aeroport-nice` non modifiées. Pilotage : `PLAN_RECONQUETE_SEO_TOP3_2026_2027.md`.
+**Statut :** **déployé en production** — commit `198ad50`. Auto-publication suspendue. Cluster Assistance préservé. Home et landing aéroport non réécrites. Pilotage : `PLAN_RECONQUETE_SEO_TOP3_2026_2027.md`.
 
-**Articles :**
+**Articles :** Beaulieu, Villefranche, Cap Ferrat, Cap d’Ail, Èze.
 
-1. `/blog/taxi-aeroport-nice-beaulieu`
-2. `/blog/taxi-aeroport-nice-villefranche`
-3. `/blog/taxi-aeroport-nice-cap-ferrat`
-4. `/blog/taxi-aeroport-nice-cap-d-ail`
-5. `/blog/taxi-aeroport-nice-eze`
+**Contrôles prod (24/11/2026) :** HTTP 200 ; canonicals ; titles/H1 guides ; WebP ; hub aéroport ; sitemap 107 URLs.
 
-**Contrôles prod (24/11/2026) :** HTTP 200 ; canonicals sans www ; titles/H1 guides ; images WebP 200 ; liens hub aéroport présents ; `robots` index,follow ; présents dans sitemap (107 URLs).
+**updatedAt (25/11/2026, commit `8117b97`) :** frontmatter seul `updatedAt: "2026-11-24"` (date Git Lot 3) — **aucun changement éditorial** Lot 3. Lots 1–2 : `updatedAt` 2026-10-20 / 2026-10-21.
 
-**Résumé éditorial :**
+**Résumé éditorial :** titles « guide trajet » ; tarifs inventés retirés ; différenciation locale ; liens secteurs cassés corrigés ; WebP 1200×675 ; maillage hub + croisé.
 
-- Titles recentrés « guide trajet » (durée, accès, cas d’usage) pour limiter la cannibalisation avec la landing aéroport.
-- Suppression des prix forfaitaires non vérifiables, KPI inventés et blocs flotte/Uber répétitifs.
-- Différenciation locale : Villa Kerylos / Darse-croisière / Cap Ferrat-presqu’île / Mala-Monaco / Èze Village vs Èze-sur-Mer.
-- Correction des liens cassés `/secteurs/beaulieu`, `/secteurs/cap-ferrat`, `/secteurs/eze`.
-- Images WebP 1200×675 + `imageAlt` ; maillage entrant (guide, Monaco, Menton, excursions, Mont-Boron, hôtels) + croisé Lot 3.
-- Renvoi systématique vers `/services/taxi-aeroport-nice`, `/tarifs`, `/reservation`.
+### Maillage stratégique — Déployé (25 novembre 2026)
+
+**Commit maillage :** `5b92b42` — Home (footer Accueil + services → landing) ; liens Home sur hôtels, gare-aéroport, nuit, van, panne, Mont-Boron ; hub aéroport depuis Monaco + Saint-Augustin, Saint-Isidore, Lingostière, Fabron, Mont-Boron.
+
+**GSC 1–22/11 (pilotage) :** « taxi aéroport nice » — landing 39,80 ; Home www 3,41 ; Cannes 27,19. Backlinks : 73 total ; Home 48/22 domaines ; landing 6/6. Priorité : renforcer landing.
 
 **Lots 4–15 :** non démarrés.

@@ -1,7 +1,7 @@
 # Plan de reconquête SEO Top 3 — Taxi Nice 06
 
 **Créé le :** 24 novembre 2026  
-**Dernière mise à jour :** 24 novembre 2026 (après déploiement Lot 3)  
+**Dernière mise à jour :** 25 novembre 2026 (maillage + updatedAt déployés)  
 **Site canonique :** https://taxi-nice-06.com (sans www)  
 **Horizon :** 12 semaines (S1 = semaine du 24/11/2026)
 
@@ -23,26 +23,52 @@
 
 ---
 
-## 2. Positions GSC de référence (24 nov. 2026)
+## 2. Positions GSC de référence
 
-Données fournies / audit — **ne pas inventer** les cellules manquantes.
+### Baseline initiale (24 nov. 2026)
 
-| Signal | Valeur de référence | Source |
-|--------|---------------------|--------|
-| Home sans www — « taxi nice » | position moy. **14,54** | GSC (utilisateur) |
-| Home avec www — « taxi nice » | position moy. **2,26** | GSC / Windsor (utilisateur) |
-| Landing aéroport — « taxi aéroport nice » | position moy. **40,45** | GSC (utilisateur) |
-| Canonical Google Home | sans www, indexée | Inspection GSC |
-| Canonical Google aéroport | sans www, indexée | Inspection GSC |
-| www | reconnue comme redirection | Inspection GSC |
-| GBP | URL **corrigée** vers https://taxi-nice-06.com/ | Manuel (24/11/2026) |
+| Signal | Valeur | Source |
+|--------|--------|--------|
+| Home sans www — « taxi nice » | 14,54 | GSC |
+| Home avec www — « taxi nice » | 2,26 | GSC |
+| Landing aéroport — « taxi aéroport nice » | 40,45 | GSC |
+| GBP | corrigée sans www | Manuel 24/11 |
+
+### Fenêtre 1–22 novembre 2026 (données utilisateur)
+
+#### Requête « taxi nice »
+
+| URL | Position moy. | Notes |
+|-----|---------------|-------|
+| Home www | **2,36** | Dual-host analytics |
+| Home sans www | **14,65** | Canonical cible |
+| Cannibalisation interne majeure | **Non démontrée** | — |
+
+#### Requête « taxi aéroport nice »
+
+| URL | Position moy. | Notes |
+|-----|---------------|-------|
+| Home www | **3,41** | Concurrence possible vs landing |
+| Home sans www | **23,27** | — |
+| Landing `/services/taxi-aeroport-nice` | **39,80** | Page pilier O2 — priorité |
+| Article Cannes | **27,19** | Chevauchement potentiel (à différencier en Lot 4) |
+
+#### Backlinks GSC (audit quantitatif)
+
+| Périmètre | Liens | Domaines |
+|-----------|-------|----------|
+| Total liens externes recensés | **73** | — |
+| Home | **48** | **22** domaines |
+| Landing aéroport | **6** | **6** domaines |
+
+**Priorité stratégique :** renforcer la landing aéroport (maillage interne + recommandations externes pertinentes).
 
 ### Tableau de suivi hebdomadaire
 
 | Date | Position Taxi Nice | Position Taxi Aéroport Nice | Impressions | Clics | CTR | Backlinks | Actions réalisées |
 |------|--------------------|-----------------------------|-------------|-------|-----|-----------|-------------------|
-| 2026-11-24 | Home sans www 14,54 / www 2,26 (dual-host) | 40,45 | — | — | — | boutsdumonde → www (confirmé) | Audit tech + Lot 3 **déployé** `198ad50` + GBP sans www |
-| S2 | | | | | | | |
+| 2026-11-24 | sans www 14,54 / www 2,26 | 40,45 | — | — | — | boutsdumonde → www | Lot 3 `198ad50` + GBP |
+| 2026-11-25 | 1–22/11 : www 2,36 / sans www 14,65 | landing 39,80 ; Home www 3,41 ; Cannes 27,19 | — | — | — | GSC : 73 liens (Home 48/22 ; aéroport 6/6) | Maillage `5b92b42` + updatedAt `8117b97` |
 | S3 | | | | | | | |
 | S4 | | | | | | | |
 | S5 | | | | | | | |
@@ -60,14 +86,14 @@ Données fournies / audit — **ne pas inventer** les cellules manquantes.
 
 | Semaines | Focus | Livrables |
 |----------|-------|-----------|
-| **S1** | Technique + Lot 3 + pilotage | DNS/sitemap audit ; Lot 3 ; ce plan |
-| **S2** | Post-deploy Lot 3 + GSC | GBP OK ; audits maillage Home + cluster aéroport (reco) ; resoumettre sitemap |
-| **S3–S4** | Cannibalisation aéroport | Ancres + maillage hub ; différencier guide / Cannes / Monaco / Menton (sans rewrite landing) |
-| **S5–S6** | Lot 4 (destinations majeures) | Monaco, Cannes, Antibes, Menton, guide — après validation |
-| **S7–S8** | Autorité / netlinking | Contacter boutsdumonde ; 5–10 partenaires locaux |
-| **S9–S10** | Lots blog suivants | Gare/hôtels/Port ; contrôle Home-safe |
-| **S11** | Concurrentiel + UX réservation | Ajustements mineurs ; Core Web Vitals |
-| **S12** | Bilan Top 3 | Rapport positions / gaps / plan 2027 |
+| **S1** | Technique + Lot 3 | DNS/sitemap ; Lot 3 ; plan |
+| **S2** | Maillage + GSC | Maillage Home/aéroport ; updatedAt ; données GSC 1–22/11 |
+| **S3–S4** | Différenciation aéroport | Ancres + Cannes/Monaco/Menton/guide (sans rewrite landing) |
+| **S5–S6** | Lot 4 | Destinations majeures — après validation |
+| **S7–S8** | Netlinking | boutsdumonde ; partenaires locaux ; focus liens vers landing |
+| **S9–S10** | Lots blog suivants | Gare/hôtels/Port |
+| **S11** | Concurrentiel + UX | CWV ; parcours réservation |
+| **S12** | Bilan Top 3 | Rapport 2027 |
 
 ---
 
@@ -75,116 +101,89 @@ Données fournies / audit — **ne pas inventer** les cellules manquantes.
 
 | Lot | Contenu | Statut |
 |-----|---------|--------|
-| Lot 1 | Nuit, van, Sophia, seniors, réservation | **Déployé** `e34ecf7` |
-| Lot 2 | Caucade, Arénas, SLV, Carros, grève | **Déployé** `3b42aa0` |
-| Lot 3 | Beaulieu, Villefranche, Cap Ferrat, Cap d’Ail, Èze | **Déployé** `198ad50` (24/11/2026) — contrôles prod OK |
+| Lot 1 | Nuit, van, Sophia, seniors, réservation | Déployé `e34ecf7` ; `updatedAt` 2026-10-20 |
+| Lot 2 | Caucade, Arénas, SLV, Carros, grève | Déployé `3b42aa0` ; `updatedAt` 2026-10-21 |
+| Lot 3 | Beaulieu, Villefranche, Cap Ferrat, Cap d’Ail, Èze | Déployé `198ad50` ; `updatedAt` 2026-11-24 (frontmatter seul) |
 | Lots 4–15 | Voir `AUDIT_BLOG_SEO_2026.md` | Non démarrés |
-| Cluster Assistance Panne | Service + article | **Déployé** `91b16cf` — à préserver |
+| Assistance Panne | Service + article | `91b16cf` — à préserver |
 
 ---
 
-## 5. Anomalies techniques confirmées
+## 5. Anomalies / faits techniques
 
-1. Chaîne **2 sauts** : `http://www` → `https://www` (308) → `https://sans-www` (301).
-2. Apex DNS **A @ = 216.198.79.1** (réseau Vercel) vs reco fréquente **216.150.1.1** — site 200.
-3. `www` en **CNAME** vers `*.vercel-dns-017.com`.
-4. Sitemap live **HTTP 200**, XML valide, **107 URLs**, hôte unique sans www (post-deploy Lot 3, `age` bas observé).
-5. Pages statiques du sitemap **sans `lastModified` artificiel** ; articles : dates frontmatter (Lot 3 : dates publication d’origine, pas date de réécriture).
-6. Backlink externe confirmé vers **www** : `blog-boutsdumonde.fr` → `https://www.taxi-nice-06.com/`.
-7. Footer : **aucun lien Accueil** vers `/` (nav uniquement).
-
----
-
-## 6. Hypothèses à vérifier (GSC / terrain)
-
-- Écarts www vs sans www sur « taxi nice » = artefact Search Analytics / dual-host.
-- Alignement GBP sans www réduira le bruit (fait le 24/11 — à mesurer sur 2–4 semaines).
-- Pos. ~40 « taxi aéroport nice » = concurrence interne (Home + guide + blogs destinations) — **non confirmée URL par URL sans export GSC**.
-- Erreur sitemap GSC temporaire.
+1. Chaîne 2 sauts www (308 puis 301).
+2. Apex A `216.198.79.1` (Vercel) vs reco fréquente `216.150.1.1`.
+3. Sitemap 107 URLs, sans www, GSC traitement OK.
+4. `updatedAt` déployé (`8117b97`) : lastmod = `updatedAt || date`, dates invalidées si futures ; pas de `new Date()` build-time pour lastmod.
+5. Backlink boutsdumonde encore en www.
+6. Landing aéroport : seulement **6** backlinks / **6** domaines vs Home **48** / **22** — gap d’autorité externe.
 
 ---
 
-## 7. Actions de netlinking (manuel)
+## 6. Hypothèses
+
+- Dual-host www / sans www = artefact analytics (canonicals OK).
+- Sur « taxi aéroport nice », Home www (3,41) et Cannes (27,19) pèsent face à la landing (39,80) — **chevauchement potentiel**, à confirmer en continu ; pas de suppression.
+- Priorité O2 = maillage + backlinks vers la landing (pas rewrite Title/H1).
+
+---
+
+## 7. Netlinking
 
 | Priorité | Action | Statut |
 |----------|--------|--------|
-| P1 | Demander à boutsdumonde de remplacer www → https://taxi-nice-06.com/ | À faire |
-| P1 | Mettre à jour l’URL du Google Business Profile (sans www) | **Terminé** (24/11/2026) |
-| P2 | Contacter 5–10 hôtels / garages / offices pour citation + lien | À planifier |
-| P2 | Vérifier annuaires locaux (OT Nice, mairie, CCI) | À faire |
-| P3 | Export Ahrefs/Semrush/Majestic pour audit backlinks complet | Données manquantes |
+| P1 | boutsdumonde → URL sans www | À faire |
+| P1 | Recommandations externes vers **landing aéroport** (pas seulement Home) | À planifier |
+| P1 | GBP sans www | **Terminé** |
+| P2 | Partenaires hôtels / garages / OT | À planifier |
+| P3 | Export Ahrefs/Semrush | Manquant |
 
 ---
 
-## 8. Historique modifications / déploiements
+## 8. Historique déploiements
 
 | Date | Événement |
 |------|-----------|
-| 2025-11 | Redirect www → non-www (vercel.json / middleware) |
-| 2026-10-20 | Lot 1 déployé `e34ecf7` ; auto-publish suspendu |
-| 2026-10 | Lot 2 déployé `3b42aa0` |
-| 2026-11 | Cluster Assistance `91b16cf` |
-| 2026-11-24 | Lot 3 finalisé puis **déployé** `198ad50` ; GBP sans www ; audits maillage Home + cluster aéroport (reco) |
+| 2026-10-20 | Lot 1 `e34ecf7` |
+| 2026-10-21 | Lot 2 `3b42aa0` |
+| 2026-11 | Assistance `91b16cf` |
+| 2026-11-24 | Lot 3 `198ad50` ; GBP |
+| 2026-11-25 | Maillage `5b92b42` ; updatedAt `8117b97` |
 
 ---
 
 ## 9. Indicateurs hebdomadaires
 
-- Positions moyennes GSC : `taxi nice`, `taxi aéroport nice` (filtre URL sans www si possible).
-- Impressions / clics / CTR (28 j glissants).
-- Pages recevant des impressions sur ces requêtes (cannibalisation).
-- Couverture d’index + erreurs sitemap.
-- Backlinks nouveaux / www restants (dès outil externe).
-- Conversions réservation (si Analytics disponible).
+- Positions « taxi nice » / « taxi aéroport nice » (filtre sans www si possible).
+- Pages imprimant sur « taxi aéroport nice » (Home, landing, Cannes…).
+- Backlinks totaux + part landing vs Home.
+- Couverture sitemap / index Lot 3.
+- CTR / clics 28 j.
 
 ---
 
-## 10. Tâches — réalisées / restantes
+## 10. Tâches
 
-### Réalisées (24/11/2026)
+### Réalisées (25/11/2026)
 
-- [x] Audit DNS / sitemap / robots
-- [x] Cartographie cannibalisation (analyse)
-- [x] Finalisation + **déploiement Lot 3** (`198ad50`)
-- [x] Contrôles production Lot 3 (200, canonical, title/H1, images, liens hub, sitemap, index)
-- [x] GBP aligné sans www (manuel)
-- [x] Audit approfondi maillage Home (10 opportunités — **non appliquées**)
-- [x] Audit approfondi cluster aéroport (cartographie — **non appliquée**)
-- [x] Audit qualitatif Home + landing aéroport (notes — **sans modification**)
-- [x] Vérification sitemap post-déploiement
+- [x] Déploiement maillage Home + aéroport (`5b92b42`)
+- [x] `updatedAt` + sitemap lastmod (`8117b97`) — Lots 1–3 datés via Git
+- [x] GSC 1–22/11 intégré au pilotage
+- [x] Priorité landing aéroport formalisée (maillage + netlinking)
 
-### Restantes (validation utilisateur requise)
+### Restantes
 
-- [ ] Resoumission sitemap GSC
-- [ ] Contact boutsdumonde (URL sans www)
-- [ ] Application éventuelle des 10 liens Home (après validation)
-- [ ] Différenciation / renforts cluster aéroport (Monaco, Menton, Cannes, guide…) après validation
-- [ ] Export backlinks outil SEO
-- [ ] Mesure concurrentielle depuis Nice
-- [ ] Lot 4 — uniquement après validation
+- [ ] Contact boutsdumonde
+- [ ] Netlinking ciblé landing aéroport
+- [ ] Différenciation Cannes / Monaco / Menton / guide (prépa Lot 4)
+- [ ] Lot 4 — après validation
+- [ ] Export backlinks outil SEO externe
 
 ---
 
-## 11. Synthèse audits S1 (reco en attente)
+## 11. Prochaine séance
 
-### Maillage Home
-
-- ~48 articles éditoriaux avec lien Home ; ~27 articles publiés sans lien Home (dont Lot 3, Sophia, hôtels, nuit, van, gare-aéroport…).
-- Nav : liens Accueil (valeur UI élevée, valeur éditoriale faible).
-- Footer : **pas de lien Accueil**.
-- Voir rapport séance 24/11 pour les 10 opportunités priorisées.
-
-### Cluster aéroport
-
-- Landing : ~55 sources / ~97 occurrences de lien vers `/services/taxi-aeroport-nice`.
-- Lot 3 : 3 liens hub / article en prod — **Conserver**.
-- Points d’attention (risque **potentiel**, non GSC-confirmé) : `guide-transfert-aeroport-nice` ; titles encore « Prix & Réservation » (Monaco, Menton, Cannes…) ; Monaco **sans** lien hub.
-- Catégories : Conserver / Renforcer / Différencier / Examiner fusion — **aucune fusion/suppression** sans validation + GSC.
-
-### Prochaine séance (recommandé)
-
-1. Resoumettre sitemap + vérifier couverture Lot 3.  
-2. Valider 3–5 liens Home P1 (footer + hôtels + gare-aéroport + nuit).  
-3. Ajouter lien hub sur Monaco + recentrer titles Menton/Cannes/Monaco (Lot 4 prep).  
-4. Contacter boutsdumonde.  
-5. Extraire GSC « pages » pour « taxi aéroport nice ».
+1. Vérifier en GSC l’effet du maillage (impressions landing).  
+2. Contacter boutsdumonde + 3–5 opportunités de lien vers `/services/taxi-aeroport-nice`.  
+3. Préparer Lot 4 (titles destinations majeures) sans toucher la landing.  
+4. Suivre positions Home vs landing sur « taxi aéroport nice ».
