@@ -109,7 +109,7 @@ Cohérent avec le recentrage Home : la Home progresse sur la requête aéroport 
 | Lot 4+ | Non démarré |
 | Maillage Home/aéroport | Déployé `5b92b42` — **à conserver** |
 | Assistance Panne | Préservé |
-| Home phase 1 | Déployée (périmètre prudent) |
+| Home phase 1 | Déployée `f99ab7b` (périmètre prudent) |
 
 ---
 
@@ -163,7 +163,7 @@ GSC historique : 73 liens ; Home 48/22 domaines ; landing 6/6.
 | 2026-11-24 | Lot 3 `198ad50` ; GBP |
 | 2026-11-25 | Maillage `5b92b42` ; updatedAt `8117b97` |
 | 2026-11-28 | Stratégie **Home-first** ; audit Home ; backlink visitezmoi |
-| 2026-11-28 | **Home phase 1 prudente déployée** : constante avis 205/5★ ; ReviewsSection ; tel Navbar desktop ; tel + lien GBP sous CTA hero. **Reportés** : bloc tarifs aéroport Home, carte Monaco, correction Schema Offer 25€. |
+| 2026-11-28 | **Home phase 1 prudente déployée** — commit `f99ab7bfc210cddd7e9a1a7df5bf42a871e50368` : constante avis 205/5★ ; ReviewsSection ; tel Navbar desktop ; tel + lien GBP sous CTA hero. **Reportés** : bloc tarifs aéroport Home, carte Monaco, correction Schema Offer 25€. Prod vérifiée (canonical, H1/H2, JSON-LD Offer inchangé « À partir de 25€ »). |
 
 ---
 
