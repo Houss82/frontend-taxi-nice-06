@@ -1,5 +1,6 @@
 "use client";
 
+import { GOOGLE_REVIEWS } from "@/config/reviews";
 import { ExternalLink, Star } from "lucide-react";
 
 export default function ReviewsSection() {
@@ -34,9 +35,9 @@ export default function ReviewsSection() {
     },
   ];
 
-  // Calcul de la note moyenne et du nombre total d'avis
-  const averageRating = 5;
-  const totalReviews = 168; // Nombre total d'avis sur Google
+  const averageRating = GOOGLE_REVIEWS.rating;
+  const totalReviews = GOOGLE_REVIEWS.count;
+  const googleUrl = GOOGLE_REVIEWS.url;
 
   return (
     <>
@@ -83,7 +84,7 @@ export default function ReviewsSection() {
                 <p className="text-sm text-gray-600 mt-1">
                   sur{" "}
                   <a
-                    href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
+                    href={googleUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 underline font-semibold inline-flex items-center gap-1"
@@ -98,7 +99,7 @@ export default function ReviewsSection() {
               Découvrez les témoignages authentiques de nos clients satisfaits.
               Tous nos avis sont vérifiables sur notre{" "}
               <a
-                href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
+                href={googleUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline font-semibold"
@@ -187,7 +188,7 @@ export default function ReviewsSection() {
           {/* Lien vers Google Maps */}
           <div className="text-center">
             <a
-              href="https://maps.app.goo.gl/UzPCMHMeFYZaeZNH8"
+              href={googleUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-bold rounded-2xl hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"

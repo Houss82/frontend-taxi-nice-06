@@ -382,8 +382,16 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        {/* Desktop CTA Button */}
-        <div className="hidden lg:flex items-center gap-2 xl:gap-4">
+        {/* Desktop : téléphone + CTA */}
+        <div className="hidden lg:flex items-center gap-2 xl:gap-3">
+          <a
+            href="tel:+33651683687"
+            className="inline-flex items-center gap-1.5 xl:gap-2 px-2.5 py-1.5 xl:px-3 xl:py-2 text-primary hover:text-primary/80 font-semibold transition-colors text-sm xl:text-base whitespace-nowrap rounded-lg hover:bg-blue-50"
+            aria-label="Appeler le 06 51 68 36 87"
+          >
+            <Phone className="w-4 h-4 xl:w-5 xl:h-5 flex-shrink-0" aria-hidden="true" />
+            <span>06 51 68 36 87</span>
+          </a>
           <Link
             href="/reservation"
             className="px-3 py-1.5 xl:px-4 xl:py-2 bg-primary text-white hover:bg-primary/90 rounded-lg font-semibold transition-colors duration-300 inline-flex items-center gap-1.5 xl:gap-2 text-sm xl:text-base whitespace-nowrap shadow-sm hover:shadow-md"
